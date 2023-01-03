@@ -1,0 +1,142 @@
+{% assign chart = product.type | handleize | append: "-size-chart" %} {% unless
+pages[chart].empty? or pages[chart].content == blank %}
+<div class="pop-up-modal">
+  <div class="pop-up-content">
+    <span class="close-button">&times;</span>
+    
+    <span class="size-chart-content">{{ pages[chart].content }}</span>
+  </div>
+</div>
+{% endunless %}
+<script>
+  const modal = document.querySelector('.pop-up-modal');
+  const trigger = document.querySelector('.trigger-pop-up');
+  const closeButton = document.querySelector('.close-button');
+
+  function toggleModal() {
+    modal.classList.toggle('show-pop-up');
+  }
+
+  function windowOnClick(event) {
+    if (event.target === modal) {
+      toggleModal();
+    }
+  }
+
+  trigger.addEventListener('click', toggleModal);
+  closeButton.addEventListener('click', toggleModal);
+  window.addEventListener('click', windowOnClick);
+
+
+
+  var tabLinks = document.querySelectorAll('.size-chart-content .cm-button');
+ var tabContent =document.querySelectorAll('.size-chart-content .size-table');
+                                           console.log(tabContent)
+  tabLinks.forEach((tab,index)=>{
+    tab.addEventListener('click',()=>{
+        tabContent.forEach((content)=>{
+           content.classList.remove('active'); 
+          });
+       tabLinks.forEach((tab)=>{
+            tab.classList.remove('active');
+        });
+         tabContent[index].classList.add('active');
+         tabLinks[index].classList.add('active')
+     });
+    
+    });
+</script>
+
+<style>
+  .toggle-block {
+    display: flex;
+    justify-content: space-between;
+    border: 1px  solid;
+    width: 35%;
+    align-items:center;
+    padding: 10px;
+    border-radius: 99px;
+}
+  .size-chart-content .size-table {
+    display: none;
+}
+   .size-chart-content .size-table.active{
+    display:block;
+    transition: all 1s ease;
+  }
+  .size-chart-content .cm-button.active {
+    background: #fff;
+    color: #000;
+    padding: 6px;
+    border-radius: 99px;
+}
+  td {
+    border-bottom: 1px solid;
+   padding: 16px;
+}
+table {
+  border-collapse: collapse;
+  text-transform: uppercase;
+}
+
+  .pop-up-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    display: none;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  }
+  .pop-up-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    color:#fff;
+    padding: 1rem 1.5rem;
+    width: auto;
+    border-radius: 0.5rem;
+  }
+  .pop-up-content table {
+    table-layout: auto;
+  }
+  .close-button {
+    display:none;
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+  }
+  .close-button:hover {
+    background-color: darkgray;
+  }
+  .show-pop-up {
+    z-index: 12;
+    opacity: 1;
+    display: block;
+    transform: scale(1);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  }
+  .trigger-pop-up {
+    margin: 10px 0 10px 0;
+    width: 100%;
+  }
+  @media only screen and (max-width: 749px) {
+    .pop-up-content,
+    .size-chart-content table {
+      width: 100%;
+    }
+    .size-chart-content th,
+    .size-chart-content td {
+      padding: 10px;
+    }
+  }
+</style>

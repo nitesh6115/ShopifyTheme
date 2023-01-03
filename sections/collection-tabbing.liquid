@@ -1,0 +1,227 @@
+<link rel="stylesheet" href="{{'collection-tabbing.css'| asset_url }}" />
+<link rel="stylesheet" href="{{ 'swiper.css' | asset_url }}" />
+<script src="{{ 'swiper.js' | asset_url }}"></script>
+{% style %}
+.section-{{ section.id }}-padding {
+padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+}
+@media screen and (min-width: 750px) {
+.section-{{ section.id }}-padding {
+padding-top: {{ section.settings.padding_top }}px;
+padding-bottom: {{ section.settings.padding_bottom }}px;
+}
+}
+{% endstyle %}
+<div class="section-{{ section.id }}-padding">
+    <div class="TabingBox">
+        <div class="collection-wrapp">
+            <div class="collection-tabbing swiper">
+                <div class="CarsoulBox swiper-wrapper collection-carsoul-{{ section.id }}">
+                      {%  assign loopmainIndex = 0 %}
+                      {% for block in section.blocks %}
+                        
+                        <div id="Tab-{{ section.id  }}{{ forloop.index }}"class=" swiper-slide TabContent-{{ section.id  }} tabimage">
+                        <div class="{% if section.settings.width == 'full-width' %}full-width{% elsif section.settings.width == 'wrapper-width' %}page-width{% else %} narrow-width {% endif %}" >
+                        <div class="Tabing-Header">
+                        {% assign collection = collections[block.settings.slide-collection] %}
+                        <div class="TabHeader Tab-{{ section.id  }}{{ forloop.index }}">
+                        <div class="HederTabBox">
+                        <div class="LeftSide">
+                        {% if block.settings.sub_title != blank %}
+                        <div class="sub_title">{{ block.settings.sub_title }}</div>
+                        {% endif %} 
+                        {% if block.settings.heading != blank %}
+                        <h2 class="heading_title">{{ block.settings.heading }}</h2>
+                        {% endif %}
+                        </div>
+                        <div class="RightSide btn_color{{ block.id }}">
+                        {%  if block.settings.shop_all %}
+                        {%  style %}
+                        .btn_color{{ block.id }} .cta-btn{
+                        color: {{ block.settings.btn_color }};
+                        background: {{ block.settings.btn_bg }};
+                        }
+                        
+                        .btn_color{{ block.id }} .cta-btn:hover{
+                        color: {{ block.settings.btn_hover_color }};
+                        background: {{ block.settings.btn_hover_bg }};
+                        }
+                        {% endstyle %}
+                        <a class="cta-btn" href="{{ collection.url }}">{{ block.settings.button_text }}</a> 
+                        {% endif %}
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="Tabbing-Title">
+                          {% assign loopindex = 0 %}
+                        {% for block in section.blocks %}
+                          <div data-index="{{ loopindex }}" class="Tab-{{ section.id  }} tablinks {% if loopmainIndex == loopindex %} active {% endif %}"
+                          data-id="Tab-{{ section.id  }}{{ forloop.index }}">
+                          {% if block.settings.title != blank %}
+                          {{ block.settings.title }}
+                          {% endif %}
+                          </div>
+                          {% assign loopindex = loopindex | plus: 1 %}
+                         {% endfor %}
+                        </div>
+                        <div class="collection-list swiper" >
+                          <div class="swiper-wrapper">
+                            {% assign collection = collections[block.settings.slide-collection] %}
+                           {% for product in collection.products %}
+                             <div class="featured-product swiper-slide">
+                              {% render 'product-grid', card_product:product %}
+                             </div>
+                             {% endfor %}
+                          </div>
+                          <div class="tabingNext swiper-button-next swiper-next"></div>
+                          <div class="tabingPrev swiper-button-prev swiper-prev"></div>
+                        </div>
+                        </div>
+                        </div>
+                        {% assign loopmainIndex = loopmainIndex | plus: 1 %}
+                      {% endfor %}
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Collection Tabbing",
+  "class": "COLLECTION_TABS overflow-hidden",
+  "settings": [
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Page width",
+      "options": [
+        {
+          "value": "full-width",
+          "label": "Full Width"
+        },
+        {
+          "value": "wrapper-width",
+          "label": "Wrapper Width"
+        },
+        {
+          "value": "narrow-width",
+          "label": "Narrow width"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "checkbox",
+      "id": "show-view-all",
+      "label": "Enable View All Button"
+    },
+    {
+        "type":"header",
+        "content":"Slider Options"
+      },
+      {
+        "type":"checkbox",
+        "label":"Enable Slider Arrow",
+        "id":"enable-slider-arrow",
+        "default": true
+      }
+  ],
+  "blocks": [
+    {
+      "type": "content",
+      "name": "collection",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Tab Title",
+          "id": "title"
+        },
+        {
+          "type": "text",
+          "label": "Heading Title",
+          "id": "heading"
+        },
+        {
+          "type": "text",
+          "label": "Sub-Heading",
+          "id": "sub_title"
+        },
+        {
+          "type": "collection",
+          "id": "slide-collection",
+          "label": "Slider Collection"
+        },
+        {
+          "type": "checkbox",
+          "label": "Show View All Button",
+          "id": "shop_all",
+          "default": false
+        },
+        {
+          "type": "text",
+          "label": "Button Text",
+          "id": "button_text",
+          "default": "Shop Now"
+        },
+        {
+          "type": "color_background",
+          "id": "btn_bg",
+          "label": "Button Background",
+          "default": "linear-gradient(#000, #000)"
+        },
+        {
+          "type": "color",
+          "id": "btn_color",
+          "label": "Button Text Color",
+          "default": "#fff"
+        },
+        {
+          "type": "color_background",
+          "id": "btn_hover_bg",
+          "label": "Button Hover Background",
+          "default": "linear-gradient(#eee, #eee)"
+        },
+        {
+          "type": "color",
+          "id": "btn_hover_color",
+          "label": "Button Hover Color",
+          "default": "#000"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection Tabbing"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

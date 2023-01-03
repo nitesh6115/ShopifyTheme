@@ -1,0 +1,215 @@
+<div class="header__wrapper">
+<div class="{% if section.settings.page-width == 'full-width' %} full-width {% elsif section.settings.page-width == 'wrapper-width' %} page-width {% else %} narrow-width {% endif %}">
+<div class="header-content borrder-all" style="background:{{section.settings.bg-color }}";>
+ <style>
+ :root { --header-bg : {{ section.settings.bg-color }};}
+</style>
+<div class="announcement-bar">
+{% include 'announce-bar'%}
+</div>
+<div class="header">
+<div class="header-logo">
+  <a href="{{ routes.root_url}}">
+  {%  if section.settings.logo-svg != blank and section.settings.logo-svg contains '<svg '%}
+    <div class="Logo_svg" style="width:{{ section.settings.logo_width }}px">
+    {{ section.settings.logo-svg }}
+    </div>
+  {% else %}
+  {% if section.settings.logo !=blank %}
+    {{section.settings.logo | image_url: width: section.settings.logo.width | image_tag:
+    widths:'50, 100, 150, 200, 250, 300, 400, 500',
+    height: logo_height,
+    width: section.settings.logo_width }}
+  {% else %}
+    <h2>{{ shop.name }}</h2>
+  {% endif %}
+  {% endif %}
+  </a>
+</div>
+<div class="navbar mobile-hide">
+<div onclick="menuClose(this)" class="overlay-menu"></div>  
+{% include'site-nav-bar' %}
+</div>
+<div class="header-icon-bar">
+  <div class="search-icon hederIcon" id="SeachTrigger">
+   {% render 'icon-search' %}
+  </div>
+  <div class="cart-icon hederIcon">
+      <a onclick="cartDrawerOpen()" class="cart-button">
+       <span class="cart-item-count">{{ cart.item_count }}</span>
+      {% render 'icon-cart' %}
+      </a>
+  </div>
+  <div class="desktop-hide hederIcon" onclick="menuOpen(this)">
+    {% render 'icon-hamburger'%}
+    {% render 'icon-close'%}
+  </div>
+</div>
+  
+</div>
+</div>
+</div>
+</div>
+
+{% schema %}
+ 
+  {
+  "name": "Header",
+  "settings": [
+    
+      {
+      "type": "color_background",
+      "id": "bg-color",
+      "label": "Change Background Color"
+    },
+    {
+        "type": "select",
+        "id": "page-width",
+        "label": "Page width",
+        "options": [
+          {
+            "value": "full-width",
+            "label": "Full Width"
+          },
+          {
+            "value": "wrapper-width",
+            "label": "Wrapper Width"
+          },
+          {
+            "value": "narrow-width",
+            "label": "Narrow width"
+          }
+        ]
+      },
+      {
+      "type":"header",
+      "content":"Anouncement Bar"
+    },
+     {
+      "type": "checkbox",
+      "id": "show-announcement",
+      "label": "Show Announcement Bar"
+    },
+     {
+      "type":"header",
+      "content":"Right-Bar "
+    },
+    {
+    "type":"link_list",
+    "label":"Select Info menu",
+      "id":"info-menu"
+   },
+     {
+      "type":"header",
+      "content":"Header"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo Image"
+    },
+    {
+      "type": "textarea",
+      "id": "logo-svg",
+      "label": "Logo SVG code"
+    },
+    {
+      "type": "range",
+      "id": "logo_width",
+      "label": "Custom logo width",
+      "max": 250,
+      "min": 100,
+      "step": 10,
+      "default": 100
+    },
+    {
+      "type": "select",
+      "id": "logo_positon",
+      "label": "Desktop logo position",
+      "options": [
+        {
+          "value": "middle-left",
+          "label": "Middle Left"
+        },
+        {
+          "value": "top-left",
+          "label": "top-left"
+        },
+        {
+          "value": "middle-center",
+          "label": "Top Center"
+        }
+      ]
+    },
+    
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu"
+    },
+     {
+      "type": "image_picker",
+      "id": "collection-image",
+      "label": "Logo Image"
+    },
+    
+    {
+      "type":"checkbox",
+       "label":"Enable Sticky Header",
+       "id":"enable_sticky_header"
+    }
+  ],
+    "blocks": [
+    {
+      "type": "header",
+      "name": "annocement bar",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Announcement Text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "{{ shop.name }}",
+  {% if section.settings.logo %}
+    {% assign image_size = section.settings.logo.width | append:'x' %}
+    "logo": "https:{{ section.settings.logo | img_url: image_size }}",
+  {% endif %}
+  "sameAs": [
+    "{{ settings.social_twitter_link }}",
+    "{{ settings.social_facebook_link }}",
+    "{{ settings.social_pinterest_link }}",
+    "{{ settings.social_instagram_link }}",
+    "{{ settings.social_tumblr_link }}",
+    "{{ settings.social_snapchat_link }}",
+    "{{ settings.social_youtube_link }}",
+    "{{ settings.social_vimeo_link }}"
+  ],
+  "url": "{{ shop.url }}{{ page.url }}"
+}
+</script>
+
+{% if template.name == 'index' %}
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "{{ shop.name }}",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{{ shop.url }}/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "url": "{{ shop.url }}{{ page.url }}"
+    }
+  </script>
+{% endif %}

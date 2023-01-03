@@ -1,0 +1,110 @@
+{% unless grid_item_width %}
+  {% assign grid_item_width = 'large--one-quarter medium-down--one-half' %}
+{% endunless %}
+
+{% unless image_size %}
+{%- assign image_size = 'master' -%}
+{% endunless %}
+
+{% unless current_collection %}
+{% assign current_collection = collection %}
+{% endunless %}
+
+{% assign on_sale = false %}
+{% if product.compare_at_price > product.price %}
+{% assign on_sale = true %}
+{% endif %}
+
+{% assign sold_out = true %}
+{% if product.available  %}
+{% assign sold_out = false %}
+{% endif %}
+
+<div class="reveal-img grid-item {{ grid_item_width }}{% if sold_out %} sold-out{% endif %}{% if on_sale %} on-sale{% endif %}">
+  <div class="product-grid-image">
+    <div class="product-grid-image--centered">
+      <div class="reveal">
+        <a href="{{ product.url | within: current_collection }}" class="product-grid-item">
+
+          <img class="original_img" src="{{ product.featured_image.src | img_url: image_size }}" 
+               srcset="{{ product.featured_image.src | img_url: image_size }} 1x, {{ product.featured_image.src | img_url: image_size, scale: 2 }} 2x"
+               alt="{{ product.featured_image.alt | escape }}">
+          <img class="hidden" src="{{ product.images.last | img_url: image_size }}" 
+               srcset="{{ product.images.last | img_url: image_size }} 1x, {{ product.images.last | img_url: image_size, scale: 2 }} 2x"
+               alt="{{ product.images.last.alt | escape }}">
+        </a>
+        <div class="ProductAddAction" data-handle="{{ product.handle }}"data-size="{{ product.options.size }}">
+          <div class="closeStep resetOption" onclick="Reset(this)"></div>
+          {%- assign current_variant = product.selected_or_first_available_variant -%}
+          <form action="/cart/add" method="post" enctype="multipart/form-data" id="add-to-cart-{{ product.handle }}" data-option-size="{{ product.options.size }}">
+            <div class="vaopiton hide">
+
+
+              <div class="product-form__controls-group">
+                {% for option in product.options_with_values %}
+                <div class="OptionBox  {% if forloop.index == 1 %}{% else %}hide{% endif %}" option-index="{{ forloop.index }}">
+                  {% if forloop.index == 1 %}
+                  <div class="closeStep" onclick="closeOpt(this)"></div>
+                  {% else %}
+                  <div class="closeStep" onclick="BackStap(this,{{ forloop.index }})"></div>
+                  {% endif %}
+                  
+                  <div class="selector-wrapper js product-form__item">
+                    <label for="SingleOptionSelector-{{ forloop.index0 }}">
+                      {{ option.name }}
+                    </label>
+                    <div class="OptionSelctore Option-{{ forloop.index0 }}" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+                      {% for value in option.values %}
+                      <div class="optionValue" onclick="optonChange(this)" value="{{ value | escape }}">{{ value }}</div>
+                      {% endfor %}
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+              <select name="id" id="{{ forloop.index }}-{{ product.handle }}-ProductSelect-{{ section.id }}" class="hide product-form__variants no-js">
+                {% for variant in product.variants %}
+                <option data-title="{{ variant.title }}" dataAvl="{% if variant.available == false %}false{% else %}true{% endif %}" value="{{ variant.id }}"{%- if variant == current_variant %} selected="selected" {%- endif -%}>{{ variant.title }}  {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}</option>
+                      {% endfor %}
+              </select>
+              <button type="submit" name="add" class="hide addtocart_collection ajax-cart-btn" >
+                <span class="cart_btn_adding_text">Is Adding...</span>
+                <span class="cart_btn_text">Added to Cart</span>
+              </button>
+            </div>
+            <div class="btn" {% unless current_variant.available %}disabled="disabled"{% else %}onclick="ViewOptions(this)"  {% endunless %}>
+              {% if current_variant.available %}
+              Quick Add
+              {% else %}
+              {{ 'products.product.sold_out' | t }}
+              {% endif %}
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>   
+    </div>
+  </div>
+  
+   <a href="{{ product.url | within: current_collection }}" class="product-grid-item">
+  
+    <div class="prodcut_inform_bx">
+      <p class="Ptitle">{{ product.title }}</p>
+      <div class="PriceBox"> 
+        {% include 'price' with product.price %}
+        {% if on_sale and section.settings.product_show_compare_at_price %}
+        <small>
+          <s>
+            <span class="visually-hidden">{{ "products.general.regular_price" | t }}</span>
+            {% include 'price' with product.compare_at_price %}
+          </s>
+        </small>
+        {% endif %}
+      </div>
+    </div>
+
+  </a>
+
+</div>

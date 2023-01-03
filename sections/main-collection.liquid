@@ -1,0 +1,41 @@
+  {% if collection.image != blank %}
+  {% else %}
+  <div class="page-width">
+  <h1>{{collection.title}}</h1>
+  </div>
+  {% endif %}
+  <div class="page-width collection-page-grid">
+  <div class="CollectionnGrid four-colls">
+    {% if collection.image != blank %}
+     <div class="CHB collection-image hover-zoom ">
+       <img class="radius-20 overflow-hidden" lazy src="{{ collection.image | img_url: "1400x" }}" alt="{{ collection.image.alt }}" />
+      <div class="collection-info">
+      <h1>{{collection.title}}</h1>
+      <p>{{ collection.products_count }} {% if collection.products_count > 0 %}Products{% else %}Product{% endif %}</p>
+      </div>
+     </div>
+    {% endif %}
+    {% for product in collection.products %}
+      <div class="featured-product swiper-slide">
+      {% render 'product-grid', card_product:product %}
+      </div>
+    {% endfor %}
+  </div>
+  </div>
+
+
+
+
+{% schema %}
+  
+  {
+    "name": "Collection",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

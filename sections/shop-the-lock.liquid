@@ -1,0 +1,295 @@
+{{ 'shop-the-lock.css'| asset_url | stylesheet_tag }}
+{%  style %}
+.section-{{ section.id }}-padding{
+padding-top:{{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+padding-bottom:{{ section.settings.padding_bottom | times: 0.75 |round: 0 }}px;
+}
+  @media screen and (min-width: 750px) {
+.section-{{ section.id }}-padding {
+padding-top: {{ section.settings.padding_top }}px;
+padding-bottom: {{ section.settings.padding_bottom }}px;
+}
+}
+{% endstyle %}
+<div class="{% if section.settings.width =='full-width' %}full-width{% elsif section.settings.width == 'wrapper-width' %}page-width {% else %}narrow-width{% endif %}">
+ <div  class="shoplock-wrapper">
+   <div class="shoplock-heading text-center">
+     {% if section.settings.title != blank %}
+       <h2 class="title">{{ section.settings.title }}</h2> 
+       {% endif %}
+   </div>
+   
+      <div class="shoplock-slider radius-30 borrder-all">
+        <div class="shoplock-container swiper">
+          <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="swiper-slide">
+         <div class="shoplock-image-container">
+          <div class="shoplock-image radius-30 overflow-hidden">
+            {% if block.settings.image != blank %}
+              <img src ="{{ block.settings.image |img_url:'615x768' }}">
+           {% endif %}
+          {% if block.settings.product_list1 != blank or block.settings.product_list2 != blank  or block.settings.product_list3 != blank or block.settings.product_list4 != blank%}
+           <div class="DotsBox">
+            {% if block.settings.product_list1 != blank  %}
+             <div data-index="0" class="dotsAnimate active dot-1" style="top: {{ block.settings.top_position_1 }}%; left: {{  block.settings.left_position_1 }}%;"></div>
+                {% endif %}
+             {% if block.settings.product_list2 != blank  %}
+                <div data-index="1" class="dotsAnimate dot-2" style="top: {{ block.settings.top_position_2 }}%; left: {{  block.settings.left_position_2 }}%;"></div>
+               {% endif %}
+            {% if block.settings.product_list3 != blank  %}
+                 <div data-index="2" class="dotsAnimate dot-3" style="top: {{ block.settings.top_position_3 }}%; left: {{  block.settings.left_position_3 }}%;"></div>
+                {% endif %}
+             {% if block.settings.product_list4 != blank  %}
+                <div data-index="3" class="dotsAnimate dot-4" style="top: {{ block.settings.top_position_4 }}%; left: {{  block.settings.left_position_4 }}%;"></div>
+               {% endif %}</div>
+            {% endif %}
+          </div>
+          
+          <div class= "shopock-productCard mobile-hide">
+            <div class="hideProduct desktop-hide" onclick="removemfixed(this)"><svg id="" data-name="Close Icon" xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 320 512" class="icon-close h-[17px] fill-secondary"><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"></path></svg></div>
+            <div class ="shopLock-product-wrapper">
+          {% if block.settings.product_list1 != blank or block.settings.product_list2 != blank  or block.settings.product_list3 != blank or block.settings.product_list4 != blank%}
+            <div class="shopock-product-container  swiper">
+          <div class="swiper-wrapper">
+            {% if block.settings.product_list1 != blank  %}
+             <div class="shopock-product swiper-slide">
+           {% assign product = all_products[block.settings.product_list1] %}
+            <div class="featured-product">
+               {% render 'product-grid', card_product:product %}
+            </div>
+            </div>
+           {% endif %}
+     
+
+           {% if block.settings.product_list2 != blank  %}
+             <div class="shopock-product swiper-slide">
+           {% assign product = all_products[block.settings.product_list2] %}
+            <div class="featured-product">
+               {% render 'product-grid', card_product:product %}
+            </div>
+            </div>
+           {% endif %}
+     
+           
+           {% if block.settings.product_list3 != blank  %}
+             <div class="shopock-product swiper-slide">
+           {% assign product = all_products[block.settings.product_list3] %}
+            <div class="featured-product">
+               {% render 'product-grid', card_product:product %}
+            </div>
+            </div>
+           {% endif %}
+
+              {% if block.settings.product_list4 != blank  %}
+             <div class="shopock-product swiper-slide">
+           {% assign product = all_products[block.settings.product_list4] %}
+            <div class="featured-product">
+               {% render 'product-grid', card_product:product %}
+            </div>
+            </div>
+           {% endif %}
+          </div>
+          </div>
+            {% endif %}
+            </div>
+          </div>
+         </div>
+            </div>
+        {% endfor %}
+          
+  </div>
+       <div class="swiper-button-next swiper-next"></div>
+       <div class="swiper-button-prev swiper-prev"></div>
+      </div>
+   </div>
+ </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Shop the look",
+    "settings": [
+         {
+        "type": "select",
+        "id": "width",
+        "label": "Page width",
+        "options": [
+          {
+            "value": "full-width",
+            "label": "Full Width"
+          },
+          {
+            "value": "wrapper-width",
+            "label": "Wrapper Width"
+          },
+          {
+            "value": "narrow-width",
+            "label": "Narrow width"
+          }
+        ]
+      },
+      
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading"
+        },
+      {
+          "type": "text",
+          "id": "sub-title",
+          "label": "Sub-Heading"
+        },
+      {
+      "type": "range",
+      "label": "Top Padding",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "step": 4,
+      "default": 36
+    },
+    {
+      "type": "range",
+      "label": "Bottom Padding",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "step": 4,
+      "default": 36
+    }
+    ],
+
+    "blocks":[
+     
+     {
+       "type": "block-1",
+       "name": "Block 1",
+       "settings": [
+                  {
+            "type":"image_picker",
+            "label":"Image",
+            "id":"image"
+          },
+         {
+           "type":"header",
+           "content":"products"
+         },
+        {
+             "type": "product",
+              "id": "product_list1",
+              "label": "Products"
+         },
+         {
+            "type": "range",
+            "label": "Top Possition",
+            "id": "top_position_1",
+            "min": 0,
+            "max": 100,
+            "unit": "%",
+            "step": 1,
+            "default": 50
+          },
+          {
+            "type": "range",
+            "label": "Left Position",
+            "id": "left_position_1",
+            "min": 0,
+            "max": 100,
+            "unit": "%",
+            "step": 1,
+            "default": 50
+          },
+          {
+             "type": "product",
+              "id": "product_list2",
+              "label": "Products"
+         },
+         {
+            "type": "range",
+            "label": "Top Possition",
+            "id": "top_position_2",
+            "min": 0,
+            "max": 100,
+            "unit": "%",
+            "step": 1,
+            "default": 80
+          },
+          {
+            "type": "range",
+            "label": "Left Position",
+            "id": "left_position_2",
+            "min": 0,
+            "max": 100,
+            "unit": "%",
+            "step": 1,
+            "default": 40
+          },
+          {
+             "type": "product",
+              "id": "product_list3",
+              "label": "Products"
+         },
+         {
+            "type": "range",
+            "label": "Top Possition",
+            "id": "top_position_3",
+            "min": 0,
+            "max": 100,
+            "unit": "%",
+            "step": 1,
+            "default": 30
+          },
+          {
+            "type": "range",
+            "label": "Left Position",
+            "id": "left_position_3",
+            "min": 0,
+            "max": 100,
+            "unit": "%",
+            "step": 1,
+            "default": 20
+          },
+          {
+             "type": "product",
+              "id": "product_list4",
+              "label": "Products"
+         },
+         {
+            "type": "range",
+            "label": "Top Possition",
+            "id": "top_position_4",
+            "min": 0,
+            "max": 100,
+            "unit": "%",
+            "step": 1,
+            "default": 50
+          },
+          {
+            "type": "range",
+            "label": "Left Position",
+            "id": "left_position_4",
+            "min": 0,
+            "max": 100,
+            "unit": "%",
+            "step": 1,
+            "default": 20
+          }
+       ]
+     }
+         ],
+     
+    
+ 
+    "presets":[{"name":"Shop the look"}]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

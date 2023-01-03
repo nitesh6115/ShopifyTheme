@@ -1,0 +1,133 @@
+ <div class="{% if secton.settings.width == 'full-width' %} {% endif %}">
+<div class="collection-content">
+  <div class="collection-carsoul-container">
+      <div class="collection-carsoul-text">
+        {% if section.settings.sub-title !=blank %}
+         {{ section.settings.sub-title }}
+          {% endif %}
+        {% if section.settings.title !=blank %}
+         <h1>{{ section.settings.title }}</h1>
+         {% endif %}
+         <div class="view-all-button">
+           {% if section.settings.show-view-all %}
+             <a href="{{ routes.collections_url }}">view all</a>
+             {% endif %}
+         </div>
+       </div>
+    <div class="collection-carsoul-bar">
+      <ul>
+      {% for link in section.settings.menu.links%}
+        <a href="{{ link.url }}">{{ link.title }}</a>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+<div class="collection-list-slider">
+{%  for  block in section.blocks %}
+   {% assign collection = collections[block.settings.collection] %}
+    <div class="collection-list-content">
+      <a href="{{ collection.url }}" class="collection-list-item">
+        {% if collection.image !=blank or collection.products.first != blank %}
+          <div class="collection-list-image">
+            <img src ="{{ collection.image|img_url:'160x160' }}">
+          </div>
+            {% elsif collection == empty %}
+        {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+        {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg placeholder-svg--small' }}
+        {% endif %}
+        <div class="collection-title">
+          <p>{{ collection.title }}</p>
+        </div>
+      </a>
+    </div>
+ {% endfor %}
+</div>
+</div>
+</div>
+<style> 
+.collection-list-content{
+  width:15%;
+  height: 160px;
+  margin-right: 10px;
+}
+</style>
+
+{% schema %}
+  {
+    "name": "Collection List",
+    "settings": [
+         {
+        "type": "select",
+        "id": "width",
+        "label": "Page width",
+        "options": [
+          {
+            "value": "full-width",
+            "label": "Full Width"
+          },
+          {
+            "value": "wrapper-width",
+            "label": "Wrapper Width"
+          },
+          {
+            "value": "narrow-width",
+            "label": "Narrow width"
+          }
+        ]
+      },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading"
+        },
+      {
+          "type": "text",
+          "id": "sub-title",
+          "label": "Heading"
+        },
+         {
+          "type": "link_list",
+          "id": "menu",
+          "label": "collection Bar"
+         },
+       {
+          "type": "checkbox",
+          "id": "show-view-all",
+          "label": "Enable View All Button"
+         },
+        {
+          "type": "range",
+          "id": "desktop_column",
+          "label": "Number Of Colunms On Desktop",
+          "max":5,
+          "min":3,
+          "step":1,
+          "default":5
+        }
+    ],
+    "blocks":[
+      {
+        "type":"featured_collection",
+        "name":"collection",
+        "settings":[
+          {
+            "type":"collection",
+            "label":"collecton",
+            "id":"collection"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"Collection List"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

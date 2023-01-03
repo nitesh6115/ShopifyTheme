@@ -1,0 +1,218 @@
+{% style %}
+.section-{{section.id}}-padding{
+  padding-top:{{section.settings.padding_top | times:0.75 | round:0 }}px;
+  padding-bottom:{{section.settings.padding_bottom | times:0.75 | round: 0}}px;
+}
+.section-{{section.id}}-padding h3,.section-{{section.id}}-padding a,.section-{{section.id}}-padding p, .section-{{section.id}}-padding{
+   color: {{ section.settings.text-color }};
+} 
+.section-{{section.id}}-padding  svg.icon {
+    fill: {{ section.settings.text-color }};
+}  
+@media screen and (min-width:750px){
+  .section-{{section.id}}-padding{
+    padding-top:{{section.settings.padding_top}}px;
+    padding-bottom:{{section.settings.padding_bottom}}px;
+  }
+}
+{% endstyle %}
+<footer class="footer section-{{section.id}}-padding" style="{% if section.settings.bgImage !=blank %}background: url({{section.settings.bgImage | img_url:''}});{% else %}{% if section.settings.bg-color != blank %}background:{{ section.settings.bg-color }};{% endif %} {% endif %}">
+  <div class="{% if section.settings.page-width == 'full-width' %} full-width {% elsif section.settings.page-width == 'wrapper-width' %} page-width {% else %} narrow-width {% endif %}">
+  <div class="footer-content-grid">
+    <div class="footer-top-wrapper">
+   {% for block in section.blocks %}
+     <div class="LinksInfo">
+     {% if block.settings.title != blank %}
+        <h3>{{ block.settings.title }}</h3>
+       {% endif %}
+   
+    <ul>
+      {% for link in block.settings.menu.links %}
+        <li><a class="snakify-in" href="{{ link.url }}">{{ link.title }}</a></li>
+      {% endfor %}
+    </ul>
+     </div>
+  {% endfor %}
+   <div class="newsletter-content-wrapper">
+    {%  if section.settings.sign-up-heading != blank %}
+     <h3>{{ section.settings.sign-up-heading }}</h3> 
+      {% endif %}
+      {% if section.settings.newsletter_richtext != blank %}
+        {{ section.settings.newsletter_richtext }}
+      {% endif %}
+      {% if section.settings.newsletter_enable %}
+      <div class="newsletter-form">
+       {% form 'customer' %}
+         <div class="email">
+          <input type="email" name="contact[email]" placeholder="Your Email Address" />
+         </div>
+        <div class="submit">
+          <input class="cta-btn" type="submit" value="Sign Up"/>
+         </div>
+        {% endform %}
+      </div> 
+      {% endif %}
+      {% if section.settings.show_social_icons %}
+     <div class="social-account">
+       {%- assign social_accounts = 'Facebook, Twitter, Pinterest, Instagram, Snapchat, Tumblr, YouTube, Vimeo,' | split: ', ' -%}
+         <ul>
+        {% for social in social_accounts %}
+          {%- assign social_handle = social | handleize -%}
+          {% capture social_link %}social_{{ social_handle }}_link{% endcapture %}
+          {% capture social_icon %}icon-{{ social_handle }}{% endcapture %}
+    
+          {% if settings[social_link] != blank %}
+            <li>
+              <a href="{{ settings[social_link] }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: social }}">
+                {% include social_icon %}
+              </a>
+            </li>
+          {% endif %}
+    
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}    
+  </div> 
+  </div>
+  
+
+  {% if section.settings.show_payment_icons %}
+    {% unless shop.enabled_payment_types == empty %}
+      <span class="visually-hidden">{{ 'layout.footer.payment_methods' | t }}</span>
+      <ul class="payment-icons">
+        {% for type in shop.enabled_payment_types %}
+          <li>
+            {{ type | payment_type_svg_tag: class: 'icon' }}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endunless %}
+  {% endif %}
+  </div>
+
+  <div class="bottom-footer">
+    <span> &copy; {{ 'now' | date: "%Y" }}| Alphalete Athletics LLC| All Rights Reserved</span>
+      <div><small> learn more | dream more | be more </small></div>
+  </div> 
+  </div>   
+</footer>
+
+{% schema %}
+  {
+    "name": "Footer",
+    "settings": [
+    {
+      "type": "color_background",
+      "id": "bg-color",
+      "label": " Background Color"
+     },
+      {
+	  "type": "image_picker",
+	  "id": "bgImage",
+	  "label": "Background Image"
+	},
+    {
+      "type": "color",
+      "id": "text-color",
+      "label": "Text Color",
+      "default": "#000"
+     },  
+     {
+        "type": "select",
+        "id": "page-width",
+        "label": "Page width",
+        "options": [
+          {
+            "value": "full-width",
+            "label": "Full Width"
+          },
+          {
+            "value": "wrapper-width",
+            "label": "Wrapper Width"
+          },
+          {
+            "value": "narrow-width",
+            "label": "Narrow width"
+          }
+        ]
+      },
+     
+      {
+        "type": "checkbox",
+        "id": "show_payment_icons",
+        "label": "Show payment icons",
+        "default": false
+      },
+        {
+        "type": "checkbox",
+        "id": "show_social_icons",
+        "label": "Show social icons",
+        "default": false
+      },
+      {
+        "type":"header",
+        "content":"EMAIL SIGNUP "
+      },
+     {
+        "type":"checkbox",
+        "label":"show email signup",
+        "id":"newsletter_enable"
+      },
+      {
+        "type":"text",
+        "label":"Heading",
+        "id":"sign-up-heading"
+      },
+       {
+        "type":"richtext",
+        "label":"Newsletter Contetnt",
+        "id":"newsletter_richtext"
+      },
+      {
+        "type":"header",
+        "content":"SECTION PADDIG"
+      },
+       {
+          "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 36
+    }
+    ],
+    "blocks":[
+      {
+        "type":"text",
+        "name":"content",
+        "settings":[
+          {
+            "type":"text",
+            "label":"Heading",
+            "id":"title"
+          },
+         {
+        "type": "link_list",
+        "id": "menu",
+        "label": "First menu",
+        "default": "footer"
+        }
+        ]
+      }
+    ]
+  }
+
+{% endschema %}

@@ -1,0 +1,502 @@
+<link rel="stylesheet" href="{{ 'video-image-block.css' | asset_url}}" />
+{%  style %}
+.section-{{ section.id }}-padding{
+padding-top:{{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+padding-bottom:{{ section.settings.padding_bottom | times: 0.75 |round: 0 }}px;
+}
+  @media screen and (min-width: 750px) {
+.section-{{ section.id }}-padding {
+padding-top: {{ section.settings.padding_top }}px;
+padding-bottom: {{ section.settings.padding_bottom }}px;
+}
+}
+{% endstyle %}
+<div class="section-{{ section.id}}-padding">
+<div class="{% if section.settings.width =='full-width' %}full-width{% elsif section.settings.width =='wrapper-width'%}page-width {% else %}narrow-width{% endif%}">
+<div class="videoImage-container ItemSize-{{ section.blocks.size }}">
+{% for block in section.blocks %}
+  {% if section.blocks.size == 3 and forloop.index == 2 %}
+<div class="RigthBlock">
+    {% endif %}
+  <div class="BoxItems {% if section.blocks.size == 3 and forloop.index == 1 %}LeftBlock{% endif %}">
+{% if block.type == 'video' %}
+ 
+  <div class="video-with-text hover-zoom">
+  {% if block.settings.video_link != blank and block.settings.video_link contains '.mp4' %}
+    <div class="video-box overflow-hidden radius-30">
+      {% if block.settings.mobile_video_link != blank %}
+        <video class="video-js desktop-hide" loop autoplay preload="none" muted playsinline >
+            <source src="{{ block.settings.mobile_video_link }}" type="video/mp4">
+        </video>
+        {% endif %}
+        <video class=" video-js {% if block.settings.mobile_video_link !=blank %}mobile-hide{% endif %}" loop autoplay preload="none" muted playsinline >
+            <source src="{{ block.settings.video_link }}" type="video/mp4">
+        </video>
+    </div>
+    {% endif %}
+   
+    <div class="text-box banner-content-{{ block.settings.desktop_content_position}}" style="color:{{ block.settings.text-color}}">
+        <div class="overlay-opacity" style="{{ block.settings.overlay_opacity_color  }}; opacity: {{ block.settings.overlay_opacity }}"></div>
+        {% if block.settings.title !=blank %}
+        <h1>{{ block.settings.title }}</h1>
+        {% endif %}
+        {% if block.settings.sub-title !=blank %}
+        <h2>{{ block.settings.sub-title }}</h2>
+        {% endif %}
+        {% if block.settings.text !=blank %}
+        <div class="rte">{{ block.settings.text }}</div>
+        {% endif %}
+        <div class="button-box btn_color{{ block.id }}">
+      {%  style %}
+         .btn_color{{ block.id }} .cta-btn{
+           color: {{ block.settings.btn_color }};
+           background: {{ block.settings.btn_bg }};
+         }
+         .btn_color{{ block.id }} .cta-btn.secondary-btn{
+           color: {{ block.settings.sec_btn_color }};
+           background: {{ block.settings.sec_btn_bg }};
+         }
+         .btn_color{{ block.id }} .cta-btn:hover{
+           color: {{ block.settings.btn_hover_color }};
+           background: {{ block.settings.btn_hover_bg }};
+         }
+         .btn_color{{ block.id }} .cta-btn.secondary-btn:hover{
+           color: {{ block.settings.sec_btn_hover_color }};
+           background: {{ block.settings.sec_hover_btn_bg }};
+         }
+        {% endstyle %}
+        {% if block.settings.button_label !=blank or block.settings.button_link !=blank %}
+        <a href="{{ block.settings.button_link }}" class="cta-btn">{{ block.settings.button_label }}</a>
+        {% endif %}
+        
+        {% if block.settings.second_button_label !=blank or block.settings.second_button_link !=blank %}
+        <a href="{{ block.settings.second_button_link }}" class="cta-btn secondary-btn">{{ block.settings.second_button_label }}</a>
+        {% endif %}
+        </div>
+           
+        </div>
+    </div>
+   
+    {% endif %}
+	
+	
+    {% if block.type == 'image' %}
+    
+  <div class="image-with-text hover-zoom"> 
+  {% if block.settings.image_bg != blank %}
+    <div class="image-box overflow-hidden radius-30">
+      {% if  block.settings.mobile_image_bg != blank %}
+         <img class="desktop-hide" lazy src="{{ block.settings.mobile_image_bg  | img_url:'768x'}}">
+        {% endif %}
+        <img class="{% if block.settings.mobile_image_bg != blank %}mobile-hide{% endif %}" lazy src="{{ block.settings.image_bg  | img_url:'1400x'}}">
+    </div>
+    {% endif %}
+    <div class="text-box banner-content-{{ block.settings.desktop_content_position}}" style="color:{{ block.settings.text-color}}">
+        <div class="overlay-opacity" style="{{ block.settings.overlay_opacity_color  }}; opacity: {{ block.settings.overlay_opacity }}"></div>
+        {% if block.settings.title !=blank %}
+        <h1>{{ block.settings.title }}</h1>
+        {% endif %}
+        {% if block.settings.sub-title !=blank %}
+        <h2>{{ block.settings.sub-title }}</h2>
+        {% endif %}
+        {% if block.settings.text !=blank %}
+        <div class="rte">{{ block.settings.text }}</div>
+        {% endif %}
+        <div class="button-box btn_color{{ block.id }}">
+      {%  style %}
+         .btn_color{{ block.id }} .cta-btn{
+           color: {{ block.settings.btn_color }};
+           background: {{ block.settings.btn_bg }};
+         }
+         .btn_color{{ block.id }} .cta-btn.secondary-btn{
+           color: {{ block.settings.sec_btn_color }};
+           background: {{ block.settings.sec_btn_bg }};
+         }
+         .btn_color{{ block.id }} .cta-btn:hover{
+           color: {{ block.settings.btn_hover_color }};
+           background: {{ block.settings.btn_hover_bg }};
+         }
+         .btn_color{{ block.id }} .cta-btn.secondary-btn:hover{
+           color: {{ block.settings.sec_btn_hover_color }};
+           background: {{ block.settings.sec_hover_btn_bg }};
+         }
+        {% endstyle %}
+        {% if block.settings.button_label !=blank or block.settings.button_link !=blank %}
+        <a href="{{ block.settings.button_link }}" class="cta-btn">{{ block.settings.button_label }}</a>
+        {% endif %}
+        
+        {% if block.settings.second_button_label !=blank or block.settings.second_button_link !=blank %}
+        <a href="{{ block.settings.second_button_link }}" class="cta-btn secondary-btn">{{ block.settings.second_button_label }}</a>
+        {% endif %}
+        </div>
+           
+        </div>
+    </div>
+{% endif %}
+</div>
+   {% if section.blocks.size == 3 and forloop.index == 3 %}
+</div>
+    {% endif %}
+{% endfor %}
+ </div>
+</div>
+</div>
+{% schema %}
+{
+  "name": "Video With Image",
+    "max_blocks": 3,
+  "settings": [
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Page width",
+      "options": [
+        {
+          "value": "full-width",
+          "label": "Full Width"
+        },
+        {
+          "value": "wrapper-width",
+          "label": "Wrapper Width"
+        },
+        {
+          "value": "narrow-width",
+          "label": "Narrow width"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "label": "Top Padding",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "step": 4,
+      "default": 36
+    },
+    {
+      "type": "range",
+      "label": "Bottom Padding",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "step": 4,
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "url",
+          "id": "video_link",
+          "label": "Desktop Video link"
+        },
+        {
+          "type": "url",
+          "id": "mobile_video_link",
+          "label": "Mobile Video link"
+        },
+        {
+          "type": "range",
+          "id": "overlay_opacity",
+          "label": "Overlay opacity",
+          "min": 0,
+          "max": 99,
+          "step": 1,
+          "unit": "%",
+          "default": 0
+        },
+        {
+          "type": "color",
+          "id": "overlay_opacity_color",
+          "label": "Overlay opacity Color",
+          "default": "#000"
+        },
+        {
+          "type": "header",
+          "content": "Text"
+        },
+        {
+          "type": "color",
+          "id": "text-color",
+          "label": "Heading Color"
+        },
+        {
+          "type": "select",
+          "id": "desktop_content_position",
+          "label": "Desktop Content Position",
+          "options": [
+            {
+              "value": "bottom-center",
+              "label": "Bottom Center"
+            },
+            {
+              "value": "left-bottom",
+              "label": "Left Bottom"
+            },
+            {
+              "value": "right-bottom",
+              "label": "Right Bottom"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "sub-title",
+          "label": "Sub Heading"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Description"
+        },
+        {
+          "type": "color",
+          "id": "color_text",
+          "label": "Text color"
+        },
+        
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "First Button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "First Button link"
+        },
+        {
+          "type": "color_background",
+          "id": "btn_bg",
+          "label": "Button Background",
+          "default": "linear-gradient(#ffffff, #ffffff)"
+        },
+        {
+          "type": "color",
+          "id": "btn_color",
+          "label": "Button Text Color",
+          "default": "#000"
+        },
+        {
+          "type": "color_background",
+          "id": "btn_hover_bg",
+          "label": "Button Hover Background",
+          "default": "linear-gradient(#ffffff, #ffffff)"
+        },
+        {
+          "type": "color",
+          "id": "btn_hover_color",
+          "label": "Button Hover Color",
+          "default": "#000"
+        },
+        {
+          "type": "text",
+          "id": "second_button_label",
+          "label": "Second Button label"
+        },
+        {
+          "type": "url",
+          "id": "second_button_link",
+          "label": " Second Button link"
+        },
+         {
+          "type": "color_background",
+          "id": "sec_btn_bg",
+          "label": "Button Background",
+          "default": "linear-gradient(#ffffff, #ffffff)"
+        },
+        {
+          "type": "color",
+          "id": "sec_btn_color",
+          "label": "Button Color",
+          "default": "#000"
+        },
+        {
+          "type": "color_background",
+          "id": "sec_btn_hover_bg",
+          "label": "Button Hover Background",
+          "default": "linear-gradient(#ffffff, #ffffff)"
+        },
+        {
+          "type": "color",
+          "id": "sec_btn_hover_color",
+          "label": "Button Hover Color",
+          "default": "#000"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_bg",
+          "label": "Desktop Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_image_bg",
+          "label": "Mobile Image"
+        },
+        {
+          "type": "range",
+          "id": "overlay_opacity",
+          "label": "Overlay opacity",
+          "min": 0,
+          "max": 99,
+          "step": 1,
+          "unit": "%",
+          "default": 0
+        },
+        {
+          "type": "color",
+          "id": "overlay_opacity_color",
+          "label": "Overlay opacity Color",
+          "default": "#000"
+        },
+        {
+          "type": "header",
+          "content": "Text"
+        },
+        {
+          "type": "color",
+          "id": "text-color",
+          "label": "Heading Color"
+        },
+        {
+          "type": "select",
+          "id": "desktop_content_position",
+          "label": "Desktop Content Position",
+          "options": [
+            {
+              "value": "bottom-center",
+              "label": "Bottom Center"
+            },
+            {
+              "value": "left-bottom",
+              "label": "Left Bottom"
+            },
+            {
+              "value": "right-bottom",
+              "label": "Right Bottom"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Image slide",
+          "label": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "sub-title",
+          "label": "Sub Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Description"
+        },
+        {
+          "type": "color",
+          "id": "color_text",
+          "label": "Text color"
+        },
+ 
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "First Button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "First Button link"
+        },
+        {
+          "type": "color_background",
+          "id": "btn_bg",
+          "label": "Button Background",
+          "default": "linear-gradient(#ffffff, #ffffff)"
+        },
+        {
+          "type": "color",
+          "id": "btn_color",
+          "label": "Button Text Color",
+          "default": "#000"
+        },
+        {
+          "type": "color_background",
+          "id": "btn_hover_bg",
+          "label": "Button Hover Background",
+          "default": "linear-gradient(#ffffff, #ffffff)"
+        },
+        {
+          "type": "color",
+          "id": "btn_hover_color",
+          "label": "Button Hover Color",
+          "default": "#000"
+        },
+        {
+          "type": "text",
+          "id": "second_button_label",
+          "label": "Second Button label"
+        },
+        {
+          "type": "url",
+          "id": "second_button_link",
+          "label": " Second Button link"
+        },
+         {
+          "type": "color_background",
+          "id": "sec_btn_bg",
+          "label": "Button Background",
+          "default": "linear-gradient(#ffffff, #ffffff)"
+        },
+        {
+          "type": "color",
+          "id": "sec_btn_color",
+          "label": "Button Color",
+          "default": "#000"
+        },
+        {
+          "type": "color_background",
+          "id": "sec_btn_hover_bg",
+          "label": "Button Hover Background",
+          "default": "linear-gradient(#ffffff, #ffffff)"
+        },
+        {
+          "type": "color",
+          "id": "sec_btn_hover_color",
+          "label": "Button Hover Color",
+          "default": "#000"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video With Image"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

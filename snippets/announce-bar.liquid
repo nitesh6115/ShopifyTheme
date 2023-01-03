@@ -1,0 +1,90 @@
+<link rel="stylesheet"href="{{ 'swiper.css' | asset_url }}"/>
+<script src="{{ 'swiper.js' | asset_url }}"></script>
+{% if section.settings.show-announcement %}
+  <div class="announce-wrapper">
+    <div class= "announce-slider-{{ section.id }} swiper-container">       
+    <div class="annouce-bar swiper-wrapper">
+      {% for block in section.blocks %}
+      <div class="announce-text swiper-slide " {{ block.shopify_attributes }}>
+        {% if block.settings.title != blank %}
+        {{ block.settings.title }}
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    </div>
+    
+      <div class="announce-left-bar mobile-hide">
+        <div class="info">
+        <ul>
+          {% for link in section.settings.info-menu.links %}
+            <li>
+              <a class="snakify-in" href="{{ link.url }}">{{ link.title }}</a>
+              {% if link.links.size > 0 %}
+              <ul>
+              {% for child_link in link.links %}
+                <li>
+                  <a class="snakify-in" href="{{ child_link.url }}">{{ child_link.title }}</a>
+                  </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+            </li>
+            {% endfor %}
+            {% if shop.customer_accounts_enabled  %}
+<li>
+            <a class="snakify-in" href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{% endif %}">
+                  {%- if customer -%}Logout{% else %}Login{% endif %}
+           </a>
+                </li>
+          
+          {%endif %}
+        </ul>
+        </div>
+      </div>
+
+ </div>
+ 
+{% endif %}
+<script>
+ const swiper = new Swiper('.announce-slider-{{ section.id }}.swiper-container', {
+       loop:true,
+        autoplay:true,
+       slidesPerView: 1,
+   spaceBetween: 10,
+
+   });
+</script>
+{% if request.design_mode %}
+<script>
+ document.addEventListener('shopify:block:select', function(event) {
+   const swiper = new Swiper('.announce-slider-{{ section.id }}.swiper-container', {
+       loop:true,
+        autoplay:true,
+       slidesPerView: 1,
+    });
+
+ });
+document.addEventListener('shopify:block:deselect', function(event) {
+var elem = document.querySelector('.announce-slider-{{ section.id }}')[0];
+  
+  elem.Swiper('destroy');
+   alert('block dest');
+});
+
+//  section load===============
+ document.addEventListener('shopify:section:load', function(event) {
+const swiper = new Swiper('.announce-slider-{{ section.id }}.swiper-container', {
+       loop:true,
+        autoplay:true,
+       slidesPerView: 1,
+    });
+});
+
+document.addEventListener('shopify:section:unload', function(event) {
+var elem = document.querySelector('.announce-slider-{{ section.id }}')[0];
+ elem.Swiper('destroy');
+  alert('block dest');
+});
+</script> 
+{% endif %}

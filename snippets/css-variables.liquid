@@ -1,0 +1,64 @@
+<style>
+  {{ settings.font_body | font_face }}
+  {{ settings.main-font-heading| font_face }}
+  {{ settings.font-heading | font_face }}
+  {{ settings.button-font | font_face }}
+  
+
+  
+  {%- assign font_body_bold = settings.font_body | font_modify: 'weight', 'bolder' -%}
+  {%- assign font_body_bold_italic = font_body_bold | font_modify: 'style', 'italic' -%}
+
+  {{ font_body_bold | font_face }}
+  {{ font_body_bold_italic | font_face }}
+
+  :root {
+          --body-background-color:{{ settings.bg-color}};
+          --body-background-light-color:{{ settings.body-bg-light-color}};
+          --body-text-color:{{ settings.body-text-color}};
+          --body-link-color: {{ settings.body-link-color }};
+          --body-font-size:{{ settings.body-font-size}}px;  
+          --button-background-color:{{ settings.button-bg-color}};
+          --button-text-color:{{ settings.button-text-color}};
+          --button-border-color:{{ settings.button-border-color}};
+          --button-hover-background-color:{{ settings.color-on-hover}};    
+          --button-hover-text-color:{{ settings.text-color-on-hover}};
+          --button-hover-border-color:{{ settings.button-hover-border-color}};
+    
+          --button-border-thickness:{{ settings.button-border-thickness}}px;
+          --button-border-radius:{{ settings.button-radius}}px;
+          --button-top-padding:{{ settings.button-top-padding}}px;
+          --button-left-padding:{{ settings.button-left-padding}}px;
+          --button-right-padding:{{ settings.button-right-padding}}px;
+          --button-bottom-padding:{{ settings.button-bottom-padding}}px;
+    
+          --main-heading-color:{{ settings.main-heading-color}};
+          --heading-color:{{ settings.heading-color}};
+    
+          --input-text-color:{{ settings.input-text-color}};
+          --input-background-color:{{ settings.input-bg-color}};
+          --input-border-color:{{ settings.input-border-color}};
+          --input-border-thickness:{{ settings.input-border-thickness}}px;
+          --input-border-radius:{{ settings.input-border-radius}}px;  
+    
+          --body-layout:{{ settings.page-width}}px;
+          --website-narrow-width:{{ settings.narrow-width}}px;
+          --website-wrapper-width:{{ settings.wrapper-width}}px;
+          --wbsite-left-padding:{{ settings.layout-padding-left}}px;
+          --wbsite-right-padding:{{ settings.layout-padding-right}}px;
+    
+          --main-fontheading-size:{{settings.mainheading-font-size}}px;
+          --font-heading-size:{{settings.font-heading-size}}px;
+          --button-font-size:{{settings.button-font-size}}px;
+          --flash-wrapper-image:{{settings.flash-image}};
+          --site-link-color:{{settings.link-color}};
+               
+    
+    --color-border: {{ settings.border-color }};
+    --font-heading: {{ settings.font_heading.family }}, {{ settings.font_heading.fallback_families }};
+    --font-body: {{ settings.font_body.family }}, {{ settings.font_body.fallback_families }};
+    --font-body-weight: {{ settings.font_body.weight }};
+    --font-body-style: {{ settings.font_body.style }};
+    --font-body-bold-weight: {{ font_body_bold.weight | default: 'bold' }};
+  }
+</style>

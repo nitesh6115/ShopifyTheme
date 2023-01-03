@@ -1,0 +1,36 @@
+{%  if settings.flash-image  != blank %}
+<div class="flash-wrapper" id="flashWrapper">
+<div class="flashimage">
+<img style="width: 100vw; height: 100vh; object-fit: cover;" src="{{ settings.flash-image | img_url: 'master' }}" alt="flash-image"/>
+</div>
+</div>
+<style>
+.flash-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--body-background-color);
+  bottom: 0;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s ease all;
+}
+  .flash-wrapper.in-active{
+    opacity: 0;
+    visibility: hidden;
+  }
+</style>
+<script>
+const myTimeout = setTimeout(myGreeting, 2000);
+
+function myGreeting() {
+  document.getElementById("flashWrapper").classList.add('in-active');
+}
+window.addEventListener("beforeunload", (event) => {
+    document.getElementById("flashWrapper").classList.remove('in-active');
+})
+</script>
+  {% endif %}

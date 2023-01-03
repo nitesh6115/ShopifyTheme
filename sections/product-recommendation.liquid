@@ -1,0 +1,151 @@
+{% style %}
+.recommended-products{
+  display:flex;
+}
+  {% endstyle %}
+
+<div class="product-recommendations" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=5">
+  {%- if recommendations.performed and recommendations.products_count > 0 -%}
+    
+    <div class="page-width">
+      <h2>You may also like</h2>
+      <div class="recommended-products collection-list swiper">
+    <div class="swiper-wrapper">
+      {%- for product in recommendations.products -%}
+        <div class="featured-product swiper-slide">
+               {% render 'product-grid', card_product:product %}
+            </div>
+       
+      {%- endfor -%}
+    
+    </div>
+        <div class="tabingNext swiper-button-next swiper-next"></div>
+        <div class="tabingPrev swiper-button-prev swiper-prev"></div>
+      </div>
+    </div>
+  {%- endif -%}
+</div>
+
+<script>
+  const handleIntersection = (entries, observer) => {
+    if (!entries[0].isIntersecting) return;
+
+    observer.unobserve(productRecommendationsSection);
+
+    const url = productRecommendationsSection.dataset.url;
+// console.log(url );
+    fetch(url)
+      .then(response => response.text())
+      .then(text => {
+        const html = document.createElement('div');
+        html.innerHTML = text;
+        const recommendations = html.querySelector('.product-recommendations');
+        // console.log(recommendations);
+
+        if (recommendations && recommendations.innerHTML.trim().length) {
+          productRecommendationsSection.innerHTML = recommendations.innerHTML;
+              var CollectionSlider = document.querySelectorAll('.collection-list');
+    CollectionSlider.forEach(item=>{
+     // console.log(item)
+    var nextbutton = item.querySelectorAll('.tabingNext')[0];
+     var prebutton = item.querySelectorAll('.tabingPrev')[0];  
+     //console.log(nextbutton)
+    const swiperTabs = new Swiper(item, {
+    
+    slidesPerView: 2,
+    spaceBetween:15,
+    initialSlide: 0,
+    navigation: {
+      nextEl: nextbutton,
+      prevEl: prebutton,
+      },
+    breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+    1366: {
+      slidesPerView: 5,
+      
+    },
+    },
+    })
+    })
+
+           var collcetionImageSlider = document.querySelectorAll('.product-image-wrapper');
+            collcetionImageSlider.forEach(item => {
+                var newElem = item.closest('.product-image-container')
+                var nextbutton = newElem.querySelectorAll('.swiper-button-next')[0];
+                var prebutton = newElem.querySelectorAll('.swiper-button-prev')[0];
+                const swiperTabs = new Swiper(item, {
+                    loop: true,
+                    allowTouchMove: false, 
+                    autoplay: 7000,
+                    speed: 300,
+                    noSwiping: true,
+                    slidesPerView: 1,
+                    initialSlide: 0,
+                    effect: 'fade',
+                    navigation: {
+                        nextEl: nextbutton,
+                        prevEl: prebutton,
+                    },
+                })
+                var swp = item.swiper
+                item.addEventListener("mouseover", function() {
+                    swp.autoplay.start();
+                })
+                item.addEventListener("mouseout", function() {
+                    swp.autoplay.stop();
+                })
+            });
+            var variantImages = document.querySelectorAll('.prodouct-variant-slider');
+            variantImages.forEach(slider => {
+                var swiperActive = slider.querySelectorAll('.size-selector')[0];
+                // console.log("this"+swiperActive);
+                if (swiperActive !== '') {
+                    swiperActive.classList.add('active')
+                    var label = swiperActive.querySelectorAll('label')[0];
+                    label.click()
+                    const slideritam = new Swiper(slider, {
+                        slidesPerView: 5,
+                        initialSlide: 0,
+                        spaceBetween: 5,
+                        draggable: true,
+                    })
+                }
+            })
+        }
+      })
+      .catch(e => {
+        console.error(e);
+      });
+  };
+
+  const productRecommendationsSection = document.querySelector('.product-recommendations');
+    
+  const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
+
+  observer.observe(productRecommendationsSection);
+
+</script>
+
+
+{% schema %}
+  {
+    "name": "Product Recommendtions",
+    "settings": [
+      {
+      "type":"text",
+      "label":"Heading",
+      "id":"heading"
+     }
+    ],
+    "presets":[{"name":"Product Recommendtions"}]
+  }
+
+  
+{% endschema %}
+

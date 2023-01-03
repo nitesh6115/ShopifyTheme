@@ -1,0 +1,161 @@
+<link rel="stylesheet" href="{{ 'main-product.css' | asset_url }}">
+ 
+{% style %}
+.section-{{ section.id }}-padding {
+padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+}
+@media screen and (min-width: 750px) {
+.section-{{ section.id }}-padding {
+padding-top: {{ section.settings.padding_top }}px;
+padding-bottom: {{ section.settings.padding_bottom }}px;
+}
+}
+{% endstyle %}
+
+<div class="section-{{ section.id }}-padding">
+  <div class="featured-product">
+{% form 'product',product, id: product_form_id, class: 'form', data-type: 'add-to-cart-form' %}
+<div class="{% if section.settings.width == 'full-width'%}full-width{% elsif section.settings.width =='wrapper-width'%}page-width{% else %}narrow-width{% endif %}">
+ <div class ="product-grid">
+   <div class="box-1">
+    <h2>{{ product.title }}</h2>
+    <p>{{ product.price| money_with_currency }}</p>
+  </div>
+  <div class="box-2">
+  <div class="FeaturedImages">
+    {% for option in product.options_with_values %}
+       {% if option.name == 'Color' %}
+         {% for value in option.values %}
+           {% for image in product.images %}
+             {% if image.alt == value %}
+              <img  class="borrder-all radius-20" src="{{ image.src | img_url: '1024x' }}">
+             {% endif %}
+             {% endfor %}
+           {% break %}
+          {% endfor %}
+         {% endif %}
+      {% endfor %}
+  </div>
+   </div>
+  <div class="box-3">
+    <div class="images-grid">
+         {% for option in product.options_with_values %}
+          {% if option.name == 'Color'%}
+            <p class="colorNameBox"><span class="TotalColorSize">{{ option.values | size }} Colors</span><span class="SelectedColor">{{ option.values[0] }}</span></p>
+           <div class="ColorOptionBox">
+            {% for value in option.values %}
+            {% for image in product.images %}
+            {% if image.alt == value %}
+              <div class="size-selector" data-title="{{ value | escape }}">
+             <input  class="VarImage"
+                 id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" 
+                 type="radio"
+                 name="{{ option.name }}" 
+                 value="{{ value | escape }}"
+                 data-index="option{{index}}" {% if option.selected_value==value
+                %}checked="true" {% endif %} />
+               <label type="color" data-title="{{ value | escape }}">
+               <div class="variant-images radius-5 overflow-hidden">
+                  <img  src="{{image.src| img_url: '60x60' }}">
+                 </div>
+                 </label>
+            </div>
+            {% break %}
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
+            {% endif %}
+           {% endfor %}
+           </div>
+     
+   </div>
+    <div class="size-grid">
+      <div class="selector-wrapper">
+        <div class="size-guide">
+          <p>size</p>
+          {% if product.options contains 'Size' %}
+            <a class="trigger-pop-up">size guide</a>
+            {% endif %}
+        </div> 
+      {% for option in product.options_with_values %}
+        {% if option.name == 'Size' %} 
+           {% for value in option.values %}
+              <div class="size-selector" onclick="SelectVariant(this)" data-title="{{ value | escape }}">
+             <input class="single-option-selector" 
+                 id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" 
+                 type="radio"
+                 name="{{ option.name }}" 
+                 value="{{ value | escape }}"
+                 data-index="option{{index}}" {% if option.selected_value==value
+                %}checked="true" {% endif %} />
+               <label type="size" data-title="{{ value |escape }}">
+                {{ value }}
+              </label>
+             </div>
+             {% endfor %}
+        {% endif %}
+      {% endfor %} 
+      </div>
+    </div> 
+    <div class="add-to-cart">
+      Select Size 
+   </div> 
+   </div>
+ </div>
+</div>
+{% endform %}
+</div>
+</div>
+{% schema %}
+  {
+    "name": "Product",
+    "settings": [
+    {
+        "type": "select",
+        "id": "width",
+        "label": "Page width",
+        "options": [
+          {
+            "value": "full-width",
+            "label": "Full Width"
+          },
+          {
+            "value": "wrapper-width",
+            "label": "Wrapper Width"
+          },
+          {
+            "value": "narrow-width",
+            "label": "Narrow width"
+          }
+        ]
+      },
+      {
+          "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "padding_bottom",
+      "default": 36
+    }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
