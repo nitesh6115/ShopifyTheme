@@ -1,0 +1,105 @@
+.featured-product .page-width {
+    MAX-WIDTH: 1650PX;
+}
+
+.product-grid {
+    width: 100%;
+    grid-template-columns: 1fr 2fr 1fr;
+    display: grid;
+    align-items: flex-start;
+}
+
+.product-grid .box-2 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.product-grid .box-1 {
+  grid-template-columns: 1fr;
+  min-height: calc(100vh - 80px + 3rem);
+  position: -webkit-sticky;
+  position: sticky;top: calc(80px + 3rem);
+  align-content: center;
+  display: grid;
+  gap: 2rem;
+  z-index: 3;
+}
+
+.product-grid .box-3 {
+  grid-template-columns: 1fr;
+  min-height: calc(100vh - 80px + 3rem);
+  position: -webkit-sticky;
+  position: sticky;
+  top: calc(80px + 3rem);
+  align-content: center;
+  display: grid;
+  gap: 2rem;
+  z-index: 3;
+}
+.FeaturedImages {
+    padding: 0 30px;
+}
+.product-grid .box-2 img.borrder-all.radius-20 {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+.ColorOptionBox {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+}
+
+.size-grid .selector-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.size-grid {}
+
+.size-grid .selector-wrapper .size-guide {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.size-grid .selector-wrapper .size-guide a.trigger-pop-up {
+    width: auto;
+    padding: 2px 10px;
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+.size-grid .selector-wrapper .size-selector {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--color-border);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.size-grid .selector-wrapper .size-selector.active {
+    background: var(--body-text-color);
+}
+
+.add-to-cart {
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 1px solid var(--color-border);
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.ColorOptionBox .size-selector {
+    padding-right: 8px;
+}
+
+

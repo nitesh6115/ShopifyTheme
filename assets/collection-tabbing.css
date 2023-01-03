@@ -1,0 +1,54 @@
+/*   .tabimage,.TabHeader {
+ position: absolute;
+ left: 0;
+ width: 100%;
+ visibility: hidden;
+ opacity: 0;
+ transition: all .5s ease;   
+}
+.tabimage.active,.TabHeader.active {
+ position: relative;
+ width: 100%;
+ visibility: visible;
+ opacity: 1;
+ transition: all .5s ease;   
+} */
+.Tabing-Header, .CarsoulBox {
+    position: relative;
+}
+.collection-list.swiper {
+    overflow: inherit;
+}
+.collection-wrapp .tabimage.swiper-slide .page-width {
+    opacity: 0;
+    visibility: hidden;
+    transition: .7s ease all;
+}
+
+.collection-wrapp .tabimage.swiper-slide.swiper-slide-active .page-width{
+    opacity: 1;
+    visibility: visible;
+}
+.HederTabBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.tablinks.active{
+    background: var(--button-background-color);
+    color: var(--button-text-color);
+}
+.Tabbing-Title {
+    display: table;
+    border: 2px solid var(--color-border);
+    padding: 2px;
+    border-radius:9999px;
+    cursor: pointer;
+}
+.tablinks {
+    padding: 5px 20PX;
+    border-radius: 9999px;
+    margin: 0 8px;
+    display: table-cell;
+}

@@ -1,0 +1,139 @@
+.shoplock-image-container {
+    display:block
+}
+.shoplock-slider img {
+  width: 100%;
+  float:left;
+}
+.shoplock-image{
+ width: 50%;
+ float:left;
+ position: relative; 
+}
+.shopock-productCard{
+   width: 50%;
+  float:right;
+   position: relative;
+}
+.shoplock-wrapper .shoplock-slider .shoplock-image-container {
+    display: flex;
+    align-items: center;
+}
+
+.shoplock-wrapper .shoplock-slider .shoplock-image-container .shopLock-product-wrapper {
+    position: relative;
+    overflow: hidden;
+    max-width: 350px;
+    margin: 0 auto;
+}
+.shoplock-wrapper .shoplock-slider .shoplock-image-container .shopLock-product-wrapper .featured-product {
+    max-width: 350px;
+    margin: 0 auto;
+}
+.dotsAnimate {
+    background: #fff;
+    border: 1px solid transparent;
+    border-radius: 100%;
+    box-shadow: 0 0 1rem #0d0d0d80;
+    display: inline-block;
+    height: 10px;
+    margin: -5px 0 0 -5px;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform .25s ease-in-out;
+    width: 10px;
+    z-index: 3;
+}
+
+.DotsBox {
+    width: 100%;
+}
+
+.dotsAnimate:after {
+    -webkit-animation: section-shop-the-look-dot 1.4s ease-in-out infinite;
+    animation: section-shop-the-look-dot 1.4s ease-in-out infinite;
+    background: #fff;
+    border-radius: 100%;
+    content: "";
+    height: 30px;
+    left: calc(50% - 15px);
+    opacity: .4;
+    position: absolute;
+    top: calc(50% - 15px);
+    width: 30px;
+}
+.dotsAnimate.active {
+    transform: scale(1.3);
+}
+.shoplock-container > .swiper-button-next.swiper-next {
+    right: 30px;
+}
+
+.shoplock-container > .swiper-button-next.swiper-next::after {
+    font-size: 12px;
+    color: #fff;
+}
+.shoplock-container > .swiper-button-prev.swiper-prev {
+    left: 30px;
+}
+.shoplock-slider {
+    transition: .5s cubic-bezier(.93,-.01,0,1.02);
+}
+@media(max-width:767px){
+  .shoplock-slider.m_fixed .shopock-productCard.mobile-hide {
+    display: block !important;
+}
+  .shoplock-slider.m_fixed .swiper-button-next.swiper-next {
+    display: none;
+}
+.shoplock-slider.m_fixed {
+    position: fixed;
+    top: -30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    width: 100%;
+    background: var(--body-background-color);
+}
+
+.shoplock-slider.m_fixed .shoplock-image {height: 64vh;}
+.hideProduct.desktop-hide {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 30px;
+    top: -40px;
+    border: 1px solid var(--color-border);
+    border-radius: 100%;
+    cursor: pointer;
+    background: var(--body-text-color);
+    transition: .5s ease all;
+}
+
+.hideProduct.desktop-hide svg {
+    width: 35px;
+    height: 35px;
+    fill: var(--body-background-color);
+    padding: 10px;
+}
+
+.hideProduct.desktop-hide:hover {
+    transform: scale(1.1);
+}
+.shoplock-slider.m_fixed .featured-product {
+    max-width: 200px !important;
+}
+.shoplock-image {
+    width: 100%;
+}
+
+.shoplock-wrapper .shoplock-slider .shoplock-image-container {
+    flex-wrap: wrap;
+}
+
+.shopock-productCard {
+    width: 100%;
+    margin-top: 3rem;
+}
+}
