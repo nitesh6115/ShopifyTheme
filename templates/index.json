@@ -76,12 +76,12 @@
             "title": "Women",
             "heading": "Shop Women",
             "sub_title": "New",
-            "slide-collection": "women",
+            "slide-collection": "frontpage",
             "shop_all": true,
             "button_text": "View All",
-            "btn_bg": "linear-gradient(#ffffff, #ffffff)",
+            "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
             "btn_color": "#000000",
-            "btn_hover_bg": "linear-gradient(#ffffff, #ffffff)",
+            "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
             "btn_hover_color": "#000000"
           }
         },
@@ -91,12 +91,12 @@
             "title": "Men",
             "heading": "Shop Men",
             "sub_title": "New",
-            "slide-collection": "men",
+            "slide-collection": "frontpage",
             "shop_all": true,
             "button_text": "View all Products",
-            "btn_bg": "linear-gradient(#ffffff, #ffffff)",
+            "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
             "btn_color": "#000000",
-            "btn_hover_bg": "linear-gradient(#ffffff, #ffffff)",
+            "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
             "btn_hover_color": "#000000"
           }
         },
@@ -106,12 +106,12 @@
             "title": "Accesories",
             "heading": "Shop All",
             "sub_title": "New",
-            "slide-collection": "accessories",
+            "slide-collection": "frontpage",
             "shop_all": false,
             "button_text": "Shop Now",
-            "btn_bg": "linear-gradient(#ffffff, #ffffff)",
+            "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
             "btn_color": "#000000",
-            "btn_hover_bg": "linear-gradient(#ffffff, #ffffff)",
+            "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
             "btn_hover_color": "#000000"
           }
         }
