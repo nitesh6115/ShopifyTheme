@@ -125,6 +125,13 @@
              <div class="prodouct-variant-slider">
              <div class="swiper-wrapper">
             {% for value in option.values %}
+               {% assign color_alt = false %}
+        {%for image in card_product.images %}
+        {% if image.alt == value %}
+        {% assign color_alt = ture %}
+        {% endif %}
+        {% endfor %}
+        {% if color_alt %}
             {% for image in card_product.images %}
             {% if image.alt == value %}
               <div class="swiper-slide" data-swiper-autoplay="1000">
@@ -147,6 +154,28 @@
             {% break %}
             {% endif %}
             {% endfor %}
+          {% else %}
+              {% for image in card_product.images %}
+              <div class="swiper-slide" data-swiper-autoplay="1000">
+              <div class="size-selector" data-title="{{ value | escape }}">
+             <input  class="VarImage"
+                 id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" 
+                 type="radio"
+                 name="{{ option.name }}" 
+                 value="{{ value | escape }}"
+                 data-index="option{{index}}" {% if option.selected_value==value
+                %}checked="true" {% endif %} />
+              
+               <label  onclick="SelectVariant(this)" type="color" data-title="{{ value | escape }}">
+               <div class="variant-images radius-5 overflow-hidden">
+                  <img  src="{{image.src| img_url: '60x60' }}">
+                 </div>
+                 </label>
+             </div>
+              </div>
+            {% break %}
+            {% endfor %}  
+               {% endif %}
             {% endfor %}
              </div>
              </div>
