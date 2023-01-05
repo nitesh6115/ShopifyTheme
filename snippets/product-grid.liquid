@@ -22,6 +22,13 @@
       {% for value in option.values %}
       <div class="product-image-wrapper">
          <div class="swiper-wrapper">
+        {% assign color_alt = false %}
+        {%for image in card_product.images %}
+        {% if image.alt == value %}
+        {% assign color_alt = ture %}
+        {% endif %}
+        {% endfor %}
+        {% if color_alt %}
         {%for image in card_product.images %}
         {% if image.alt == value %}
         <div class="product-image-slide swiper-slide" >
@@ -31,6 +38,15 @@
         </div>
         {% endif %}
         {% endfor %}
+          {% else %}
+          {%for image in card_product.images %}
+        <div class="product-image-slide swiper-slide" >
+          <a href="{{ card_product.url }}">
+            <img class="borrder-all radius-20 feature-image" src="{{ image.src | img_url: '248x333' }}">
+          </a>
+        </div>
+        {% endfor %}
+          {% endif %}
          </div>
         
        </div>
