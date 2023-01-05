@@ -11,7 +11,7 @@
 {% assign szieOption = true %}
 {% endif %}
 {% endfor %}
-
+{{ colorOption }}
   {% form 'product', card_product, data-product-form: '', data-product-handle: card_product.handle,
       data-type:'add-to-cart-form' %}
   <div class="top-container" data-url="{{ card_product.url }}">
