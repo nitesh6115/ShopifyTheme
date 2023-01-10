@@ -67,6 +67,7 @@ function ChangeSize(event){
     var selectType = event.getAttribute('type')
     if (dataAvability == 'true') {
         if (selectType == "size") {
+            console.log("ese")
             addtocartitem(variantId)
         }
     } else {
