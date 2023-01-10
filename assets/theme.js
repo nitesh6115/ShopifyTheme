@@ -51,13 +51,13 @@ function ChangeSize(event){
         slectedValue.push(SelectValue);
     })
     var Selector = slectedValue.join(" / ")
-   console.log(Selector);
     var mainselctbox = mainParent.querySelectorAll('select option');
     var dataAvability = "";
     var soldOut = [];
     var variantId = "";
     mainselctbox.forEach(item => {
         var text = item.innerText
+        console.log(text)
         if (text === Selector) {
             variantId = item.value
             dataAvability = item.getAttribute('data-avability');
