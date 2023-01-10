@@ -114,7 +114,8 @@ function ChnageVaiantImg(event) {
     var swiperPrev = document.createElement('div');
     swiperPrev.classList.add('swiper-button-prev')
     var swiperNext = document.createElement('div');
-    swiperNext.classList.add('swiper-button-next')
+    swiperNext.classList.add('swiper-button-next');
+    console.log(newDiv)
     mainDiv.append(newDiv)
     topcontainer.append(swiperNext)
     topcontainer.append(swiperPrev)
