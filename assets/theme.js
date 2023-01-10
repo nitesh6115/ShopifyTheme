@@ -34,32 +34,23 @@ elem.forEach(item => {
 
 
 function SelectVariant(event) {
+   var selectType = event.getAttribute('type')
     changeActive(event);
-    var selectType = event.getAttribute('type')
-    if (selectType == "color") {
-        ChnageVaiantImg(event)
+    if (selectType == "color"){
+      ChnageVaiantImg(event)
+    }else{
+      ChangeSize(event)
     }
 }
-
-function changeActive(event) {
-    var mainParent = event.closest('.featured-product');
-    // console.log(mainParent)
-    var childParent = event.closest('.selector-wrapper');
-    var selcterValue = event.getAttribute('data-title')
-    var SizeSelectorOption = childParent.querySelectorAll('.size-selector')
-    SizeSelectorOption.forEach(sizeOption => {
-        sizeOption.classList.remove("active");
-    })
-    event.closest('.size-selector').classList.add("active");
-    var SelectorValue = mainParent.querySelectorAll('.size-selector.active');
+function ChangeSize(event){
+   var mainParent = event.closest('.featured-product');
+   var SelectorValue = mainParent.querySelectorAll('.size-selector.active');
     var slectedValue = [];
     SelectorValue.forEach(item => {
         var SelectValue = item.getAttribute('data-title');
         slectedValue.push(SelectValue);
     })
     var Selector = slectedValue.join(" / ")
-    // console.log(Selector);
-    // mainselect box
     var mainselctbox = mainParent.querySelectorAll('select option');
     var dataAvability = "";
     var soldOut = [];
@@ -81,6 +72,16 @@ function changeActive(event) {
     } else {
 
     }
+}
+function changeActive(event) {
+    var mainParent = event.closest('.featured-product');
+    var childParent = event.closest('.selector-wrapper');
+    var selcterValue = event.getAttribute('data-title')
+    var SizeSelectorOption = childParent.querySelectorAll('.size-selector')
+    SizeSelectorOption.forEach(sizeOption => {
+        sizeOption.classList.remove("active");
+    })
+    event.closest('.size-selector').classList.add("active");
 }
 
 function ChnageVaiantImg(event) {
