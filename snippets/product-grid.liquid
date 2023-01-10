@@ -120,10 +120,9 @@
         <p>{{ card_product.price| money_with_currency}}</p>
       </div>
        <div class="product-variant-container">
-         
+         <div class="product-variant-images selector-wrapper" >
           {% for option in card_product.options_with_values %}
           {% if option.name == 'Color'%}
-            <div class="product-variant-images selector-wrapper" data-option-size="{{ forloop.index }}" >
              <div class="prodouct-variant-slider">
              <div class="swiper-wrapper">
             {% for value in option.values %}
@@ -177,10 +176,9 @@
               </div>
             {% break %}
             {% endfor %}  
-               
-             </div>
                {% endif %}
             {% endfor %}
+             </div>
              </div>
             {% endif %}
            {% endfor %}
