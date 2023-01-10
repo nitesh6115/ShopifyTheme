@@ -481,6 +481,9 @@ li.menu-link.has-child-links.active .DropDownBox.dropdown-child .show-image {
 .product-variant-container .size-selector {
     padding: 5px 0;
 }
+.quick-add-wrapper .size-selctor-wrapper .size-selector.active {
+    background: #3b3b3b;
+}
 .product-image-container {
     overflow: hidden;
     padding: 1px;
