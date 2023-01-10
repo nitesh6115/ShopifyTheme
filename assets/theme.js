@@ -48,9 +48,7 @@ function ChangeSize(event){
     var slectedValue = [];
     SelectorValue.forEach((item, index) => {
         var optionIndex = mainParent.querySelectorAll('[data-option-size="'+index+'"] .size-selector.active')[0];
-      
-        console.log(optionIndex)
-        var SelectValue = item.getAttribute('data-title');
+        var SelectValue = optionIndex.getAttribute('data-title');
         slectedValue.push(SelectValue);
     })
     var Selector = slectedValue.join(" / ")
