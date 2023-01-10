@@ -119,7 +119,7 @@ function ChnageVaiantImg(event) {
     htmlstring = (htmlstring.trim) ? htmlstring.trim() : htmlstring.replace(/^\s+/,'');
     
     if(htmlstring == '') {
-    
+    alert("empty")
     }else{
     
     mainDiv.append(newDiv)
