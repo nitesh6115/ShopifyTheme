@@ -74,14 +74,14 @@
     </div>
     
     <div class="quick-add-wrapper">
-    <div class="selector-wrapper">
+    <div class="other-selector-wrapper">
       <div class="quick-add">
        <span>QUICK ADD +</span>
       </div>
       {% for option in card_product.options_with_values %}
         {% unless option.name == "Color" %}
           {% assign index = forloop.index %}
-          <div class="OtherOptions">
+          <div class="OtherOptions selector-wrapper">
           <div class="size-selctor-wrapper">
            {% for value in option.values %}
              <div class="size-selector {% if option.selected_value==value
