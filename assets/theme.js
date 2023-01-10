@@ -126,6 +126,7 @@ function ChnageVaiantImg(event) {
             swiperWrapp.innerHTML = '<a href="' + prductUrl + '"><img class="borrder-all radius-20 feature-image" src="' + images.src + '"></a>'
             newDiv.appendChild(swiperWrapp);
     })
+     mainDiv.append(newDiv)
     }else{
     
     mainDiv.append(newDiv)
