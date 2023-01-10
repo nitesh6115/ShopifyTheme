@@ -49,7 +49,7 @@ function ChangeSize(event){
     SelectorValue.forEach((item, index) => {
         var optionIndex = mainParent.querySelectorAll('[data-option-size="'+index+'"] .size-selector.active')[0];
       
-        console.log(index)
+        console.log(optionIndex)
         var SelectValue = item.getAttribute('data-title');
         slectedValue.push(SelectValue);
     })
