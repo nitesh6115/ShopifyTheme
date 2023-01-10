@@ -51,6 +51,7 @@ function ChangeSize(event){
         slectedValue.push(SelectValue);
     })
     var Selector = slectedValue.join(" / ")
+   console.log(Selector);
     var mainselctbox = mainParent.querySelectorAll('select option');
     var dataAvability = "";
     var soldOut = [];
