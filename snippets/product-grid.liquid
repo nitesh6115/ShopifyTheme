@@ -11,10 +11,9 @@
 {% assign szieOption = true %}
 {% endif %}
 {% endfor %}
-{{ colorOption }}
   {% form 'product', card_product, data-product-form: '', data-product-handle: card_product.handle,
       data-type:'add-to-cart-form' %}
-  <div class="top-container" data-url="{{ card_product.url }}">
+  <div data-color="{{ colorOption }}" data-size="{{ sizeOption }}" class="top-container" data-url="{{ card_product.url }}">
     <div class="product-image-container">
     {% if colorOption %}
       {% for option in card_product.options_with_values %}
