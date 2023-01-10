@@ -57,7 +57,7 @@ function ChangeSize(event){
     var variantId = "";
     mainselctbox.forEach(item => {
         var text = item.innerText
-        console.log(Selector);
+        
         if (text === Selector) {
             console.log(text)
             variantId = item.value
