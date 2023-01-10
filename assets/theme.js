@@ -119,7 +119,13 @@ function ChnageVaiantImg(event) {
     htmlstring = (htmlstring.trim) ? htmlstring.trim() : htmlstring.replace(/^\s+/,'');
     
     if(htmlstring == '') {
-    alert("empty")
+    JsonScript.forEach(images => 
+            var swiperWrapp = document.createElement('div');
+            swiperWrapp.classList.add('swiper-slide')
+            swiperWrapp.setAttribute("data-swiper-autoplay", "1000");
+            swiperWrapp.innerHTML = '<a href="' + prductUrl + '"><img class="borrder-all radius-20 feature-image" src="' + images.src + '"></a>'
+            newDiv.appendChild(swiperWrapp);
+    })
     }else{
     
     mainDiv.append(newDiv)
