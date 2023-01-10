@@ -119,7 +119,7 @@ function ChnageVaiantImg(event) {
     htmlstring = (htmlstring.trim) ? htmlstring.trim() : htmlstring.replace(/^\s+/,'');
     
     if(htmlstring == '') {
-    JsonScript.forEach(images => 
+    JsonScript.forEach(images => {
             var swiperWrapp = document.createElement('div');
             swiperWrapp.classList.add('swiper-slide')
             swiperWrapp.setAttribute("data-swiper-autoplay", "1000");
