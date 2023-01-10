@@ -478,6 +478,9 @@ li.menu-link.has-child-links.active .DropDownBox.dropdown-child .show-image {
     display: flex;
     padding: 5px;
 }
+.product-variant-container .size-selector {
+    padding: 5px 0;
+}
 .product-image-container {
     overflow: hidden;
     padding: 1px;
