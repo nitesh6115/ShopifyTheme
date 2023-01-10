@@ -81,7 +81,7 @@
       {% for option in card_product.options_with_values %}
         {% unless option.name == "Color" %}
           {% assign index = forloop.index %}
-          <div class="OtherOptions selector-wrapper" data-option-size="{{ option.size }}">
+          <div class="OtherOptions selector-wrapper" data-option-size="{{ forloop.index }}">
           <div class="size-selctor-wrapper">
            {% for value in option.values %}
              <div class="size-selector {% if option.selected_value==value
