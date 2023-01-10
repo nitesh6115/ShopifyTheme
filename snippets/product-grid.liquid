@@ -123,7 +123,7 @@
          
           {% for option in card_product.options_with_values %}
           {% if option.name == 'Color'%}
-          <div class="product-variant-images selector-wrapper" >
+          <div class="product-variant-images selector-wrapper" data-option-size="{{ forloop.index }}">
              <div class="prodouct-variant-slider">
              <div class="swiper-wrapper">
             {% for value in option.values %}
