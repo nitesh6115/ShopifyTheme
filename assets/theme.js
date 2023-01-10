@@ -46,7 +46,10 @@ function ChangeSize(event){
    var mainParent = event.closest('.featured-product');
    var SelectorValue = mainParent.querySelectorAll('.size-selector.active');
     var slectedValue = [];
-    SelectorValue.forEach(item => {
+    SelectorValue.forEach(item, index => {
+        var optionIndex = mainParent.querySelectorAll('[data-option-size="'+index+'"] .size-selector.active')[0];
+        var optionIndexValue = optionIndex.getAttribute('data-title');
+        console.log(optionIndexValue)
         var SelectValue = item.getAttribute('data-title');
         slectedValue.push(SelectValue);
     })
