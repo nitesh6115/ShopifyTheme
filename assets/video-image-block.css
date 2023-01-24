@@ -63,6 +63,7 @@ video.video-js {
 
 .videoImage-container.ItemSize-2 .video-box {
     height: 100%;
+    position: relative;
 }
 .videoImage-container.ItemSize-2 .BoxItems video {
     width: auto;
