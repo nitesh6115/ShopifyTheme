@@ -249,6 +249,8 @@
         "0242b311-9c28-4425-aa51-2a32b60227f6": {
           "type": "image",
           "settings": {
+            "image_bg": "shopify:\/\/shop_images\/HPBlock1_f9b9e6a5-1ce7-476a-9d85-c3485b6f3338.jpg",
+            "mobile_image_bg": "shopify:\/\/shop_images\/HPBlock1_f9b9e6a5-1ce7-476a-9d85-c3485b6f3338.jpg",
             "overlay_opacity": 0,
             "overlay_opacity_color": "#000000",
             "text-color": "",
@@ -274,13 +276,15 @@
         "418302b1-4034-4e27-bf26-1fa76f46095b": {
           "type": "image",
           "settings": {
+            "image_bg": "shopify:\/\/shop_images\/06.jpg",
+            "mobile_image_bg": "shopify:\/\/shop_images\/06.jpg",
             "overlay_opacity": 0,
             "overlay_opacity_color": "#000000",
             "text-color": "",
             "desktop_content_position": "bottom-center",
             "title": "Image slide",
             "sub-title": "",
-            "text": "<p><\/p>",
+            "text": "",
             "color_text": "",
             "button_label": "",
             "button_link": "",
@@ -299,6 +303,8 @@
         "bf65b616-aee5-4d72-be66-e74f2e6a6caa": {
           "type": "image",
           "settings": {
+            "image_bg": "shopify:\/\/shop_images\/20210707_131450.jpg",
+            "mobile_image_bg": "shopify:\/\/shop_images\/20210707_131450.jpg",
             "overlay_opacity": 0,
             "overlay_opacity_color": "#000000",
             "text-color": "#ffffff",
@@ -339,13 +345,14 @@
         "8ebd5eb3-46e4-4aaf-8c52-69cc1d3d1ae7": {
           "type": "block-1",
           "settings": {
-            "product_list1": "alphalux-wonder",
+            "image": "shopify:\/\/shop_images\/Gifting.jpg",
+            "product_list1": "f283",
             "top_position_1": 35,
             "left_position_1": 37,
-            "product_list2": "infinity-tech-jacket",
+            "product_list2": "cm819",
             "top_position_2": 56,
             "left_position_2": 38,
-            "product_list3": "bag",
+            "product_list3": "ff946",
             "top_position_3": 35,
             "left_position_3": 67,
             "product_list4": "stringer",
@@ -356,13 +363,14 @@
         "a478652b-11b1-423b-81f3-542a4748eb82": {
           "type": "block-1",
           "settings": {
-            "product_list1": "alphalux-wonder",
+            "image": "shopify:\/\/shop_images\/E15-ClearanceSale-HOMETILES-1_86d90235-64b7-42f6-9e46-b48e2777175d_720x_2_1.jpg",
+            "product_list1": "f284",
             "top_position_1": 26,
             "left_position_1": 17,
-            "product_list2": "bag",
+            "product_list2": "ff976",
             "top_position_2": 80,
             "left_position_2": 40,
-            "product_list3": "",
+            "product_list3": "ff954",
             "top_position_3": 30,
             "left_position_3": 20,
             "product_list4": "",
@@ -373,13 +381,14 @@
         "dac4baf3-5bae-4e9e-8446-1d9a730dc759": {
           "type": "block-1",
           "settings": {
-            "product_list1": "stringer",
+            "image": "shopify:\/\/shop_images\/E15-ClearanceSale-HOMETILES-2_a2de8954-5618-48cb-ac75-d375bc33a40f_720x_1_1.jpg",
+            "product_list1": "cg175",
             "top_position_1": 55,
             "left_position_1": 34,
-            "product_list2": "",
+            "product_list2": "ff945",
             "top_position_2": 80,
             "left_position_2": 40,
-            "product_list3": "",
+            "product_list3": "ff972",
             "top_position_3": 30,
             "left_position_3": 20,
             "product_list4": "",
