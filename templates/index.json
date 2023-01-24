@@ -135,13 +135,15 @@
         "1db94927-182f-4653-90c9-3a695a83b8c5": {
           "type": "image",
           "settings": {
+            "image_bg": "shopify:\/\/shop_images\/HPBlock3.jpg",
+            "mobile_image_bg": "shopify:\/\/shop_images\/HPBlock3.jpg",
             "overlay_opacity": 70,
             "overlay_opacity_color": "#000000",
             "text-color": "#ffffff",
             "desktop_content_position": "bottom-center",
             "title": "Image slide",
             "sub-title": "",
-            "text": "<p><\/p>",
+            "text": "",
             "color_text": "#ffffff",
             "button_label": "Shop Now",
             "button_link": "#",
@@ -160,13 +162,15 @@
         "69c0d203-7404-4cea-97db-7bdb5440d0e2": {
           "type": "image",
           "settings": {
+            "image_bg": "shopify:\/\/shop_images\/20210707_131450.jpg",
+            "mobile_image_bg": "shopify:\/\/shop_images\/20210707_131450.jpg",
             "overlay_opacity": 0,
             "overlay_opacity_color": "#000000",
             "text-color": "",
             "desktop_content_position": "right-bottom",
             "title": "Image slide",
             "sub-title": "",
-            "text": "<p><\/p>",
+            "text": "",
             "color_text": "",
             "button_label": "",
             "button_link": "",
