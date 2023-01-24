@@ -4,7 +4,7 @@
       <div class="drawerProducts">
       <div class="CratDrawerSlider swiper">
       <div class="swiper-wrapper">
-      {% assign collection = collections['women'] %}
+      {% assign collection = collections['all'] %}
       {% for product in collection.products %}
       <div class="featured-product swiper-slide">
       {% render 'product-grid', card_product:product %}
