@@ -1,10 +1,11 @@
 {
   "current": {
-    "bg-color": "linear-gradient(180deg, rgba(255, 145, 129, 1), rgba(254, 91, 124, 1) 49%, rgba(255, 140, 162, 1) 100%)",
+    "bg-color": "#323232",
     "body-bg-light-color": "linear-gradient(54deg, rgba(114, 255, 179, 1) 14%, rgba(255, 250, 99, 1) 85%)",
-    "body-text-color": "#000000",
+    "body-text-color": "#ffffff",
     "link-color": "#ffffff",
     "border-color": "#1878b9",
+    "main-heading-color": "rgba(0,0,0,0)",
     "flash-image": "shopify:\/\/shop_images\/DFE6A142-958F-4990-9330-974A2153702E.gif",
     "page-width": "wrapper-width",
     "narrow-width": 1280,
