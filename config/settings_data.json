@@ -24,6 +24,7 @@
     "button-bottom-padding": 10,
     "button-left-padding": 20,
     "button-right-padding": 20,
+    "input-text-color": "#ffffff",
     "input-border-color": "#1878b9",
     "input-border-thickness": 1,
     "input-border-radius": 20,
