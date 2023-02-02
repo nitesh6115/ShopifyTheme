@@ -3,33 +3,6 @@
     "54d71cac-422d-4e8a-a4b2-d8667ebe40d9": {
       "type": "video-with-image",
       "blocks": {
-        "4d2dabd0-4312-45aa-b4eb-0125ef210679": {
-          "type": "video",
-          "settings": {
-            "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/ac44e9115ec44b30ae288c23edc2b157.mp4",
-            "mobile_video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/9175147e560d4f0c8981fdc2a1599041.mp4",
-            "overlay_opacity": 0,
-            "overlay_opacity_color": "#ffffff",
-            "text-color": "",
-            "desktop_content_position": "bottom-center",
-            "title": "top pickup",
-            "sub-title": "",
-            "text": "",
-            "color_text": "#000000",
-            "button_label": "shop women",
-            "button_link": "",
-            "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_color": "#000000",
-            "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_hover_color": "#000000",
-            "second_button_label": "shop men",
-            "second_button_link": "",
-            "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_color": "#000000",
-            "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_hover_color": "#000000"
-          }
-        },
         "7442791e-4bbd-48e9-a1d4-eb90108ebb47": {
           "type": "image",
           "settings": {
@@ -58,7 +31,6 @@
         }
       },
       "block_order": [
-        "4d2dabd0-4312-45aa-b4eb-0125ef210679",
         "7442791e-4bbd-48e9-a1d4-eb90108ebb47"
       ],
       "settings": {
@@ -413,36 +385,35 @@
     "de168d02-cb1c-4cd8-a9e3-55c79f5e1e3d": {
       "type": "video-with-image",
       "blocks": {
-        "a8d9bf82-4b65-411b-a83b-9b9232031b6d": {
-          "type": "video",
+        "7472b6ce-1330-47bf-b8ad-82c598883e01": {
+          "type": "image",
           "settings": {
-            "video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0667\/0133\/files\/alphaland-drone-loop-land.mp4?v=1654931634",
-            "mobile_video_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0667\/0133\/files\/alphaland-drone-loop-port.mp4?v=1654931634",
+            "image_bg": "shopify:\/\/shop_images\/Gifting.jpg",
             "overlay_opacity": 0,
-            "overlay_opacity_color": "#000000",
-            "text-color": "#ffffff",
+            "overlay_opacity_color": "#000",
+            "text-color": "",
             "desktop_content_position": "bottom-center",
-            "title": "Vist Store",
-            "sub-title": "",
-            "text": "Find the latest feshion",
-            "color_text": "#ffffff",
-            "button_label": "Learn More",
-            "button_link": "#",
+            "title": "Gift Cards",
+            "sub-title": "Get excited product",
+            "text": "<p>Hidden gem for you<\/p>",
+            "color_text": "",
+            "button_label": "Shop Now",
+            "button_link": "",
             "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_color": "#000000",
+            "btn_color": "#000",
             "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_hover_color": "#000000",
-            "second_button_label": "Watch Video",
-            "second_button_link": "#",
+            "btn_hover_color": "#000",
+            "second_button_label": "",
+            "second_button_link": "",
             "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_color": "#000000",
+            "sec_btn_color": "#000",
             "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_hover_color": "#000000"
+            "sec_btn_hover_color": "#000"
           }
         }
       },
       "block_order": [
-        "a8d9bf82-4b65-411b-a83b-9b9232031b6d"
+        "7472b6ce-1330-47bf-b8ad-82c598883e01"
       ],
       "settings": {
         "width": "wrapper-width",
