@@ -492,6 +492,7 @@ li.menu-link.has-child-links.active .DropDownBox.dropdown-child .show-image {
 img.feature-image {
     width: 100%;
     float: left;
+    height: auto;
 }
 
 .quick-add-wrapper {
