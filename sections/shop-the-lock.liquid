@@ -27,7 +27,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
          <div class="shoplock-image-container">
           <div class="shoplock-image radius-30 overflow-hidden">
             {% if block.settings.image != blank %}
-              <img src ="{{ block.settings.image |img_url:'615x768' }}">
+              <img loading="lazy" src ="{{ block.settings.image |img_url:'615x768' }}">
            {% endif %}
           {% if block.settings.product_list1 != blank or block.settings.product_list2 != blank  or block.settings.product_list3 != blank or block.settings.product_list4 != blank%}
            <div class="DotsBox">
