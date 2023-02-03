@@ -61,7 +61,8 @@
 <!--   <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a> -->
  
 {% section 'cart-drawer' %}
-{{ 'cart-drawer.css' | asset_url | stylesheet_tag }} 
+<link rel="preload" href="{{ 'cart-drawer.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ 'cart-drawer.css' | asset_url }}"></noscript>
 {{ 'cart-drawer.js' | asset_url | script_tag }}
 {% section 'header' %}
 
