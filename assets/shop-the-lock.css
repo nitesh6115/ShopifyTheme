@@ -4,6 +4,7 @@
 .shoplock-slider img {
   width: 100%;
   float:left;
+  height: auto;
 }
 .shoplock-image{
  width: 50%;
