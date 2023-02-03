@@ -49,8 +49,8 @@
       moneyFormat: {{ shop.money_format | json }}
     };
   </script>
-  
-<link rel="stylesheet" href="{{ 'swiper.css' | asset_url }}" />
+ <link rel="preload" href="{{ 'swiper.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ 'swiper.css' | asset_url }}"></noscript>
 <script src="{{ 'swiper.js' | asset_url }}" defer></script>
   
  {{ content_for_header }}
