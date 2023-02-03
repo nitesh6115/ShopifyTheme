@@ -86,9 +86,9 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
   {% if block.settings.image_bg != blank %}
     <div class="image-box overflow-hidden radius-30">
       {% if  block.settings.mobile_image_bg != blank %}
-         <img class="desktop-hide" width="{{ block.settings.mobile_image_bg.width }}" height="{{ block.settings.mobile_image_bg.height }}" loading="lazy" src="{{ block.settings.mobile_image_bg  | img_url:'768x'}}">
+         <img class="desktop-hide" width="{{ block.settings.mobile_image_bg.width }}" height="{{ block.settings.mobile_image_bg.height }}" loading="lazy" src="{{ block.settings.mobile_image_bg  | img_url:'768x'}}" alt="{{ block.settings.mobile_image_bg.alt }}">
         {% else %}
-        <img loading="lazy" width="{{ block.settings.image_bg.width }}" height="{{ block.settings.image_bg.height }}" class="{% if block.settings.mobile_image_bg != blank %}mobile-hide{% endif %}"  src="{{ block.settings.image_bg  | img_url:'1400x'}}">
+        <img loading="lazy" width="{{ block.settings.image_bg.width }}" height="{{ block.settings.image_bg.height }}" class="{% if block.settings.mobile_image_bg != blank %}mobile-hide{% endif %}"  alt="{{ block.settings.image_bg.alt }}" src="{{ block.settings.image_bg  | img_url:'1400x'}}">
         {% endif %}
     </div>
     {% endif %}
