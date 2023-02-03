@@ -389,6 +389,7 @@
           "type": "image",
           "settings": {
             "image_bg": "shopify:\/\/shop_images\/Gifting.webp",
+            "mobile_image_bg": "shopify:\/\/shop_images\/Group_4.png",
             "overlay_opacity": 0,
             "overlay_opacity_color": "#000000",
             "text-color": "",
