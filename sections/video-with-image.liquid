@@ -25,11 +25,11 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
   {% if block.settings.video_link != blank and block.settings.video_link contains '.mp4' %}
     <div class="video-box overflow-hidden radius-30">
       {% if block.settings.mobile_video_link != blank %}
-        <video class="video-js desktop-hide" loop autoplay preload="none" muted playsinline >
+        <video loading="lazy" class="video-js desktop-hide" loop autoplay preload="none" muted playsinline >
             <source src="{{ block.settings.mobile_video_link }}" type="video/mp4">
         </video>
         {% endif %}
-        <video class=" video-js {% if block.settings.mobile_video_link !=blank %}mobile-hide{% endif %}" loop autoplay preload="none" muted playsinline >
+        <video loading="lazy" class=" video-js {% if block.settings.mobile_video_link !=blank %}mobile-hide{% endif %}" loop autoplay preload="none" muted playsinline >
             <source src="{{ block.settings.video_link }}" type="video/mp4">
         </video>
     </div>
@@ -86,9 +86,9 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
   {% if block.settings.image_bg != blank %}
     <div class="image-box overflow-hidden radius-30">
       {% if  block.settings.mobile_image_bg != blank %}
-         <img class="desktop-hide" lazy src="{{ block.settings.mobile_image_bg  | img_url:'768x'}}">
+         <img class="desktop-hide" loading="lazy" src="{{ block.settings.mobile_image_bg  | img_url:'768x'}}">
         {% endif %}
-        <img class="{% if block.settings.mobile_image_bg != blank %}mobile-hide{% endif %}" lazy src="{{ block.settings.image_bg  | img_url:'1400x'}}">
+        <img class="{% if block.settings.mobile_image_bg != blank %}mobile-hide{% endif %}" loading="lazy" src="{{ block.settings.image_bg  | img_url:'1400x'}}">
     </div>
     {% endif %}
     <div class="text-box banner-content-{{ block.settings.desktop_content_position}}" style="color:{{ block.settings.text-color}}">
