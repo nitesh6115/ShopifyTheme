@@ -63,7 +63,7 @@
 {% section 'cart-drawer' %}
 <link rel="preload" href="{{ 'cart-drawer.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="{{ 'cart-drawer.css' | asset_url }}"></noscript>
-{{ 'cart-drawer.js' | asset_url | script_tag }}
+<script src="{{ 'cart-drawer.js' | asset_url }}" async></script>
 {% section 'header' %}
 
   <main role="main" id="MainContent">
