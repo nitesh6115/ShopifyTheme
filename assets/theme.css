@@ -589,6 +589,7 @@ img.feature-image {
 .variant-images img {
     float: left;
     width: 100%;
+    height: auto;
 }
 select#product-select {
     display: none;
