@@ -6,7 +6,7 @@
         "7442791e-4bbd-48e9-a1d4-eb90108ebb47": {
           "type": "image",
           "settings": {
-            "image_bg": "shopify:\/\/shop_images\/SilverShop.jpg",
+            "image_bg": "shopify:\/\/shop_images\/SilverShop.webp",
             "overlay_opacity": 0,
             "overlay_opacity_color": "#000000",
             "text-color": "",
@@ -388,9 +388,9 @@
         "7472b6ce-1330-47bf-b8ad-82c598883e01": {
           "type": "image",
           "settings": {
-            "image_bg": "shopify:\/\/shop_images\/Gifting.jpg",
+            "image_bg": "shopify:\/\/shop_images\/Gifting.webp",
             "overlay_opacity": 0,
-            "overlay_opacity_color": "#000",
+            "overlay_opacity_color": "#000000",
             "text-color": "",
             "desktop_content_position": "bottom-center",
             "title": "Gift Cards",
@@ -400,15 +400,15 @@
             "button_label": "Shop Now",
             "button_link": "",
             "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_color": "#000",
+            "btn_color": "#000000",
             "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_hover_color": "#000",
+            "btn_hover_color": "#000000",
             "second_button_label": "",
             "second_button_link": "",
             "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_color": "#000",
+            "sec_btn_color": "#000000",
             "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_hover_color": "#000"
+            "sec_btn_hover_color": "#000000"
           }
         }
       },
