@@ -87,8 +87,9 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
     <div class="image-box overflow-hidden radius-30">
       {% if  block.settings.mobile_image_bg != blank %}
          <img class="desktop-hide" loading="lazy" src="{{ block.settings.mobile_image_bg  | img_url:'768x'}}">
+        {% else %}
+        <img loading="lazy" class="{% if block.settings.mobile_image_bg != blank %}mobile-hide{% endif %}"  src="{{ block.settings.image_bg  | img_url:'1400x'}}">
         {% endif %}
-        <img class="{% if block.settings.mobile_image_bg != blank %}mobile-hide{% endif %}" loading="lazy" src="{{ block.settings.image_bg  | img_url:'1400x'}}">
     </div>
     {% endif %}
     <div class="text-box banner-content-{{ block.settings.desktop_content_position}}" style="color:{{ block.settings.text-color}}">
