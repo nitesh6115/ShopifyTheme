@@ -17,9 +17,7 @@
   {% else %}
   {% if section.settings.logo !=blank %}
     {{section.settings.logo | image_url: width: section.settings.logo.width | image_tag:
-    widths:'50, 100, 150, 200, 250, 300, 400, 500',
-    height: section.settings.logo_width.height,
-    width: section.settings.logo_width }}
+    widths:'50, 100, 150, 200, 250, 300, 400, 500'}}
   {% else %}
     <h2>{{ shop.name }}</h2>
   {% endif %}
