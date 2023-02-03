@@ -32,7 +32,7 @@
         {% if image.alt == value %}
         <div class="product-image-slide swiper-slide" >
           <a href="{{ card_product.url }}">
-            <img class="borrder-all radius-20 feature-image" src="{{ image.src | img_url: '248x333' }}">
+            <img loading="lazy" class="borrder-all radius-20 feature-image" src="{{ image.src | img_url: '248x333' }}">
           </a>
         </div>
         {% endif %}
@@ -41,7 +41,7 @@
           {%for image in card_product.images %}
         <div class="product-image-slide swiper-slide" >
           <a href="{{ card_product.url }}">
-            <img class="borrder-all radius-20 feature-image" src="{{ image.src | img_url: '248x333' }}">
+            <img loading="lazy" class="borrder-all radius-20 feature-image" src="{{ image.src | img_url: '248x333' }}">
           </a>
         </div>
         {% endfor %}
@@ -61,7 +61,7 @@
         {%for image in card_product.images %}
         <div class="product-image-slide swiper-slide" >
           <a href="{{ card_product.url }}">
-            <img class="borrder-all radius-20 feature-image" src="{{ image.src | img_url: '248x333' }}">
+            <img loading="lazy" class="borrder-all radius-20 feature-image" src="{{ image.src | img_url: '248x333' }}">
           </a>
         </div>
         {% endfor %}
@@ -148,7 +148,7 @@
               
                <label  onclick="SelectVariant(this)" type="color" data-title="{{ value | escape }}">
                <div class="variant-images radius-5 overflow-hidden">
-                  <img  src="{{image.src| img_url: '60x60' }}">
+                  <img loading="lazy"  src="{{image.src| img_url: '60x60' }}">
                  </div>
                  </label>
              </div>
@@ -170,7 +170,7 @@
               
                <label  onclick="SelectVariant(this)" type="color" data-title="{{ value | escape }}">
                <div class="variant-images radius-5 overflow-hidden">
-                  <img  src="{{image.src| img_url: '60x60' }}">
+                  <img  loading="lazy" src="{{image.src| img_url: '60x60' }}">
                  </div>
                  </label>
              </div>
