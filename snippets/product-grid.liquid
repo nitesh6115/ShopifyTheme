@@ -87,7 +87,7 @@
              <div class="size-selector {% if option.selected_value==value
                 %}active{% endif %}" data-title="{{ value | escape }}">
              
-               <label onclick="SelectVariant(this)" type="size" data-title="{{ value |escape }}">
+               <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" onclick="SelectVariant(this)" type="size" data-title="{{ value |escape }}">
                 {{ value }}
               </label>
               <input class="single-option-selector" 
