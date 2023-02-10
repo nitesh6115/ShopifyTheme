@@ -35,10 +35,10 @@
    {% render 'icon-search' %}
   </div>
   <div class="cart-icon hederIcon">
-      <a onclick="cartDrawerOpen()" class="cart-button">
+      <div onclick="cartDrawerOpen()" class="cart-button">
        <span class="cart-item-count">{{ cart.item_count }}</span>
       {% render 'icon-cart' %}
-      </a>
+      </div>
   </div>
   <div class="desktop-hide hederIcon" onclick="menuOpen(this)">
     {% render 'icon-hamburger'%}
