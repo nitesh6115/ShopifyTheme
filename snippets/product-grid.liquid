@@ -138,19 +138,18 @@
             {% if image.alt == value %}
               <div class="swiper-slide" data-swiper-autoplay="1000">
               <div class="size-selector" data-title="{{ value | escape }}">
-             <input  class="VarImage"
+              <label  onclick="SelectVariant(this)" type="color" data-title="{{ value | escape }}">
+               <div class="variant-images radius-5 overflow-hidden">
+                  <img width="{{ image.width }}" height="{{ image.height }}" loading="lazy" alt="{{ image.alt }}" src="{{image.src| img_url: '60x60' }}">
+                 </div>
+                 </label>
+              <input  class="VarImage"
                  id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" 
                  type="radio"
                  name="{{ option.name }}" 
                  value="{{ value | escape }}"
                  data-index="option{{index}}" {% if option.selected_value==value
                 %}checked="true" {% endif %} />
-              
-               <label  onclick="SelectVariant(this)" type="color" data-title="{{ value | escape }}">
-               <div class="variant-images radius-5 overflow-hidden">
-                  <img width="{{ image.width }}" height="{{ image.height }}" loading="lazy" alt="{{ image.alt }}" src="{{image.src| img_url: '60x60' }}">
-                 </div>
-                 </label>
              </div>
               </div>
             {% break %}
