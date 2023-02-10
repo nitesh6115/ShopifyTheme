@@ -128,7 +128,7 @@ ul li a {
     flex-wrap: wrap;
     align-items:center;
 }
-.header .cart-icon a.cart-button .span {
+.header .cart-icon .cart-button .span {
     position: absolute;
 }
 .header-icon-bar .hederIcon {
@@ -151,7 +151,7 @@ ul li a {
 .header-icon-bar .hederIcon:last-child {
     margin-right: 0;
 }
-.header a.cart-button span {
+.header .cart-button span {
     position: absolute;
     right: -4px;
     bottom: -3px;
@@ -166,8 +166,9 @@ ul li a {
     border-radius: 1000%;
 }
 
-.header a.cart-button {
+.header .cart-button {
     position: relative;
+    cursor: pointer;
 }
 
 .header .header-icon-bar svg {
