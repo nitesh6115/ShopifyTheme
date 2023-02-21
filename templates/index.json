@@ -12,7 +12,7 @@
             "overlay_opacity_color": "#000000",
             "text-color": "",
             "desktop_content_position": "bottom-center",
-            "title": "Discover The  Science of Ayurveda",
+            "title": "Discover The  <br>Science of Ayurveda",
             "sub-title": "",
             "text": "",
             "color_text": "",
@@ -38,6 +38,13 @@
         "width": "wrapper-width",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "34aacdca-da45-4d6f-a67b-21692bd916e5": {
+      "type": "rich-text",
+      "settings": {
+        "title": "Experience your highest potential for health and wellness – rooted in the eternal and holistic Science of Ayurveda.",
+        "text": ""
       }
     },
     "57a33abb-1a0e-4294-b0b8-b18fc32afe27": {
@@ -422,23 +429,16 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "34aacdca-da45-4d6f-a67b-21692bd916e5": {
-      "type": "rich-text",
-      "settings": {
-        "title": "Talk about your brand",
-        "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
-      }
     }
   },
   "order": [
     "54d71cac-422d-4e8a-a4b2-d8667ebe40d9",
+    "34aacdca-da45-4d6f-a67b-21692bd916e5",
     "57a33abb-1a0e-4294-b0b8-b18fc32afe27",
     "1663561050b11c2123",
     "5b679b7a-fae6-4af5-ac94-20887c2e98ea",
     "16613357604008a11b",
     "9ac45232-d4da-4400-b33b-469cbb27e83e",
-    "de168d02-cb1c-4cd8-a9e3-55c79f5e1e3d",
-    "34aacdca-da45-4d6f-a67b-21692bd916e5"
+    "de168d02-cb1c-4cd8-a9e3-55c79f5e1e3d"
   ]
 }
