@@ -14,8 +14,21 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 {% endstyle %}
 
 <div class="section-{{ section.id }}-padding">
-  <div class="featured-product">
-{% form 'product',product, id: product_form_id, class: 'form', data-type: 'add-to-cart-form' %}
+<div class="featured-product">
+{% assign current_variant = card_product.selected_or_first_available_variant %}
+{% assign colorOption = flase %}
+{% assign szieOption = flase %}
+{% for option in card_product.options_with_values %}
+{% if option.name contains 'Color' %}
+{% assign colorOption = true %}
+{% endif %}
+{% if option.name contains 'Size' %}
+{% assign szieOption = true %}
+{% endif %}
+{% endfor %}
+{% form 'product', card_product, data-product-form: '', data-product-handle: card_product.handle,
+data-type:'add-to-cart-form' %}
+  
 <div class="{% if section.settings.width == 'full-width'%}full-width{% elsif section.settings.width =='wrapper-width'%}page-width{% else %}narrow-width{% endif %}">
  <div class ="product-grid">
    <div class="box-1">
@@ -23,19 +36,65 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
     <p>{{ product.price| money_with_currency }}</p>
   </div>
   <div class="box-2">
-  <div class="FeaturedImages">
-    {% for option in product.options_with_values %}
-       {% if option.name == 'Color' %}
-         {% for value in option.values %}
-           {% for image in product.images %}
-             {% if image.alt == value %}
-              <img  class="borrder-all radius-20" src="{{ image.src | img_url: '1024x' }}">
-             {% endif %}
-             {% endfor %}
-           {% break %}
-          {% endfor %}
-         {% endif %}
+  <div data-color="{{ colorOption }}" data-size="{{ sizeOption }}" class="top-container" data-url="{{ card_product.url }}">
+  <div class="product-image-container">
+    {% if colorOption %}
+      {% for option in card_product.options_with_values %}
+      {% if option.name == 'Color'%}
+      {% for value in option.values %}
+      <div class="product-image-wrapper">
+         <div class="swiper-wrapper">
+        {% assign color_alt = false %}
+        {%for image in card_product.images %}
+        {% if image.alt == value %}
+        {% assign color_alt = ture %}
+        {% endif %}
+        {% endfor %}
+        {% if color_alt %}
+        {%for image in card_product.images %}
+        {% if image.alt == value %}
+        <div class="product-image-slide swiper-slide" data-swiper-autoplay="1000" >
+          <a href="{{ card_product.url }}">
+            <img width="{{ image.width }}" height="{{ image.height }}" loading="lazy" class="borrder-all radius-20 feature-image" alt="{{ image.alt }}" src="{{ image.src | img_url: '248x333' }}">
+          </a>
+        </div>
+        {% endif %}
+        {% endfor %}
+          {% else %}
+          {%for image in card_product.images %}
+        <div class="product-image-slide swiper-slide" data-swiper-autoplay="1000" >
+          <a href="{{ card_product.url }}">
+            <img width="{{ image.width }}" height="{{ image.height }}" loading="lazy" class="borrder-all radius-20 feature-image" alt="{{ image.alt }}" src="{{ image.src | img_url: '248x333' }}">
+          </a>
+        </div>
+        {% endfor %}
+          {% endif %}
+         </div>
+        
+       </div>
+     <div class="swiper-button-next"></div>
+       <div class="swiper-button-prev"></div>
+      {% break %}
       {% endfor %}
+      {% endif %}
+      {% endfor %}
+   {% else %}
+     <div class="product-image-wrapper">
+         <div class="swiper-wrapper">
+        {%for image in card_product.images %}
+        <div class="product-image-slide swiper-slide" data-swiper-autoplay="1000" >
+          <a href="{{ card_product.url }}">
+            <img width="{{ image.width }}" height="{{ image.height }}" loading="lazy" class="borrder-all radius-20 feature-image" alt="{{ image.alt }}" src="{{ image.src | img_url: '248x333' }}">
+          </a>
+        </div>
+        {% endfor %}
+         </div>
+        
+       </div>
+     <div class="swiper-button-next"></div>
+       <div class="swiper-button-prev"></div>
+      {% endif %}
+    </div>
   </div>
    </div>
   <div class="box-3">
