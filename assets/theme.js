@@ -144,6 +144,10 @@ function ChnageVaiantImg(event) {
     console.log("yes")
     var nextbutton = newElem.querySelectorAll('.swiper-button-next')[0];
     var prebutton = newElem.querySelectorAll('.swiper-button-prev')[0];
+    var checkMainProduct = newElem.getAttribute('main-product');
+    if (checkMainProduct == 'product'){
+      
+    }else{
     const swiperTabs = new Swiper(item, {
         loop: true,
         allowTouchMove: false,
@@ -165,6 +169,8 @@ function ChnageVaiantImg(event) {
     item.addEventListener("mouseout", function() {
         swp.autoplay.stop();
     })
+    }
+  
     var mainselctbox = mainParent.querySelectorAll('select option');
 
     var soldOut = [];
