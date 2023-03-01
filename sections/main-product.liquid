@@ -80,9 +80,9 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
    {% else %}
      <div class="product-image-wrapper">
          <div class="swiper-wrapper">
-        {%for image in card_product.images %}
+        {%for image in product.images %}
         <div class="product-image-slide swiper-slide" data-swiper-autoplay="1000" >
-          <a href="{{ card_product.url }}">
+          <a href="{{ product.url }}">
             <img width="{{ image.width }}" height="{{ image.height }}" loading="lazy" class="borrder-all radius-20 feature-image" alt="{{ image.alt }}" src="{{ image.src | img_url: '248x333' }}">
           </a>
         </div>
@@ -102,7 +102,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
       <div class="quick-add">
        <span>QUICK ADD +</span>
       </div>
-      {% for option in card_product.options_with_values %}
+      {% for option in product.options_with_values %}
         {% unless option.name == "Color" %}
           {% assign index = forloop.index %}
           <div class="OtherOptions selector-wrapper" data-option-size="{{ forloop.index0 }}">
@@ -133,33 +133,33 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
  </div>
   <div class="bottom-container">
       <script>
-        {{card_product.media|json}}
+        {{product.media|json}}
       </script>
     <div class="product-info">
-        <h3>{{ card_product.title }}</h3>
-        {% for option in card_product.options_with_values %}
+        <h3>{{ product.title }}</h3>
+        {% for option in product.options_with_values %}
         {% if option.name == 'Color' %}
         <p class="colorNameBox"><span class="SelectedColor">{{ option.values[0] }}</span><span class="TotalColorSize">{{ option.values | size }} Colors</span></p>
         {% endif %}
         {% endfor %}
-        <p>{{ card_product.price| money_with_currency}}</p>
+        <p>{{ product.price| money_with_currency}}</p>
       </div>
        <div class="product-variant-container">
          
-          {% for option in card_product.options_with_values %}
+          {% for option in product.options_with_values %}
           {% if option.name == 'Color'%}
           <div class="product-variant-images selector-wrapper" data-option-size="{{ forloop.index0 }}">
              <div class="prodouct-variant-slider">
              <div class="swiper-wrapper">
             {% for value in option.values %}
                {% assign color_alt = false %}
-        {%for image in card_product.images %}
+        {%for image in product.images %}
         {% if image.alt == value %}
         {% assign color_alt = ture %}
         {% endif %}
         {% endfor %}
         {% if color_alt %}
-            {% for image in card_product.images %}
+            {% for image in product.images %}
             {% if image.alt == value %}
               <div class="swiper-slide" data-swiper-autoplay="1000">
               <div class="size-selector" data-title="{{ value | escape }}">
@@ -181,7 +181,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
             {% endif %}
             {% endfor %}
           {% else %}
-              {% for image in card_product.images %}
+              {% for image in product.images %}
               <div class="swiper-slide" data-swiper-autoplay="1000">
               <div class="size-selector" data-title="{{ value | escape }}">
              <input  class="VarImage"
@@ -211,7 +211,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
             
          </div>
  <select id="product-select" name="id" >
-        {% for variant in card_product.variants %}
+        {% for variant in product.variants %}
         {% if variant.available == true %}
         <option data-avability="true"  value="{{variant.id}}">{{ variant.title }}</option>
         {% else %} 
