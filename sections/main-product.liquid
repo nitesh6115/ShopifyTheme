@@ -97,43 +97,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
   </div>
    </div>
   <div class="box-3">
-    <div class="quick-add-wrapper">
-    <div class="other-selector-wrapper">
-      {% for option in product.options_with_values %}
-        {% unless option.name == "Color" %}
-          {% assign index = forloop.index %}
-          <div class="OtherOptions selector-wrapper" data-option-size="{{ forloop.index0 }}">
-          <div class="size-selctor-wrapper">
-            {% if product.options contains 'Size' %}
-            <div class="size-guide">
-            <p>size</p>
-            <a class="trigger-pop-up">size guide</a>
-            </div>
-            {% endif %}
-           {% for value in option.values %}
-             <div class="size-selector {% if option.selected_value==value
-                %}active{% endif %}" data-title="{{ value | escape }}">
-             
-               <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" onclick="SelectVariant(this)" type="size" data-title="{{ value |escape }}">
-                {{ value }}
-              </label>
-              <input class="single-option-selector" 
-                 id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" 
-                 type="radio"
-                 name="{{ option.name }}" 
-                 value="{{ value | escape }}"
-                 data-index="option{{index}}" {% if option.selected_value==value
-                %}checked="true" {% endif %} />
-             </div>
-            {% endfor %}
-          </div>
-          </div>
-          {% endunless %}
-      {% endfor %}
-  </div>
-     
- </div>
-  <div class="bottom-container">
+    <div class="bottom-container">
       <script>
         {{product.media|json}}
       </script>
@@ -212,6 +176,43 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
            {% endfor %}
             
          </div>
+    <div class="quick-add-wrapper">
+    <div class="other-selector-wrapper">
+      {% for option in product.options_with_values %}
+        {% unless option.name == "Color" %}
+          {% assign index = forloop.index %}
+          <div class="OtherOptions selector-wrapper" data-option-size="{{ forloop.index0 }}">
+          <div class="size-selctor-wrapper">
+            {% if product.options contains 'Size' %}
+            <div class="size-guide">
+            <p>size</p>
+            <a class="trigger-pop-up">size guide</a>
+            </div>
+            {% endif %}
+           {% for value in option.values %}
+             <div class="size-selector {% if option.selected_value==value
+                %}active{% endif %}" data-title="{{ value | escape }}">
+             
+               <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" onclick="SelectVariant(this)" type="size" data-title="{{ value |escape }}">
+                {{ value }}
+              </label>
+              <input class="single-option-selector" 
+                 id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" 
+                 type="radio"
+                 name="{{ option.name }}" 
+                 value="{{ value | escape }}"
+                 data-index="option{{index}}" {% if option.selected_value==value
+                %}checked="true" {% endif %} />
+             </div>
+            {% endfor %}
+          </div>
+          </div>
+          {% endunless %}
+      {% endfor %}
+  </div>
+     
+ </div>
+  
        <select id="product-select" name="id" >
         {% for variant in product.variants %}
         {% if variant.available == true %}
