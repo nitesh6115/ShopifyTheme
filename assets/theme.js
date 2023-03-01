@@ -177,6 +177,7 @@ function ChnageVaiantImg(event) {
                 const soldOutVariant = text.split(' / ');
                 soldOut.push(soldOutVariant[0]);
                 soldOut.push(soldOutVariant[1]);
+                soldOut.push(soldOutVariant[2]);
             }
         }
     })
