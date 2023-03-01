@@ -253,7 +253,10 @@ var collcetionImageSlider = document.querySelectorAll('.product-image-wrapper');
 collcetionImageSlider.forEach(item => {
     var newElem = item.closest('.product-image-container')
     var checkMainProduct = newElem.getAttribute('main-product');
-    console.log("yrfuygu"+checkMainProduct);
+    if (checkMainProduct == 'product'){
+      
+    }else{
+      
     var nextbutton = newElem.querySelectorAll('.swiper-button-next')[0];
     var prebutton = newElem.querySelectorAll('.swiper-button-prev')[0];
     const swiperTabs = new Swiper(item, {
@@ -277,6 +280,7 @@ collcetionImageSlider.forEach(item => {
     item.addEventListener("mouseout", function() {
         swp.autoplay.stop();
     })
+}
 });
 
 
