@@ -39,7 +39,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
   <div class="product-image-container"  main-product="product">
     {% if colorOption %}
       {% for option in product.options_with_values %}
-      {% if option.name == 'Color'%}
+      {% if option.name == 'Color' or option.name == 'COLOR' %}
       {% for value in option.values %}
       <div class="product-image-wrapper">
          <div class="swiper-wrapper">
