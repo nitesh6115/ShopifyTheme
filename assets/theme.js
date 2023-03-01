@@ -251,6 +251,8 @@ CollectionSlider.forEach(item => {
 var collcetionImageSlider = document.querySelectorAll('.product-image-wrapper');
 collcetionImageSlider.forEach(item => {
     var newElem = item.closest('.product-image-container')
+    var checkMainProduct = newElem.getAttribute('main-product');
+    console.log(checkMainProduct);
     var nextbutton = newElem.querySelectorAll('.swiper-button-next')[0];
     var prebutton = newElem.querySelectorAll('.swiper-button-prev')[0];
     const swiperTabs = new Swiper(item, {
