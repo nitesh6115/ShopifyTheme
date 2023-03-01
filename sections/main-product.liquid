@@ -113,7 +113,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
        <div class="product-variant-container">
          
           {% for option in product.options_with_values %}
-          {% if option.name == 'Color'%}
+          {% if option.name == 'Color' or  option.name == 'COLOR'%}
           <div class="product-variant-images selector-wrapper" data-option-size="{{ forloop.index0 }}">
              <div class="prodouct-variant-slider">
              <div class="swiper-wrapper">
@@ -179,7 +179,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
     <div class="quick-add-wrapper">
     <div class="other-selector-wrapper">
       {% for option in product.options_with_values %}
-        {% unless option.name == "Color" %}
+        {% unless option.name == "Color"  or option.name == 'COLOR'%}
           {% assign index = forloop.index %}
           <div class="OtherOptions selector-wrapper" data-option-size="{{ forloop.index0 }}">
           <div class="size-selctor-wrapper">
