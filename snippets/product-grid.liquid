@@ -4,10 +4,10 @@
 {% assign colorOption = flase %}
 {% assign szieOption = flase %}
 {% for option in card_product.options_with_values %}
-{% if option.name contains 'Color' %}
+{% if option.name contains 'Color' or option.name contains 'COLOR' %}
 {% assign colorOption = true %}
 {% endif %}
-{% if option.name contains 'Size' %}
+{% if option.name contains 'Size' or option.name contains 'SIZE' %}
 {% assign szieOption = true %}
 {% endif %}
 {% endfor %}
