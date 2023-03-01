@@ -141,6 +141,7 @@ function ChnageVaiantImg(event) {
     // intilize slider
     var item = mainParent.querySelectorAll('.product-image-slide')[0];
     var newElem = mainParent.querySelectorAll('.product-image-container')[0]
+    console.log("yes")
     var nextbutton = newElem.querySelectorAll('.swiper-button-next')[0];
     var prebutton = newElem.querySelectorAll('.swiper-button-prev')[0];
     const swiperTabs = new Swiper(item, {
