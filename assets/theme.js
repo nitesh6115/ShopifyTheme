@@ -167,7 +167,7 @@ function ChnageVaiantImg(event) {
     }
   
     var mainselctbox = mainParent.querySelectorAll('select option');
-
+    var totalOptionsSize = mainParent.querySelectorAll('[data-option-size]')
     var soldOut = [];
     mainselctbox.forEach(item => {
         var text = item.innerText
@@ -175,9 +175,18 @@ function ChnageVaiantImg(event) {
             const dataAvability2 = item.getAttribute('data-avability');
             if (dataAvability2 == 'false') {
                 const soldOutVariant = text.split(' / ');
+                if (totalOptionsSize == 1){
                 soldOut.push(soldOutVariant[0]);
-                soldOut.push(soldOutVariant[1]);
-                soldOut.push(soldOutVariant[2]);
+                }else if(totalOptionsSize == 2){
+                soldOut.push(soldOutVariant[0]);
+                soldOut.push(soldOutVariant[1]);  
+                }else if(totalOptionsSize == 3){
+                soldOut.push(soldOutVariant[0]);
+                soldOut.push(soldOutVariant[1]); 
+                soldOut.push(soldOutVariant[2]);  
+                }
+                
+                
             }
         }
     })
