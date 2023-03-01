@@ -182,7 +182,7 @@ function ChnageVaiantImg(event) {
         }
     })
     if (soldOut.length > 0) {
-        //console.log(soldOut)
+        console.log(soldOut)
         soldOut.forEach(sold => {
             var soldItem = mainParent.querySelectorAll('.size-selector[data-title="' + sold + '"]')[0];
             soldItem.classList.add('Sold-out');
