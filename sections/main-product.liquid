@@ -98,14 +98,92 @@ data-type:'add-to-cart-form' %}
   </div>
    </div>
   <div class="box-3">
-    <div class="images-grid">
-         {% for option in product.options_with_values %}
+    <div class="quick-add-wrapper">
+    <div class="other-selector-wrapper">
+      <div class="quick-add">
+       <span>QUICK ADD +</span>
+      </div>
+      {% for option in card_product.options_with_values %}
+        {% unless option.name == "Color" %}
+          {% assign index = forloop.index %}
+          <div class="OtherOptions selector-wrapper" data-option-size="{{ forloop.index0 }}">
+          <div class="size-selctor-wrapper">
+           {% for value in option.values %}
+             <div class="size-selector {% if option.selected_value==value
+                %}active{% endif %}" data-title="{{ value | escape }}">
+             
+               <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" onclick="SelectVariant(this)" type="size" data-title="{{ value |escape }}">
+                {{ value }}
+              </label>
+              <input class="single-option-selector" 
+                 id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" 
+                 type="radio"
+                 name="{{ option.name }}" 
+                 value="{{ value | escape }}"
+                 data-index="option{{index}}" {% if option.selected_value==value
+                %}checked="true" {% endif %} />
+             </div>
+            {% endfor %}
+          </div>
+          </div>
+          {% endunless %}
+      {% endfor %}
+  </div>
+     
+    </div>
+ </div>
+  <div class="bottom-container">
+      <script>
+        {{card_product.media|json}}
+      </script>
+    <div class="product-info">
+        <h3>{{ card_product.title }}</h3>
+        {% for option in card_product.options_with_values %}
+        {% if option.name == 'Color' %}
+        <p class="colorNameBox"><span class="SelectedColor">{{ option.values[0] }}</span><span class="TotalColorSize">{{ option.values | size }} Colors</span></p>
+        {% endif %}
+        {% endfor %}
+        <p>{{ card_product.price| money_with_currency}}</p>
+      </div>
+       <div class="product-variant-container">
+         
+          {% for option in card_product.options_with_values %}
           {% if option.name == 'Color'%}
-            <p class="colorNameBox"><span class="TotalColorSize">{{ option.values | size }} Colors</span><span class="SelectedColor">{{ option.values[0] }}</span></p>
-           <div class="ColorOptionBox">
+          <div class="product-variant-images selector-wrapper" data-option-size="{{ forloop.index0 }}">
+             <div class="prodouct-variant-slider">
+             <div class="swiper-wrapper">
             {% for value in option.values %}
-            {% for image in product.images %}
+               {% assign color_alt = false %}
+        {%for image in card_product.images %}
+        {% if image.alt == value %}
+        {% assign color_alt = ture %}
+        {% endif %}
+        {% endfor %}
+        {% if color_alt %}
+            {% for image in card_product.images %}
             {% if image.alt == value %}
+              <div class="swiper-slide" data-swiper-autoplay="1000">
+              <div class="size-selector" data-title="{{ value | escape }}">
+              <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" onclick="SelectVariant(this)" type="color" data-title="{{ value | escape }}">
+               <div class="variant-images radius-5 overflow-hidden">
+                  <img width="{{ image.width }}" height="{{ image.height }}" loading="lazy" alt="{{ image.alt }}" src="{{image.src| img_url: '60x60' }}">
+                 </div>
+                 </label>
+              <input  class="VarImage"
+                 id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" 
+                 type="radio"
+                 name="{{ option.name }}" 
+                 value="{{ value | escape }}"
+                 data-index="option{{index}}" {% if option.selected_value==value
+                %}checked="true" {% endif %} />
+             </div>
+              </div>
+            {% break %}
+            {% endif %}
+            {% endfor %}
+          {% else %}
+              {% for image in card_product.images %}
+              <div class="swiper-slide" data-swiper-autoplay="1000">
               <div class="size-selector" data-title="{{ value | escape }}">
              <input  class="VarImage"
                  id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" 
@@ -114,49 +192,35 @@ data-type:'add-to-cart-form' %}
                  value="{{ value | escape }}"
                  data-index="option{{index}}" {% if option.selected_value==value
                 %}checked="true" {% endif %} />
-               <label type="color" data-title="{{ value | escape }}">
+              
+               <label  onclick="SelectVariant(this)" type="color" data-title="{{ value | escape }}">
                <div class="variant-images radius-5 overflow-hidden">
-                  <img  src="{{image.src| img_url: '60x60' }}">
+                  <img  width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt }}" loading="lazy" src="{{image.src| img_url: '60x60' }}">
                  </div>
                  </label>
-            </div>
+             </div>
+              </div>
             {% break %}
-            {% endif %}
+            {% endfor %}  
+               {% endif %}
             {% endfor %}
-            {% endfor %}
+             </div>
+             </div>
+            </div>
             {% endif %}
            {% endfor %}
-           </div>
-     
-   </div>
-    <div class="size-grid">
-      <div class="selector-wrapper">
-        <div class="size-guide">
-          <p>size</p>
-          {% if product.options contains 'Size' %}
-            <a class="trigger-pop-up">size guide</a>
-            {% endif %}
-        </div> 
-      {% for option in product.options_with_values %}
-        {% if option.name == 'Size' %} 
-           {% for value in option.values %}
-              <div class="size-selector" onclick="SelectVariant(this)" data-title="{{ value | escape }}">
-             <input class="single-option-selector" 
-                 id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" 
-                 type="radio"
-                 name="{{ option.name }}" 
-                 value="{{ value | escape }}"
-                 data-index="option{{index}}" {% if option.selected_value==value
-                %}checked="true" {% endif %} />
-               <label type="size" data-title="{{ value |escape }}">
-                {{ value }}
-              </label>
-             </div>
-             {% endfor %}
+            
+         </div>
+ <select id="product-select" name="id" >
+        {% for variant in card_product.variants %}
+        {% if variant.available == true %}
+        <option data-avability="true"  value="{{variant.id}}">{{ variant.title }}</option>
+        {% else %} 
+        <option data-avability="false" disabled="disabled" value="{{variant.id}}">{{ variant.title }}</option>
         {% endif %}
-      {% endfor %} 
-      </div>
-    </div> 
+        {% endfor %}
+      </select>
+     
     <div class="add-to-cart">
       Select Size 
    </div> 
