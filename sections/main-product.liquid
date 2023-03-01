@@ -26,8 +26,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 {% assign szieOption = true %}
 {% endif %}
 {% endfor %}
-{% form 'product', card_product, data-product-form: '', data-product-handle: card_product.handle,
-data-type:'add-to-cart-form' %}
+{% form 'product', product, data-product-form: '', data-product-handle: product.handle, data-type:'add-to-cart-form' %}
   
 <div class="{% if section.settings.width == 'full-width'%}full-width{% elsif section.settings.width =='wrapper-width'%}page-width{% else %}narrow-width{% endif %}">
  <div class ="product-grid">
