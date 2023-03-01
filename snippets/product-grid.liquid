@@ -30,7 +30,7 @@
         {% if color_alt %}
         {%for image in card_product.images %}
         {% if image.alt == value %}
-        <div class="product-image-slide swiper-slide" >
+        <div class="product-image-slide swiper-slide" data-swiper-autoplay="1000" >
           <a href="{{ card_product.url }}">
             <img width="{{ image.width }}" height="{{ image.height }}" loading="lazy" class="borrder-all radius-20 feature-image" alt="{{ image.alt }}" src="{{ image.src | img_url: '248x333' }}">
           </a>
@@ -39,7 +39,7 @@
         {% endfor %}
           {% else %}
           {%for image in card_product.images %}
-        <div class="product-image-slide swiper-slide" >
+        <div class="product-image-slide swiper-slide" data-swiper-autoplay="1000" >
           <a href="{{ card_product.url }}">
             <img width="{{ image.width }}" height="{{ image.height }}" loading="lazy" class="borrder-all radius-20 feature-image" alt="{{ image.alt }}" src="{{ image.src | img_url: '248x333' }}">
           </a>
@@ -59,7 +59,7 @@
      <div class="product-image-wrapper">
          <div class="swiper-wrapper">
         {%for image in card_product.images %}
-        <div class="product-image-slide swiper-slide" >
+        <div class="product-image-slide swiper-slide" data-swiper-autoplay="1000" >
           <a href="{{ card_product.url }}">
             <img width="{{ image.width }}" height="{{ image.height }}" loading="lazy" class="borrder-all radius-20 feature-image" alt="{{ image.alt }}" src="{{ image.src | img_url: '248x333' }}">
           </a>
