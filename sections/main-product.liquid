@@ -14,7 +14,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 {% endstyle %}
 
 <div class="section-{{ section.id }}-padding">
-<div class="featured-product" main-product>
+<div class="featured-product">
 {% assign current_variant = product.selected_or_first_available_variant %}
 {% assign colorOption = flase %}
 {% assign szieOption = flase %}
@@ -36,7 +36,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
   </div>
   <div class="box-2">
   <div data-color="{{ colorOption }}" data-size="{{ sizeOption }}" class="top-container" data-url="{{ product.url }}">
-  <div class="product-image-container">
+  <div class="product-image-container"  main-product>
     {% if colorOption %}
       {% for option in product.options_with_values %}
       {% if option.name == 'Color'%}
