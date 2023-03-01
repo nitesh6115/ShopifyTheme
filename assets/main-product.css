@@ -81,7 +81,19 @@
     margin-right: 10px;
     margin-bottom: 10px;
 }
+.box-3 .product-variant-container {
+    position: relative;
+    top: inherit;
+    right: inherit;
+    left: inherit;
+    background: transparent;
+    visibility: visible;
+    opacity: 1;
+}
 
+.box-3 .product-info {
+    opacity: 1;
+}
 .size-grid .selector-wrapper .size-selector.active {
     background: var(--body-text-color);
 }
