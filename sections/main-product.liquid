@@ -36,7 +36,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
   </div>
   <div class="box-2">
   <div data-color="{{ colorOption }}" data-size="{{ sizeOption }}" class="top-container" data-url="{{ product.url }}">
-  <div class="product-image-container"  main-product>
+  <div class="product-image-container"  main-product="product">
     {% if colorOption %}
       {% for option in product.options_with_values %}
       {% if option.name == 'Color'%}
