@@ -167,7 +167,7 @@ function ChnageVaiantImg(event) {
     }
   
     var mainselctbox = mainParent.querySelectorAll('select option');
-    var totalOptionsSize = mainParent.querySelectorAll('[data-option-size]')
+    var totalOptionsSize = mainParent.querySelectorAll('[data-option-size]').length;
     var soldOut = [];
     mainselctbox.forEach(item => {
         var text = item.innerText
