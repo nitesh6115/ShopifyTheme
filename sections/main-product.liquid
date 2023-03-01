@@ -210,7 +210,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
            {% endfor %}
             
          </div>
- <select id="product-select" name="id" >
+       <select id="product-select" name="id" >
         {% for variant in product.variants %}
         {% if variant.available == true %}
         <option data-avability="true"  value="{{variant.id}}">{{ variant.title }}</option>
