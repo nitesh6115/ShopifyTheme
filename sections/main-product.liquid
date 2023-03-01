@@ -14,7 +14,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 {% endstyle %}
 
 <div class="section-{{ section.id }}-padding">
-<div class="featured-product">
+<div class="featured-product" main-product>
 {% assign current_variant = product.selected_or_first_available_variant %}
 {% assign colorOption = flase %}
 {% assign szieOption = flase %}
