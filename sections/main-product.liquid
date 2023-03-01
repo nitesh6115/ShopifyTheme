@@ -99,14 +99,17 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
   <div class="box-3">
     <div class="quick-add-wrapper">
     <div class="other-selector-wrapper">
-      <div class="quick-add">
-       <span>QUICK ADD +</span>
-      </div>
       {% for option in product.options_with_values %}
         {% unless option.name == "Color" %}
           {% assign index = forloop.index %}
           <div class="OtherOptions selector-wrapper" data-option-size="{{ forloop.index0 }}">
           <div class="size-selctor-wrapper">
+            {% if product.options contains 'Size' %}
+            <div class="size-guide">
+            <p>size</p>
+            <a class="trigger-pop-up">size guide</a>
+            </div>
+            {% endif %}
            {% for value in option.values %}
              <div class="size-selector {% if option.selected_value==value
                 %}active{% endif %}" data-title="{{ value | escape }}">
