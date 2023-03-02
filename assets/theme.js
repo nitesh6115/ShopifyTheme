@@ -59,7 +59,6 @@ function ChangeSize(event){
     mainselctbox.forEach(item => {
         var text = item.innerText
         if (text === Selector) {
-            console.log(text)
             variantId = item.value
             dataAvability = item.getAttribute('data-avability');
         }
