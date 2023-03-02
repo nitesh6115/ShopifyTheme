@@ -202,6 +202,27 @@ function triggerChange(element) {
     let changeEvent = new Event('change');
     element.dispatchEvent(changeEvent);
 }
+
+var variantImages = document.querySelectorAll('.prodouct-variant-slider');
+variantImages.forEach(slider => {
+    var swiperActive = slider.querySelectorAll('.size-selector')[0];
+    if (swiperActive !== '') {
+        swiperActive.classList.add('active')
+        var label = swiperActive.querySelectorAll('label')[0];
+        const slideritam = new Swiper(slider, {
+            slidesPerView: 5,
+            initialSlide: 0,
+            spaceBetween: 5,
+            draggable: true,
+        })
+    }
+})
+
+
+
+
+
+
 /** oNLY SECTION TABING **/
 var CollectionTabSection = document.querySelectorAll('.collection-tabbing');
 
@@ -214,7 +235,6 @@ CollectionTabSection.forEach(item => {
         allowTouchMove: false,
         initialSlide: 0,
     })
-
     function slide(e) {
         let target = e.target;
         let index = target.getAttribute('data-index');
@@ -225,7 +245,6 @@ CollectionTabSection.forEach(item => {
             slide(event)
         })
     })
-
 })
 
 var CollectionSlider = document.querySelectorAll('.collection-list');
@@ -254,21 +273,10 @@ CollectionSlider.forEach(item => {
         },
     })
 })
+/** oNLY SECTION TABING **/
 
-var variantImages = document.querySelectorAll('.prodouct-variant-slider');
-variantImages.forEach(slider => {
-    var swiperActive = slider.querySelectorAll('.size-selector')[0];
-    if (swiperActive !== '') {
-        swiperActive.classList.add('active')
-        var label = swiperActive.querySelectorAll('label')[0];
-        const slideritam = new Swiper(slider, {
-            slidesPerView: 5,
-            initialSlide: 0,
-            spaceBetween: 5,
-            draggable: true,
-        })
-    }
-})
+
+
 
 
 var shopContainer = document.querySelectorAll('.shoplock-container');
