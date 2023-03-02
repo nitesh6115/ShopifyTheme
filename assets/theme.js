@@ -261,6 +261,7 @@ var variantImages = document.querySelectorAll('.prodouct-variant-slider');
 
 variantImages.forEach(slider => {
     var swiperActive = slider.querySelectorAll('.size-selector')[0];
+    console.log(swiperActive);
     if (swiperActive !== '') {
         swiperActive.classList.add('active')
         var label = swiperActive.querySelectorAll('label')[0];
