@@ -210,7 +210,6 @@ function triggerChange(element) {
 var CollectionTabSection = document.querySelectorAll('.collection-tabbing');
 CollectionTabSection.forEach(item => {
     const navbtn = item.querySelectorAll('.tablinks')
-    console.log(navbtn)
     const CollectionTabSection = new Swiper(item, {
         slidesPerView: 1,
         speed: 500,
@@ -265,7 +264,7 @@ variantImages.forEach(slider => {
     if (swiperActive !== '') {
         swiperActive.classList.add('active')
         var label = swiperActive.querySelectorAll('label')[0];
-        //label.click()
+        label.click()
         const slideritam = new Swiper(slider, {
             slidesPerView: 5,
             initialSlide: 0,
