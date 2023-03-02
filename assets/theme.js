@@ -84,8 +84,9 @@ function ChangeSize(event){
 function CheckSoldOut(event){
    var mainParent = event.closest('.featured-product');
    var mainselctbox = mainParent.querySelectorAll('select option');
-    var totalOptionsSize = mainParent.querySelectorAll('[data-option-size]').length;
-    var soldOut = [];
+   var selcterValue = event.getAttribute('data-title');
+   var totalOptionsSize = mainParent.querySelectorAll('[data-option-size]').length;
+   var soldOut = [];
     mainselctbox.forEach(item => {
         var text = item.innerText
         if (text.indexOf(selcterValue) > -1) {
