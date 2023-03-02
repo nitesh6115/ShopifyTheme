@@ -21,7 +21,6 @@ elem.forEach(item => {
         var showimage = item.getAttribute('featured-image');
         const showimageItem = document.querySelectorAll('#' + showimage)[0];
         showimageItem.classList.add("active");
-
     });
     item.addEventListener("mouseout", (event) => {
         const hiddenImage = document.querySelectorAll('.featureImage');
@@ -31,11 +30,20 @@ elem.forEach(item => {
         });
     });
 });
-
+function OptionSelection(event) {
+    var mainParent = event.closest('.featured-product');
+    var childParent = event.closest('.selector-wrapper');
+    var selcterValue = event.getAttribute('data-title')
+    var SizeSelectorOption = childParent.querySelectorAll('.size-selector')
+    SizeSelectorOption.forEach(sizeOption => {
+        sizeOption.classList.remove("active");
+    })
+    event.closest('.size-selector').classList.add("active");
+}
 
 function SelectVariant(event) {
    var selectType = event.getAttribute('type')
-    changeActive(event);
+    OptionSelection(event);
     if (selectType == "color"){
       ChnageVaiantImg(event)
     }else{
@@ -72,16 +80,8 @@ function ChangeSize(event){
 
     }
 }
-function changeActive(event) {
-    var mainParent = event.closest('.featured-product');
-    var childParent = event.closest('.selector-wrapper');
-    var selcterValue = event.getAttribute('data-title')
-    var SizeSelectorOption = childParent.querySelectorAll('.size-selector')
-    SizeSelectorOption.forEach(sizeOption => {
-        sizeOption.classList.remove("active");
-    })
-    event.closest('.size-selector').classList.add("active");
-}
+
+
 
 function ChnageVaiantImg(event) {
     var mainParent = event.closest('.featured-product');
