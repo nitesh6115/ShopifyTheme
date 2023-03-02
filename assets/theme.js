@@ -30,7 +30,7 @@ elem.forEach(item => {
         });
     });
 });
-function OptionSelection(event) {
+function updateOptions(event) {
     var mainParent = event.closest('.featured-product');
     var childParent = event.closest('.selector-wrapper');
     var selcterValue = event.getAttribute('data-title')
@@ -41,16 +41,16 @@ function OptionSelection(event) {
     event.closest('.size-selector').classList.add("active");
 }
 
-function SelectVariant(event) {
+function updateOptions(event) {
    var selectType = event.getAttribute('type')
     OptionSelection(event);
     if (selectType == "color"){
       ChnageVaiantImg(event)
     }else{
-      ChangeSize(event)
+      updateOptionsSize(event)
     }
 }
-function ChangeSize(event){
+function updateOptionsSize(event){
    var mainParent = event.closest('.featured-product');
    var SelectorValue = mainParent.querySelectorAll('.size-selector.active');
     var slectedValue = [];
@@ -59,7 +59,7 @@ function ChangeSize(event){
         var SelectValue = optionIndex.getAttribute('data-title');
         slectedValue.push(SelectValue);
     })
-    var Selector = slectedValue.join(" / ")
+    var Selector = slectedValue.join(" / ");
     var mainselctbox = mainParent.querySelectorAll('select option');
     var dataAvability = "";
     var soldOut = [];
