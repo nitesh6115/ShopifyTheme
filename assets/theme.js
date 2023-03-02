@@ -30,7 +30,7 @@ elem.forEach(item => {
         });
     });
 });
-function updateOptions(event) {
+function OptionSelection(event) {
     var mainParent = event.closest('.featured-product');
     var childParent = event.closest('.selector-wrapper');
     var selcterValue = event.getAttribute('data-title')
@@ -41,16 +41,16 @@ function updateOptions(event) {
     event.closest('.size-selector').classList.add("active");
 }
 
-function updateOptions(event) {
+function SelectVariant(event) {
    var selectType = event.getAttribute('type')
     OptionSelection(event);
     if (selectType == "color"){
       ChnageVaiantImg(event)
     }else{
-      updateOptionsSize(event)
+      ChangeSize(event)
     }
 }
-function updateOptionsSize(event){
+function ChangeSize(event){
    var mainParent = event.closest('.featured-product');
    var SelectorValue = mainParent.querySelectorAll('.size-selector.active');
     var slectedValue = [];
@@ -59,7 +59,7 @@ function updateOptionsSize(event){
         var SelectValue = optionIndex.getAttribute('data-title');
         slectedValue.push(SelectValue);
     })
-    var Selector = slectedValue.join(" / ");
+    var Selector = slectedValue.join(" / ")
     var mainselctbox = mainParent.querySelectorAll('select option');
     var dataAvability = "";
     var soldOut = [];
@@ -261,7 +261,6 @@ var variantImages = document.querySelectorAll('.prodouct-variant-slider');
 
 variantImages.forEach(slider => {
     var swiperActive = slider.querySelectorAll('.size-selector')[0];
-    console.log(swiperActive)
     if (swiperActive !== '') {
         swiperActive.classList.add('active')
         var label = swiperActive.querySelectorAll('label')[0];
