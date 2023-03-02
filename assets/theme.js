@@ -202,12 +202,10 @@ function triggerChange(element) {
     let changeEvent = new Event('change');
     element.dispatchEvent(changeEvent);
 }
-
-
-
-
-// collection-tapping slider
+/** oNLY SECTION TABING **/
 var CollectionTabSection = document.querySelectorAll('.collection-tabbing');
+
+
 CollectionTabSection.forEach(item => {
     const navbtn = item.querySelectorAll('.tablinks')
     const CollectionTabSection = new Swiper(item, {
