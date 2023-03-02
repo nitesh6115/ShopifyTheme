@@ -45,7 +45,7 @@ function SelectVariant(event) {
    var selectType = event.getAttribute('type')
     OptionSelection(event);
     if (selectType == "color"){
-      ChnageVaiantImg(event)
+      ChangeColor(event)
     }else{
       ChangeSize(event)
     }
@@ -83,7 +83,7 @@ function ChangeSize(event){
 
 
 
-function ChnageVaiantImg(event) {
+function ChangeColor(event) {
     var mainParent = event.closest('.featured-product');
     var SizeSelectorOption = mainParent.querySelectorAll('.size-selector');
     var prductUrl = mainParent.querySelectorAll('[data-url]')[0];
