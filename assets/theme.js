@@ -81,7 +81,37 @@ function ChangeSize(event){
     }
 }
 
-
+function CheckSoldOut(event){
+   var mainParent = event.closest('.featured-product');
+   var mainselctbox = mainParent.querySelectorAll('select option');
+    var totalOptionsSize = mainParent.querySelectorAll('[data-option-size]').length;
+    var soldOut = [];
+    mainselctbox.forEach(item => {
+        var text = item.innerText
+        if (text.indexOf(selcterValue) > -1) {
+            const dataAvability2 = item.getAttribute('data-avability');
+            if (dataAvability2 == 'false') {
+                const soldOutVariant = text.split(' / ');
+                if (totalOptionsSize == 1){
+                soldOut.push(soldOutVariant[0]);
+                }else if(totalOptionsSize == 2){
+                soldOut.push(soldOutVariant[0]);
+                soldOut.push(soldOutVariant[1]);  
+                }else if(totalOptionsSize == 3){
+                soldOut.push(soldOutVariant[0]);
+                soldOut.push(soldOutVariant[1]); 
+                soldOut.push(soldOutVariant[2]);  
+                }
+            }
+        }
+    })
+    if (soldOut.length > 0) {
+        soldOut.forEach(sold => {
+            var soldItem = mainParent.querySelectorAll('.size-selector[data-title="' + sold + '"]')[0];
+            soldItem.classList.add('Sold-out');
+        })
+    }
+}
 
 function ChangeColor(event) {
     var mainParent = event.closest('.featured-product');
@@ -164,38 +194,7 @@ function ChangeColor(event) {
         swp.autoplay.stop();
     })
     }
-  
-    var mainselctbox = mainParent.querySelectorAll('select option');
-    var totalOptionsSize = mainParent.querySelectorAll('[data-option-size]').length;
-    var soldOut = [];
-    mainselctbox.forEach(item => {
-        var text = item.innerText
-        if (text.indexOf(selcterValue) > -1) {
-            const dataAvability2 = item.getAttribute('data-avability');
-            if (dataAvability2 == 'false') {
-                const soldOutVariant = text.split(' / ');
-                if (totalOptionsSize == 1){
-                soldOut.push(soldOutVariant[0]);
-                }else if(totalOptionsSize == 2){
-                soldOut.push(soldOutVariant[0]);
-                soldOut.push(soldOutVariant[1]);  
-                }else if(totalOptionsSize == 3){
-                soldOut.push(soldOutVariant[0]);
-                soldOut.push(soldOutVariant[1]); 
-                soldOut.push(soldOutVariant[2]);  
-                }
-                
-                
-            }
-        }
-    })
-    if (soldOut.length > 0) {
-        //console.log(soldOut)
-        soldOut.forEach(sold => {
-            var soldItem = mainParent.querySelectorAll('.size-selector[data-title="' + sold + '"]')[0];
-            soldItem.classList.add('Sold-out');
-        })
-    }
+    checkSoldOut(event);
 }
 
 function triggerChange(element) {
