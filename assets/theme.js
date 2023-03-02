@@ -44,6 +44,7 @@ function OptionSelection(event) {
 function SelectVariant(event) {
    var selectType = event.getAttribute('type')
     OptionSelection(event);
+    CheckSoldOut(event)
     if (selectType == "color"){
       ChangeColor(event)
     }else{
@@ -195,7 +196,6 @@ function ChangeColor(event) {
         swp.autoplay.stop();
     })
     }
-    CheckSoldOut(event);
 }
 
 function triggerChange(element) {
