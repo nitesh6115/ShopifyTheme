@@ -194,7 +194,7 @@ function ChangeColor(event) {
         swp.autoplay.stop();
     })
     }
-    checkSoldOut(event);
+    CheckSoldOut(event);
 }
 
 function triggerChange(element) {
