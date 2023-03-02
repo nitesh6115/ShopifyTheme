@@ -258,7 +258,6 @@ CollectionSlider.forEach(item => {
 })
 
 var variantImages = document.querySelectorAll('.prodouct-variant-slider');
-
 variantImages.forEach(slider => {
     var swiperActive = slider.querySelectorAll('.size-selector')[0];
     if (swiperActive !== '') {
