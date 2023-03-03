@@ -124,11 +124,12 @@
          
           {% for option in card_product.options_with_values %}
           {% if option.name == 'Color'  or option.name == 'COLOR'%}
+             {% assign color_alt = false %}
           <div class="product-variant-images selector-wrapper" data-option-size="{{ forloop.index0 }}">
              <div class="prodouct-variant-slider">
              <div class="swiper-wrapper">
             {% for value in option.values %}
-               {% assign color_alt = false %}
+              
         {%for image in card_product.images %}
         {% if image.alt == value %}
         {% assign color_alt = ture %}
