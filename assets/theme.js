@@ -206,7 +206,85 @@ elem.forEach(item => {
 // }
 
 function ProductItem(event){
-console.log(event);
+    var mainParent = event.closest('.featured-product');
+    var prductUrl = mainParent.querySelectorAll('[data-url]')[0];
+    prductUrl = prductUrl.getAttribute('data-url');
+   
+    var selcterValue = event.getAttribute('data-title');
+    const JsonScript = JSON.parse(mainParent.querySelectorAll("script")[0].innerHTML);
+    var topcontainer = mainParent.querySelectorAll('.top-container .product-image-container')[0]
+    var SelectedColor = mainParent.querySelectorAll('.SelectedColor')[0];
+    SelectedColor.innerHTML = selcterValue;
+    topcontainer.innerHTML = ''
+    var mainDiv = document.createElement('div');
+    mainDiv.classList.add("product-image-slide");
+    var newDiv = document.createElement('div');
+    newDiv.classList.add("swiper-wrapper");
+    JsonScript.forEach(images => {
+        if (selcterValue === images.alt) {
+            var swiperWrapp = document.createElement('div');
+            swiperWrapp.classList.add('swiper-slide')
+            swiperWrapp.setAttribute("data-swiper-autoplay", "1000");
+            swiperWrapp.innerHTML = '<a href="' + prductUrl + '"><img class="borrder-all radius-20 feature-image" alt="'+ images.alt +'" src="' + images.src + '"></a>'
+            newDiv.appendChild(swiperWrapp);
+        }
+    })
+    var swiperPrev = document.createElement('div');
+    swiperPrev.classList.add('swiper-button-prev')
+    var swiperNext = document.createElement('div');
+    swiperNext.classList.add('swiper-button-next');
+    var htmlstring = newDiv.innerHTML
+    htmlstring = (htmlstring.trim) ? htmlstring.trim() : htmlstring.replace(/^\s+/,'');
+    
+    if(htmlstring == '') {
+    JsonScript.forEach(images => {
+            var swiperWrapp = document.createElement('div');
+            swiperWrapp.classList.add('swiper-slide')
+            swiperWrapp.setAttribute("data-swiper-autoplay", "1000");
+            swiperWrapp.innerHTML = '<a href="' + prductUrl + '"><img class="borrder-all radius-20 feature-image" alt="'+ images.alt +'" src="' + images.src + '"></a>'
+            newDiv.appendChild(swiperWrapp);
+    })
+     mainDiv.append(newDiv)
+    }else{
+    
+    mainDiv.append(newDiv)
+    }
+    topcontainer.append(swiperNext)
+    topcontainer.append(swiperPrev)
+    topcontainer.appendChild(mainDiv)
+    // intilize slider
+    var item = mainParent.querySelectorAll('.product-image-slide')[0];
+    var newElem = mainParent.querySelectorAll('.product-image-container')[0]
+    var nextbutton = newElem.querySelectorAll('.swiper-button-next')[0];
+    var prebutton = newElem.querySelectorAll('.swiper-button-prev')[0];
+    var checkMainProduct = newElem.getAttribute('main-product');
+    if (checkMainProduct == 'product'){
+      
+    }else{
+    const swiperTabs = new Swiper(item, {
+        loop: true,
+        allowTouchMove: false,
+        autoplay: 7000,
+        speed: 300,
+        slidesPerView: 1,
+        noSwipingClass: 'swiper-no-swiping',
+        initialSlide: 0,
+        effect: 'fade',
+        navigation: {
+            nextEl: nextbutton,
+            prevEl: prebutton,
+        },
+    })
+    var swp = item.swiper
+    item.addEventListener("mouseover", function() {
+        swp.autoplay.start();
+    })
+    item.addEventListener("mouseout", function() {
+        swp.autoplay.stop();
+    })
+    }
+
+  
 }
 
 var ProductItems = document.querySelectorAll('.featured-product');
