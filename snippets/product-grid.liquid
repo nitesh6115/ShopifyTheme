@@ -123,8 +123,9 @@
        <div class="product-variant-container">
          
           {% for option in card_product.options_with_values %}
-          {% if option.name == 'Color'  or option.name == 'COLOR'%}
              {% assign color_alt = false %}
+          {% if option.name == 'Color'  or option.name == 'COLOR'%}
+            
           <div class="product-variant-images selector-wrapper" data-option-size="{{ forloop.index0 }}">
              <div class="prodouct-variant-slider">
              <div class="swiper-wrapper">
