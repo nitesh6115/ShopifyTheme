@@ -87,7 +87,10 @@ function CheckSoldOut(event){
    var mainselctbox = mainParent.querySelectorAll('select option');
    var selcterValue = event.getAttribute('data-title');
    var totalOptionsSize = mainParent.querySelectorAll('[data-option-size]').length;
-   
+   var SizeSelectorOption = mainParent.querySelectorAll('.size-selector');
+   SizeSelectorOption.forEach(sizeOption => {
+        sizeOption.classList.remove("Sold-out");
+    })
    var soldOut = [];
     mainselctbox.forEach(item => {
         var text = item.innerText
@@ -120,12 +123,9 @@ function CheckSoldOut(event){
 
 function ChangeColor(event) {
     var mainParent = event.closest('.featured-product');
-    var SizeSelectorOption = mainParent.querySelectorAll('.size-selector');
     var prductUrl = mainParent.querySelectorAll('[data-url]')[0];
     prductUrl = prductUrl.getAttribute('data-url');
-    SizeSelectorOption.forEach(sizeOption => {
-        sizeOption.classList.remove("Sold-out");
-    })
+   
     var selcterValue = event.getAttribute('data-title');
     const JsonScript = JSON.parse(mainParent.querySelectorAll("script")[0].innerHTML);
     var topcontainer = mainParent.querySelectorAll('.top-container .product-image-container')[0]
