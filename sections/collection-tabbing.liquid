@@ -68,7 +68,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
                         <div class="collection-list swiper" >
                           <div class="swiper-wrapper">
                             {% assign collection = collections[block.settings.slide-collection] %}
-                           {% for product in collection.products %}
+                           {% for product in collection.products  limit: 8 %}
                              <div class="featured-product swiper-slide">
                               {% render 'product-grid', card_product:product %}
                              </div>
