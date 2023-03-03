@@ -87,7 +87,7 @@ function CheckSoldOut(event){
    var mainselctbox = mainParent.querySelectorAll('select option');
    var selcterValue = event.getAttribute('data-title');
    var totalOptionsSize = mainParent.querySelectorAll('[data-option-size]').length;
-   console.log(totalOptionsSize);
+   
    var soldOut = [];
     mainselctbox.forEach(item => {
         var text = item.innerText
@@ -109,6 +109,7 @@ function CheckSoldOut(event){
         }
     })
     if (soldOut.length > 0) {
+      console.log(soldOut);
         soldOut.forEach(sold => {
             var soldItem = mainParent.querySelectorAll('.size-selector[data-title="' + sold + '"]')[0];
             soldItem.classList.add('Sold-out');
