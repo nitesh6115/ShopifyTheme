@@ -83,10 +83,11 @@ function ChangeSize(event){
 
 function CheckSoldOut(event){
    var mainParent = event.closest('.featured-product');
-   console.log(event);
+  
    var mainselctbox = mainParent.querySelectorAll('select option');
    var selcterValue = event.getAttribute('data-title');
    var totalOptionsSize = mainParent.querySelectorAll('[data-option-size]').length;
+   console.log(totalOptionsSize);
    var soldOut = [];
     mainselctbox.forEach(item => {
         var text = item.innerText
