@@ -109,9 +109,10 @@ function CheckSoldOut(event){
         }
     })
     if (soldOut.length > 0) {
-      console.log(soldOut);
+      //console.log(soldOut);
         soldOut.forEach(sold => {
             var soldItem = mainParent.querySelectorAll('.size-selector[data-title="' + sold + '"]')[0];
+            console.log(soldItem)
             soldItem.classList.add('Sold-out');
         })
     }
