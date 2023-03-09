@@ -464,6 +464,7 @@ li.menu-link.has-child-links.active .DropDownBox.dropdown-child .show-image {
 .size-selector.Sold-out {
     color: #c35f5f;
     text-decoration: line-through;
+    position: relative;
 }
 .size-selector.Sold-out svg.svgSold {
     position: absolute;
