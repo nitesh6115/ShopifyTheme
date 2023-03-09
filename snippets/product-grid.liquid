@@ -121,9 +121,9 @@
         <p>{{ card_product.price| money_with_currency}}</p>
       </div>
        <div class="product-variant-container">
-         
+          {% assign color_alt = false %}
           {% for option in card_product.options_with_values %}
-             {% assign color_alt = false %}
+            
           {% if option.name == 'Color'  or option.name == 'COLOR'%}
             
           <div class="product-variant-images selector-wrapper" data-option-size="{{ forloop.index0 }}">
