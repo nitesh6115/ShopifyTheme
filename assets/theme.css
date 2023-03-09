@@ -481,13 +481,15 @@ li.menu-link.has-child-links.active .DropDownBox.dropdown-child .show-image {
 
 
 
-.size-selector.Sold-out:hover svg.svgSold {
+.size-selector.Sold-out:hover svg.svgSold, .product-variant-container .size-selector.Sold-out:hover label {
     opacity: 1;
 }
 .size-selector.Sold-out:hover label {
     opacity: 0;
 }
-
+.product-variant-container svg.svgSold {
+    display: none !important;
+}
 .size-selector.Sold-out label {
     pointer-events: none;
 }
