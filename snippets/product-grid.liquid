@@ -4,32 +4,48 @@
 {% assign colorOption = flase %}
 {% assign szieOption = flase %}
 {% for option in card_product.options_with_values %}
-{% if option.name contains 'Color' %}
+{% if option.name contains 'Color' or option.name contains 'COLOR' %}
 {% assign colorOption = true %}
 {% endif %}
-{% if option.name contains 'Size' %}
+{% if option.name contains 'Size' or option.name contains 'SIZE' %}
 {% assign szieOption = true %}
 {% endif %}
 {% endfor %}
-
   {% form 'product', card_product, data-product-form: '', data-product-handle: card_product.handle,
       data-type:'add-to-cart-form' %}
-  <div class="top-container" data-url="{{ card_product.url }}">
+  <div data-color="{{ colorOption }}" data-size="{{ sizeOption }}" class="top-container" data-url="{{ card_product.url }}">
     <div class="product-image-container">
+    {% if colorOption %}
       {% for option in card_product.options_with_values %}
-      {% if option.name == 'Color'%}
+      {% if option.name == 'Color'  or option.name == 'COLOR' %}
       {% for value in option.values %}
       <div class="product-image-wrapper">
          <div class="swiper-wrapper">
+        {% assign color_alt = false %}
         {%for image in card_product.images %}
         {% if image.alt == value %}
-        <div class="product-image-slide swiper-slide" >
+        {% assign color_alt = ture %}
+        {% endif %}
+        {% endfor %}
+        {% if color_alt %}
+        {%for image in card_product.images %}
+        {% if image.alt == value %}
+        <div class="product-image-slide swiper-slide" data-swiper-autoplay="1000" >
           <a href="{{ card_product.url }}">
-            <img class="borrder-all radius-20 feature-image" src="{{ image.src | img_url: '248x333' }}">
+            <img width="{{ image.width }}" height="{{ image.height }}" loading="lazy" class="borrder-all radius-20 feature-image" alt="{{ image.alt }}" src="{{ image.src | img_url: '248x333' }}">
           </a>
         </div>
         {% endif %}
         {% endfor %}
+          {% else %}
+          {%for image in card_product.images %}
+        <div class="product-image-slide swiper-slide" data-swiper-autoplay="1000" >
+          <a href="{{ card_product.url }}">
+            <img width="{{ image.width }}" height="{{ image.height }}" loading="lazy" class="borrder-all radius-20 feature-image" alt="{{ image.alt }}" src="{{ image.src | img_url: '248x333' }}">
+          </a>
+        </div>
+        {% endfor %}
+          {% endif %}
          </div>
         
        </div>
@@ -39,35 +55,53 @@
       {% endfor %}
       {% endif %}
       {% endfor %}
-   
+   {% else %}
+     <div class="product-image-wrapper">
+         <div class="swiper-wrapper">
+        {%for image in card_product.images %}
+        <div class="product-image-slide swiper-slide" data-swiper-autoplay="1000" >
+          <a href="{{ card_product.url }}">
+            <img width="{{ image.width }}" height="{{ image.height }}" loading="lazy" class="borrder-all radius-20 feature-image" alt="{{ image.alt }}" src="{{ image.src | img_url: '248x333' }}">
+          </a>
+        </div>
+        {% endfor %}
+         </div>
+        
+       </div>
+     <div class="swiper-button-next"></div>
+       <div class="swiper-button-prev"></div>
+      {% endif %}
     </div>
     
     <div class="quick-add-wrapper">
-    <div class="selector-wrapper">
+    <div class="other-selector-wrapper">
       <div class="quick-add">
        <span>QUICK ADD +</span>
       </div>
       {% for option in card_product.options_with_values %}
-        {% if option.name == "Size" %}
+        {% unless option.name == "Color"  or option.name == 'COLOR' %}
           {% assign index = forloop.index %}
+          <div class="OtherOptions selector-wrapper" data-option-size="{{ forloop.index0 }}">
           <div class="size-selctor-wrapper">
            {% for value in option.values %}
              <div class="size-selector {% if option.selected_value==value
                 %}active{% endif %}" data-title="{{ value | escape }}">
-             <input class="single-option-selector" 
+             
+               <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" onclick="SelectVariant(this)" type="size" data-title="{{ value |escape }}">
+                {{ value }}
+              </label>
+              <input class="single-option-selector" 
                  id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" 
                  type="radio"
                  name="{{ option.name }}" 
                  value="{{ value | escape }}"
                  data-index="option{{index}}" {% if option.selected_value==value
                 %}checked="true" {% endif %} />
-               <label onclick="SelectVariant(this)" type="size" data-title="{{ value |escape }}">
-                {{ value }}
-              </label>
              </div>
             {% endfor %}
           </div>
-          {% endif %}
+          </div>
+          {% endunless %}
       {% endfor %}
   </div>
      
@@ -80,21 +114,52 @@
     <div class="product-info">
         <h3>{{ card_product.title }}</h3>
         {% for option in card_product.options_with_values %}
-        {% if option.name == 'Color' %}
+        {% if option.name == 'Color'  or option.name == 'COLOR' %}
         <p class="colorNameBox"><span class="SelectedColor">{{ option.values[0] }}</span><span class="TotalColorSize">{{ option.values | size }} Colors</span></p>
         {% endif %}
         {% endfor %}
         <p>{{ card_product.price| money_with_currency}}</p>
       </div>
        <div class="product-variant-container">
-         <div class="product-variant-images selector-wrapper" >
+         
           {% for option in card_product.options_with_values %}
-          {% if option.name == 'Color'%}
+             {% assign color_alt = false %}
+          {% if option.name == 'Color'  or option.name == 'COLOR'%}
+            
+          <div class="product-variant-images selector-wrapper" data-option-size="{{ forloop.index0 }}">
              <div class="prodouct-variant-slider">
              <div class="swiper-wrapper">
             {% for value in option.values %}
+              
+        {%for image in card_product.images %}
+        {% if image.alt == value %}
+        {% assign color_alt = true %}
+        {% endif %}
+        {% endfor %}
+        {% if color_alt %}
             {% for image in card_product.images %}
             {% if image.alt == value %}
+              <div class="swiper-slide" data-swiper-autoplay="1000">
+              <div class="size-selector" data-title="{{ value | escape }}">
+              <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" onclick="SelectVariant(this)" type="color" data-title="{{ value | escape }}">
+               <div class="variant-images radius-5 overflow-hidden">
+                  <img width="{{ image.width }}" height="{{ image.height }}" loading="lazy" alt="{{ image.alt }}" src="{{image.src| img_url: '60x60' }}">
+                 </div>
+                 </label>
+              <input  class="VarImage"
+                 id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" 
+                 type="radio"
+                 name="{{ option.name }}" 
+                 value="{{ value | escape }}"
+                 data-index="option{{index}}" {% if option.selected_value==value
+                %}checked="true" {% endif %} />
+             </div>
+              </div>
+            {% break %}
+            {% endif %}
+            {% endfor %}
+          {% else %}
+              {% for image in card_product.images %}
               <div class="swiper-slide" data-swiper-autoplay="1000">
               <div class="size-selector" data-title="{{ value | escape }}">
              <input  class="VarImage"
@@ -107,20 +172,21 @@
               
                <label  onclick="SelectVariant(this)" type="color" data-title="{{ value | escape }}">
                <div class="variant-images radius-5 overflow-hidden">
-                  <img  src="{{image.src| img_url: '60x60' }}">
+                  <img  width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt }}" loading="lazy" src="{{image.src| img_url: '60x60' }}">
                  </div>
                  </label>
              </div>
               </div>
             {% break %}
-            {% endif %}
-            {% endfor %}
+            {% endfor %}  
+               {% endif %}
             {% endfor %}
              </div>
              </div>
+            </div>
             {% endif %}
            {% endfor %}
-            </div>
+            
          </div>
  <select id="product-select" name="id" >
         {% for variant in card_product.variants %}
@@ -132,6 +198,7 @@
         {% endfor %}
       </select>
      
+  </div>
   </div>
   {% endform %}
 
