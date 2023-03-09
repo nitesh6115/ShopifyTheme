@@ -164,7 +164,8 @@ function ChnageVaiantImg(event) {
         swp.autoplay.stop();
     })
     var mainselctbox = mainParent.querySelectorAll('select option');
-    var soldOut = [];	
+    var soldOut = [];
+    var totalOptionsSize = mainParent.querySelectorAll('[data-option-size]').length;
     mainselctbox.forEach(item => {	
         var text = item.innerText	
         if (text.indexOf(selcterValue) > -1) {	
