@@ -126,9 +126,10 @@ function CheckSoldOut(event){
 
 function ChangeColor(event) {
     var mainParent = event.closest('.featured-product');
+   console.log(mainParent);
     var prductUrl = mainParent.querySelectorAll('[data-url]')[0];
-    console.log(prductUrl);
-    //prductUrl = prductUrl.getAttribute('data-url');
+   
+    prductUrl = prductUrl.getAttribute('data-url');
    
     var selcterValue = event.getAttribute('data-title');
     const JsonScript = JSON.parse(mainParent.querySelectorAll("script")[0].innerHTML);
