@@ -125,7 +125,7 @@ function CheckSoldOut(event){
 }
 
 function ChangeColor(event) {
-    var mainParent = event.closest('.featured-product');
+    var mainParent = event.closest('form');
    console.log(mainParent);
     var prductUrl = mainParent.querySelectorAll('[data-url]')[0];
    
