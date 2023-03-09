@@ -311,7 +311,7 @@ variantImages.forEach(slider => {
     if (swiperActive !== '') {
         swiperActive.classList.add('active')
         var label = swiperActive.querySelectorAll('label')[0];
-        //label.click()
+        label.click()
         const slideritam = new Swiper(slider, {
             slidesPerView: 5,
             initialSlide: 0,
