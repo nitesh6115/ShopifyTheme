@@ -21,6 +21,7 @@ elem.forEach(item => {
         var showimage = item.getAttribute('featured-image');
         const showimageItem = document.querySelectorAll('#' + showimage)[0];
         showimageItem.classList.add("active");
+
     });
     item.addEventListener("mouseout", (event) => {
         const hiddenImage = document.querySelectorAll('.featureImage');
@@ -31,23 +32,12 @@ elem.forEach(item => {
     });
 });
 
-function OptionSelection(event) {
-    var mainParent = event.closest('.featured-product');
-    var childParent = event.closest('.selector-wrapper');
-    var selcterValue = event.getAttribute('data-title')
-    var SizeSelectorOption = childParent.querySelectorAll('.size-selector')
-    SizeSelectorOption.forEach(sizeOption => {
-        sizeOption.classList.remove("active");
-    })
-    event.closest('.size-selector').classList.add("active");
-}
 
 function SelectVariant(event) {
    var selectType = event.getAttribute('type')
-    OptionSelection(event);
-    CheckSoldOut(event)
+    changeActive(event);
     if (selectType == "color"){
-      ChangeColor(event)
+      ChnageVaiantImg(event)
     }else{
       ChangeSize(event)
     }
@@ -64,73 +54,48 @@ function ChangeSize(event){
     var Selector = slectedValue.join(" / ")
     var mainselctbox = mainParent.querySelectorAll('select option');
     var dataAvability = "";
+    var soldOut = [];
     var variantId = "";
     mainselctbox.forEach(item => {
         var text = item.innerText
+        
         if (text === Selector) {
+            console.log(text)
             variantId = item.value
             dataAvability = item.getAttribute('data-avability');
         }
     })
+    // console.log(soldOut);
+
     var selectType = event.getAttribute('type')
     if (dataAvability == 'true') {
         if (selectType == "size") {
+            console.log("ese")
             addtocartitem(variantId)
         }
     } else {
 
     }
 }
-
-function CheckSoldOut(event){
-   var mainParent = event.closest('.featured-product');
-  
-   var mainselctbox = mainParent.querySelectorAll('select option');
-   var selcterValue = event.getAttribute('data-title');
-   var totalOptionsSize = mainParent.querySelectorAll('[data-option-size]').length;
-   var SizeSelectorOption = mainParent.querySelectorAll('.size-selector');
-   SizeSelectorOption.forEach(sizeOption => {
-        sizeOption.classList.remove("Sold-out");
-        const elemet = sizeOption.closest('.svgSold')
-          //console.log(sizeOption)
+function changeActive(event) {
+    var mainParent = event.closest('.featured-product');
+    var childParent = event.closest('.selector-wrapper');
+    var selcterValue = event.getAttribute('data-title')
+    var SizeSelectorOption = childParent.querySelectorAll('.size-selector')
+    SizeSelectorOption.forEach(sizeOption => {
+        sizeOption.classList.remove("active");
     })
-   var soldOut = [];
-    mainselctbox.forEach(item => {
-        var text = item.innerText
-        if (text.indexOf(selcterValue) > -1) {
-            const dataAvability2 = item.getAttribute('data-avability');
-            if (dataAvability2 == 'false') {
-                const soldOutVariant = text.split(' / ');
-                if (totalOptionsSize == 1){
-                soldOut.push(soldOutVariant[0]);
-                }else if(totalOptionsSize == 2){
-                soldOut.push(soldOutVariant[0]);
-                soldOut.push(soldOutVariant[1]);  
-                }else if(totalOptionsSize == 3){
-                soldOut.push(soldOutVariant[0]);
-                soldOut.push(soldOutVariant[1]); 
-                soldOut.push(soldOutVariant[2]);  
-                }
-            }
-        }
-    })
-    if (soldOut.length > 0) {
-      //console.log(soldOut);
-        soldOut.forEach(sold => {
-            var soldItem = mainParent.querySelectorAll('.size-selector[data-title="' + sold + '"]')[0];
-            soldItem.innerHTML += '<svg class="svgSold" data-name="Bell Icon" xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 448 512" class="icon-bell h-[15px] px-[5px] fill-secondary"><path d="M256 32V51.2C329 66.03 384 130.6 384 208V226.8C384 273.9 401.3 319.2 432.5 354.4L439.9 362.7C448.3 372.2 450.4 385.6 445.2 397.1C440 408.6 428.6 416 416 416H32C19.4 416 7.971 408.6 2.809 397.1C-2.353 385.6-.2883 372.2 8.084 362.7L15.5 354.4C46.74 319.2 64 273.9 64 226.8V208C64 130.6 118.1 66.03 192 51.2V32C192 14.33 206.3 0 224 0C241.7 0 256 14.33 256 32H256zM224 512C207 512 190.7 505.3 178.7 493.3C166.7 481.3 160 464.1 160 448H288C288 464.1 281.3 481.3 269.3 493.3C257.3 505.3 240.1 512 224 512z"></path></svg>';
-            soldItem.classList.add('Sold-out');
-        })
-    }
+    event.closest('.size-selector').classList.add("active");
 }
 
-function ChangeColor(event) {
+function ChnageVaiantImg(event) {
     var mainParent = event.closest('.featured-product');
-    console.log(mainParent);
+    var SizeSelectorOption = mainParent.querySelectorAll('.size-selector');
     var prductUrl = mainParent.querySelectorAll('[data-url]')[0];
-   
     prductUrl = prductUrl.getAttribute('data-url');
-   
+    SizeSelectorOption.forEach(sizeOption => {
+        sizeOption.classList.remove("Sold-out");
+    })
     var selcterValue = event.getAttribute('data-title');
     const JsonScript = JSON.parse(mainParent.querySelectorAll("script")[0].innerHTML);
     var topcontainer = mainParent.querySelectorAll('.top-container .product-image-container')[0]
@@ -178,10 +143,6 @@ function ChangeColor(event) {
     var newElem = mainParent.querySelectorAll('.product-image-container')[0]
     var nextbutton = newElem.querySelectorAll('.swiper-button-next')[0];
     var prebutton = newElem.querySelectorAll('.swiper-button-prev')[0];
-    var checkMainProduct = newElem.getAttribute('main-product');
-    if (checkMainProduct == 'product'){
-      
-    }else{
     const swiperTabs = new Swiper(item, {
         loop: true,
         allowTouchMove: false,
@@ -203,26 +164,27 @@ function ChangeColor(event) {
     item.addEventListener("mouseout", function() {
         swp.autoplay.stop();
     })
+    var mainselctbox = mainParent.querySelectorAll('select option');
+
+    var soldOut = [];
+    mainselctbox.forEach(item => {
+        var text = item.innerText
+        if (text.indexOf(selcterValue) > -1) {
+            const dataAvability2 = item.getAttribute('data-avability');
+            if (dataAvability2 == 'false') {
+                const soldOutVariant = text.split(' / ');
+                soldOut.push(soldOutVariant[0]);
+            }
+        }
+    })
+    if (soldOut.length > 0) {
+        //console.log(soldOut)
+        soldOut.forEach(sold => {
+            var soldItem = mainParent.querySelectorAll('.size-selector[data-title="' + sold + '"]')[0];
+            soldItem.classList.add('Sold-out');
+        })
     }
 }
-
-function ProductItem(event){
-
-}
-
-var ProductItems = document.querySelectorAll('.featured-product');
-ProductItems.forEach(Product => {
-  ProductItem(Product)
-})
-
-
-
-
-
-
-
-
-
 
 function triggerChange(element) {
     let changeEvent = new Event('change');
@@ -231,39 +193,19 @@ function triggerChange(element) {
 
 
 
-var variantImages = document.querySelectorAll('.prodouct-variant-slider');
-variantImages.forEach(slider => {
-    var swiperActive = slider.querySelectorAll('.size-selector')[0];
-    if (swiperActive !== '') {
-        swiperActive.classList.add('active')
-        var label = swiperActive.querySelectorAll('label')[0];
-        label.click();
-        const slideritam = new Swiper(slider, {
-            slidesPerView: 5,
-            initialSlide: 0,
-            spaceBetween: 5,
-            draggable: true,
-        })
-    }
-})
 
-
-
-
-
-
-/** oNLY SECTION TABING **/
+// collection-tapping slider
 var CollectionTabSection = document.querySelectorAll('.collection-tabbing');
-
-
 CollectionTabSection.forEach(item => {
     const navbtn = item.querySelectorAll('.tablinks')
+    console.log(navbtn)
     const CollectionTabSection = new Swiper(item, {
         slidesPerView: 1,
         speed: 500,
         allowTouchMove: false,
         initialSlide: 0,
     })
+
     function slide(e) {
         let target = e.target;
         let index = target.getAttribute('data-index');
@@ -274,6 +216,7 @@ CollectionTabSection.forEach(item => {
             slide(event)
         })
     })
+
 })
 
 var CollectionSlider = document.querySelectorAll('.collection-list');
@@ -302,10 +245,55 @@ CollectionSlider.forEach(item => {
         },
     })
 })
-/** oNLY SECTION TABING **/
 
 
 
+// var collcetionImageSlider = document.querySelectorAll('.product-image-wrapper');
+// collcetionImageSlider.forEach(item => {
+//     var newElem = item.closest('.product-image-container')
+//     var nextbutton = newElem.querySelectorAll('.swiper-button-next')[0];
+//     var prebutton = newElem.querySelectorAll('.swiper-button-prev')[0];
+//     const swiperTabs = new Swiper(item, {
+//         allowTouchMove: false,
+//         loop: true,
+//         autoplay: 7000,
+//         speed: 300,
+//         noSwiping: true,
+//         slidesPerView: 1,
+//         initialSlide: 0,
+//         effect: 'fade',
+//         navigation: {
+//             nextEl: nextbutton,
+//             prevEl: prebutton,
+//         },
+//     })
+//     var swp = item.swiper
+//     item.addEventListener("mouseover", function() {
+//         swp.autoplay.start();
+//     })
+//     item.addEventListener("mouseout", function() {
+//         swp.autoplay.stop();
+//     })
+// });
+
+
+
+var variantImages = document.querySelectorAll('.prodouct-variant-slider');
+
+variantImages.forEach(slider => {
+    var swiperActive = slider.querySelectorAll('.size-selector')[0];
+    if (swiperActive !== '') {
+        swiperActive.classList.add('active')
+        var label = swiperActive.querySelectorAll('label')[0];
+        //label.click()
+        const slideritam = new Swiper(slider, {
+            slidesPerView: 5,
+            initialSlide: 0,
+            spaceBetween: 5,
+            draggable: true,
+        })
+    }
+})
 
 
 var shopContainer = document.querySelectorAll('.shoplock-container');
