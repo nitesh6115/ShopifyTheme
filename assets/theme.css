@@ -484,6 +484,9 @@ li.menu-link.has-child-links.active .DropDownBox.dropdown-child .show-image {
 .size-selector.Sold-out:hover svg.svgSold, .product-variant-container .size-selector.Sold-out:hover label {
     opacity: 1;
 }
+.product-variant-container .size-selector.Sold-out label{
+  pointer-events: inherit;
+}
 .size-selector.Sold-out:hover label {
     opacity: 0;
 }
