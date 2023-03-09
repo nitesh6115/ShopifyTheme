@@ -70,7 +70,6 @@ function ChangeSize(event){
     var selectType = event.getAttribute('type')
     if (dataAvability == 'true') {
         if (selectType == "size") {
-            console.log("ese")
             addtocartitem(variantId)
         }
     } else {
@@ -165,25 +164,52 @@ function ChnageVaiantImg(event) {
         swp.autoplay.stop();
     })
     var mainselctbox = mainParent.querySelectorAll('select option');
-
-    var soldOut = [];
-    mainselctbox.forEach(item => {
-        var text = item.innerText
-        if (text.indexOf(selcterValue) > -1) {
-            const dataAvability2 = item.getAttribute('data-avability');
-            if (dataAvability2 == 'false') {
-                const soldOutVariant = text.split(' / ');
-                soldOut.push(soldOutVariant[0]);
-            }
-        }
-    })
-    if (soldOut.length > 0) {
-        //console.log(soldOut)
-        soldOut.forEach(sold => {
-            var soldItem = mainParent.querySelectorAll('.size-selector[data-title="' + sold + '"]')[0];
-            soldItem.classList.add('Sold-out');
-        })
+    var soldOut = [];	
+    mainselctbox.forEach(item => {	
+        var text = item.innerText	
+        if (text.indexOf(selcterValue) > -1) {	
+            const dataAvability2 = item.getAttribute('data-avability');	
+            if (dataAvability2 == 'false') {	
+                const soldOutVariant = text.split(' / ');	
+                if (totalOptionsSize == 1){	
+                soldOut.push(soldOutVariant[0]);	
+                }else if(totalOptionsSize == 2){	
+                soldOut.push(soldOutVariant[0]);	
+                soldOut.push(soldOutVariant[1]);  	
+                }else if(totalOptionsSize == 3){	
+                soldOut.push(soldOutVariant[0]);	
+                soldOut.push(soldOutVariant[1]); 	
+                soldOut.push(soldOutVariant[2]);  	
+                }	
+            }	
+        }	
+    })	
+    if (soldOut.length > 0) {	
+      //console.log(soldOut);	
+        soldOut.forEach(sold => {	
+            var soldItem = mainParent.querySelectorAll('.size-selector[data-title="' + sold + '"]')[0];	
+            soldItem.innerHTML += '<svg class="svgSold" data-name="Bell Icon" xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 448 512" class="icon-bell h-[15px] px-[5px] fill-secondary"><path d="M256 32V51.2C329 66.03 384 130.6 384 208V226.8C384 273.9 401.3 319.2 432.5 354.4L439.9 362.7C448.3 372.2 450.4 385.6 445.2 397.1C440 408.6 428.6 416 416 416H32C19.4 416 7.971 408.6 2.809 397.1C-2.353 385.6-.2883 372.2 8.084 362.7L15.5 354.4C46.74 319.2 64 273.9 64 226.8V208C64 130.6 118.1 66.03 192 51.2V32C192 14.33 206.3 0 224 0C241.7 0 256 14.33 256 32H256zM224 512C207 512 190.7 505.3 178.7 493.3C166.7 481.3 160 464.1 160 448H288C288 464.1 281.3 481.3 269.3 493.3C257.3 505.3 240.1 512 224 512z"></path></svg>';	
+            soldItem.classList.add('Sold-out');	
+        })	
     }
+    // var soldOut = [];
+    // mainselctbox.forEach(item => {
+    //     var text = item.innerText
+    //     if (text.indexOf(selcterValue) > -1) {
+    //         const dataAvability2 = item.getAttribute('data-avability');
+    //         if (dataAvability2 == 'false') {
+    //             const soldOutVariant = text.split(' / ');
+    //             soldOut.push(soldOutVariant[0]);
+    //         }
+    //     }
+    // })
+    // if (soldOut.length > 0) {
+    //     //console.log(soldOut)
+    //     soldOut.forEach(sold => {
+    //         var soldItem = mainParent.querySelectorAll('.size-selector[data-title="' + sold + '"]')[0];
+    //         soldItem.classList.add('Sold-out');
+    //     })
+    // }
 }
 
 function triggerChange(element) {
