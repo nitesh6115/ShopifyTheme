@@ -462,8 +462,30 @@ li.menu-link.has-child-links.active .DropDownBox.dropdown-child .show-image {
 
 /************product-grid ******* */
 .size-selector.Sold-out {
+    color: #c35f5f;
+    text-decoration: line-through;
+}
+.size-selector.Sold-out svg.svgSold {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    fill: #fff;
+    padding: 5px;
+    opacity: 0;
+}
+
+
+
+.size-selector.Sold-out:hover svg.svgSold {
+    opacity: 1;
+}
+
+.size-selector.Sold-out label {
     pointer-events: none;
-    color: red;
 }
 .size-selector input[type=radio] {
     clip: rect(0,0,0,0);
