@@ -92,7 +92,7 @@ function CheckSoldOut(event){
    SizeSelectorOption.forEach(sizeOption => {
         sizeOption.classList.remove("Sold-out");
         const elemet = sizeOption.closest('.svgSold')
-          sizeOption.removeChild(elemet)
+          console.log(sizeOption)
     })
    var soldOut = [];
     mainselctbox.forEach(item => {
