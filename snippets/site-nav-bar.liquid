@@ -14,7 +14,7 @@
                         
                         <ul class="dropdown-grandchild">
                             {% for grandchild_link in child_link.links %}
-                            <li class="grand-menu-link" featured-image="{{ child_link.title | handel }}-{{ grandchild_link.title | handel }}">
+                            <li class="grand-menu-link" featured-image="{{ child_link.title | handle }}-{{ grandchild_link.title | handle }}">
                                 <a class="snakify-in" href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
                             </li>
                             {% endfor %}
