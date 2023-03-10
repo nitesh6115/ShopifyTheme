@@ -191,8 +191,10 @@ ul li a {
     
 }
 
-.child-menu-link {
-	
+.child-menu-link > a{
+	font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 .DropDownBox.dropdown-child {
   width:100%;
