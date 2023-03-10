@@ -52,11 +52,13 @@
                             {% if child_link.links.size > 0 %}
                             {% for grandchild_link in child_link.links %}
                             {% assign grand-menu-image = grandchild_link.object %}
+                              {% if grand-menu-image.image != blank %}
                             <div id="{{ child_link.title | handle }}-{{ grandchild_link.title | handle }}" class="featureImage"> 
                             <div class="image"> <img src="{{ grand-menu-image.image  | img_url: '768x'  }}"/>
                               <h3>{{ grand-menu-image.products.count }} Products</h3>
                             </div>
                             </div>
+                                {% endif %}
                             {% endfor %}
                             {% endif %}
                             
