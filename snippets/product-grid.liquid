@@ -193,7 +193,7 @@
         {% if variant.available == true %}
         <option data-avability="true" {% if variant == current_variant %} selected="selected"{% endif %} value="{{variant.id}}">{{ variant.title }}</option>
         {% else %} 
-        <option data-avability="false" disabled="disabled" value="{{variant.id}}">{{ variant.title }}</option>
+        <option data-avability="false" {% if variant == current_variant %} selected="selected"{% endif %} disabled="disabled" value="{{variant.id}}">{{ variant.title }}</option>
         {% endif %}
         {% endfor %}
       </select>
