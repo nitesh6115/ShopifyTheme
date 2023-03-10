@@ -573,6 +573,7 @@ img.feature-image {
     font-weight: bold;
     display: flex;
     height: 30px;
+    min-width:30px;
     border-radius: 5px;
     align-items: center;
     justify-content: center;
