@@ -238,7 +238,6 @@ display: flex;
     border-top:0;
     display: flex;
     margin-top: -16px;
-    min-height: 470px;
 }
 .menu-link > a.snakify-in {
     position: relative;
@@ -250,7 +249,7 @@ display: flex;
     z-index: 1;
 }
 .menu-link:hover>.DropDownBox.dropdown-child{
-  height: 350px;
+  min-height: 470px;
   visibility: visible;
 }
 .DropDownBox.dropdown-child > .dropdown-child-Box{
