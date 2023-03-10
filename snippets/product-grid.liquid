@@ -191,7 +191,7 @@
  <select id="product-select" name="id" >
         {% for variant in card_product.variants %}
         {% if variant.available == true %}
-        <option data-avability="true"  value="{{variant.id}}">{{ variant.title }}</option>
+        <option data-avability="true" {% if variant.id == current_variant.id %} selected="selected"{% endif %} value="{{variant.id}}">{{ variant.title }}</option>
         {% else %} 
         <option data-avability="false" disabled="disabled" value="{{variant.id}}">{{ variant.title }}</option>
         {% endif %}
