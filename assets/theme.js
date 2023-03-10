@@ -19,8 +19,10 @@ const elem = document.querySelectorAll('.grand-menu-link');
 elem.forEach(item => {
     item.addEventListener("mouseover", (event) => {
         var showimage = item.getAttribute('featured-image');
+       
         const showimageItem = document.querySelectorAll('#' + showimage)[0];
-        showimageItem.classList.add("active");
+        console.log(showimageItem)  
+      showimageItem.classList.add("active");
 
     });
     item.addEventListener("mouseout", (event) => {
