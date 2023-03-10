@@ -514,7 +514,7 @@ li.menu-link.has-child-links.active .DropDownBox.dropdown-child .show-image {
     padding: 5px 0;
 }
 .quick-add-wrapper .size-selctor-wrapper .size-selector.active {
-    background: #3b3b3b;
+/*     background: #3b3b3b; */
 }
 .product-image-container {
     overflow: hidden;
