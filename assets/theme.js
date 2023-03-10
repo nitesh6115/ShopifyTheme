@@ -31,6 +31,63 @@ elem.forEach(item => {
         });
     });
 });
+function addtocartitem(item) {
+    let varID = item
+    let formData = {
+        'items': [{
+            'id': varID
+            //'quantity':varQuantity
+        }]
+    };
+    fetch(window.Shopify.routes.root + 'cart/add.js', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        })
+
+        .then(response => response.json())
+        .then(data => {
+            if (data.status >= 422) {
+                alert(data.description);
+
+            } else {
+                fetch('/cart.js')
+                    .then(response => response.text())
+                    .then((responseText) => {
+                        data = JSON.parse(responseText);
+                        var counterEl = document.querySelectorAll('.cart-item-count');
+                        counterEl.forEach((element) => {
+                            element.innerHTML = data.item_count
+                        })
+                    })
+
+                var miniCart = document.getElementById('mini-cart-sucess');
+
+                var DataItems = data.items;
+                DataItems.forEach(dataItem => {
+                    var varImg = dataItem.featured_image.url;
+                    var varTitle = dataItem.title;
+                    var html = '<div class="image-box"><img src="' + varImg + '" class="cart-image" alt="' + varTitle + '"/</div>';
+                    html += '<div class="info-box"><h3>Added to cart</h3><p>' + varTitle + '</p></div>'
+                    miniCart.innerHTML = html
+                })
+                document.body.classList.add('product-toast');
+                setTimeout(() => {
+                    document.body.classList.remove('product-toast');
+                    miniCart.innerHTML = '';
+                }, '5000');
+                cartDrwer()
+            }
+
+
+        })
+
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+}
 
 
 function SelectVariant(event) {
