@@ -25,7 +25,7 @@ function cartDrwer() {
 
             document.getElementById('shopify-section-cart-drawer').innerHTML = parsedHTML;
             var counterEl = document.querySelectorAll('.cart-item-count');
-            console.log(responseText)
+            //console.log(responseText)
             counterEl.forEach((element) => {
             })
             var CratDrawerSlider = document.querySelectorAll('.CratDrawerSlider');
