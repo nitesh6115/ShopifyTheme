@@ -6,5 +6,4 @@
     fetch("{{ product.url }}?view=card_info", { method: "Get" }).then((res) => res.json()).then((json) => {
         questionP.innerHTML = json[0].question;
     })
-}
 </script>
