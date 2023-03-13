@@ -1,0 +1,22 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "settings": {
+        "width": "wrapper-width",
+        "padding_top": 100,
+        "padding_bottom": 36
+      }
+    },
+    "166479364394f7c18b": {
+      "type": "product-recommendation",
+      "settings": {
+        "heading": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "166479364394f7c18b"
+  ]
+}
