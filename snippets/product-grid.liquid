@@ -3,7 +3,9 @@
 </div>
 <script>
 var questionP = document.querySelector(".content");
-  fetch("{{ product.url }}?view=card_info", { method: "Get" }).then((res) => res.json()).then((json) => {
-      questionP.innerHTML = json[0].question;
+  fetch("{{ product.url }}?view=card_info", { method: "Get" }).then((res) => res.text()).then((responseText) => {
+            const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html');
+            var container = document.createElement("div");
+      questionP.innerHTML = parsedHTML;
   })
 </script>
