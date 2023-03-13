@@ -6,6 +6,7 @@ var questionP = document.querySelector(".content");
   fetch("{{ product.url }}?view=card_info", { method: "Get" }).then((res) => res.text()).then((responseText) => {
             const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html');
             var container = document.createElement("div");
+            console.log(parsedHTML)
       questionP.innerHTML = parsedHTML;
   })
 </script>
