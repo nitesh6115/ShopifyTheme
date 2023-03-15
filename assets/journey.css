@@ -1,0 +1,148 @@
+.doctorJrn-blocks img {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index:1;
+  bottom: -40px;
+  height: auto;
+}
+.ReadMoreDoc {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -100px;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+}
+.grid__item.doctorJrn-blocks:hover .ReadMoreDoc button.button {
+    width: 100%;
+}
+.grid__item.doctorJrn-blocks:hover .ReadMoreDoc {
+    visibility: visible;
+    opacity: 1;
+    transition: all .5s ease;
+    bottom: 0;
+}
+.grid__item.doctorJrn-blocks {
+  padding: 4rem;
+  position:relative;
+  overflow: hidden;
+ 
+}
+.Doctor-Artwork {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    padding: 4rem;
+    transition: .5s all ease;
+}
+
+.Doctor-Artwork svg {
+    width: 100%;
+    height: 100%;
+}
+
+.grid__item.doctorJrn-blocks:hover .Doctor-Artwork {
+    padding: 0;
+}
+
+.DoctoreContent {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+}
+
+.DoctoreContent h2 {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-family: var(--font-body-family);
+    font-weight: 700;
+}
+
+.DoctoreContent h3 {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    font-family: var(--font-body-family);
+    font-weight: 400;
+    font-size: 20px;
+}
+.doctorJrn-header h3.text-center.center {
+    margin: 0;
+    font-size: 42px;
+    font-family: var(--font-body-family);
+    font-weight: 400;
+    max-width: 813px;
+    margin: 0 auto;
+    line-height: normal;
+    margin-bottom: 8rem;
+}
+.doctorJrn-button.text-center {
+    text-align: center;
+    margin-top: 4rem;
+}
+.boxDorct {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxDorct .drProfilePic {
+    width: 50%;
+    position: relative;
+}
+
+.boxDorct .darInfo {
+    width: 50%;
+    padding: 0 30px 0;
+}
+
+.boxDorct .drProfilePic img {
+    width: 100%;
+    height: auto;
+    position: relative;
+  z-index: 3;
+}
+@media(max-width: 767px){
+  .boxDorct .drProfilePic {
+    width: 100%;
+    padding-right: 0px;
+}
+
+.boxDorct .darInfo {
+    width: 100%;
+    padding: 0;
+}
+  h1.SectionTitle {
+    font-size: 2.5rem;
+	padding: 0 0 1rem;
+}
+.doctorJrn-content {
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.grid__item.doctorJrn-blocks {
+	max-width: 100%;
+	width: 100%;
+}
+.DoctoreContent {
+	top: 20px;
+	left: 15px;
+}
+ .DoctoreContent h2 {
+	margin-bottom: 5px;
+} 
+  
+}
+
+
