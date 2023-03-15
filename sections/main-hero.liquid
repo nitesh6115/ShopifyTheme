@@ -139,7 +139,7 @@ const SwipeBox = document.querySelectorAll('.SwiperSlider-{{ section.id }} .Hero
           BgImage.style.left = '-50%';
           RotateImage.setAttribute("rotate", 45);
           RotateImage.style.transform = "rotate(45deg)";
-     swiper.autoplay.start();
+     Heroswiper.autoplay.start();
 });
    SwipeBox.addEventListener('mouseleave', function() {
      const RotateImage = document.querySelectorAll('.SwiperSlider-{{ section.id }} .ArtImage svg')[0];
@@ -147,7 +147,7 @@ const SwipeBox = document.querySelectorAll('.SwiperSlider-{{ section.id }} .Hero
           BgImage.style.left = '0';
           RotateImage.setAttribute("rotate", 0);
           RotateImage.style.transform = "rotate(0deg)";
-     swiper.autoplay.stop();
+     Heroswiper.autoplay.stop();
 });
 </script>
 {% schema %}
