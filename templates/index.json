@@ -54,15 +54,24 @@
         "template--14475434328150__375e6a86-e778-4eff-9348-692ff6fa8ac3-167885872701846849-1": {
           "type": "image_slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/D8006702-DDC8-441A-9E1B-FEC5BEBE4F47.jpg",
+            "image": "shopify:\/\/shop_images\/2EC5F490-57A7-49EE-B7CE-8C52A02AACAC.jpg",
             "textColor": "#000",
             "richtext": "<p>LOVE THIS OIL<\/p>"
+          }
+        },
+        "1cacba4c-9514-4155-b18e-468d6de0ac57": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SilverShop.webp",
+            "textColor": "#000",
+            "richtext": ""
           }
         }
       },
       "block_order": [
         "template--14475434328150__375e6a86-e778-4eff-9348-692ff6fa8ac3-167885872701846849-0",
-        "template--14475434328150__375e6a86-e778-4eff-9348-692ff6fa8ac3-167885872701846849-1"
+        "template--14475434328150__375e6a86-e778-4eff-9348-692ff6fa8ac3-167885872701846849-1",
+        "1cacba4c-9514-4155-b18e-468d6de0ac57"
       ],
       "settings": {
         "bg_image": "shopify:\/\/shop_images\/51FDB299-95B0-4400-BC89-F8D64F25A9E9.png",
