@@ -282,7 +282,7 @@ a{
 	text-align: right;
 }
 
-button,
+button, .button
 .cta-btn {
   border-radius: var(--button-border-radius);
   font-size: var(--button-font-size);
