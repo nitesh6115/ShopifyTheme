@@ -282,7 +282,7 @@ a{
 	text-align: right;
 }
 
-button, .button
+button, .button,
 .cta-btn {
   border-radius: var(--button-border-radius);
   font-size: var(--button-font-size);
@@ -295,7 +295,7 @@ button, .button
   color: var(--button-text-color);
   border: var(--button-border-thickness) solid var(--button-border-color);
 }
-button:hover,
+button:hover,.button:hover,
 .cta-btn:hover {
   background: var(--button-hover-background-color);
   color: var(--button-hover-text-color);
