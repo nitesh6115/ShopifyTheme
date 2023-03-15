@@ -429,6 +429,46 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "375e6a86-e778-4eff-9348-692ff6fa8ac3": {
+      "type": "main-hero",
+      "blocks": {
+        "template--14475434328150__375e6a86-e778-4eff-9348-692ff6fa8ac3-167885872701846849-0": {
+          "type": "image_slide",
+          "settings": {
+            "textColor": "#000",
+            "richtext": ""
+          }
+        },
+        "template--14475434328150__375e6a86-e778-4eff-9348-692ff6fa8ac3-167885872701846849-1": {
+          "type": "image_slide",
+          "settings": {
+            "textColor": "#000",
+            "richtext": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14475434328150__375e6a86-e778-4eff-9348-692ff6fa8ac3-167885872701846849-0",
+        "template--14475434328150__375e6a86-e778-4eff-9348-692ff6fa8ac3-167885872701846849-1"
+      ],
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/51FDB299-95B0-4400-BC89-F8D64F25A9E9.png",
+        "overlayColor": "#000",
+        "image_overlay_opacity": 0,
+        "subColor": "#000",
+        "sub_title": "SUB TITLE",
+        "titleColor": "#000",
+        "title": "HEADING",
+        "btn_down": true,
+        "button": "Shop Now",
+        "link": "#",
+        "button_2": "Shop Now",
+        "link_2": "#",
+        "embedBtn": "",
+        "embedBtn2": "",
+        "art_image": ""
+      }
     }
   },
   "order": [
@@ -439,6 +479,7 @@
     "5b679b7a-fae6-4af5-ac94-20887c2e98ea",
     "16613357604008a11b",
     "9ac45232-d4da-4400-b33b-469cbb27e83e",
-    "de168d02-cb1c-4cd8-a9e3-55c79f5e1e3d"
+    "de168d02-cb1c-4cd8-a9e3-55c79f5e1e3d",
+    "375e6a86-e778-4eff-9348-692ff6fa8ac3"
   ]
 }
