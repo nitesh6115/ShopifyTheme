@@ -515,9 +515,9 @@
           "type": "header",
           "settings": {
             "bg-color": "linear-gradient(46deg, rgba(52, 133, 236, 1) 13%, rgba(170, 248, 219, 1) 86%)",
-            "title": "",
+            "title": "Title",
             "titleColor": "#000000",
-            "sub-title": "",
+            "sub-title": "SubTitle",
             "subColor": "#000000",
             "image": "shopify:\/\/shop_images\/D8006702-DDC8-441A-9E1B-FEC5BEBE4F47.jpg",
             "more_info": "",
