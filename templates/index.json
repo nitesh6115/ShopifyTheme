@@ -488,7 +488,7 @@
         "7add0e72-4f71-4349-8df5-17018109abdb": {
           "type": "header",
           "settings": {
-            "bg-color": "",
+            "bg-color": "linear-gradient(46deg, rgba(52, 133, 236, 1) 13%, rgba(170, 248, 219, 1) 86%)",
             "title": "Title",
             "titleColor": "#000000",
             "sub-title": "Sub-Title",
