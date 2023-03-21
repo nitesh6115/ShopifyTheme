@@ -27,7 +27,7 @@
     bottom: 0;
 }
 .doctorJrn-blocks {
-  padding: 4rem;
+  padding: 3rem;
   position:relative;
   overflow: hidden;
  
@@ -56,8 +56,8 @@
 
 .DoctoreContent {
     position: absolute;
-    top: 4rem;
-    left: 4rem;
+    top: 3rem;
+    left: 3rem;
     z-index: 4;
 }
 
