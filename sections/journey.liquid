@@ -32,7 +32,7 @@
      <div class="doctorJrn-content grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
               grid--{{ desktop_per_row }}-col-desktop" >
        {% for block in section.blocks %}
-         <div class="grid__item doctorJrn-blocks radius-30" style="background:{{block.settings.bg-color}};">
+         <div class="grid__item doctorJrn-blocks radius-30 overflow-hidden" style="background:{{block.settings.bg-color}};">
            {% if section.settings.artwork != blank and section.settings.artwork contains 'svg' %}
              <div class="Doctor-Artwork">
               {{ section.settings.artwork }}
