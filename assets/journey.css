@@ -18,16 +18,16 @@
     visibility: hidden;
     opacity: 0;
 }
-.grid__item.doctorJrn-blocks:hover .ReadMoreDoc button.button {
+.doctorJrn-blocks:hover .ReadMoreDoc button.button {
     width: 100%;
 }
-.grid__item.doctorJrn-blocks:hover .ReadMoreDoc {
+.doctorJrn-blocks:hover .ReadMoreDoc {
     visibility: visible;
     opacity: 1;
     transition: all .5s ease;
     bottom: 0;
 }
-.grid__item.doctorJrn-blocks {
+.doctorJrn-blocks {
   padding: 4rem;
   position:relative;
   overflow: hidden;
@@ -51,7 +51,7 @@
     height: 100%;
 }
 
-.grid__item.doctorJrn-blocks:hover .Doctor-Artwork {
+.doctorJrn-blocks:hover .Doctor-Artwork {
     padding: 0;
 }
 
