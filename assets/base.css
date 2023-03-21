@@ -129,81 +129,81 @@ a{
   display:none !important;
 }
 
-.CollectionnGrid.6-colls .featured-product {
+.CollectionnGrid.6-colls .GridItem {
     width: calc(16.666% - 15px);
 }
-.CollectionnGrid.5-colls .featured-product {
+.CollectionnGrid.5-colls .GridItem {
     width: calc(20% - 15px);
 }
-.CollectionnGrid.four-colls .featured-product {
+.CollectionnGrid.4-colls .GridItem {
     width: calc(25% - 15px);
 }
-.CollectionnGrid.3-colls .featured-product {
+.CollectionnGrid.3-colls .GridItem {
     width: calc(33.333% - 15px);
 }
-.CollectionnGrid.2-colls .featured-product {
+.CollectionnGrid.2-colls .GridItem {
     width: calc(50% - 15px);
 }
-.CollectionnGrid.1-colls .featured-product {
+.CollectionnGrid.1-colls .GridItem {
     width: calc(100% - 15px);
 }
 @media(max-width: 1365px){
-  .CollectionnGrid.6-colls .featured-product {
+  .CollectionnGrid.6-colls .GridItem {
     width: calc(20% - 15px);
 }
-.CollectionnGrid.5-colls .featured-product {
+.CollectionnGrid.5-colls .GridItem {
     width: calc(25% - 15px);
 }
-.CollectionnGrid.four-colls .featured-product {
+.CollectionnGrid.4-colls .GridItem {
     width: calc(33.333% - 15px);
 }
-.CollectionnGrid.3-colls .featured-product {
+.CollectionnGrid.3-colls .GridItem {
     width: calc(33.333% - 15px);
 }
-.CollectionnGrid.2-colls .featured-product {
+.CollectionnGrid.2-colls .GridItem {
     width: calc(50% - 15px);
 }
-.CollectionnGrid.1-colls .featured-product {
+.CollectionnGrid.1-colls .GridItem {
     width: calc(100% - 15px);
 }
 }
 @media(max-width: 992px){
-   .CollectionnGrid.6-colls .featured-product {
+   .CollectionnGrid.6-colls .GridItem {
     width: calc(20% - 15px);
 }
-.CollectionnGrid.5-colls .featured-product {
+.CollectionnGrid.5-colls .GridItem {
     width: calc(25% - 15px);
 }
-.CollectionnGrid.four-colls .featured-product {
+.CollectionnGrid.4-colls .GridItem {
     width: calc(33.333% - 15px);
 }
-.CollectionnGrid.3-colls .featured-product {
+.CollectionnGrid.3-colls .GridItem {
     width: calc(33.333% - 15px);
 }
-.CollectionnGrid.2-colls .featured-product {
+.CollectionnGrid.2-colls .GridItem {
     width: calc(50% - 15px);
 }
-.CollectionnGrid.1-colls .featured-product {
+.CollectionnGrid.1-colls .GridItem {
     width: calc(100% - 15px);
 }
 }
 @media(max-width: 767px){
-    .CollectionnGrid.6-colls .featured-product {
+    .CollectionnGrid.6-colls .GridItem {
     width: calc(33.333% - 15px);
 }
-.CollectionnGrid.5-colls .featured-product {
+.CollectionnGrid.5-colls .GridItem {
     width: calc(25% - 15px);
 }
-.CollectionnGrid.four-colls .featured-product {
+.CollectionnGrid.4-colls .GridItem {
     width: calc(50% - 15px);
 }
-.CollectionnGrid.3-colls .featured-product {
+.CollectionnGrid.3-colls .GridItem {
     width: calc(50% - 15px);
 }
-.CollectionnGrid.2-colls .featured-product {
+.CollectionnGrid.2-colls .GridItem {
     width: calc(50% - 15px);
 }
-.CollectionnGrid.1-colls .featured-product {
+.CollectionnGrid.1-colls .GridItem {
     width: calc(50% - 15px);
 }
 }
