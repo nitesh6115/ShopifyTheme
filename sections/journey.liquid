@@ -29,7 +29,7 @@
          {% endif %}
     
     </div>
-     <div class="doctorJrn-content grid CollectionnGrid.{{ desktop_per_row  }}-colls" >
+     <div class="doctorJrn-content grid CollectionnGrid{{ desktop_per_row  }}-colls" >
        {% for block in section.blocks %}
          <div class="GridItem doctorJrn-blocks radius-30 overflow-hidden" style="background:{{block.settings.bg-color}};">
            {% if section.settings.artwork != blank and section.settings.artwork contains 'svg' %}
