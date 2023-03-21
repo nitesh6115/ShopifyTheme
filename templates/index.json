@@ -501,7 +501,7 @@
         "e2787aee-177a-4025-b7d1-36fa554591fc": {
           "type": "header",
           "settings": {
-            "bg-color": "",
+            "bg-color": "linear-gradient(46deg, rgba(52, 133, 236, 1) 13%, rgba(170, 248, 219, 1) 86%)",
             "title": "Title",
             "titleColor": "#000000",
             "sub-title": "Sub Title",
@@ -514,7 +514,7 @@
         "68855033-6d93-4df2-9eaf-451144973743": {
           "type": "header",
           "settings": {
-            "bg-color": "",
+            "bg-color": "linear-gradient(46deg, rgba(52, 133, 236, 1) 13%, rgba(170, 248, 219, 1) 86%)",
             "title": "",
             "titleColor": "#000000",
             "sub-title": "",
