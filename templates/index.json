@@ -488,7 +488,7 @@
         "7add0e72-4f71-4349-8df5-17018109abdb": {
           "type": "header",
           "settings": {
-            "bg-color": "",
+            "bg-color": "#fff",
             "title": "Title",
             "titleColor": "#000000",
             "sub-title": "Sub-Title",
@@ -534,7 +534,7 @@
         "width": "page-width",
         "block-per-row": 4,
         "columns_mobile": "2",
-        "bg-color": "",
+        "bg-color": "linear-gradient(228deg, rgba(21, 209, 252, 1) 14%, rgba(187, 48, 254, 1) 83%)",
         "artwork": "",
         "titleColor": "#000000",
         "title": "",
