@@ -131,6 +131,7 @@ a{
 .CollectionnGrid{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .CollectionnGrid.6-colls .GridItem {
     width: calc(16.666% - 15px);
