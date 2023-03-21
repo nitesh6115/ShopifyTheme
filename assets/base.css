@@ -155,10 +155,10 @@ a{
     width: calc(20% - 15px);
 }
 .CollectionnGrid.5-colls .GridItem {
-    width: calc(25% - 15px);
+    width: calc(20% - 15px);
 }
 .CollectionnGrid.4-colls .GridItem {
-    width: calc(33.333% - 15px);
+    width: calc(25% - 15px);
 }
 .CollectionnGrid.3-colls .GridItem {
     width: calc(33.333% - 15px);
@@ -178,7 +178,7 @@ a{
     width: calc(25% - 15px);
 }
 .CollectionnGrid.4-colls .GridItem {
-    width: calc(33.333% - 15px);
+    width: calc(25% - 15px);
 }
 .CollectionnGrid.3-colls .GridItem {
     width: calc(33.333% - 15px);
