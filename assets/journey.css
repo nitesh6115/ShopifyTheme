@@ -58,6 +58,7 @@
     position: absolute;
     top: 4rem;
     left: 4rem;
+    z-index: 1;
 }
 
 .DoctoreContent h2 {
