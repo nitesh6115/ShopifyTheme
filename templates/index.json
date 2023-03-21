@@ -532,7 +532,7 @@
       ],
       "settings": {
         "width": "page-width",
-        "block-per-row": 3,
+        "block-per-row": 2,
         "columns_mobile": "2",
         "bg-color": "linear-gradient(106deg, rgba(255, 255, 255, 1) 14%, rgba(255, 255, 255, 1) 83%)",
         "artwork": "",
