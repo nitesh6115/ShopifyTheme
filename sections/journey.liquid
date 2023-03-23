@@ -93,6 +93,11 @@
           {% endif %}
        </div>
          {% endfor %}
+         <script>
+          Fancybox.bind("[data-fancybox]", {
+          // Your custom options
+          });
+         </script>
     </div> 
     <div class="doctorJrn-button text-center" >
       {% if section.settings.button_text or section.settings.button_url != blank %}
