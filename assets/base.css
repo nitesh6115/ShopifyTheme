@@ -128,11 +128,13 @@ a{
 .swiper-button-disabled{
   display:none !important;
 }
-.CollectionnGrid{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.CollectionnGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
 }
+
 .CollectionnGrid.6-colls .GridItem {
     width: calc(16.666% - 15px);
 }
