@@ -532,7 +532,7 @@
       ],
       "settings": {
         "width": "page-width",
-        "block-per-row": 4,
+        "block-per-row": 3,
         "columns_mobile": "2",
         "bg-color": "",
         "artwork": "",
