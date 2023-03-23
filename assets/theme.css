@@ -888,17 +888,6 @@ quick-search#nav-quick-search {
     visibility: visible;
     opacity: 1;
 }
-.CollectionnGrid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto;
-}
-
-.CollectionnGrid .featured-product {
-    width: calc(25% - 15px);
-}
-
 div#nav-quick-search-container {
     background: var(--body-background-color);
     border: 1px solid var(--color-border);
