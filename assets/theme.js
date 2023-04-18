@@ -361,11 +361,7 @@ collcetionImageSlider.forEach(item => {
         swp.autoplay.stop();
     })
 });
-
-
-
 var variantImages = document.querySelectorAll('.prodouct-variant-slider');
-
 variantImages.forEach(slider => {
     var swiperActive = slider.querySelectorAll('.size-selector')[0];
     if (swiperActive !== '') {
@@ -380,10 +376,7 @@ variantImages.forEach(slider => {
         })
     }
 })
-
-
 var shopContainer = document.querySelectorAll('.shoplock-container');
-
 shopContainer.forEach(item => {
     var nextbutton = item.querySelectorAll('.swiper-button-next.swiper-next')[0];
     var prebutton = item.querySelectorAll('.swiper-button-prev.swiper-prev')[0];
