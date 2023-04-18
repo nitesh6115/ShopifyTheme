@@ -284,14 +284,12 @@ function triggerChange(element) {
 var CollectionTabSection = document.querySelectorAll('.collection-tabbing');
 CollectionTabSection.forEach(item => {
     const navbtn = item.querySelectorAll('.tablinks')
-    console.log(navbtn)
     const CollectionTabSection = new Swiper(item, {
         slidesPerView: 1,
         speed: 500,
         allowTouchMove: false,
         initialSlide: 0,
     })
-
     function slide(e) {
         let target = e.target;
         let index = target.getAttribute('data-index');
@@ -304,7 +302,6 @@ CollectionTabSection.forEach(item => {
     })
 
 })
-
 var CollectionSlider = document.querySelectorAll('.collection-list');
 CollectionSlider.forEach(item => {
     var nextbutton = item.querySelectorAll('.tabingNext')[0];
@@ -361,6 +358,7 @@ collcetionImageSlider.forEach(item => {
         swp.autoplay.stop();
     })
 });
+
 var variantImages = document.querySelectorAll('.prodouct-variant-slider');
 variantImages.forEach(slider => {
     var swiperActive = slider.querySelectorAll('.size-selector')[0];
@@ -376,6 +374,7 @@ variantImages.forEach(slider => {
         })
     }
 })
+
 var shopContainer = document.querySelectorAll('.shoplock-container');
 shopContainer.forEach(item => {
     var nextbutton = item.querySelectorAll('.swiper-button-next.swiper-next')[0];
@@ -390,8 +389,6 @@ shopContainer.forEach(item => {
         },
     })
 })
-
-
 
 var shopContainer = document.querySelectorAll('.shopock-product-container');
 
@@ -444,6 +441,8 @@ function removemfixed(item) {
     m_fixed.classList.remove('m_fixed');
 
 }
+
+
 
 // search box function 
 openModal = (event) => {
