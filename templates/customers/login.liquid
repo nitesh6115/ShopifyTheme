@@ -115,12 +115,8 @@ path.style.strockDasharray = pathLength + ' ' + pathLength;
 path.style.strockDashoffset = pathLength;
 
 window.addEventListener("scroll", function(){
-let scrollProgress = document.getElementById("progress");
-    let progressValue = document.getElementById("progress-value");
-    let pos = document.documentElement.scrollTop;
-    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    let scrollValue = Math.round( pos * 100 / calcHeight);
-    console.log(scrollValue)
+let scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+    console.log(scrollPercentage)
 })
   </script>
 </div>
