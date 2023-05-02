@@ -99,23 +99,7 @@
   <path d="m502.1 168.8c0.2-0.6-0.2-1.3-0.8-1.5-0.7-0.2-1.4 0.2-1.6 0.9zm-129.1 94.9c-72.8 0-131.8-59-131.8-131.8h-2.5c0 74.2 60.2 134.3 134.3 134.3zm126.7-95.6c-15.7 55.2-66.5 95.6-126.7 95.6v2.5c61.4 0 113.1-41.2 129.1-97.4z"/>
   <path d="m0 133.5c0-0.8 0.7-1.5 1.5-1.5h237c0.8 0 1.5 0.7 1.5 1.5 0 0.8-0.7 1.5-1.5 1.5h-237c-0.8 0-1.5-0.7-1.5-1.5z"/>
 </svg>
-    <script>
-      var paths = document.querySelectorAll('.anim path'),
-i = 0;
-paths.forEach(function(item, index){
-  i++; 
- var pathLength = item.getTotalLength(),
-  speed = 1200;
-  item.setAttribute("stroke-dasharray", pathLength);
-  item.setAttribute("stroke-dashoffset", pathLength);
-  if(index == 0){ 
-    item.innerHTML = "<animate id='a" + i + "' attributeName='stroke-dashoffset' begin='0s' dur='" + pathLength/speed + "'s to='0' fill='freeze' />";
-  }else{
-    item.innerHTML = "<animate id='a"+ i +"' attributeName='stroke-dashoffset' begin='a"+ (i-1) +".end' dur='" + pathLength/speed + "'s to='0' fill='freeze' />";
-  }
-  console.log(index, pathLength, item.innerHTML) 
- }) 
-      </script>
+  
 </div>
   
 </body>
