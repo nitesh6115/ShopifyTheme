@@ -1,4 +1,4 @@
-// nav bar show-images on hover
+// AnnouncmentBar //
 var AnnouncmentBar = document.querySelectorAll(".announcement-bar")[0];
 if (AnnouncmentBar) {
 var sticky = AnnouncmentBar.clientHeight;
@@ -15,25 +15,27 @@ window.onscroll = function() {
 }
 
 
+// Nav Bar //
 
-const elem = document.querySelectorAll('.grand-menu-link');
-elem.forEach(item => {
+const NavLink = document.querySelectorAll('.grand-menu-link');
+NavLink.forEach(item => {
     item.addEventListener("mouseover", (event) => {
         var showimage = item.getAttribute('featured-image');
-       
         const showimageItem = document.querySelectorAll('#' + showimage)[0];
         console.log(showimageItem)  
       showimageItem.classList.add("active");
-
     });
     item.addEventListener("mouseout", (event) => {
         const hiddenImage = document.querySelectorAll('.featureImage');
         hiddenImage.forEach(menuItems => {
-            menuItems.classList.remove("active");;
-
+            menuItems.classList.remove("active");
         });
     });
 });
+
+
+// AddToCartItem //
+
 function addtocartitem(item) {
     let varID = item
     let formData = {
@@ -54,7 +56,6 @@ function addtocartitem(item) {
         .then(data => {
             if (data.status >= 422) {
                 alert(data.description);
-
             } else {
                 fetch('/cart.js')
                     .then(response => response.text())
@@ -92,6 +93,7 @@ function addtocartitem(item) {
         });
 }
 
+// VariantSelector //
 
 function SelectVariant(event) {
    var selectType = event.getAttribute('type')
@@ -146,7 +148,6 @@ function changeActive(event) {
     })
     event.closest('.size-selector').classList.add("active");
 }
-
 function ChnageVaiantImg(event) {
     var mainParent = event.closest('.featured-product');
     var SizeSelectorOption = mainParent.querySelectorAll('.size-selector');
@@ -272,16 +273,11 @@ function ChnageVaiantImg(event) {
     //     })
     // }
 }
-
 function triggerChange(element) {
     let changeEvent = new Event('change');
     element.dispatchEvent(changeEvent);
 }
 
-
-
-
-// collection-tapping slider
 var CollectionTabSection = document.querySelectorAll('.collection-tabbing');
 CollectionTabSection.forEach(item => {
     const navbtn = item.querySelectorAll('.tablinks')
