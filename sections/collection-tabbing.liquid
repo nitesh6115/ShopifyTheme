@@ -95,7 +95,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 var CollectionTabSection = document.getElementById('CollectionTabing-{{ section.id }}');
 if (CollectionTabSection){
     const TabLink = document.querySelectorAll('#CollectionTabing-{{ section.id }} .tablinks')
-    const CollectionTabSection = new Swiper(item, {
+    const CollectionTabSection = new Swiper(CollectionTabSection, {
         slidesPerView: 1,
         speed: 500,
         allowTouchMove: false,
