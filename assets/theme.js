@@ -278,27 +278,29 @@ function triggerChange(element) {
     element.dispatchEvent(changeEvent);
 }
 
-var CollectionTabSection = document.querySelectorAll('.collection-tabbing');
-CollectionTabSection.forEach(item => {
-    const navbtn = item.querySelectorAll('.tablinks')
-    const CollectionTabSection = new Swiper(item, {
-        slidesPerView: 1,
-        speed: 500,
-        allowTouchMove: false,
-        initialSlide: 0,
-    })
-    function slide(e) {
-        let target = e.target;
-        let index = target.getAttribute('data-index');
-        CollectionTabSection.slideTo(index);
-    }
-    navbtn.forEach(item => {
-        item.addEventListener('click', event => {
-            slide(event)
-        })
-    })
+// var CollectionTabSection = document.querySelectorAll('.collection-tabbing');
 
-})
+// CollectionTabSection.forEach(item => {
+//     const navbtn = item.querySelectorAll('.tablinks')
+//     const CollectionTabSection = new Swiper(item, {
+//         slidesPerView: 1,
+//         speed: 500,
+//         allowTouchMove: false,
+//         initialSlide: 0,
+//     })
+//     function slide(e) {
+//         let target = e.target;
+//         let index = target.getAttribute('data-index');
+//         CollectionTabSection.slideTo(index);
+//     }
+//     navbtn.forEach(item => {
+//         item.addEventListener('click', event => {
+//             slide(event)
+//         })
+//     })
+
+// })
+
 var CollectionSlider = document.querySelectorAll('.collection-list');
 CollectionSlider.forEach(item => {
     var nextbutton = item.querySelectorAll('.tabingNext')[0];
