@@ -1,16 +1,19 @@
 // nav bar show-images on hover
-window.onscroll = function() {
-    hideAnnoumentBar()
-};
-var header = document.querySelectorAll(".announcement-bar")[0];
-var sticky = header.clientHeight;
+var AnnouncmentBar = document.querySelectorAll(".announcement-bar")[0];
+if (AnnouncmentBar) {
+var sticky = AnnouncmentBar.clientHeight;
 function hideAnnoumentBar() {
-    if (window.pageYOffset > sticky) {
-        header.classList.add("hide");
-    } else {
-        header.classList.remove("hide");
-    }
+  if (window.pageYOffset > sticky) {
+      AnnouncmentBar.classList.add("hide");
+  } else {
+      AnnouncmentBar.classList.remove("hide");
+  }
 }
+window.onscroll = function() {
+  hideAnnoumentBar()
+};
+}
+
 
 
 const elem = document.querySelectorAll('.grand-menu-link');
