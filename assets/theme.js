@@ -301,32 +301,32 @@ function triggerChange(element) {
 
 // })
 
-var CollectionSlider = document.querySelectorAll('.collection-list');
-CollectionSlider.forEach(item => {
-    var nextbutton = item.querySelectorAll('.tabingNext')[0];
-    var prebutton = item.querySelectorAll('.tabingPrev')[0];
-    const swiperTabs = new Swiper(item, {
-        slidesPerView: 2,
-        spaceBetween: 15,
-        initialSlide: 0,
-        navigation: {
-            nextEl: nextbutton,
-            prevEl: prebutton,
-        },
-        breakpoints: {
-            640: {
-                slidesPerView: 2,
-            },
-            1024: {
-                slidesPerView: 3,
-            },
-            1366: {
-                slidesPerView: 5,
+// var CollectionSlider = document.querySelectorAll('.collection-list');
+// CollectionSlider.forEach(item => {
+//     var nextbutton = item.querySelectorAll('.tabingNext')[0];
+//     var prebutton = item.querySelectorAll('.tabingPrev')[0];
+//     const swiperTabs = new Swiper(item, {
+//         slidesPerView: 2,
+//         spaceBetween: 15,
+//         initialSlide: 0,
+//         navigation: {
+//             nextEl: nextbutton,
+//             prevEl: prebutton,
+//         },
+//         breakpoints: {
+//             640: {
+//                 slidesPerView: 2,
+//             },
+//             1024: {
+//                 slidesPerView: 3,
+//             },
+//             1366: {
+//                 slidesPerView: 5,
 
-            },
-        },
-    })
-})
+//             },
+//         },
+//     })
+// })
 
 
 
