@@ -1,5 +1,8 @@
 <link rel="preload" href="{{ 'collection-tabbing.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="{{ 'collection-tabbing.css' | asset_url }}"></noscript>
+
+
+
 {% style %}
 .section-{{ section.id }}-padding {
 padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -15,7 +18,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 <div class="section-{{ section.id }}-padding">
     <div class="TabingBox">
         <div class="collection-wrapp">
-            <div class="collection-tabbing swiper">
+            <div id="CollectionTabing-{{ section.id }}" class="collection-tabbing swiper">
                 <div class="CarsoulBox swiper-wrapper collection-carsoul-{{ section.id }}">
                       {%  assign loopmainIndex = 0 %}
                       {% for block in section.blocks %}
@@ -87,6 +90,29 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
     </div>
 </div>
 
+
+<script>
+var CollectionTabSection = document.getElementById('CollectionTabing-{{ section.id }}');
+if (CollectionTabSection){
+    const TabLink = CollectionTabSection.querySelectorAll('.tablinks')
+    const CollectionTabSection = new Swiper(item, {
+        slidesPerView: 1,
+        speed: 500,
+        allowTouchMove: false,
+        initialSlide: 0,
+    })
+    function slide(e) {
+        let target = e.target;
+        let index = target.getAttribute('data-index');
+        CollectionTabSection.slideTo(index);
+    }
+    TabLink.forEach(item => {
+        item.addEventListener('click', event => {
+            slide(event)
+        })
+    })
+}
+</script>
 {% schema %}
 {
   "name": "Collection Tabbing",
