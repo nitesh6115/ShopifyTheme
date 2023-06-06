@@ -1,20 +1,8 @@
-/*   .tabimage,.TabHeader {
- position: absolute;
- left: 0;
- width: 100%;
- visibility: hidden;
- opacity: 0;
- transition: all .5s ease;   
-}
-.tabimage.active,.TabHeader.active {
- position: relative;
- width: 100%;
- visibility: visible;
- opacity: 1;
- transition: all .5s ease;   
-} */
 .Tabing-Header, .CarsoulBox {
     position: relative;
+}
+.collection-list {
+    margin-top: 25px;
 }
 .collection-list.swiper {
     overflow: inherit;
