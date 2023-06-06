@@ -2,10 +2,8 @@
 window.onscroll = function() {
     hideAnnoumentBar()
 };
-
 var header = document.querySelectorAll(".announcement-bar")[0];
-var sticky = 20;
-
+var sticky = header.clientHeight;
 function hideAnnoumentBar() {
     if (window.pageYOffset > sticky) {
         header.classList.add("hide");
