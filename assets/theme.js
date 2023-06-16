@@ -104,6 +104,7 @@ function SelectVariant(event) {
       ChangeSize(event)
     }
 }
+
 function ChangeSize(event){
    var mainParent = event.closest('.featured-product');
    var SelectorValue = mainParent.querySelectorAll('.size-selector.active');
@@ -138,6 +139,7 @@ function ChangeSize(event){
 
     }
 }
+
 function changeActive(event) {
     var mainParent = event.closest('.featured-product');
     var childParent = event.closest('.selector-wrapper');
@@ -148,6 +150,7 @@ function changeActive(event) {
     })
     event.closest('.size-selector').classList.add("active");
 }
+
 function ChnageVaiantImg(event) {
     var mainParent = event.closest('.featured-product');
     var SizeSelectorOption = mainParent.querySelectorAll('.size-selector');
@@ -273,62 +276,11 @@ function ChnageVaiantImg(event) {
     //     })
     // }
 }
+
 function triggerChange(element) {
     let changeEvent = new Event('change');
     element.dispatchEvent(changeEvent);
 }
-
-// var CollectionTabSection = document.querySelectorAll('.collection-tabbing');
-
-// CollectionTabSection.forEach(item => {
-//     const navbtn = item.querySelectorAll('.tablinks')
-//     const CollectionTabSection = new Swiper(item, {
-//         slidesPerView: 1,
-//         speed: 500,
-//         allowTouchMove: false,
-//         initialSlide: 0,
-//     })
-//     function slide(e) {
-//         let target = e.target;
-//         let index = target.getAttribute('data-index');
-//         CollectionTabSection.slideTo(index);
-//     }
-//     navbtn.forEach(item => {
-//         item.addEventListener('click', event => {
-//             slide(event)
-//         })
-//     })
-
-// })
-
-// var CollectionSlider = document.querySelectorAll('.collection-list');
-// CollectionSlider.forEach(item => {
-//     var nextbutton = item.querySelectorAll('.tabingNext')[0];
-//     var prebutton = item.querySelectorAll('.tabingPrev')[0];
-//     const swiperTabs = new Swiper(item, {
-//         slidesPerView: 2,
-//         spaceBetween: 15,
-//         initialSlide: 0,
-//         navigation: {
-//             nextEl: nextbutton,
-//             prevEl: prebutton,
-//         },
-//         breakpoints: {
-//             640: {
-//                 slidesPerView: 2,
-//             },
-//             1024: {
-//                 slidesPerView: 3,
-//             },
-//             1366: {
-//                 slidesPerView: 5,
-
-//             },
-//         },
-//     })
-// })
-
-
 
 var collcetionImageSlider = document.querySelectorAll('.product-image-wrapper');
 collcetionImageSlider.forEach(item => {
