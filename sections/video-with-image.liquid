@@ -36,24 +36,23 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
     </div>
     {% endif %}
    
-    <div class="text-box banner-content-{{ block.settings.desktop_content_position}}" style="color:{{ block.settings.text-color}}">
+    <div class="text-box banner-content-{{ block.settings.desktop_content_position}} color-{{ block.settings.color_scheme }}">
         <div class="overlay-opacity" style="{{ block.settings.overlay_opacity_color  }}; opacity: {{ block.settings.overlay_opacity }}"></div>
         {% if block.settings.title !=blank %}
         <h1>{{ block.settings.title }}</h1>
         {% endif %}
         {% if block.settings.sub-title !=blank %}
-        <h2>{{ block.settings.sub-title }}</h2>
+        <h2 class="sub-heading">{{ block.settings.sub-title }}</h2>
         {% endif %}
         {% if block.settings.text !=blank %}
         <div class="rte">{{ block.settings.text }}</div>
         {% endif %}
-        <div class="button-box btn_color{{ block.id }}">
+        <div class="button-box ">
         {% if block.settings.button_label !=blank or block.settings.button_link !=blank %}
-        <a href="{{ block.settings.button_link }}" class="cta-btn">{{ block.settings.button_label }}</a>
+        <a href="{{ block.settings.button_link }}" class="cta-btn primary-button">{{ block.settings.button_label }}</a>
         {% endif %}
-        
         {% if block.settings.second_button_label !=blank or block.settings.second_button_link !=blank %}
-        <a href="{{ block.settings.second_button_link }}" class="cta-btn secondary-btn">{{ block.settings.second_button_label }}</a>
+        <a href="{{ block.settings.second_button_link }}" class="cta-btn secondary-button">{{ block.settings.second_button_label }}</a>
         {% endif %}
         </div>
            
