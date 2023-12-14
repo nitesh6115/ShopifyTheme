@@ -35,7 +35,11 @@
       
       .color-{{ scheme.id }} {
         color: "{{ scheme.settings.text }}";
-        background: "{{ scheme.settings.background }}";
+        {% if scheme.settings.background_gradient != empty %}
+          background: {{ scheme.settings.background_gradient }};
+        {% else %}
+          background: {{ scheme.settings.background }};
+        {% endif %}
       }
       .color-{{ scheme.id }} h1{
          color: "{{ scheme.settings.heading-text }}";
