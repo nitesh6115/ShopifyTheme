@@ -56,26 +56,10 @@
             "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
             "btn_hover_color": "#000000"
           }
-        },
-        "92d40213-e16e-4805-be12-e781b8732f8e": {
-          "type": "content",
-          "settings": {
-            "title": "Men",
-            "heading": "Shop Men",
-            "sub_title": "New",
-            "slide-collection": "mens",
-            "shop_all": true,
-            "button_text": "View all Products",
-            "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_color": "#000000",
-            "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_hover_color": "#000000"
-          }
         }
       },
       "block_order": [
-        "a636e091-b64d-44e7-891b-9095ac3d649b",
-        "92d40213-e16e-4805-be12-e781b8732f8e"
+        "a636e091-b64d-44e7-891b-9095ac3d649b"
       ],
       "settings": {
         "width": "wrapper-width",
