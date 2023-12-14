@@ -6,9 +6,8 @@
       <div class="swiper-wrapper">
       {% if cart.items != 0 %}
        {% assign item = cart.items.first %}
-        t{{ item.product.collections }}
-        {% for collection in item.collections %}
-         {% assign collectionUrl = collections[collection] %}
+        {% for collection in item.product.collections %}
+         {% assign collectionUrl = collections.handle %}
           {{ collectionUrl }}
         {% endfor %}
         {% assign collection = collections[collectionUrl] %}
