@@ -6,28 +6,19 @@
         "7442791e-4bbd-48e9-a1d4-eb90108ebb47": {
           "type": "image",
           "settings": {
+            "color_scheme": "scheme-0bfea3ae-e3eb-4aeb-af16-a1397b6b6630",
             "image_bg": "shopify:\/\/shop_images\/51FDB299-95B0-4400-BC89-F8D64F25A9E9.png",
             "mobile_image_bg": "shopify:\/\/shop_images\/51FDB299-95B0-4400-BC89-F8D64F25A9E9.png",
             "overlay_opacity": 20,
             "overlay_opacity_color": "#000000",
-            "text-color": "",
             "desktop_content_position": "bottom-center",
             "title": "Discover The  <br>Science of Ayurveda",
             "sub-title": "",
             "text": "",
-            "color_text": "",
             "button_label": "Prakruti Test",
             "button_link": "#",
-            "btn_bg": "linear-gradient(109deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1) 49%, rgba(0, 0, 0, 1) 100%)",
-            "btn_color": "#ffffff",
-            "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_hover_color": "#000000",
             "second_button_label": "Book doctors consultation",
-            "second_button_link": "#",
-            "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_color": "#000000",
-            "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_hover_color": "#000000"
+            "second_button_link": "#"
           }
         }
       },
@@ -168,55 +159,37 @@
         "1db94927-182f-4653-90c9-3a695a83b8c5": {
           "type": "image",
           "settings": {
+            "color_scheme": "",
             "image_bg": "shopify:\/\/shop_images\/2EC5F490-57A7-49EE-B7CE-8C52A02AACAC.jpg",
             "mobile_image_bg": "shopify:\/\/shop_images\/2EC5F490-57A7-49EE-B7CE-8C52A02AACAC.jpg",
             "overlay_opacity": 37,
             "overlay_opacity_color": "#000000",
-            "text-color": "#ffffff",
             "desktop_content_position": "bottom-center",
             "title": "Hair Care",
             "sub-title": "",
             "text": "<p>Hair Health, Redefined. Regain healthy, strong hair with Ayurveda’s solutions that are pure and potent.<\/p>",
-            "color_text": "#ffffff",
             "button_label": "Shop Now",
             "button_link": "#",
-            "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_color": "#000000",
-            "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_hover_color": "#000000",
             "second_button_label": "",
-            "second_button_link": "",
-            "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_color": "#000000",
-            "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_hover_color": "#000000"
+            "second_button_link": ""
           }
         },
         "69c0d203-7404-4cea-97db-7bdb5440d0e2": {
           "type": "image",
           "settings": {
+            "color_scheme": "",
             "image_bg": "shopify:\/\/shop_images\/D8006702-DDC8-441A-9E1B-FEC5BEBE4F47.jpg",
             "mobile_image_bg": "shopify:\/\/shop_images\/D8006702-DDC8-441A-9E1B-FEC5BEBE4F47.jpg",
             "overlay_opacity": 0,
             "overlay_opacity_color": "#000000",
-            "text-color": "#ffffff",
             "desktop_content_position": "bottom-center",
             "title": "Joint Care",
             "sub-title": "",
             "text": "<p>Get Moving With Ease. Doctor-backed formulations to renew your joints, muscles & bones<\/p>",
-            "color_text": "#000000",
             "button_label": "SHOP NOW",
             "button_link": "#",
-            "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_color": "#000000",
-            "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_hover_color": "#000000",
             "second_button_label": "",
-            "second_button_link": "",
-            "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_color": "#000000",
-            "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_hover_color": "#000000"
+            "second_button_link": ""
           }
         }
       },
@@ -283,82 +256,55 @@
         "0242b311-9c28-4425-aa51-2a32b60227f6": {
           "type": "image",
           "settings": {
+            "color_scheme": "",
             "image_bg": "shopify:\/\/shop_images\/HPBlock1_f9b9e6a5-1ce7-476a-9d85-c3485b6f3338.jpg",
             "mobile_image_bg": "shopify:\/\/shop_images\/HPBlock1_f9b9e6a5-1ce7-476a-9d85-c3485b6f3338.jpg",
             "overlay_opacity": 0,
             "overlay_opacity_color": "#000000",
-            "text-color": "",
             "desktop_content_position": "bottom-center",
             "title": "Summer Necessities",
             "sub-title": "",
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "color_text": "#ffffff",
             "button_label": "shop tops",
             "button_link": "#",
-            "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_color": "#000000",
-            "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_hover_color": "#000000",
             "second_button_label": "shop shorts",
-            "second_button_link": "#",
-            "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_color": "#000000",
-            "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_hover_color": "#000000"
+            "second_button_link": "#"
           }
         },
         "418302b1-4034-4e27-bf26-1fa76f46095b": {
           "type": "image",
           "settings": {
+            "color_scheme": "",
             "image_bg": "shopify:\/\/shop_images\/06.jpg",
             "mobile_image_bg": "shopify:\/\/shop_images\/06.jpg",
             "overlay_opacity": 0,
             "overlay_opacity_color": "#000000",
-            "text-color": "",
             "desktop_content_position": "bottom-center",
             "title": "Image slide",
             "sub-title": "",
             "text": "",
-            "color_text": "",
             "button_label": "",
             "button_link": "",
-            "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_color": "#000000",
-            "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_hover_color": "#000000",
             "second_button_label": "",
-            "second_button_link": "",
-            "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_color": "#000000",
-            "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_hover_color": "#000000"
+            "second_button_link": ""
           }
         },
         "bf65b616-aee5-4d72-be66-e74f2e6a6caa": {
           "type": "image",
           "settings": {
+            "color_scheme": "",
             "image_bg": "shopify:\/\/shop_images\/20210707_131450.jpg",
             "mobile_image_bg": "shopify:\/\/shop_images\/20210707_131450.jpg",
             "overlay_opacity": 0,
             "overlay_opacity_color": "#000000",
-            "text-color": "#ffffff",
             "desktop_content_position": "bottom-center",
             "title": "Image slide",
             "sub-title": "The Products That Make Alphalete, Alphalete.",
             "text": "<p>more <\/p>",
-            "color_text": "#ffffff",
             "button_label": "shop women",
             "button_link": "#",
-            "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_color": "#000000",
-            "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_hover_color": "#000000",
             "second_button_label": "shop men",
-            "second_button_link": "#",
-            "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_color": "#000000",
-            "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_hover_color": "#000000"
+            "second_button_link": "#"
           }
         }
       },
@@ -451,28 +397,19 @@
         "7472b6ce-1330-47bf-b8ad-82c598883e01": {
           "type": "image",
           "settings": {
+            "color_scheme": "",
             "image_bg": "shopify:\/\/shop_images\/Gifting.webp",
             "mobile_image_bg": "shopify:\/\/shop_images\/Group_4.png",
             "overlay_opacity": 0,
             "overlay_opacity_color": "#000000",
-            "text-color": "",
             "desktop_content_position": "bottom-center",
             "title": "Gift Cards",
             "sub-title": "Get excited product",
             "text": "<p>Hidden gem for you<\/p>",
-            "color_text": "",
             "button_label": "Shop Now",
             "button_link": "",
-            "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_color": "#000000",
-            "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_hover_color": "#000000",
             "second_button_label": "",
-            "second_button_link": "",
-            "sec_btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_color": "#000000",
-            "sec_btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "sec_btn_hover_color": "#000000"
+            "second_button_link": ""
           }
         }
       },

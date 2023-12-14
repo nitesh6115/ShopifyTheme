@@ -194,6 +194,28 @@
           "secondary-button-hover-background": "rgba(0,0,0,0)",
           "secondary-button-hover-border-color": "#1773b0"
         }
+      },
+      "scheme-0bfea3ae-e3eb-4aeb-af16-a1397b6b6630": {
+        "settings": {
+          "background": "rgba(0,0,0,0)",
+          "background_gradient": "",
+          "text": "#121212",
+          "heading-color": "#121212",
+          "sub-heading-color": "#eab79a",
+          "link-color": "#3f38ea",
+          "button-text": "#ffffff",
+          "button-background": "#121212",
+          "button-border-color": "#121212",
+          "button-hover-text": "#121212",
+          "button-hover-background": "#ffffff",
+          "button-hover-border-color": "#121212",
+          "secondary-button-text": "#ffffff",
+          "secondary-button-background": "#ce8055",
+          "secondary-button-border-color": "#ce8055",
+          "secondary-button-hover-text": "#ce8055",
+          "secondary-button-hover-background": "#ffffff",
+          "secondary-button-hover-border-color": "#ce8055"
+        }
       }
     }
   }
