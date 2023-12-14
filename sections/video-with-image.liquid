@@ -13,7 +13,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 }
 {% endstyle %}
 <div class="section-{{ section.id}}-padding">
-<div class="{% if section.settings.width =='full-width' %}full-width{% elsif section.settings.width =='wrapper-width'%}page-width {% else %}narrow-width{% endif%}">
+<div class="color- {% if section.settings.width =='full-width' %}full-width{% elsif section.settings.width =='wrapper-width'%}page-width {% else %}narrow-width{% endif%}">
 <div class="videoImage-container ItemSize-{{ section.blocks.size }}">
 {% for block in section.blocks %}
   {% if section.blocks.size == 3 and forloop.index == 2 %}
@@ -148,6 +148,12 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
   "name": "Video With Image",
     "max_blocks": 3,
   "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Choose Color Schema",
+      "default": "background-1"
+    },
     {
       "type": "select",
       "id": "width",
