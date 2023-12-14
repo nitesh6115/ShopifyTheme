@@ -32,13 +32,19 @@
   {% include 'social-meta-tags' %}
   {% style %}
      {% for scheme in settings.color_schemes -%}
-        {% assign scheme_classes = scheme_classes | append: ', .color-' | append: scheme.id %}
-        {% if forloop.index == 1 -%}
-          :root,
-        {%- endif %}
-        .color-{{ scheme.id }} {
+      
+      .color-{{ scheme.id }} {
         color: "{{ scheme.settings.text }}";
         background: "{{ scheme.settings.background }}";
+      }
+      .color-{{ scheme.id }} h1{
+         color: "{{ scheme.settings.heading-text }}";
+      }
+      .color-{{ scheme.id }} .sub-heading{
+       color: "{{ scheme.settings.sub-heading-text }}";
+      }
+      .color-{{ scheme.id }} a{
+       color: "{{ scheme.settings.link-color }}";
       }
        .color-{{ scheme.id }} .button {
         color: "{{ scheme.settings.button-text }}";
