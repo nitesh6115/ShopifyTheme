@@ -81,9 +81,9 @@ function addtocartitem(item) {
                 setTimeout(() => {
                     document.body.classList.remove('product-toast');
                     miniCart.innerHTML = '';
-                    cartDrwer()
+                  cartDrawerOpen()
                 }, '5000');
-                
+                cartDrwer()
             }
 
 
