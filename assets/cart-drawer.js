@@ -17,7 +17,6 @@ function rendersection() {
 }
 
 function cartDrwer() {
-  alert("yes")
     fetch(window.Shopify.routes.root + "?section_id=cart-drawer")
         .then(response => response.text())
         .then((responseText) => {
