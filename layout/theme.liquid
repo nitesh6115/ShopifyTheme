@@ -37,23 +37,28 @@
           :root,
         {%- endif %}
         .color-{{ scheme.id }} {
-          --color-background: {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
-        {% if scheme.settings.background_gradient != empty %}
-          --gradient-background: {{ scheme.settings.background_gradient }};
-        {% else %}
-          --gradient-background: {{ scheme.settings.background }};
-        {% endif %}
-        {% liquid
-          assign background_color = scheme.settings.background
-          assign background_color_brightness = background_color | color_brightness
-          if background_color_brightness <= 26
-            assign background_color_contrast = background_color | color_lighten: 50
-          elsif background_color_brightness <= 65
-            assign background_color_contrast = background_color | color_lighten: 5
-          else
-            assign background_color_contrast = background_color | color_darken: 25
-          endif
-        %}
+        color: "{{ scheme.settings.text }}";
+        background: "{{ scheme.settings.background }}";
+      }
+       .color-{{ scheme.id }} .button {
+        color: "{{ scheme.settings.button-text }}";
+        background: "{{ scheme.settings.button-background }}";
+        border: "1px solid #{{ scheme.settings.button-border-color}}";
+      }
+      .color-{{ scheme.id }} .button.secondary-button{
+        color: "{{ scheme.settings.secondary-button-text }}";
+        background: "{{ scheme.settings.secondary-button-background }}";
+        border: "1px solid #{{ scheme.settings.secondary-button-border-color}}";
+      }
+      .color-{{ scheme.id }} .button:hover {
+        color: "{{ scheme.settings.button-hover-text }}";
+        background: "{{ scheme.settings.button-hover-background }}";
+        border: "1px solid #{{ scheme.settings.button-hover-border-color}}";
+      }
+      .color-{{ scheme.id }} .button.secondary-button:hover{
+        color: "{{ scheme.settings.secondary-button-hover-text }}";
+        background: "{{ scheme.settings.secondary-button-hover-background }}";
+        border: "1px solid #{{ scheme.settings.secondary-button-hover-border-color}}";
       }
       {% endfor %}
   {% endstyle %}
