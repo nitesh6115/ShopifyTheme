@@ -71,29 +71,12 @@
             "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
             "btn_hover_color": "#000000"
           }
-        },
-        "fb7f5b6e-35f6-47f6-aeec-54bcb1da7523": {
-          "type": "content",
-          "settings": {
-            "title": "Accesories",
-            "heading": "Shop All",
-            "sub_title": "New",
-            "slide-collection": "all",
-            "shop_all": false,
-            "button_text": "Shop Now",
-            "btn_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_color": "#000000",
-            "btn_hover_bg": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
-            "btn_hover_color": "#000000"
-          }
         }
       },
       "block_order": [
         "a636e091-b64d-44e7-891b-9095ac3d649b",
-        "92d40213-e16e-4805-be12-e781b8732f8e",
-        "fb7f5b6e-35f6-47f6-aeec-54bcb1da7523"
+        "92d40213-e16e-4805-be12-e781b8732f8e"
       ],
-      "disabled": true,
       "settings": {
         "width": "wrapper-width",
         "padding_top": 36,
