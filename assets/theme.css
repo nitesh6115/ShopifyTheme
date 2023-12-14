@@ -660,7 +660,7 @@ img.feature-image {
 .product-variant-container {
     overflow: hidden;
     position: absolute;
-    top: 10px;
+    top: 7px;
     left: -1px;
     right: -1px;
     background: var(--body-background-color);
