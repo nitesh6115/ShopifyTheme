@@ -7,8 +7,7 @@
       {% if cart.items != 0 %}
        {% assign item = cart.items.first %}
         {% for collection in item.product.collections %}
-         {% assign collectionUrl = collections %}
-          {{ collectionUrl.title }}
+          {{ collection.title }}
         {% endfor %}
         {% assign collection = collections[collectionUrl] %}
       {% else %}
