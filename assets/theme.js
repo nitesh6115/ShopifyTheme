@@ -22,7 +22,7 @@ NavLink.forEach(item => {
     item.addEventListener("mouseover", (event) => {
         var showimage = item.getAttribute('featured-image');
         const showimageItem = document.querySelectorAll('#' + showimage)[0];
-        console.log(showimageItem)  
+        //console.log(showimageItem)  
       showimageItem.classList.add("active");
     });
     item.addEventListener("mouseout", (event) => {
@@ -155,7 +155,7 @@ function ChnageVaiantImg(event) {
     console.log(event)
     var mainParent = event.closest('.featured-product');
     var SizeSelectorOption = mainParent.querySelectorAll('.size-selector');
-    console.log(SizeSelectorOption);
+    //console.log(SizeSelectorOption);
     var prductUrl = mainParent.querySelectorAll('[data-url]')[0];
     prductUrl = prductUrl.getAttribute('data-url');
     SizeSelectorOption.forEach(sizeOption => {
