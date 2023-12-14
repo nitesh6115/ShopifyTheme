@@ -11,6 +11,12 @@
     "name": "Color Schema",
     "settings": [
       {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "Body Color Schema",
+        "default": "background-1"
+      },
+      {
         "type": "color_scheme_group",
         "id": "color_schemes",
         "definition": [
@@ -146,48 +152,6 @@
           "on_secondary_button": "secondary-button-text",
           "secondary_button_border": "secondary-button-border-color"
         }
-      }
-    ]
-  },
-  {
-    "name": "COLORS",
-    "settings": [
-      {
-        "type": "header",
-        "content": "Body"
-      },
-      {
-        "type": "color_background",
-        "id": "bg-color",
-        "label": "Body Background Color",
-        "default": "linear-gradient(#fff, #fff)"
-      },
-      {
-        "type": "color_background",
-        "id": "body-bg-light-color",
-        "label": " Light Background Color"
-      },
-      {
-        "type": "color",
-        "id": "body-text-color",
-        "label": "Body Text Color",
-        "default": "#000"
-      },
-      {
-        "type": "color",
-        "id": "border-color",
-        "label": "Border Color",
-        "default": "#eee"
-      },
-      {
-        "type": "header",
-        "content": "Heading"
-      },
-      {
-        "type": "color",
-        "id": "main-heading-color",
-        "label": "Main Heading Color",
-        "default": "#000"
       }
     ]
   },
