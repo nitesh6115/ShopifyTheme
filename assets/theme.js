@@ -283,8 +283,8 @@ function triggerChange(element) {
     element.dispatchEvent(changeEvent);
 }
 
-var collcetionImageSlider = document.querySelectorAll('.product-image-wrapper');
-collcetionImageSlider.forEach(item => {
+var productGridImageSlider = document.querySelectorAll('.product-image-wrapper');
+productGridImageSlider.forEach(item => {
     var newElem = item.closest('.product-image-container')
     var nextbutton = newElem.querySelectorAll('.swiper-button-next')[0];
     var prebutton = newElem.querySelectorAll('.swiper-button-prev')[0];
