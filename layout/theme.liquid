@@ -46,12 +46,12 @@
       .color-{{ scheme.id }} a{
        color: "{{ scheme.settings.link-color }}";
       }
-       .color-{{ scheme.id }} .button, .primary-button {
+       .color-{{ scheme.id }} .button, .color-{{ scheme.id }} .primary-button {
         color: "{{ scheme.settings.button-text }}";
         background: "{{ scheme.settings.button-background }}";
         border: "1px solid #{{ scheme.settings.button-border-color}}";
       }
-      .color-{{ scheme.id }} .button.secondary-button{
+      .color-{{ scheme.id }} .secondary-button{
         color: "{{ scheme.settings.secondary-button-text }}";
         background: "{{ scheme.settings.secondary-button-background }}";
         border: "1px solid {{ scheme.settings.secondary-button-border-color}}";
