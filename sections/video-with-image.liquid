@@ -254,6 +254,12 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
       "name": "Image",
       "settings": [
         {
+          "type": "color_scheme",
+          "id": "color_scheme",
+          "label": "Choose Color Schema",
+          "default": "background-1"
+        },
+        {
           "type": "image_picker",
           "id": "image_bg",
           "label": "Desktop Image"
@@ -282,11 +288,6 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
         {
           "type": "header",
           "content": "Text"
-        },
-        {
-          "type": "color",
-          "id": "text-color",
-          "label": "Heading Color"
         },
         {
           "type": "select",
@@ -324,12 +325,6 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
           "label": "Description"
         },
         {
-          "type": "color",
-          "id": "color_text",
-          "label": "Text color"
-        },
- 
-        {
           "type": "text",
           "id": "button_label",
           "label": "First Button label"
@@ -340,30 +335,6 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
           "label": "First Button link"
         },
         {
-          "type": "color_background",
-          "id": "btn_bg",
-          "label": "Button Background",
-          "default": "linear-gradient(#ffffff, #ffffff)"
-        },
-        {
-          "type": "color",
-          "id": "btn_color",
-          "label": "Button Text Color",
-          "default": "#000"
-        },
-        {
-          "type": "color_background",
-          "id": "btn_hover_bg",
-          "label": "Button Hover Background",
-          "default": "linear-gradient(#ffffff, #ffffff)"
-        },
-        {
-          "type": "color",
-          "id": "btn_hover_color",
-          "label": "Button Hover Color",
-          "default": "#000"
-        },
-        {
           "type": "text",
           "id": "second_button_label",
           "label": "Second Button label"
@@ -372,30 +343,6 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
           "type": "url",
           "id": "second_button_link",
           "label": " Second Button link"
-        },
-         {
-          "type": "color_background",
-          "id": "sec_btn_bg",
-          "label": "Button Background",
-          "default": "linear-gradient(#ffffff, #ffffff)"
-        },
-        {
-          "type": "color",
-          "id": "sec_btn_color",
-          "label": "Button Color",
-          "default": "#000"
-        },
-        {
-          "type": "color_background",
-          "id": "sec_btn_hover_bg",
-          "label": "Button Hover Background",
-          "default": "linear-gradient(#ffffff, #ffffff)"
-        },
-        {
-          "type": "color",
-          "id": "sec_btn_hover_color",
-          "label": "Button Hover Color",
-          "default": "#000"
         }
       ]
     }
