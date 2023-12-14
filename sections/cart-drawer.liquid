@@ -8,6 +8,7 @@
        {% assign cart_product = cart.items.first %}
         {% for collection in cart_product.collections %}
          {% assign collectionUrl = collections[collection.handle] %}
+          {{ collectionUrl }}
         {% endfor %}
         {% assign collection = collections[collectionUrl] %}
       {% else %}
