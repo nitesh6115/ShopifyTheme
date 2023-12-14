@@ -29,7 +29,7 @@
           <div class="CollectionnGrid 4-colls">
         {% assign collection = collections['all'] %}
                        {% for product in collection.products limit: 8 %}
-                         <div class="featured-product swiper-slide">
+                         <div class="GridItem featured-product swiper-slide">
                       {% render 'product-grid', card_product:product %}
                          </div>
                          {% endfor %}
