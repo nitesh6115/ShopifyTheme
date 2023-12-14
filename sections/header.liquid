@@ -1,4 +1,4 @@
-<div class="header__wrapper">
+<div class="header__wrapper {{ settings.color_scheme }}">
 <div class="{% if section.settings.page-width == 'full-width' %} full-width {% elsif section.settings.page-width == 'wrapper-width' %} page-width {% else %} narrow-width {% endif %}">
 <div class="header-content borrder-all" style="background:{{section.settings.bg-color }}";>
  <style>
@@ -56,8 +56,13 @@
   {
   "name": "Header",
   "settings": [
-    
-      {
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Choose Color Schema",
+      "default": "background-1"
+    },
+    {
       "type": "color_background",
       "id": "bg-color",
       "label": "Change Background Color"
