@@ -3,10 +3,8 @@
     "bg-color": "#323232",
     "body-bg-light-color": "linear-gradient(54deg, rgba(114, 255, 179, 1) 14%, rgba(255, 250, 99, 1) 85%)",
     "body-text-color": "#ffffff",
-    "link-color": "#ffffff",
     "border-color": "#eeeeee",
     "main-heading-color": "#ffffff",
-    "heading-color": "#ffffff",
     "flash-image": "shopify:\/\/shop_images\/DFE6A142-958F-4990-9330-974A2153702E.gif",
     "page-width": "wrapper-width",
     "narrow-width": 1280,
@@ -15,10 +13,8 @@
     "layout-padding-right": 50,
     "button-bg-color": "linear-gradient(54deg, rgba(73, 228, 114, 1) 100%, rgba(255, 250, 99, 1) 100%)",
     "button-text-color": "#000",
-    "button-border-color": "linear-gradient(54deg, rgba(73, 228, 114, 1) 100%, rgba(114, 255, 179, 1) 100%, rgba(255, 250, 99, 1) 100%)",
     "color-on-hover": "linear-gradient(180deg, rgba(0, 0, 0, 1) 100%, rgba(249, 32, 32, 1) 100%)",
     "text-color-on-hover": "#ffffff",
-    "button-hover-border-color": "linear-gradient(180deg, rgba(22, 22, 22, 1) 100%, rgba(249, 32, 32, 1) 100%)",
     "button-border-thickness": 1,
     "button-radius": 20,
     "button-top-padding": 10,
@@ -36,6 +32,10 @@
     "social_instagram_link": "instagram.com",
     "social_youtube_link": "youtube.com",
     "favicon": "shopify:\/\/shop_images\/about_radar_badge.jpg",
+    "link-color": "#ffffff",
+    "heading-color": "#ffffff",
+    "button-border-color": "linear-gradient(54deg, rgba(73, 228, 114, 1) 100%, rgba(114, 255, 179, 1) 100%, rgba(255, 250, 99, 1) 100%)",
+    "button-hover-border-color": "linear-gradient(180deg, rgba(22, 22, 22, 1) 100%, rgba(249, 32, 32, 1) 100%)",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -148,6 +148,15 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "color_schemes": {
+      "background-1": {
+        "settings": {
+          "background": "#FFFFFF",
+          "background_gradient": "",
+          "text": "#121212"
+        }
+      }
+    }
   }
 }
