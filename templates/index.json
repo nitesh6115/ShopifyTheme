@@ -61,6 +61,7 @@
       "block_order": [
         "a636e091-b64d-44e7-891b-9095ac3d649b"
       ],
+      "disabled": true,
       "settings": {
         "width": "wrapper-width",
         "padding_top": 36,
