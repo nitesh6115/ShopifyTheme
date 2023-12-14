@@ -1,10 +1,5 @@
 {
   "current": {
-    "bg-color": "#323232",
-    "body-bg-light-color": "linear-gradient(54deg, rgba(114, 255, 179, 1) 14%, rgba(255, 250, 99, 1) 85%)",
-    "body-text-color": "#ffffff",
-    "border-color": "#eeeeee",
-    "main-heading-color": "#ffffff",
     "flash-image": "shopify:\/\/shop_images\/DFE6A142-958F-4990-9330-974A2153702E.gif",
     "page-width": "wrapper-width",
     "narrow-width": 1280,
@@ -32,6 +27,11 @@
     "social_instagram_link": "instagram.com",
     "social_youtube_link": "youtube.com",
     "favicon": "shopify:\/\/shop_images\/about_radar_badge.jpg",
+    "bg-color": "#323232",
+    "body-bg-light-color": "linear-gradient(54deg, rgba(114, 255, 179, 1) 14%, rgba(255, 250, 99, 1) 85%)",
+    "body-text-color": "#ffffff",
+    "border-color": "#eeeeee",
+    "main-heading-color": "#ffffff",
     "link-color": "#ffffff",
     "heading-color": "#ffffff",
     "button-border-color": "linear-gradient(54deg, rgba(73, 228, 114, 1) 100%, rgba(114, 255, 179, 1) 100%, rgba(255, 250, 99, 1) 100%)",
@@ -170,6 +170,28 @@
           "secondary-button-hover-text": "#ce8055",
           "secondary-button-hover-background": "#fff",
           "secondary-button-hover-border-color": "#ce8055"
+        }
+      },
+      "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8": {
+        "settings": {
+          "background": "#9c0d0d",
+          "background_gradient": "",
+          "text": "#fff",
+          "heading-color": "#121212",
+          "sub-heading-color": "#eab79a",
+          "link-color": "#3f38ea",
+          "button-text": "#FFFFFF",
+          "button-background": "#000000",
+          "button-border-color": "#121212",
+          "button-hover-text": "#121212",
+          "button-hover-background": "#fff",
+          "button-hover-border-color": "#121212",
+          "secondary-button-text": "#fff",
+          "secondary-button-background": "#1773b0",
+          "secondary-button-border-color": "#1773b0",
+          "secondary-button-hover-text": "#000000",
+          "secondary-button-hover-background": "rgba(0,0,0,0)",
+          "secondary-button-hover-border-color": "#1773b0"
         }
       }
     }
