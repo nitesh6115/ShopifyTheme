@@ -153,6 +153,12 @@
     "name": "Flash Wrapper",
     "settings": [
       {
+        "type": "color_background",
+        "id": "flash_background_gradient",
+        "label": "Gradient Background Color",
+        "info": "Gradient Background Color"
+      },
+      {
         "type": "image_picker",
         "label": "Flash Image",
         "id": "flash-image"
