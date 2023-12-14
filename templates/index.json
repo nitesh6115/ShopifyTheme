@@ -93,6 +93,7 @@
         "92d40213-e16e-4805-be12-e781b8732f8e",
         "fb7f5b6e-35f6-47f6-aeec-54bcb1da7523"
       ],
+      "disabled": true,
       "settings": {
         "width": "wrapper-width",
         "padding_top": 36,
@@ -190,6 +191,7 @@
         "761d1f84-7633-4cc8-9483-7301f103f8ba",
         "3d97fd51-5f0b-4f46-959d-23847c0adf16"
       ],
+      "disabled": true,
       "settings": {
         "width": "wrapper-width",
         "padding_top": 36,
