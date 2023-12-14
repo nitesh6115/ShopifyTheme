@@ -99,7 +99,7 @@ function SelectVariant(event) {
    var selectType = event.getAttribute('type')
     changeActive(event);
     if (selectType == "color"){
-      //ChnageVaiantImg(event)
+      ChnageVaiantImg(event)
     }else{
       ChangeSize(event)
     }
