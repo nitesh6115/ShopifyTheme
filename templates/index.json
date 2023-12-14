@@ -35,6 +35,7 @@
         "7442791e-4bbd-48e9-a1d4-eb90108ebb47"
       ],
       "settings": {
+        "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
         "width": "wrapper-width",
         "padding_top": 36,
         "padding_bottom": 36
@@ -42,7 +43,6 @@
     },
     "375e6a86-e778-4eff-9348-692ff6fa8ac3": {
       "type": "main-hero",
-      "disabled": true,
       "blocks": {
         "template--14475434328150__375e6a86-e778-4eff-9348-692ff6fa8ac3-167885872701846849-0": {
           "type": "image_slide",
@@ -74,6 +74,7 @@
         "template--14475434328150__375e6a86-e778-4eff-9348-692ff6fa8ac3-167885872701846849-1",
         "1cacba4c-9514-4155-b18e-468d6de0ac57"
       ],
+      "disabled": true,
       "settings": {
         "bg_image": "shopify:\/\/shop_images\/51FDB299-95B0-4400-BC89-F8D64F25A9E9.png",
         "overlayColor": "#000",
@@ -224,6 +225,7 @@
         "69c0d203-7404-4cea-97db-7bdb5440d0e2"
       ],
       "settings": {
+        "color_scheme": "",
         "width": "wrapper-width",
         "padding_top": 36,
         "padding_bottom": 36
@@ -366,6 +368,7 @@
         "bf65b616-aee5-4d72-be66-e74f2e6a6caa"
       ],
       "settings": {
+        "color_scheme": "",
         "width": "wrapper-width",
         "padding_top": 36,
         "padding_bottom": 36
@@ -477,6 +480,7 @@
         "7472b6ce-1330-47bf-b8ad-82c598883e01"
       ],
       "settings": {
+        "color_scheme": "",
         "width": "wrapper-width",
         "padding_top": 36,
         "padding_bottom": 36
