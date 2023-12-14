@@ -7,7 +7,7 @@
       {% if cart.items != 0 %}
        {% assign cart_product = cart.items.first %}
         {{ cart_product.title }}
-        {% for collection in cart_product.collections %}
+        {% for collection in cart_product.product.collections %}
          {% assign collectionUrl = collections[collection.handle] %}
           {{ collectionUrl }}
         {% endfor %}
