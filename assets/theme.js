@@ -152,7 +152,6 @@ function changeActive(event) {
 }
 
 function ChnageVaiantImg(event) {
-    console.log(event)
     var mainParent = event.closest('.featured-product');
     var SizeSelectorOption = mainParent.querySelectorAll('.size-selector');
     //console.log(SizeSelectorOption);
