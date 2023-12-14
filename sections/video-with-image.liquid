@@ -75,13 +75,13 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
         
     </div>
     {% endif %}
-    <div class="text-box banner-content-{{ block.settings.desktop_content_position}}" style="color:{{ block.settings.text-color}}">
+    <div class="text-box banner-content-{{ block.settings.desktop_content_position}} color-{{ block.settings.color_scheme }}">
         <div class="overlay-opacity" style="{{ block.settings.overlay_opacity_color  }}; opacity: {{ block.settings.overlay_opacity }}"></div>
         {% if block.settings.title !=blank %}
         <h1>{{ block.settings.title }}</h1>
         {% endif %}
         {% if block.settings.sub-title !=blank %}
-        <h2>{{ block.settings.sub-title }}</h2>
+        <h2 class="sub-heading">{{ block.settings.sub-title }}</h2>
         {% endif %}
         {% if block.settings.text !=blank %}
         <div class="rte">{{ block.settings.text }}</div>
