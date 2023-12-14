@@ -1,6 +1,6 @@
 {%  if settings.flash-image  != blank %}
-<div class="flash-wrapper" id="flashWrapper">
-<div class="flashimage" style="background:{{ settings.flash_background_gradient }};">
+<div class="flash-wrapper" id="flashWrapper"  style="background:{{ settings.flash_background_gradient }};">
+<div class="flashimage">
 <img style="max-width: 100%;" src="{{ settings.flash-image | img_url: 'master' }}" alt="flash-image"/>
 </div>
 </div>
