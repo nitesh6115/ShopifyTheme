@@ -59,41 +59,41 @@
      {% for scheme in settings.color_schemes -%}
       
       .color-{{ scheme.id }} {
-        color: "{{ scheme.settings.text }}";
+        color: {{ scheme.settings.text }};
         {% if scheme.settings.background_gradient != empty %}
           background: {{ scheme.settings.background_gradient }};
         {% else %}
           background: {{ scheme.settings.background }};
         {% endif %}
       }
-      .color-{{ scheme.id }} h1{
-         color: "{{ scheme.settings.heading-text }}";
+      .color-{{ scheme.id }} > h1{
+         color: {{ scheme.settings.heading-text }};
       }
-      .color-{{ scheme.id }} .sub-heading{
-       color: "{{ scheme.settings.sub-heading-text }}";
+      .color-{{ scheme.id }} > .sub-heading{
+       color: {{ scheme.settings.sub-heading-text }};
       }
-      .color-{{ scheme.id }} a{
-       color: "{{ scheme.settings.link-color }}";
+      .color-{{ scheme.id }} > a{
+       color: {{ scheme.settings.link-color }};
       }
-      .color-{{ scheme.id }} .primary-button {
-        color: "{{ scheme.settings.button-text }}";
-        background: "{{ scheme.settings.button-background }}";
-        border: "1px solid {{ scheme.settings.button-border-color}}";
+      .color-{{ scheme.id }} > .primary-button {
+        color: {{ scheme.settings.button-text }};
+        background: {{ scheme.settings.button-background }};
+        border: 1px solid {{ scheme.settings.button-border-color}};
       }
-      .color-{{ scheme.id }} .secondary-button{
-        color: "{{ scheme.settings.secondary-button-text }}";
-        background: "{{ scheme.settings.secondary-button-background }}";
-        border: "1px solid {{ scheme.settings.secondary-button-border-color}}";
+      .color-{{ scheme.id }} > .secondary-button{
+        color: {{ scheme.settings.secondary-button-text }};
+        background: {{ scheme.settings.secondary-button-background }};
+        border: 1px solid {{ scheme.settings.secondary-button-border-color}};
       }
-      .color-{{ scheme.id }} .button:hover {
-        color: "{{ scheme.settings.button-hover-text }}";
-        background: "{{ scheme.settings.button-hover-background }}";
-        border: "1px solid {{ scheme.settings.button-hover-border-color}}";
+      .color-{{ scheme.id }} > .button:hover {
+        color: {{ scheme.settings.button-hover-text }};
+        background: {{ scheme.settings.button-hover-background }};
+        border: 1px solid {{ scheme.settings.button-hover-border-color}};
       }
-      .color-{{ scheme.id }} .button.secondary-button:hover{
-        color: "{{ scheme.settings.secondary-button-hover-text }}";
-        background: "{{ scheme.settings.secondary-button-hover-background }}";
-        border: "1px solid {{ scheme.settings.secondary-button-hover-border-color}}";
+      .color-{{ scheme.id }} > .button.secondary-button:hover{
+        color: {{ scheme.settings.secondary-button-hover-text }};
+        background: {{ scheme.settings.secondary-button-hover-background }};
+        border: 1px solid {{ scheme.settings.secondary-button-hover-border-color}};
       }
       {% endfor %}
   {% endstyle %}
