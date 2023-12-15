@@ -657,6 +657,7 @@ img.feature-image {
     min-width:30px;
     border-radius: 5px;
     align-items: center;
+    cursor: pointer;
     justify-content: center;
 }
 
