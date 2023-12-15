@@ -6,7 +6,7 @@ var observer = new IntersectionObserver(
             if (entry.intersectionRatio > 0.0) {
                 img = entry.target;
                 if (!img.hasAttribute('src')) {
-                    alert('will load the image!!!');
+                    //alert('will load the image!!!');
                     img.setAttribute('src', img.dataset.src);
                 }
             }
