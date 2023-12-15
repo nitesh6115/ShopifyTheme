@@ -3,7 +3,7 @@
 document.addEventListener(“DOMContentLoaded”, function() {
 var lazyloadImages;    
 if (“IntersectionObserver” in window) {
-lazyloadImages = document.querySelectorAll(“.lazy”);
+lazyloadImages = document.querySelectorAll(“[loading]”);
 var imageObserver = new IntersectionObserver(function(entries, observer) {
 entries.forEach(function(entry) {
   if (entry.isIntersecting) {
