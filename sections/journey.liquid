@@ -62,11 +62,9 @@
               {{ section.settings.artwork }}
              </div>
               {% if block.settings.image != blank %} 
-          {{ block.settings.image | image_url: width: 1500 | image_tag:
-            loading: 'lazy',
-            sizes: sizes,
-            widths: '165, 360, 535, 750, 1070, 1500'
-          }}
+          <img  srcset="{{ block.settings.image | image_url: width: 1500 }}"
+                width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}" loading="lazy" class="radius-30 overflow-hidden" alt="{{ block.settings.image.alt }}">
+                
                 {% else %}
             {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
           {% endif %}
