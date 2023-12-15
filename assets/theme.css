@@ -223,7 +223,33 @@ ul li a {
     position: relative;
     cursor: pointer;
 }
+.cart_bottom .remove {
+    padding: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
 
+.cart_bottom .remove:hover {
+    background: var(--button-background-color);
+}
+
+.cart_bottom .quantity_button {
+    width: 40px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.cart_bottom .quantity_button:hover {
+    background: var(--button-background-color);
+}
 .header .header-icon-bar svg {
     width: 30px;
     height: 20px;
