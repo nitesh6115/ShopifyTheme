@@ -101,7 +101,7 @@
     
         </div>
       <div class="DrawerFooter">
-        <h4><span>Total:</span> <span id="cart__total_price"><p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }} | {{ cart.item_count }}{% if cart.item_count > 1 %}Items{% else %}Item{% endif %}</p></span></h4>
+        <h4><span>Total:</span> <span id="cart__total_price"><p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }} | {{ cart.item_count }}{% if cart.item_count > 1 %} Items{% else %} Item{% endif %}</p></span></h4>
         <a href="/cart" class="cta-btn">View Cart</a>
         <button  id="cart_checkout_btn"type="submit" name="checkout" class="btn">checkout</button>
       </div>
