@@ -45,15 +45,9 @@
           <h3 style="color:{{ block.settings.subColor }};">{{block.settings.sub-title}}</h3>
           {% endif %}
          </div>
-          {% if block.settings.image != blank %} 
-            {%- capture classes -%}radius-30 overflow-hidden {%- endcapture -%}
-           {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2){%- endcapture -%}
-          {{ block.settings.image | image_url: width: 1500 | image_tag:
-            loading: 'lazy',
-            sizes: sizes,
-            class: classes,
-            widths: '165, 360, 535, 750, 1070, 1500'
-          }}
+          {% if block.settings.image != blank %}
+            <img  srcset="{{ block.settings.image | image_url: width: 1500 }}"
+                width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}" loading="lazy" class="radius-30 overflow-hidden" alt="{{ block.settings.image.alt }}">
                 {% else %}
             {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
           {% endif %}
