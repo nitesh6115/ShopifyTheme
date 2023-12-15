@@ -8,8 +8,7 @@ var imageObserver = new IntersectionObserver(function(entries, observer) {
 entries.forEach(function(entry) {
   if (entry.isIntersecting) {
     var image = entry.target;
-    image.src = image.dataset.src;
-    image.classList.remove(“lazy”);
+    image.src = image.srcset;
     imageObserver.unobserve(image);
   }
 });
