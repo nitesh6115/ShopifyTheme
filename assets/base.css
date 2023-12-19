@@ -80,7 +80,6 @@ body {
 	font-style: var(--font-body-style);
     font-weight: var(--font-body-weight);
 	font-size: var(--body-font-size);
-	background: var(--body-background-color);
 }
 a{
   color: var(--body-link-color);
