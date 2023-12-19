@@ -1,6 +1,6 @@
 <div class="header__wrapper color-{{ section.settings.color_scheme }}">
 <div class="{% if section.settings.page-width == 'full-width' %} full-width {% elsif section.settings.page-width == 'wrapper-width' %} page-width {% else %} narrow-width {% endif %}">
-<div class="header-content borrder-all" style="background:{{section.settings.bg-color }}";>
+<div class="header-content borrder-all" style="background:{%- render 'color_to_rgba', color: section.settings.bg-color, opacity:'1' -%}";>
  <style>
  :root { --header-bg : {{ section.settings.bg-color }};}
 </style>
