@@ -1,0 +1,6 @@
+{%- 
+  liquid
+  assign rgb = color | color_to_rgb
+  assign tail = opacity | prepend: ', ' | append: ')' 
+-%}
+{{ rgb | replace: 'rgb', 'rgba' | replace: ')', tail }}
