@@ -36,8 +36,11 @@
       "type": "rich-text",
       "settings": {
         "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
+        "page-width": "wrapper-width",
         "title": "Experience your highest potential for health and wellness – rooted in the eternal and holistic Science of Ayurveda.",
-        "text": ""
+        "text": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "57a33abb-1a0e-4294-b0b8-b18fc32afe27": {
