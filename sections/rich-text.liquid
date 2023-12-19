@@ -6,9 +6,9 @@
   - Heading: title of the rich text section
   - Text: description of the rich text section
 {%- endcomment -%}
-<section class="page-width text-center">
+<section class="page-width text-center color-{{ section.settings.color_scheme }}">
   {%- if section.settings.title != blank -%}
-    <h2>{{ section.settings.title | escape }}</h2>
+    <h2 class="heading">{{ section.settings.title | escape }}</h2>
   {%- endif -%}
   {%- if section.settings.text != blank -%}
     <div class="rte">
