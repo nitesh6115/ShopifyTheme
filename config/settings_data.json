@@ -89,8 +89,7 @@
           "98e8b173-133e-4b46-95aa-fdb3d62e0906"
         ],
         "settings": {
-          "bg-color": "",
-          "text-color": "#ffffff",
+          "color_scheme": "",
           "page-width": "wrapper-width",
           "show_payment_icons": false,
           "show_social_icons": true,
@@ -174,7 +173,7 @@
       },
       "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8": {
         "settings": {
-          "background": "#ca1e1e",
+          "background": "#121212",
           "background_gradient": "",
           "text": "#ffffff",
           "heading-color": "#121212",

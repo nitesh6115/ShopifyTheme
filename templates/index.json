@@ -26,7 +26,7 @@
         "7442791e-4bbd-48e9-a1d4-eb90108ebb47"
       ],
       "settings": {
-        "color_scheme": "background-1",
+        "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
         "width": "wrapper-width",
         "padding_top": 36,
         "padding_bottom": 36
@@ -67,9 +67,9 @@
             "shop_all": true,
             "button_text": "Shop Now",
             "btn_bg": "linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1) 100%)",
-            "btn_color": "#fff",
+            "btn_color": "#ffffff",
             "btn_hover_bg": "linear-gradient(180deg, rgba(238, 238, 238, 1), rgba(238, 238, 238, 1) 100%)",
-            "btn_hover_color": "#000"
+            "btn_hover_color": "#000000"
           }
         }
       },
