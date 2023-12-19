@@ -10,7 +10,7 @@
   }
 }
 {% endstyle %}
-<footer class="footer section-{{section.id}}-padding" style="{% if section.settings.bgImage !=blank %}background: url({{section.settings.bgImage | img_url:''}});{% else %}{% if section.settings.bg-color != blank %}background:{{ section.settings.bg-color }};{% endif %} {% endif %}">
+<footer class="footer section-{{section.id}}-padding color-{{ section.settings.color_scheme }}" style="{% if section.settings.bgImage !=blank %}background: url({{section.settings.bgImage | img_url:''}});{% else %}{% if section.settings.bg-color != blank %}background:{{ section.settings.bg-color }};{% endif %} {% endif %}">
   <div class="{% if section.settings.page-width == 'full-width' %} full-width {% elsif section.settings.page-width == 'wrapper-width' %} page-width {% else %} narrow-width {% endif %}">
   <div class="footer-content-grid">
     <div class="footer-top-wrapper">
