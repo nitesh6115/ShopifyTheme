@@ -36,17 +36,6 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
                         </div>
                         <div class="RightSide btn_color{{ block.id }}">
                         {%  if block.settings.shop_all %}
-                        {%  style %}
-                        .btn_color{{ block.id }} .cta-btn{
-                        color: {{ block.settings.btn_color }};
-                        background: {{ block.settings.btn_bg }};
-                        }
-                        
-                        .btn_color{{ block.id }} .cta-btn:hover{
-                        color: {{ block.settings.btn_hover_color }};
-                        background: {{ block.settings.btn_hover_bg }};
-                        }
-                        {% endstyle %}
                         <a class="cta-btn button-primary" href="{{ collection.url }}">{{ block.settings.button_text }}</a> 
                         {% endif %}
                         </div>
@@ -236,30 +225,6 @@ if (CollectionTabSectionSlider){
           "label": "Button Text",
           "id": "button_text",
           "default": "Shop Now"
-        },
-        {
-          "type": "color_background",
-          "id": "btn_bg",
-          "label": "Button Background",
-          "default": "linear-gradient(#000, #000)"
-        },
-        {
-          "type": "color",
-          "id": "btn_color",
-          "label": "Button Text Color",
-          "default": "#fff"
-        },
-        {
-          "type": "color_background",
-          "id": "btn_hover_bg",
-          "label": "Button Hover Background",
-          "default": "linear-gradient(#eee, #eee)"
-        },
-        {
-          "type": "color",
-          "id": "btn_hover_color",
-          "label": "Button Hover Color",
-          "default": "#000"
         }
       ]
     }
