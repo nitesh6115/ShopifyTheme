@@ -96,7 +96,7 @@
         "1db94927-182f-4653-90c9-3a695a83b8c5": {
           "type": "image",
           "settings": {
-            "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
+            "color_scheme": "background-1",
             "image_bg": "shopify:\/\/shop_images\/2EC5F490-57A7-49EE-B7CE-8C52A02AACAC.jpg",
             "mobile_image_bg": "shopify:\/\/shop_images\/2EC5F490-57A7-49EE-B7CE-8C52A02AACAC.jpg",
             "overlay_opacity": 37,
@@ -114,7 +114,7 @@
         "69c0d203-7404-4cea-97db-7bdb5440d0e2": {
           "type": "image",
           "settings": {
-            "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
+            "color_scheme": "background-1",
             "image_bg": "shopify:\/\/shop_images\/D8006702-DDC8-441A-9E1B-FEC5BEBE4F47.jpg",
             "mobile_image_bg": "shopify:\/\/shop_images\/D8006702-DDC8-441A-9E1B-FEC5BEBE4F47.jpg",
             "overlay_opacity": 0,
@@ -135,7 +135,7 @@
         "69c0d203-7404-4cea-97db-7bdb5440d0e2"
       ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
         "width": "wrapper-width",
         "padding_top": 36,
         "padding_bottom": 36
@@ -179,9 +179,8 @@
         "761d1f84-7633-4cc8-9483-7301f103f8ba",
         "3d97fd51-5f0b-4f46-959d-23847c0adf16"
       ],
-      "disabled": true,
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
         "width": "wrapper-width",
         "padding_top": 36,
         "padding_bottom": 36,
@@ -253,7 +252,7 @@
         "bf65b616-aee5-4d72-be66-e74f2e6a6caa"
       ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
         "width": "wrapper-width",
         "padding_top": 36,
         "padding_bottom": 36
