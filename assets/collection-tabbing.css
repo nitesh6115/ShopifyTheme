@@ -23,10 +23,6 @@
     align-items: center;
     padding: 10px 0;
 }
-.tablinks.active{
-    background: var(--button-background-color);
-    color: var(--button-text-color);
-}
 .Tabbing-Title {
     display: table;
     border: 2px solid var(--color-border);
