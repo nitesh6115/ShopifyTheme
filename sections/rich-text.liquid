@@ -10,7 +10,8 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 }
 }
 {% endstyle %}
-<section class="page-width text-center color-{{ section.settings.color_scheme }}">
+<div class="section-{{section.id}}-padding color-{{ section.settings.color_scheme }}">
+<div class="page-width text-center">
   {%- if section.settings.title != blank -%}
     <h2 class="heading">{{ section.settings.title | escape }}</h2>
   {%- endif -%}
@@ -19,7 +20,8 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
       {{ section.settings.text }}
     </div>
   {%- endif -%}
-</section>
+</div>
+</div>
 
 {% schema %}
   {
@@ -31,6 +33,25 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
       "label": "Choose Color Schema",
       "default": "background-1"
     },
+    {
+        "type": "select",
+        "id": "page-width",
+        "label": "Page width",
+        "options": [
+          {
+            "value": "full-width",
+            "label": "Full Width"
+          },
+          {
+            "value": "wrapper-width",
+            "label": "Wrapper Width"
+          },
+          {
+            "value": "narrow-width",
+            "label": "Narrow width"
+          }
+        ]
+      },
       {
         "type": "text",
         "id": "title",
