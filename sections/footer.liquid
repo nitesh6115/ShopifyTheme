@@ -3,12 +3,6 @@
   padding-top:{{section.settings.padding_top | times:0.75 | round:0 }}px;
   padding-bottom:{{section.settings.padding_bottom | times:0.75 | round: 0}}px;
 }
-.section-{{section.id}}-padding h3,.section-{{section.id}}-padding a,.section-{{section.id}}-padding p, .section-{{section.id}}-padding{
-   color: {{ section.settings.text-color }};
-} 
-.section-{{section.id}}-padding  svg.icon {
-    fill: {{ section.settings.text-color }};
-}  
 @media screen and (min-width:750px){
   .section-{{section.id}}-padding{
     padding-top:{{section.settings.padding_top}}px;
@@ -16,7 +10,7 @@
   }
 }
 {% endstyle %}
-<footer class="footer section-{{section.id}}-padding color-{{ section.settings.color_scheme }}" style="{% if section.settings.bgImage !=blank %}background-image: url({{section.settings.bgImage | img_url:''}});{% endif %}">
+<footer class="footer section-{{section.id}}-padding" style="{% if section.settings.bgImage !=blank %}background: url({{section.settings.bgImage | img_url:''}});{% else %}{% if section.settings.bg-color != blank %}background:{{ section.settings.bg-color }};{% endif %} {% endif %}">
   <div class="{% if section.settings.page-width == 'full-width' %} full-width {% elsif section.settings.page-width == 'wrapper-width' %} page-width {% else %} narrow-width {% endif %}">
   <div class="footer-content-grid">
     <div class="footer-top-wrapper">
@@ -102,13 +96,12 @@
   {
     "name": "Footer",
     "settings": [
-      {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "Choose Color Schema",
-      "default": "background-1"
-    },
     {
+      "type": "color_background",
+      "id": "bg-color",
+      "label": " Background Color"
+     },
+      {
 	  "type": "image_picker",
 	  "id": "bgImage",
 	  "label": "Background Image"
