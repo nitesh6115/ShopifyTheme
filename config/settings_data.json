@@ -129,7 +129,7 @@
         ],
         "settings": {
           "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
-          "bg-color": "#000",
+          "bg-color": "rgba(0,0,0)",
           "page-width": "narrow-width",
           "show-announcement": true,
           "info-menu": "top-heaer-menu",
