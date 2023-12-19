@@ -1,11 +1,15 @@
-{%- comment -%}
-  This is a required section for the Shopify Theme Store.
-  It is available when you add "Rich text" section on the Theme Editor.
-
-  Theme Store required settings
-  - Heading: title of the rich text section
-  - Text: description of the rich text section
-{%- endcomment -%}
+{%  style %}
+.section-{{ section.id }}-padding{
+padding-top:{{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+padding-bottom:{{ section.settings.padding_bottom | times: 0.75 |round: 0 }}px;
+}
+  @media screen and (min-width: 750px) {
+.section-{{ section.id }}-padding {
+padding-top: {{ section.settings.padding_top }}px;
+padding-bottom: {{ section.settings.padding_bottom }}px;
+}
+}
+{% endstyle %}
 <section class="page-width text-center color-{{ section.settings.color_scheme }}">
   {%- if section.settings.title != blank -%}
     <h2 class="heading">{{ section.settings.title | escape }}</h2>
