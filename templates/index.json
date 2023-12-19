@@ -356,70 +356,8 @@
         "7472b6ce-1330-47bf-b8ad-82c598883e01"
       ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
         "width": "wrapper-width",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "f302b127-cb40-4f04-addd-374b0183dfd8": {
-      "type": "journey",
-      "blocks": {
-        "7add0e72-4f71-4349-8df5-17018109abdb": {
-          "type": "header",
-          "settings": {
-            "bg-color": "linear-gradient(46deg, rgba(52, 133, 236, 1) 13%, rgba(170, 248, 219, 1) 86%)",
-            "title": "Title",
-            "titleColor": "#ffffff",
-            "sub-title": "Sub-Title",
-            "subColor": "#ffffff",
-            "image": "shopify:\/\/shop_images\/2EC5F490-57A7-49EE-B7CE-8C52A02AACAC.jpg",
-            "more_info": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
-            "read_info": "Read More"
-          }
-        },
-        "e2787aee-177a-4025-b7d1-36fa554591fc": {
-          "type": "header",
-          "settings": {
-            "bg-color": "linear-gradient(46deg, rgba(52, 133, 236, 1) 13%, rgba(170, 248, 219, 1) 86%)",
-            "title": "Title",
-            "titleColor": "#000000",
-            "sub-title": "Sub Title",
-            "subColor": "#000000",
-            "image": "shopify:\/\/shop_images\/D8006702-DDC8-441A-9E1B-FEC5BEBE4F47.jpg",
-            "more_info": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
-            "read_info": "Read More"
-          }
-        },
-        "68855033-6d93-4df2-9eaf-451144973743": {
-          "type": "header",
-          "settings": {
-            "bg-color": "linear-gradient(46deg, rgba(52, 133, 236, 1) 13%, rgba(170, 248, 219, 1) 86%)",
-            "title": "Title",
-            "titleColor": "#000000",
-            "sub-title": "SubTitle",
-            "subColor": "#000000",
-            "image": "shopify:\/\/shop_images\/D8006702-DDC8-441A-9E1B-FEC5BEBE4F47.jpg",
-            "more_info": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
-            "read_info": "Read More"
-          }
-        }
-      },
-      "block_order": [
-        "7add0e72-4f71-4349-8df5-17018109abdb",
-        "e2787aee-177a-4025-b7d1-36fa554591fc",
-        "68855033-6d93-4df2-9eaf-451144973743"
-      ],
-      "settings": {
-        "width": "page-width",
-        "block-per-row": 3,
-        "columns_mobile": "2",
-        "bg-color": "",
-        "artwork": "",
-        "titleColor": "#000000",
-        "title": "",
-        "subColor": "#000000",
-        "sub_title": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -433,7 +371,6 @@
     "5b679b7a-fae6-4af5-ac94-20887c2e98ea",
     "16613357604008a11b",
     "9ac45232-d4da-4400-b33b-469cbb27e83e",
-    "de168d02-cb1c-4cd8-a9e3-55c79f5e1e3d",
-    "f302b127-cb40-4f04-addd-374b0183dfd8"
+    "de168d02-cb1c-4cd8-a9e3-55c79f5e1e3d"
   ]
 }
