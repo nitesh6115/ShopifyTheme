@@ -82,6 +82,7 @@
         "9b284c90-646e-486e-aa49-96ea36b33a51"
       ],
       "settings": {
+        "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
         "width": "wrapper-width",
         "padding_top": 36,
         "padding_bottom": 36,
@@ -180,6 +181,7 @@
       ],
       "disabled": true,
       "settings": {
+        "color_scheme": "",
         "width": "wrapper-width",
         "padding_top": 36,
         "padding_bottom": 36,
