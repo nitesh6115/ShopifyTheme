@@ -2,14 +2,6 @@
   margin:0px;
   padding:0px;
 }
-div#shopify-section-header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 10;
-}
-
 @media screen and (max-width: 749px) {
   .small-hide {
     display: none !important;
