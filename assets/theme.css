@@ -619,7 +619,6 @@ img.feature-image {
     bottom: -350px;
     z-index: 1;
     color: #fff;
-    border-radius: 12px;
     transition: .5s ease all;
 }
 .top-container {
@@ -772,9 +771,6 @@ p.colorNameBox span.TotalColorSize {
     font-weight: bold;
     color: #fff;
 }
-
-.product-info {}
-
 .product-info h3 {
     font-size: 14px;
     margin-bottom: 5px;
