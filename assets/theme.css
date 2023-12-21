@@ -965,11 +965,9 @@ form#contact_form .email input[type="email"] {
 .search-bar-container input[type="text"] {
     border-radius: 0;
     background: transparent;
-    color: var(--body-text-color);
     box-shadow: none !important;
     width: 100%;
     border: none;
-    border-bottom: 1px solid var(--color-border);
     font-size: 14px;
     font-weight: bold;
     padding-left: 0;
@@ -981,7 +979,6 @@ form#contact_form .email input[type="email"] {
     border: transparent;
     border-radius: 0;
     background: transparent;
-    color: var(--body-text-color);
     font-size: 13px;
     margin: 7px 0 1px;
     text-transform: none;
