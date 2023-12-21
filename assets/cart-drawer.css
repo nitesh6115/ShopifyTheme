@@ -72,6 +72,7 @@ div#shopify-section-cart-drawer section#cartDrawer .drawerProducts .CratDrawerSl
     width: 100%;
     -webkit-backdrop-filter: saturate(180%) blur(3rem);
 backdrop-filter: saturate(180%) blur(3rem);
+  cursor: pointer;
 }
 
 
