@@ -98,9 +98,7 @@ a{
 .swiper-button-next.swiper-next {
     width: 33px;
     height: 33px;
-    background: #000;
     border-radius: 100%;
-    border: 1px solid #eeee;
     display: flex;
     align-items: center;
     right: 30px;
@@ -118,9 +116,7 @@ a{
 .swiper-button-prev.swiper-prev {
     width: 33px;
     height: 33px;
-    background: #000;
     border-radius: 100%;
-    border: 1px solid #eeee;
     display: flex;
     align-items: center;
     left: 30px;
