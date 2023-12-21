@@ -5,7 +5,7 @@
         <h2>RECOMMENDED PRODUCTS</h2>
         {% if cart.items > 0 %}
         {% assign item = cart.items.first %}
-          {{ item.product.title }}
+          {{ item.title }}
         {% for collection in item.product.collections %}
         {% assign collectionHandle = collection.handle %} 
         {% endfor %}
