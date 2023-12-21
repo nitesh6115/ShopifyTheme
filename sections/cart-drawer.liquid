@@ -38,9 +38,9 @@
       <div class="drawer_content scroll-bar" id="cart_drawer">
         <div id="drawer_cart_items">
         {%  for item in cart.items %}
-         <div class="item-details"  dataline="{{ forloop.index }}" dataid="{{ item.variant_id }}">
+         <div class="item-details border-all"  dataline="{{ forloop.index }}" dataid="{{ item.variant_id }}">
         <div class="cart_image_text">
-        <div class="cart_details border-all">
+        <div class="cart_details ">
          <p>{{ item.product.title }}</p>
         {%- if item.product.has_only_default_variant == false or item.properties.size != 0 or item.selling_plan_allocation != nil -%}
                 <dl>
