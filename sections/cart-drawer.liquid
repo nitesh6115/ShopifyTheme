@@ -5,7 +5,6 @@
         <h2>RECOMMENDED PRODUCTS</h2>
         {% if cart.items != 0 %}
         {% assign citem = cart.items.first %}
-          {{ citem.title }}
         {% for collection in citem.product.collections %}
         {% assign collectionHandle = collection.handle %} 
         {% endfor %}
