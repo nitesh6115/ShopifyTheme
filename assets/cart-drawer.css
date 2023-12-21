@@ -10,7 +10,6 @@ pointer-events: auto;
 transition-property: all;
 transition-timing-function: cubic-bezier(.93,-.01,0,1.02);
 border-top-left-radius: 2rem;
-background: var(--body-background-color);
 position: relative;
 z-index: 3;
 -webkit-backdrop-filter: saturate(180%) blur(3rem);
@@ -71,7 +70,6 @@ div#shopify-section-cart-drawer section#cartDrawer .drawerProducts .CratDrawerSl
     bottom: 0;
     visibility: hidden;
     width: 100%;
-    background: var(--body-background-color);
 }
 
 
