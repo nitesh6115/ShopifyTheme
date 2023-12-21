@@ -68,7 +68,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
   <div class="image-with-text hover-zoom"> 
   {% if block.settings.image_bg != blank %}
     <div class="image-box overflow-hidden radius-30">
-      <div class="overlay-opacity" style="background:{{ block.settings.overlay_opacity_color  }}; opacity: {{ block.settings.overlay_opacity | divided_by: 100 }}"></div>
+      <div class="overlay-opacity" style="background:{{ block.settings.overlay_opacity_color  }}; opacity: {{ block.settings.overlay_opacity | times: 0.1 }}"></div>
       {% if  block.settings.mobile_image_bg != blank %}
          <img class="desktop-hide" width="{{ block.settings.mobile_image_bg.width }}" height="{{ block.settings.mobile_image_bg.height }}" loading="lazy" srcset="{{ block.settings.mobile_image_bg  | img_url:'768x'}}" alt="{{ block.settings.mobile_image_bg.alt }}">
         {% endif %}
