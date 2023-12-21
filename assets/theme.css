@@ -663,6 +663,8 @@ img.feature-image {
     align-items: center;
     cursor: pointer;
     justify-content: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
 
 .quick-add-wrapper .size-selctor-wrapper .size-selector:hover {
