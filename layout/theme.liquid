@@ -66,6 +66,10 @@
           background: {{ scheme.settings.background }};
         {% endif %}
       }
+      .color-{{ scheme.id }} .cart-button span{
+       color: {{ scheme.settings.button-text }};
+       background: {{ scheme.settings.button-background }};
+      }
       .color-{{ scheme.id }} h1, .color-{{ scheme.id }} .heading{
          color: {{ scheme.settings.heading-color }};
       }
