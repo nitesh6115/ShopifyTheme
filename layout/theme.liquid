@@ -86,6 +86,9 @@
         color: {{ scheme.settings.secondary-button-hover-text }};
         background: {{ scheme.settings.secondary-button-hover-background }};
       }
+      .color-{{ scheme.id }} .snakify-in:after {
+    background:  {{ scheme.settings.link-color }};
+      }
       .color-{{ scheme.id }} .info ul ul{
         {% if scheme.settings.background_gradient != empty %}
           background: {{ scheme.settings.background_gradient }};
