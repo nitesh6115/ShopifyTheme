@@ -143,6 +143,17 @@
         "settings": {
           "enable_cart": true
         }
+      },
+      "quick-search": {
+        "type": "quick-search",
+        "settings": {
+          "color_scheme": "",
+          "search_label": "Search products...",
+          "populer-serach-heading": "POPULAR SEARCHES",
+          "populer-products": "TRANDING PRODUCTS",
+          "collection": "mens",
+          "product-per-row": 3
+        }
       }
     },
     "content_for_index": [
