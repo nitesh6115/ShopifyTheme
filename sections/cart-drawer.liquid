@@ -15,10 +15,8 @@
           {% assign collection = collections['all'] %}
           {% endif %}
         {% else %}
-          
         {% assign collection = collections['all'] %}
         {% endif %}
-        {{ collection.title }}
       <div class="CratDrawerSlider swiper">
         <div class="swiper-wrapper">
         {% for product in collection.products limit: 8 %}
