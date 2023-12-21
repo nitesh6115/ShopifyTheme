@@ -69,8 +69,8 @@
          </div>
         
        </div>
-     <div class="swiper-button-next"></div>
-       <div class="swiper-button-prev"></div>
+     <div class="swiper-button-next secondary-button"></div>
+       <div class="swiper-button-prev secondary-button"></div>
       {% break %}
       {% endfor %}
       {% endif %}
@@ -104,7 +104,7 @@
     </div>
     
     <div class="quick-add-wrapper">
-    <div class="other-selector-wrapper">
+    <div class="other-selector-wrapper primary-button">
       <div class="quick-add">
        <span>QUICK ADD +</span>
       </div>
@@ -149,7 +149,7 @@
         {% endfor %}
         <p>{{ card_product.price| money_with_currency}}</p>
       </div>
-       <div class="product-variant-container">
+       <div class="product-variant-container secondary-button">
           {% assign color_alt = false %}
           {% for option in card_product.options_with_values %}
             
