@@ -908,7 +908,7 @@ form#contact_form .email input[type="email"] {
     visibility: hidden;
     width: 100%;
     z-index: 30;
-       transition-duration: .7s;
+    transition-duration: .7s;
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
 }
@@ -916,7 +916,7 @@ form#contact_form .email input[type="email"] {
     visibility: visible;
     opacity: 1;
 }
-div#nav-quick-search-container {
+#nav-quick-search-container {
     background: var(--body-background-color);
     border: 1px solid var(--color-border);
     border-radius: 2rem 2rem 0 0;
@@ -930,7 +930,7 @@ div#nav-quick-search-container {
     transition-property: all;
 }
 
-.modal-search-open quick-search#nav-quick-search div#nav-quick-search-container {
+.modal-search-open #nav-quick-search #nav-quick-search-container {
     transform: translateY(0);
 }
 
@@ -942,11 +942,11 @@ div#nav-quick-search-container {
     padding: 2rem;
 }
 
-div#nav-quick-search-container .w-full.h-full.flex.flex-col {
+#nav-quick-search-container .w-full.h-full.flex.flex-col {
     height: 100%;
 }
 
-div#nav-quick-search-backdrop {
+#nav-quick-search-backdrop {
     position: fixed;
     top: 0;
     bottom: 0;
