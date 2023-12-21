@@ -896,7 +896,7 @@ form#contact_form .email input[type="email"] {
 
 
 /* search box */
-quick-search#nav-quick-search {
+#nav-quick-search {
     align-items: flex-end;
     bottom: 0;
     display: flex;
