@@ -204,7 +204,7 @@ div#cart_drawer {
     justify-content: center;
 }
 
-.content_empty a.button.primary-button {
+.content_empty a.button {
     margin-bottom: 10px;
 }
 
