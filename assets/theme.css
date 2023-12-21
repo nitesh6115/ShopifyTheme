@@ -917,8 +917,6 @@ form#contact_form .email input[type="email"] {
     opacity: 1;
 }
 #nav-quick-search-container {
-    background: var(--body-background-color);
-    border: 1px solid var(--color-border);
     border-radius: 2rem 2rem 0 0;
     height: 82vh;
     max-width: calc(1600px - 9rem);
