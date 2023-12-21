@@ -210,9 +210,11 @@ function ChnageVaiantImg(event) {
         }
     })
     var swiperPrev = document.createElement('div');
-    swiperPrev.classList.add('swiper-button-prev secondary-button')
+    swiperPrev.classList.add('swiper-button-prev');
+    swiperPrev.classList.add('secondary-button');
     var swiperNext = document.createElement('div');
-    swiperNext.classList.add('swiper-button-next secondary-button');
+    swiperNext.classList.add('swiper-button-next');
+    swiperNext.classList.add('secondary-button')
     var htmlstring = newDiv.innerHTML
     htmlstring = (htmlstring.trim) ? htmlstring.trim() : htmlstring.replace(/^\s+/,'');
     
