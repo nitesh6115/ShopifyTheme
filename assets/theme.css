@@ -208,8 +208,6 @@ ul li a {
     position: absolute;
     right: -4px;
     bottom: -3px;
-    background: var(--button-background-color);
-    color: var(--button-text-color);
     font-size: 12px;
     display: flex;
     width: 18px;
