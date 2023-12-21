@@ -33,11 +33,11 @@
  
   {% include 'css-variables' %}
   <link rel="preload" href="{{ 'base.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="{{ 'base.css' | asset_url }}"></noscript>
+  <noscript><link rel="stylesheet" href="{{ 'base.css' | asset_url }}"></noscript>
   <link rel="preload" href="{{ 'theme.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="{{ 'theme.css' | asset_url }}"></noscript>
-<link rel="preload" href="{{ 'fancybox.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="{{ 'fancybox.css' | asset_url }}"></noscript>   
+  <noscript><link rel="stylesheet" href="{{ 'theme.css' | asset_url }}"></noscript>
+  <link rel="preload" href="{{ 'fancybox.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ 'fancybox.css' | asset_url }}"></noscript>   
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', '');
 
@@ -55,99 +55,6 @@
 <script src="{{ 'swiper.js' | asset_url }}" async></script>
 <script src="{{ 'fancybox.umd.js' | asset_url }}" async></script>
  {{ content_for_header }}
- {% style %}
-     {% for scheme in settings.color_schemes -%}
-      
-      .color-{{ scheme.id }} {
-        color: {{ scheme.settings.text }};
-        {% if scheme.settings.background_gradient != empty %}
-          background: {{ scheme.settings.background_gradient }};
-        {% else %}
-          background: {{ scheme.settings.background }};
-        {% endif %}
-      }
-      .color-{{ scheme.id }} .cart-button span{
-       color: {{ scheme.settings.button-text }};
-       background: {{ scheme.settings.button-background }};
-      }
-      .color-{{ scheme.id }} #nav-quick-search-container {
-        {% if scheme.settings.background_gradient != empty %}
-          background: {{ scheme.settings.background_gradient }};
-        {% else %}
-          background: {{ scheme.settings.background }};
-        {% endif %}
-        border: 1px solid {{ scheme.settings.color-border }};
-       }
-      .color-{{ scheme.id }} .Tabbing-Title{
-        border-color: {{ scheme.settings.border-color }};
-      }
-      .color-{{ scheme.id }}.boxSearch{
-        border: 1px solid {{ scheme.settings.color-border }};
-      }
-      .color-{{ scheme.id }} .border-all{
-        border: 1px solid {{ scheme.settings.color-border }};
-      } .color-{{ scheme.id }} .border-bottom{
-        border-bottom: 1px solid {{ scheme.settings.color-border }};
-      } .color-{{ scheme.id }} .border-top{
-        border-top: 1px solid {{ scheme.settings.color-border }};
-      }
-      .color-{{ scheme.id }} .border-left{
-        border-left: 1px solid {{ scheme.settings.color-border }};
-      }.color-{{ scheme.id }} .border-right{
-        border-right: 1px solid {{ scheme.settings.color-border }};
-      }
-      .color-{{ scheme.id }} .hederIcon:hover{
-        color: {{ scheme.settings.secondary-button-hover-text }};
-        background: {{ scheme.settings.secondary-button-hover-background }};
-      }
-      .color-{{ scheme.id }} .snakify-in:after {
-    background:  {{ scheme.settings.link-color }};
-      }
-      .color-{{ scheme.id }} .info ul ul{
-        {% if scheme.settings.background_gradient != empty %}
-          background: {{ scheme.settings.background_gradient }};
-        {% else %}
-          background: {{ scheme.settings.background }};
-        {% endif %}
-          border: 1px solid {{ scheme.settings.color-border }};
-      }
-      .color-{{ scheme.id }} .hederIcon:hover svg{
-        fill: {{ scheme.settings.secondary-button-hover-text }};
-      }
-      .color-{{ scheme.id }} h1, .color-{{ scheme.id }} .heading{
-         color: {{ scheme.settings.heading-color }};
-      }
-      .color-{{ scheme.id }} .sub-heading{
-       color: {{ scheme.settings.sub-heading-color }};
-      }
-      .color-{{ scheme.id }} a{
-       color: {{ scheme.settings.link-color }};
-      }
-      .color-{{ scheme.id }} svg {
-         fill: {{ scheme.settings.link-color }};
-       }
-      .color-{{ scheme.id }} .primary-button {
-        color: {{ scheme.settings.button-text }};
-        background: {{ scheme.settings.button-background }};
-        border: 1px solid {{ scheme.settings.button-border-color}};
-      }
-      .color-{{ scheme.id }} .secondary-button, .color-{{ scheme.id }} .tablinks.active{
-        color: {{ scheme.settings.secondary-button-text }};
-        background: {{ scheme.settings.secondary-button-background }};
-        border: 1px solid {{ scheme.settings.secondary-button-border-color}};
-      }
-      .color-{{ scheme.id }} .primary-button:hover {
-        color: {{ scheme.settings.button-hover-text }};
-        background: {{ scheme.settings.button-hover-background }};
-        border: 1px solid {{ scheme.settings.button-hover-border-color}};
-      }
-      .color-{{ scheme.id }} .secondary-button:hover{
-        color: {{ scheme.settings.secondary-button-hover-text }};
-        background: {{ scheme.settings.secondary-button-hover-background }};
-        border: 1px solid {{ scheme.settings.secondary-button-hover-border-color}};
-      }
-      {% endfor %}
-  {% endstyle %}
 </head>
 <body id="{{ page_title | handle }}" class="template-{{ template.name | handle }}">
 {% render 'flash-wrapper' %}
