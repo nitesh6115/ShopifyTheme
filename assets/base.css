@@ -373,7 +373,6 @@ input{
   opacity: .7;
 }
 .snakify-in:after {
-    background: var(--body-text-color);
     border-radius: 3rem;
     bottom: 0;
     content: "";
