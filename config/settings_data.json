@@ -141,6 +141,9 @@
       "cart-drawer": {
         "type": "cart-drawer",
         "settings": {
+          "color_scheme": "scheme-7a614fe9-e7cf-4c3c-bca6-0218bcaf7f62",
+          "recomended": "RECOMMENDED PRODUCTS",
+          "empty_massage": "GIVE YOUR BAG SOME LOVE",
           "enable_cart": true
         }
       },
@@ -193,6 +196,7 @@
           "heading-color": "#121212",
           "sub-heading-color": "#eab79a",
           "link-color": "#ffffff",
+          "border-color": "#121212",
           "button-text": "#ffffff",
           "button-background": "#121212",
           "button-border-color": "#121212",
@@ -215,6 +219,7 @@
           "heading-color": "#000000",
           "sub-heading-color": "#eeeeee",
           "link-color": "#121212",
+          "border-color": "#121212",
           "button-text": "#ffffff",
           "button-background": "#fa0000",
           "button-border-color": "#fa0000",
@@ -237,6 +242,7 @@
           "heading-color": "#121212",
           "sub-heading-color": "#eab79a",
           "link-color": "#3f38ea",
+          "border-color": "#121212",
           "button-text": "#ffffff",
           "button-background": "#121212",
           "button-border-color": "#121212",
@@ -259,6 +265,7 @@
           "heading-color": "#dd1d1d",
           "sub-heading-color": "#1773b0",
           "link-color": "#dd1d1d",
+          "border-color": "#121212",
           "button-text": "#ffffff",
           "button-background": "#dd1d1d",
           "button-border-color": "#dd1d1d",
@@ -281,6 +288,7 @@
           "heading-color": "#ffffff",
           "sub-heading-color": "#eab79a",
           "link-color": "#ffffff",
+          "border-color": "#121212",
           "button-text": "#ffffff",
           "button-background": "#121212",
           "button-border-color": "#121212",
@@ -303,6 +311,7 @@
           "heading-color": "#121212",
           "sub-heading-color": "#eab79a",
           "link-color": "#000000",
+          "border-color": "#121212",
           "button-text": "#ffffff",
           "button-background": "#121212",
           "button-border-color": "#121212",
