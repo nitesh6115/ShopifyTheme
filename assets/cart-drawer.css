@@ -191,3 +191,10 @@ div#cart_drawer {
     margin-bottom: 220px;
     height: calc(95vh - 251px);
 }
+.empty-cart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
