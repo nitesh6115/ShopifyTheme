@@ -25,7 +25,7 @@
 }
 .Tabbing-Title {
     display: table;
-    border: 2px solid var(--color-border);
+    border: 2px solid;
     padding: 2px;
     border-radius:9999px;
     cursor: pointer;
