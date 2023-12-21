@@ -136,8 +136,8 @@ div#shopify-section-cart-drawer.active section#cartDrawer .drawer_overlay {
 }
 
 .cart_bottom svg {
-    fill: var(--body-text-color);
-    -webkit-text-stroke-color: var(--body-text-color);
+    fill: inherit;
+    -webkit-text-stroke-color: inherit;
     width: 20px;
     height: 15px;
 }
@@ -150,7 +150,7 @@ div#shopify-section-cart-drawer.active section#cartDrawer .drawer_overlay {
     background: transparent;
     border: none;
     text-align: center;
-    color: var(--body-text-color);;
+    color: inherit;
 }
 .DrawerFooter {
     position: absolute;
