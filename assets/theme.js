@@ -205,7 +205,7 @@ function ChnageVaiantImg(event) {
             var swiperWrapp = document.createElement('div');
             swiperWrapp.classList.add('swiper-slide')
             swiperWrapp.setAttribute("data-swiper-autoplay", "1000");
-            swiperWrapp.innerHTML = '<a href="' + prductUrl + '"><img class="borrder-all radius-20 feature-image" alt="'+ images.alt +'" src="' + images.src + '"></a>'
+            swiperWrapp.innerHTML = '<a href="' + prductUrl + '"><img class="borrder-all feature-image" alt="'+ images.alt +'" src="' + images.src + '"></a>'
             newDiv.appendChild(swiperWrapp);
         }
     })
