@@ -298,7 +298,7 @@
       "scheme-7a614fe9-e7cf-4c3c-bca6-0218bcaf7f62": {
         "settings": {
           "background": "rgba(0,0,0,0)",
-          "background_gradient": "linear-gradient(180deg, rgba(255, 211, 226, 1), rgba(168, 255, 251, 1) 100%)",
+          "background_gradient": "",
           "text": "#000000",
           "heading-color": "#121212",
           "sub-heading-color": "#eab79a",
