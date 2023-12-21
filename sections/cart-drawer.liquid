@@ -5,11 +5,15 @@
         <h2>RECOMMENDED PRODUCTS</h2>
         {% if cart.items != 0 %}
         {% assign item = cart.items.first %}
-          {{ item.title }}
+        
         {% for collection in item.product.collections %}
         {% assign collectionHandle = collection.handle %} 
         {% endfor %}
+        {% if collectionHandle != blank %}
         {% assign collection = collections[collectionHandle] %}
+          {% else %}
+          {% assign collection = collections['all'] %}
+          {% endif %}
         {% else %}
           
         {% assign collection = collections['all'] %}
