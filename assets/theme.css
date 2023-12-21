@@ -294,7 +294,7 @@ display: flex;
   align-items: center;
 }
 .header-content.border-all.menu-active {
-   height: 79vh;
+   height: 80vh;
     transition-duration: .15s;
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
