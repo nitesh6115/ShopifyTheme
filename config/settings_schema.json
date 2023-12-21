@@ -51,6 +51,12 @@
             "default": "#121212"
           },
           {
+            "type": "color",
+            "id": "border-color",
+            "label": "Border Color",
+            "default": "#121212"
+          },
+          {
             "type": "header",
             "content": "Primary Button"
           },
