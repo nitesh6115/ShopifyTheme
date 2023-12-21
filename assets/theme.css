@@ -84,7 +84,6 @@ ul li a {
 
 }
 .announcement-bar{
- border-bottom:1px solid var(--color-border); 
  padding-bottom:10px;
 }
 .navbar {
