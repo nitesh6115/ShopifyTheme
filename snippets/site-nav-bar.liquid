@@ -1,5 +1,4 @@
-
-      <ul class="menu">
+<ul class="menu">
             {% for link in section.settings.menu.links %}
               {%  assign mainLink = link.title | handle %}
                <li class="menu-link {% if link.links.size > 0 %}has-child-links {% endif %}">
