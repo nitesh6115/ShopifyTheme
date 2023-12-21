@@ -113,7 +113,7 @@
       {% else %}
         <div class="empty-cart">
           <div class="content_empty">
-        <h4>{{ section.settings.empty_massage }}</h4>
+        <h4 class="heading">{{ section.settings.empty_massage }}</h4>
           {% for block in section.blocks %}
           {% assign collection = collections[section.settings.collection] %}
           <a href="{{ collection.url }}" class="button primary-button">{{ collection.title }}</a>
