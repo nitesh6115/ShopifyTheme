@@ -55,7 +55,9 @@ div#shopify-section-cart-drawer.active section#cartDrawer .drawer_wrapper {
 div#shopify-section-cart-drawer.active section#cartDrawer .drawerProducts {
     transform: translate(0);
 }
-
+.drawerProducts {
+    background: transparent !important;
+}
 div#shopify-section-cart-drawer section#cartDrawer .drawerProducts .CratDrawerSlider {
     overflow: inherit;
 }
