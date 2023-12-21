@@ -128,7 +128,7 @@
           "a8aa8d1e-7af4-47f7-a1a4-3927a76c1409"
         ],
         "settings": {
-          "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
+          "color_scheme": "scheme-7a614fe9-e7cf-4c3c-bca6-0218bcaf7f62",
           "bg-color": "linear-gradient(180deg, rgba(255, 211, 226, 1), rgba(168, 255, 251, 1) 100%)",
           "page-width": "narrow-width",
           "show-announcement": true,
@@ -245,6 +245,28 @@
           "heading-color": "#121212",
           "sub-heading-color": "#eab79a",
           "link-color": "#ffffff",
+          "button-text": "#ffffff",
+          "button-background": "#121212",
+          "button-border-color": "#121212",
+          "button-hover-text": "#121212",
+          "button-hover-background": "#ffffff",
+          "button-hover-border-color": "#121212",
+          "secondary-button-text": "#ffffff",
+          "secondary-button-background": "#ce8055",
+          "secondary-button-border-color": "#ce8055",
+          "secondary-button-hover-text": "#ce8055",
+          "secondary-button-hover-background": "#ffffff",
+          "secondary-button-hover-border-color": "#ce8055"
+        }
+      },
+      "scheme-7a614fe9-e7cf-4c3c-bca6-0218bcaf7f62": {
+        "settings": {
+          "background": "rgba(0,0,0,0)",
+          "background_gradient": "",
+          "text": "#000000",
+          "heading-color": "#121212",
+          "sub-heading-color": "#eab79a",
+          "link-color": "#000000",
           "button-text": "#ffffff",
           "button-background": "#121212",
           "button-border-color": "#121212",
