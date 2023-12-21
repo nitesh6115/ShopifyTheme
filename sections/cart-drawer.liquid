@@ -113,9 +113,11 @@
       {% else %}
         <div class="empty-cart">
           <div class="content_empty">
-        <h4>GIVE YOUR BAG SOME LOVE</h4>
-      <a href="#" class="button primary-button">WOMEN'S TOP PICKS</a>
-      <a href="#" class="button secondary-button">MEN'S TOP PICKS</a>
+        <h4>{{ section.settings.empty_massage }}</h4>
+          {% for block in section.blocks %}
+          {% assign collection = collections[section.settings.collection] %}
+          <a href="{{ collection.url }}" class="button primary-button">{{ collection.title }}</a>
+          {% endfor %}
         </div>
         </div>
       {% endif %}
@@ -134,9 +136,34 @@
         "default": "background-1"
       },
       {
+        "type": "text",
+        "id": "recomended",
+        "label": "RECOMMENDED PRODUCTS",
+        "default": "RECOMMENDED PRODUCTS"
+      },
+       {
+        "type": "text",
+        "id": "empty_massage",
+        "label": "RECOMMENDED PRODUCTS",
+        "default": "GIVE YOUR BAG SOME LOVE"
+      },
+      {
         "type":"checkbox",
         "label":"Enable Cart Drawer",
         "id":"enable_cart"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "recomeded_collection",
+        "name": "Recomended Collection",
+        "settings": [
+          {
+            "type": "collection",
+            "label": "Tag Title",
+            "id": "collection"
+          }
+        ]
       }
     ]
   }
