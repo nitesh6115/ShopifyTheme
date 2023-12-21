@@ -21,12 +21,12 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 <div class="CollectionnGrid colls-4">
 {% if collection.image != blank %}
  <div class="CHB collection-image hover-zoom ">
-   <img class="radius-20 overflow-hidden" lazy src="{{ collection.image | img_url: "1400x" }}" alt="{{ collection.image.alt }}" />
+  <img class="radius-20 overflow-hidden" lazy src="{{ collection.image | img_url: "1400x" }}" alt="{{ collection.image.alt }}" />
   <div class="collection-info">
   <h1>{{collection.title}}</h1>
   <p>{{ collection.products_count }} {% if collection.products_count > 0 %}Products{% else %}Product{% endif %}</p>
   </div>
- </div>
+  </div>
 {% endif %}
 {% for product in collection.products %}
   <div class="GridItem featured-product">
