@@ -253,12 +253,10 @@ ul li a {
 .header .header-icon-bar svg {
     width: 30px;
     height: 20px;
-    fill: var(--body-text-color);
 }
 .Logo_svg svg {
     width: 100%;
     height: auto;
-    fill: var(--body-text-color);
 }
 .menu-link {
 	padding: 0 10px;
