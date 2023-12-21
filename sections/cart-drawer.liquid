@@ -109,6 +109,12 @@
         <a href="/cart" class="cta-btn">View Cart</a>
         <button  id="cart_checkout_btn"type="submit" name="checkout" class="btn">checkout</button>
       </div>
+      {% else %}
+        <div class="empty-cart">
+        <h4>GIVE YOUR BAG SOME LOVE</h4>
+<a href="#" class="button primary-button">WOMEN'S TOP PICKS</a>
+<a href="#" class="button secondary-button">MEN'S TOP PICKS</a>
+        </div>
       {% endif %}
       </div>
       </div>
