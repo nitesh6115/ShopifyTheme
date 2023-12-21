@@ -1,3 +1,5 @@
+
+  <div class="">
   {% if collection.image != blank %}
   {% else %}
   <div class="page-width">
@@ -30,7 +32,14 @@
   
   {
     "name": "Collection",
-    "settings": []
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "Choose Color Schema",
+        "default": "background-1"
+      }
+    ]
   }
 {% endschema %}
 
