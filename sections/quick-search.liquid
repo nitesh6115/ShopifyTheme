@@ -18,10 +18,11 @@
               <p class="font-secondary uppercase text-[1.3rem] pb-[0.5rem]">
                 <span>{{ section.settings.populer-serach-heading }}</span>
               </p> 
-              <button class="pb-[2px] mb-[2px] text-[1.2rem] relative snakify-in">Amplify</button> 
-              <button class="pb-[2px] mb-[2px] text-[1.2rem] relative snakify-in">Surface</button> 
-              <button class="pb-[2px] mb-[2px] text-[1.2rem] relative snakify-in">Shorts</button> 
-              <button class="pb-[2px] mb-[2px] text-[1.2rem] relative snakify-in">Joggers</button>
+              {% for block in section.blocks %}
+                {% if block.settings.title != blank %}
+                <button class="pb-[2px] mb-[2px] text-[1.2rem] relative snakify-in">{{ block.settings.title }}</button> 
+                {% endif %}
+              {% endfor %}
             </div>
             </div>
           <p class="font-secondary uppercase text-[1.3rem] col-span-full w-[70%]">Trending Products</p> 
