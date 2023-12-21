@@ -7,10 +7,6 @@
     "wrapper-width": 1340,
     "layout-padding-left": 50,
     "layout-padding-right": 50,
-    "button-bg-color": "linear-gradient(54deg, rgba(73, 228, 114, 1) 100%, rgba(255, 250, 99, 1) 100%)",
-    "button-text-color": "#000",
-    "color-on-hover": "linear-gradient(180deg, rgba(0, 0, 0, 1) 100%, rgba(249, 32, 32, 1) 100%)",
-    "text-color-on-hover": "#ffffff",
     "button-border-thickness": 1,
     "button-radius": 20,
     "button-top-padding": 10,
@@ -18,7 +14,7 @@
     "button-left-padding": 20,
     "button-right-padding": 20,
     "input-text-color": "#ffffff",
-    "input-border-color": "#eeeeee",
+    "input-border-color": "#dd1d1d",
     "input-border-thickness": 1,
     "input-border-radius": 20,
     "body-font-size": 13,
@@ -28,6 +24,10 @@
     "social_instagram_link": "instagram.com",
     "social_youtube_link": "youtube.com",
     "favicon": "shopify:\/\/shop_images\/about_radar_badge.jpg",
+    "button-bg-color": "linear-gradient(54deg, rgba(73, 228, 114, 1) 100%, rgba(255, 250, 99, 1) 100%)",
+    "button-text-color": "#000",
+    "color-on-hover": "linear-gradient(180deg, rgba(0, 0, 0, 1) 100%, rgba(249, 32, 32, 1) 100%)",
+    "text-color-on-hover": "#ffffff",
     "bg-color": "#323232",
     "body-bg-light-color": "linear-gradient(54deg, rgba(114, 255, 179, 1) 14%, rgba(255, 250, 99, 1) 85%)",
     "body-text-color": "#ffffff",
@@ -188,9 +188,9 @@
           "secondary-button-text": "#ffffff",
           "secondary-button-background": "#1773b0",
           "secondary-button-border-color": "#1773b0",
-          "secondary-button-hover-text": "#000000",
-          "secondary-button-hover-background": "rgba(0,0,0,0)",
-          "secondary-button-hover-border-color": "#1773b0"
+          "secondary-button-hover-text": "#ffffff",
+          "secondary-button-hover-background": "#000000",
+          "secondary-button-hover-border-color": "#000000"
         }
       },
       "scheme-0bfea3ae-e3eb-4aeb-af16-a1397b6b6630": {
