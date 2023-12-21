@@ -237,34 +237,6 @@
     "name": "BUTTON",
     "settings": [
       {
-        "type": "header",
-        "content": "Button Primary"
-      },
-      {
-        "type": "color_background",
-        "id": "button-bg-color",
-        "label": "Button Background Color",
-        "default": "linear-gradient(#000, #000)"
-      },
-      {
-        "type": "color",
-        "id": "button-text-color",
-        "label": "Button Text Color",
-        "default": "#fff"
-      },
-      {
-        "type": "color_background",
-        "id": "color-on-hover",
-        "label": "Button Background Color On Hover",
-        "default": "linear-gradient(#ff, #fff)"
-      },
-      {
-        "type": "color",
-        "id": "text-color-on-hover",
-        "label": "Button Text Color On Hover",
-        "default": "#000"
-      },
-      {
         "type": "range",
         "id": "button-border-thickness",
         "label": "Button Border Thickness",
