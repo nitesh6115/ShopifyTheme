@@ -19,6 +19,11 @@ div#shopify-section-header {
   right: 0;
   height: 80px;
 }
+.header-content{
+  transition-duration: .15s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
 @media screen and (max-width: 749px) {
   .small-hide {
     display: none !important;
