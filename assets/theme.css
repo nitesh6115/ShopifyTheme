@@ -619,7 +619,11 @@ img.feature-image {
     bottom: -350px;
     z-index: 1;
     color: #fff;
+    border-radius: 12px;
     transition: .5s ease all;
+}
+.other-selector-wrapper {
+    border-radius: 12px;
 }
 .top-container {
     position: relative;
