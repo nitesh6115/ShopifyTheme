@@ -3,8 +3,6 @@
       <div class="drawer-box">
       <div class="drawerProducts">
         <h2>RECOMMENDED PRODUCTS</h2>
-      <div class="CratDrawerSlider swiper">
-        <div class="swiper-wrapper">
         {% if cart.items > 0 %}
         {% assign item = cart.items.first %}
         {% for collection in item.product.collections %}
@@ -15,7 +13,9 @@
           
         {% assign collection = collections['all'] %}
         {% endif %}
-        {{ collection.name }}
+        {{ collection.title }}
+      <div class="CratDrawerSlider swiper">
+        <div class="swiper-wrapper">
         {% for product in collection.products limit: 8 %}
         <div class="featured-product swiper-slide">
         {% render 'product-grid', card_product:product %}
