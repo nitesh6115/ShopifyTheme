@@ -301,7 +301,6 @@ display: flex;
      -moz-transition: height .5s;
       -ms-transition: height .5s;
           transition: height .5s;
-    height: 0;
     overflow: hidden;
     position: absolute;
     visibility: hidden;
@@ -324,7 +323,6 @@ display: flex;
     z-index: 1;
 }
 .menu-link:hover>.DropDownBox.dropdown-child{
-  height: 470px;
   visibility: visible;
 }
 .DropDownBox.dropdown-child > .dropdown-child-Box{
