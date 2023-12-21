@@ -158,10 +158,8 @@ div#shopify-section-cart-drawer.active section#cartDrawer .drawer_overlay {
     position: absolute;
     bottom: 0;
     z-index: 1;
-    background: var(--body-background-color);
     left: 0;
     right: 0;
-    border-top: 1px solid var(--color-border);
     padding: 1.5rem;
 }
 
