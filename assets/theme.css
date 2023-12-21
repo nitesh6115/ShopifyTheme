@@ -740,9 +740,7 @@ select#product-select {
 .top-container .swiper-button-next {
     width: 33px;
     height: 33px;
-    background: #000;
     border-radius: 100%;
-    border: 1px solid var(--color-border);
     display: flex;
     align-items: center;
     right: -50px;
