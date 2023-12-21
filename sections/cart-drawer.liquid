@@ -15,7 +15,7 @@
           
         {% assign collection = collections['all'] %}
         {% endif %}
-        
+        {{ collection.name }}
         {% for product in collection.products limit: 8 %}
         <div class="featured-product swiper-slide">
         {% render 'product-grid', card_product:product %}
