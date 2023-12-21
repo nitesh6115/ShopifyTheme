@@ -293,6 +293,9 @@ display: flex;
   display: flex;
   align-items: center;
 }
+.header-content.border-all.menu-active {
+    border-radius: 0;
+}
 .DropDownBox.dropdown-child {
     -webkit-transition: height .5s;
      -moz-transition: height .5s;
