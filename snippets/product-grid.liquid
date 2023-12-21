@@ -114,7 +114,7 @@
           <div class="OtherOptions selector-wrapper" data-option-size="{{ forloop.index0 }}">
           <div class="size-selctor-wrapper">
            {% for value in option.values %}
-             <div class="size-selector {% if option.selected_value == value %}active{% endif %}" data-title="{{ value | escape }}">
+             <div class="size-selector secondary-button {% if option.selected_value == value %}active{% endif %}" data-title="{{ value | escape }}">
              
                <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" onclick="SelectVariant(this)" type="size" data-title="{{ value |escape }}">
                 {{ value }}
