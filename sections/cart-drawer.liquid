@@ -2,7 +2,7 @@
   <div class="drawer_overlay"onclick='cartDrwerclose()'></div>
       <div class="drawer-box">
       <div class="drawerProducts">
-        <h2>RECOMMENDED PRODUCTS</h2>
+        <h2>{{ section.settings.recomended }}</h2>
         {% if cart.items != 0 %}
         {% assign item = cart.items.first %}
         {% for collection in item.product.collections %}
