@@ -198,3 +198,16 @@ div#cart_drawer {
     height: 100%;
     align-items: center;
 }
+.content_empty {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content_empty a.button.primary-button {
+    margin-bottom: 10px;
+}
+
+.content_empty h4 {
+    margin-bottom: 10px;
+}
