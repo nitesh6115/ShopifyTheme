@@ -9,7 +9,7 @@
             "color_scheme": "scheme-d6ef72dc-0356-42e3-92af-4072303c76e0",
             "image_bg": "shopify:\/\/shop_images\/Shoppage_banner_1_1920x_d974d30d-27ee-4dc7-92df-39d2d9b56238.webp",
             "mobile_image_bg": "shopify:\/\/shop_images\/297962360_614272536936272_7964346338163368609_n.jpg",
-            "overlay_opacity": 24,
+            "overlay_opacity": 20,
             "overlay_opacity_color": "#000000",
             "desktop_content_position": "bottom-center",
             "title": "THE VARIOUS RANGE <br>BALTS",
@@ -17,7 +17,7 @@
             "text": "",
             "button_label": "Shop Now",
             "button_link": "#",
-            "second_button_label": "Learn More",
+            "second_button_label": "Book doctors consultation",
             "second_button_link": "#"
           }
         }
@@ -25,7 +25,6 @@
       "block_order": [
         "7442791e-4bbd-48e9-a1d4-eb90108ebb47"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
         "width": "wrapper-width",
@@ -35,7 +34,6 @@
     },
     "34aacdca-da45-4d6f-a67b-21692bd916e5": {
       "type": "rich-text",
-      "disabled": true,
       "settings": {
         "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
         "page-width": "wrapper-width",
@@ -75,7 +73,6 @@
         "a636e091-b64d-44e7-891b-9095ac3d649b",
         "9b284c90-646e-486e-aa49-96ea36b33a51"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
         "width": "wrapper-width",
@@ -129,7 +126,6 @@
         "1db94927-182f-4653-90c9-3a695a83b8c5",
         "69c0d203-7404-4cea-97db-7bdb5440d0e2"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
         "width": "wrapper-width",
@@ -167,7 +163,6 @@
         "761d1f84-7633-4cc8-9483-7301f103f8ba",
         "3d97fd51-5f0b-4f46-959d-23847c0adf16"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
         "width": "wrapper-width",
@@ -240,7 +235,6 @@
         "418302b1-4034-4e27-bf26-1fa76f46095b",
         "bf65b616-aee5-4d72-be66-e74f2e6a6caa"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
         "width": "wrapper-width",
@@ -345,7 +339,6 @@
       "block_order": [
         "7472b6ce-1330-47bf-b8ad-82c598883e01"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
         "width": "wrapper-width",
