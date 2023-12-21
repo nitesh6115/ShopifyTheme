@@ -36,6 +36,15 @@ window.onscroll = function() {
 
 
 // Nav Bar //
+const MainLink = document.querySelectorAll('.has-child-links');
+MainLink.forEach(item => {
+    item.addEventListener("mouseover", (event) => {
+      item.closest('.header-content').classList.add('menu-active') 
+    });
+    item.addEventListener("mouseout", (event) => {
+      item.closest('.header-content').classList.remove('menu-active')  
+    });
+});
 
 const NavLink = document.querySelectorAll('.grand-menu-link');
 NavLink.forEach(item => {
