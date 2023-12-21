@@ -210,7 +210,7 @@
       "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8": {
         "settings": {
           "background": "rgba(0,0,0,0)",
-          "background_gradient": "linear-gradient(90deg, rgba(240, 110, 105, 1), rgba(249, 208, 163, 1) 100%)",
+          "background_gradient": "",
           "text": "#000000",
           "heading-color": "#000000",
           "sub-heading-color": "#eeeeee",
