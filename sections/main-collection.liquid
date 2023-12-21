@@ -1,33 +1,40 @@
-
-  <div class="color-{{ section.settings.color_scheme }}">
-  {% if collection.image != blank %}
-  {% else %}
-  <div class="page-width">
+<style>
+.section-{{ section.id }}-padding {
+padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+}
+@media screen and (min-width: 750px) {
+.section-{{ section.id }}-padding {
+padding-top: {{ section.settings.padding_top }}px;
+padding-bottom: {{ section.settings.padding_bottom }}px;
+}
+}
+</style>
+<div class="color-{{ section.settings.color_scheme }}">
+{% if collection.image != blank %}
+{% else %}
+<div class="page-width">
+<h1>{{collection.title}}</h1>
+</div>
+{% endif %}
+<div class="page-width collection-page-grid">
+<div class="CollectionnGrid colls-4">
+{% if collection.image != blank %}
+ <div class="CHB collection-image hover-zoom ">
+   <img class="radius-20 overflow-hidden" lazy src="{{ collection.image | img_url: "1400x" }}" alt="{{ collection.image.alt }}" />
+  <div class="collection-info">
   <h1>{{collection.title}}</h1>
+  <p>{{ collection.products_count }} {% if collection.products_count > 0 %}Products{% else %}Product{% endif %}</p>
   </div>
-  {% endif %}
-  <div class="page-width collection-page-grid">
-  <div class="CollectionnGrid colls-4">
-    {% if collection.image != blank %}
-     <div class="CHB collection-image hover-zoom ">
-       <img class="radius-20 overflow-hidden" lazy src="{{ collection.image | img_url: "1400x" }}" alt="{{ collection.image.alt }}" />
-      <div class="collection-info">
-      <h1>{{collection.title}}</h1>
-      <p>{{ collection.products_count }} {% if collection.products_count > 0 %}Products{% else %}Product{% endif %}</p>
-      </div>
-     </div>
-    {% endif %}
-    {% for product in collection.products %}
-      <div class="GridItem featured-product">
-      {% render 'product-grid', card_product:product %}
-      </div>
-    {% endfor %}
+ </div>
+{% endif %}
+{% for product in collection.products %}
+  <div class="GridItem featured-product">
+  {% render 'product-grid', card_product:product %}
   </div>
-  </div>
-
-
-
-
+{% endfor %}
+</div>
+</div>
 {% schema %}
   
   {
