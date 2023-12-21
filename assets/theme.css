@@ -3,7 +3,7 @@
   padding:0px;
 }
 body {
-    margin-top: 70px;
+    margin-top: 80px;
 }
 div#shopify-section-header {
     position: fixed;
@@ -12,7 +12,13 @@ div#shopify-section-header {
     left: 0;
     z-index: 10;
 }
-
+.header__wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+}
 @media screen and (max-width: 749px) {
   .small-hide {
     display: none !important;
