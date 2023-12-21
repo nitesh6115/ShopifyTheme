@@ -115,7 +115,7 @@
           <div class="content_empty">
         <h4 class="heading">{{ section.settings.empty_massage }}</h4>
           {% for block in section.blocks %}
-          {% assign collection = collections[section.settings.collection] %}
+          {% assign collection = collections[block.settings.collection] %}
           <a href="{{ collection.url }}" class="button primary-button">{{ collection.title }}</a>
           {% endfor %}
         </div>
