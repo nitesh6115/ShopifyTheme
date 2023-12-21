@@ -4,9 +4,9 @@
       <div class="drawerProducts">
         <h2>RECOMMENDED PRODUCTS</h2>
         {% if cart.items > 0 %}
-        {% assign item = cart.items.first %}
-          {{ item.title }}
-        {% for collection in item.product.collections %}
+        {% assign citem = cart.items.first %}
+          {{ citem.title }}
+        {% for collection in citem.product.collections %}
         {% assign collectionHandle = collection.handle %} 
         {% endfor %}
         {% assign collection = collections[collectionHandle] %}
