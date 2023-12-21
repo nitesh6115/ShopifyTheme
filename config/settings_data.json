@@ -172,7 +172,7 @@
           "3345df66-f129-4d8e-b079-d0b861656e11"
         ],
         "settings": {
-          "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
+          "color_scheme": "scheme-7a614fe9-e7cf-4c3c-bca6-0218bcaf7f62",
           "search_label": "Search products...",
           "populer-serach-heading": "POPULAR SEARCHES",
           "populer-products": "TRANDING PRODUCTS",
@@ -298,7 +298,7 @@
       "scheme-7a614fe9-e7cf-4c3c-bca6-0218bcaf7f62": {
         "settings": {
           "background": "rgba(0,0,0,0)",
-          "background_gradient": "",
+          "background_gradient": "linear-gradient(180deg, rgba(255, 211, 226, 1), rgba(168, 255, 251, 1) 100%)",
           "text": "#000000",
           "heading-color": "#121212",
           "sub-heading-color": "#eab79a",
