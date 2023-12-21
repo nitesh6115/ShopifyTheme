@@ -146,6 +146,31 @@
       },
       "quick-search": {
         "type": "quick-search",
+        "blocks": {
+          "fd2ded42-9314-4c9b-8bcf-8b1c7d2ee16f": {
+            "type": "search-tag",
+            "settings": {
+              "title": "Balt"
+            }
+          },
+          "5b33b255-5f09-4cd0-9ada-33a38f3a1acb": {
+            "type": "search-tag",
+            "settings": {
+              "title": "Love"
+            }
+          },
+          "3345df66-f129-4d8e-b079-d0b861656e11": {
+            "type": "search-tag",
+            "settings": {
+              "title": "New"
+            }
+          }
+        },
+        "block_order": [
+          "fd2ded42-9314-4c9b-8bcf-8b1c7d2ee16f",
+          "5b33b255-5f09-4cd0-9ada-33a38f3a1acb",
+          "3345df66-f129-4d8e-b079-d0b861656e11"
+        ],
         "settings": {
           "color_scheme": "",
           "search_label": "Search products...",
