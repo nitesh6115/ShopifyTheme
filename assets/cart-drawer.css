@@ -60,7 +60,10 @@ div#shopify-section-cart-drawer section#cartDrawer .drawerProducts .CratDrawerSl
     overflow: inherit;
 }
 
-
+.content_empty a {
+    width: 100%;
+    text-align: center;
+}
 
 .drawer_overlay {
     position: fixed;
