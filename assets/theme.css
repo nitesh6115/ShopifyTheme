@@ -912,7 +912,7 @@ form#contact_form .email input[type="email"] {
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
 }
-.modal-search-open quick-search#nav-quick-search {
+.modal-search-open #nav-quick-search {
     visibility: visible;
     opacity: 1;
 }
