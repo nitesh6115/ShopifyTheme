@@ -3,6 +3,13 @@
     margin: 0;
     padding: 0;
 }
+.overlay-opacity {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
 @media screen and (max-width: 749px) {
   .small-hide {
     display: none !important;
