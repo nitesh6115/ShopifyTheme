@@ -108,7 +108,6 @@ a{
 
 .swiper-button-next.swiper-next::after {
     font-size: 12px;
-    color: #fff;
 }
 .swiper-button-next:hover,.swiper-button-prev:hover{
     transform: translate(0,0) rotate(0) skew(0) skewY(0) scaleX(1.1) scaleY(1.1)
