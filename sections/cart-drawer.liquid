@@ -1,7 +1,7 @@
 <section class="drawer" id ="cartDrawer">
   <div class="drawer_overlay color-{{ section.settings.color_scheme }}"onclick='cartDrwerclose()'></div>
       <div class="drawer-box">
-      <div class="drawerProducts">
+      <div class="drawerProducts color-{{ section.settings.color_scheme }}">
         <h2 class="heading">{{ section.settings.recomended }}</h2>
         {% if cart.items != 0 %}
         {% assign item = cart.items.first %}
