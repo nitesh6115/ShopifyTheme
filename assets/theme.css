@@ -571,7 +571,7 @@ li.menu-link.has-child-links.active .DropDownBox.dropdown-child .show-image {
     text-decoration: line-through;
     position: relative;
 }
-.size-selector.Sold-out svg.svgSold {
+.size-selector svg.svgSold {
     position: absolute;
     top: 0;
     left: 0;
@@ -582,12 +582,14 @@ li.menu-link.has-child-links.active .DropDownBox.dropdown-child .show-image {
     fill: #fff;
     padding: 5px;
     opacity: 0;
+    visibility: hidden;
 }
 
 
 
 .size-selector.Sold-out:hover svg.svgSold, .product-variant-container .size-selector.Sold-out:hover label {
     opacity: 1;
+    visibility: visible;
 }
 .product-variant-container .size-selector.Sold-out label{
   pointer-events: auto;
