@@ -447,7 +447,6 @@ display: flex;
     left: 0;
     top: 30px;
     bottom: 0;
-    background: var(--color-border);
     content: "";
 }
 .show-featured-image .image {
