@@ -308,6 +308,27 @@ display: flex;
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
 }
+.header-content:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition-duration: .5s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    background: var(--header-bg);
+    backdrop-filter: blur(45px);
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+}
+
+.header-content.border-all.menu-active:after {
+    visibility: visible;
+    opacity: 1;
+}
 .DropDownBox.dropdown-child {
     -webkit-transition: height .5s;
      -moz-transition: height .5s;
