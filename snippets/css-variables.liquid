@@ -24,6 +24,9 @@
  color: {{ scheme.settings.button-text }};
  background: {{ scheme.settings.button-background }};
 }
+  .color-{{ scheme.id }}.header-content.menu-active{
+    border-bottom: 1px solid {{ scheme.settings.color-border }};
+  }
 .color-{{ scheme.id }} #nav-quick-search-container {
   {% if scheme.settings.background_gradient != empty %}
     background: {{ scheme.settings.background_gradient }};
