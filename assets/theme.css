@@ -17,7 +17,6 @@ div#shopify-section-header {
   top: 0;
   left: 0;
   right: 0;
-  height: 80px;
 }
 @media screen and (max-width: 749px) {
   .small-hide {
