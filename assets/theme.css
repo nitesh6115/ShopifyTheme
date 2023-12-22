@@ -353,7 +353,7 @@ display: flex;
 
 .menu-link > a.snakify-in::after {
     height: 3px;
-    bottom: 1px;
+    bottom: -3px;
     z-index: 1;
 }
 .menu-link:hover>.DropDownBox.dropdown-child{
