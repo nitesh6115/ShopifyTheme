@@ -303,8 +303,8 @@ display: flex;
   align-items: center;
 }
 .header-content.border-all.menu-active {
-   height: 80vh;
-    transition-duration: .15s;
+    min-height: 80vh;
+    transition-duration: .5s;
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
 }
