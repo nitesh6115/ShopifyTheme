@@ -5,7 +5,7 @@
     <a class="snakify-in" href="{{ link.url }}">{{ link.title }}</a>
     {% if link.links.size > 0 %}
      <div class="DropDownBox dropdown-child">    
-    <ul class="dropdown-child-Box border-top border-right">
+    <ul class="dropdown-child-Box border-right">
         {% for child_link in link.links %}
            <li class="child-menu-link">
             <a class="snakify-in" href="{{ child_link.url }}">{{ child_link.title }}</a>
@@ -22,7 +22,7 @@
         </li>
         {% endfor %}
      </ul>
-      <div class="show-image border-top">
+      <div class="show-image">
          {% for link in section.settings.menu.links %}
           {% if link.links.size > 0 %}
           {% assign main-menu-image = link.object %}
