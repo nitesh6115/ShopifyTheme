@@ -1,4 +1,5 @@
 {% comment %} using in featured collection {% endcomment %}
+{% assign card_product = product %}
 {% assign current_variant = card_product.selected_or_first_available_variant %}
 {% assign colorOption = flase %}
 {% assign szieOption = flase %}
@@ -12,7 +13,7 @@
 {% endfor %}
   {% form 'product', card_product, data-product-form: '', data-product-handle: card_product.handle,
       data-type:'add-to-cart-form' %}
-  <div data-color="{{ colorOption }}" data-size="{{ sizeOption }}" class="top-container" data-url="{{ card_product.url }}">
+  <div data-color="{{ colorOption }}" data-size="{{ szieOption }}" class="top-container" data-url="{{ card_product.url }}">
     <div class="product-image-container">
     {% if colorOption %}
       {% for option in card_product.options_with_values %}
