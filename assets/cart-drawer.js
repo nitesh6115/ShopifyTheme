@@ -1,5 +1,6 @@
 function cartDrawerOpen(params) {
     cartDrwer()
+    console.log("yes")
     document.getElementById('shopify-section-cart-drawer').classList.add('active');
 }
 // close cart function
