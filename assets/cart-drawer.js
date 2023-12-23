@@ -19,12 +19,11 @@ function cartDrwer() {
            
             var container = document.createElement("div");
             document.getElementById('cart_drawer_box').innerHTML = parsedHTML;
-             var counterEl = new DOMParser().parseFromString(responseText, 'text/html').getElementById('cartDrawer').getAttribute('item-count');
-             console.log(counterEl)
-            //   counterEl.forEach((element) => {
-            //     element.innerHTML = data.item_count
-            //     console.log(data.item_count)
-            // })
+             var ItemCount = new DOMParser().parseFromString(responseText, 'text/html').getElementById('cartDrawer').getAttribute('item-count');
+             var counterEl = document.querySelectorAll('.cart-item-count');
+             counterEl.forEach((element) => {
+               element.innerHTML = ItemCount
+            })
             var CratDrawerSlider = document.querySelectorAll('.CratDrawerSlider');
             console.log("CratDrawerSlider")
             CratDrawerSlider.forEach(item => {
