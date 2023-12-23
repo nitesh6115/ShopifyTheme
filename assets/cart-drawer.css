@@ -1,6 +1,6 @@
 
 
-div#shopify-section-cart-drawer section#cartDrawer .drawer_wrapper {    
+section#cartDrawer .drawer_wrapper {    
 width: 400px;
 border-radius: 20px 0 0 20px;
 padding: 1.5rem;
@@ -18,7 +18,7 @@ height: 90vh;
 overflow: hidden;
 }
 
-div#shopify-section-cart-drawer section#cartDrawer .drawerProducts {
+section#cartDrawer .drawerProducts {
     align-self: center;
     grid-row: 1/3;
     pointer-events: auto;
@@ -47,17 +47,17 @@ div#shopify-section-cart-drawer section#cartDrawer .drawerProducts {
     transition-timing-function: cubic-bezier(.93,-.01,0,1.02);
 }
 
-div#shopify-section-cart-drawer.active section#cartDrawer .drawer_wrapper {
+#cart_drawer_box.active section#cartDrawer .drawer_wrapper {
     transform: translate(0);
 }
 
-div#shopify-section-cart-drawer.active section#cartDrawer .drawerProducts {
+#cart_drawer_box.active section#cartDrawer .drawerProducts {
     transform: translate(0);
 }
 .drawerProducts {
     background: transparent !important;
 }
-div#shopify-section-cart-drawer section#cartDrawer .drawerProducts .CratDrawerSlider {
+#cart_drawer_box.active section#cartDrawer .drawerProducts .CratDrawerSlider {
     overflow: inherit;
 }
 
@@ -80,7 +80,7 @@ backdrop-filter: saturate(180%) blur(3rem);
 }
 
 
-div#shopify-section-cart-drawer.active section#cartDrawer .drawer_overlay {
+#cart_drawer_box.active section#cartDrawer .drawer_overlay {
     visibility: visible;
     opacity: 0.9;
     filter: blur(10px);
