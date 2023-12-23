@@ -14,7 +14,7 @@ function rendersection() {
 }
 
 function cartDrwer() {
-    fetch(window.Shopify.routes.root + "/cart?section_id=cart-drawer")
+    fetch(window.Shopify.routes.cart + "?section_id=cart-drawer")
         .then(response => response.text())
         .then((responseText) => {
             const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('shopify-section-cart-drawer').innerHTML;
