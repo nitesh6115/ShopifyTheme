@@ -18,13 +18,10 @@ function cartDrwer() {
         .then((responseText) => {
             const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('shopify-section-cart-drawer').innerHTML;
             var container = document.createElement("div");
-            document.getElementById('shopify-section-cart-drawer').innerHTML = parsedHTML;
+            document.getElementById('cart_drawer_box').innerHTML = parsedHTML;
             var counterEl = document.querySelectorAll('.cart-item-count');
-            //console.log(responseText)
-            counterEl.forEach((element) => {
-            })
             var CratDrawerSlider = document.querySelectorAll('.CratDrawerSlider');
-            //console.log("CratDrawerSlider")
+            console.log("CratDrawerSlider")
             CratDrawerSlider.forEach(item => {
                 var nextbutton = item.querySelectorAll('.CartDrawerNext')[0];
                 var prebutton = item.querySelectorAll('.CartDrawerPrev')[0];
