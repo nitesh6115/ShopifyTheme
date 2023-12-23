@@ -429,8 +429,20 @@ function removemfixed(item) {
 
 
 // search box function 
+function getSearchBox(){
+  fetch(window.Shopify.routes.search + "?section_id=quick-search")
+        .then(response => response.text())
+        .then((responseText) => {
+            const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('shopify-section-quick-search').innerHTML;
+            var container = document.createElement("div");
+            document.getElementById('quick_search_box').innerHTML = parsedHTML;
+            setTimeout(() => {
+               document.body.classList.add('modal-search-open');
+            },200);
+        })
+}
 openModal = (event) => {
-    document.body.classList.add('modal-search-open');
+  getSearchBox()  
 }
 hideModal = (event) => {
     document.body.classList.remove('modal-search-open');
