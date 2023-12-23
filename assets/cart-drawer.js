@@ -1,11 +1,10 @@
 function cartDrawerOpen(params) {
     cartDrwer()
-    console.log("yes")
-    document.getElementById('shopify-section-cart-drawer').classList.add('active');
+    document.getElementById('cart_drawer_box').classList.add('active');
 }
 // close cart function
 function cartDrwerclose() {
-    document.getElementById('shopify-section-cart-drawer').classList.remove('active');
+    document.getElementById('cart_drawer_box').classList.remove('active');
 }
 
 // section render
@@ -17,7 +16,7 @@ function cartDrwer() {
     fetch(window.Shopify.routes.cart + "?section_id=cart-drawer")
         .then(response => response.text())
         .then((responseText) => {
-            const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('shopify-section-cart-drawer').innerHTML;
+            const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').innerHTML;
             var container = document.createElement("div");
             document.getElementById('cart_drawer_box').innerHTML = parsedHTML;
             var counterEl = document.querySelectorAll('.cart-item-count');
