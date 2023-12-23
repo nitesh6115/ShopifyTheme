@@ -425,9 +425,6 @@ function removemfixed(item) {
     m_fixed.classList.remove('m_fixed');
 
 }
-
-
-
 // search box function 
 function getSearchBox(){
   fetch(window.Shopify.routes.search + "?section_id=quick-search")
