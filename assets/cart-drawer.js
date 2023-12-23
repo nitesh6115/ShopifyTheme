@@ -19,7 +19,8 @@ function cartDrwer() {
            
             var container = document.createElement("div");
             document.getElementById('cart_drawer_box').innerHTML = parsedHTML;
-            // var counterEl = parsedHTML.querySelectorAll('.cart-item-count');
+             var counterEl = parsedHTML.getElementById('cartDrawer');
+             console.log(counterEl)
             //   counterEl.forEach((element) => {
             //     element.innerHTML = data.item_count
             //     console.log(data.item_count)
