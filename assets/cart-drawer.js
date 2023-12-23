@@ -1,7 +1,5 @@
 function cartDrawerOpen(params) {
     cartDrwer()
-    console.log("yes")
-    document.getElementById('cart_drawer_box').classList.add('active');
 }
 // close cart function
 function cartDrwerclose() {
@@ -97,6 +95,7 @@ function cartDrwer() {
                 }
             })
         })
+  document.getElementById('cart_drawer_box').classList.add('active');
 }
 //remove items from cart drawer
 function removeItem(item) {
