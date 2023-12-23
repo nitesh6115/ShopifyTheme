@@ -16,6 +16,7 @@ function cartDrwer() {
         .then(response => response.text())
         .then((responseText) => {
             const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('shopify-section-cart-drawer').innerHTML;
+            const data = JSON.parse(responseText);
             var container = document.createElement("div");
             document.getElementById('cart_drawer_box').innerHTML = parsedHTML;
             var counterEl = document.querySelectorAll('.cart-item-count');
