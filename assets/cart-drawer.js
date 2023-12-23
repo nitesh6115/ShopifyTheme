@@ -1,9 +1,5 @@
-// section render
-function rendersection() {
-    let html = this.responseText;
-}
-
 function cartDrawerOpen(params) {
+    cartDrwer()
     document.getElementById('shopify-section-cart-drawer').classList.add('active');
 }
 // close cart function
@@ -22,20 +18,18 @@ function cartDrwer() {
         .then((responseText) => {
             const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('shopify-section-cart-drawer').innerHTML;
             var container = document.createElement("div");
-
             document.getElementById('shopify-section-cart-drawer').innerHTML = parsedHTML;
             var counterEl = document.querySelectorAll('.cart-item-count');
             //console.log(responseText)
             counterEl.forEach((element) => {
             })
             var CratDrawerSlider = document.querySelectorAll('.CratDrawerSlider');
-            console.log("CratDrawerSlider")
+            //console.log("CratDrawerSlider")
             CratDrawerSlider.forEach(item => {
                 var nextbutton = item.querySelectorAll('.CartDrawerNext')[0];
                 var prebutton = item.querySelectorAll('.CartDrawerPrev')[0];
                 //console.log(nextbutton)
                 const cartDrawerSwaper = new Swiper(item, {
-
                     slidesPerView: 2,
                     spaceBetween: 15,
                     initialSlide: 0,
