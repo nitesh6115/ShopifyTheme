@@ -1,14 +1,13 @@
 {% comment %} using in featured collection {% endcomment %}
-
 {% assign current_variant = card_product.selected_or_first_available_variant %}
 {% assign colorOption = flase %}
-{% assign szieOption = flase %}
+{% assign sizeOption = flase %}
 {% for option in card_product.options_with_values %}
 {% if option.name contains 'Color' or option.name contains 'COLOR' %}
 {% assign colorOption = true %}
 {% endif %}
 {% if option.name contains 'Size' or option.name contains 'SIZE' %}
-{% assign szieOption = true %}
+{% assign sizeOption = true %}
 {% endif %}
 {% endfor %}
   {% form 'product', card_product, data-product-form: '', data-product-handle: card_product.handle,
