@@ -94,7 +94,9 @@ function cartDrwer() {
                     })
                 }
             })
-            document.getElementById('cart_drawer_box').classList.add('active');
+             setTimeout(() => {
+              document.getElementById('cart_drawer_box').classList.add('active');
+            },1000);
         })
   
 }
