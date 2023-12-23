@@ -94,8 +94,9 @@ function cartDrwer() {
                     })
                 }
             })
+            document.getElementById('cart_drawer_box').classList.add('active');
         })
-  document.getElementById('cart_drawer_box').classList.add('active');
+  
 }
 //remove items from cart drawer
 function removeItem(item) {
