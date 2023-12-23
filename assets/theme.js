@@ -433,8 +433,51 @@ function getSearchBox(){
             const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('shopify-section-quick-search').innerHTML;
             var container = document.createElement("div");
             document.getElementById('quick_search_box').innerHTML = parsedHTML;
-            setTimeout(() => {
-               document.body.classList.add('modal-search-open');
+            var collcetionImageSlider = document.querySelectorAll('.product-image-wrapper');
+            collcetionImageSlider.forEach(item => {
+                var newElem = item.closest('.product-image-container')
+                var nextbutton = newElem.querySelectorAll('.swiper-button-next')[0];
+                var prebutton = newElem.querySelectorAll('.swiper-button-prev')[0];
+                const swiperTabs = new Swiper(item, {
+                    loop: true,
+                    allowTouchMove: false, 
+                    autoplay: 7000,
+                    speed: 300,
+                    noSwiping: true,
+                    slidesPerView: 1,
+                    initialSlide: 0,
+                    effect: 'fade',
+                    navigation: {
+                        nextEl: nextbutton,
+                        prevEl: prebutton,
+                    },
+                })
+                var swp = item.swiper
+                item.addEventListener("mouseover", function() {
+                    swp.autoplay.start();
+                })
+                item.addEventListener("mouseout", function() {
+                    swp.autoplay.stop();
+                })
+            });
+            var variantImages = document.querySelectorAll('.prodouct-variant-slider');
+            variantImages.forEach(slider => {
+                var swiperActive = slider.querySelectorAll('.size-selector')[0];
+                // console.log("this"+swiperActive);
+                if (swiperActive !== '') {
+                    swiperActive.classList.add('active')
+                    var label = swiperActive.querySelectorAll('label')[0];
+                    label.click()
+                    const slideritam = new Swiper(slider, {
+                        slidesPerView: 5,
+                        initialSlide: 0,
+                        spaceBetween: 5,
+                        draggable: true,
+                    })
+                }
+            })
+             setTimeout(() => {
+              document.body.classList.add('modal-search-open');
             },200);
         })
 }
