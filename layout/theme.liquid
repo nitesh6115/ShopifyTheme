@@ -57,7 +57,10 @@
 </head>
 <body id="{{ page_title | handle }}" class="template-{{ template.name | handle }}">
 {% render 'flash-wrapper' %}
-{% section 'cart-drawer' %}
+<div id="cart_drawer_box"></div>
+{% if template contains 'cart' %}
+  {% section 'cart-drawer' %}
+{% endif %}
 {% section 'header' %}
 <main role="main" id="MainContent">
   {{ content_for_layout }}
@@ -72,7 +75,10 @@
 {% endif %}
 {% section 'footer' %}
 <div id="mini-cart-sucess"></div>
+<div id="quick_search_box"></div>
+  {% if template contains 'search' %}
 {% section 'quick-search' %}
+    {% endif %}
 {% render 'cookies-banner' %}
 <script src="{{ 'theme.js' | asset_url }}" async></script>
 </body>
