@@ -96,7 +96,7 @@ function cartDrwer() {
             })
              setTimeout(() => {
               document.getElementById('cart_drawer_box').classList.add('active');
-            },1000);
+            },200);
         })
   
 }
