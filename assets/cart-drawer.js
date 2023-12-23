@@ -21,6 +21,7 @@ function cartDrwer() {
             var counterEl = document.querySelectorAll('.cart-item-count');
               counterEl.forEach((element) => {
                 element.innerHTML = data.item_count
+                console.log(data.item_count)
             })
             var CratDrawerSlider = document.querySelectorAll('.CratDrawerSlider');
             console.log("CratDrawerSlider")
