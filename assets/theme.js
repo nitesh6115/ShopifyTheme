@@ -110,9 +110,9 @@ function addtocartitem(item) {
                 setTimeout(() => {
                     document.body.classList.remove('product-toast');
                     miniCart.innerHTML = '';
-                  cartDrawerOpen()
+                    cartDrwer()
                 }, '5000');
-                cartDrwer()
+                
             }
 
 
