@@ -459,7 +459,9 @@ display: flex;
     color: #fff;
     padding: 0 30px;
 }
-
+.ShopNewBox.size_3 .MenuBoxContent {
+    width: calc(33.333% - 15px);
+}
 @media(max-width:767px){
   .navbar.mobile-hide {
     display: block !important;
