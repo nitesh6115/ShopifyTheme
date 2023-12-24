@@ -28,15 +28,14 @@
           {% assign main-menu-image = link.object %}
              {% assign link_title = link.title | handle %}
              {% if mainLink ==  link_title %}
-         <div class="ShopNewBox">
-           
-               {% capture linktitle %}{{ link_title }}{% endcapture %}
+             {% capture linktitle %}{{ link_title }}{% endcapture %}
+               
+         <div class="ShopNewBox size_{{ linklists[linktitle].links.size }}">
            {% for linksub in linklists[linktitle].links %}
              {% assign fetimage = linksub.object %}
-             
              <div class="MenuBoxContent hover-zoom">
                <a class="" href="{{ linksub.url }}">
-               <img src="{{ fetimage.image  | img_url: '768x'  }}"/>
+               <img srcset="{{ fetimage.image  | image_url: '768x'  }}" width="{{ fetimage.image.width }}" height="{{ fetimage.image.height }}"/>
                <p>{{ linksub.title }}</p>
                </a>
              </div>
