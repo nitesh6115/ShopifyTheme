@@ -128,8 +128,8 @@
           "a8aa8d1e-7af4-47f7-a1a4-3927a76c1409"
         ],
         "settings": {
-          "color_scheme": "background-1",
-          "bg-color": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+          "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
+          "bg-color": "linear-gradient(180deg, rgba(103, 103, 103, 1), rgba(15, 15, 15, 1) 100%)",
           "page-width": "narrow-width",
           "show-announcement": true,
           "info-menu": "top-heaer-menu",
