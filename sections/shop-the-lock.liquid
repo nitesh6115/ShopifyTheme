@@ -12,6 +12,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 }
 }
 {% endstyle %}
+<div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
 <div class="{% if section.settings.width =='full-width' %}full-width{% elsif section.settings.width == 'wrapper-width' %}page-width {% else %}narrow-width{% endif %}">
  <div  class="shoplock-wrapper">
    <div class="shoplock-heading text-center">
@@ -106,12 +107,18 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
    </div>
  </div>
 </div>
-
+</div>
 
 {% schema %}
   {
     "name": "Shop the look",
     "settings": [
+        {
+          "type": "color_scheme",
+          "id": "color_scheme",
+          "label": "Choose Color Schema",
+          "default": "background-1"
+        },
          {
         "type": "select",
         "id": "width",
