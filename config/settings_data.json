@@ -245,11 +245,11 @@
           "button-hover-background": "#121212",
           "button-hover-border-color": "#000000",
           "secondary-button-text": "#ffffff",
-          "secondary-button-background": "#1773b0",
-          "secondary-button-border-color": "#1773b0",
+          "secondary-button-background": "#383838",
+          "secondary-button-border-color": "#383838",
           "secondary-button-hover-text": "#ffffff",
-          "secondary-button-hover-background": "#000000",
-          "secondary-button-hover-border-color": "#000000"
+          "secondary-button-hover-background": "#ce8055",
+          "secondary-button-hover-border-color": "#ce8055"
         }
       },
       "scheme-0bfea3ae-e3eb-4aeb-af16-a1397b6b6630": {
