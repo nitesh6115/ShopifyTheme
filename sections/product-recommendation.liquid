@@ -27,15 +27,7 @@
 </div>
 
 <script>
-  function SelectVariant(event) {
-   var selectType = event.getAttribute('type')
-    changeActive(event);
-    if (selectType == "color"){
-      ChnageVaiantImg(event)
-    }else{
-      ChangeSize(event)
-    }
-}
+  
   const handleIntersection = (entries, observer) => {
     if (!entries[0].isIntersecting) return;
 
