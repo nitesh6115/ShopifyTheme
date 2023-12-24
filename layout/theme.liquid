@@ -48,8 +48,7 @@
   </script>
   <link rel="preload" href="{{ 'swiper.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="{{ 'swiper.css' | asset_url }}"></noscript>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
+  <script src="{{ 'swiper.js' | asset_url }}" async></script>
   <script src="{{ 'fancybox.umd.js' | asset_url }}" async></script>
   <link rel="preload" href="{{ 'cart-drawer.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="{{ 'cart-drawer.css' | asset_url }}"></noscript>
