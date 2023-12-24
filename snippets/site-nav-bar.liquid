@@ -35,7 +35,7 @@
              {% assign fetimage = linksub.object %}
              <div class="MenuBoxContent hover-zoom">
                <a class="" href="{{ linksub.url }}">
-               <img srcset="{{ fetimage.image  | image_url: '768x'  }}" width="{{ fetimage.image.width }}" height="{{ fetimage.image.height }}"/>
+               <img srcset="{{ fetimage.image  | img_url: '768x'  }}" width="{{ fetimage.image.width }}" height="{{ fetimage.image.height }}"/>
                <p>{{ linksub.title }}</p>
                </a>
              </div>
