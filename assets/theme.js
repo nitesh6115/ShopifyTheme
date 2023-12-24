@@ -1,22 +1,5 @@
 // lazy loding Images
 
-var observer = new IntersectionObserver(
-    (entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.intersectionRatio > 0.0) {
-                img = entry.target;
-                if (!img.hasAttribute('src')) {
-                    //alert('will load the image!!!');
-                    img.setAttribute('src', img.dataset.src);
-                }
-            }
-        });
-    },
-    {}
-)
-for (let img of document.getElementsByTagName('img')) {
-    observer.observe(img);
-}
 
 // AnnouncmentBar //
 var AnnouncmentBar = document.querySelectorAll(".announcement-bar")[0];
