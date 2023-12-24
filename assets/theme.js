@@ -111,7 +111,7 @@ function addtocartitem(item) {
                     document.body.classList.remove('product-toast');
                     miniCart.innerHTML = '';
                     cartDrwer()
-                }, '5000');
+                }, '1000');
                 
             }
 
