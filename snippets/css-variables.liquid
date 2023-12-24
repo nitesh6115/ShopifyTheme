@@ -20,6 +20,9 @@
     background: {{ scheme.settings.background }};
   {% endif %}
 }
+ .color-{{ scheme.id }} .Logo_svg path{
+   fill: {{ scheme.settings.text }};
+ }
 .color-{{ scheme.id }} .cart-button span{
  color: {{ scheme.settings.button-text }};
  background: {{ scheme.settings.button-background }};
