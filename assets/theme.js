@@ -374,6 +374,7 @@ shopContainer.forEach(item => {
     })
 })
 
+// Look The Shop
 var shopContainer = document.querySelectorAll('.shopock-product-container');
 
 shopContainer.forEach(item => {
@@ -416,15 +417,12 @@ shopContainer.forEach(item => {
             slide(event)
         })
     })
-
 })
-
 function removemfixed(item) {
     const m_fixed = item.closest('.shoplock-slider');
-    //console.log(m_fixed)
     m_fixed.classList.remove('m_fixed');
-
 }
+
 // search box function 
 function getSearchBox(){
   fetch(window.Shopify.routes.search + "?section_id=quick-search")
@@ -491,6 +489,7 @@ var seachTrigger = document.querySelectorAll('#SeachTrigger')[0];
 seachTrigger.addEventListener('click', event => {
     openModal(event)
 })
+// Menu box function
 menuOpen = (event) => {
     document.body.classList.add('modal-menu-open');
     var firstmenu = document.querySelectorAll('li.menu-link.has-child-links')[0];
@@ -499,7 +498,7 @@ menuOpen = (event) => {
 menuClose = (event) => {
     document.body.classList.remove('modal-menu-open');
 }
-
+// Cart Drawer Recomendation Products
 var CratDrawerSlider = document.querySelectorAll('.CratDrawerSlider');
 CratDrawerSlider.forEach(item => {
     var nextbutton = item.querySelectorAll('.CartDrawerNext')[0];
