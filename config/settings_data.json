@@ -244,9 +244,9 @@
           "button-hover-text": "#383838",
           "button-hover-background": "#1773b0",
           "button-hover-border-color": "#1773b0",
-          "secondary-button-text": "#ffffff",
-          "secondary-button-background": "#383838",
-          "secondary-button-border-color": "#383838",
+          "secondary-button-text": "#383838",
+          "secondary-button-background": "#00f77b",
+          "secondary-button-border-color": "#00f77b",
           "secondary-button-hover-text": "#ffffff",
           "secondary-button-hover-background": "#ce8055",
           "secondary-button-hover-border-color": "#ce8055"
