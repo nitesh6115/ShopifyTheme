@@ -248,17 +248,17 @@
         "8ebd5eb3-46e4-4aaf-8c52-69cc1d3d1ae7": {
           "type": "block-1",
           "settings": {
-            "image": "shopify:\/\/shop_images\/self-serve-coffee-shop.jpg",
-            "product_list1": "f283",
+            "image": "shopify:\/\/shop_images\/47582295_394630424614808_8126913247421217687_n.jpg",
+            "product_list1": "ara-ring-agate",
             "top_position_1": 35,
             "left_position_1": 37,
-            "product_list2": "cm819",
+            "product_list2": "axel-coat-black",
             "top_position_2": 56,
             "left_position_2": 38,
-            "product_list3": "ff946",
+            "product_list3": "",
             "top_position_3": 35,
             "left_position_3": 67,
-            "product_list4": "stringer",
+            "product_list4": "",
             "top_position_4": 51,
             "left_position_4": 67
           }
@@ -266,14 +266,14 @@
         "a478652b-11b1-423b-81f3-542a4748eb82": {
           "type": "block-1",
           "settings": {
-            "image": "shopify:\/\/shop_images\/E15-ClearanceSale-HOMETILES-1_86d90235-64b7-42f6-9e46-b48e2777175d_720x_2_1.jpg",
-            "product_list1": "f284",
+            "image": "shopify:\/\/shop_images\/394571815_18392559193042018_6171366934988270428_n.jpg",
+            "product_list1": "aliam-skirt-mud",
             "top_position_1": 26,
             "left_position_1": 17,
-            "product_list2": "ff976",
+            "product_list2": "",
             "top_position_2": 80,
             "left_position_2": 40,
-            "product_list3": "ff954",
+            "product_list3": "",
             "top_position_3": 30,
             "left_position_3": 20,
             "product_list4": "",
@@ -284,14 +284,14 @@
         "dac4baf3-5bae-4e9e-8446-1d9a730dc759": {
           "type": "block-1",
           "settings": {
-            "image": "shopify:\/\/shop_images\/E15-ClearanceSale-HOMETILES-2_a2de8954-5618-48cb-ac75-d375bc33a40f_720x_1_1.jpg",
-            "product_list1": "cg175",
+            "image": "shopify:\/\/shop_images\/221707085_969413027191071_5947848103213346845_n.jpg",
+            "product_list1": "alex-twill-pant-sand",
             "top_position_1": 55,
             "left_position_1": 34,
-            "product_list2": "ff945",
+            "product_list2": "aliam-skirt-black",
             "top_position_2": 80,
             "left_position_2": 40,
-            "product_list3": "ff972",
+            "product_list3": "ballerina-flat",
             "top_position_3": 30,
             "left_position_3": 20,
             "product_list4": "",
@@ -305,7 +305,6 @@
         "a478652b-11b1-423b-81f3-542a4748eb82",
         "dac4baf3-5bae-4e9e-8446-1d9a730dc759"
       ],
-      "disabled": true,
       "settings": {
         "width": "wrapper-width",
         "title": "Shop The Look",
