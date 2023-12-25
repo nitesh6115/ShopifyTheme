@@ -181,7 +181,7 @@ ul li a {
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
 }
-@media(max-width: 767px){
+@media(max-width:767px){
   .header-content[
    padding: 0 15px;
   ]
