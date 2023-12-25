@@ -490,7 +490,10 @@ seachTrigger.addEventListener('click', event => {
     openModal(event)
 })
 function getSearchResult(searchTerm) {
-    const searchTermValue = searchTerm.value.trim();
+    const searchTermValue = searchTerm.value.trim(); 
+if(searchTermValue.size == 0){
+  document.getElementById('predictive-search').classList.remove('active')
+}
     fetch(`/search/suggest?q=${searchTermValue}&section_id=quick-search`)
       .then((response) => {
         if (!response.ok) {
@@ -500,8 +503,9 @@ function getSearchResult(searchTerm) {
         return response.text();
       })
       .then((text) => {
+        
         const resultsMarkup = new DOMParser().parseFromString(text, 'text/html').querySelector('#predictive-search-results').innerHTML
-          document.getElementById('predictive-search').innerHTML = parsedHTML = resultsMarkup;
+          document.getElementById('predictive-search').innerHTML =  resultsMarkup;
            var collcetionImageSlider = document.querySelectorAll('.product-image-wrapper');
             collcetionImageSlider.forEach(item => {
                 var newElem = item.closest('.product-image-container')
@@ -545,6 +549,7 @@ function getSearchResult(searchTerm) {
                     })
                 }
             })
+         document.getElementById('predictive-search').classList.add('active')
       })
       .catch((error) => {
         throw error;
