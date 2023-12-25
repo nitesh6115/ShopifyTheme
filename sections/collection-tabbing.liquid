@@ -24,34 +24,33 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
                         <div class="Tabing-Header">
                           {% assign collection = collections[block.settings.slide-collection] %}
                           <div class="TabHeader Tab-{{ section.id  }}{{ forloop.index }}">
-                          <div class="HederTabBox">
-                          <div class="LeftSide">
-                          {% if block.settings.sub_title != blank %}
-                          <div class="sub_title">{{ block.settings.sub_title }}</div>
-                          {% endif %} 
-                          {% if block.settings.heading != blank %}
-                          <h2 class="heading_title">{{ block.settings.heading }}</h2>
-                          {% endif %}
-                          </div>
-                          <div class="RightSide btn_color{{ block.id }}">
-                          {%  if block.settings.shop_all %}
-                          <a class="cta-btn primary-button" href="{{ collection.url }}">{{ block.settings.button_text }}</a> 
-                          {% endif %}
-                          </div>
-                          </div>
+                            <div class="HederTabBox">
+                              <div class="LeftSide">
+                              {% if block.settings.sub_title != blank %}
+                                <div class="sub_title">{{ block.settings.sub_title }}</div>
+                              {% endif %} 
+                              {% if block.settings.heading != blank %}
+                                <h2 class="heading_title">{{ block.settings.heading }}</h2>
+                              {% endif %}
+                              </div>
+                              <div class="RightSide btn_color{{ block.id }}">
+                                {%  if block.settings.shop_all %}
+                                <a class="cta-btn primary-button" href="{{ collection.url }}">{{ block.settings.button_text }}</a> 
+                                {% endif %}
+                              </div>
+                            </div>
                           </div>
                         </div>
                         <div class="Tabbing-Title">
                           {% assign loopindex = 0 %}
-                        {% for block in section.blocks %}
-                          <div data-index="{{ loopindex }}" class="Tab-{{ section.id  }} tablinks {% if loopmainIndex == loopindex %} active {% endif %}"
-                          data-id="Tab-{{ section.id  }}{{ forloop.index }}">
-                          {% if block.settings.title != blank %}
-                          {{ block.settings.title }}
-                          {% endif %}
+                          {% for block in section.blocks %}
+                          <div data-index="{{ loopindex }}" class="Tab-{{ section.id  }} tablinks {% if loopmainIndex == loopindex %} active {% endif %}" data-id="Tab-{{ section.id  }}{{ forloop.index }}">
+                            {% if block.settings.title != blank %}
+                              {{ block.settings.title }}
+                            {% endif %}
                           </div>
                           {% assign loopindex = loopindex | plus: 1 %}
-                         {% endfor %}
+                          {% endfor %}
                         </div>
                         <div class="collection-list swiper" >
                           <div class="swiper-wrapper">
