@@ -228,3 +228,36 @@ div#cart_drawer {
 .content_empty h4 {
     margin-bottom: 10px;
 }
+@media(max-width: 767px){
+  .drawer-box {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+section#cartDrawer .drawer_wrapper {
+    width: 100%;
+    height: auto;
+    order: 1;
+    position: static;
+    margin-bottom: 30px;
+    transform: translateY(100%);
+}
+
+section#cartDrawer .drawerProducts {
+    order: 2;
+}
+div#cart_drawer {
+    height: auto;
+    margin: 0;
+    overflow: inherit;
+}
+
+#cart_drawer_box.active section#cartDrawer .drawer_wrapper {
+    transform: translateY(0);
+}
+}
