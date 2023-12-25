@@ -1008,7 +1008,7 @@ div#predictive-search {
     visibility: hidden;
 }
 div#predictive-search.active {
-   height: auto;
+   height: 100%;
    width: 100%;
     position: relative;
     padding: 2rem;
