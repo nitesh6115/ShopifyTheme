@@ -205,9 +205,7 @@ ul li a {
     border-radius: 100%;
     justify-content: center;
 }
-.header-icon-bar .hederIcon:hover{
-  background: var(--color-border);
-}
+
 .header-icon-bar .desktop-hide.hederIcon svg:last-child {
     display: none;
 }
