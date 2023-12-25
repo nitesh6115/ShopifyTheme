@@ -20,10 +20,10 @@
           placeholder="{{ section.settings.search_label }}"
           >
           <input name="options[prefix]" type="hidden" value="last">
-          <div id="predictive-search" tabindex="-1"></div>
           </form>
         </div>
       </div> 
+      <div id="predictive-search" tabindex="-1"></div>
       {%- if predictive_search.performed -%}
         <div id="predictive-search-results">
         {%- if predictive_search.resources.products.size > 0 -%}
