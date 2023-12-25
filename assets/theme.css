@@ -1004,7 +1004,7 @@ form#contact_form .email input[type="email"] {
 }
 div#predictive-search {
     overflow: auto;
-    height: 100%;
+    height: 0;
     width: 100%;
     position: relative;
     padding: 2rem;
