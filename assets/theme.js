@@ -492,6 +492,8 @@ seachTrigger.addEventListener('click', event => {
 function getSearchResult(searchTerm) {
     const searchTermValue = searchTerm.value.trim();
     if(searchTermValue.length > 0){
+      
+    
     fetch(`/search/suggest?q=${searchTermValue}&section_id=quick-search`)
       .then((response) => {
         if (!response.ok) {
@@ -546,15 +548,19 @@ function getSearchResult(searchTerm) {
                     })
                 }
             })
+        if(searchTermValue.size > 0){
           document.getElementById('predictive-search').classList.add('active')
-        }else{
-          document.getElementById('predictive-search').classList.remove('active')
         }
         
       })
       .catch((error) => {
         throw error;
       });
+    document.getElementById('predictive-search').classList.add('active')
+    }else{
+      document.getElementById('predictive-search').classList.remove('active')
+    }
+    
   }
 
 // Menu box function
