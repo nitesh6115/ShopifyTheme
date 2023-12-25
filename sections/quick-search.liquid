@@ -6,7 +6,7 @@
         <div class="search-bar border-bottom">
           <form action="{{ routes.search_url }}" method="get" role="search">
           <label for="Search">Search</label>
-          <input
+          <input onkeyup="getSearchResult(this)"
           id="Search"
           type="search"
           name="q"
