@@ -3,24 +3,6 @@
     "54d71cac-422d-4e8a-a4b2-d8667ebe40d9": {
       "type": "video-with-image",
       "blocks": {
-        "7442791e-4bbd-48e9-a1d4-eb90108ebb47": {
-          "type": "image",
-          "settings": {
-            "color_scheme": "scheme-d6ef72dc-0356-42e3-92af-4072303c76e0",
-            "image_bg": "shopify:\/\/shop_images\/Shoppage_banner_1_1920x_d974d30d-27ee-4dc7-92df-39d2d9b56238.webp",
-            "mobile_image_bg": "shopify:\/\/shop_images\/297962360_614272536936272_7964346338163368609_n.jpg",
-            "overlay_opacity": 20,
-            "overlay_opacity_color": "#000000",
-            "desktop_content_position": "bottom-center",
-            "title": "THE VARIOUS RANGE <br>BALTS",
-            "sub-title": "",
-            "text": "",
-            "button_label": "Shop Now",
-            "button_link": "#",
-            "second_button_label": "Book doctors consultation",
-            "second_button_link": "#"
-          }
-        },
         "92741060-ac5c-43ed-8b37-e5f8844e6267": {
           "type": "video",
           "settings": {
@@ -34,14 +16,13 @@
             "sub-title": "",
             "text": "",
             "button_label": "View All",
-            "button_link": "shopify:\/\/pages\/our-story",
+            "button_link": "shopify:\/\/collections\/all",
             "second_button_label": "Learn More",
-            "second_button_link": "shopify:\/\/products\/acb-top-in-chipped-brick"
+            "second_button_link": "shopify:\/\/pages\/faq"
           }
         }
       },
       "block_order": [
-        "7442791e-4bbd-48e9-a1d4-eb90108ebb47",
         "92741060-ac5c-43ed-8b37-e5f8844e6267"
       ],
       "settings": {
