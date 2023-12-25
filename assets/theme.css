@@ -575,6 +575,9 @@ li.menu-link.has-child-links.active .DropDownBox.dropdown-child .show-image {
     text-decoration: line-through;
     position: relative;
 }
+.size-selector:active {
+    transform: translate(0,0) rotate(0) skew(0) skewY(0) scaleX(.95) scaleY(.95);
+}
 .size-selector svg.svgSold {
     position: absolute;
     top: 0;
