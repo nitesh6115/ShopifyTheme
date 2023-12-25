@@ -373,7 +373,10 @@ shopContainer.forEach(item => {
         },
     })
 })
-
+// notify me 
+function notify(item) {
+  alert("YEe")
+}
 // Look The Shop
 var shopContainer = document.querySelectorAll('.shopock-product-container');
 
