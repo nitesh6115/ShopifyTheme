@@ -492,7 +492,6 @@ seachTrigger.addEventListener('click', event => {
 function getSearchResult(searchTerm) {
     const searchTermValue = searchTerm.value.trim();
     if(searchTermValue.length > 0){
-      setTimeout(() => {
     fetch(`/search/suggest?q=${searchTermValue}&section_id=quick-search`)
       .then((response) => {
         if (!response.ok) {
@@ -556,7 +555,7 @@ function getSearchResult(searchTerm) {
         throw error;
       });
     document.getElementById('predictive-search').classList.add('active')
-      },300)
+      
     }else{
       document.getElementById('predictive-search').classList.remove('active')
     }
