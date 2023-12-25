@@ -476,16 +476,6 @@ function getSearchBox(){
             })
              setTimeout(() => {
               document.body.classList.add('modal-search-open');
-                onChange() {
-    const searchTerm = this.input.value.trim();
-
-    if (!searchTerm.length) {
-      this.close();
-      return;
-    }
-
-    this.getSearchResults(searchTerm);
-  }
             },200);
         })
 }
