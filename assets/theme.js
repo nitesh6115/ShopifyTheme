@@ -547,6 +547,8 @@ function getSearchResult(searchTerm) {
                 }
             })
           document.getElementById('predictive-search').classList.add('active')
+        }else{
+          document.getElementById('predictive-search').classList.remove('active')
         }
         
       })
