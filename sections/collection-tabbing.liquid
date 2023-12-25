@@ -19,28 +19,27 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
                 <div class="CarsoulBox swiper-wrapper collection-carsoul-{{ section.id }}">
                       {%  assign loopmainIndex = 0 %}
                       {% for block in section.blocks %}
-                        
                         <div id="Tab-{{ section.id  }}{{ forloop.index }}"class=" swiper-slide TabContent-{{ section.id  }} tabimage">
                         <div class="{% if section.settings.width == 'full-width' %}full-width{% elsif section.settings.width == 'wrapper-width' %}page-width{% else %} narrow-width {% endif %}" >
                         <div class="Tabing-Header">
-                        {% assign collection = collections[block.settings.slide-collection] %}
-                        <div class="TabHeader Tab-{{ section.id  }}{{ forloop.index }}">
-                        <div class="HederTabBox">
-                        <div class="LeftSide">
-                        {% if block.settings.sub_title != blank %}
-                        <div class="sub_title">{{ block.settings.sub_title }}</div>
-                        {% endif %} 
-                        {% if block.settings.heading != blank %}
-                        <h2 class="heading_title">{{ block.settings.heading }}</h2>
-                        {% endif %}
-                        </div>
-                        <div class="RightSide btn_color{{ block.id }}">
-                        {%  if block.settings.shop_all %}
-                        <a class="cta-btn primary-button" href="{{ collection.url }}">{{ block.settings.button_text }}</a> 
-                        {% endif %}
-                        </div>
-                        </div>
-                        </div>
+                          {% assign collection = collections[block.settings.slide-collection] %}
+                          <div class="TabHeader Tab-{{ section.id  }}{{ forloop.index }}">
+                          <div class="HederTabBox">
+                          <div class="LeftSide">
+                          {% if block.settings.sub_title != blank %}
+                          <div class="sub_title">{{ block.settings.sub_title }}</div>
+                          {% endif %} 
+                          {% if block.settings.heading != blank %}
+                          <h2 class="heading_title">{{ block.settings.heading }}</h2>
+                          {% endif %}
+                          </div>
+                          <div class="RightSide btn_color{{ block.id }}">
+                          {%  if block.settings.shop_all %}
+                          <a class="cta-btn primary-button" href="{{ collection.url }}">{{ block.settings.button_text }}</a> 
+                          {% endif %}
+                          </div>
+                          </div>
+                          </div>
                         </div>
                         <div class="Tabbing-Title">
                           {% assign loopindex = 0 %}
