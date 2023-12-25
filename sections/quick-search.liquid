@@ -25,49 +25,22 @@
         </div>
       </div> 
       {%- if predictive_search.performed -%}
-      <div id="predictive-search-results">
-      {%- if predictive_search.resources.products.size > 0 -%}
-      <h3 id="predictive-search-products">
+        <div id="predictive-search-results">
+        {%- if predictive_search.resources.products.size > 0 -%}
+        <h3 id="predictive-search-products">
         Products
-      </h3>
-      <ul role="listbox" aria-labelledby="predictive-search-products">
+        </h3>
+        <div class="CollectionnGrid colls-{{ section.settings.product-per-row }}" role="listbox" aria-labelledby="predictive-search-products">
         {%- for product in predictive_search.resources.products -%}
-          <li role="option">
-            <a href="{{ product.url }}">
-              {{ product | image_url: width: 50 | image_tag }}
-              <span>{{ product.title }}</span>
-            </a>
-          </li>
+          <div class="GridItem featured-product swiper-slide">
+          {% render 'product-grid', card_product:product %}
+          </div>
         {%- endfor -%}
-      </ul>
+        </div>
+        {%- endif -%}
+        </div>
       {%- endif -%}
-      <button>
-      Search for “{{ predictive_search.terms }}”
-      </button>
-      </div>
-      {%- endif -%}
-      {%- if predictive_search.performed -%}
-  <div id="predictive-search-results">
-    {%- if predictive_search.resources.products.size > 0 -%}
-      <h3 id="predictive-search-products">
-        Products
-      </h3>
-      <ul role="listbox" aria-labelledby="predictive-search-products">
-        {%- for product in predictive_search.resources.products -%}
-          <li role="option">
-            <a href="{{ product.url }}">
-              {{ product | image_url: width: 50 | image_tag }}
-              <span>{{ product.title }}</span>
-            </a>
-          </li>
-        {%- endfor -%}
-      </ul>
-    {%- endif -%}
-    <button>
-      Search for “{{ predictive_search.terms }}”
-    </button>
-  </div>
-{%- endif -%}
+      
       <div class="search-container scroll-bar">
         <div class="grid">
           <div class="col-span-full grid grid-cols-2 gap-[2rem] w-full pb-[3rem] border-b border-secondary/20">
