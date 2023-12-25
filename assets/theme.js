@@ -489,8 +489,7 @@ var seachTrigger = document.querySelectorAll('#SeachTrigger')[0];
 seachTrigger.addEventListener('click', event => {
     openModal(event)
 })
-
-getSearchResult(searchTerm) {
+function getSearchResult(searchTerm) {
     const searchTerm = searchTerm.value.trim();
     fetch(`/search/suggest?q=${searchTerm}&section_id=quick-search`)
       .then((response) => {
