@@ -149,8 +149,8 @@ ul li a {
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
     width: 200px;
-    right: 48px;
-    top: 45%;
+    right: 30px;
+    top: 30px;
     border-radius: 0 0 15px 15px;
 }
 
