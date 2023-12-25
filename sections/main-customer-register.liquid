@@ -1,7 +1,108 @@
+<style>
+.section-{{ section.id }}-padding {
+padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+}
+@media screen and (min-width: 750px) {
+  .section-{{ section.id }}-padding {
+  padding-top: {{ section.settings.padding_top }}px;
+  padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+}
+</style>
+
+<div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
+  <div class="CustomerRegisterPage {% if section.settings.width == 'full-width' %}full-width{% elsif section.settings.width == 'wrapper-width' %}page-width{% else %} narrow-width {% endif %}">
+  
+  <div id="customer">
+	  <!-- Create Customer -->
+	  <div id="create-customer">
+	    <div class="template_header">
+	      <h2 class="title">Create Account</h2>
+	    </div>
+
+	    {% form 'create_customer' %}
+	      {{ form.errors | default_errors }}
+
+	      <div class="clearfix large_form">
+	        <label for="first_name" class="login">First Name</label>
+	        <input type="text" value="" name="customer[first_name]" id="first_name" class="large" size="30" />
+	      </div>
+
+	      <div class="clearfix large_form">
+	        <label for="last_name" class="login">Last Name</label>
+	        <input type="text" value="" name="customer[last_name]" id="last_name" class="large" size="30" />
+	      </div>
+
+	      <div class="clearfix large_form">
+	        <label for="email" class="login">Email Address</label>
+	        <input type="email" value="" name="customer[email]" id="email" class="large" size="30" />
+	      </div>
+
+	      <div class="clearfix large_form">
+	        <label for="password" class="login">Password</label>
+	        <input type="password" value="" name="customer[password]" id="password" class="large password" size="30" />
+	      </div>
+
+	      <div class="action_bottom">
+	        <input class="btn" type="submit" value="Create" />
+	        <span class="note">or <a href="{{ shop.url }}">Return to Store</a></span>
+	      </div>
+	    {% endform %}
+	  </div><!-- /#create-customer -->
+  </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Customer Register",
+    "settings": [
+       {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Choose Color Schema",
+      "default": "background-1"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Page width",
+      "options": [
+        {
+          "value": "full-width",
+          "label": "Full Width"
+        },
+        {
+          "value": "wrapper-width",
+          "label": "Wrapper Width"
+        },
+        {
+          "value": "narrow-width",
+          "label": "Narrow width"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "padding_bottom",
+      "default": 36
+    }
+    ]
   }
 {% endschema %}
 
