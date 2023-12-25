@@ -3,7 +3,7 @@
     "flash_background_gradient": "linear-gradient(90deg, rgba(206, 128, 85, 1), rgba(206, 128, 85, 1) 100%)",
     "flash-image": "shopify:\/\/shop_images\/logo_1.gif",
     "page-width": "wrapper-width",
-    "narrow-width": 1280,
+    "narrow-width": 1080,
     "wrapper-width": 1340,
     "layout-padding-left": 50,
     "layout-padding-right": 50,
