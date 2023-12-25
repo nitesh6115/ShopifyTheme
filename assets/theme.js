@@ -491,7 +491,7 @@ seachTrigger.addEventListener('click', event => {
 })
 function getSearchResult(searchTerm) {
     const searchTermValue = searchTerm.value.trim();
-    if(searchTermValue.length > 0){
+    if(searchTermValue.length >= 3){
     fetch(`/search/suggest?q=${searchTermValue}&section_id=quick-search`)
       .then((response) => {
         if (!response.ok) {
