@@ -1009,6 +1009,9 @@ div#predictive-search {
     position: relative;
     padding: 2rem;
 }
+div#predictive-search.active {
+   height: auto;
+}
 .popular-searches.flex-1.flex.flex-col.items-start button {
     display: block;
     padding: 0;
