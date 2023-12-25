@@ -4,13 +4,70 @@
     <div class="w-full h-full flex flex-col ">
       <div class="search-bar-container">
         <div class="search-bar border-bottom">
-          <input type="text" placeholder="{{ section.settings.search_label }}" tabindex="1" class="">
-          <button class="button" style="display: none;">
-            <svg id="" data-name="Backspace Icon" xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 576 512" class="icon-backspace w-full max-w-[2rem] fill-secondary">
-              <path d="M576 384C576 419.3 547.3 448 512 448H205.3C188.3 448 172 441.3 160 429.3L9.372 278.6C3.371 272.6 0 264.5 0 256C0 247.5 3.372 239.4 9.372 233.4L160 82.75C172 70.74 188.3 64 205.3 64H512C547.3 64 576 92.65 576 128V384zM271 208.1L318.1 256L271 303C261.7 312.4 261.7 327.6 271 336.1C280.4 346.3 295.6 346.3 304.1 336.1L352 289.9L399 336.1C408.4 346.3 423.6 346.3 432.1 336.1C442.3 327.6 442.3 312.4 432.1 303L385.9 256L432.1 208.1C442.3 199.6 442.3 184.4 432.1 175C423.6 165.7 408.4 165.7 399 175L352 222.1L304.1 175C295.6 165.7 280.4 165.7 271 175C261.7 184.4 261.7 199.6 271 208.1V208.1z"></path></svg>
-          </button>
+          <form action="{{ routes.search_url }}" method="get" role="search">
+          <label for="Search">Search</label>
+          <input
+          id="Search"
+          type="search"
+          name="q"
+          value="{{ search.terms | escape }}"
+          role="combobox"
+          aria-expanded="false"
+          aria-owns="predictive-search-results"
+          aria-controls="predictive-search-results"
+          aria-haspopup="listbox"
+          aria-autocomplete="list"
+          placeholder="{{ section.settings.search_label }}"
+          >
+          <input name="options[prefix]" type="hidden" value="last">
+          <div id="predictive-search" tabindex="-1"></div>
+          </form>
         </div>
       </div> 
+      {%- if predictive_search.performed -%}
+      <div id="predictive-search-results">
+      {%- if predictive_search.resources.products.size > 0 -%}
+      <h3 id="predictive-search-products">
+        Products
+      </h3>
+      <ul role="listbox" aria-labelledby="predictive-search-products">
+        {%- for product in predictive_search.resources.products -%}
+          <li role="option">
+            <a href="{{ product.url }}">
+              {{ product | image_url: width: 50 | image_tag }}
+              <span>{{ product.title }}</span>
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+      {%- endif -%}
+      <button>
+      Search for “{{ predictive_search.terms }}”
+      </button>
+      </div>
+      {%- endif -%}
+      {%- if predictive_search.performed -%}
+  <div id="predictive-search-results">
+    {%- if predictive_search.resources.products.size > 0 -%}
+      <h3 id="predictive-search-products">
+        Products
+      </h3>
+      <ul role="listbox" aria-labelledby="predictive-search-products">
+        {%- for product in predictive_search.resources.products -%}
+          <li role="option">
+            <a href="{{ product.url }}">
+              {{ product | image_url: width: 50 | image_tag }}
+              <span>{{ product.title }}</span>
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+    <button>
+      Search for “{{ predictive_search.terms }}”
+    </button>
+  </div>
+{%- endif -%}
       <div class="search-container scroll-bar">
         <div class="grid">
           <div class="col-span-full grid grid-cols-2 gap-[2rem] w-full pb-[3rem] border-b border-secondary/20">
