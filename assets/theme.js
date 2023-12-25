@@ -500,8 +500,8 @@ function getSearchResult(searchTerm) {
         return response.text();
       })
       .then((text) => {
-        const resultsMarkup = new DOMParser().parseFromString(text, 'text/html').getElementById('shopify-section-quick-search').getElementById('predictive-search-results').innerHTML;
-        document.getElementById('predictive-search').innerHTML = parsedHTML = resultsMarkup;
+        const resultsMarkup = new DOMParser().parseFromString(text, 'text/html').querySelector('#predictive-search-results').innerHTML
+          document.getElementById('predictive-search').innerHTML = parsedHTML = resultsMarkup;
       })
       .catch((error) => {
         throw error;
