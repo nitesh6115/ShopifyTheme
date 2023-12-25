@@ -77,51 +77,6 @@
     {% endform %}
   </div>
   {% endif %}
-  <div class="section r"></div>
-<div class="section b"></div>
-<div class="section g"></div>
-<div class="section ba"></div>
-<svg class="BACG" version="1.1" width="1200" height="628" viewBox="0 0 1200 628" xml:space="preserve">
- <path style="stroke: rgb(0,0,0);stroke-width: 1;stroke-dasharray: none;stroke-linecap: butt;stroke-dashoffset: 0;stroke-linejoin: miter;stroke-miterlimit: 4;fill: rgb(255,255,255);fill-opacity: 0;fill-rule: nonzero;opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(0, 0)" d="M -217.11491 -89.48655 L -86.55256 -89.48655 L -86.55256 -8.283049999999989 L -38.82881 52.57276000000001 L 57.21272 89.48655000000001 L 175.77165 52.57276000000001 L 217.11491999999998 -8.283049999999989 L 217.11491999999998 -89.48655" stroke-linecap="round"></path>
-</svg>
-<style>
-  .r{
-  background-color: red;
-  }
-.b{
-  background-color: blue;
-  }
-.g{
-  background-color: gree;
-  }
-.ba{
-  background-color: black;
-  }
-.section{
-  height: 500px;
-  }
-
-  .BACG{
-    position: fixed;
-    top: 0;
-  }
-</style>
-  <script>
-    let path =  document.querySelectorAll('.BACG path')[0];
-let pathLength = path.getTotalLength();
-
-path.style.strockDasharray = pathLength + ' ' + pathLength;
-
-path.style.strockDashoffset = pathLength;
-
-window.addEventListener("scroll", function(){
-let scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-    console.log(scrollPercentage)
-})
-  </script>
-</div>
-
-
 <script type="text/javascript">
   function showRecoverPasswordForm() {
     document.getElementById('recover-password').style.display = 'inline-block';
