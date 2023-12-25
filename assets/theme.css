@@ -1002,7 +1002,13 @@ form#contact_form .email input[type="email"] {
     font-weight: bold;
     padding-left: 0;
 }
-
+div#predictive-search {
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 2rem;
+}
 .popular-searches.flex-1.flex.flex-col.items-start button {
     display: block;
     padding: 0;
