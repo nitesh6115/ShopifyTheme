@@ -43,7 +43,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
       {% endif %}
 
       <div class="action_bottom">
-        <input class="btn" type="submit" value="Sign In" />
+        <button class="btn primary-button" type="submit">Sign In</button>
         <span class="note">or <a href="{{ shop.url }}">Return to Store</a></span>
       </div>
     {% endform %}
@@ -78,7 +78,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
       <h3 class="title">Guest Login</h3>
     </div>
     {% form 'guest_login' %}
-      <input class="btn" type="submit" value="Continue as Guest" />
+      <button class="btn" type="submit">Continue as Guest</button>
     {% endform %}
   </div>
   {% endif %}
