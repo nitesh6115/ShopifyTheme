@@ -67,7 +67,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
         <input type="email" value="" size="30" name="email" id="recover-email" class="large" />
       </div>
       <div class="action_bottom">
-        <input class="btn" type="submit" value="Submit" />
+        <button class="primary-button" type="submit">Submit</button>
         <span class="note">or <a href="#" onclick="hideRecoverPasswordForm();return false;">Cancel</a></span>
       </div>
     {% endform %}
@@ -78,7 +78,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
       <h3 class="title">Guest Login</h3>
     </div>
     {% form 'guest_login' %}
-      <button class="btn" type="submit">Continue as Guest</button>
+      <button class="primary-button" type="submit">Continue as Guest</button>
     {% endform %}
   </div>
   {% endif %}
