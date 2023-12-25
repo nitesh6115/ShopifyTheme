@@ -334,6 +334,7 @@ input{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    border: var(--input-border-thickness) solid;
     font-size: 12px;
     outline: none;
     padding: var(--button-top-padding) var(--button-left-padding) var(--button-bottom-padding) var(--button-right-padding);
