@@ -490,8 +490,8 @@ seachTrigger.addEventListener('click', event => {
     openModal(event)
 })
 function getSearchResult(searchTerm) {
-    const searchTerm = searchTerm.value.trim();
-    fetch(`/search/suggest?q=${searchTerm}&section_id=quick-search`)
+    const searchTermValue = searchTerm.value.trim();
+    fetch(`/search/suggest?q=${searchTermValue}&section_id=quick-search`)
       .then((response) => {
         if (!response.ok) {
           var error = new Error(response.status);
