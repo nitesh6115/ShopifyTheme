@@ -992,7 +992,7 @@ form#contact_form .email input[type="email"] {
     padding: 2rem 2rem 0;
 }
 
-.search-bar-container input[type="text"] {
+.search-bar-container input {
     border-radius: 0;
     background: transparent;
     box-shadow: none !important;
