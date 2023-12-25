@@ -501,7 +501,7 @@ function getSearchResult(searchTerm) {
       })
       .then((text) => {
         const resultsMarkup = new DOMParser().parseFromString(text, 'text/html').querySelector('#predictive-search-results').innerHTML
-          document.getElementById('predictive-search').innerHTML =  resultsMarkup;
+          document.getElementById('predictive-search').innerHTML = parsedHTML = resultsMarkup;
            var collcetionImageSlider = document.querySelectorAll('.product-image-wrapper');
             collcetionImageSlider.forEach(item => {
                 var newElem = item.closest('.product-image-container')
@@ -545,7 +545,7 @@ function getSearchResult(searchTerm) {
                     })
                 }
             })
-         document.getElementById('predictive-search').classList.add('active')
+        document.getElementById('predictive-search').classList.add('active')
       })
       .catch((error) => {
         throw error;
