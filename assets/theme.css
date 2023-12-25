@@ -1005,12 +1005,14 @@ form#contact_form .email input[type="email"] {
 div#predictive-search {
     overflow: auto;
     height: 0;
-    width: 100%;
-    position: relative;
-    padding: 2rem;
+    visibility: hidden;
 }
 div#predictive-search.active {
    height: auto;
+   width: 100%;
+    position: relative;
+    padding: 2rem;
+    visibility: visible;
 }
 .popular-searches.flex-1.flex.flex-col.items-start button {
     display: block;
