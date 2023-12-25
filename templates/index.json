@@ -20,10 +20,29 @@
             "second_button_label": "Book doctors consultation",
             "second_button_link": "#"
           }
+        },
+        "92741060-ac5c-43ed-8b37-e5f8844e6267": {
+          "type": "video",
+          "settings": {
+            "color_scheme": "background-1",
+            "video_link": "shopify:\/\/files\/videos\/13cf3cfb25b442a2bcb2dca5c1a8dac4.mp4",
+            "mobile_video_link": "shopify:\/\/files\/videos\/a6b45b0dfb414f8990e796f2645b0f81.mp4",
+            "overlay_opacity": 0,
+            "overlay_opacity_color": "#000",
+            "desktop_content_position": "left-bottom",
+            "title": "Shop The Latest",
+            "sub-title": "",
+            "text": "",
+            "button_label": "View All",
+            "button_link": "shopify:\/\/pages\/our-story",
+            "second_button_label": "Learn More",
+            "second_button_link": "shopify:\/\/products\/acb-top-in-chipped-brick"
+          }
         }
       },
       "block_order": [
-        "7442791e-4bbd-48e9-a1d4-eb90108ebb47"
+        "7442791e-4bbd-48e9-a1d4-eb90108ebb47",
+        "92741060-ac5c-43ed-8b37-e5f8844e6267"
       ],
       "settings": {
         "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
