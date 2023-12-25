@@ -5,7 +5,7 @@
       <div class="search-bar-container">
         <div class="search-bar border-bottom">
           <form action="{{ routes.search_url }}" method="get" role="search">
-          <input onchange="getSearchResult(this)"
+          <input onkeyup="getSearchResult(this)"
           id="Search"
           type="search"
           name="q"
