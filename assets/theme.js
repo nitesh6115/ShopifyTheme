@@ -476,6 +476,16 @@ function getSearchBox(){
             })
              setTimeout(() => {
               document.body.classList.add('modal-search-open');
+                onChange() {
+    const searchTerm = this.input.value.trim();
+
+    if (!searchTerm.length) {
+      this.close();
+      return;
+    }
+
+    this.getSearchResults(searchTerm);
+  }
             },200);
         })
 }
@@ -489,6 +499,26 @@ var seachTrigger = document.querySelectorAll('#SeachTrigger')[0];
 seachTrigger.addEventListener('click', event => {
     openModal(event)
 })
+
+getSearchResult(searchTerm) {
+    const searchTerm = searchTerm.value.trim();
+    fetch(`/search/suggest?q=${searchTerm}&section_id=quick-search`)
+      .then((response) => {
+        if (!response.ok) {
+          var error = new Error(response.status);
+          throw error;
+        }
+        return response.text();
+      })
+      .then((text) => {
+        const resultsMarkup = new DOMParser().parseFromString(responseText, 'text/html').getElementById('shopify-section-quick-search').getElementById('predictive-search-results').innerHTML;
+        document.getElementById('predictive-search').innerHTML = parsedHTML = resultsMarkup;
+      })
+      .catch((error) => {
+        throw error;
+      });
+  }
+
 // Menu box function
 menuOpen = (event) => {
     document.body.classList.add('modal-menu-open');
