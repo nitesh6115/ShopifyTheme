@@ -490,10 +490,7 @@ seachTrigger.addEventListener('click', event => {
     openModal(event)
 })
 function getSearchResult(searchTerm) {
-    const searchTermValue = searchTerm.value.trim(); 
-if(searchTermValue.size == 0){
-  document.getElementById('predictive-search').classList.remove('active')
-}
+    const searchTermValue = searchTerm.value.trim();
     fetch(`/search/suggest?q=${searchTermValue}&section_id=quick-search`)
       .then((response) => {
         if (!response.ok) {
@@ -503,7 +500,6 @@ if(searchTermValue.size == 0){
         return response.text();
       })
       .then((text) => {
-        
         const resultsMarkup = new DOMParser().parseFromString(text, 'text/html').querySelector('#predictive-search-results').innerHTML
           document.getElementById('predictive-search').innerHTML =  resultsMarkup;
            var collcetionImageSlider = document.querySelectorAll('.product-image-wrapper');
