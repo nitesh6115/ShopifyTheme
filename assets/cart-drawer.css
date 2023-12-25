@@ -159,7 +159,6 @@ backdrop-filter: saturate(180%) blur(3rem);
 }
 
 .cart_bottom svg {
-    fill: inherit;
     -webkit-text-stroke-color: inherit;
     width: 20px;
     height: 15px;
