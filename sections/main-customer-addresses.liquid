@@ -92,10 +92,10 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
       </div>
         </div>
 
-        <p><input type="submit" class="btn" value="{{ 'customer.addresses.add' | t }}"></p>
-        <p><a href="#" onclick="Shopify.CustomerAddress.toggleNewForm(); return false;">{{ 'customer.addresses.cancel' | t }}</a></p>
-
-        <hr>
+        <div class="bottom-button-box">
+      <buttion type="submit" class="primary-button">{{ 'customer.addresses.add' | t }}</buttion>
+        <a href="#" onclick="Shopify.CustomerAddress.toggleNewForm(); return false;">{{ 'customer.addresses.cancel' | t }}</a>
+        </div>
       </div>
     {% endform %}
 
@@ -144,7 +144,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
               <input type="text" id="AddressLastName_{{ form.id }}" class="input-full" name="address[last_name]" value="{{ form.last_name }}" autocapitalize="words">
             </div>
           </div>
-
+           <div class="grid">
           <label for="AddressCompany_{{ form.id }}">{{ 'customer.addresses.company' | t }}</label>
           <input type="text" id="AddressCompany_{{ form.id }}" class="input-full" name="address[company]" value="{{ form.company }}" autocapitalize="words">
 
@@ -164,7 +164,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
             <label for="AddressProvince_{{ form.id }}">{{ 'customer.addresses.province' | t }}</label>
             <select id="AddressProvince_{{ form.id }}" class="input-full" name="address[province]" data-default="{{ form.province }}"></select>
           </div>
-
+          </div>
           <div class="grid">
             <div class="grid__item one-half small--one-whole">
               <label for="AddressZip_{{ form.id }}">{{ 'customer.addresses.zip' | t }}</label>
@@ -176,16 +176,16 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
               <input type="tel" id="AddressPhone_{{ form.id }}" class="input-full" name="address[phone]" value="{{ form.phone }}">
             </div>
           </div>
-
-          <p>
-            {{ form.set_as_default_checkbox }}
-            <label for="address_default_address_{{ form.id }}" class="inline">{{ 'customer.addresses.set_default' | t }}</label>
-          </p>
-
-          <p><input type="submit" class="btn" value="{{ 'customer.addresses.update' | t }}"></p>
-          <p><a href="#" onclick="Shopify.CustomerAddress.toggleForm({{ form.id }}); return false;">{{ 'customer.addresses.cancel' | t }}</a></p>
-
-          <hr>
+           <div class="grid">
+          <div class="tobble-checkbox">
+          {{ form.set_as_default_checkbox }}
+          <label for="address_default_address_new" class="inline">{{ 'customer.addresses.set_default' | t }}</label>
+          </div>
+          </div>
+        <div class="bottom-button-box">
+      <buttion type="submit" class="primary-button">{{ 'customer.addresses.update' | t }}</buttion>
+        <a href="#" onclick="Shopify.CustomerAddress.toggleForm({{ form.id }}); return false;">{{ 'customer.addresses.cancel' | t }}</a>
+        </div>
         </div>
       {% endform %}
 
