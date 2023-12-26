@@ -106,7 +106,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
         <p>{{ address.phone }}</p>
       </div>
     </div>    
-    <div id="edit_address_{{address.id}}" class="customer_address edit_address" style="display:none;">
+    <div id="EditAddress_{{ address.id }}" class="customer_address edit_address" style="display:none;">
       {% form 'customer_address', address %}
         <table class="customer_address_table">
           <tr>
