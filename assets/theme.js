@@ -132,11 +132,12 @@ function SelectVariant(event) {
       ChnageVaiantImg(event)
     }else{
       ChangeSize(event)
-      console.log(event)
+      
     }
 }
 
 function ChangeSize(event){
+   console.log(event)
    var mainParent = event.closest('.featured-product');
    var SelectorValue = mainParent.querySelectorAll('.size-selector.active');
     var slectedValue = [];
