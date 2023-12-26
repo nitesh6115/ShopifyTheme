@@ -241,7 +241,6 @@ function ChnageVaiantImg(event) {
     swiperNext.classList.add('secondary-button')
     var htmlstring = newDiv.innerHTML
     htmlstring = (htmlstring.trim) ? htmlstring.trim() : htmlstring.replace(/^\s+/,'');
-    
     if(htmlstring == '') {
     JsonScript.forEach(images => {
             var swiperWrapp = document.createElement('div');
