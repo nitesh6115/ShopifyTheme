@@ -90,7 +90,7 @@
         ],
         "settings": {
           "color_scheme": "background-1",
-          "page-width": "wrapper-width",
+          "page-width": "narrow-width",
           "show_payment_icons": false,
           "show_social_icons": true,
           "newsletter_enable": true,
