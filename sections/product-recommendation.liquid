@@ -19,7 +19,7 @@
   {%- if recommendations.performed and recommendations.products_count > 0 -%}
     
     <div class="page-width">
-      <h2>{{ section.settings.heading }}</h2>
+      <h2 class="heading center">{{ section.settings.heading }}</h2>
       <div class="recommended-products collection-list swiper">
     <div class="swiper-wrapper">
       {%- for product in recommendations.products -%}
