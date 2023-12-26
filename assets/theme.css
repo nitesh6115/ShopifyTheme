@@ -1058,7 +1058,7 @@ div#predictive-search.active {
 }
 
 /* customer */
-#customer {
+#customer, .ContactFormBox {
     max-width: 480px;
     margin: 0 auto;
     text-align: center;
