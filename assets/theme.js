@@ -132,7 +132,6 @@ function SelectVariant(event) {
       ChnageVaiantImg(event)
     }else{
       ChangeSize(event)
-      
     }
 }
 
