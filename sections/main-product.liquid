@@ -218,9 +218,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
         </div>
         {% endif %}
        {% for value in option.values %}
-         <div class="size-selector secondary-button {% if option.selected_value==value
-            %}active{% endif %}" data-title="{{ value | escape }}">
-         
+         <div class="size-selector secondary-button" data-title="{{ value | escape }}">
            <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" onclick="SelectVariant(this)" type="size" data-title="{{ value |escape }}">
             {{ value }}
           </label>
