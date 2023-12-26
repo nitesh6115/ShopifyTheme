@@ -65,7 +65,6 @@
      var prebutton = item.querySelectorAll('.tabingPrev')[0];  
      //console.log(nextbutton)
     const swiperTabs = new Swiper(item, {
-    
     slidesPerView: 2,
     spaceBetween:15,
     initialSlide: 0,
@@ -140,9 +139,9 @@
 
   const productRecommendationsSection = document.querySelector('.product-recommendations');
     
-  const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
+  const observere = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
 
-  observer.observe(productRecommendationsSection);
+  observere.observe(productRecommendationsSection);
 
 </script>
 
