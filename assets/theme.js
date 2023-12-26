@@ -251,7 +251,6 @@ function ChnageVaiantImg(event) {
     })
      mainDiv.append(newDiv)
     }else{
-    
     mainDiv.append(newDiv)
     }
     topcontainer.append(swiperNext)
