@@ -106,7 +106,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
       Also add pagination in case they have a large number of addresses
     {% endcomment %}
     {% for address in customer.addresses %}
-
+     <div class="CustomerAddressList">
       <h3>
         {{ address.first_name | capitalize }} {{ address.last_name | capitalize }}
         {% if address == customer.default_address %}({{ 'customer.addresses.default' | t }}){% endif %}
@@ -188,7 +188,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
         </div>
         </div>
       {% endform %}
-
+</div>
     {% endfor %}
 
     {% if paginate.pages > 1 %}
