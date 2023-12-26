@@ -129,7 +129,7 @@
         ],
         "settings": {
           "color_scheme": "background-1",
-          "bg-color": "linear-gradient(180deg, rgba(2, 2, 2, 1), rgba(15, 15, 15, 1) 100%)",
+          "bg-color": "linear-gradient(90deg, rgba(97, 67, 133, 1), rgba(81, 99, 149, 1) 99%)",
           "page-width": "narrow-width",
           "show-announcement": true,
           "info-menu": "top-heaer-menu",
