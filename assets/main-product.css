@@ -4,6 +4,9 @@
 .EnabledButton{
   cursor: pointer;
 }
+.box-2 .swiper-button-next,.box-2 .swiper-button-prev{
+    display: none;
+}
 .EnabledButton:active {
     transform: translate(0,0) rotate(0) skew(0) skewY(0) scaleX(.95) scaleY(.95);
 }
