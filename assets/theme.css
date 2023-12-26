@@ -3,7 +3,7 @@
   padding:0px;
 }
 body {
-    margin-top: 80px;
+    margin-top: 70px;
 }
 div#shopify-section-header {
     position: fixed;
@@ -837,7 +837,6 @@ div#mini-cart-sucess .image-box img.cart-image {
     width: 60px;
     margin-right: 15px;
 }
-
 
 body.product-toast div#mini-cart-sucess {
  bottom: 20px;
