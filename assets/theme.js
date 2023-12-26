@@ -137,7 +137,7 @@ function SelectVariant(event) {
 }
 
 function ChangeSize(event){
-   console.log(event)
+   
    var mainParent = event.closest('.featured-product');
    var SelectorValue = mainParent.querySelectorAll('.size-selector.active');
     var slectedValue = [];
@@ -165,6 +165,7 @@ function ChangeSize(event){
     var selectType = event.getAttribute('type')
     if (dataAvability == 'true') {
         if (selectType == "size") {
+            console.log(event)
             var checkClass = mainParent.classList.contains('product-page')
             if(checkClass){
               ManiProduct(mainParent, event, variantId)
