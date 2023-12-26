@@ -164,6 +164,19 @@
     text-transform: uppercase;
     margin-top: 35px;
 }
+
+.box-3 .product-variant-images.selector-wrapper .size-selector {
+    border: 0;
+}
+
+.box-3 .product-variant-images.selector-wrapper .size-selector img {
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.box-3 .product-variant-images.selector-wrapper .size-selector.active img {
+    border: 1px solid #ccc;
+}
 .box-3 .product-variant-images.selector-wrapper .size-selector {
     border: 0;
 }
