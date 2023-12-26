@@ -1056,3 +1056,28 @@ div#predictive-search.active {
     bottom: 1.5rem;
     left: 1.5rem;
 }
+
+/* customer */
+div#customer {
+    max-width: 480px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid;
+    border-radius: 30px;
+}
+
+div#customer input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+div#customer label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+div#customer .action_bottom {
+    margin-top: 20px;
+}
