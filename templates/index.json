@@ -10,7 +10,7 @@
             "video_link": "shopify:\/\/files\/videos\/13cf3cfb25b442a2bcb2dca5c1a8dac4.mp4",
             "mobile_video_link": "shopify:\/\/files\/videos\/a6b45b0dfb414f8990e796f2645b0f81.mp4",
             "overlay_opacity": 0,
-            "overlay_opacity_color": "#000",
+            "overlay_opacity_color": "#000000",
             "desktop_content_position": "left-bottom",
             "title": "Shop The Latest",
             "sub-title": "",
@@ -26,7 +26,7 @@
         "92741060-ac5c-43ed-8b37-e5f8844e6267"
       ],
       "settings": {
-        "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
+        "color_scheme": "scheme-8b774548-c370-41e5-9562-2659bf6508dc",
         "width": "wrapper-width",
         "padding_top": 36,
         "padding_bottom": 36
