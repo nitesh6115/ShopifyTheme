@@ -175,11 +175,20 @@ function ChangeSize(event){
     }
 }
 function ManiProduct(element, event, variantId){
-  var addToCartBtn = element.querySelector('.add-to-cart');
-  var SizeValue = event.getAttribute('data-title')
+  const addToCartBtn = element.querySelector('.add-to-cart');
+  const SizeValue = event.getAttribute('data-title')
   addToCartBtn.innerHTML = 'Add '+SizeValue+' To Bag';
   addToCartBtn.classList.add('EnabledButton');
   addToCartBtn.setAttribute('data-id',variantId)
+}
+function AddMainProduct(AddMainProduct) {
+  const checkEnabled = AddMainProduct.classList.contains('EnabledButton');
+  const vid = AddMainProduct.getAttribute('data-id')
+  if(checkEnabled){
+    addtocartitem(vid)
+  }else{
+    AddMainProduct.classList.remove('EnabledButton')
+  }
 }
 function changeActive(event) {
     var mainParent = event.closest('.featured-product');
