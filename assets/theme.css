@@ -1255,3 +1255,9 @@ select#AddressCountryNew {
 .tobble-checkbox input[type="checkbox"]:checked:after {
     visibility: visible;
 }
+.bottom-button-box {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    padding-bottom: 30px;
+}
