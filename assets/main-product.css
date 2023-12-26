@@ -164,7 +164,21 @@
     text-transform: uppercase;
     margin-top: 35px;
 }
+.product-page .box-3 .size-selctor-wrapper .size-selector.Sold-out {
+    background: transparent;
+    border: none;
+    text-decoration: line-through;
+}
 
+.size-selector.Sold-out:hover svg.svgSold {
+    background: #1c1b1b;
+    border-radius: 5px;
+}
+.product-page .box-3 .size-selctor-wrapper .size-selector.Sold-out {
+    background: transparent;
+    border: none;
+    text-decoration: line-through;
+}
 .ColorOptionBox .size-selector {
     padding-right: 8px;
 }
