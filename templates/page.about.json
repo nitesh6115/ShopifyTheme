@@ -10,48 +10,78 @@
         "padding_bottom": 36
       }
     },
-    "aef344e9-62ae-477b-9b0e-0a936d3320c8": {
-      "type": "collection-tabbing",
+    "49e0d1bf-c349-4b6c-8d9d-5fb3ad6a81de": {
+      "type": "video-with-image",
       "blocks": {
-        "d7e3e96e-0698-41c7-a258-5b6f8d498e03": {
-          "type": "content",
+        "fee704bc-bb03-40aa-ab87-bb595195d2af": {
+          "type": "video",
           "settings": {
-            "title": "New Product",
-            "heading": "New Items",
-            "sub_title": "",
-            "slide-collection": "mens-trousers",
-            "shop_all": true,
-            "button_text": "View All"
+            "color_scheme": "background-1",
+            "video_link": "shopify:\/\/files\/videos\/13cf3cfb25b442a2bcb2dca5c1a8dac4.mp4",
+            "mobile_video_link": "shopify:\/\/files\/videos\/a6b45b0dfb414f8990e796f2645b0f81.mp4",
+            "overlay_opacity": 0,
+            "overlay_opacity_color": "#000",
+            "desktop_content_position": "bottom-center",
+            "title": "",
+            "sub-title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "second_button_label": "",
+            "second_button_link": ""
           }
         },
-        "d90786ae-fca1-4cc3-b2d4-63027c165d91": {
-          "type": "content",
+        "086e6d73-55d2-4d26-b862-8f99fa4fba81": {
+          "type": "image",
           "settings": {
-            "title": "Explore The Best",
-            "heading": "The Best",
-            "sub_title": "",
-            "slide-collection": "unisex-bags",
-            "shop_all": true,
-            "button_text": "View All"
+            "color_scheme": "background-1",
+            "image_bg": "shopify:\/\/shop_images\/47582295_394630424614808_8126913247421217687_n.jpg",
+            "mobile_image_bg": "shopify:\/\/shop_images\/47582295_394630424614808_8126913247421217687_n.jpg",
+            "overlay_opacity": 20,
+            "overlay_opacity_color": "#000",
+            "desktop_content_position": "bottom-center",
+            "title": "Image slide",
+            "sub-title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "second_button_label": "",
+            "second_button_link": ""
+          }
+        },
+        "cc874bb1-6d8f-4595-af07-09a1b6b2f6cb": {
+          "type": "video",
+          "settings": {
+            "color_scheme": "background-1",
+            "video_link": "shopify:\/\/files\/videos\/Bella Tunno Happy Teether.mp4",
+            "overlay_opacity": 0,
+            "overlay_opacity_color": "#000",
+            "desktop_content_position": "bottom-center",
+            "title": "",
+            "sub-title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "second_button_label": "",
+            "second_button_link": ""
           }
         }
       },
       "block_order": [
-        "d7e3e96e-0698-41c7-a258-5b6f8d498e03",
-        "d90786ae-fca1-4cc3-b2d4-63027c165d91"
+        "fee704bc-bb03-40aa-ab87-bb595195d2af",
+        "086e6d73-55d2-4d26-b862-8f99fa4fba81",
+        "cc874bb1-6d8f-4595-af07-09a1b6b2f6cb"
       ],
       "settings": {
         "color_scheme": "",
         "width": "full-width",
         "padding_top": 36,
-        "padding_bottom": 36,
-        "show-view-all": false,
-        "enable-slider-arrow": true
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "main",
-    "aef344e9-62ae-477b-9b0e-0a936d3320c8"
+    "49e0d1bf-c349-4b6c-8d9d-5fb3ad6a81de"
   ]
 }
