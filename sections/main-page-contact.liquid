@@ -12,10 +12,11 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
 </style>
 <div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
   <div class="CustomerContactPage {% if section.settings.width == 'full-width' %}full-width{% elsif section.settings.width == 'wrapper-width' %}page-width{% else %} narrow-width {% endif %}">
-    <div id="admin_header" class="center">
+    
+    <div class="ContactFormBox">
+      <div id="admin_header" class="center">
   <h1 class="section-header__left">{{ page.title }}</h1>
     </div>
-    <div class="ContactFormBox">
     {%- liquid
       assign contact_form_class = 'isolate'
       if settings.animations_reveal_on_scroll
