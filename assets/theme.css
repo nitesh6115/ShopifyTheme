@@ -1213,3 +1213,7 @@ div#AddAddress h2 {
     border-bottom: 1px solid;
     padding-bottom: 30px;
 }
+select#AddressCountryNew {
+    width: 100%;
+    margin-bottom: 20px;
+}
