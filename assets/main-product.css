@@ -115,12 +115,13 @@
     flex-direction: column;
 }
 
-.product-page .box-3 {}
-
 .product-page .box-3 .quick-add-wrapper {
     position: relative;
     bottom: inherit !important;
     background: transparent;
+    padding-top: 40px;
+    margin: 0;
+    width: 100%;
 }
 
 .product-page .box-3 .quick-add {
@@ -129,6 +130,9 @@
 
 .product-page .box-3 .size-selctor-wrapper {
     border: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .product-page .box-3 .size-selector {font-size: 12px;font-weight: normal;border: 1px solid var(--color-border);margin: 8px;min-width: 40px;min-height: 40px;text-transform: uppercase;}
