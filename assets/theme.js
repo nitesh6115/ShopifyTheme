@@ -163,6 +163,8 @@ function ChangeSize(event){
     var selectType = event.getAttribute('type')
     if (dataAvability == 'true') {
         if (selectType == "size") {
+            var checkClass = mainParent.classList.contains('product-page')
+            console.log(checkClass)
             addtocartitem(variantId)
         }
     } else {
