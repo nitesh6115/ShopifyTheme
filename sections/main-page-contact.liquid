@@ -47,6 +47,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
       {%- endif -%}
       <div class="contact__fields">
         <div class="field">
+          <label class="field__label" for="ContactForm-name">Name</label>
           <input
             class="field__input"
             autocomplete="name"
@@ -56,9 +57,11 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
             value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
             placeholder="Name"
           >
-          <label class="field__label" for="ContactForm-name">Name</label>
-        </div>
+            </div>
         <div class="field field--with-error">
+          <label class="field__label" for="ContactForm-email">
+           Email
+            <span aria-hidden="true">*</span></label>
           <input
             autocomplete="email"
             type="email"
@@ -75,10 +78,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
             {% endif %}
             placeholder="Email"
           >
-          <label class="field__label" for="ContactForm-email">
-           Email
-            <span aria-hidden="true">*</span></label
-          >
+          
           {%- if form.errors contains 'email' -%}
             <small class="contact__field-error" id="ContactForm-email-error">
               <span class="visually-hidden">Error</span>
@@ -91,6 +91,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
         </div>
       </div>
       <div class="field">
+         <label class="field__label" for="ContactForm-phone">Phone number</label>
         <input
           type="tel"
           id="ContactForm-phone"
@@ -101,9 +102,12 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
           value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
           placeholder="Phone number"
         >
-        <label class="field__label" for="ContactForm-phone">Phone number</label>
+       
       </div>
       <div class="field">
+        <label class="form__label field__label" for="ContactForm-body">
+          Comment
+        </label>
         <textarea
           rows="10"
           id="ContactForm-body"
@@ -113,9 +117,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
         >
           {{- form.body -}}
         </textarea>
-        <label class="form__label field__label" for="ContactForm-body">
-          Comment
-        </label>
+        
       </div>
       <div class="contact__button">
         <button type="submit" class="button primar-button">
