@@ -132,6 +132,7 @@ function SelectVariant(event) {
       ChnageVaiantImg(event)
     }else{
       ChangeSize(event)
+      console.log(event)
     }
 }
 
