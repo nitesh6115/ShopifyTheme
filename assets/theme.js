@@ -174,8 +174,8 @@ function ChangeSize(event){
 
     }
 }
-function ManiProduct(element, SizeValue, variantId){
-  console.log(SizeValue)
+function ManiProduct(element, event, variantId){
+  console.log(event.getAttribute('data-title'))
 }
 function changeActive(event) {
     var mainParent = event.closest('.featured-product');
