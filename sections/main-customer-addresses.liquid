@@ -85,10 +85,12 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
           </div>
         </div>
 
-        <p>
+        <div class="grid">
+      <div class="tobble-checkbox">
           {{ form.set_as_default_checkbox }}
           <label for="address_default_address_new" class="inline">{{ 'customer.addresses.set_default' | t }}</label>
-        </p>
+      </div
+        </div>
 
         <p><input type="submit" class="btn" value="{{ 'customer.addresses.add' | t }}"></p>
         <p><a href="#" onclick="Shopify.CustomerAddress.toggleNewForm(); return false;">{{ 'customer.addresses.cancel' | t }}</a></p>
