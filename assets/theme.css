@@ -1217,3 +1217,41 @@ select#AddressCountryNew {
     width: 100%;
     margin-bottom: 20px;
 }
+.tobble-checkbox {
+    text-align: center;
+}
+
+.tobble-checkbox input[type="checkbox"] {
+    width: 50px !important;
+    position: relative;
+    height: 22px;
+}
+
+.tobble-checkbox input[type="checkbox"]:before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    background: #fff;
+    border-radius: 100%;
+    transition: 0.25s ease-in-out;
+}
+.tobble-checkbox input[type="checkbox"]:after {
+    content: "\2713";
+    position: absolute;
+    top:2px;
+    color: #000;
+    font-weight: bold;
+    left: 34px;
+    transition: opacity 0.5s ease-in-out;
+    visibility: hidden;
+}
+.tobble-checkbox input[type="checkbox"]:checked:before {
+    left: 29px;
+    transition: 0.25s ease-in-out;
+}
+.tobble-checkbox input[type="checkbox"]:checked:after {
+    visibility: visible;
+}
