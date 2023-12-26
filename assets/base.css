@@ -331,7 +331,7 @@ button:hover,.button:hover,
   background: #000;
   color: #fff;
 }
-input,select{
+input,select,textarea{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
