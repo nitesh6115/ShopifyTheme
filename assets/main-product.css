@@ -37,6 +37,22 @@
   gap: 2rem;
   z-index: 3;
 }
+.box-3 .product-variant-container {
+    border: 1px solid;
+}
+
+.product-page .box-3 .size-selctor-wrapper .size-guide {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+.product-page .box-3 .size-selctor-wrapper .size-selector {}
+
 .FeaturedImages {
     padding: 0 30px;
 }
