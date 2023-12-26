@@ -176,8 +176,10 @@ function ChangeSize(event){
 }
 function ManiProduct(element, event, variantId){
   var addToCartBtn = element.querySelector('.add-to-cart');
-  console.log(addToCartBtn)
-  console.log(event.getAttribute('data-title'))
+  var SizeValue = event.getAttribute('data-title')
+  addToCartBtn.innerHTML = 'Add'+SizeValue+'To Bag';
+  addToCartBtn.classList.add('EnabledButton');
+  addToCartBtn.setAttribute('data-id',variantId)
 }
 function changeActive(event) {
     var mainParent = event.closest('.featured-product');
