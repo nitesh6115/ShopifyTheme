@@ -1145,3 +1145,33 @@ a#view_address {
     padding: 10px 0;
     display: block;
 }
+div#order_address {
+    width: 30%;
+    padding: 30px;
+    border-right: 1px solid;
+}
+.OrderDtails {
+    width: 70%;
+    padding: 30px;
+}
+table#order_details {
+    border-collapse: collapse;
+}
+
+table#order_details th {
+    border-bottom: 1px solid;
+}
+
+table#order_details th, table#order_details td {
+    padding: 10px;
+    text-align: left;
+}
+
+h5.order_section_title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+div#order_payment > p {
+    margin-bottom: 10px;
+}
