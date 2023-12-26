@@ -193,12 +193,12 @@
           "3345df66-f129-4d8e-b079-d0b861656e11"
         ],
         "settings": {
-          "color_scheme": "scheme-7a614fe9-e7cf-4c3c-bca6-0218bcaf7f62",
+          "color_scheme": "background-1",
           "search_label": "Search products...",
           "populer-serach-heading": "POPULAR SEARCHES",
           "populer-products": "TRANDING PRODUCTS",
           "collection": "mens",
-          "product-per-row": 3
+          "product-per-row": 4
         }
       }
     },
