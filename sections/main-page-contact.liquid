@@ -26,13 +26,13 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
     {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
       {%- if form.posted_successfully? -%}
         <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
-          {% render 'icon-success' %}
+          
           Thanks for contacting us. We'll get back to you as soon as possible.
         </h2>
       {%- elsif form.errors -%}
         <div class="form__message">
           <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
-            {% render 'icon-error' %}
+            
             Please adjust the following:
           </h2>
         </div>
