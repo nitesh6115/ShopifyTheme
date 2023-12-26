@@ -16,11 +16,11 @@
         "fee704bc-bb03-40aa-ab87-bb595195d2af": {
           "type": "video",
           "settings": {
-            "color_scheme": "background-1",
+            "color_scheme": "scheme-0bfea3ae-e3eb-4aeb-af16-a1397b6b6630",
             "video_link": "shopify:\/\/files\/videos\/13cf3cfb25b442a2bcb2dca5c1a8dac4.mp4",
             "mobile_video_link": "shopify:\/\/files\/videos\/a6b45b0dfb414f8990e796f2645b0f81.mp4",
             "overlay_opacity": 0,
-            "overlay_opacity_color": "#000",
+            "overlay_opacity_color": "#000000",
             "desktop_content_position": "bottom-center",
             "title": "",
             "sub-title": "",
@@ -34,11 +34,11 @@
         "086e6d73-55d2-4d26-b862-8f99fa4fba81": {
           "type": "image",
           "settings": {
-            "color_scheme": "background-1",
+            "color_scheme": "scheme-0bfea3ae-e3eb-4aeb-af16-a1397b6b6630",
             "image_bg": "shopify:\/\/shop_images\/47582295_394630424614808_8126913247421217687_n.jpg",
             "mobile_image_bg": "shopify:\/\/shop_images\/47582295_394630424614808_8126913247421217687_n.jpg",
             "overlay_opacity": 20,
-            "overlay_opacity_color": "#000",
+            "overlay_opacity_color": "#000000",
             "desktop_content_position": "bottom-center",
             "title": "Image slide",
             "sub-title": "",
@@ -55,7 +55,7 @@
             "color_scheme": "scheme-0bfea3ae-e3eb-4aeb-af16-a1397b6b6630",
             "video_link": "shopify:\/\/files\/videos\/Bella Tunno Happy Teether.mp4",
             "overlay_opacity": 0,
-            "overlay_opacity_color": "#000",
+            "overlay_opacity_color": "#000000",
             "desktop_content_position": "bottom-center",
             "title": "",
             "sub-title": "",
