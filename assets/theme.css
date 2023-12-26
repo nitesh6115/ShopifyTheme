@@ -1071,7 +1071,9 @@ div#predictive-search.active {
     width: 100%;
     margin-bottom: 10px;
 }
-
+#customer label{
+  text-align: left;
+}
 #customer label, #ContactForm label, #recover-password label {
     font-weight: bold;
     margin-bottom: 5px;
