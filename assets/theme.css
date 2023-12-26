@@ -1072,7 +1072,7 @@ div#predictive-search.active {
     margin-bottom: 10px;
 }
 
-#customer label, #ContactForm input {
+#customer label, #ContactForm label {
     font-weight: bold;
     margin-bottom: 5px;
     display: block;
