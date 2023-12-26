@@ -10,20 +10,48 @@
         "padding_bottom": 36
       }
     },
-    "82145cc4-fe0e-46f4-b4d9-bdb842e7c077": {
-      "type": "collection-list",
+    "aef344e9-62ae-477b-9b0e-0a936d3320c8": {
+      "type": "collection-tabbing",
+      "blocks": {
+        "d7e3e96e-0698-41c7-a258-5b6f8d498e03": {
+          "type": "content",
+          "settings": {
+            "title": "New Product",
+            "heading": "New Items",
+            "sub_title": "",
+            "slide-collection": "mens-trousers",
+            "shop_all": true,
+            "button_text": "View All"
+          }
+        },
+        "d90786ae-fca1-4cc3-b2d4-63027c165d91": {
+          "type": "content",
+          "settings": {
+            "title": "Explore The Best",
+            "heading": "The Best",
+            "sub_title": "",
+            "slide-collection": "unisex-bags",
+            "shop_all": true,
+            "button_text": "View All"
+          }
+        }
+      },
+      "block_order": [
+        "d7e3e96e-0698-41c7-a258-5b6f8d498e03",
+        "d90786ae-fca1-4cc3-b2d4-63027c165d91"
+      ],
       "settings": {
-        "width": "wrapper-width",
-        "title": "",
-        "sub-title": "",
-        "menu": "main-menu",
-        "show-view-all": true,
-        "desktop_column": 5
+        "color_scheme": "",
+        "width": "full-width",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "show-view-all": false,
+        "enable-slider-arrow": true
       }
     }
   },
   "order": [
     "main",
-    "82145cc4-fe0e-46f4-b4d9-bdb842e7c077"
+    "aef344e9-62ae-477b-9b0e-0a936d3320c8"
   ]
 }
