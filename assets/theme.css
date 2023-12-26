@@ -847,7 +847,13 @@ body.product-toast div#mini-cart-sucess {
 .footer-top-wrapper {
     display: flex;
 }
+.LinksInfo:first-child {
+    padding-left: 0;
+}
 
+.newsletter-content-wrapper {
+    padding-right: 0;
+}
 .newsletter-content-wrapper {
     max-width: 400px;
     margin-left: auto;
