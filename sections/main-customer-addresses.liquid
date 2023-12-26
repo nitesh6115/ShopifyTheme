@@ -19,12 +19,10 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
 
   <div id="admin_header" class="center">
   <h1 class="section-header__left">{{ 'customer.account.title' | t }}</h1>
-  <div class="grid__item one-third medium-down--one-whole">
-  <p><a href="/account">{{ 'customer.account.return' | t }}</a></p>
-  </div>
   <div class="section-header__right">
   <a href="#" class="primary-button button" onclick="Shopify.CustomerAddress.toggleNewForm(); return false;">{{ 'customer.addresses.add_new' | t }}</a>
   </div>
+  <a href="/account">{{ 'customer.account.return' | t }}</a>
   </div>
 
 <div class="grid">
