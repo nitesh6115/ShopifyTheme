@@ -27,6 +27,11 @@
  color: {{ scheme.settings.button-text }};
  background: {{ scheme.settings.button-background }};
 }
+ .color-{{ scheme.id }}  .product-page .box-3 .size-selctor-wrapper .size-selector.active{
+    color: {{ scheme.settings.secondary-button-hover-text }};
+  background: {{ scheme.settings.secondary-button-hover-background }};
+  border: 1px solid {{ scheme.settings.secondary-button-hover-border-color}};
+  }
   .color-{{ scheme.id }} input, .color-{{ scheme.id }} select, .color-{{ scheme.id }} textarea{
   color: {{ scheme.settings.text }};
     border-color: {{ scheme.settings.color-border }};
@@ -35,6 +40,7 @@
 .color-{{ scheme.id }} .header-content.menu-active .header{
   border-bottom: 1px solid {{ scheme.settings.color-border }};
 }
+  
 .color-{{ scheme.id }} #nav-quick-search-container {
   {% if scheme.settings.background_gradient != empty %}
     background: {{ scheme.settings.background_gradient }};
