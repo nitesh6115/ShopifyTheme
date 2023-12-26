@@ -1280,3 +1280,26 @@ div#order_payment > p {
     text-align: center;
     margin-bottom: 15px;
 }
+@media(max-width: 1024px){
+  div#customer_sidebar {
+    width: 100%;
+    padding: 20px;
+}
+
+div#customer_orders {
+    width: 100%;
+    padding: 20px;
+}
+div#order_address {
+    width: 100%;;
+    padding: 20px;
+}
+.OrderDtails {
+    width: 100%;
+    padding: 20px;
+}
+  .CustomerAddressBox .CustomerAddressList {
+    width: 100%;
+    padding: 20px;
+}
+}
