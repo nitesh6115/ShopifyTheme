@@ -160,7 +160,7 @@ function ChangeSize(event){
             dataAvability = item.getAttribute('data-avability');
         }
     })
-     //console.log(soldOut);
+    console.log(soldOut);
 
     var selectType = event.getAttribute('type')
     if (dataAvability == 'true') {
