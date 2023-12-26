@@ -1175,3 +1175,41 @@ h5.order_section_title {
 div#order_payment > p {
     margin-bottom: 10px;
 }
+.section-header__right {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.AddressDetails {
+    padding: 30px;
+}
+
+div#AddAddress input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+div#AddAddress label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+div#AddAddress {}
+
+div#AddAddress .grid {
+    padding: 30px;
+    max-width: 480px;
+    margin: 20px auto;
+    border: 1px solid;
+    border-radius: 30px;
+}
+
+div#AddAddress h2 {
+    text-align: center;
+    border-bottom: 1px solid;
+    padding-bottom: 30px;
+}

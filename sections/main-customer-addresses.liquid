@@ -25,8 +25,11 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
   <a href="/account">{{ 'customer.account.return' | t }}</a>
   </div>
 
-<div class="AddressDetails">
+<div class="grid">
+
+
   <div class="grid__item two-thirds medium-down--one-whole">
+
     {% comment %}
       Add address form, hidden by default
     {% endcomment %}
