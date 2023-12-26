@@ -175,6 +175,8 @@ function ChangeSize(event){
     }
 }
 function ManiProduct(element, event, variantId){
+  var addToCartBtn = element.querySelector('.add-to-cart');
+  console.log(addToCartBtn)
   console.log(event.getAttribute('data-title'))
 }
 function changeActive(event) {
