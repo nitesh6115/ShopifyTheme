@@ -1077,7 +1077,13 @@ div#predictive-search.active {
     margin-bottom: 5px;
     display: block;
 }
+#ContactForm label {
+    text-align: left;
+}
 
+#ContactForm {
+    padding-top: 30px;
+}
 #customer .action_bottom {
     margin-top: 20px;
 }
