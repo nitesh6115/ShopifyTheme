@@ -165,7 +165,7 @@ function ChangeSize(event){
         if (selectType == "size") {
             var checkClass = mainParent.classList.contains('product-page')
             if(checkClass){
-              ManiProduct(mainParent, SelectValue, variantId)
+              ManiProduct(mainParent, event, variantId)
             }else{
               addtocartitem(variantId)
             }
