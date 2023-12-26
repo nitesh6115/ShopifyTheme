@@ -1067,7 +1067,7 @@ div#predictive-search.active {
     border-radius: 30px;
 }
 
-#customer input, #ContactForm input {
+#customer input, #ContactForm input, #ContactForm textarea {
     width: 100%;
     margin-bottom: 10px;
 }
