@@ -1058,7 +1058,7 @@ div#predictive-search.active {
 }
 
 /* customer */
-#customer, .ContactFormBox {
+#customer, .ContactFormBox, #recover-password {
     max-width: 480px;
     margin: 0 auto;
     text-align: center;
@@ -1067,12 +1067,12 @@ div#predictive-search.active {
     border-radius: 30px;
 }
 
-#customer input, #ContactForm input, #ContactForm textarea {
+#customer input, #recover-password input, #recover-password textarea, #ContactForm input, #ContactForm textarea {
     width: 100%;
     margin-bottom: 10px;
 }
 
-#customer label, #ContactForm label {
+#customer label, #ContactForm label, #recover-password label {
     font-weight: bold;
     margin-bottom: 5px;
     display: block;
