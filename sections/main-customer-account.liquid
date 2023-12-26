@@ -13,7 +13,8 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
 
 <div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
   <div class="CustomerAccountPage {% if section.settings.width == 'full-width' %}full-width{% elsif section.settings.width == 'wrapper-width' %}page-width{% else %} narrow-width {% endif %}">
-<div id="admin_header" class="center">
+<div class="CustomerInfo border-all radius-30">
+    <div id="admin_header" class="center">
   <h2 class="title">Account Details and Order History</h2>
 </div>
 <div class="CustomerData">
@@ -65,6 +66,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
     <p>You haven't placed any orders yet.</p>
   {% endif %}
 </div>
+  </div>
   </div>
   </div>
 </div>
