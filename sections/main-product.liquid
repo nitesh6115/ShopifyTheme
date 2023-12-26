@@ -159,7 +159,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
           <div class="size-selector" data-title="{{ value | escape }}">
           <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" onclick="SelectVariant(this)" type="color" data-title="{{ value | escape }}">
            <div class="variant-images radius-5 overflow-hidden">
-              <img width="{{ image.width }}" height="{{ image.height }}" loading="lazy" alt="{{ image.alt }}" src="{{image.src| img_url: '60x60' }}">
+              <img width="{{ image.width }}" height="{{ image.height }}" loading="lazy" alt="{{ image.alt }}" srcset="{{image.src| img_url: '60x60' }}">
              </div>
              </label>
           <input  class="VarImage"
@@ -188,7 +188,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
           
            <label  onclick="SelectVariant(this)" type="color" data-title="{{ value | escape }}">
            <div class="variant-images radius-5 overflow-hidden">
-              <img  width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt }}" loading="lazy" src="{{image.src| img_url: '60x60' }}">
+              <img  width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt }}" loading="lazy" srcset="{{image.src| img_url: '60x60' }}">
              </div>
              </label>
          </div>
