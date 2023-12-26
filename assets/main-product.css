@@ -1,6 +1,9 @@
 .featured-product .page-width {
     MAX-WIDTH: 1650PX;
 }
+.EnabledButton{
+  cursor: pointer;
+}
 .EnabledButton:active {
     transform: translate(0,0) rotate(0) skew(0) skewY(0) scaleX(.95) scaleY(.95);
 }
