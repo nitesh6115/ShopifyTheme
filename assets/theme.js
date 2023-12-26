@@ -155,7 +155,7 @@ function ChangeSize(event){
         var text = item.innerText
         
         if (text === Selector) {
-            //console.log(text)
+            console.log(text)
             variantId = item.value
             dataAvability = item.getAttribute('data-avability');
         }
