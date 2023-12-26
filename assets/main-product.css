@@ -164,6 +164,9 @@
     text-transform: uppercase;
     margin-top: 35px;
 }
+.box-3 .product-variant-images.selector-wrapper .size-selector {
+    border: 0;
+}
 .product-page .box-3 .size-selctor-wrapper .size-selector.Sold-out {
     background: transparent;
     border: none;
