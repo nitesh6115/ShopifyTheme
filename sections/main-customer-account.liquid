@@ -1,7 +1,125 @@
+<style>
+.section-{{ section.id }}-padding {
+padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+}
+@media screen and (min-width: 750px) {
+  .section-{{ section.id }}-padding {
+  padding-top: {{ section.settings.padding_top }}px;
+  padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+}
+</style>
+
+<div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
+  <div class="CustomerAccountPage {% if section.settings.width == 'full-width' %}full-width{% elsif section.settings.width == 'wrapper-width' %}page-width{% else %} narrow-width {% endif %}">
+  
+<div id="admin_header">
+  <div class="action_link action_return note" id='return_to_store'><a href="{{ shop.url }}">Return to Store</a></div>
+  <h2 class="title">Account Details and Order History</h2>
+</div>
+
+<div id="customer_sidebar">
+  <div id="customer_detail" class="group">
+    <h5 class="name">{{ customer.name }}</h5>
+    <p class="email note">{{ customer.email }}</p>
+    <div class="address note">
+      {% if customer.default_address != nil %}
+        <p>{{ customer.default_address.address1 }}</p>
+        {% if customer.default_address.address2 != "" %}
+          <p>{{ customer.default_address.address2 }}</p>
+        {% endif %}
+        <p>{{ customer.default_address.city}}, {% if address.province_code %}{{customer.default_address.province_code}}, {% endif %}{{customer.default_address.country}}</p>
+        <p>{{ customer.default_address.zip}}</p>
+        <p>{{ customer.default_address.phone }}</p>
+      {% endif %}
+      <a id="view_address" href="/account/addresses">View Addresses ({{ customer.addresses_count }})</a>
+    </div>
+
+  </div>
+</div>
+
+<div id="customer_orders">
+  {% if customer.orders.size != 0 %}
+  <table>
+    <thead>
+      <tr>
+        <th class="order_number">Order</th>
+        <th class="date">Date</th>
+        <th class="payment_status">Payment Status</th>
+        <th class="fulfillment_status">Fulfillment Status</th>
+        <th class="total">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for order in customer.orders %}
+      <tr class="{% cycle 'odd', 'even' %} {% if order.cancelled %}cancelled_order{% endif %}">
+        <td>{{ order.name | link_to: order.customer_url }}</td>
+        <td><span class="note">{{ order.created_at | date: "%b %d, %Y" }}</span></td>
+        <td><span class="status_{{ order.financial_status }}">{{ order.financial_status }}</span></td>
+        <td><span class="status_{{ order.fulfillment_status }}">{{ order.fulfillment_status }}</span></td>
+        <td><span class="total money">{{ order.total_price | money }}</span></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+    <p>You haven't placed any orders yet.</p>
+  {% endif %}
+</div>
+  </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Customer Account",
+    "settings": [
+       {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Choose Color Schema",
+      "default": "background-1"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Page width",
+      "options": [
+        {
+          "value": "full-width",
+          "label": "Full Width"
+        },
+        {
+          "value": "wrapper-width",
+          "label": "Wrapper Width"
+        },
+        {
+          "value": "narrow-width",
+          "label": "Narrow width"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "padding_bottom",
+      "default": 36
+    }
+    ]
   }
 {% endschema %}
 
