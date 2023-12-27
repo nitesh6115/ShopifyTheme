@@ -45,8 +45,7 @@
     left: 3px;
     bottom: 3px;
     transition: left.2s linear 0s,transform .2s ease-out 0s;
-    background-color: #119DA4;
-    border-radius: 30px;
+    border-radius: 100%;
     z-index: 1;
 }
 
