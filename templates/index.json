@@ -53,6 +53,7 @@
             "heading": "CLASSIC BELTS",
             "sub_title": "New",
             "slide-collection": "womens",
+            "total_products": 8,
             "shop_all": true,
             "button_text": "View All"
           }
@@ -64,6 +65,7 @@
             "heading": "SUDE BELTS",
             "sub_title": "Tranding",
             "slide-collection": "mens",
+            "total_products": 8,
             "shop_all": true,
             "button_text": "Shop Now"
           }
@@ -75,6 +77,7 @@
             "heading": "COLOUR BELTS",
             "sub_title": "Latest",
             "slide-collection": "all",
+            "total_products": 8,
             "shop_all": true,
             "button_text": "View All"
           }
@@ -86,6 +89,7 @@
             "heading": "WOOL BELTS",
             "sub_title": "Tranding",
             "slide-collection": "mens-knitwear",
+            "total_products": 8,
             "shop_all": false,
             "button_text": "View All"
           }
@@ -97,6 +101,7 @@
             "heading": "LEATHER BELTS",
             "sub_title": "New",
             "slide-collection": "mens-trousers",
+            "total_products": 8,
             "shop_all": true,
             "button_text": "View ALL"
           }
@@ -108,6 +113,7 @@
             "heading": "NEW BELTS",
             "sub_title": "Bestseller",
             "slide-collection": "womens-accessories",
+            "total_products": 8,
             "shop_all": true,
             "button_text": "Shop Now"
           }
@@ -126,8 +132,7 @@
         "width": "wrapper-width",
         "padding_top": 36,
         "padding_bottom": 36,
-        "show-view-all": false,
-        "enable-slider-arrow": true
+        "rows": 4
       }
     },
     "9ac45232-d4da-4400-b33b-469cbb27e83e": {
