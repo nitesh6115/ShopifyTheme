@@ -667,6 +667,7 @@ img.feature-image {
     font-size: 12px;
     font-weight: bold;
     padding: 15px 5px;
+    line-height: 1;
 }
 
 .quick-add-wrapper .size-selctor-wrapper {
@@ -678,7 +679,7 @@ img.feature-image {
 }
 
 .featured-product:hover .quick-add-wrapper {
-    bottom: -51px;
+    bottom: -58px;
     z-index: 99;
 }
 
