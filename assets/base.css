@@ -82,13 +82,13 @@ h1,.heading{
   font-family: var(--main-heading-font);
   font-style: var(--main-heading-font-style);
   font-weight: var(--main-heading-font-weight);
-  font-size: var(--main-heading-font-size)px;
+  font-size: var(--main-heading-font-size);
 }
 h2,.sub-heading{
   font-family: var(--heading-font);
   font-style: var(--heading-font-style);
   font-weight: var(--heading-font-weight);
-  font-size: var(--heading-font-size)px;
+  font-size: var(--heading-font-size);
 }
 h3,
 h4,
