@@ -699,10 +699,6 @@ img.feature-image {
     margin-bottom: 5px;
     cursor: pointer;
 }
-
-.quick-add-wrapper .size-selctor-wrapper .size-selector:hover {
-    background: #3b3b3b;
-}
 .quick-add-wrapper .selector-wrapper {
     display: flex;
     flex-direction: column;
