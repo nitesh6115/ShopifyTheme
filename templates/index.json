@@ -15,10 +15,10 @@
             "title": "<p>NEW<br\/>ARRIVALS<\/p>",
             "sub-title": "",
             "text": "<p>New Amplify and pump covers!<\/p>",
-            "button_label": "View All",
+            "button_label": "SHOP MENS",
             "button_link": "shopify:\/\/collections\/all",
-            "second_button_label": "Learn More",
-            "second_button_link": "shopify:\/\/pages\/faq"
+            "second_button_label": "SHOP WOMENS",
+            "second_button_link": "shopify:\/\/collections\/all"
           }
         }
       },
