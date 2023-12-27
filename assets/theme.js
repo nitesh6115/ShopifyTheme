@@ -635,7 +635,7 @@ function TabContent(TabContent) {
   const Heading = TabContent.getAttribute('data-heading');
   const SubHeading = TabContent.getAttribute('data-sub');
   const TabTitle = TabContent.getAttribute('data-title');
-  const ParentDiv = TabContent.closeset('.CarsoulBox');
+  const ParentDiv = TabContent.closest('.CarsoulBox');
   const SliderDiv = ParentDiv.querySelector('TabProductBox');
   console.log(SliderDiv)
 }
