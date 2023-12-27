@@ -639,9 +639,7 @@ function TabContent(TabContent) {
   const SliderDiv = ParentDiv.querySelector('.TabProductBox');
   const TabLink = ParentDiv.querySelectorAll('.tablinks');
   const TabDirection = ParentDiv.querySelector('tabs__nav-decoration');
-  console.log(SliderDiv)
   const LeftValue = 0;
-  console.log(TabLink)
   TabLink.forEach(item => {
         item.classList.remove('active')
         const title = item.getAttribute('data-title');
