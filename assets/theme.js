@@ -648,7 +648,9 @@ function TabContent(TabContent) {
     change_heading_element.style.opacity = "0";
     change_heading_element.classList.add('fadein')
     change_heading_element.innerHTML = Heading;
+    setTimeout(() => {
     change_heading_element.style.opacity = "1";
+    },10)
   }else{
     change_heading_element.classList.add('hide')
   }
@@ -657,7 +659,9 @@ function TabContent(TabContent) {
     change_sub_heading_element.classList.remove('hide');
     change_sub_heading_element.classList.add('fadein')
     change_sub_heading_element.innerHTML = SubHeading;
+    setTimeout(() => {
     change_sub_heading_element.style.opacity = "1";
+    },10)
   }else{
     change_sub_heading_element.classList.add('hide')
   }
@@ -667,7 +671,9 @@ function TabContent(TabContent) {
     show_button.classList.add('fadein')
     const html = '<a href="'+CollectionHandle+'"class="cta-btn primary-button">'+ButtonText+'</a>';
     show_button.innerHTML = html;
+    setTimeout(() => {
     show_button.style.opacity = "1";
+    },10)
   }else{
     show_button.classList.add('hide')
   }
