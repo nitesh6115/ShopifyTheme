@@ -44,18 +44,18 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
                         <div class="Tabbing-Title">
                           {% assign loopindex = 0 %}
                           {% for block in section.blocks %}
+                            {% if block.settings.slide-collection != blank and  block.settings.title != blank %}
                           <div 
                             data-index="{{ loopindex }}" 
-                            data-title=""
+                            data-title="{% if block.settings.title != blank %}{{ block.settings.title }}{% else %}NULL{% endif %}"
                             data-heading="{% if block.settings.heading != blank %}{{ block.settings.heading }}{% else %}NULL{% endif %}"
                             data-sub="{% if block.settings.sub_title != blank %}{{ block.settings.sub_title }}{% else %}NULL{% endif %}"
                             data-collection="{% if block.settings.slide-collection != blank %}{{ block.settings.slide-collection }}{% else %}NULL{% endif %}"
                             data-total="{% if block.settings.total_products != blank %}{{ block.settings.total_products }}{% else %}NULL{% endif %}"
                             class="Tab-{{ section.id  }} tablinks {% if loopmainIndex == loopindex %} active {% endif %}" data-id="Tab-{{ section.id  }}{{ forloop.index }}">
-                            {% if block.settings.title != blank %}
-                              {{ block.settings.title }}
-                            {% endif %}
+                            {{ block.settings.title }}
                           </div>
+                          {% endif %}
                           {% assign loopindex = loopindex | plus: 1 %}
                           {% endfor %}
                         </div>
