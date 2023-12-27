@@ -103,7 +103,7 @@ function addtocartitem(item) {
                     var varImg = dataItem.featured_image.url;
                     var varTitle = dataItem.title;
                     var html = '<div class="image-box"><img src="' + varImg + '" class="cart-image" alt="' + varTitle + '"/</div>';
-                    html += '<div class="info-box"><h3>Added to cart</h3><p>' + varTitle + '</p></div>'
+                    html += '<div class="info-box"><h6>Added to cart</h6><p>' + varTitle + '</p></div>'
                     miniCart.innerHTML = html
                 })
                 document.body.classList.add('product-toast');
