@@ -648,8 +648,8 @@ function TabContent(TabContent) {
        if(TabTitle == title){
         const CurrentWidth = item.offsetWidth; 
          console.log(LeftValue)
-         TabDirection.style.width = CurrentWidth;
-         TabDirection.Styel.left = LeftValue;
+         TabDirection.style.width = CurrentWidth+'px';
+         TabDirection.Styel.left = LeftValue+'px';
        }
    })
    TabContent.classList.add('active');     
