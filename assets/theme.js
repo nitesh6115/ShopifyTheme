@@ -645,14 +645,14 @@ function TabContent(TabContent) {
   const TabDirection = ParentDiv.querySelector('.tabs__nav-decoration');
   if(Heading != 'NULL'){
     change_heading_element.classList.remove('hide');
-    show_button.classList.add('fadein')
+    change_heading_element.classList.add('fadein')
     change_heading_element.innerHTML = Heading;
   }else{
     change_heading_element.classList.add('hide')
   }
   if(SubHeading != 'NULL'){
     change_sub_heading_element.classList.remove('hide');
-    show_button.classList.add('fadein')
+    change_sub_heading_element.classList.add('fadein')
     change_sub_heading_element.innerHTML = SubHeading;
   }else{
     change_sub_heading_element.classList.add('hide')
