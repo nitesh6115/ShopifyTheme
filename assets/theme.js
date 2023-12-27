@@ -645,7 +645,7 @@ function TabContent(TabContent) {
   TabLink.forEach(item => {
         item.classList.remove('active')
         const title = item.getAttribute('data-title');
-        
+        console.log(title)
        if(TabTitle == title){
         const width = item.offsetWidth; 
         TabDirection.style.width= item.offsetWidth+'px';
