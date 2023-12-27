@@ -7,6 +7,9 @@ video.video-js {
     padding: 4rem;
     width: 100%;
 }
+.BoxItems .text-box h1 {
+    line-height: 0.8;
+}
 .text-box.banner-content-bottom-center {
     bottom: 0;
     text-align: center;
