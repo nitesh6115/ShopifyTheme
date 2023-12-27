@@ -60,6 +60,7 @@
         },
         "9b284c90-646e-486e-aa49-96ea36b33a51": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "title": "Sude",
             "heading": "SUDE BELTS",
@@ -72,6 +73,7 @@
         },
         "b121d231-65ca-4054-9b6e-6fbfb7b07fb9": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "title": "Colour",
             "heading": "COLOUR BELTS",
@@ -84,6 +86,7 @@
         },
         "7a4bad4a-d484-4064-bca3-0be25bc0b302": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "title": "Wool",
             "heading": "WOOL BELTS",
@@ -96,6 +99,7 @@
         },
         "d757636a-d5ea-4723-a073-43cf755532fb": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "title": "Flex Leather",
             "heading": "LEATHER BELTS",
