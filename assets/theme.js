@@ -646,9 +646,7 @@ function TabContent(TabContent) {
         const title = item.getAttribute('data-title');
         const widthValue = item.offsetWidth;
         LeftValue =+ widthValue;
-        console.log("left: "+LeftValue)
        if(TabTitle == title){
-       
         const CurrentWidth = item.offsetWidth; 
         let Updated = LeftValue - FirstElementWidth;
         if(Updated == 0){
