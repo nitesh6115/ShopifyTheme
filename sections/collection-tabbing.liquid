@@ -15,11 +15,11 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
 <div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
     <div class="TabingBox">
         <div class="collection-wrapp">
-            <div id="CollectionTabing-{{ section.id }}" class="collection-tabbing swiper">
+            <div id="CollectionTabing-{{ section.id }}" class="collection-tabbing">
                 <div class="CarsoulBox swiper-wrapper collection-carsoul-{{ section.id }}">
                       {%  assign loopmainIndex = 0 %}
                       {% for block in section.blocks %}
-                        <div id="Tab-{{ section.id  }}{{ forloop.index }}"class=" swiper-slide TabContent-{{ section.id  }} tabimage">
+                        <div id="Tab-{{ section.id  }}{{ forloop.index }}"class=" TabContent-{{ section.id  }} tabimage">
                         <div class="{% if section.settings.width == 'full-width' %}full-width{% elsif section.settings.width == 'wrapper-width' %}page-width{% else %} narrow-width {% endif %}" >
                         <div class="Tabing-Header">
                           {% assign collection = collections[block.settings.slide-collection] %}
