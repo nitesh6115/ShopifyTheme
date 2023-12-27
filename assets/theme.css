@@ -308,6 +308,7 @@ display: flex;
     min-height: 80vh;
     transition-duration: .5s;
     transition-property: all;
+    max-height: 500px;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
 }
 .header-content:after {
