@@ -70,6 +70,7 @@
         },
         "b121d231-65ca-4054-9b6e-6fbfb7b07fb9": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "title": "Colour",
             "heading": "COLOUR BELTS",
@@ -81,6 +82,7 @@
         },
         "7a4bad4a-d484-4064-bca3-0be25bc0b302": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "title": "Wool",
             "heading": "WOOL BELTS",
@@ -92,6 +94,7 @@
         },
         "d757636a-d5ea-4723-a073-43cf755532fb": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "title": "Flex Leather",
             "heading": "LEATHER BELTS",
@@ -103,6 +106,7 @@
         },
         "89cc7846-757d-4c54-b6c5-f74064ca9386": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "title": "Leather",
             "heading": "NEW BELTS",
@@ -120,6 +124,96 @@
         "7a4bad4a-d484-4064-bca3-0be25bc0b302",
         "d757636a-d5ea-4723-a073-43cf755532fb",
         "89cc7846-757d-4c54-b6c5-f74064ca9386"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "width": "wrapper-width",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "rows": 5
+      }
+    },
+    "f36548b7-c996-4dbc-9974-b031dfecad35": {
+      "type": "collection-tabbing",
+      "blocks": {
+        "5660341a-fbc5-4493-a8d1-febe69ff1839": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "title": "Classic",
+            "heading": "CLASSIC BELTS",
+            "sub_title": "New",
+            "slide-collection": "womens",
+            "total_products": 8,
+            "button_text": "View All"
+          }
+        },
+        "d6bd7ac9-5d32-408a-aab8-9bb7153772a1": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "title": "Sude",
+            "heading": "SUDE BELTS",
+            "sub_title": "Tranding",
+            "slide-collection": "mens",
+            "total_products": 8,
+            "button_text": "Shop Now"
+          }
+        },
+        "2f26fb26-f73e-4518-bd3b-cafe04dcd896": {
+          "type": "content",
+          "settings": {
+            "title": "Colour",
+            "heading": "COLOUR BELTS",
+            "sub_title": "Latest",
+            "slide-collection": "all",
+            "total_products": 8,
+            "button_text": "View All"
+          }
+        },
+        "fc5fe930-8ab8-4c38-98fc-3da7dafe9a0f": {
+          "type": "content",
+          "settings": {
+            "title": "Wool",
+            "heading": "WOOL BELTS",
+            "sub_title": "Tranding",
+            "slide-collection": "mens-knitwear",
+            "total_products": 8,
+            "button_text": "View All"
+          }
+        },
+        "058b7a52-2e2d-47bf-94fe-5ffe8ec77cc1": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "title": "Flex Leather",
+            "heading": "LEATHER BELTS",
+            "sub_title": "New",
+            "slide-collection": "mens-trousers",
+            "total_products": 8,
+            "button_text": "View ALL"
+          }
+        },
+        "d4a77588-79ff-4488-a8a3-6b14ff2fe543": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "title": "Leather",
+            "heading": "NEW BELTS",
+            "sub_title": "Bestseller",
+            "slide-collection": "womens-accessories",
+            "total_products": 8,
+            "button_text": "Shop Now"
+          }
+        }
+      },
+      "block_order": [
+        "5660341a-fbc5-4493-a8d1-febe69ff1839",
+        "d6bd7ac9-5d32-408a-aab8-9bb7153772a1",
+        "2f26fb26-f73e-4518-bd3b-cafe04dcd896",
+        "fc5fe930-8ab8-4c38-98fc-3da7dafe9a0f",
+        "058b7a52-2e2d-47bf-94fe-5ffe8ec77cc1",
+        "d4a77588-79ff-4488-a8a3-6b14ff2fe543"
       ],
       "settings": {
         "color_scheme": "background-1",
@@ -238,6 +332,7 @@
     "54d71cac-422d-4e8a-a4b2-d8667ebe40d9",
     "34aacdca-da45-4d6f-a67b-21692bd916e5",
     "57a33abb-1a0e-4294-b0b8-b18fc32afe27",
+    "f36548b7-c996-4dbc-9974-b031dfecad35",
     "9ac45232-d4da-4400-b33b-469cbb27e83e",
     "de168d02-cb1c-4cd8-a9e3-55c79f5e1e3d"
   ]
