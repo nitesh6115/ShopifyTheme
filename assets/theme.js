@@ -645,6 +645,7 @@ function TabContent(TabContent) {
         item.classList.remove('active')
         const title = item.getAttribute('data-title');
         const widthValue = item.offsetWidth;
+        console.log(widthValue)
         LeftValue += widthValue;
        if(TabTitle == title){
         console.log("left: "+LeftValue)
