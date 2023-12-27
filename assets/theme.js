@@ -654,6 +654,7 @@ function TabContent(TabContent) {
         if(Updated == 0){
           Updated = 3;
         }
+         console.log(Updated)
          TabDirection.style.width = CurrentWidth+'px';
          TabDirection.style.left = Updated+'px';
        }
