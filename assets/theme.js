@@ -649,7 +649,7 @@ function TabContent(TabContent) {
         const CurrentWidth = item.offsetWidth; 
          console.log(LeftValue)
          TabDirection.style.width = CurrentWidth+'px';
-         TabDirection.Styel.left = LeftValue+'px';
+         TabDirection.Styel.left = LeftValue;
        }
    })
    TabContent.classList.add('active');     
