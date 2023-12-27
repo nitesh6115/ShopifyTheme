@@ -108,7 +108,7 @@
             "heading": "NEW BELTS",
             "sub_title": "Bestseller",
             "slide-collection": "womens-accessories",
-            "shop_all": false,
+            "shop_all": true,
             "button_text": "Shop Now"
           }
         }
