@@ -650,9 +650,9 @@ function TabContent(TabContent) {
        if(TabTitle == title){
        
         const CurrentWidth = item.offsetWidth; 
-        const Updated = LeftValue - FirstElementWidth;
+        let Updated = LeftValue - FirstElementWidth;
         if(Updated == 0){
-          Updated = 3
+          Updated = 3;
         }
          TabDirection.style.width = CurrentWidth+'px';
          TabDirection.style.left = Updated+'px';
