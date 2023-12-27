@@ -86,7 +86,6 @@ if (CollectionTabSectionSlider){
     function slide(e) {
         let target = e.target;
         let index = target.getAttribute('data-index');
-        alert(index);
         CollectionTabSection.slideTo(index);
     }
     TabLink.forEach(item => {
