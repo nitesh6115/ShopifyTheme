@@ -18,7 +18,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
             <div id="CollectionTabing-{{ section.id }}" class="collection-tabbing">
                 <div class="CarsoulBox collection-carsoul-{{ section.id }}">
                       {%  assign loopmainIndex = 0 %}
-                      {% for block in section.blocks %}
+                      {% for block in section.blocks limit: 1 %}
                         <div id="Tab-{{ section.id  }}{{ forloop.index }}"class="TabContent-{{ section.id  }} tabimage">
                         <div class="{% if section.settings.width == 'full-width' %}full-width{% elsif section.settings.width == 'wrapper-width' %}page-width{% else %} narrow-width {% endif %}" >
                         <div class="Tabing-Header">
@@ -44,7 +44,14 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
                         <div class="Tabbing-Title">
                           {% assign loopindex = 0 %}
                           {% for block in section.blocks %}
-                          <div data-index="{{ loopindex }}" class="Tab-{{ section.id  }} tablinks {% if loopmainIndex == loopindex %} active {% endif %}" data-id="Tab-{{ section.id  }}{{ forloop.index }}">
+                          <div 
+                            data-index="{{ loopindex }}" 
+                            data-title=""
+                            data-heading="{% if block.settings.heading != blank %}{{ block.settings.heading }}{% else %}NULL{% endif %}"
+                            data-sub="{% if block.settings.sub_title != blank %}{{ block.settings.sub_title }}{% else %}NULL{% endif %}"
+                            data-collection="{% if block.settings.slide-collection != blank %}{{ block.settings.slide-collection }}{% else %}NULL{% endif %}"
+                            data-total="{% if block.settings.total_products != blank %}{{ block.settings.total_products }}{% else %}NULL{% endif %}"
+                            class="Tab-{{ section.id  }} tablinks {% if loopmainIndex == loopindex %} active {% endif %}" data-id="Tab-{{ section.id  }}{{ forloop.index }}">
                             {% if block.settings.title != blank %}
                               {{ block.settings.title }}
                             {% endif %}
