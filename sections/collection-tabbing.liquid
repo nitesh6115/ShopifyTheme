@@ -91,8 +91,8 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
   CollectionSlider.forEach(item => {
   var nextbutton = item.querySelectorAll('.tabingNext')[0];
   var prebutton = item.querySelectorAll('.tabingPrev')[0];
-  const TabLink = item.querySelectorAll('.tablinks');
-  const CurrentWidth = TabLink[0].offsetWidth;
+  const TabLink = item.querySelectorAll('.tablinks')[0];
+  const CurrentWidth = TabLink.offsetWidth;
   const TabDirection = item.querySelector('.tabs__nav-decoration');
   TabDirection.style.width = CurrentWidth+'px';
   TabDirection.style.left = '3px';  
