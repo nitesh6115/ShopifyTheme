@@ -78,8 +78,6 @@ a{
 .hide{
   display: none !important;
 }
-
-
 /* grid system */
 .CollectionnGrid {
     display: flex;
