@@ -54,59 +54,50 @@
             "sub_title": "New",
             "slide-collection": "womens",
             "total_products": 8,
-            "shop_all": true,
             "button_text": "View All"
           }
         },
         "9b284c90-646e-486e-aa49-96ea36b33a51": {
           "type": "content",
-          "disabled": true,
           "settings": {
             "title": "Sude",
             "heading": "SUDE BELTS",
             "sub_title": "Tranding",
             "slide-collection": "mens",
             "total_products": 8,
-            "shop_all": true,
             "button_text": "Shop Now"
           }
         },
         "b121d231-65ca-4054-9b6e-6fbfb7b07fb9": {
           "type": "content",
-          "disabled": true,
           "settings": {
             "title": "Colour",
             "heading": "COLOUR BELTS",
             "sub_title": "Latest",
             "slide-collection": "all",
             "total_products": 8,
-            "shop_all": true,
             "button_text": "View All"
           }
         },
         "7a4bad4a-d484-4064-bca3-0be25bc0b302": {
           "type": "content",
-          "disabled": true,
           "settings": {
             "title": "Wool",
             "heading": "WOOL BELTS",
             "sub_title": "Tranding",
             "slide-collection": "mens-knitwear",
             "total_products": 8,
-            "shop_all": false,
             "button_text": "View All"
           }
         },
         "d757636a-d5ea-4723-a073-43cf755532fb": {
           "type": "content",
-          "disabled": true,
           "settings": {
             "title": "Flex Leather",
             "heading": "LEATHER BELTS",
             "sub_title": "New",
             "slide-collection": "mens-trousers",
             "total_products": 8,
-            "shop_all": true,
             "button_text": "View ALL"
           }
         },
@@ -118,7 +109,6 @@
             "sub_title": "Bestseller",
             "slide-collection": "womens-accessories",
             "total_products": 8,
-            "shop_all": true,
             "button_text": "Shop Now"
           }
         }
