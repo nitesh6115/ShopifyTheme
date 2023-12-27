@@ -644,19 +644,22 @@ function TabContent(TabContent) {
   const TabLink = ParentDiv.querySelectorAll('.tablinks');
   const TabDirection = ParentDiv.querySelector('.tabs__nav-decoration');
   if(Heading != 'NULL'){
-    change_heading_element.classList.remove('hide')
+    change_heading_element.classList.remove('hide');
+    show_button.classList.add('fadein')
     change_heading_element.innerHTML = Heading;
   }else{
     change_heading_element.classList.add('hide')
   }
   if(SubHeading != 'NULL'){
-    change_sub_heading_element.classList.remove('hide')
+    change_sub_heading_element.classList.remove('hide');
+    show_button.classList.add('fadein')
     change_sub_heading_element.innerHTML = SubHeading;
   }else{
     change_sub_heading_element.classList.add('hide')
   }
   if(ButtonText != 'NULL'){
-    show_button.classList.remove('hide')
+    show_button.classList.remove('hide');
+    show_button.classList.add('fadein')
     const html = '<a href="'+CollectionHandle+'"class="cta-btn primary-button">'+ButtonText+'</a>';
     show_button.innerHTML = html;
   }else{
