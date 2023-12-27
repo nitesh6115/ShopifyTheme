@@ -147,7 +147,11 @@
     --heading-font-style: {{ settings.font_heading.style }};
     --heading-font-bold-weight: {{ heading_bold.weight | default: 'bold' }};
     --heading-font-size:{{settings.font-heading-size}}px;
-  
+    --heading-h3-font-size:{{settings.font-heading-size | minus: 5}}px;
+    --heading-h4-font-size:{{settings.font-heading-size | minus: 8 }}px;
+    --heading-h5-font-size:{{settings.font-heading-size | minus: 12 }}px;
+    --heading-h6-font-size:{{settings.font-heading-size | minus: 15 }}px;
+    
     --button-background-color:{{ settings.button-bg-color}};
     --button-text-color:{{ settings.button-text-color}};
     --button-border-color:{{ settings.button-border-color}};
