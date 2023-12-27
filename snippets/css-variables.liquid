@@ -130,11 +130,24 @@ background:  {{ scheme.settings.link-color }};
 }
 {% endfor %}
 :root {
-    --body-background-color:{{ settings.bg-color}};
-    --body-background-light-color:{{ settings.body-bg-light-color}};
-    --body-text-color:{{ settings.body-text-color}};
-    --body-link-color: {{ settings.body-link-color }};
-    --body-font-size:{{ settings.body-font-size}}px;  
+    --font-body: {{ settings.font_body.family }};
+    --font-body-weight: {{ settings.font_body.weight }};
+    --font-body-style: {{ settings.font_body.style }};
+    --font-body-bold-weight: {{ font_body_bold.weight | default: 'bold' }};
+    --body-font-size:{{ settings.body-font-size}}px;
+
+    --main-heading-font: {{ settings.main-font-heading.family }};
+    --main-heading-font-weight: {{ settings.main-font-heading.weight }};
+    --main-heading-font-style: {{ settings.main-font-heading.style }};
+    --main-heading-font-bold-weight: {{ main_heading_bold.weight | default: 'bold' }};
+    --main-heading-size:{{settings.mainheading-font-size}}px;
+  
+    --heading-font: {{ settings.font_heading.family }};
+    --heading-font-weight: {{ settings.font_heading.weight }};
+    --heading-font-style: {{ settings.font_heading.style }};
+    --heading-font-bold-weight: {{ heading_bold.weight | default: 'bold' }};
+    --heading-size:{{settings.font-heading-size}}px;
+  
     --button-background-color:{{ settings.button-bg-color}};
     --button-text-color:{{ settings.button-text-color}};
     --button-border-color:{{ settings.button-border-color}};
@@ -164,25 +177,8 @@ background:  {{ scheme.settings.link-color }};
     --wbsite-left-padding:{{ settings.layout-padding-left}}px;
     --wbsite-right-padding:{{ settings.layout-padding-right}}px;
 
-    --main-heading-size:{{settings.mainheading-font-size}}px;
-    --heading-size:{{settings.font-heading-size}}px;
     --button-font-size:{{settings.button-font-size}}px;
     --flash-wrapper-image:{{settings.flash-image}};
-    --site-link-color:{{settings.link-color}};
-         
-    --main-heading-font: {{ settings.main-font-heading.family }};
-    --main-heading-font-weight: {{ settings.main-font-heading.weight }};
-    --main-heading-font-style: {{ settings.main-font-heading.style }};
-    --main-heading-font-bold-weight: {{ main_heading_bold.weight | default: 'bold' }};
-  
-    --heading-font: {{ settings.font_heading.family }};
-    --heading-font-weight: {{ settings.font_heading.weight }};
-    --heading-font-style: {{ settings.font_heading.style }};
-    --heading-font-bold-weight: {{ heading_bold.weight | default: 'bold' }};
-  
-    --font-body: {{ settings.font_body.family }};
-    --font-body-weight: {{ settings.font_body.weight }};
-    --font-body-style: {{ settings.font_body.style }};
-    --font-body-bold-weight: {{ font_body_bold.weight | default: 'bold' }};
+    --site-link-color:{{settings.link-color}}; 
 }
 </style>
