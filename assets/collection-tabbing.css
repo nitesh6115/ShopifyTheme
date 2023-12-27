@@ -48,10 +48,7 @@
     border-radius: 30px;
     z-index: 1;
 }
-@-webkit-keyframes fadein {
-    from: { opacity: 0; }
-    to: { opacity: 1; }
-}
+
 .TabingHead {
     position: relative;
 }
