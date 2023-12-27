@@ -49,8 +49,8 @@
         "a636e091-b64d-44e7-891b-9095ac3d649b": {
           "type": "content",
           "settings": {
-            "title": "Women",
-            "heading": "Shop Women",
+            "title": "Classic",
+            "heading": "CLASSIC BELTS",
             "sub_title": "New",
             "slide-collection": "womens",
             "shop_all": true,
@@ -60,18 +60,30 @@
         "9b284c90-646e-486e-aa49-96ea36b33a51": {
           "type": "content",
           "settings": {
-            "title": "Men's",
-            "heading": "Shop Man's",
-            "sub_title": "",
+            "title": "Sude",
+            "heading": "SUDE BELTS",
+            "sub_title": "Tranding",
             "slide-collection": "mens",
             "shop_all": true,
             "button_text": "Shop Now"
+          }
+        },
+        "b121d231-65ca-4054-9b6e-6fbfb7b07fb9": {
+          "type": "content",
+          "settings": {
+            "title": "Colour",
+            "heading": "COLOUR BELTS",
+            "sub_title": "Latest",
+            "slide-collection": "all",
+            "shop_all": true,
+            "button_text": "View All"
           }
         }
       },
       "block_order": [
         "a636e091-b64d-44e7-891b-9095ac3d649b",
-        "9b284c90-646e-486e-aa49-96ea36b33a51"
+        "9b284c90-646e-486e-aa49-96ea36b33a51",
+        "b121d231-65ca-4054-9b6e-6fbfb7b07fb9"
       ],
       "settings": {
         "color_scheme": "background-1",
