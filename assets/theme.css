@@ -639,7 +639,6 @@ img.feature-image {
     width: 100%;
     float: left;
     height: auto;
-    box-shadow: 0 0 #0000, 0 0 #0000, 0 20px 25px -5px rgba(0,0,0,.1), 0 8px 10px -6px rgba(0,0,0,.1);
 }
 
 .quick-add-wrapper {
@@ -675,7 +674,7 @@ img.feature-image {
     padding: 10px;
     width: 90%;
     margin: 0 auto;
-    box-shadow: 0 0 #0000, 0 0 #0000, 0 20px 25px -5px rgba(0,0,0,.1), 0 8px 10px -6px rgba(0,0,0,.1);
+
 }
 
 .featured-product:hover .quick-add-wrapper {
@@ -705,9 +704,6 @@ img.feature-image {
 
 .quick-add-wrapper .size-selctor-wrapper .size-selector:hover {
     background: #3b3b3b;
-}
-.product-image-container .swiper-button-prev, .swiper-button-next{
-  
 }
 .quick-add-wrapper .selector-wrapper {
     display: flex;
