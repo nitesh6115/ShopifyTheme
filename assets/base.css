@@ -113,10 +113,15 @@ h5{
 h6{
  font-size: var(--heading-h6-font-size); 
 }
+
 .fadein{
   -webkit-animation: fadein 2s ease-in alternate infinite;
     -moz-animation: fadein 2s ease-in alternate infinite;
     animation: fadein 2s ease-in alternate infinite;
+}
+@-webkit-keyframes fadein {
+    from: { opacity: 0; }
+    to: { opacity: 1; }
 }
 /* grid system */
 .CollectionnGrid {
