@@ -45,7 +45,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
                           {% assign loopindex = 0 %}
                           {% for block in section.blocks %}
                             {% if block.settings.slide-collection != blank and  block.settings.title != blank %}
-                          <div 
+                          <div onclick="TabContent(this)"
                             data-index="{{ loopindex }}" 
                             data-title="{% if block.settings.title != blank %}{{ block.settings.title }}{% else %}NULL{% endif %}"
                             data-heading="{% if block.settings.heading != blank %}{{ block.settings.heading }}{% else %}NULL{% endif %}"
