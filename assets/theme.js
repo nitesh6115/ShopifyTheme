@@ -643,7 +643,7 @@ function TabContent(TabContent) {
   const left = 0;
   TabLink.forEach(item => {
         item.classList.remove('active')
-        const title = item.getAttribut('data-title');
+        const title = item.getAttribute('data-title');
         left =+ item.offsetWidth;
        if(TabTitle == title){
         const width = item.offsetWidth; 
