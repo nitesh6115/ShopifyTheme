@@ -16,7 +16,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
     <div class="TabingBox">
         <div class="collection-wrapp">
             <div id="CollectionTabing-{{ section.id }}" class="collection-tabbing">
-                <div class="CarsoulBox swiper-wrapper collection-carsoul-{{ section.id }}">
+                <div class="CarsoulBox collection-carsoul-{{ section.id }}">
                       {%  assign loopmainIndex = 0 %}
                       {% for block in section.blocks %}
                         <div id="Tab-{{ section.id  }}{{ forloop.index }}"class="TabContent-{{ section.id  }} tabimage">
