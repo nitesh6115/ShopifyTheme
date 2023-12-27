@@ -650,6 +650,6 @@ function TabContent(TabContent) {
         TabDirection.style.width= item.offsetWidth+'px';
         TabDirection.Styel.left = left+'px';
        }
-   }
+   })
    TabContent.classList.add('active');     
 }
