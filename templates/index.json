@@ -223,96 +223,6 @@
         "rows": 5
       }
     },
-    "6503c690-03ac-4102-aff5-32e93013a834": {
-      "type": "collection-tabbing",
-      "blocks": {
-        "3ca26430-cb10-418f-be98-14cf5f9846eb": {
-          "type": "content",
-          "disabled": true,
-          "settings": {
-            "title": "Classic",
-            "heading": "CLASSIC BELTS",
-            "sub_title": "New",
-            "slide-collection": "womens",
-            "total_products": 8,
-            "button_text": "View All"
-          }
-        },
-        "5b2daa0a-22b1-4717-9ed8-9daca96596ca": {
-          "type": "content",
-          "disabled": true,
-          "settings": {
-            "title": "Sude",
-            "heading": "SUDE BELTS",
-            "sub_title": "Tranding",
-            "slide-collection": "mens",
-            "total_products": 8,
-            "button_text": "Shop Now"
-          }
-        },
-        "050f62f3-bd45-438a-959e-e47ceba98409": {
-          "type": "content",
-          "disabled": true,
-          "settings": {
-            "title": "Colour",
-            "heading": "COLOUR BELTS",
-            "sub_title": "Latest",
-            "slide-collection": "all",
-            "total_products": 8,
-            "button_text": "View All"
-          }
-        },
-        "b22ea258-7e2f-4916-98d3-2357108144ab": {
-          "type": "content",
-          "disabled": true,
-          "settings": {
-            "title": "Wool",
-            "heading": "WOOL BELTS",
-            "sub_title": "Tranding",
-            "slide-collection": "mens-knitwear",
-            "total_products": 8,
-            "button_text": "View All"
-          }
-        },
-        "8b1c0400-deef-4e77-9510-64ab0bd41c1c": {
-          "type": "content",
-          "settings": {
-            "title": "Flex Leather",
-            "heading": "LEATHER BELTS",
-            "sub_title": "New",
-            "slide-collection": "mens-trousers",
-            "total_products": 8,
-            "button_text": "View ALL"
-          }
-        },
-        "17bf16ab-6240-4eb9-90df-7358921719e1": {
-          "type": "content",
-          "settings": {
-            "title": "Leather",
-            "heading": "NEW BELTS",
-            "sub_title": "Bestseller",
-            "slide-collection": "womens-accessories",
-            "total_products": 8,
-            "button_text": "Shop Now"
-          }
-        }
-      },
-      "block_order": [
-        "3ca26430-cb10-418f-be98-14cf5f9846eb",
-        "5b2daa0a-22b1-4717-9ed8-9daca96596ca",
-        "050f62f3-bd45-438a-959e-e47ceba98409",
-        "b22ea258-7e2f-4916-98d3-2357108144ab",
-        "8b1c0400-deef-4e77-9510-64ab0bd41c1c",
-        "17bf16ab-6240-4eb9-90df-7358921719e1"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "width": "wrapper-width",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "rows": 5
-      }
-    },
     "9ac45232-d4da-4400-b33b-469cbb27e83e": {
       "type": "shop-the-lock",
       "blocks": {
@@ -423,7 +333,6 @@
     "34aacdca-da45-4d6f-a67b-21692bd916e5",
     "57a33abb-1a0e-4294-b0b8-b18fc32afe27",
     "f36548b7-c996-4dbc-9974-b031dfecad35",
-    "6503c690-03ac-4102-aff5-32e93013a834",
     "9ac45232-d4da-4400-b33b-469cbb27e83e",
     "de168d02-cb1c-4cd8-a9e3-55c79f5e1e3d"
   ]
