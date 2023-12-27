@@ -34,7 +34,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
                               {% endif %}
                               </div>
                               <div class="RightSide btn_color{{ block.id }}">
-                                {%  if block.settings.shop_all %}
+                                {%  if block.settings.button_text != blank %}
                                 <a class="cta-btn primary-button" href="{{ collection.url }}">{{ block.settings.button_text }}</a> 
                                 {% endif %}
                               </div>
@@ -217,12 +217,6 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
           "step": 1,
           "label": "Products to Show",
           "default": 8
-        },
-        {
-          "type": "checkbox",
-          "label": "Show View All Button",
-          "id": "shop_all",
-          "default": false
         },
         {
           "type": "text",
