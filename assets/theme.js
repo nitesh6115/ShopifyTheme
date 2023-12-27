@@ -637,5 +637,19 @@ function TabContent(TabContent) {
   const TabTitle = TabContent.getAttribute('data-title');
   const ParentDiv = TabContent.closest('.CarsoulBox');
   const SliderDiv = ParentDiv.querySelector('.TabProductBox');
+  const TabLink = ParentDiv.querySelectorAll('.tablinks');
+  const TabDirection = ParentDiv.querySelector('tabs__nav-decoration');
   console.log(SliderDiv)
+  const left = 0;
+  TabLink.forEach(item => {
+        item.classList.remove('active')
+        const title = item.getAttribut(data-title);
+        left =+ item.offsetWidth;
+       if(TabTitle == title){
+        const width = item.offsetWidth; 
+        TabDirection.style.width= item.offsetWidth+'px';
+        TabDirection.Styel.left = left+'px';
+       }
+   }
+   TabContent.classList.add('active');     
 }
