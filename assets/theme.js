@@ -649,7 +649,7 @@ function TabContent(TabContent) {
        if(TabTitle == title){
         console.log("left: "+LeftValue)
         const CurrentWidth = item.offsetWidth; 
-        let Updated = LeftValue - FirstElementWidth;
+        let Updated = LeftValue - item.offsetWidth;
         if(Updated == 0){
           Updated = 3;
         }
