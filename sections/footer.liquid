@@ -17,7 +17,7 @@
    {% for block in section.blocks %}
      <div class="LinksInfo">
      {% if block.settings.title != blank %}
-        <h4>{{ block.settings.title }}</h3>
+        <h6 class="uppdercase">{{ block.settings.title }}</h6>
        {% endif %}
    
     <ul>
@@ -29,7 +29,7 @@
   {% endfor %}
    <div class="newsletter-content-wrapper">
     {%  if section.settings.sign-up-heading != blank %}
-     <h4>{{ section.settings.sign-up-heading }}</h3> 
+     <h6 class="uppdercase">{{ section.settings.sign-up-heading }}</h6> 
       {% endif %}
       {% if section.settings.newsletter_richtext != blank %}
         {{ section.settings.newsletter_richtext }}
