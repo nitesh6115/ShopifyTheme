@@ -266,11 +266,6 @@ h6{
 .link-color {
 	color: var(--site-link-color);
 }
-.title{
-  font: 25px;
-  margin-bottom: 15px;
-  padding: o;
-}
 .uppercase{
   text-transform:uppercase;
 }
