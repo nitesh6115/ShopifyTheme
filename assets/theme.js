@@ -645,11 +645,11 @@ function TabContent(TabContent) {
   TabLink.forEach(item => {
         item.classList.remove('active')
         const title = item.getAttribute('data-title');
-        LeftValue = item.offsetWidth;
+        
        if(TabTitle == title){
         const width = item.offsetWidth; 
         TabDirection.style.width= item.offsetWidth+'px';
-        TabDirection.Styel.left = LeftValue+'px';
+        //TabDirection.Styel.left = LeftValue+'px';
        }
    })
    TabContent.classList.add('active');     
