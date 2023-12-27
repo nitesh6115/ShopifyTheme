@@ -645,23 +645,29 @@ function TabContent(TabContent) {
   const TabDirection = ParentDiv.querySelector('.tabs__nav-decoration');
   if(Heading != 'NULL'){
     change_heading_element.classList.remove('hide');
+    change_heading_element.style.opacity = "0";
     change_heading_element.classList.add('fadein')
     change_heading_element.innerHTML = Heading;
+    change_heading_element.style.opacity = "1";
   }else{
     change_heading_element.classList.add('hide')
   }
   if(SubHeading != 'NULL'){
+    change_sub_heading_element.style.opacity = "0";
     change_sub_heading_element.classList.remove('hide');
     change_sub_heading_element.classList.add('fadein')
     change_sub_heading_element.innerHTML = SubHeading;
+    change_sub_heading_element.style.opacity = "1";
   }else{
     change_sub_heading_element.classList.add('hide')
   }
   if(ButtonText != 'NULL'){
+    show_button.style.opacity = "0";
     show_button.classList.remove('hide');
     show_button.classList.add('fadein')
     const html = '<a href="'+CollectionHandle+'"class="cta-btn primary-button">'+ButtonText+'</a>';
     show_button.innerHTML = html;
+    show_button.style.opacity = "1";
   }else{
     show_button.classList.add('hide')
   }
