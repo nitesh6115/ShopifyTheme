@@ -74,25 +74,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
     </div>
 </div>
 <script>
-var CollectionTabSectionSlider = document.getElementById('CollectionTabing-{{ section.id }}');
-if (CollectionTabSectionSlider){
-    const TabLink = document.querySelectorAll('#CollectionTabing-{{ section.id }} .tablinks')
-    const CollectionTabSection = new Swiper(CollectionTabSectionSlider, {
-        slidesPerView: 1,
-        speed: 500,
-        allowTouchMove: false,
-        initialSlide: 0,
-    })
-    function slide(e) {
-        let target = e.target;
-        let index = target.getAttribute('data-index');
-        CollectionTabSection.slideTo(index);
-    }
-    TabLink.forEach(item => {
-        item.addEventListener('click', event => {
-            slide(event)
-        })
-    })
+
   var CollectionSlider = document.querySelectorAll('#CollectionTabing-{{ section.id }} .collection-list');
   CollectionSlider.forEach(item => {
   var nextbutton = item.querySelectorAll('.tabingNext')[0];
