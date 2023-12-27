@@ -97,6 +97,7 @@ h6{
   font-family: var(--heading-font);
   font-style: var(--heading-font-style);
   font-weight: var(--heading-font-weight);
+  margin-bottom: 10px;
 }
 
 h3{
