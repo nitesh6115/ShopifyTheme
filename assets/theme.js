@@ -640,11 +640,11 @@ function TabContent(TabContent) {
   const TabLink = ParentDiv.querySelectorAll('.tablinks');
   const TabDirection = ParentDiv.querySelector('tabs__nav-decoration');
   console.log(SliderDiv)
-  const left = 0;
+  const LeftValue = 0;
   TabLink.forEach(item => {
         item.classList.remove('active')
         const title = item.getAttribute('data-title');
-        left += item.offsetWidth;
+        LeftValue = item.offsetWidth;
        if(TabTitle == title){
         const width = item.offsetWidth; 
         TabDirection.style.width= item.offsetWidth+'px';
