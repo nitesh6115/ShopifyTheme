@@ -643,19 +643,19 @@ function TabContent(TabContent) {
   const show_button = ParentDiv.querySelector('.RightSide');
   const TabLink = ParentDiv.querySelectorAll('.tablinks');
   const TabDirection = ParentDiv.querySelector('.tabs__nav-decoration');
-  if(Heading ! == 'NULL'){
+  if(Heading != 'NULL'){
     change_heading_element.classList.remove('hide')
     change_heading_element.innerHTML = Heading;
   }else{
     change_heading_element.classList.add('hide')
   }
-  if(SubHeading ! == 'NULL'){
+  if(SubHeading != 'NULL'){
     change_sub_heading_element.classList.remove('hide')
     change_sub_heading_element.innerHTML = SubHeading;
   }else{
     change_sub_heading_element.classList.add('hide')
   }
-  if(ButtonText ! == 'NULL'){
+  if(ButtonText != 'NULL'){
     show_button.classList.remove('hide')
     const html = '<a href="'+CollectionHandle+'"class="cta-btn primary-button">'+ButtonText+'</a>';
     show_button.innerHTML = html;
