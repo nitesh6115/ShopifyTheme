@@ -639,20 +639,18 @@ function TabContent(TabContent) {
   const SliderDiv = ParentDiv.querySelector('.TabProductBox');
   const TabLink = ParentDiv.querySelectorAll('.tablinks');
   const TabDirection = ParentDiv.querySelector('.tabs__nav-decoration');
+  const FirstElementWidth = TabLink[0].offsetWidth;
   var LeftValue = 3;
   TabLink.forEach(function (item, i) {
         item.classList.remove('active')
         const title = item.getAttribute('data-title');
         const widthValue = item.offsetWidth;
-        if (i != 0 ){
-           LeftValue += widthValue
-        }
-       
+        LeftValue += widthValue;
        if(TabTitle == title){
         const CurrentWidth = item.offsetWidth; 
          console.log(LeftValue)
          TabDirection.style.width = CurrentWidth+'px';
-         TabDirection.style.left = LeftValue+'px';
+         TabDirection.style.left = LeftValue - FirstElementWidth+'px';
        }
    })
    TabContent.classList.add('active');     
