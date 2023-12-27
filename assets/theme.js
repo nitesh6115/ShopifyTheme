@@ -650,7 +650,7 @@ function TabContent(TabContent) {
     change_heading_element.innerHTML = Heading;
     setTimeout(() => {
     change_heading_element.style.opacity = "1";
-    },500)
+    },200)
   }else{
     change_heading_element.classList.add('hide')
   }
@@ -661,7 +661,7 @@ function TabContent(TabContent) {
     change_sub_heading_element.innerHTML = SubHeading;
     setTimeout(() => {
     change_sub_heading_element.style.opacity = "1";
-    },500)
+    },200)
   }else{
     change_sub_heading_element.classList.add('hide')
   }
@@ -673,7 +673,7 @@ function TabContent(TabContent) {
     show_button.innerHTML = html;
     setTimeout(() => {
     show_button.style.opacity = "1";
-    },500)
+    },200)
   }else{
     show_button.classList.add('hide')
   }
