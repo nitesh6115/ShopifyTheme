@@ -113,7 +113,9 @@ h5{
 h6{
  font-size: var(--heading-h6-font-size); 
 }
-
+.standAlon{
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0,0,0,.25);
+}
 
 
 

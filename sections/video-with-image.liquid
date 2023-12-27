@@ -25,7 +25,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
  
   <div class="video-with-text hover-zoom">
   {% if block.settings.video_link != blank %}
-    <div class="video-box overflow-hidden radius-30">
+    <div class="video-box standAlon overflow-hidden radius-30">
       <div class="overlay-opacity radius-30" style="background:{{ block.settings.overlay_opacity_color  }}; opacity: {{ block.settings.overlay_opacity | times: 0.01 }}"></div>
       {% if block.settings.mobile_video_link != blank %}
         <video loading="lazy" class="video-js desktop-hide" loop autoplay preload="none" muted playsinline >
