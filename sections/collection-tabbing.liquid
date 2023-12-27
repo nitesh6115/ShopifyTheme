@@ -93,9 +93,9 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
   var nextbutton = item.querySelectorAll('.tabingNext')[0];
   var prebutton = item.querySelectorAll('.tabingPrev')[0];
   var TabLink = parent.querySelectorAll('.tablinks')[0];
-  console.log(prebutton)
+  const CurrentWidth = TabLink.offsetWidth;
   const TabDirection = parent.querySelector('.tabs__nav-decoration');
-  //TabDirection.style.width = CurrentWidth+'px';
+  TabDirection.style.width = CurrentWidth+'px';
   TabDirection.style.left = '3px';  
   const swiperTabs = new Swiper(item, {
       slidesPerView: 2,
