@@ -645,10 +645,10 @@ function TabContent(TabContent) {
         item.classList.remove('active')
         const title = item.getAttribute('data-title');
         const widthValue = item.offsetWidth;
-        console.log(widthValue)
         LeftValue =+ widthValue;
-       if(TabTitle == title){
         console.log("left: "+LeftValue)
+       if(TabTitle == title){
+       
         const CurrentWidth = item.offsetWidth; 
         const Updated = LeftValue - FirstElementWidth;
         //console.log(Updated)
