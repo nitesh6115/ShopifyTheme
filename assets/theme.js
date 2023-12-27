@@ -640,7 +640,7 @@ function TabContent(TabContent) {
   const TabLink = ParentDiv.querySelectorAll('.tablinks');
   const TabDirection = ParentDiv.querySelector('.tabs__nav-decoration');
   const FirstElementWidth = TabLink[0].offsetWidth;
-  var LeftValue = parseInt(3);
+  var LeftValue = 0;
   TabLink.forEach(function (item, i) {
         item.classList.remove('active')
         const title = item.getAttribute('data-title');
