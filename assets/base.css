@@ -113,7 +113,9 @@ h5{
 h6{
  font-size: var(--heading-h6-font-size); 
 }
-
+.fadein{
+  animation: fadein 2s ease-in alternate infinite;
+}
 /* grid system */
 .CollectionnGrid {
     display: flex;
