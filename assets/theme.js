@@ -627,3 +627,14 @@ CratDrawerSlider.forEach(item => {
         },
     })
 })
+
+
+function TabContent(TabContent) {
+  const CollectionHandle = TabContent.getAttribute('data-collection');
+  const ProductTotal = TabContent.getAttribute('data-total');
+  const Heading = TabContent.getAttribute('data-heading');
+  const SubHeading = TabContent.getAttribute('data-sub');
+  const TabTitle = TabContent.getAttribute('data-title');
+  const ParentDiv = TabContent.closeset('.CarsoulBox');
+  const SliderDiv = ParentDiv.querySelector('TabProductBox');
+}
