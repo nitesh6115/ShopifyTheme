@@ -22,113 +22,113 @@
 {{ font_body_bold | font_face: font_display: 'swap' }}
 {{ font_body_bold_italic | font_face: font_display: 'swap' }}
 
-{% for scheme in settings.color_schemes -%}
-  .color-{{ scheme.id }} {
-  color: {{ scheme.settings.text }};
-  {% if scheme.settings.background_gradient != empty %}
-    background: {{ scheme.settings.background_gradient }};
-  {% else %}
-    background: {{ scheme.settings.background }};
-  {% endif %}
-}
- .color-{{ scheme.id }} .Logo_svg path{
-   fill: {{ scheme.settings.text }};
- }
-.color-{{ scheme.id }} .cart-button span{
- color: {{ scheme.settings.button-text }};
- background: {{ scheme.settings.button-background }};
-}
- .color-{{ scheme.id }}  .product-page .box-3 .size-selctor-wrapper .size-selector.active{
-    color: {{ scheme.settings.secondary-button-hover-text }};
-  background: {{ scheme.settings.secondary-button-hover-background }};
-  border: 1px solid {{ scheme.settings.secondary-button-hover-border-color}};
-  }
-  .color-{{ scheme.id }} input, .color-{{ scheme.id }} select, .color-{{ scheme.id }} textarea{
-  color: {{ scheme.settings.text }};
-    border-color: {{ scheme.settings.color-border }};
-    background: transparent;
-  }
-.color-{{ scheme.id }} .header-content.menu-active .header{
-  border-bottom: 1px solid {{ scheme.settings.color-border }};
-}
-  
-.color-{{ scheme.id }} #nav-quick-search-container {
-  {% if scheme.settings.background_gradient != empty %}
-    background: {{ scheme.settings.background_gradient }};
-  {% else %}
-    background: {{ scheme.settings.background }};
-  {% endif %}
-  border: 1px solid {{ scheme.settings.color-border }};
- }
-.color-{{ scheme.id }} .Tabbing-Title{
-  border-color: {{ scheme.settings.border-color }};
-}
-.color-{{ scheme.id }}.boxSearch{
-  border: 1px solid {{ scheme.settings.color-border }};
-}
-.color-{{ scheme.id }} .border-all,.color-{{ scheme.id }}.border-all{
-  border: 1px solid {{ scheme.settings.color-border }};
-} .color-{{ scheme.id }} .border-bottom{
-  border-bottom: 1px solid {{ scheme.settings.color-border }};
-} .color-{{ scheme.id }} .border-top{
-  border-top: 1px solid {{ scheme.settings.color-border }};
-}
-.color-{{ scheme.id }} .border-left{
-  border-left: 1px solid {{ scheme.settings.color-border }};
-}.color-{{ scheme.id }} .border-right{
-  border-right: 1px solid {{ scheme.settings.color-border }};
-}
-.color-{{ scheme.id }} .hederIcon:hover{
-  color: {{ scheme.settings.secondary-button-hover-text }};
-  background: {{ scheme.settings.secondary-button-hover-background }};
-}
-.color-{{ scheme.id }} .snakify-in:after {
-background:  {{ scheme.settings.link-color }};
-}
-.color-{{ scheme.id }} .info ul ul{
-  {% if scheme.settings.background_gradient != empty %}
-    background: {{ scheme.settings.background_gradient }};
-  {% else %}
-    background: {{ scheme.settings.background }};
-  {% endif %}
-    border: 1px solid {{ scheme.settings.color-border }};
-}
-.color-{{ scheme.id }} .hederIcon:hover svg{
-  fill: {{ scheme.settings.secondary-button-hover-text }};
-}
-.color-{{ scheme.id }} h1, .color-{{ scheme.id }} .heading{
-   color: {{ scheme.settings.heading-color }};
-}
-.color-{{ scheme.id }} .sub-heading{
- color: {{ scheme.settings.sub-heading-color }};
-}
-.color-{{ scheme.id }} a{
- color: {{ scheme.settings.link-color }};
-}
-.color-{{ scheme.id }} svg {
-   fill: {{ scheme.settings.link-color }};
- }
-.color-{{ scheme.id }} .primary-button {
-  color: {{ scheme.settings.button-text }};
-  background: {{ scheme.settings.button-background }};
-  border: 1px solid {{ scheme.settings.button-border-color}};
-}
-.color-{{ scheme.id }} .secondary-button, .color-{{ scheme.id }} .tablinks.active{
-  color: {{ scheme.settings.secondary-button-text }};
-  background: {{ scheme.settings.secondary-button-background }};
-  border: 1px solid {{ scheme.settings.secondary-button-border-color}};
-}
-.color-{{ scheme.id }} .primary-button:hover {
-  color: {{ scheme.settings.button-hover-text }};
-  background: {{ scheme.settings.button-hover-background }};
-  border: 1px solid {{ scheme.settings.button-hover-border-color}};
-}
-.color-{{ scheme.id }} .secondary-button:hover{
-  color: {{ scheme.settings.secondary-button-hover-text }};
-  background: {{ scheme.settings.secondary-button-hover-background }};
-  border: 1px solid {{ scheme.settings.secondary-button-hover-border-color}};
-}
-{% endfor %}
+      {% for scheme in settings.color_schemes -%}
+      .color-{{ scheme.id }} {
+      color: {{ scheme.settings.text }};
+      {% if scheme.settings.background_gradient != empty %}
+      background: {{ scheme.settings.background_gradient }};
+      {% else %}
+      background: {{ scheme.settings.background }};
+      {% endif %}
+      }
+      .color-{{ scheme.id }} .Logo_svg path{
+      fill: {{ scheme.settings.text }};
+      }
+      .color-{{ scheme.id }} .cart-button span{
+      color: {{ scheme.settings.button-text }};
+      background: {{ scheme.settings.button-background }};
+      }
+      .color-{{ scheme.id }}  .product-page .box-3 .size-selctor-wrapper .size-selector.active{
+      color: {{ scheme.settings.secondary-button-hover-text }};
+      background: {{ scheme.settings.secondary-button-hover-background }};
+      border: 1px solid {{ scheme.settings.secondary-button-hover-border-color}};
+      }
+      .color-{{ scheme.id }} input, .color-{{ scheme.id }} select, .color-{{ scheme.id }} textarea{
+      color: {{ scheme.settings.text }};
+      border-color: {{ scheme.settings.color-border }};
+      background: transparent;
+      }
+      .color-{{ scheme.id }} .header-content.menu-active .header{
+      border-bottom: 1px solid {{ scheme.settings.color-border }};
+      }
+      
+      .color-{{ scheme.id }} #nav-quick-search-container {
+      {% if scheme.settings.background_gradient != empty %}
+      background: {{ scheme.settings.background_gradient }};
+      {% else %}
+      background: {{ scheme.settings.background }};
+      {% endif %}
+      border: 1px solid {{ scheme.settings.color-border }};
+      }
+      .color-{{ scheme.id }} .Tabbing-Title{
+      border-color: {{ scheme.settings.border-color }};
+      }
+      .color-{{ scheme.id }}.boxSearch{
+      border: 1px solid {{ scheme.settings.color-border }};
+      }
+      .color-{{ scheme.id }} .border-all,.color-{{ scheme.id }}.border-all{
+      border: 1px solid {{ scheme.settings.color-border }};
+      } .color-{{ scheme.id }} .border-bottom{
+      border-bottom: 1px solid {{ scheme.settings.color-border }};
+      } .color-{{ scheme.id }} .border-top{
+      border-top: 1px solid {{ scheme.settings.color-border }};
+      }
+      .color-{{ scheme.id }} .border-left{
+      border-left: 1px solid {{ scheme.settings.color-border }};
+      }.color-{{ scheme.id }} .border-right{
+      border-right: 1px solid {{ scheme.settings.color-border }};
+      }
+      .color-{{ scheme.id }} .hederIcon:hover{
+      color: {{ scheme.settings.secondary-button-hover-text }};
+      background: {{ scheme.settings.secondary-button-hover-background }};
+      }
+      .color-{{ scheme.id }} .snakify-in:after {
+      background:  {{ scheme.settings.link-color }};
+      }
+      .color-{{ scheme.id }} .info ul ul{
+      {% if scheme.settings.background_gradient != empty %}
+      background: {{ scheme.settings.background_gradient }};
+      {% else %}
+      background: {{ scheme.settings.background }};
+      {% endif %}
+      border: 1px solid {{ scheme.settings.color-border }};
+      }
+      .color-{{ scheme.id }} .hederIcon:hover svg{
+      fill: {{ scheme.settings.secondary-button-hover-text }};
+      }
+      .color-{{ scheme.id }} h1, .color-{{ scheme.id }} .heading{
+      color: {{ scheme.settings.heading-color }};
+      }
+      .color-{{ scheme.id }} .sub-heading{
+      color: {{ scheme.settings.sub-heading-color }};
+      }
+      .color-{{ scheme.id }} a{
+      color: {{ scheme.settings.link-color }};
+      }
+      .color-{{ scheme.id }} svg {
+      fill: {{ scheme.settings.link-color }};
+      }
+      .color-{{ scheme.id }} .primary-button {
+      color: {{ scheme.settings.button-text }};
+      background: {{ scheme.settings.button-background }};
+      border: 1px solid {{ scheme.settings.button-border-color}};
+      }
+      .color-{{ scheme.id }} .secondary-button, .color-{{ scheme.id }} .tablinks.active{
+      color: {{ scheme.settings.secondary-button-text }};
+      background: {{ scheme.settings.secondary-button-background }};
+      border: 1px solid {{ scheme.settings.secondary-button-border-color}};
+      }
+      .color-{{ scheme.id }} .primary-button:hover {
+      color: {{ scheme.settings.button-hover-text }};
+      background: {{ scheme.settings.button-hover-background }};
+      border: 1px solid {{ scheme.settings.button-hover-border-color}};
+      }
+      .color-{{ scheme.id }} .secondary-button:hover{
+      color: {{ scheme.settings.secondary-button-hover-text }};
+      background: {{ scheme.settings.secondary-button-hover-background }};
+      border: 1px solid {{ scheme.settings.secondary-button-hover-border-color}};
+      }
+      {% endfor %}
 :root {
     --font-body: {{ settings.font_body.family }};
     --font-body-weight: {{ settings.font_body.weight }};
