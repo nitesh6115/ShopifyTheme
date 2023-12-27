@@ -634,11 +634,35 @@ function TabContent(TabContent) {
   const ProductTotal = TabContent.getAttribute('data-total');
   const Heading = TabContent.getAttribute('data-heading');
   const SubHeading = TabContent.getAttribute('data-sub');
+  const ButtonText = TabContent.getAttribute('data-button');
   const TabTitle = TabContent.getAttribute('data-title');
   const ParentDiv = TabContent.closest('.CarsoulBox');
   const SliderDiv = ParentDiv.querySelector('.TabProductBox');
+  const change_heading_element = ParentDiv.querySelector('.heading_title');
+  const change_sub_heading_element = ParentDiv.querySelector('.sub_title');
+  const show_button = ParentDiv.querySelector('.RightSide');
   const TabLink = ParentDiv.querySelectorAll('.tablinks');
   const TabDirection = ParentDiv.querySelector('.tabs__nav-decoration');
+  if(Heading ! == 'NULL'){
+    change_heading_element.classList.remove('hide')
+    change_heading_element.innerHTML = Heading;
+  }else{
+    change_heading_element.classList.add('hide')
+  }
+  if(SubHeading ! == 'NULL'){
+    change_sub_heading_element.classList.remove('hide')
+    change_sub_heading_element.innerHTML = SubHeading;
+  }else{
+    change_sub_heading_element.classList.add('hide')
+  }
+  if(ButtonText ! == 'NULL'){
+    show_button.classList.remove('hide')
+    const html = '<a href="'+CollectionHandle+'"class="cta-btn primary-button">'+ButtonText+'</a>';
+    show_button.innerHTML = html;
+  }else{
+    show_button.classList.add('hide')
+  }
+  
   var LeftValue = 3;
   TabLink.forEach(function (item, i) {
         item.classList.remove('active')
@@ -657,5 +681,7 @@ function TabContent(TabContent) {
          TabDirection.style.left = Updated+'px';
        }
    })
-   TabContent.classList.add('active');     
+   TabContent.classList.add('active'); 
+
+  
 }
