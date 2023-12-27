@@ -103,13 +103,13 @@ h3{
   font-size: var(--heading-h3-font-size);
 }
 h4{
-  font-size: var(--heading-h4-font-size)px;
+  font-size: var(--heading-h4-font-size);
 }
 h5{
-  font-size: var(--heading-h5-font-size)px;
+  font-size: var(--heading-h5-font-size);
 }
 h6{
- font-size: var(--heading-h6-font-size)px; 
+ font-size: var(--heading-h6-font-size); 
 }
 
 
