@@ -649,7 +649,7 @@ function TabContent(TabContent) {
        if(TabTitle == title){
         const width = item.offsetWidth; 
         TabDirection.style.width= item.offsetWidth+'px';
-        TabDirection.Styel.left = left+'px';
+        TabDirection.Styel.left = LeftValue+'px';
        }
    })
    TabContent.classList.add('active');     
