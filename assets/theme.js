@@ -639,7 +639,7 @@ function TabContent(TabContent) {
   const SliderDiv = ParentDiv.querySelector('.TabProductBox');
   const TabLink = ParentDiv.querySelectorAll('.tablinks');
   const TabDirection = ParentDiv.querySelector('.tabs__nav-decoration');
-  var LeftValue = 0;
+  var LeftValue = 3;
   TabLink.forEach(item => {
         item.classList.remove('active')
         const title = item.getAttribute('data-title');
@@ -649,7 +649,7 @@ function TabContent(TabContent) {
         const CurrentWidth = item.offsetWidth; 
          console.log(LeftValue)
          TabDirection.style.width = CurrentWidth+'px';
-         TabDirection.Styel.left = LeftValue;
+         TabDirection.style.left = LeftValue+'px';
        }
    })
    TabContent.classList.add('active');     
