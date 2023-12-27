@@ -648,7 +648,7 @@ function TabContent(TabContent) {
         console.log(title)
        if(TabTitle == title){
         const width = item.offsetWidth; 
-        TabDirection.style.width= item.offsetWidth+'px';
+        //TabDirection.style.width= item.offsetWidth+'px';
         //TabDirection.Styel.left = LeftValue+'px';
        }
    })
