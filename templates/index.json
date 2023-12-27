@@ -78,12 +78,48 @@
             "shop_all": true,
             "button_text": "View All"
           }
+        },
+        "7a4bad4a-d484-4064-bca3-0be25bc0b302": {
+          "type": "content",
+          "settings": {
+            "title": "Wool",
+            "heading": "WOOL BELTS",
+            "sub_title": "Tranding",
+            "slide-collection": "mens-knitwear",
+            "shop_all": false,
+            "button_text": "View All"
+          }
+        },
+        "d757636a-d5ea-4723-a073-43cf755532fb": {
+          "type": "content",
+          "settings": {
+            "title": "Flex Leather",
+            "heading": "LEATHER BELTS",
+            "sub_title": "New",
+            "slide-collection": "mens-trousers",
+            "shop_all": true,
+            "button_text": "View ALL"
+          }
+        },
+        "89cc7846-757d-4c54-b6c5-f74064ca9386": {
+          "type": "content",
+          "settings": {
+            "title": "Leather",
+            "heading": "NEW BELTS",
+            "sub_title": "Bestseller",
+            "slide-collection": "womens-accessories",
+            "shop_all": false,
+            "button_text": "Shop Now"
+          }
         }
       },
       "block_order": [
         "a636e091-b64d-44e7-891b-9095ac3d649b",
         "9b284c90-646e-486e-aa49-96ea36b33a51",
-        "b121d231-65ca-4054-9b6e-6fbfb7b07fb9"
+        "b121d231-65ca-4054-9b6e-6fbfb7b07fb9",
+        "7a4bad4a-d484-4064-bca3-0be25bc0b302",
+        "d757636a-d5ea-4723-a073-43cf755532fb",
+        "89cc7846-757d-4c54-b6c5-f74064ca9386"
       ],
       "settings": {
         "color_scheme": "background-1",
