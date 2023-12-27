@@ -35,6 +35,8 @@
     border-radius: 9999px;
     margin: 0 8px;
     display: table-cell;
+    position: relative;
+    z-index: 2;
 }
 
 
