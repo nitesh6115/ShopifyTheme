@@ -644,15 +644,15 @@ function TabContent(TabContent) {
         item.classList.remove('active')
         const title = item.getAttribute('data-title');
         const widthValue = item.offsetWidth;
-        LeftValue += widthValue
-        console.log(i)
+        if (i != 0 ){
+           LeftValue += widthValue
+        }
        
        if(TabTitle == title){
         const CurrentWidth = item.offsetWidth; 
          console.log(LeftValue)
-         TabDirection.style.left = LeftValue+'px';
          TabDirection.style.width = CurrentWidth+'px';
-         
+         TabDirection.style.left = LeftValue+'px';
        }
    })
    TabContent.classList.add('active');     
