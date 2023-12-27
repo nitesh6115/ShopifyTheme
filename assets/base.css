@@ -70,7 +70,7 @@ body {
 	font-family: var(--font-body);
 	font-style: var(--font-body-style);
     font-weight: var(--font-body-weight);
-	font-size: var(--body-font-size)px;
+	font-size: var(--body-font-size);
 }
 a{
   color: var(--body-link-color);
