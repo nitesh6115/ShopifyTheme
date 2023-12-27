@@ -2,7 +2,7 @@
   <div class="drawer_overlay color-{{ section.settings.color_scheme }}"onclick='cartDrwerclose()'></div>
       <div class="drawer-box">
       <div class="drawerProducts color-{{ section.settings.color_scheme }}">
-        <h2 class="heading">{{ section.settings.recomended }}</h2>
+        <h5>{{ section.settings.recomended }}</h5>
         {% if cart.items != 0 %}
         {% assign item = cart.items.first %}
         {% for collection in item.product.collections %}
