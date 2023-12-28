@@ -698,6 +698,7 @@ function TabContent(TabContent) {
         .then(response => response.text())
         .then((responseText) => {
             const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('shopify-section-collection-data').innerHTML;
+            console.log(parsedHTML)
         })
     
    })
