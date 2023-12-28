@@ -760,7 +760,6 @@ function TabContent(TabContent) {
                 var newElem = item.closest('.product-image-container')
                 var nextbutton = newElem.querySelectorAll('.swiper-button-next')[0];
                 var prebutton = newElem.querySelectorAll('.swiper-button-prev')[0];
-                console.log(prebutton)
                 const swiperTabs = new Swiper(item, {
                     loop: true,
                     allowTouchMove: false, 
