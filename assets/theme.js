@@ -697,7 +697,7 @@ function TabContent(TabContent) {
        fetch("/collections/"+CollectionHandle+"?section_id=collection-data")
         .then(response => response.text())
         .then((responseText) => {
-            const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('shopify-section-collection-data').innerHTML;
+            const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('shopify-section-collection-data');
             let gridItem = parsedHTML.querySelectorAll('.GridItem');
             var mainDiv = document.createElement('div');
             mainDiv.classList.add("product-image-slide");
