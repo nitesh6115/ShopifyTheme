@@ -393,6 +393,19 @@ shopContainer.forEach(item => {
             nextEl: nextbutton,
             prevEl: prebutton,
         },
+        breakpoints: {
+          640: {
+              spaceBetween: 15,
+              slidesPerView: 1,
+          },
+          1024: {
+              slidesPerView: 1,
+          },
+          1366: {
+              slidesPerView: 1,
+  
+          },
+      },
     })
 })
 // notify me 
