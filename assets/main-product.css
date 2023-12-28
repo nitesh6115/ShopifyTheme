@@ -242,15 +242,17 @@
 }
 
 .box-3 {
-    background: var(--header-bg);
+    background: rgb(0 0 0 / 52%);
     z-index: 5;
-    position: relative;
     border: 1px solid;
     border-radius: 30px 30px 0 0;
     border-bottom: 0;
     padding: 30px;
     z-index: 9;
     position: relative;
+    -webkit-backdrop-filter: saturate(180%) blur(2rem);
+    backdrop-filter: saturate(180%) blur(2rem);
+    box-shadow: 0 -3rem 3rem rgba(0,0,0,0.3)
 }
     .swiper-zoom-container {
         padding: 0 15px;
