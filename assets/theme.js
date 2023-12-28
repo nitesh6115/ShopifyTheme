@@ -301,7 +301,6 @@ function ChnageVaiantImg(event) {
                 breakpoints: {
                     640: {
                         slidesPerView: 1,
-                        effect: 'slide',
                     },
                     1024: {
                         slidesPerView: 1,
