@@ -281,6 +281,53 @@
         "image": "shopify:\/\/shop_images\/47582295_394630424614808_8126913247421217687_n.jpg",
         "mobile_image": "shopify:\/\/shop_images\/297962360_614272536936272_7964346338163368609_n.jpg"
       }
+    },
+    "a8751c81-156a-45d8-a13f-681e986217dd": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14475434328150__a8751c81-156a-45d8-a13f-681e986217dd-sub-heading-1": {
+          "type": "sub-heading",
+          "settings": {
+            "title": "Sub-Heading"
+          }
+        },
+        "template--14475434328150__a8751c81-156a-45d8-a13f-681e986217dd-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "<p>Heading<\/p>"
+          }
+        },
+        "template--14475434328150__a8751c81-156a-45d8-a13f-681e986217dd-description-1": {
+          "type": "description",
+          "settings": {
+            "title": "<p> Below is an example of a Shopify image with text section that includes condition statements for changing the image position (left or right) and text alignment (left, center, or right). It uses Liquid and HTML to handle the conditions:<\/p>"
+          }
+        },
+        "template--14475434328150__a8751c81-156a-45d8-a13f-681e986217dd-button-1": {
+          "type": "button",
+          "settings": {
+            "primary-button": "Button",
+            "primary-button-link": "",
+            "secondary-button": "Button",
+            "secondary-button-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14475434328150__a8751c81-156a-45d8-a13f-681e986217dd-sub-heading-1",
+        "template--14475434328150__a8751c81-156a-45d8-a13f-681e986217dd-heading-1",
+        "template--14475434328150__a8751c81-156a-45d8-a13f-681e986217dd-description-1",
+        "template--14475434328150__a8751c81-156a-45d8-a13f-681e986217dd-button-1"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "width": "wrapper-width",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "image_position": "left",
+        "desktop_content_position": "middle",
+        "text_alignment": "left"
+      }
     }
   },
   "order": [
@@ -289,6 +336,7 @@
     "57a33abb-1a0e-4294-b0b8-b18fc32afe27",
     "9ac45232-d4da-4400-b33b-469cbb27e83e",
     "de168d02-cb1c-4cd8-a9e3-55c79f5e1e3d",
-    "43ba7001-4c38-4e75-9339-3c902acdfe50"
+    "43ba7001-4c38-4e75-9339-3c902acdfe50",
+    "a8751c81-156a-45d8-a13f-681e986217dd"
   ]
 }
