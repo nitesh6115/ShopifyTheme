@@ -290,12 +290,9 @@ function ChnageVaiantImg(event) {
             if(checkClass){
               const swiperTabs = new Swiper(item, {
                 loop: true,
-                allowTouchMove: false,
-                autoplay: 7000,
-                speed: 300,
+                zoom: true,
                 slidesPerView: 1,
                 initialSlide: 0,
-                effect: 'fade',
                 navigation: {
                     nextEl: nextbutton,
                     prevEl: prebutton,
