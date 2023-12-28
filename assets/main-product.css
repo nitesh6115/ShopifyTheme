@@ -206,10 +206,13 @@
 .ColorOptionBox .size-selector {
     padding-right: 8px;
 }
-.product-page .box-2 .swiper-wrapper {
+@media(min-width: 1024px){
+ .product-page .box-2 .swiper-wrapper {
     transform: unset !important;
     flex-direction: column;
+} 
 }
+
 @media(max-width: 1023px){
    
     .product-image-container {
