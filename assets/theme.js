@@ -293,6 +293,7 @@ function ChnageVaiantImg(event) {
     var prebutton = newElem.querySelectorAll('.swiper-button-prev')[0];
     
             if(checkClass){
+              var swiperPagination = newElem.querySelectorAll('.swiper-pagination')[0];
               const swiperTabs = new Swiper(item, {
                 loop: true,
                 zoom: true,
@@ -304,7 +305,7 @@ function ChnageVaiantImg(event) {
                     prevEl: prebutton,
                 },
                 pagination: {
-                  el: ".swiper-pagination",
+                  el: swiperPagination,
                   clickable: true,
                 },
                 breakpoints: {
