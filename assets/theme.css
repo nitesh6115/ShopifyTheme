@@ -1372,6 +1372,10 @@ div#order_address {
     flex-direction: row-reverse;
 }
 @media(max-width: 767px){
+  .button-box a {
+    padding: 6px 15px;
+    font-size: 13px;
+}
   .ImageWithTextBox .GridItem {
     width: 100%;
   }
