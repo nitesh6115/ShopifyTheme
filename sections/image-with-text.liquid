@@ -21,7 +21,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
    </div>
    <div class="GridItem">
      
-  <div class="text-content" style="text-align: {{ section.settings.text_alignment }};">
+  <div class="text-content {{ section.settings.text_alignment }}">
     {% for block in section.blocks %}
         {% if block.type == 'heading' %}
             <h2 class="heading">{{ block.settings.title }}</h2>
@@ -41,11 +41,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
         {% endif %}
         {% if block.type == 'description' %}
         <div class="rte">{{ block.settings.title }}</div>
-        {% endif %}
-      
-
-      <div class="rte">{{ section.settings.description }}</div>
-      
+        {% endif %}    
     {% endfor %}
   </div>
    </div>
