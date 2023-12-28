@@ -293,6 +293,7 @@ function ChnageVaiantImg(event) {
                 zoom: true,
                 slidesPerView: 1,
                 initialSlide: 0,
+                effect: 'fade',
                 navigation: {
                     nextEl: nextbutton,
                     prevEl: prebutton,
