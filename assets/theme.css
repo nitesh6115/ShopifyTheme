@@ -96,6 +96,9 @@ ul li a {
   display: flex;
   align-items: center;
 }
+.info ul ul{
+  background: var(--header-bg);
+}
 .annouce-bar{
     width: 100%;
 }
