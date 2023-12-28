@@ -107,6 +107,26 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
         },
         {
           "type": "select",
+          "id": "desktop_content_position",
+          "label": "Desktop Content Position",
+          "options": [
+            {
+              "value": "top",
+              "label": "Top"
+            },
+            {
+              "value": "middle",
+              "label": "Middle"
+            },
+            {
+              "value": "bottom",
+              "label": "Bottom"
+            }
+          ],
+          "default": "middle"
+        },
+        {
+          "type": "select",
           "id": "text_alignment",
           "label": "Text Alignment",
           "options": [
