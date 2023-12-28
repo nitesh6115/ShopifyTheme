@@ -1351,6 +1351,7 @@ div#order_address {
 }
 .ImageWithTextBox img{
   max-width: 100%;
+  height: auto;
 }
 .ImageWithTextBox .text-content{
   padding: 0 30px; 
