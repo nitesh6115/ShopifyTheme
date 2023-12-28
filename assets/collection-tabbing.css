@@ -52,3 +52,9 @@
 .TabingHead {
     position: relative;
 }
+@media(max-width: 767px){
+  .HederTabBox .cta-btn {
+    padding: 6px 15px;
+    font-size: 11px;
+}
+}
