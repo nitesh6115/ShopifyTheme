@@ -15,13 +15,13 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
    
    <div class="GridItem">
     {% if  section.settings.mobile_image != blank %}
-    <img class="desktop-hide" width="{{ section.settings.mobile_image.width }}" height="{{ section.settings.mobile_image.height }}" loading="lazy" srcset="{{ section.settings.mobile_image  | img_url:'768x'}}" alt="{{ section.settings.mobile_image.alt }}">
+    <img class="desktop-hide radius-30" width="{{ section.settings.mobile_image.width }}" height="{{ section.settings.mobile_image.height }}" loading="lazy" srcset="{{ section.settings.mobile_image  | img_url:'768x'}}" alt="{{ section.settings.mobile_image.alt }}">
     {% endif %}
     <img loading="lazy" width="{{ section.settings.image.width }}" height="{{ section.settings.image.height }}" class="{% if section.settings.mobile_image != blank %}mobile-hide{% endif %}"  alt="{{ section.settings.image.alt }}" srcset="{{ section.settings.image  | img_url:'1200x'}}">
    </div>
    
    <div class="GridItem">
-      <div class="text-content {{ section.settings.text_alignment }}">
+      <div class="text-content {{ section.settings.text_alignment }} text-content-{{ section.settings.desktop_content_position}}">
     {% for block in section.blocks %}
         {% if block.type == 'heading' %}
             <h2 class="heading">{{ block.settings.title }}</h2>
