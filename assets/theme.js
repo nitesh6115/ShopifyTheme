@@ -415,7 +415,7 @@ function notify(item) {
 // Look The Shop
 var shopContainer = document.querySelectorAll('.shopock-product-container');
 
-shopContainer.forEach(function(item, index) {
+shopContainer.forEach(function (item, index) {
     const nav = item.closest('.shoplock-image-container');
     const navbtn = nav.querySelectorAll('.DotsBox .dotsAnimate')
     const shopContainerTabs = 'i_'+index;
