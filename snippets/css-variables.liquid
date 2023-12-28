@@ -183,7 +183,7 @@
     --wbsite-right-padding:{{ settings.layout-padding-right}}px;
 
     --button-font-size:{{settings.button-font-size}}px;
-    --flash-wrapper-image:url({{settings.flash-image | file_url }});
+    --flash-wrapper-image:url({{settings.flash-image | img_url: 'master' }});
     --site-link-color:{{settings.link-color}}; 
 }
 </style>
