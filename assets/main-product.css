@@ -116,9 +116,7 @@
 .featured-product.product-page:hover .product-info {
     opacity: 1;
 }
-.product-page .box-2 .swiper-wrapper {
-    flex-direction: column;
-}
+
 
 .product-page .box-3 .quick-add-wrapper {
     position: relative;
@@ -211,6 +209,9 @@
     transform: unset !important;
     flex-direction: column;
 } 
+  .product-page .box-2 .swiper-wrapper {
+    flex-direction: column;
+}
 }
 
 @media(max-width: 1023px){
