@@ -22,14 +22,31 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
    <div class="GridItem">
      
   <div class="text-content" style="text-align: {{ section.settings.text_alignment }};">
-    {% if section.settings.heading != blank or section.settings.sub_heading != blank or section.settings.description != blank %}
-      <div class="sub_heading">{{ section.settings.sub_heading }}</div>
-      <h2 class="heading">{{ section.settings.heading }}</h2>
+    {% for block in section.blocks %}
+        {% if block.type == 'heading' %}
+            <h2 class="heading">{{ block.settings.title }}</h2>
+        {% endif %}
+        {% if block.type == 'sub-heading' %}
+        <div class="sub_heading">{{ block.settings.title }}</div>
+        {% endif %}
+        {% if block.type == 'button' %}
+        <div class="button-box">
+          {% if block.settings.primary-button != blank and block.settings.primary-button-link != blank %}
+          <a href="{{ block.settings.primary-button-link }}" class="button primary-button">{{ block.settings.primary-button }}</a>
+            {% endif %}
+          {% if block.settings.secondary-button != blank and block.settings.secondary-button-link != blank %}
+          <a href="{{ block.settings.secondary-button-link }}" class="button secondary-button">{{ block.settings.secondary-button }}</a>
+            {% endif %}
+        </div>
+        {% endif %}
+        {% if block.type == 'description' %}
+        <div class="rte">{{ block.settings.title }}</div>
+        {% endif %}
+      
+
       <div class="rte">{{ section.settings.description }}</div>
-      <div class="button-box">
-        <a href="{{ section.settings.button_link }}" class="btn">{{ section.settings.button_text }}</a>
-      </div>
-    {% endif %}
+      
+    {% endfor %}
   </div>
    </div>
 </div>
