@@ -255,6 +255,8 @@ function ChnageVaiantImg(event) {
         }
     })
     var swiperPrev = document.createElement('div');
+    var swiperPage = document.createElement('div');
+    swiperPage.classList.add('swiper-pagination')
     swiperPrev.classList.add('swiper-button-prev');
     swiperPrev.classList.add('secondary-button');
     var swiperNext = document.createElement('div');
@@ -279,7 +281,10 @@ function ChnageVaiantImg(event) {
     mainDiv.append(newDiv)
     }
     topcontainer.append(swiperNext)
-    topcontainer.append(swiperPrev)
+    topcontainer.append(swiperPrev);
+    if(checkClass){
+      topcontainer.append(swiperPage);
+    }
     topcontainer.appendChild(mainDiv)
     // intilize slider
     var item = mainParent.querySelectorAll('.product-image-slide')[0];
@@ -297,6 +302,10 @@ function ChnageVaiantImg(event) {
                 navigation: {
                     nextEl: nextbutton,
                     prevEl: prebutton,
+                },
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
                 },
                 breakpoints: {
                     640: {
