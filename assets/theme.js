@@ -684,13 +684,13 @@ function TabContent(TabContent) {
         const widthValue = parseInt(item.offsetWidth);
         LeftValue += widthValue;
        if(TabTitle == title){
-        console.log("left: "+LeftValue)
+        //console.log("left: "+LeftValue)
         const CurrentWidth = item.offsetWidth; 
         let Updated = LeftValue - item.offsetWidth;
         if(Updated == 0){
           Updated = 3;
         }
-         console.log(Updated)
+         //console.log(Updated)
          TabDirection.style.width = CurrentWidth+'px';
          TabDirection.style.left = Updated+'px';
        }
@@ -710,6 +710,7 @@ function TabContent(TabContent) {
             var swiperNext = document.createElement('div');
             swiperNext.classList.add('swiper-button-next');
             swiperNext.classList.add('secondary-button')
+            console.log(gridItem.length)
             gridItem.forEach(function (item, i) {
               if (i == ProductTotal) {
                   var swiperWrapp = document.createElement('div');
