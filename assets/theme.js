@@ -701,6 +701,7 @@ function TabContent(TabContent) {
             let gridItem = parsedHTML.querySelectorAll('.GridItem');
             var mainDiv = document.createElement('div');
             mainDiv.classList.add("collection-list");
+            mainDiv.classList.add("swiper");
             var newDiv = document.createElement('div');
             newDiv.classList.add("swiper-wrapper");
             var swiperPrev = document.createElement('div');
