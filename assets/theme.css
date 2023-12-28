@@ -1330,4 +1330,37 @@ div#order_address {
     padding: 20px;
 }
 }
+.text-content .rte {
+    margin-bottom: 30px;
+}
 
+.text-content.left .button-box {
+    align-items: flex-start;
+}
+
+.text-content.center .button-box {
+    align-items: center;
+}
+
+.text-content.right .button-box {
+    align-items: flex-end;
+}
+
+.button-box a {
+    margin-bottom: 20px;
+}
+
+.ImageWithTextBox.content-position-middle {}
+
+.ImageWithTextBox.content-position-middle .GridItem {
+    display: flex;
+    align-items: center;
+}
+
+.ImageWithTextBox.content-position-bottom .GridItem {
+    align-items: flex-end;
+}
+
+.ImageWithTextBox.content-position-top .GridItem {
+    align-items: flex-start;
+}
