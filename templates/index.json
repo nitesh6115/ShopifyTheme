@@ -239,27 +239,27 @@
         "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-sub-heading-1": {
           "type": "sub-heading",
           "settings": {
-            "title": "Sub-Heading"
+            "title": "Brydon Brothers"
           }
         },
         "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-heading-1": {
           "type": "heading",
           "settings": {
-            "title": "<p>Heading<\/p>"
+            "title": "<p>Our Story<\/p>"
           }
         },
         "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-description-1": {
           "type": "description",
           "settings": {
-            "title": "<p> Below is an example of a Shopify image with text section that includes condition statements for changing the image position (left or right) and text alignment (left, center, or right). It uses Liquid and HTML to handle the conditions:<\/p>"
+            "title": "<p>Brydon Brothers design and produce quality handcrafted belts that can be worn for every occasion.<br\/>Founded by four brothers from England, the brand draws inspiration from their family's British heritage and the rugged landscapes that surrounded them over the centuries.<\/p>"
           }
         },
         "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-button-1": {
           "type": "button",
           "settings": {
-            "primary-button": "Button",
-            "primary-button-link": "shopify:\/\/collections\/all",
-            "secondary-button": "Button",
+            "primary-button": "Learn More",
+            "primary-button-link": "shopify:\/\/pages\/our-story",
+            "secondary-button": "",
             "secondary-button-link": "shopify:\/\/collections\/mens-accessories"
           }
         }
