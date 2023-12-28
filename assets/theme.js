@@ -728,14 +728,18 @@ function TabContent(TabContent) {
               }
             })
             SliderDiv.innerHTML = ''
-            SliderDiv.innerHTML = mainDiv;
-            const swiperTabs = new Swiper(mainDiv, {
+            SliderDiv.appendChild(mainDiv);
+            var item = ParentDiv.querySelectorAll('.collection-list')[0];
+            var nextbutton = ParentDiv.querySelectorAll('.swiper-button-next')[0];
+            var prebutton = ParentDiv.querySelectorAll('.swiper-button-prev')[0];
+            console.log(item)
+            const swiperTabs = new Swiper(item, {
             slidesPerView: 2,
             spaceBetween: 15,
             initialSlide: 0,
             navigation: {
-                nextEl: swiperNext,
-                prevEl: swiperPrev,
+                nextEl: nextbutton,
+                prevEl: prebutton,
             },
             breakpoints: {
                 640: {
