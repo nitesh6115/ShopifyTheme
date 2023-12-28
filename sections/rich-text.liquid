@@ -12,6 +12,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 {% endstyle %}
 <div class="section-{{section.id}}-padding color-{{ section.settings.color_scheme }}">
 <div class="{% if section.settings.page-width == 'full-width' %} full-width {% elsif section.settings.page-width == 'wrapper-width' %} page-width {% else %} narrow-width {% endif %}">
+  <div class="RichText {{ section.settings.text_alignment }}">
   {%- if section.settings.title != blank -%}
     <h2 class="heading">{{ section.settings.title | escape }}</h2>
   {%- endif -%}
@@ -20,6 +21,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
       {{ section.settings.text }}
     </div>
   {%- endif -%}
+  </div>
 </div>
 </div>
 
