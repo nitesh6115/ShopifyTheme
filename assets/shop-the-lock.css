@@ -110,6 +110,8 @@
     top: inherit;
     left: 0;
     bottom: 0;
+    z-index: 4;
+    border: 1px solid;
 }
   .shoplock-slider.m_fixed .swiper-button-next.swiper-next {
     display: none;
