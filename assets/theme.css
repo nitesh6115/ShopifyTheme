@@ -1349,9 +1349,12 @@ div#order_address {
 .button-box a {
     margin-bottom: 20px;
 }
-
-.ImageWithTextBox.content-position-middle {}
-
+.ImageWithTextBox img{
+  max-width: 100%;
+}
+.ImageWithTextBox .text-content{
+  padding: 0 30px; 
+}
 .ImageWithTextBox.content-position-middle .GridItem {
     display: flex;
     align-items: center;
