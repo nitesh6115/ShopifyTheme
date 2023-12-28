@@ -215,7 +215,9 @@
 }
 
 @media(max-width: 1023px){
-   
+    .swiper-zoom-container {
+        padding: 0 15px;
+    }
     .product-image-container {
       overflow: visible;
     }
