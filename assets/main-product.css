@@ -208,6 +208,9 @@
 }
 
 @media(max-width: 1023px){
+  .product-page .box-2 .swiper-wrapper{
+    flex-direction: unset;
+  }
   .product-grid .box-1, .product-grid .box-3 {
       min-height: inherit;
       position: relative;
