@@ -153,6 +153,11 @@ video.video-js {
     object-fit: cover;
     object-position: center;
 }
+@media(max-width: 1024px){
+  .text-box{
+  padding: 3rem;
+}
+}
 @media(max-width:767px){
   .videoImage-container.ItemSize-2 .video-with-text {
     height: auto;
