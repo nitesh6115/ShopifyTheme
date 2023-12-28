@@ -175,12 +175,12 @@ function ChangeSize(event){
             dataAvability = item.getAttribute('data-avability');
         }
     })
-    console.log(soldOut);
+    //console.log(soldOut);
 
     var selectType = event.getAttribute('type')
     if (dataAvability == 'true') {
         if (selectType == "size") {
-            console.log(event)
+            //console.log(event)
             var checkClass = mainParent.classList.contains('product-page')
             if(checkClass){
               ManiProduct(mainParent, event, variantId)
@@ -277,27 +277,46 @@ function ChnageVaiantImg(event) {
     var newElem = mainParent.querySelectorAll('.product-image-container')[0]
     var nextbutton = newElem.querySelectorAll('.swiper-button-next')[0];
     var prebutton = newElem.querySelectorAll('.swiper-button-prev')[0];
-    const swiperTabs = new Swiper(item, {
-        loop: true,
-        allowTouchMove: false,
-        autoplay: 7000,
-        speed: 300,
-        slidesPerView: 1,
-        noSwipingClass: 'swiper-no-swiping',
-        initialSlide: 0,
-        effect: 'fade',
-        navigation: {
-            nextEl: nextbutton,
-            prevEl: prebutton,
-        },
-    })
-    var swp = item.swiper
-    item.addEventListener("mouseover", function() {
-        swp.autoplay.start();
-    })
-    item.addEventListener("mouseout", function() {
-        swp.autoplay.stop();
-    })
+    var checkClass = mainParent.classList.contains('product-page')
+            if(checkClass){
+              const swiperTabs = new Swiper(item, {
+                loop: true,
+                allowTouchMove: false,
+                autoplay: 7000,
+                speed: 300,
+                slidesPerView: 1,
+                noSwipingClass: 'swiper-no-swiping',
+                initialSlide: 0,
+                effect: 'fade',
+                navigation: {
+                    nextEl: nextbutton,
+                    prevEl: prebutton,
+                },
+            })
+            }else{
+              const swiperTabs = new Swiper(item, {
+                loop: true,
+                allowTouchMove: false,
+                autoplay: 7000,
+                speed: 300,
+                slidesPerView: 1,
+                noSwipingClass: 'swiper-no-swiping',
+                initialSlide: 0,
+                effect: 'fade',
+                navigation: {
+                    nextEl: nextbutton,
+                    prevEl: prebutton,
+                },
+            })
+            var swp = item.swiper
+            item.addEventListener("mouseover", function() {
+                swp.autoplay.start();
+            })
+            item.addEventListener("mouseout", function() {
+                swp.autoplay.stop();
+            })
+            }
+    
     var mainselctbox = mainParent.querySelectorAll('select option');
     var soldOut = [];
     var totalOptionsSize = mainParent.querySelectorAll('[data-option-size]').length;
