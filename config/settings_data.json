@@ -41,34 +41,6 @@
     "button-border-color": "linear-gradient(54deg, rgba(73, 228, 114, 1) 100%, rgba(114, 255, 179, 1) 100%, rgba(255, 250, 99, 1) 100%)",
     "button-hover-border-color": "linear-gradient(180deg, rgba(22, 22, 22, 1) 100%, rgba(249, 32, 32, 1) 100%)",
     "sections": {
-      "announcement-bar": {
-        "type": "announcement-bar",
-        "blocks": {
-          "1280d693-bbd0-4644-965a-9874c2b2dfd4": {
-            "type": "header",
-            "settings": {
-              "title": "Free Domestic Shipping over $150"
-            }
-          },
-          "5ad06489-3e9f-432e-8f90-f9a1dab12a50": {
-            "type": "header",
-            "settings": {
-              "title": "Shop Women's Must-Haves"
-            }
-          }
-        },
-        "block_order": [
-          "1280d693-bbd0-4644-965a-9874c2b2dfd4",
-          "5ad06489-3e9f-432e-8f90-f9a1dab12a50"
-        ],
-        "settings": {
-          "width": "narrow-width",
-          "show-announcement": true,
-          "bg-color": "",
-          "text-color": "",
-          "menu": "info"
-        }
-      },
       "footer": {
         "type": "footer",
         "blocks": {

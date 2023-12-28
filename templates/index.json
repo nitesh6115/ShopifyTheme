@@ -232,6 +232,48 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "43ba7001-4c38-4e75-9339-3c902acdfe50": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-sub-heading-1": {
+          "type": "sub-heading",
+          "settings": {
+            "title": "Sub-Heading"
+          }
+        },
+        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "<p>Heading<\/p>"
+          }
+        },
+        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-description-1": {
+          "type": "description",
+          "settings": {
+            "title": "<p> Below is an example of a Shopify image with text section that includes condition statements for changing the image position (left or right) and text alignment (left, center, or right). It uses Liquid and HTML to handle the conditions:<\/p>"
+          }
+        },
+        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-button-1": {
+          "type": "button",
+          "settings": {
+            "primary-button": "Button",
+            "primary-button-link": "",
+            "secondary-button": "Button",
+            "secondary-button-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-sub-heading-1",
+        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-heading-1",
+        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-description-1",
+        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-button-1"
+      ],
+      "settings": {
+        "image_position": "left",
+        "text_alignment": "left"
+      }
     }
   },
   "order": [
@@ -239,6 +281,7 @@
     "34aacdca-da45-4d6f-a67b-21692bd916e5",
     "57a33abb-1a0e-4294-b0b8-b18fc32afe27",
     "9ac45232-d4da-4400-b33b-469cbb27e83e",
-    "de168d02-cb1c-4cd8-a9e3-55c79f5e1e3d"
+    "de168d02-cb1c-4cd8-a9e3-55c79f5e1e3d",
+    "43ba7001-4c38-4e75-9339-3c902acdfe50"
   ]
 }
