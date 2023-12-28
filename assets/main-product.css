@@ -136,6 +136,7 @@
     width: 100%;
     padding: 0;
     margin: 0;
+    justify-content: flex-start;
 }
 .product-page .box-3 .size-selctor-wrapper .size-selector label {
     position: absolute;
