@@ -644,7 +644,7 @@ function TabContent(TabContent) {
   const show_button = ParentDiv.querySelector('.RightSide');
   const TabLink = ParentDiv.querySelectorAll('.tablinks');
   const TabDirection = ParentDiv.querySelector('.tabs__nav-decoration');
-  ParentDiv.classList.add('loading-effect');
+  SliderDiv.classList.add('loading-effect');
   if(Heading != 'NULL'){
     change_heading_element.classList.remove('hide');
     change_heading_element.style.opacity = "0";
