@@ -714,13 +714,12 @@ function TabContent(TabContent) {
                   var swiperWrapp = document.createElement('div');
                   swiperWrapp.classList.add('swiper-slide')
                   swiperWrapp.setAttribute("data-swiper-autoplay", "1000");
-                  swiperWrapp.innerHTML = item
+                  swiperWrapp.innerHTML = item.innerHTML;
                   newDiv.appendChild(swiperWrapp);
               }
             })
-
-         console.log(newDiv) 
-            
+            mainDiv.append(newDiv);
+            console.log(mainDiv)
         })
         
    })
