@@ -758,8 +758,7 @@ function TabContent(TabContent) {
                 },
             },
           })
-        })
-        var collcetionImageSlider = document.querySelectorAll('.product-image-wrapper');
+          var collcetionImageSlider = document.querySelectorAll('.product-image-wrapper');
             collcetionImageSlider.forEach(item => {
                 console.log(item)
                 var newElem = item.closest('.product-image-container')
@@ -803,4 +802,6 @@ function TabContent(TabContent) {
                     })
                 }
             })
+        })
+        
 }
