@@ -732,7 +732,7 @@ function TabContent(TabContent) {
             var item = ParentDiv.querySelectorAll('.collection-list')[0];
             var nextbutton = ParentDiv.querySelectorAll('.swiper-button-next')[0];
             var prebutton = ParentDiv.querySelectorAll('.swiper-button-prev')[0];
-            console.log(item)
+            console.log(nextbutton)
             const swiperTabs = new Swiper(item, {
             slidesPerView: 2,
             spaceBetween: 15,
