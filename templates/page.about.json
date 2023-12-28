@@ -60,7 +60,7 @@
         "template--14945199882326__2542c535-8247-492f-a6e3-46cf05da9fd0-heading-1": {
           "type": "heading",
           "settings": {
-            "title": "<h3>THE BROTHERS<\/h3>"
+            "title": "<p>THE BROTHERS<\/p>"
           }
         },
         "template--14945199882326__2542c535-8247-492f-a6e3-46cf05da9fd0-description-1": {
@@ -68,21 +68,11 @@
           "settings": {
             "title": "<h6>We have always been intrigued by our family’s British roots dating back to the mid 1800s across Scotland and England. Our brand has drawn much inspiration from our ancestor’s lives and has given us a deeper appreciation of the beautifully rugged landscapes we are lucky to call home.<\/h6><h6>For many generations the Brydon family crest has represented protection and strength as it was symbolized with the use of four eagles. Today, being four brothers it would only be natural for the eagle’s revival to fly on all our belts.<\/h6>"
           }
-        },
-        "template--14945199882326__2542c535-8247-492f-a6e3-46cf05da9fd0-button-1": {
-          "type": "button",
-          "settings": {
-            "primary-button": "Button",
-            "primary-button-link": "",
-            "secondary-button": "Button",
-            "secondary-button-link": ""
-          }
         }
       },
       "block_order": [
         "template--14945199882326__2542c535-8247-492f-a6e3-46cf05da9fd0-heading-1",
-        "template--14945199882326__2542c535-8247-492f-a6e3-46cf05da9fd0-description-1",
-        "template--14945199882326__2542c535-8247-492f-a6e3-46cf05da9fd0-button-1"
+        "template--14945199882326__2542c535-8247-492f-a6e3-46cf05da9fd0-description-1"
       ],
       "settings": {
         "color_scheme": "",
@@ -94,12 +84,108 @@
         "text_alignment": "center",
         "image": "shopify:\/\/shop_images\/Untitled-1_6bc95302-9fd2-4327-b9dd-496fa3f6e1c9.webp"
       }
+    },
+    "8c61b6c2-9476-4f90-a249-ed250c3ed106": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14945199882326__8c61b6c2-9476-4f90-a249-ed250c3ed106-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "<p>THE BELTS<\/p>"
+          }
+        },
+        "template--14945199882326__8c61b6c2-9476-4f90-a249-ed250c3ed106-description-1": {
+          "type": "description",
+          "settings": {
+            "title": "<h6>We are believers in focusing on one product and producing one product very well. Since 2014 we have been closely working with our factories to create a luxury accessory using only the finest sourced materials that will stand the test of time.<br\/><br\/>Our signature handmade stretch woven belts - designed with no holes and built using an elasticated braid - allow for a customised and comfortable fit and are seasonally released in new styles and colours.<\/h6>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14945199882326__8c61b6c2-9476-4f90-a249-ed250c3ed106-heading-1",
+        "template--14945199882326__8c61b6c2-9476-4f90-a249-ed250c3ed106-description-1"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "width": "wrapper-width",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "image_position": "right",
+        "desktop_content_position": "middle",
+        "text_alignment": "center",
+        "image": "shopify:\/\/shop_images\/Untitled-2.webp"
+      }
+    },
+    "898914ed-b516-44f9-aa55-625157df516a": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14945199882326__898914ed-b516-44f9-aa55-625157df516a-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "<p>THE LEATHER<\/p>"
+          }
+        },
+        "template--14945199882326__898914ed-b516-44f9-aa55-625157df516a-description-1": {
+          "type": "description",
+          "settings": {
+            "title": "<h6>The tanneries we work with use high quality leathers that will continue to develop its own character over time. Our belts will respond to light, as well as the oils and moisture in your hands, which means your product will age beautifully as the colour darkens and the leather develops a unique patina through use. These are not imperfections, but characteristics that make each item a one-of-a-kind.<\/h6>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14945199882326__898914ed-b516-44f9-aa55-625157df516a-heading-1",
+        "template--14945199882326__898914ed-b516-44f9-aa55-625157df516a-description-1"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "width": "wrapper-width",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "image_position": "left",
+        "desktop_content_position": "middle",
+        "text_alignment": "center",
+        "image": "shopify:\/\/shop_images\/Untitled-4.webp"
+      }
+    },
+    "f0e6f77a-127c-47cf-9d71-a1d501115ba6": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14945199882326__f0e6f77a-127c-47cf-9d71-a1d501115ba6-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "<p>THE EXPERIENCE<\/p>"
+          }
+        },
+        "template--14945199882326__f0e6f77a-127c-47cf-9d71-a1d501115ba6-description-1": {
+          "type": "description",
+          "settings": {
+            "title": "<h6>Why shouldn’t a belt be treated like any other luxury accessory? Belts are not given the attention they deserve and we aim to change that. What’s more, we sell direct to you; no mark-ups or middle men. So we fit your budget as well as your waist.<br\/><br\/>All belts come packaged in a thick cotton drawstring bag embroidered with subtle detailing as well as the option to be sent in our vintage wooden boxes.<\/h6>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14945199882326__f0e6f77a-127c-47cf-9d71-a1d501115ba6-heading-1",
+        "template--14945199882326__f0e6f77a-127c-47cf-9d71-a1d501115ba6-description-1"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "width": "wrapper-width",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "image_position": "right",
+        "desktop_content_position": "middle",
+        "text_alignment": "center",
+        "image": "shopify:\/\/shop_images\/Untitled-3.webp"
+      }
     }
   },
   "order": [
     "main",
     "49e0d1bf-c349-4b6c-8d9d-5fb3ad6a81de",
     "8e164413-838c-45b2-a54c-5dd3f9c798c3",
-    "2542c535-8247-492f-a6e3-46cf05da9fd0"
+    "2542c535-8247-492f-a6e3-46cf05da9fd0",
+    "8c61b6c2-9476-4f90-a249-ed250c3ed106",
+    "898914ed-b516-44f9-aa55-625157df516a",
+    "f0e6f77a-127c-47cf-9d71-a1d501115ba6"
   ]
 }
