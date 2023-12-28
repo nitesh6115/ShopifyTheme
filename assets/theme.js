@@ -677,7 +677,6 @@ function TabContent(TabContent) {
   }else{
     show_button.classList.add('hide')
   }
-  
   var LeftValue = 3;
   TabLink.forEach(function (item, i) {
         item.classList.remove('active')
@@ -695,6 +694,12 @@ function TabContent(TabContent) {
          TabDirection.style.width = CurrentWidth+'px';
          TabDirection.style.left = Updated+'px';
        }
+       fetch("/collections/"+CollectionHandle+"?section_id=collection-data")
+        .then(response => response.text())
+        .then((responseText) => {
+            const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('shopify-section-collection-data').innerHTML;
+        })
+    
    })
    TabContent.classList.add('active'); 
 
