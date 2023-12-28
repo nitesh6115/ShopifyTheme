@@ -719,9 +719,11 @@ function TabContent(TabContent) {
                 mainDiv.append(newDiv);
                 var swiperPrev = document.createElement('div');
                 swiperPrev.classList.add('swiper-button-prev');
+                swiperPrev.classList.add('tabingPrev');
                 swiperPrev.classList.add('secondary-button');
                 var swiperNext = document.createElement('div');
                 swiperNext.classList.add('swiper-button-next');
+                swiperNext.classList.add('tabingNext');
                 swiperNext.classList.add('secondary-button')
                 mainDiv.appendChild(swiperPrev);
                 mainDiv.appendChild(swiperNext)
@@ -730,8 +732,8 @@ function TabContent(TabContent) {
             SliderDiv.innerHTML = ''
             SliderDiv.appendChild(mainDiv);
             var item = ParentDiv.querySelectorAll('.collection-list')[0];
-            var nextbutton = ParentDiv.querySelectorAll('.swiper-button-next')[0];
-            var prebutton = ParentDiv.querySelectorAll('.swiper-button-prev')[0];
+            var nextbutton = ParentDiv.querySelectorAll('.tabingNext')[0];
+            var prebutton = ParentDiv.querySelectorAll('.tabingPrev')[0];
             console.log(nextbutton)
             const swiperTabs = new Swiper(item, {
             slidesPerView: 2,
