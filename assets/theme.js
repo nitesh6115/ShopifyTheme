@@ -715,11 +715,7 @@ function TabContent(TabContent) {
             console.log(gridItem.length)
             gridItem.forEach(function (item, i) {
               if (i == ProductTotal) {
-                  var swiperWrapp = document.createElement('div');
-                  swiperWrapp.classList.add('swiper-slide')
-                  swiperWrapp.setAttribute("data-swiper-autoplay", "1000");
-                  swiperWrapp.innerHTML = item.innerHTML;
-                  newDiv.appendChild(swiperWrapp);
+                  newDiv.appendChild(item.innerHTML);
               }
               if (i === gridItem.length - 1){ 
                 mainDiv.append(newDiv);
