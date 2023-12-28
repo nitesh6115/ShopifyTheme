@@ -719,10 +719,12 @@ function TabContent(TabContent) {
                 mainDiv.append(newDiv);
                 var swiperPrev = document.createElement('div');
                 swiperPrev.classList.add('swiper-button-prev');
+                swiperPrev.classList.add('swiper-prev');
                 swiperPrev.classList.add('tabingPrev');
                 swiperPrev.classList.add('secondary-button');
                 var swiperNext = document.createElement('div');
                 swiperNext.classList.add('swiper-button-next');
+                swiperNext.classList.add('swiper-next');
                 swiperNext.classList.add('tabingNext');
                 swiperNext.classList.add('secondary-button')
                 mainDiv.appendChild(swiperPrev);
