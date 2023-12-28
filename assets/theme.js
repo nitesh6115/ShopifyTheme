@@ -761,7 +761,7 @@ function TabContent(TabContent) {
           })
           var collcetionImageSlider = document.querySelectorAll('.product-image-wrapper');
             collcetionImageSlider.forEach(item => {
-                console.log(item)
+                //console.log(item)
                 var newElem = item.closest('.product-image-container')
                 var nextbutton = newElem.querySelectorAll('.swiper-button-next')[0];
                 var prebutton = newElem.querySelectorAll('.swiper-button-prev')[0];
