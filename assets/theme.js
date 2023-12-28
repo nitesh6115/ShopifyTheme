@@ -706,12 +706,6 @@ function TabContent(TabContent) {
             mainDiv.classList.add("swiper");
             var newDiv = document.createElement('div');
             newDiv.classList.add("swiper-wrapper");
-            var swiperPrev = document.createElement('div');
-            swiperPrev.classList.add('swiper-button-prev');
-            swiperPrev.classList.add('secondary-button');
-            var swiperNext = document.createElement('div');
-            swiperNext.classList.add('swiper-button-next');
-            swiperNext.classList.add('secondary-button')
             console.log(gridItem.length)
             gridItem.forEach(function (item, i) {
               if (i < ProductTotal) {
@@ -722,10 +716,17 @@ function TabContent(TabContent) {
               }
               if (i === gridItem.length - 1){ 
                 mainDiv.append(newDiv);
-                console.log(mainDiv)
+                var swiperPrev = document.createElement('div');
+                swiperPrev.classList.add('swiper-button-prev');
+                swiperPrev.classList.add('secondary-button');
+                var swiperNext = document.createElement('div');
+                swiperNext.classList.add('swiper-button-next');
+                swiperNext.classList.add('secondary-button')
+                mainDiv.appendChild(swiperPrev);
+                mainDiv.appendChild(swiperNext)
               }
             })
-            
+            console.log(mainDiv)
         })
   
 }
