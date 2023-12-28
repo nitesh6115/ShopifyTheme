@@ -223,6 +223,7 @@ function changeActive(event) {
 
 function ChnageVaiantImg(event) {
     var mainParent = event.closest('.featured-product');
+    var checkClass = mainParent.classList.contains('product-page')
     var SizeSelectorOption = mainParent.querySelectorAll('.size-selector');
     //console.log(SizeSelectorOption);
     var prductUrl = mainParent.querySelectorAll('[data-url]')[0];
@@ -245,7 +246,11 @@ function ChnageVaiantImg(event) {
             var swiperWrapp = document.createElement('div');
             swiperWrapp.classList.add('swiper-slide')
             swiperWrapp.setAttribute("data-swiper-autoplay", "1000");
+            if(checkClass){
+            swiperWrapp.innerHTML = '<div class="swiper-zoom-container"><img class="borrder-all radius-20 feature-image" alt="'+ images.alt +'" src="' + images.src + '"></div>'
+            }else{
             swiperWrapp.innerHTML = '<a href="' + prductUrl + '"><img class="borrder-all radius-20 feature-image" alt="'+ images.alt +'" src="' + images.src + '"></a>'
+            }
             newDiv.appendChild(swiperWrapp);
         }
     })
@@ -262,7 +267,11 @@ function ChnageVaiantImg(event) {
             var swiperWrapp = document.createElement('div');
             swiperWrapp.classList.add('swiper-slide')
             swiperWrapp.setAttribute("data-swiper-autoplay", "1000");
-            swiperWrapp.innerHTML = '<a href="' + prductUrl + '"><img class="borrder-all radius-20 feature-image" alt="'+ images.alt +'" src="' + images.src + '"></a>'
+            if(checkClass){
+              swiperWrapp.innerHTML = '<div class="swiper-zoom-container"><img class="borrder-all radius-20 feature-image" alt="'+ images.alt +'" src="' + images.src + '"></div>'
+            }else{
+             swiperWrapp.innerHTML = '<a href="' + prductUrl + '"><img class="borrder-all radius-20 feature-image" alt="'+ images.alt +'" src="' + images.src + '"></a>'
+             }
             newDiv.appendChild(swiperWrapp);
     })
      mainDiv.append(newDiv)
@@ -277,7 +286,7 @@ function ChnageVaiantImg(event) {
     var newElem = mainParent.querySelectorAll('.product-image-container')[0]
     var nextbutton = newElem.querySelectorAll('.swiper-button-next')[0];
     var prebutton = newElem.querySelectorAll('.swiper-button-prev')[0];
-    var checkClass = mainParent.classList.contains('product-page')
+    
             if(checkClass){
               const swiperTabs = new Swiper(item, {
                 loop: true,
