@@ -1,7 +1,142 @@
+<style>
+.section-{{ section.id }}-padding {
+padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+}
+@media screen and (min-width: 750px) {
+  .section-{{ section.id }}-padding {
+  padding-top: {{ section.settings.padding_top }}px;
+  padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+}
+</style>
+<div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
+ <div class="ImageWithTextBox coll-2  {% if section.settings.image_position == 'right' %}image-right{% else %}image-left{% endif %}">
+   <div class="GridItem">
+    {% if section.settings.image != blank %}
+    {% assign product_image = section.settings.image | img_url: 'master' %}
+    <img src="{{ product_image | default: 'your-placeholder-image-url.jpg' }}" alt="{{ product.title }}" />
+    {% else %}
+    {% endif %}
+   </div>
+   <div class="GridItem">
+     
+  <div class="text-content" style="text-align: {{ section.settings.text_alignment }};">
+    {% if section.settings.heading != blank or section.settings.sub_heading != blank or section.settings.description != blank %}
+      <div class="sub_heading">{{ section.settings.sub_heading }}</div>
+      <h2 class="heading">{{ section.settings.heading }}</h2>
+      <div class="rte">{{ section.settings.description }}</div>
+      <div class="button-box">
+        <a href="{{ section.settings.button_link }}" class="btn">{{ section.settings.button_text }}</a>
+      </div>
+    {% endif %}
+  </div>
+   </div>
+</div>
+ </div>
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Image with Text",
+    "settings": [
+        {
+          "type": "select",
+          "id": "image_position",
+          "label": "Image Position",
+          "options": [
+            {"value": "left", "label": "Left"},
+            {"value": "right", "label": "Right"}
+          ]
+        },
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "label": "Text Alignment",
+          "options": [
+            {"value": "left", "label": "Left"},
+            {"value": "center", "label": "Center"},
+            {"value": "right", "label": "Right"}
+          ]
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+    ],
+    "blocks":[
+      {
+        "name": "Heading",
+        "type": "heading",
+        "settings":[
+          {
+            "type": "richtext",
+            "label": "Heading",
+            "id": "title",
+            "default": "<p>Heading</p>"
+          }
+        ]
+      },
+      {
+        "name": "Sub-Heading",
+        "type": "sub-heading",
+        "settings":[
+          {
+            "type": "text",
+            "label": "Sub-Heading",
+            "id": "title",
+            "default": "Sub-Heading"
+          }
+        ]
+      },
+      {
+        "name": "Description",
+        "type": "description",
+        "settings":[
+          {
+            "type": "richtext",
+            "label": "Description",
+            "id": "title",
+            "default": "<p> Below is an example of a Shopify image with text section that includes condition statements for changing the image position (left or right) and text alignment (left, center, or right). It uses Liquid and HTML to handle the conditions:</p>"
+          }
+        ]
+      },
+      {
+        "name": "Button",
+        "type": "button",
+        "settings":[
+          {
+            "type": "header",
+            "content": "Primary Button"
+          },
+          {
+            "type": "text",
+            "label": "Button Title",
+            "id": "primary-button",
+            "default": "Button"
+          },
+          {
+            "type": "url",
+            "label": "Button Link",
+            "id": "primary-button-link"
+          },
+           {
+            "type": "header",
+            "content": "Secondary Button"
+          },
+          {
+            "type": "text",
+            "label": "Button Title",
+            "id": "secondary-button",
+            "default": "Button"
+          },
+          {
+            "type": "url",
+            "label": "Button Link",
+            "id": "secondary-button-link"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
 
