@@ -693,8 +693,10 @@ function TabContent(TabContent) {
          //console.log(Updated)
          TabDirection.style.width = CurrentWidth+'px';
          TabDirection.style.left = Updated+'px';
-       }
-       fetch("/collections/"+CollectionHandle+"?section_id=collection-data")
+       } 
+   })
+   TabContent.classList.add('active'); 
+   fetch("/collections/"+CollectionHandle+"?section_id=collection-data")
         .then(response => response.text())
         .then((responseText) => {
             const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('shopify-section-collection-data');
@@ -726,9 +728,5 @@ function TabContent(TabContent) {
             })
             
         })
-        
-   })
-   TabContent.classList.add('active'); 
-
   
 }
