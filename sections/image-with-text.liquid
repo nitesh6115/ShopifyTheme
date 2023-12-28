@@ -51,6 +51,51 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
   {
     "name": "Image with Text",
     "settings": [
+         {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Choose Color Schema",
+      "default": "background-1"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Page width",
+      "options": [
+        {
+          "value": "full-width",
+          "label": "Full Width"
+        },
+        {
+          "value": "wrapper-width",
+          "label": "Wrapper Width"
+        },
+        {
+          "value": "narrow-width",
+          "label": "Narrow width"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "label": "Top Padding",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "step": 4,
+      "default": 36
+    },
+    {
+      "type": "range",
+      "label": "Bottom Padding",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "unit": "px",
+      "step": 4,
+      "default": 36
+    },
         {
           "type": "select",
           "id": "image_position",
