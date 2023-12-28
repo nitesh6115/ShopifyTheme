@@ -632,6 +632,7 @@ CratDrawerSlider.forEach(item => {
 function TabContent(TabContent) {
   const CollectionHandle = TabContent.getAttribute('data-collection');
   const ProductTotal = TabContent.getAttribute('data-total');
+  const PreRow = TabContent.getAttribute('data-row');
   const Heading = TabContent.getAttribute('data-heading');
   const SubHeading = TabContent.getAttribute('data-sub');
   const ButtonText = TabContent.getAttribute('data-button');
@@ -706,7 +707,7 @@ function TabContent(TabContent) {
             mainDiv.classList.add("swiper");
             var newDiv = document.createElement('div');
             newDiv.classList.add("swiper-wrapper");
-            console.log(gridItem.length)
+            //console.log(gridItem.length)
             gridItem.forEach(function (item, i) {
               if (i < ProductTotal) {
                   var swiperWrapp = document.createElement('div');
@@ -726,7 +727,29 @@ function TabContent(TabContent) {
                 mainDiv.appendChild(swiperNext)
               }
             })
-            console.log(mainDiv)
+            TabProductBox.innerHTML = ''
+            TabProductBox(mainDiv);
+            const swiperTabs = new Swiper(mainDiv, {
+      slidesPerView: 2,
+      spaceBetween: 15,
+      initialSlide: 0,
+      navigation: {
+          nextEl: nextbutton,
+          prevEl: prebutton,
+      },
+      breakpoints: {
+          640: {
+              slidesPerView: 2,
+          },
+          1024: {
+              slidesPerView: 3,
+          },
+          1366: {
+              slidesPerView: PreRow,
+  
+          },
+      },
+  })
         })
   
 }
