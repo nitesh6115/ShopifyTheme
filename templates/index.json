@@ -271,6 +271,10 @@
         "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-button-1"
       ],
       "settings": {
+        "color_scheme": "",
+        "width": "wrapper-width",
+        "padding_top": 36,
+        "padding_bottom": 36,
         "image_position": "left",
         "text_alignment": "left"
       }
