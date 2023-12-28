@@ -324,9 +324,10 @@
         "width": "wrapper-width",
         "padding_top": 36,
         "padding_bottom": 36,
-        "image_position": "left",
+        "image_position": "right",
         "desktop_content_position": "middle",
-        "text_alignment": "left"
+        "text_alignment": "left",
+        "image": "shopify:\/\/shop_images\/318787385_1016609336398373_8663951506333362760_n.jpg"
       }
     }
   },
