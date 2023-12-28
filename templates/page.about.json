@@ -2,8 +2,9 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
-        "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
+        "color_scheme": "background-1",
         "width": "wrapper-width",
         "show_title": true,
         "padding_top": 36,
@@ -13,51 +14,15 @@
     "49e0d1bf-c349-4b6c-8d9d-5fb3ad6a81de": {
       "type": "video-with-image",
       "blocks": {
-        "fee704bc-bb03-40aa-ab87-bb595195d2af": {
-          "type": "video",
-          "settings": {
-            "color_scheme": "scheme-0bfea3ae-e3eb-4aeb-af16-a1397b6b6630",
-            "video_link": "shopify:\/\/files\/videos\/13cf3cfb25b442a2bcb2dca5c1a8dac4.mp4",
-            "mobile_video_link": "shopify:\/\/files\/videos\/a6b45b0dfb414f8990e796f2645b0f81.mp4",
-            "overlay_opacity": 0,
-            "overlay_opacity_color": "#000000",
-            "desktop_content_position": "bottom-center",
-            "title": "",
-            "sub-title": "",
-            "text": "",
-            "button_label": "",
-            "button_link": "",
-            "second_button_label": "",
-            "second_button_link": ""
-          }
-        },
-        "086e6d73-55d2-4d26-b862-8f99fa4fba81": {
+        "f8a444bd-e0c4-4c3f-96fb-421ed0236a65": {
           "type": "image",
           "settings": {
             "color_scheme": "scheme-0bfea3ae-e3eb-4aeb-af16-a1397b6b6630",
-            "image_bg": "shopify:\/\/shop_images\/47582295_394630424614808_8126913247421217687_n.jpg",
-            "mobile_image_bg": "shopify:\/\/shop_images\/47582295_394630424614808_8126913247421217687_n.jpg",
-            "overlay_opacity": 20,
-            "overlay_opacity_color": "#000000",
+            "image_bg": "shopify:\/\/shop_images\/Shoppage_banner_1_1920x_d974d30d-27ee-4dc7-92df-39d2d9b56238.webp",
+            "overlay_opacity": 41,
+            "overlay_opacity_color": "#000",
             "desktop_content_position": "bottom-center",
-            "title": "Image slide",
-            "sub-title": "",
-            "text": "",
-            "button_label": "",
-            "button_link": "",
-            "second_button_label": "",
-            "second_button_link": ""
-          }
-        },
-        "cc874bb1-6d8f-4595-af07-09a1b6b2f6cb": {
-          "type": "video",
-          "settings": {
-            "color_scheme": "scheme-0bfea3ae-e3eb-4aeb-af16-a1397b6b6630",
-            "video_link": "shopify:\/\/files\/videos\/Bella Tunno Happy Teether.mp4",
-            "overlay_opacity": 0,
-            "overlay_opacity_color": "#000000",
-            "desktop_content_position": "bottom-center",
-            "title": "",
+            "title": "<p>OUR STORY<\/p>",
             "sub-title": "",
             "text": "",
             "button_label": "",
@@ -68,20 +33,73 @@
         }
       },
       "block_order": [
-        "fee704bc-bb03-40aa-ab87-bb595195d2af",
-        "086e6d73-55d2-4d26-b862-8f99fa4fba81",
-        "cc874bb1-6d8f-4595-af07-09a1b6b2f6cb"
+        "f8a444bd-e0c4-4c3f-96fb-421ed0236a65"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "width": "full-width",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "8e164413-838c-45b2-a54c-5dd3f9c798c3": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "",
+        "page-width": "full-width",
+        "text_alignment": "center",
+        "title": "",
+        "text": "<h4>Born and raised in England, the four Brydon Brothers started<\/h4><h4>their company with the simple idea of designing and producing <\/h4><h4>high quality belts. <\/h4>",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "2542c535-8247-492f-a6e3-46cf05da9fd0": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14945199882326__2542c535-8247-492f-a6e3-46cf05da9fd0-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "<h3>THE BROTHERS<\/h3>"
+          }
+        },
+        "template--14945199882326__2542c535-8247-492f-a6e3-46cf05da9fd0-description-1": {
+          "type": "description",
+          "settings": {
+            "title": "<h6>We have always been intrigued by our family’s British roots dating back to the mid 1800s across Scotland and England. Our brand has drawn much inspiration from our ancestor’s lives and has given us a deeper appreciation of the beautifully rugged landscapes we are lucky to call home.<\/h6><h6>For many generations the Brydon family crest has represented protection and strength as it was symbolized with the use of four eagles. Today, being four brothers it would only be natural for the eagle’s revival to fly on all our belts.<\/h6>"
+          }
+        },
+        "template--14945199882326__2542c535-8247-492f-a6e3-46cf05da9fd0-button-1": {
+          "type": "button",
+          "settings": {
+            "primary-button": "Button",
+            "primary-button-link": "",
+            "secondary-button": "Button",
+            "secondary-button-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14945199882326__2542c535-8247-492f-a6e3-46cf05da9fd0-heading-1",
+        "template--14945199882326__2542c535-8247-492f-a6e3-46cf05da9fd0-description-1",
+        "template--14945199882326__2542c535-8247-492f-a6e3-46cf05da9fd0-button-1"
       ],
       "settings": {
         "color_scheme": "",
         "width": "wrapper-width",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "image_position": "left",
+        "desktop_content_position": "middle",
+        "text_alignment": "center",
+        "image": "shopify:\/\/shop_images\/Untitled-1_6bc95302-9fd2-4327-b9dd-496fa3f6e1c9.webp"
       }
     }
   },
   "order": [
     "main",
-    "49e0d1bf-c349-4b6c-8d9d-5fb3ad6a81de"
+    "49e0d1bf-c349-4b6c-8d9d-5fb3ad6a81de",
+    "8e164413-838c-45b2-a54c-5dd3f9c798c3",
+    "2542c535-8247-492f-a6e3-46cf05da9fd0"
   ]
 }
