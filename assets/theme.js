@@ -718,9 +718,12 @@ function TabContent(TabContent) {
                   swiperWrapp.innerHTML = item.innerHTML;
                   newDiv.appendChild(swiperWrapp);
               }
+              if (i === gridItem.length - 1){ 
+                mainDiv.append(newDiv);
+                console.log(mainDiv)
+              }
             })
-            mainDiv.append(newDiv);
-            console.log(mainDiv)
+            
         })
         
    })
