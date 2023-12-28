@@ -207,4 +207,19 @@
     padding-right: 8px;
 }
 
-
+@media(max-width: 1023px){
+  .product-grid .box-1, .product-grid .box-3 {
+      min-height: inherit;
+      position: relative;
+      top: inherit;
+      gap: inherit;
+      align-content: unset;
+      display: block;
+      position: -webkit-relative;
+      width: 100%;
+  }
+  .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+  }
+}
