@@ -208,9 +208,24 @@
 }
 
 @media(max-width: 1023px){
-  .product-page .box-2 .swiper-wrapper{
-    flex-direction: unset;
-  }
+    .product-page .box-2 .swiper-wrapper{
+      flex-direction: unset;
+    }
+    .product-image-container {
+      overflow: visible;
+    }
+    
+    .box-2 .swiper-button-next, .box-2 .swiper-button-prev {
+      display: block;
+    }
+    
+    .product-grid .box-2 {
+      overflow: visible;
+    }
+    
+    .product-grid .box-2 .top-container {
+      overflow: visible;
+    }
   .product-grid .box-1, .product-grid .box-3 {
       min-height: inherit;
       position: relative;
