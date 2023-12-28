@@ -217,6 +217,9 @@
   .product-page .box-2 .swiper-wrapper {
     flex-direction: column;
 }
+ .product-page .box-2  .swiper-pagination{
+    display: none;
+  }
 }
 
 @media(max-width: 1023px){
