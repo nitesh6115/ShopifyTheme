@@ -15,7 +15,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
 
  <div class="ImageWithTextBox CollectionnGrid colls-2 content-position-{{ section.settings.desktop_content_position}} {% if section.settings.image_position == 'right' %}image-right{% else %}image-left{% endif %}">
    
-   <div class="GridItem">
+   <div class="GridItem hover-zoom">
     {% if  section.settings.mobile_image != blank %}
     <img class="desktop-hide radius-30" width="{{ section.settings.mobile_image.width }}" height="{{ section.settings.mobile_image.height }}" loading="lazy" srcset="{{ section.settings.mobile_image  | img_url:'768x'}}" alt="{{ section.settings.mobile_image.alt }}">
     {% endif %}
