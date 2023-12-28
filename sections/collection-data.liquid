@@ -1,3 +1,8 @@
+{% for product in collection.products %}
+  <div class="GridItem featured-product">
+  {% render 'product-grid', card_product:product %}
+  </div>
+{% endfor %}
 {% schema %}
   {
     "name": "Collection Data",
