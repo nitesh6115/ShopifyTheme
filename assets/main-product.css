@@ -252,7 +252,7 @@
     position: relative;
     -webkit-backdrop-filter: saturate(180%) blur(2rem);
     backdrop-filter: saturate(180%) blur(2rem);
-    box-shadow: 0 -3rem 3rem rgb(85 92 146 / 67%)
+    box-shadow: -2px -2rem 4rem 7px #7f808bab
 }
     .swiper-zoom-container {
         padding: 0 15px;
