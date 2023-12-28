@@ -99,7 +99,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
   {% endfor %}
   {% else %}
   <div class="product-image-wrapper">
-     <div class="swiper-wrapper">
+    <div class="swiper-wrapper">
     {%for image in product.images %}
     <div class="product-image-slide swiper-slide" data-swiper-autoplay="1000" >
       <a href="{{ product.url }}">
@@ -118,7 +118,6 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
     </div>
     {% endfor %}
      </div>
-    
    </div>
   <div class="swiper-button-next"></div>
    <div class="swiper-button-prev"></div>
