@@ -154,6 +154,25 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
           }
         ]
       }
+    ],
+    "presets":[
+      {
+         "name": "Video With Image",
+         "blocks": [
+            {
+              "type": "sub-heading"
+            },
+            {
+              "type": "heading"
+            },
+            {
+              "type": "description"
+            },
+            {
+              "type": "button"
+            }
+        ]
+      }
     ]
   }
 {% endschema %}
