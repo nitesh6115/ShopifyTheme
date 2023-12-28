@@ -298,7 +298,6 @@ function ChnageVaiantImg(event) {
                     nextEl: nextbutton,
                     prevEl: prebutton,
                 },
-                ,
                 breakpoints: {
                     640: {
                         slidesPerView: 1,
