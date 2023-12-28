@@ -700,7 +700,7 @@ function TabContent(TabContent) {
             const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('shopify-section-collection-data');
             let gridItem = parsedHTML.querySelectorAll('.GridItem');
             var mainDiv = document.createElement('div');
-            mainDiv.classList.add("product-image-slide");
+            mainDiv.classList.add("collection-list");
             var newDiv = document.createElement('div');
             newDiv.classList.add("swiper-wrapper");
             var swiperPrev = document.createElement('div');
