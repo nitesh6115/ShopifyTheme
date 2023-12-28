@@ -159,6 +159,10 @@ video.video-js {
 }
 }
 @media(max-width:767px){
+  .HederTabBox .cta-btn {
+    padding: 6px 15px;
+    font-size: 11px;
+}
   .videoImage-container.ItemSize-2 .video-with-text {
     height: auto;
 }
