@@ -728,7 +728,7 @@ function TabContent(TabContent) {
               }
             })
             TabProductBox.innerHTML = ''
-            TabProductBox(mainDiv);
+            TabProductBox.innerHTML = mainDiv;
             const swiperTabs = new Swiper(mainDiv, {
       slidesPerView: 2,
       spaceBetween: 15,
