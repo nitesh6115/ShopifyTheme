@@ -1367,6 +1367,9 @@ div#order_address {
 .ImageWithTextBox.content-position-top .GridItem {
     align-items: flex-start;
 }
+.ImageWithTextBox.image-right {
+    flex-direction: row-reverse;
+}
 @media(max-width: 767px){
   .ImageWithTextBox .GridItem {
     width: 100%;
