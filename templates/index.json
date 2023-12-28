@@ -258,9 +258,9 @@
           "type": "button",
           "settings": {
             "primary-button": "Button",
-            "primary-button-link": "",
+            "primary-button-link": "shopify:\/\/collections\/all",
             "secondary-button": "Button",
-            "secondary-button-link": ""
+            "secondary-button-link": "shopify:\/\/collections\/mens-accessories"
           }
         }
       },
