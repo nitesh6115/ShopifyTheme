@@ -99,8 +99,14 @@
     border: 1px solid;
     border-radius: 30px;
 }
-  .shoplock-slider.m_fixed .shopock-productCard.mobile-hide {
-    display: block !important;
+.shoplock-slider.m_fixed .shopock-productCard.mobile-hide {
+    display: block!important;
+    position: absolute;
+    transform: translateY(78%);
+    right: 0;
+    top: inherit;
+    left: 0;
+    bottom: 0;
 }
   .shoplock-slider.m_fixed .swiper-button-next.swiper-next {
     display: none;
@@ -113,10 +119,9 @@
     right: 0;
     z-index: 99;
     width: 100%;
-    background: var(--body-background-color);
+    backdrop-filter: blur(45px);
+    padding: 0;
 }
-
-.shoplock-slider.m_fixed .shoplock-image {height: 64vh;}
 .hideProduct.desktop-hide {
     position: absolute;
     width: 35px;
@@ -126,8 +131,9 @@
     border: 1px solid var(--color-border);
     border-radius: 100%;
     cursor: pointer;
-    background: var(--body-text-color);
+    background: #fff;
     transition: .5s ease all;
+    z-index: 5;
 }
 
 .hideProduct.desktop-hide svg {
