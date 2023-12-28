@@ -33,7 +33,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
   <h2>{{ product.title }}</h2>
   <p>{{ product.price| money_with_currency }}</p>
   </div>
-  <div class="box-2">
+  <div id="MainSliderBox" class="box-2">
   <div data-color="{{ colorOption }}" data-size="{{ sizeOption }}" class="top-container" data-url="{{ product.url }}">
   <div class="product-image-container"  main-product="product">
   {% if colorOption %}
