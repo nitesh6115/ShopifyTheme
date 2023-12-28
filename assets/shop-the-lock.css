@@ -99,6 +99,9 @@
     border: 1px solid;
     border-radius: 30px;
 }
+.shoplock-slider.m_fixed .shoplock-image-container {
+    margin: 0;
+}  
 .shoplock-slider.m_fixed .shopock-productCard.mobile-hide {
     display: block!important;
     position: absolute;
@@ -165,6 +168,5 @@
     width: 95%;
     margin: 0 auto;
     top: -30px;
-    border: 1px solid #000;
 }
 }
