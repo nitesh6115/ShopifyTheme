@@ -220,6 +220,36 @@
 }
 
 @media(max-width: 1023px){
+
+    div#MainSliderBox {
+    position: fixed;
+    top: 78px;
+    bottom: 0;
+    padding: 0;
+    z-index: 5;
+}
+
+.box-1 {
+    opacity: 0;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+.product-image-container {
+    width: 93vh;
+    margin: 0 auto;
+}
+
+.box-3 {
+    background: #fcc;
+    z-index: 55555;
+    position: relative;
+}
+
+.box-3 {
+    z-index: 9;
+    position: relative;
+}
     .swiper-zoom-container {
         padding: 0 15px;
     }
