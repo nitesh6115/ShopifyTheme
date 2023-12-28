@@ -157,7 +157,9 @@ video.video-js {
   .videoImage-container.ItemSize-2 .video-with-text {
     height: auto;
 }
-
+.text-box{
+  padding: 2rem;
+}
 .videoImage-container.ItemSize-2 .video-box {
     height: auto;
 }
