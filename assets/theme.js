@@ -727,8 +727,8 @@ function TabContent(TabContent) {
                 mainDiv.appendChild(swiperNext)
               }
             })
-            TabProductBox.innerHTML = ''
-            TabProductBox.innerHTML = mainDiv;
+            SliderDiv.innerHTML = ''
+            SliderDiv.innerHTML = mainDiv;
             const swiperTabs = new Swiper(mainDiv, {
             slidesPerView: 2,
             spaceBetween: 15,
