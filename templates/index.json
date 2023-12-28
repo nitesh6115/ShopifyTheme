@@ -285,36 +285,29 @@
     "a8751c81-156a-45d8-a13f-681e986217dd": {
       "type": "image-with-text",
       "blocks": {
-        "template--14475434328150__a8751c81-156a-45d8-a13f-681e986217dd-sub-heading-1": {
-          "type": "sub-heading",
-          "settings": {
-            "title": "Sub-Heading"
-          }
-        },
         "template--14475434328150__a8751c81-156a-45d8-a13f-681e986217dd-heading-1": {
           "type": "heading",
           "settings": {
-            "title": "<p>Heading<\/p>"
+            "title": "<p>WHAT IT TAKES TO BUILD OUR PRODUCTS<\/p>"
           }
         },
         "template--14475434328150__a8751c81-156a-45d8-a13f-681e986217dd-description-1": {
           "type": "description",
           "settings": {
-            "title": "<p> Below is an example of a Shopify image with text section that includes condition statements for changing the image position (left or right) and text alignment (left, center, or right). It uses Liquid and HTML to handle the conditions:<\/p>"
+            "title": "<p>It’s all in the details. From hand picked colors, to comfortable, yet stylish cuts, all Alphalete products are tailor made. We spend months perfecting each design to make you feel confident and comfortable in every step you take.<\/p>"
           }
         },
         "template--14475434328150__a8751c81-156a-45d8-a13f-681e986217dd-button-1": {
           "type": "button",
           "settings": {
-            "primary-button": "Button",
+            "primary-button": "",
             "primary-button-link": "",
-            "secondary-button": "Button",
-            "secondary-button-link": ""
+            "secondary-button": "Explore New Products",
+            "secondary-button-link": "shopify:\/\/collections\/all"
           }
         }
       },
       "block_order": [
-        "template--14475434328150__a8751c81-156a-45d8-a13f-681e986217dd-sub-heading-1",
         "template--14475434328150__a8751c81-156a-45d8-a13f-681e986217dd-heading-1",
         "template--14475434328150__a8751c81-156a-45d8-a13f-681e986217dd-description-1",
         "template--14475434328150__a8751c81-156a-45d8-a13f-681e986217dd-button-1"
