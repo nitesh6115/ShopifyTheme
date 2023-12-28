@@ -116,8 +116,12 @@
 .featured-product.product-page:hover .product-info {
     opacity: 1;
 }
-
-
+.box-3 .product-variant-images.selector-wrapper .swiper-wrapper {
+    transform: unset !important;
+}
+.box-3 .product-variant-images.selector-wrapper .swiper-wrapper .swiper-slide {
+    width: auto !important;
+}
 .product-page .box-3 .quick-add-wrapper {
     position: relative;
     bottom: inherit !important;
