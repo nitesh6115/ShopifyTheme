@@ -1368,7 +1368,7 @@ div#order_address {
     align-items: flex-start;
 }
 @media(max-width: 767px){
-  .ImageWithTextBox .GridItem{
+  .ImageWithTextBox .GridItem {
     width: 100%;
   }
 }
