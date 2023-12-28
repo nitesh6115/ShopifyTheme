@@ -259,11 +259,6 @@
     .product-image-container {
       overflow: visible;
     }
-    
-    .box-2 .swiper-button-next, .box-2 .swiper-button-prev {
-      display: block;
-    }
-    
     .product-grid .box-2 {
       overflow: visible;
     }
