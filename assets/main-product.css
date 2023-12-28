@@ -241,8 +241,8 @@
 }
 
 .box-3 {
-    background: #fcc;
-    z-index: 55555;
+    background: var(--header-bg);
+    z-index: 5;
     position: relative;
 }
 
@@ -283,4 +283,25 @@
       display: flex;
       flex-wrap: wrap;
   }
+  .featured-product.product-page {}
+
+.featured-product.product-page .page-width {
+    padding: 0;
+}
+
+.box-3 {
+    padding: 30px;
+    border-radius: 30px;
+    border: 1px solid;
+}
+
+div#shopify-section-template--14475434066006__166479364394f7c18b {
+    z-index: 9;
+    position: relative;
+}
+
+div#shopify-section-footer {
+    z-index: 9;
+    position: relative;
+}
 }
