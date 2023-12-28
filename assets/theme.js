@@ -734,8 +734,8 @@ function TabContent(TabContent) {
             spaceBetween: 15,
             initialSlide: 0,
             navigation: {
-                nextEl: nextbutton,
-                prevEl: prebutton,
+                nextEl: swiperNext,
+                prevEl: swiperPrev,
             },
             breakpoints: {
                 640: {
