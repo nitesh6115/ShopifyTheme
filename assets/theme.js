@@ -714,7 +714,7 @@ function TabContent(TabContent) {
             swiperNext.classList.add('secondary-button')
             console.log(gridItem.length)
             gridItem.forEach(function (item, i) {
-              if (i <= ProductTotal) {
+              if (i < ProductTotal) {
                   var swiperWrapp = document.createElement('div');
                   swiperWrapp.classList.add('swiper-slide')
                   swiperWrapp.innerHTML = item.innerHTML;
