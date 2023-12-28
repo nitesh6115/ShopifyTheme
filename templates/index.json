@@ -343,38 +343,6 @@
         "rows": 5
       }
     },
-    "de168d02-cb1c-4cd8-a9e3-55c79f5e1e3d": {
-      "type": "video-with-image",
-      "blocks": {
-        "7472b6ce-1330-47bf-b8ad-82c598883e01": {
-          "type": "image",
-          "settings": {
-            "color_scheme": "scheme-0bfea3ae-e3eb-4aeb-af16-a1397b6b6630",
-            "image_bg": "shopify:\/\/shop_images\/297962360_614272536936272_7964346338163368609_n.jpg",
-            "mobile_image_bg": "shopify:\/\/shop_images\/47582295_394630424614808_8126913247421217687_n.jpg",
-            "overlay_opacity": 0,
-            "overlay_opacity_color": "#000000",
-            "desktop_content_position": "bottom-center",
-            "title": "<p>Gift Cards<\/p>",
-            "sub-title": "Get excited product",
-            "text": "<p>Hidden gem for you<\/p>",
-            "button_label": "Shop Now",
-            "button_link": "",
-            "second_button_label": "",
-            "second_button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "7472b6ce-1330-47bf-b8ad-82c598883e01"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "width": "wrapper-width",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "a8751c81-156a-45d8-a13f-681e986217dd": {
       "type": "image-with-text",
       "blocks": {
@@ -424,7 +392,6 @@
     "57a33abb-1a0e-4294-b0b8-b18fc32afe27",
     "9ac45232-d4da-4400-b33b-469cbb27e83e",
     "dffea033-b2a6-4346-ac66-8c1f217035df",
-    "de168d02-cb1c-4cd8-a9e3-55c79f5e1e3d",
     "a8751c81-156a-45d8-a13f-681e986217dd"
   ]
 }
