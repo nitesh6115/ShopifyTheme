@@ -301,3 +301,8 @@ div#shopify-section-footer {
     position: relative;
 }
 }
+@media(max-width: 450px){
+  .box-1{
+    height: 100vw;
+  }
+}
