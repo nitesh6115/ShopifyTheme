@@ -303,6 +303,6 @@ div#shopify-section-footer {
 }
 @media(max-width: 450px){
   .box-1{
-    height: 100vw;
+    height: 120vw;
   }
 }
