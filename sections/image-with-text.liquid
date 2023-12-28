@@ -14,9 +14,11 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
  <div class="ImageWithTextBox coll-2  {% if section.settings.image_position == 'right' %}image-right{% else %}image-left{% endif %}">
    <div class="GridItem">
     {% if section.settings.image != blank %}
-    {% assign product_image = section.settings.image | img_url: 'master' %}
-    <img src="{{ product_image | default: 'your-placeholder-image-url.jpg' }}" alt="{{ product.title }}" />
-    {% else %}
+    {% if  section.settings.mobile_image != blank %}
+         <img class="desktop-hide" width="{{ section.settings.mobile_image.width }}" height="{{ section.settings.mobile_image.height }}" loading="lazy" srcset="{{ section.settings.mobile_image  | img_url:'768x'}}" alt="{{ section.settings.mobile_image.alt }}">
+        {% endif %}
+        <img loading="lazy" width="{{ section.settings.image.width }}" height="{{ section.settings.image.height }}" class="{% if section.settings.mobile_image != blank %}mobile-hide{% endif %}"  alt="{{ section.settings.image.alt }}" srcset="{{ section.settings.image  | img_url:'1200x'}}">
+     
     {% endif %}
    </div>
    <div class="GridItem">
@@ -74,6 +76,11 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+         {
+          "type": "image_picker",
+          "id": "mobile_image",
+          "label": "Mobile Image"
         }
     ],
     "blocks":[
