@@ -86,11 +86,6 @@
       background:  {{ scheme.settings.link-color }};
       }
       .color-{{ scheme.id }} .info ul ul{
-      {% if scheme.settings.background_gradient != empty %}
-      background: {{ scheme.settings.background_gradient }};
-      {% else %}
-      background: {{ scheme.settings.background }};
-      {% endif %}
       border: 1px solid {{ scheme.settings.color-border }};
       }
       .color-{{ scheme.id }} .hederIcon:hover svg{
