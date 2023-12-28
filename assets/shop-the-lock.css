@@ -81,6 +81,24 @@
     transition: .5s cubic-bezier(.93,-.01,0,1.02);
 }
 @media(max-width:767px){
+.shoplock-slider {
+    padding: 15px;
+    border: 0 !important;
+}
+
+.shoplock-slider .shoplock-container {
+    overflow: visible;
+}
+
+.section-template--14475434328150__9ac45232-d4da-4400-b33b-469cbb27e83e-padding.color-background-1 {
+    overflow: hidden;
+}
+
+.shoplock-slider .shoplock-image-container {
+    margin: 0 15px;
+    border: 1px solid;
+    border-radius: 30px;
+}
   .shoplock-slider.m_fixed .shopock-productCard.mobile-hide {
     display: block !important;
 }
