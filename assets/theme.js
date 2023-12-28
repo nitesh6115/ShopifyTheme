@@ -418,7 +418,7 @@ var shopContainer = document.querySelectorAll('.shopock-product-container');
 shopContainer.forEach(function(item, index) {
     const nav = item.closest('.shoplock-image-container');
     const navbtn = nav.querySelectorAll('.DotsBox .dotsAnimate')
-     index = new Swiper(item, {
+    const index = new Swiper(item, {
         slidesPerView: 1,
         grabCursor: false,
         mousewheel: {
@@ -426,7 +426,7 @@ shopContainer.forEach(function(item, index) {
             sensitivity: 5.5,
         },
     })
-    shopContainerTabs.on('slideChange', function() {
+    index.on('slideChange', function() {
         const item = this.$el;
         const parent = item.closest('.shoplock-image-container');
         const m_fixed = item.closest('.shoplock-slider');
