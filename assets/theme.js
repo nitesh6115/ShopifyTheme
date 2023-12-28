@@ -415,10 +415,10 @@ function notify(item) {
 // Look The Shop
 var shopContainer = document.querySelectorAll('.shopock-product-container');
 
-shopContainer.forEach(item => {
+shopContainer.forEach(function(item, index) {
     const nav = item.closest('.shoplock-image-container');
     const navbtn = nav.querySelectorAll('.DotsBox .dotsAnimate')
-    const shopContainerTabs = new Swiper(item, {
+     index = new Swiper(item, {
         slidesPerView: 1,
         grabCursor: false,
         mousewheel: {
