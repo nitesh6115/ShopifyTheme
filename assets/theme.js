@@ -61,6 +61,22 @@ NavLink.forEach(item => {
         });
     });
 });
+var MainSliderBox = document.getElementById("MainSliderBox");
+
+var productMainSlider = function() {
+ var width = document.body.clientWidth;
+ var height = document.body.clientHeight;
+ if(width <= 1023){
+   const SliderDiv = MainSliderBox.querySelector('.product-image-container');
+   
+ }else{
+   
+ }
+}
+if (MainSliderBox) {
+  window.addEventListener("resize", productMainSlider);
+  productMainSlider();
+} 
 
 
 // AddToCartItem //
