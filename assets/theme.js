@@ -698,9 +698,31 @@ function TabContent(TabContent) {
         .then(response => response.text())
         .then((responseText) => {
             const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('shopify-section-collection-data').innerHTML;
-            console.log(parsedHTML)
+            let gridItem = parsedHTML.querySelectorAll('.GridItem');
+            var mainDiv = document.createElement('div');
+            mainDiv.classList.add("product-image-slide");
+            var newDiv = document.createElement('div');
+            newDiv.classList.add("swiper-wrapper");
+            var swiperPrev = document.createElement('div');
+            swiperPrev.classList.add('swiper-button-prev');
+            swiperPrev.classList.add('secondary-button');
+            var swiperNext = document.createElement('div');
+            swiperNext.classList.add('swiper-button-next');
+            swiperNext.classList.add('secondary-button')
+            gridItem.forEach(function (item, i) {
+              if (i == ProductTotal) {
+                  var swiperWrapp = document.createElement('div');
+                  swiperWrapp.classList.add('swiper-slide')
+                  swiperWrapp.setAttribute("data-swiper-autoplay", "1000");
+                  swiperWrapp.innerHTML = item
+                  newDiv.appendChild(swiperWrapp);
+              }
+            })
+
+         console.log(newDiv) 
+            
         })
-    
+        
    })
    TabContent.classList.add('active'); 
 
