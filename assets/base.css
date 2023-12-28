@@ -10,7 +10,9 @@
     left: 0;
     bottom: 0;
 }
-
+.button-box a:last-child {
+    margin-bottom: 0;
+}
 @media screen and (max-width: 749px) {
   .small-hide {
     display: none !important;
