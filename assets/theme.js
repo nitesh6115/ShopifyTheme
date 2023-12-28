@@ -718,7 +718,7 @@ function TabContent(TabContent) {
                   var swiperWrapp = document.createElement('div');
                   swiperWrapp.classList.add('swiper-slide')
                   swiperWrapp.innerHTML = item.innerHTML;
-                  newDiv.appendChild(item.innerHTML);
+                  newDiv.appendChild(swiperWrapp);
               }
               if (i === gridItem.length - 1){ 
                 mainDiv.append(newDiv);
