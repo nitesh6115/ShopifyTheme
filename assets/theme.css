@@ -13,9 +13,12 @@ body {
     right: 0;
     left: 0;
     bottom: 0;
-    min-height: 250px;
+    min-height: 350px;
     z-index: 3;
-    background-color: #ccc;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(2px);
 }
 
 .loading-effect {
