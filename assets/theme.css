@@ -1378,7 +1378,24 @@ div#order_address {
     max-width: 690px;
     margin: 0 auto;
 }
+.newsletter-form form#contact_form {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid;
+    flex-wrap: wrap;
+}
+.newsletter-form form#contact_form input {
+    width: 100%;
+}
 
+form#contact_form .email {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+form#contact_form .submit {
+    width: 100%;
+}
 .newsletter-content-wrapper {
     order: 1;
     margin: 0 auto;
