@@ -26,10 +26,9 @@
          {% for link in section.settings.menu.links %}
           {% if link.links.size > 0 %}
           {% assign main-menu-image = link.object %}
-             {% assign link_title = link.title | handle %}
-             {% if mainLink ==  link_title %}
-             {% capture linktitle %}{{ link_title }}{% endcapture %}
-               
+          {% assign link_title = link.title | handle %}
+          {% if mainLink ==  link_title %}
+          {% capture linktitle %}{{ link_title }}{% endcapture %}
          <div class="ShopNewBox size_{{ linklists[linktitle].links.size }}">
            {% for linksub in linklists[linktitle].links %}
              {% assign fetimage = linksub.object %}
