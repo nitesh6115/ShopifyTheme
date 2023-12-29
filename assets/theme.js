@@ -587,6 +587,8 @@ function getSearchBox(){
               document.body.classList.add('modal-search-open');
             },200);
         })
+  }else{
+    document.body.classList.add('modal-search-open');
   }
   
 }
