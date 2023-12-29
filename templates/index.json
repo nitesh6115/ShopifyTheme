@@ -7,7 +7,7 @@
           "type": "video",
           "settings": {
             "color_scheme": "scheme-0bfea3ae-e3eb-4aeb-af16-a1397b6b6630",
-            "video_link": "shopify:\/\/files\/videos\/642313529.mp4",
+            "video_link": "shopify:\/\/files\/videos\/642313529-1(1).MOV",
             "overlay_opacity": 0,
             "overlay_opacity_color": "#000000",
             "desktop_content_position": "left-bottom",
@@ -86,6 +86,7 @@
       "settings": {
         "color_scheme": "background-1",
         "page-width": "wrapper-width",
+        "text_alignment": "left",
         "title": "Brydon Brothers design and produce quality handcrafted belts that can be worn for every occasion. Founded by four brothers from England, the brand draws inspiration from their family's British heritage and the rugged landscapes that surrounded them over the centuries.",
         "text": "<h2><br\/><a href=\"https:\/\/www.brydonbrothers.com\/pages\/our-story\" title=\"https:\/\/www.brydonbrothers.com\/pages\/our-story\">Learn More<\/a><\/h2>",
         "padding_top": 36,
