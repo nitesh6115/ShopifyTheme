@@ -1381,12 +1381,13 @@ div#order_address {
 
 .newsletter-content-wrapper {
     order: 1;
-    margin: 0;
+    margin: 0 auto;
     width: 100%;
     text-align: center;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
+    max-width: 400px;
+    
 }
 
 .LinksInfo {
