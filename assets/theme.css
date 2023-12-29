@@ -1083,6 +1083,14 @@ div#predictive-search.active {
 .page-width.collection-page-grid {
     max-width: 1650px;
 }
+
+@media(max-width: 767px){
+.search-container {padding: 5vw;}
+.search-bar-container {padding: 2rem 5vw 0;}
+#nav-quick-search-container {
+    width: 100vw;
+}
+}
 .CHB.collection-image {
     width: calc(50% - 15px);
     position: relative;
