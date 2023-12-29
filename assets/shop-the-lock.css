@@ -141,6 +141,7 @@
     width: 100%;
     backdrop-filter: blur(45px);
     padding: 0;
+    transform: translateY(0)
 }
 .hideProduct.desktop-hide {
     position: absolute;
