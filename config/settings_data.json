@@ -184,24 +184,24 @@
       "background-1": {
         "settings": {
           "background": "rgba(0,0,0,0)",
-          "background_gradient": "linear-gradient(90deg, rgba(6, 17, 97, 1), rgba(120, 2, 6, 1) 100%)",
+          "background_gradient": "linear-gradient(90deg, rgba(76, 88, 176, 1), rgba(181, 117, 119, 1) 100%)",
           "text": "#ffffff",
           "heading-color": "#f5f5f5",
           "sub-heading-color": "#eab79a",
           "link-color": "#ffffff",
           "border-color": "#f5f5f5",
-          "button-text": "#000000",
+          "button-text": "#ffffff",
           "button-background": "#850000",
           "button-border-color": "#850000",
           "button-hover-text": "#ffffff",
           "button-hover-background": "#00650e",
           "button-hover-border-color": "#00650e",
           "secondary-button-text": "#000000",
-          "secondary-button-background": "#d93000",
-          "secondary-button-border-color": "#d93000",
+          "secondary-button-background": "#023332",
+          "secondary-button-border-color": "#023332",
           "secondary-button-hover-text": "#ffffff",
-          "secondary-button-hover-background": "#023332",
-          "secondary-button-hover-border-color": "#023332"
+          "secondary-button-hover-background": "#dd1d1d",
+          "secondary-button-hover-border-color": "#dd1d1d"
         }
       },
       "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8": {
