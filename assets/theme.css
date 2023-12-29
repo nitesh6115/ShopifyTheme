@@ -1371,7 +1371,41 @@ div#order_address {
 .ImageWithTextBox.image-right {
     flex-direction: row-reverse;
 }
+@media(max-width: 1023px){
+  .footer-top-wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 690px;
+    margin: 0 auto;
+}
+
+.newsletter-content-wrapper {
+    order: 1;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.LinksInfo {
+    order: 2;
+    width: 48%;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.LinksInfo:first-child {
+    padding: 20px;
+}
+}
 @media(max-width: 767px){
+  .LinksInfo {
+    width: 100%;
+}
   .button-box a {
     padding: 6px 15px;
     font-size: 13px;
