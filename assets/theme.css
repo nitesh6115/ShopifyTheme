@@ -361,6 +361,9 @@ li.menu-link:hover>a:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+ul.dropdown-grandchild li {
+    margin-bottom: 8px;
+}
 .header-content.border-all.menu-active:after {
     visibility: visible;
     opacity: 1;
