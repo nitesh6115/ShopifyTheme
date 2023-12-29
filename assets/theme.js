@@ -531,7 +531,7 @@ function removemfixed(item) {
 // search box function 
 function getSearchBox(){
   var SearchBox = document.getElementById('quick_search_box');
-  const checkAdded = SearchBox.classList.contains 'updated-data';
+  const checkAdded = SearchBox.classList.contains('updated-data');
   if(checkAdded == false){
     fetch(window.Shopify.routes.search + "?section_id=quick-search")
         .then(response => response.text())
