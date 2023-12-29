@@ -352,7 +352,7 @@ display: flex;
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
     background: rgba(0,0,0,.5);
-    backdrop-filter: blur(35px);
+    backdrop-filter: blur(15px);
     visibility: hidden;
     opacity: 0;
     z-index: -1;
@@ -360,7 +360,7 @@ display: flex;
 
 .header-content.border-all.menu-active:after {
     visibility: visible;
-    opacity: 0.5;
+    opacity: 1;
 }
 .DropDownBox.dropdown-child {
     -webkit-transition: height .5s;
