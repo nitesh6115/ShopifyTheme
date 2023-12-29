@@ -1,7 +1,7 @@
 <ul class="menu">
 {% for link in section.settings.menu.links %}
   {%  assign mainLink = link.title | handle %}
-   <li class="menu-link {% if link.links.size > 0 %}has-child-links {% endif %}">
+   <li data-label="{{ link.levels }}" class="menu-link {% if link.links.size > 0 %}has-child-links {% endif %}">
     <a class="snakify-in" href="{{ link.url }}">{{ link.title }}</a>
     {% if link.links.size > 0 %}
     <div class="DropDownBox dropdown-child">    
