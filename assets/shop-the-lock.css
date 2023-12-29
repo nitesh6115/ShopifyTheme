@@ -102,16 +102,26 @@
 .shoplock-slider.m_fixed .shoplock-image-container {
     margin: 0;
 }  
-.shoplock-slider.m_fixed .shopock-productCard.mobile-hide {
-    display: block!important;
+.shopock-productCard {
+    display: block !important;
     position: absolute;
-    transform: translateY(78%);
-    right: 0;
-    top: inherit;
-    left: 0;
     bottom: 0;
-    z-index: 4;
+    transform: translateY(200%);
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s cubic-bezier(.93,-.01,0,1.02);
     border: 1px solid;
+    z-index: 4;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: inherit;
+}  
+.shoplock-slider.m_fixed .shopock-productCard.mobile-hide {
+    transform: translateY(78%);
+    transition: .5s cubic-bezier(.93,-.01,0,1.02);
+    visibility: visible;
+    opacity: 1;
 }
   .shoplock-slider.m_fixed .swiper-button-next.swiper-next {
     display: none;
