@@ -519,6 +519,10 @@ shopContainer.forEach(item => {
         })
     })
 })
+function openShopLookProduct(item){
+  const m_fixed = item.closest('.shoplock-slider');
+    m_fixed.classList.add('m_fixed');
+}
 function removemfixed(item) {
     const m_fixed = item.closest('.shoplock-slider');
     m_fixed.classList.remove('m_fixed');
