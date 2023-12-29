@@ -357,7 +357,10 @@ display: flex;
     opacity: 0;
     z-index: -1;
 }
-
+li.menu-link:hover>a:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
 .header-content.border-all.menu-active:after {
     visibility: visible;
     opacity: 1;
