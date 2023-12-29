@@ -3,7 +3,7 @@
   {%  assign mainLink = link.title | handle %}
    <li data-label="{{ link.levels }}" class="menu-link {% if link.links.size > 0 %}has-child-links {% endif %}">
     <a class="snakify-in" href="{{ link.url }}">{{ link.title }}</a>
-    {% if link.links.size > 0 %}
+    {% if link.links.size > 0 and link.lables == 2 %}
     <div class="DropDownBox dropdown-child">    
     <ul class="dropdown-child-Box border-right">
         {% for child_link in link.links %}
@@ -64,6 +64,16 @@
             </div>
       </div>
     </div>
+    {% else %}
+      <ul class="DropdownChild">
+        {% for child_link in link.links %}
+          <li class="child-menu-link">
+          <a class="snakify-in" href="{{ child_link.url }}">{{ child_link.title }}</a>
+          {% if child_link.links.size > 0 %}
+          {% endif %}
+          </li>
+        {% endfor%}
+      </ul>
    {% endif %}
 </li>
 {% endfor %}
