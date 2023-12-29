@@ -58,7 +58,7 @@
   {% endif %}
  {{ content_for_header }}
 </head>
-<body id="{{ page_title | handle }}" class="template-{{ template.name | handle }}">
+<body id="{{ page_title | handle }}" class="template-{{ template.name | handle }} color-background-1">
 {% render 'flash-wrapper' %}
 <div id="cart_drawer_box"></div>
 {% if template contains 'cart' %}
