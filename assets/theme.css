@@ -352,7 +352,7 @@ display: flex;
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
     background: rgba(0,0,0,.5);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(35px);
     visibility: hidden;
     opacity: 0;
     z-index: -1;
