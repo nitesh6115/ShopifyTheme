@@ -83,7 +83,12 @@
 @media(max-width:767px){
 .shoplock-slider {
     padding: 15px;
-    border: 0 !important;
+    border: 0!important;
+    top: 50%;
+    transform: translateY(8%);
+    left: 0;
+    position: relative;
+    width: 100%;
 }
 
 .shoplock-slider .shoplock-container {
