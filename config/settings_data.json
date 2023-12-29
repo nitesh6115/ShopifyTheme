@@ -191,17 +191,17 @@
           "link-color": "#ffffff",
           "border-color": "#f5f5f5",
           "button-text": "#000000",
-          "button-background": "#fdff10",
-          "button-border-color": "#fdff10",
+          "button-background": "#850000",
+          "button-border-color": "#850000",
           "button-hover-text": "#ffffff",
-          "button-hover-background": "#fd746c",
-          "button-hover-border-color": "#fd746c",
-          "secondary-button-text": "#ffffff",
-          "secondary-button-background": "#9efc35",
-          "secondary-button-border-color": "#9efc35",
-          "secondary-button-hover-text": "#000000",
-          "secondary-button-hover-background": "#0abfbc",
-          "secondary-button-hover-border-color": "#0abfbc"
+          "button-hover-background": "#00650e",
+          "button-hover-border-color": "#00650e",
+          "secondary-button-text": "#000000",
+          "secondary-button-background": "#d93000",
+          "secondary-button-border-color": "#d93000",
+          "secondary-button-hover-text": "#ffffff",
+          "secondary-button-hover-background": "#023332",
+          "secondary-button-hover-border-color": "#023332"
         }
       },
       "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8": {
