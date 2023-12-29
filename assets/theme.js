@@ -494,7 +494,6 @@ shopContainer.forEach(item => {
         const item = this.$el;
         const parent = item.closest('.shoplock-image-container');
         const m_fixed = item.closest('.shoplock-slider');
-        m_fixed[0].classList.add('m_fixed')
         const sliderNav = parent[0].querySelectorAll('.DotsBox .dotsAnimate');
         // navigation change active class
         sliderNav.forEach(e => {
