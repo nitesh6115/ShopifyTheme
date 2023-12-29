@@ -44,6 +44,7 @@ div#shopify-section-header {
 .header__wrapper {
     position: relative;
     margin-bottom: 80px;
+    background: transparent !important;
 }
 @media screen and (max-width: 749px) {
   .small-hide {
