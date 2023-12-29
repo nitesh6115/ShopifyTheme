@@ -31,11 +31,19 @@ div#shopify-section-header {
     left: 0;
     z-index: 10;
 }
-.header__wrapper{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+.header-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 5rem rgb(13 13 13 / 20%);
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+.header__wrapper {
+    position: relative;
+    margin-bottom: 80px;
 }
 @media screen and (max-width: 749px) {
   .small-hide {
