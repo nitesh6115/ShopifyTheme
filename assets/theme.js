@@ -36,7 +36,7 @@ window.onscroll = function() {
 
 
 // Nav Bar //
-const MainLink = document.querySelectorAll('.has-child-links');
+const MainLink = document.querySelectorAll('.lavels-2');
 MainLink.forEach(item => {
     item.addEventListener("mouseover", (event) => {
       item.closest('.header-content').classList.add('menu-active') 
