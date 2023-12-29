@@ -152,7 +152,6 @@ function SelectVariant(event) {
 }
 
 function ChangeSize(event){
-   
    var mainParent = event.closest('.featured-product');
    var SelectorValue = mainParent.querySelectorAll('.size-selector.active');
     var slectedValue = [];
@@ -168,7 +167,6 @@ function ChangeSize(event){
     var variantId = "";
     mainselctbox.forEach(item => {
         var text = item.innerText
-        
         if (text === Selector) {
             console.log(text)
             variantId = item.value
@@ -176,7 +174,6 @@ function ChangeSize(event){
         }
     })
     //console.log(soldOut);
-
     var selectType = event.getAttribute('type')
     if (dataAvability == 'true') {
         if (selectType == "size") {
@@ -189,7 +186,6 @@ function ChangeSize(event){
             }
         }
     } else {
-
     }
 }
 function ManiProduct(element, event, variantId){
