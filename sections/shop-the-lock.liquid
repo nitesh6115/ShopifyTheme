@@ -34,16 +34,16 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
           {% if block.settings.product_list1 != blank or block.settings.product_list2 != blank  or block.settings.product_list3 != blank or block.settings.product_list4 != blank%}
            <div class="DotsBox">
             {% if block.settings.product_list1 != blank  %}
-             <div data-index="0" class="dotsAnimate active dot-1" style="top: {{ block.settings.top_position_1 }}%; left: {{  block.settings.left_position_1 }}%;"></div>
+             <div onclick="openShopLookProduct(this)" data-index="0" class="dotsAnimate active dot-1" style="top: {{ block.settings.top_position_1 }}%; left: {{  block.settings.left_position_1 }}%;"></div>
                 {% endif %}
              {% if block.settings.product_list2 != blank  %}
-                <div data-index="1" class="dotsAnimate dot-2" style="top: {{ block.settings.top_position_2 }}%; left: {{  block.settings.left_position_2 }}%;"></div>
+                <div onclick="openShopLookProduct(this)" data-index="1" class="dotsAnimate dot-2" style="top: {{ block.settings.top_position_2 }}%; left: {{  block.settings.left_position_2 }}%;"></div>
                {% endif %}
             {% if block.settings.product_list3 != blank  %}
-                 <div data-index="2" class="dotsAnimate dot-3" style="top: {{ block.settings.top_position_3 }}%; left: {{  block.settings.left_position_3 }}%;"></div>
+                 <div onclick="openShopLookProduct(this)" data-index="2" class="dotsAnimate dot-3" style="top: {{ block.settings.top_position_3 }}%; left: {{  block.settings.left_position_3 }}%;"></div>
                 {% endif %}
              {% if block.settings.product_list4 != blank  %}
-                <div data-index="3" class="dotsAnimate dot-4" style="top: {{ block.settings.top_position_4 }}%; left: {{  block.settings.left_position_4 }}%;"></div>
+                <div onclick="openShopLookProduct(this)" data-index="3" class="dotsAnimate dot-4" style="top: {{ block.settings.top_position_4 }}%; left: {{  block.settings.left_position_4 }}%;"></div>
                {% endif %}</div>
             {% endif %}
           </div>
