@@ -951,7 +951,7 @@ form#contact_form .email input[type="email"] {
 .footer-top-wrapper .newsletter-content-wrapper {
     max-width: 100%;
     width: 100%;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 3rem;
 }
 }
