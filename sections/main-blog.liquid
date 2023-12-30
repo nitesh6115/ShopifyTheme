@@ -1,7 +1,120 @@
+<style>
+.section-{{ section.id }}-padding {
+padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+}
+@media screen and (min-width: 750px) {
+  .section-{{ section.id }}-padding {
+  padding-top: {{ section.settings.padding_top }}px;
+  padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+}
+</style>
+<div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
+  <div class="BlogPage {% if section.settings.width == 'full-width' %}full-width{% elsif section.settings.width == 'wrapper-width' %}page-width{% else %} narrow-width {% endif %}" >
+    
+{% paginate blog.articles by 5 %}
+<div class="grid--rev">
+  <div class="grid__item large--three-quarters">
+    {% if current_tags %}
+      <h1>{{ blog.title | link_to: blog.url }} &mdash; {{ current_tags.first }}</h1>
+    {% else %}
+      <h1>{{ blog.title }}</h1>
+    {% endif %}
+    {% for article in blog.articles %}
+
+      <div class="article">
+        <h2 class="h3"><a href="{{ article.url }}">{{ article.title }}</a></h2>
+        {% capture author %}<strong>{{ article.author }}</strong>{% endcapture %}
+        {% capture date %}<time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: format: 'month_day_year' }}</time>{% endcapture %}
+        <p>{{ 'blogs.article.author_on_date_html' | t: author: author, date: date }}</p>
+
+        {% if article.image %}
+          <a class="article__featured-image" href="{{ article.url }}">
+            {{ article | img_url: '1024x1024' | img_tag: article.title }}
+          </a>
+        {% endif %}
+        <div class="rte">
+          {% if article.excerpt.size > 0 %}
+            {{ article.excerpt }}
+          {% else %}
+            <p>{{ article.content | strip_html | truncatewords: 100 }}</p>
+          {% endif %}
+        </div>
+        <ul class="inline-list">
+          {% if blog.comments_enabled? %}
+          <li>
+            <a href="{{ article.url }}#comments">
+              {{ 'blogs.comments.with_count' | t: count: article.comments_count }}
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+        <p><a href="{{ article.url }}">{{ 'blogs.article.read_more' | t }} &rarr;</a></p>
+      </div>
+    {% endfor %}
+    {% if paginate.pages > 1 %}
+      <div class="pagination">
+        {{ paginate | default_pagination }}
+      </div>
+    {% endif %}
+  </div>
+</div>
+{% endpaginate %}
+  </div>
+</div>
+
 {% schema %}
   {
     "name": "Blog",
-    "settings": []
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "Choose Color Schema",
+        "default": "background-1"
+      },
+      {
+      "type": "select",
+      "id": "width",
+      "label": "Page width",
+      "options": [
+        {
+          "value": "full-width",
+          "label": "Full Width"
+        },
+        {
+          "value": "wrapper-width",
+          "label": "Wrapper Width"
+        },
+        {
+          "value": "narrow-width",
+          "label": "Narrow width"
+        }
+      ],
+      "default": "wrapper-width"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 36
+    }
+    ]
   }
 {% endschema %}
 
