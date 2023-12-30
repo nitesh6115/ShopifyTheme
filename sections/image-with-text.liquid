@@ -24,6 +24,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
    {% else %}
      {{ 'image' | placeholder_svg_tag }}
      {%  endif %}
+   </div>
      <div class="GridItem">
       <div class="text-content {{ section.settings.text_alignment }}">
     {% for block in section.blocks %}
