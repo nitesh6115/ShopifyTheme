@@ -2,88 +2,75 @@
 
   <h1>{{ 'cart.general.title' | t }}</h1>
   <form action="/cart" method="post" novalidate class="cart table-wrap">
-    <table class="cart-table full table--responsive">
-  <tbody>
-        {% for item in cart.items %}
-          <tr class="cart__row table__section">
-            <td data-label="{{ 'customer.order.product' | t }}">
-              <a href="{{ item.url | within: collections.all }}" class="cart__image">
-                <img src="{{ item | img_url: 'medium' }}" alt="{{ item.title | escape }}">
-              </a>
-            </td>
-            <td>
-              <a href="{{ item.url }}" class="h4">
-                {{ item.product.title }}
-              </a>
-              {% unless item.variant.title contains 'Default' %}
-                <br>
-                <small>{{ item.variant.title }}</small>
-              {% endunless %}
-
-              {% if settings.cart_vendor_enable %}
-                <p>{{ item.vendor }}</p>
-              {% endif %}
-
-              {% assign property_size = item.properties | size %}
-              {% if property_size > 0 %}
-                {% for p in item.properties %}
-                  {% unless p.last == blank %}
-                    {{ p.first }}:
-
-                    {% if p.last contains '/uploads/' %}
-                      <a href="{{ p.last }}">{{ p.last | split: '/' | last }}</a>
-                    {% else %}
-                      {{ p.last }}
-                    {% endif %}
-
-                    <br>
-                  {% endunless %}
-                {% endfor %}
-              {% endif %}
-
-              <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="cart__remove">
-                <small>{{ 'cart.general.remove' | t }}</small>
-              </a>
-            </td>
-            <td data-label="{{ 'cart.label.price' | t }}">
-              <span class="h3">
-                {{ item.price | money }}
-              </span>
-            </td>
-            <td data-label="{{ 'cart.label.quantity' | t }}">
-              <input type="number" name="updates[]" id="updates_{{ item.key }}" data-id="{{ item.key }}" value="{{ item.quantity }}" min="0">
-            </td>
-            <td data-label="{{ 'cart.label.total' | t }}" class="text-right">
-              {% if item.original_line_price != item.line_price %}
-                <span class="cart-item__original-price"><s>{{ item.original_line_price | money }}</s></span>
-              {% endif %}
-              <span class="h3">
-                {{ item.line_price | money }}
-              </span>
-              {% for discount in item.discounts %}
-                <span class="cart-item__discount">{{ discount.title }}</span>
-              {% endfor %}
-            </td>
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-    <div class="grid cart__row">
-     <p>
-          <span class="cart__subtotal-title">{{ 'cart.general.subtotal' | t }}</span>
-          <span class="h3 cart__subtotal">{{ cart.total_price | money }}</span>
-        </p>
-        {% if cart.total_discounts > 0 %}
-          {% assign savings = cart.total_discounts | money %}
-          <p>
-            <span class="cart-subtotal__savings"><em>{{ 'cart.general.savings_html' | t: price: savings }}</em></span>
-          </p>
-        {% endif %}
+     <div class="cartItemBox" id="CartBox">
+        <div id="cart_items">
+        {%  for item in cart.items %}
+         <div class="item-details border-all"  dataline="{{ forloop.index }}" dataid="{{ item.variant_id }}">
+        <div class="cart_image_text">
+        <div class="cart_details ">
+         <p>{{ item.product.title }}</p>
+        {%- if item.product.has_only_default_variant == false or item.properties.size != 0 or item.selling_plan_allocation != nil -%}
+                <dl>
+                  {%- if item.product.has_only_default_variant == false -%}
+                    {%- for option in item.options_with_values -%}
+                      <div class="product-option">
+                        <dd>{{ option.value }}</dd>
+                      </div>
+                    {%- endfor -%}
+                  {%- endif -%}
         
-        <button type="submit" name="update" class="btn--secondary update-cart">{{ 'cart.general.update' | t }}</button>
-        <button type="submit" name="checkout" class="btn">{{ 'cart.general.checkout' | t }}</button>
-     
-    </div>
+                  {%- for property in item.properties -%}
+                    {%- assign property_first_char = property.first | slice: 0 -%}
+                    {%- if property.last != blank and property_first_char != '_' -%}
+                      <div class="product-option">
+                        <dt>{{ property.first }}: </dt>
+                        <dd>
+                          {%- if property.last contains '/uploads/' -%}
+                            <a href="{{ property.last }}" class="link" target="_blank">
+                              {{ property.last | split: '/' | last }}
+                            </a>
+                          {%- else -%}
+                            {{ property.last }}
+                          {%- endif -%}
+                        </dd>
+                      </div>
+                    {%- endif -%}
+                  {%- endfor -%}
+                </dl>
+        
+                <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>
+              {%- endif -%}
+         <p>{{ item.final_price | money}}</p> 
+        
+        </div>
+        <div class="cart-item-image ">
+        <img class="feature-image radius-10 overflow-hidden" height="{{ item.image.height }}" width="{{ item.image.width }}"
+        src="{{ item.image| img_url: '160x' }}"
+        alt="{{ item.image.alt | escape }}"
+        loading="lazy">
+        </div>
+        </div>
+        <div class="cart_bottom border-top">
+        <div class="remove" url="/cart/change?line={{ forloop.index }}&amp;quantity=0" onclick='removeItem(this)' }}>
+         {%  render'icon-delete' %}
+        </div>
+        <div class="quantity-filed">
+        <div class="quantity_button" name="minus" type="button" onclick ="removeQuantity(this)" data-id="{{ item.variant_id }}"  data-variant ="{{ item.quantity }}" >
+         {%  render'icon-minus' %}
+        </div>
+        <input type="text" id="variant-quantity" name="quantity" value="{{ item.quantity }}" readonly >
+        <div onclick="addQuantity(this)" data-id="{{ item.variant_id }}"  data-variant ="{{ item.quantity }}" class="quantity_button" name="pluse" type="button">
+        {%  render'icon-plus' %}
+        </div>
+        </div>
+        <div class="TotleItemPrice">
+         {{ item.final_price | times: item.quantity | money }}
+        </div>
+        </div>
+        </div>
+        {%  endfor %}
+        </div>
+      </div>
   </form>
 {% else %}
   {% comment %}
