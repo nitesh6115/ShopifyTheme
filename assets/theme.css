@@ -368,7 +368,7 @@ ul.dropdown-grandchild li {
     visibility: visible;
     opacity: 1;
 }
-.DropDownBox.dropdown-child {
+.DropDownBox.dropdown-child, .DropdownChild{
     -webkit-transition: height .5s;
      -moz-transition: height .5s;
       -ms-transition: height .5s;
