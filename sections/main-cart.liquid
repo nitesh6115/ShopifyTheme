@@ -15,7 +15,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
                         
 {% if cart.item_count > 0 %}
   <div class="CartItemWrapper">
-  <h1>Shopping Bag</h1>
+  <h1>Your Bag</h1>
   <form action="/cart" method="post" novalidate class="cart table-wrap">
     <div class="CartTotal">
         <h4><span>Total:</span> <span id="cart__total_price"><p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p></span></h4>
