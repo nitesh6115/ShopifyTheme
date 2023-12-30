@@ -30,8 +30,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
   <div class="{% if section.settings.width == 'full-width'%}full-width{% elsif section.settings.width =='wrapper-width'%}page-width{% else %}narrow-width{% endif %}">
   <div class ="product-grid">
   <div class="box-1">
-  <h2>{{ product.title }}</h2>
-  <p>{{ product.price| money_with_currency }}</p>
+  {% render 'product-info' %}
   </div>
   <div id="MainSliderBox" class="box-2">
   <div data-color="{{ colorOption }}" data-size="{{ sizeOption }}" class="top-container" data-url="{{ product.url }}">
@@ -127,6 +126,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
   </div>
   </div>
   <div class="box-3">
+    
   <div class="bottom-container">
   <script>
     {{ product.media|json }}
