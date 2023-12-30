@@ -27,7 +27,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
         {% if article.image %}
           <a class="article__featured-image" href="{{ article.url }}">
             {% capture class %}radius-20 hover-zoom{% endcapture %}
-            {{ article | img_url: '1024x1024' | img_tag: article.title ,class: class }}
+            {{ article | img_url: '1024x1024' | img_tag: article.title , class: class }}
           </a>
         {% endif %}
         <h2 class="h3">{{ article.title }}</h2>
