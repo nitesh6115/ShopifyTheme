@@ -1521,9 +1521,9 @@ form#contact_form .submit {
 
 
 /* cart */
-.CartItemWrapper > h1 {
+.CartPage.narrow-width {
+    padding: 0;
 }
-
 .CartTotal {
     display: flex;
     justify-content: space-between;
