@@ -533,6 +533,9 @@ ul.dropdown-grandchild li {
     visibility: hidden;
     width: 100%;
     z-index: 25;
+    transition-timing-function: cubic-bezier(.93,-.01,0,1.02);
+    transition-duration: .7s;
+    transition-property: all;
 }
 
 .modal-menu-open .navbar.mobile-hide {
