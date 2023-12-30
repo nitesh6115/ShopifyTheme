@@ -13,7 +13,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
 <div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
   <div class="BlogPage {% if section.settings.width == 'full-width' %}full-width{% elsif section.settings.width == 'wrapper-width' %}page-width{% else %} narrow-width {% endif %}" >
     
-{% paginate blog.articles by 5 %}
+{% paginate blog.articles by 8 %}
 <div class="grid--rev">
   <div class="grid__item large--three-quarters">
     {% if current_tags %}
