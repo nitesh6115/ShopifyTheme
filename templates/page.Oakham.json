@@ -3,15 +3,28 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
+        "color_scheme": "background-1",
         "width": "wrapper-width",
         "show_title": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "6e476ad0-8d61-4ca4-826b-751d025309e9": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "",
+        "page-width": "narrow-width",
+        "text_alignment": "center",
+        "title": "",
+        "text": "<h5>We have partnered with a local factory close to where the brothers<\/h5><h5>grew up to produce our first 'Made In England' range. <\/h5><h5>Here is a look at one of our recent visits.<\/h5>",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "6e476ad0-8d61-4ca4-826b-751d025309e9"
   ]
 }
