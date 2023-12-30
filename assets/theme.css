@@ -1518,3 +1518,56 @@ form#contact_form .submit {
     padding: 30px 0;
 }
 }
+
+
+/* cart */
+.CartItemWrapper > h1 {
+}
+
+.CartTotal {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.CartTotal button#cart_checkout_btn {
+}
+
+.CartTotal h4 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.CartItemWrapper > h1 {
+    margin-bottom: 30px;
+}
+
+.CartItemContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartSideBar {
+    width: 30%;
+    padding: 0 0px 0 50px;
+    border-left: 1px solid;
+}
+
+.cartSideBar label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.cartSideBar .discount­code­field {
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
+}
+
+.cartSideBar input[type="text"] {
+    width: 100%;
+}
