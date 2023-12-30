@@ -200,6 +200,9 @@
 .product-page .box-2 .swiper-wrapper .swiper-slide {
     padding: 0 15px;
 }
+.product-page .box-2 .swiper-wrapper .swiper-slide {
+    padding: 0 15px;
+}
 .box-3 .product-variant-images.selector-wrapper .size-selector img {
     border: 1px solid transparent;
     border-radius: 5px;
@@ -277,9 +280,6 @@
     backdrop-filter: saturate(180%) blur(2rem);
     box-shadow: -2px -2rem 4rem 7px #7f808bab
 }
-    .swiper-zoom-container {
-        padding: 0 15px;
-    }
     .product-image-container {
       overflow: visible;
     }
