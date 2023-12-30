@@ -116,7 +116,11 @@ function removeItem(item) {
         })
         .then(response => {
             if (response.status >= 200 && response.status < 300) {
-                cartDrwer();
+                if(document.body.classList.contains('template-cart')){
+                  location.reload();
+                }else{
+                 cartDrwer(); 
+                }
             } else {
                 alert(response.description)
             }
@@ -175,7 +179,11 @@ function removeQuantity(item) {
         })
         .then(response => {
             if (response.status >= 200 && response.status < 300) {
-                cartDrwer();
+                if(document.body.classList.contains('template-cart')){
+                  location.reload();
+                }else{
+                 cartDrwer(); 
+                }
             } else {
                 alert(response.description)
             }
