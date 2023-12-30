@@ -1645,7 +1645,7 @@ div#CartBox {
   object-fit: cover;
   object-position: center;
 }
-@media(max-widht: 767px){
+@media(max-width: 767px){
   .CollectionListPage .GridItem{
   margin-top: 16px;
 }
