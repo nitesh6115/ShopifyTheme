@@ -1590,6 +1590,9 @@ div#CartBox {
 }
 
 /* blog */
+.BlogPage .grid--rev .CollectionnGrid {
+    margin-top: 30px;
+}
 .article__featured-image img {
     max-width: 100%;
     height: auto;
