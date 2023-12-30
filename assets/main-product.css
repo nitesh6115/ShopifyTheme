@@ -179,7 +179,24 @@
 .box-3 .product-variant-images.selector-wrapper .size-selector {
     border: 0;
 }
+.OpenName.SizeGuidEnabled {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
 
+.OpenName.SizeGuidEnabled a.trigger-pop-up {
+    font-size: 10px;
+    border: 1px solid;
+    padding: 2px 7px;
+    border-radius: 7px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.product-page .box-2 .swiper-wrapper .swiper-slide {
+    padding: 0 15px;
+}
 .box-3 .product-variant-images.selector-wrapper .size-selector img {
     border: 1px solid transparent;
     border-radius: 5px;
