@@ -44,12 +44,13 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
       <p class="clearfix">
         {% if blog.previous_article %}
           <span class="left">
-            &larr; {{ 'Previous' | link_to: blog.previous_article }}
+          <a href="{{ blog.previous_article.url }}" class="button secondary-button">Prev</a>
+            
           </span>
         {% endif %}
         {% if blog.next_article %}
           <span class="right">
-            {{ 'Next'  | link_to: blog.next_article }} &rarr;
+          <a href="{{ blog.next_article.url }}" class="button primary-button">Next</a>
           </span>
         {% endif %}
       </p>
