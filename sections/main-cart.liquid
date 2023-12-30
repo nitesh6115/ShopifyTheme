@@ -94,12 +94,11 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
   </form>
   </div>
 {% else %}
-  {% comment %}
-    The cart is empty
-  {% endcomment %}
+  <div class="CartEmptyWrapper">
   <h2>{{ 'cart.general.title' | t }}</h2>
   <p>{{ 'cart.general.empty' | t }}</p>
   <p>{{ 'cart.general.continue_browsing_html' | t }}</p>
+  </div>
 {% endif %}
   </div>
 </div>
