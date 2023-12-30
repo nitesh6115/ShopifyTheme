@@ -111,6 +111,33 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
   <p>{{ 'cart.general.continue_browsing_html' | t }}</p>
   </div>
 {% endif %}
+<div class="drawerProducts color-{{ section.settings.color_scheme }}">
+  <h5>{{ section.settings.recomended }}</h5>
+  {% if cart.items != 0 %}
+  {% assign item = cart.items.first %}
+  {% for collection in item.product.collections %}
+  {% assign collectionHandle = collection.handle %} 
+  {% endfor %}
+  {% if collectionHandle != blank %}
+  {% assign collection = collections[collectionHandle] %}
+    {% else %}
+    {% assign collection = collections['all'] %}
+    {% endif %}
+  {% else %}
+  {% assign collection = collections['all'] %}
+  {% endif %}
+<div class="CratDrawerSlider swiper">
+  <div class="swiper-wrapper">
+  {% for product in collection.products limit: 8 %}
+  <div class="featured-product swiper-slide">
+  {% render 'product-grid', card_product:product %}
+  </div>
+  {% endfor %}
+  </div>
+  <div class="CartDrawerNext swiper-button-next swiper-next secondary-button"></div>
+  <div class="CartDrawerPrev swiper-button-prev swiper-prev secondary-button"></div>
+</div>
+</div>
   </div>
 </div>
 
@@ -163,7 +190,19 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
       "unit": "px",
       "label": "Padding Bottom",
       "default": 36
-    }
+    },
+     {
+        "type": "text",
+        "id": "recomended",
+        "label": "Recommended Product Heading",
+        "default": "RECOMMENDED PRODUCTS"
+      },
+       {
+        "type": "text",
+        "id": "empty_massage",
+        "label": "Empty Message",
+        "default": "GIVE YOUR BAG SOME LOVE"
+      } 
     ]
   }
 {% endschema %}
