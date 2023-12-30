@@ -280,6 +280,9 @@
     backdrop-filter: saturate(180%) blur(2rem);
     box-shadow: -2px -2rem 4rem 7px #7f808bab
 }
+  #MainSliderBox .swiper-pagination {
+    bottom: 30px;
+}
     .product-image-container {
       overflow: visible;
     }
