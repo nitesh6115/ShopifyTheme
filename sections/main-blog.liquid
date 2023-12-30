@@ -26,7 +26,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
       <div class="GridItem article">
         {% if article.image %}
           <a class="article__featured-image" href="{{ article.url }}">
-            {% assign class = 'radius-20 zoom-effect' %}
+            {% capture class %}radius-20 zoom-effect{% endcapture %}
             {{ article | img_url: '1024x1024' | img_tag: article.title ,class: class }}
           </a>
         {% endif %}
