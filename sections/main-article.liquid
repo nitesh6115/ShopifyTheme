@@ -26,13 +26,14 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
         <p>{{ 'blogs.article.author_on_date_html' | t: author: author, date: date }}</p>
       </div>
     </header>
-  <div class="ArticleContent">
+    <div class="ArticleContent">
     <div class="rte" itemprop="articleBody">
       {{ article.content }}
     </div>
    </div>
+    
     {% if blog.next_article or blog.previous_article %}
-      <div class="clearfix">
+      <div class="NextPrevButton">
         {% if blog.previous_article %}
           <span class="left">
           <a href="{{ blog.previous_article.url }}" class="button secondary-button">Prev</a>
@@ -47,9 +48,9 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
     {% endif %}
 
     {% if blog.comments_enabled? %}
+      <div class="ArticleComments">
       <h2 class="h3">{{ 'blogs.comments.with_count' | t: count: number_of_comments }}</h2>
       {% paginate article.comments by 5 %}
-       
         <div id="comments">
 
           {% if comment and comment.created_at %}
@@ -131,6 +132,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
           </div>
         </div>
       {% endpaginate %}
+      </div>
     {% endif %}
   </article>
 
