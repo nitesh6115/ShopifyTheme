@@ -44,12 +44,12 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
       <p class="clearfix">
         {% if blog.previous_article %}
           <span class="left">
-            &larr; {{ 'blogs.article.older_post' | t | link_to: blog.previous_article }}
+            &larr; {{ 'Previous' | link_to: blog.previous_article }}
           </span>
         {% endif %}
         {% if blog.next_article %}
           <span class="right">
-            {{ 'blogs.article.newer_post' | t | link_to: blog.next_article }} &rarr;
+            {{ 'Next'  | link_to: blog.next_article }} &rarr;
           </span>
         {% endif %}
       </p>
