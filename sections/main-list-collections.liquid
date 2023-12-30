@@ -24,15 +24,17 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
       {%- else -%}
         {%- assign collection_image = blank -%}
       {%- endif -%}
-      <a class="collectionList  border-all hover-zoom" href="{{ collection.url }}">
+      <div class="collectionList  border-all hover-zoom" href="{{ collection.url }}">
+        <a class="cLink" href="{{ collection.url }}">
         <img class="radius-20" width="{{ collection_image.width }}" srcset="{{ collection_image | img_url: '480x' }}" alt="">
+        </a>
         <div class="tex-box-w">
         <h4>{{ collection.title }}</h4>
         <div class="button-box">
           <a href="{{ collection.url }}" class="button primary-button">View All Products</a>
         </div>
         </div>
-      </a>
+      </div>
     </div>
   {%- endfor -%}
 </div>
