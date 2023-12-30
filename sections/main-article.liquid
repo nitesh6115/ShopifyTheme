@@ -35,14 +35,10 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
     {% if blog.next_article or blog.previous_article %}
       <div class="NextPrevButton">
         {% if blog.previous_article %}
-          <span class="left">
           <a href="{{ blog.previous_article.url }}" class="button secondary-button">Prev</a>
-          </span>
         {% endif %}
         {% if blog.next_article %}
-          <span class="right">
           <a href="{{ blog.next_article.url }}" class="button primary-button">Next</a>
-          </span>
         {% endif %}
       </div>
     {% endif %}
