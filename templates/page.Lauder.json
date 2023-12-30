@@ -16,7 +16,8 @@
         "template--14964199915606__8c38135d-a188-4ee3-bc0b-8fe44d0280b2-image-1": {
           "type": "image",
           "settings": {
-            "color_scheme": "",
+            "color_scheme": "scheme-0bfea3ae-e3eb-4aeb-af16-a1397b6b6630",
+            "image_bg": "shopify:\/\/shop_images\/Lookbook-2-IMG2.jpg",
             "overlay_opacity": 0,
             "overlay_opacity_color": "#000",
             "desktop_content_position": "bottom-center",
@@ -32,7 +33,25 @@
         "template--14964199915606__8c38135d-a188-4ee3-bc0b-8fe44d0280b2-image-2": {
           "type": "image",
           "settings": {
-            "color_scheme": "",
+            "color_scheme": "scheme-0bfea3ae-e3eb-4aeb-af16-a1397b6b6630",
+            "image_bg": "shopify:\/\/shop_images\/Lookbook-2-IMG12.jpg",
+            "overlay_opacity": 0,
+            "overlay_opacity_color": "#000",
+            "desktop_content_position": "bottom-center",
+            "title": "",
+            "sub-title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "second_button_label": "",
+            "second_button_link": ""
+          }
+        },
+        "191baf8f-b4cc-4971-88ba-3a1cc56c546b": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-0bfea3ae-e3eb-4aeb-af16-a1397b6b6630",
+            "image_bg": "shopify:\/\/shop_images\/Lookbook-2-IMG4.jpg",
             "overlay_opacity": 0,
             "overlay_opacity_color": "#000",
             "desktop_content_position": "bottom-center",
@@ -48,11 +67,12 @@
       },
       "block_order": [
         "template--14964199915606__8c38135d-a188-4ee3-bc0b-8fe44d0280b2-image-1",
-        "template--14964199915606__8c38135d-a188-4ee3-bc0b-8fe44d0280b2-image-2"
+        "template--14964199915606__8c38135d-a188-4ee3-bc0b-8fe44d0280b2-image-2",
+        "191baf8f-b4cc-4971-88ba-3a1cc56c546b"
       ],
       "settings": {
         "color_scheme": "",
-        "width": "full-width",
+        "width": "wrapper-width",
         "padding_top": 36,
         "padding_bottom": 36
       }
