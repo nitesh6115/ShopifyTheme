@@ -1571,3 +1571,20 @@ form#contact_form .submit {
 .cartSideBar input[type="text"] {
     width: 100%;
 }
+@media(max-width: 767px){
+  .CartItemContainer {
+    flex-direction: column;
+}
+
+.cartSideBar {
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    border-top: 1px solid;
+}
+
+div#CartBox {
+    padding: 15px;
+    padding-bottom: 0;
+}
+}
