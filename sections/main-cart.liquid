@@ -115,7 +115,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
     </div>
   </div>
 {% endif %}
-<div class="CartProducts color-{{ section.settings.color_scheme }}">
+<div class="CartProducts">
   <h5>{{ section.settings.recomended }}</h5>
   {% if cart.items != 0 %}
   {% assign item = cart.items.first %}
