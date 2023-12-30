@@ -207,9 +207,9 @@
       "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8": {
         "settings": {
           "background": "rgba(0,0,0,0)",
-          "background_gradient": "",
-          "text": "#023332",
-          "heading-color": "#023332",
+          "background_gradient": "linear-gradient(90deg, rgba(8, 8, 8, 1), rgba(0, 0, 0, 1) 100%)",
+          "text": "#ffffff",
+          "heading-color": "#ffffff",
           "sub-heading-color": "#eeeeee",
           "link-color": "#ffffff",
           "border-color": "#dbdbdb",
