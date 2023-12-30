@@ -21,9 +21,9 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
     {% else %}
       <h1>{{ blog.title }}</h1>
     {% endif %}
+   <div class="CollectionnGrid coll-4">
     {% for article in blog.articles %}
-
-      <div class="article">
+      <div class="GridItem article">
         <h2 class="h3"><a href="{{ article.url }}">{{ article.title }}</a></h2>
         {% capture author %}<strong>{{ article.author }}</strong>{% endcapture %}
         {% capture date %}<time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: format: 'month_day_year' }}</time>{% endcapture %}
@@ -53,6 +53,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
         <p><a href="{{ article.url }}">{{ 'blogs.article.read_more' | t }} &rarr;</a></p>
       </div>
     {% endfor %}
+   </div>
     {% if paginate.pages > 1 %}
       <div class="pagination">
         {{ paginate | default_pagination }}
