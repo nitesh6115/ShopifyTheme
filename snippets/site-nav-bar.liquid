@@ -64,6 +64,7 @@
       </div>
     </div>
     {% else %}
+      {% if link.links.size > 0 %}
       <ul class="DropdownChild">
         {% for child_link in link.links %}
           <li class="child-menu-link">
@@ -73,6 +74,7 @@
           </li>
         {% endfor%}
       </ul>
+        {% endif %}
    {% endif %}
 </li>
 {% endfor %}
