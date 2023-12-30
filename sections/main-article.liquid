@@ -41,11 +41,10 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
     </ul>
     {% if blog.next_article or blog.previous_article %}
       <hr>
-      <p class="clearfix">
+      <div class="clearfix">
         {% if blog.previous_article %}
           <span class="left">
           <a href="{{ blog.previous_article.url }}" class="button secondary-button">Prev</a>
-            
           </span>
         {% endif %}
         {% if blog.next_article %}
@@ -53,7 +52,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
           <a href="{{ blog.next_article.url }}" class="button primary-button">Next</a>
           </span>
         {% endif %}
-      </p>
+      </div>
     {% endif %}
 
     {% if blog.comments_enabled? %}
