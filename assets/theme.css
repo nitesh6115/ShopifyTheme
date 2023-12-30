@@ -398,6 +398,11 @@ ul.dropdown-grandchild li {
 .menu-link.lavels-1{
   position: relative;
 }
+.DropdownChild{
+  background: var(--header-bg);
+  border: 1px solid;
+  
+}
 .menu-link:hover>.DropDownBox.dropdown-child,.menu-link:hover>.DropdownChild{
   visibility: visible;
 }
