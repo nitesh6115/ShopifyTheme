@@ -1604,3 +1604,13 @@ div#CartBox {
     border-radius: 20px;
     margin-bottom: 20px;
 }
+/* article */
+.ArticleContent {
+    padding: 15px 0;
+    margin-top: 15px;
+    border-top: 1px solid;
+}
+
+.NextPrevButton {
+    margin-bottom: 15px;
+}
