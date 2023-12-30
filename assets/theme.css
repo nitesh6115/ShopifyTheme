@@ -405,7 +405,7 @@ ul.dropdown-grandchild li {
   top: 43px;
   margin-bottom: 30px;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
 }
 .DropdownChild li{
   width: 100%;
