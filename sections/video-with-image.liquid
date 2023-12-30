@@ -66,7 +66,6 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
     {% if block.type == 'image' %}
     
   <div class="image-with-text hover-zoom"> 
-  {% if block.settings.image_bg != blank %}
     <div class="image-box overflow-hidden radius-30">
       <div class="overlay-opacity radius-30" style="background:{{ block.settings.overlay_opacity_color  }}; opacity: {{ block.settings.overlay_opacity | times: 0.01 }}"></div>
       {% if  block.settings.mobile_image_bg != blank %}
@@ -78,7 +77,6 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
         {{ 'image' | placeholder_svg_tag }}
       {% endif %}
     </div>
-    {% endif %}
     <div class="text-box banner-content-{{ block.settings.desktop_content_position}} color-{{ block.settings.color_scheme }}">
         {% if block.settings.title !=blank %}
         <h1>{{ block.settings.title }}</h1>
