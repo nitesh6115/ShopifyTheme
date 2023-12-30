@@ -802,6 +802,7 @@ img.feature-image {
 .quick-add-wrapper .selector-wrapper {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .size-selctor-wrapper {
     display: flex;
