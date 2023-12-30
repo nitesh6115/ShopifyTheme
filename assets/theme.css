@@ -1619,3 +1619,10 @@ div#CartBox {
     margin-top: 15px;
     border-top: 1px solid;
 }
+.collectionList img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+
