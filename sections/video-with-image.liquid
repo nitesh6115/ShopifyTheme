@@ -109,7 +109,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 {% schema %}
 {
   "name": "Video With Image",
-    "max_blocks": 3,
+  "max_blocks": 3,
   "settings": [
     {
       "type": "color_scheme",
@@ -156,7 +156,23 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
       "unit": "px",
       "step": 4,
       "default": 36
-    }
+    },
+    {
+          "type": "select",
+          "id": "bigImage",
+          "label": "Big Block Position",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "left"
+        }
   ],
   "blocks": [
     {
