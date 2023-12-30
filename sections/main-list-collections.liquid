@@ -1,3 +1,38 @@
+<style>
+.section-{{ section.id }}-padding {
+padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+}
+@media screen and (min-width: 750px) {
+  .section-{{ section.id }}-padding {
+  padding-top: {{ section.settings.padding_top }}px;
+  padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+}
+</style>
+<div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
+ <div class="{% if section.settings.width == 'full-width' %}full-width{% elsif section.settings.width == 'wrapper-width' %}page-width{% else %} narrow-width {% endif %}" >
+
+
+<div class="CollectionnGrid colls-{{ section.settings.rows }}">
+  {%- for collection in collections -%}
+    <div class="GridItem">
+      {%- if collection.image -%}
+        {%- assign collection_image = collection.image -%}
+      {%- elsif collection.products.first and collection.products.first.images != empty -%}
+        {%- assign collection_image = collection.products.first.featured_image -%}
+      {%- else -%}
+        {%- assign collection_image = blank -%}
+      {%- endif -%}
+      <a class="radius-20 hover-zoom" href="{{ collection.url }}">
+        <img width="{{ collection_image.width }}" srcset="{{ collection_image | img_url: '480x' }}" alt="">
+        <h4>{{ collection.title }}</h4>
+      </a>
+    </div>
+  {%- endfor -%}
+</div>
+ </div>
+</div>
 {% schema %}
   {
     "name": "Collections List",
