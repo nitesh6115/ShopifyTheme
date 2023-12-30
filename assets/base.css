@@ -226,7 +226,18 @@ h4{
     width: calc(100% - 15px);
 }
 }
+.pagination {
+    padding: 15px;
+    text-align: center;
+    margin-top: 30px;
+}
 
+.pagination span.page {
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.pagination span.page.current {background: #000;}
 .swiper-button-next.swiper-next {
     width: 33px;
     height: 33px;
