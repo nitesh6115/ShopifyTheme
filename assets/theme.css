@@ -395,7 +395,7 @@ ul.dropdown-grandchild li {
     bottom: -3px;
     z-index: 1;
 }
-.menu-link:hover>.DropDownBox.dropdown-child{
+.menu-link:hover>.DropDownBox.dropdown-child,.menu-link:hover>.DropdownChild{
   visibility: visible;
 }
 .DropDownBox.dropdown-child > .dropdown-child-Box{
