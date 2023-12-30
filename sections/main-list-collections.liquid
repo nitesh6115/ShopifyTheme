@@ -29,9 +29,11 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
         <img class="radius-20" width="{{ collection_image.width }}" srcset="{{ collection_image | img_url: '480x' }}" alt="">
         </a>
         <div class="tex-box-w">
+          <div class="ct">
         <h4>{{ collection.title }}</h4>
         <div class="button-box">
           <a href="{{ collection.url }}" class="button primary-button">View All Products</a>
+        </div>
         </div>
         </div>
       </div>
