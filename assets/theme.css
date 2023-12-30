@@ -581,6 +581,36 @@ ul.dropdown-grandchild li {
 .modal-menu-open .navbar.mobile-hide ul.menu {
     transform: translateY(0);
 }
+  .navbar ul.menu {
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: auto;
+}
+
+.navbar ul.menu ul.DropdownChild {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    background: none;
+    border-radius: 30px;
+    top: inherit;
+    width: 100%;
+}
+
+.navbar ul.menu li.menu-link {
+    width: 50%;
+}
+
+li.menu-link:hover>a:after {
+    transform: scaleX(0);
+}
 .navbar.mobile-hide ul.menu .DropDownBox.dropdown-child {
     flex-wrap: wrap;
     height: auto;
