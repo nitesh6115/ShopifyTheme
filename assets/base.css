@@ -19,13 +19,13 @@
   }
 }
 
-@media screen and (min-width: 750px) and (max-width: 989px) {
+@media screen and (min-width: 750px) and (max-width: 1023px) {
   .medium-hide {
     display: none !important;
   }
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1024px) {
   .large-up-hide {
     display: none !important;
   }
