@@ -1528,15 +1528,15 @@ form#contact_form .submit {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    background: rgba(255,255,255,0.5);
+    background: rgb(9 54 215 / 55%);
     border-radius: 10px;
     align-items: center;
     margin-bottom: 30px;
+    position: sticky;
+    top: 80px;
+    backdrop-filter: blur(45px);
+    z-index: 9;
 }
-
-.CartTotal button#cart_checkout_btn {
-}
-
 .CartTotal h4 {
     display: flex;
     align-items: center;
