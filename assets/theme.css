@@ -1424,6 +1424,7 @@ div#order_address {
 
 .button-box a {
     margin-bottom: 20px;
+    border-radius: 30px;
 }
 .ImageWithTextBox img{
   max-width: 100%;
