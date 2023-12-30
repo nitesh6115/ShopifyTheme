@@ -1636,6 +1636,7 @@ div#CartBox {
 }
 .collectionList{
   height: 200px;
+  display: block;
   position: relative;
 }
 .collectionList img{
