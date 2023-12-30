@@ -208,10 +208,10 @@
         "settings": {
           "background": "rgba(0,0,0,0)",
           "background_gradient": "",
-          "text": "#ffffff",
-          "heading-color": "#ffffff",
+          "text": "#023332",
+          "heading-color": "#023332",
           "sub-heading-color": "#eeeeee",
-          "link-color": "#ffffff",
+          "link-color": "#023332",
           "border-color": "#dbdbdb",
           "button-text": "#ffffff",
           "button-background": "#ce8055",
