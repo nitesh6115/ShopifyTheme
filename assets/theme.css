@@ -1588,3 +1588,15 @@ div#CartBox {
     padding-bottom: 0;
 }
 }
+
+/* blog */
+.article__featured-image img {
+    max-width: 100%;
+}
+
+.article {
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
