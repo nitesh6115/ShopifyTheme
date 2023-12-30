@@ -138,7 +138,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
   <div class="product-info">
     {% for option in product.options_with_values %}
     {% if option.name == 'Color' or option.name == 'COLOR' %}
-    <p class="colorNameBox"><span class="TotalColorSize">{{ option.values | size }} Colors</span><span class="SelectedColor">{{ option.values[0] }}</span></p>
+    <p class="colorNameBox"><span class="TotalColorSize">{{ option.values | size }} Colors </span><span class="SelectedColor">{{ option.values[0] }}</span></p>
     {% endif %}
     {% endfor %}
   </div>
