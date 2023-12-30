@@ -401,6 +401,8 @@ ul.dropdown-grandchild li {
 .DropdownChild{
   background: var(--header-bg);
   border: 1px solid;
+  width: 250px;
+  top: 45px;
   
 }
 .menu-link:hover>.DropDownBox.dropdown-child,.menu-link:hover>.DropdownChild{
