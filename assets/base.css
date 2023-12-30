@@ -239,6 +239,7 @@ h4{
 }
 .pagination span.page.current {
   background: #000;
+  border: 1px solid;
 }
 .pagination span.prev a,.pagination span.next a {
     border: 1px solid;
