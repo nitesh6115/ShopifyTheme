@@ -17,7 +17,12 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
   <div class="CartItemWrapper">
   <h1>Shopping Bag</h1>
   <form action="/cart" method="post" novalidate class="cart table-wrap">
-    <div class="CartTotal"></div>
+    <div class="CartTotal">
+      <div class="DrawerFooter border-top">
+        <h4><span>Total:</span> <span id="cart__total_price"><p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p></span></h4>
+        <button  id="cart_checkout_btn"type="submit" name="checkout" class="cta-btn primary-button">checkout</button>
+      </div>
+    </div>
     <div class="CartItemContainer">
      <div class="cartItemBox" id="CartBox">
         <div id="cart_items">
