@@ -1626,7 +1626,7 @@ div#CartBox {
 .collectionList .tex-box-w{
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 5px;
   left: 0;
   right: 0;
   display: flex;
