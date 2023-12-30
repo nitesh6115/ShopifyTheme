@@ -106,12 +106,16 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
   </div>
 {% else %}
   <div class="CartEmptyWrapper">
-  <h2>{{ 'cart.general.title' | t }}</h2>
-  <p>{{ 'cart.general.empty' | t }}</p>
-  <p>{{ 'cart.general.continue_browsing_html' | t }}</p>
+    <div class="content_empty">
+    <h4>{{ section.settings.empty_massage }}</h4>
+      {% for block in section.blocks %}
+      {% assign collection = collections[block.settings.collection] %}
+      <a href="{{ collection.url }}" class="button primary-button">{{ collection.title }}</a>
+      {% endfor %}
+    </div>
   </div>
 {% endif %}
-<div class="drawerProducts color-{{ section.settings.color_scheme }}">
+<div class="CartProducts color-{{ section.settings.color_scheme }}">
   <h5>{{ section.settings.recomended }}</h5>
   {% if cart.items != 0 %}
   {% assign item = cart.items.first %}
