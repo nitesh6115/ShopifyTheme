@@ -259,7 +259,7 @@ h4{
     color: #000;
 }
 
-.pagination span.prev:hover, .pagination span.next:hover {
+.pagination span.prev:hover a, .pagination span.next:hover a {
     background: #f00;
 }
 
