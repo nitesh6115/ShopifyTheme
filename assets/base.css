@@ -232,13 +232,15 @@ h4{
     margin-top: 30px;
 }
 
-.pagination span.page {
+.pagination span.page a {
     padding: 10px;
     border: 1px solid;
     border-radius: 5px;
 }
-.pagination span.page.current {background: #000;}
-.pagination span.prev,.pagination span.next {
+.pagination span.page.current {
+  background: #000;
+}
+.pagination span.prev a,.pagination span.next a {
     border: 1px solid;
     padding: 10px;
     border-radius: 10px;
