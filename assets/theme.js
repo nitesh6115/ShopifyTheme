@@ -126,7 +126,11 @@ function addtocartitem(item) {
                 setTimeout(() => {
                     document.body.classList.remove('product-toast');
                     miniCart.innerHTML = '';
-                    cartDrwer()
+                    if(document.body.classList.contains('template-cart')){
+                      location.reload();
+                    }else{
+                      cartDrwer(); 
+                    }
                 }, '2000');
                 
             }
