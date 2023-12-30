@@ -404,7 +404,7 @@ ul.dropdown-grandchild li {
   width: 250px;
   top: 43px;
   margin-bottom: 30px;
-  
+  flex-wrap: wrap;
 }
 .menu-link:hover>.DropDownBox.dropdown-child,.menu-link:hover>.DropdownChild{
   visibility: visible;
