@@ -1621,7 +1621,7 @@ div#CartBox {
 }
 
 .CollectionListPage .GridItem{
-  margin-top: 15px;
+  margin-top: 30px;
 }
 .collectionList .tex-box-w{
   position: absolute;
@@ -1631,7 +1631,7 @@ div#CartBox {
   right:0;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-start;
+  text-align: left;
   padding: 15px;
 }
 .collectionList{
