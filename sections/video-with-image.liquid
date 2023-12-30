@@ -14,7 +14,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 {% endstyle %}
 <div class="section-{{ section.id}}-padding color-{{ section.settings.color_scheme }}">
 <div class="{% if section.settings.width =='full-width' %}full-width{% elsif section.settings.width =='wrapper-width'%}page-width {% else %}narrow-width{% endif%}">
-<div class="videoImage-container ItemSize-{{ section.blocks.size }}">
+<div class="videoImage-container {% if section.blocks.size == 3 %}BigImgPos-{{ section.settings.BigImagePosition }}{% endif %} ItemSize-{{ section.blocks.size }}">
 {% for block in section.blocks %}
   {% if section.blocks.size == 3 and forloop.index == 2 %}
 <div class="RigthBlock">
