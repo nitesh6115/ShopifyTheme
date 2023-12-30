@@ -19,7 +19,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
     {% if  section.settings.mobile_image != blank %}
     <img class="desktop-hide radius-30" width="{{ section.settings.mobile_image.width }}" height="{{ section.settings.mobile_image.height }}" loading="lazy" srcset="{{ section.settings.mobile_image  | img_url:'768x'}}" alt="{{ section.settings.mobile_image.alt }}">
     {% endif %}
-   {% if  section.settings.mobile_image != blank %}
+   {% if  section.settings.image != blank %}
     <img loading="lazy" width="{{ section.settings.image.width }}" height="{{ section.settings.image.height }}" class="radius-30 {% if section.settings.mobile_image != blank %}mobile-hide{% endif %}"  alt="{{ section.settings.image.alt }}" srcset="{{ section.settings.image  | img_url:'1200x'}}">
    {% else %}
      {{ 'image' | placeholder_svg_tag }}
