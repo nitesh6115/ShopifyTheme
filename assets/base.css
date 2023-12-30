@@ -206,24 +206,24 @@ h4{
     width: calc(100% - 15px);
 }
 }
-@media(max-width: 767px){
+@media(max-width: 767px{
 .colls-6 .GridItem {
-    width: calc(33.333% - 15px);
+    width: calc(33.333% - 8px);
 }
 .colls-5 .GridItem {
-    width: calc(25% - 15px);
+    width: calc(25% - 8px);
 }
 .colls-4 .GridItem {
-    width: calc(50% - 15px);
+    width: calc(50% - 8px);
 }
 .colls-3 .GridItem {
-    width: calc(50% - 15px);
+    width: calc(50% - 8px);
 }
 .colls-2 .GridItem {
-    width: calc(50% - 15px);
+    width: calc(50% - 8px);
 }
 .colls-1 .GridItem {
-    width: calc(100% - 15px);
+    width: calc(100% - 8px);
 }
 }
 .pagination {
