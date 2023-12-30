@@ -554,6 +554,7 @@ ul.dropdown-grandchild li {
      transition-timing-function: cubic-bezier(.93,-.01,0,1.02);
     transition-duration: .7s;
     transition-property: all;
+    backdrop-filter: blur(10px);
 }
  .modal-menu-open  .overlay-menu{
     visibility:visible;
