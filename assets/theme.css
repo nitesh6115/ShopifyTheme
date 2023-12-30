@@ -651,7 +651,13 @@ li.menu-link.has-child-links.active .DropDownBox.dropdown-child .show-image {
 }  
 }
 
-
+@media(max-width: 640px){
+  .navbar ul.menu ul.DropdownChild {
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 0;
+}
+}
 
 /************product-grid ******* */
 .size-selector.Sold-out {
