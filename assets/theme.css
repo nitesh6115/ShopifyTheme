@@ -1619,8 +1619,20 @@ div#CartBox {
     margin-top: 15px;
     border-top: 1px solid;
 }
+.collectionList .text-box-w{
+  position: absolute;
+  top: 0;
+  bottom: 0
+  left: 0;
+  right:0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 15px;
+}
 .collectionList{
   height: 200px;
+  position: relative;
 }
 .collectionList img{
   max-width: 100%;
