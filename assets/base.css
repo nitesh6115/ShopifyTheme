@@ -238,6 +238,29 @@ h4{
     border-radius: 5px;
 }
 .pagination span.page.current {background: #000;}
+.pagination span.prev,.pagination span.next {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 15px;
+}
+
+.pagination a {
+    text-decoration: none;
+}
+
+.pagination .page:hover {
+    background: #fff;
+}
+
+.pagination .page:hover a {
+    color: #000;
+}
+
+.pagination span.prev:hover, .pagination span.next:hover {
+    background: #f00;
+}
+
 .swiper-button-next.swiper-next {
     width: 33px;
     height: 33px;
