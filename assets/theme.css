@@ -408,6 +408,7 @@ ul.dropdown-grandchild li {
   flex-direction: column;
   min-height: auto;
   height: 100%;
+  bottom: inherit;
 }
 .DropdownChild li{
   width: 100%;
