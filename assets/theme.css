@@ -786,6 +786,7 @@ img.feature-image {
     justify-content: center;
     margin-right: 5px;
     margin-bottom: 5px;
+    overflow: hidden;
     
 }
 .quick-add-wrapper .size-selctor-wrapper .size-selector label {
