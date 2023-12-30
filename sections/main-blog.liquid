@@ -26,8 +26,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
       <div class="GridItem article">
         {% if article.image %}
           <a class="article__featured-image" href="{{ article.url }}">
-            
-            {{ article | img_url: '1024x1024' | img_tag: article.title , class: 'radius-20 hover-zoom' }}
+           <img class="radius-20 hover-zoom" width="{{ article.image.width }}" height="{{ article.image.height }}" loading="lazy" srcset="{{ article.image  | img_url:'768x'}}" alt="{{ article.image.alt }}">
           </a>
         {% endif %}
         <h2 class="h3">{{ article.title }}</h2>
