@@ -19,7 +19,7 @@
             "color_scheme": "scheme-0bfea3ae-e3eb-4aeb-af16-a1397b6b6630",
             "image_bg": "shopify:\/\/shop_images\/Lookbook-2-IMG2.jpg",
             "overlay_opacity": 0,
-            "overlay_opacity_color": "#000",
+            "overlay_opacity_color": "#000000",
             "desktop_content_position": "bottom-center",
             "title": "",
             "sub-title": "",
@@ -36,7 +36,7 @@
             "color_scheme": "scheme-0bfea3ae-e3eb-4aeb-af16-a1397b6b6630",
             "image_bg": "shopify:\/\/shop_images\/Lookbook-2-IMG12.jpg",
             "overlay_opacity": 0,
-            "overlay_opacity_color": "#000",
+            "overlay_opacity_color": "#000000",
             "desktop_content_position": "bottom-center",
             "title": "",
             "sub-title": "",
@@ -53,7 +53,7 @@
             "color_scheme": "scheme-0bfea3ae-e3eb-4aeb-af16-a1397b6b6630",
             "image_bg": "shopify:\/\/shop_images\/Lookbook-2-IMG4.jpg",
             "overlay_opacity": 0,
-            "overlay_opacity_color": "#000",
+            "overlay_opacity_color": "#000000",
             "desktop_content_position": "bottom-center",
             "title": "",
             "sub-title": "",
@@ -76,10 +76,242 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "a3b2bab6-11bf-4951-be53-a8f7fe1b4014": {
+      "type": "video-with-image",
+      "blocks": {
+        "template--14964199915606__a3b2bab6-11bf-4951-be53-a8f7fe1b4014-image-1": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
+            "image_bg": "shopify:\/\/shop_images\/Lookbook-2-IMG6.jpg",
+            "overlay_opacity": 0,
+            "overlay_opacity_color": "#000",
+            "desktop_content_position": "bottom-center",
+            "title": "",
+            "sub-title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "second_button_label": "",
+            "second_button_link": ""
+          }
+        },
+        "template--14964199915606__a3b2bab6-11bf-4951-be53-a8f7fe1b4014-image-2": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
+            "image_bg": "shopify:\/\/shop_images\/Lookbook-2-IMG11.jpg",
+            "overlay_opacity": 0,
+            "overlay_opacity_color": "#000",
+            "desktop_content_position": "bottom-center",
+            "title": "",
+            "sub-title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "second_button_label": "",
+            "second_button_link": ""
+          }
+        },
+        "7232c16d-1530-4ed7-9fdf-a67f487b6acd": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "background-2",
+            "image_bg": "shopify:\/\/shop_images\/Lookbook-2-IMG8.jpg",
+            "overlay_opacity": 0,
+            "overlay_opacity_color": "#000",
+            "desktop_content_position": "bottom-center",
+            "title": "",
+            "sub-title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "second_button_label": "",
+            "second_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14964199915606__a3b2bab6-11bf-4951-be53-a8f7fe1b4014-image-1",
+        "template--14964199915606__a3b2bab6-11bf-4951-be53-a8f7fe1b4014-image-2",
+        "7232c16d-1530-4ed7-9fdf-a67f487b6acd"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "width": "wrapper-width",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ab836c44-ba29-4ab6-961f-0466a74ee5a3": {
+      "type": "video-with-image",
+      "blocks": {
+        "template--14964199915606__ab836c44-ba29-4ab6-961f-0466a74ee5a3-image-2": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
+            "image_bg": "shopify:\/\/shop_images\/Lookbook-2-IMG5.jpg",
+            "overlay_opacity": 0,
+            "overlay_opacity_color": "#000",
+            "desktop_content_position": "bottom-center",
+            "title": "",
+            "sub-title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "second_button_label": "",
+            "second_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14964199915606__ab836c44-ba29-4ab6-961f-0466a74ee5a3-image-2"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "width": "wrapper-width",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "f2f3b4b6-8353-4d24-a371-765025f41847": {
+      "type": "video-with-image",
+      "blocks": {
+        "template--14964199915606__f2f3b4b6-8353-4d24-a371-765025f41847-image-1": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
+            "image_bg": "shopify:\/\/shop_images\/Lookbook-2-IMG7.jpg",
+            "overlay_opacity": 0,
+            "overlay_opacity_color": "#000",
+            "desktop_content_position": "bottom-center",
+            "title": "",
+            "sub-title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "second_button_label": "",
+            "second_button_link": ""
+          }
+        },
+        "template--14964199915606__f2f3b4b6-8353-4d24-a371-765025f41847-image-2": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
+            "image_bg": "shopify:\/\/shop_images\/Lookbook-2-IMG3.jpg",
+            "overlay_opacity": 0,
+            "overlay_opacity_color": "#000",
+            "desktop_content_position": "bottom-center",
+            "title": "",
+            "sub-title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "second_button_label": "",
+            "second_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14964199915606__f2f3b4b6-8353-4d24-a371-765025f41847-image-1",
+        "template--14964199915606__f2f3b4b6-8353-4d24-a371-765025f41847-image-2"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "width": "wrapper-width",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "eb47ad1d-82f5-4f73-9225-6c83f6519d72": {
+      "type": "video-with-image",
+      "blocks": {
+        "template--14964199915606__eb47ad1d-82f5-4f73-9225-6c83f6519d72-image-1": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
+            "image_bg": "shopify:\/\/shop_images\/Lookbook-2-IMG10.jpg",
+            "overlay_opacity": 0,
+            "overlay_opacity_color": "#000",
+            "desktop_content_position": "bottom-center",
+            "title": "",
+            "sub-title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "second_button_label": "",
+            "second_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14964199915606__eb47ad1d-82f5-4f73-9225-6c83f6519d72-image-1"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "width": "wrapper-width",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "09435e04-d4c3-4219-9e7c-907a5d5fe6f3": {
+      "type": "video-with-image",
+      "blocks": {
+        "template--14964199915606__09435e04-d4c3-4219-9e7c-907a5d5fe6f3-image-1": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
+            "image_bg": "shopify:\/\/shop_images\/Lookbook-2-IMG9.jpg",
+            "overlay_opacity": 0,
+            "overlay_opacity_color": "#000",
+            "desktop_content_position": "bottom-center",
+            "title": "",
+            "sub-title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "second_button_label": "",
+            "second_button_link": ""
+          }
+        },
+        "template--14964199915606__09435e04-d4c3-4219-9e7c-907a5d5fe6f3-image-2": {
+          "type": "image",
+          "settings": {
+            "color_scheme": "scheme-4be9e138-3bfb-4c3a-a1a2-3d9d5bac5aa8",
+            "image_bg": "shopify:\/\/shop_images\/Lookbook-2-IMG1.jpg",
+            "overlay_opacity": 0,
+            "overlay_opacity_color": "#000",
+            "desktop_content_position": "bottom-center",
+            "title": "",
+            "sub-title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "second_button_label": "",
+            "second_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14964199915606__09435e04-d4c3-4219-9e7c-907a5d5fe6f3-image-1",
+        "template--14964199915606__09435e04-d4c3-4219-9e7c-907a5d5fe6f3-image-2"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "width": "wrapper-width",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "8c38135d-a188-4ee3-bc0b-8fe44d0280b2"
+    "8c38135d-a188-4ee3-bc0b-8fe44d0280b2",
+    "a3b2bab6-11bf-4951-be53-a8f7fe1b4014",
+    "ab836c44-ba29-4ab6-961f-0466a74ee5a3",
+    "f2f3b4b6-8353-4d24-a371-765025f41847",
+    "eb47ad1d-82f5-4f73-9225-6c83f6519d72",
+    "09435e04-d4c3-4219-9e7c-907a5d5fe6f3"
   ]
 }
