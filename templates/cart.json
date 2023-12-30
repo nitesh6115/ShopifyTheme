@@ -1,1 +1,16 @@
-{"sections":{"main":{"type":"main-cart","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-cart",
+      "settings": {
+        "color_scheme": "",
+        "width": "narrow-width",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
