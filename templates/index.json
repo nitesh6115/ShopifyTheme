@@ -81,51 +81,12 @@
             "total_products": 8,
             "button_text": "View All"
           }
-        },
-        "7a4bad4a-d484-4064-bca3-0be25bc0b302": {
-          "type": "content",
-          "disabled": true,
-          "settings": {
-            "title": "Wool",
-            "heading": "WOOL BELTS",
-            "sub_title": "Tranding",
-            "slide-collection": "mens-knitwear",
-            "total_products": 8,
-            "button_text": "View All"
-          }
-        },
-        "d757636a-d5ea-4723-a073-43cf755532fb": {
-          "type": "content",
-          "disabled": true,
-          "settings": {
-            "title": "Flex Leather",
-            "heading": "LEATHER BELTS",
-            "sub_title": "New",
-            "slide-collection": "mens-trousers",
-            "total_products": 8,
-            "button_text": "View ALL"
-          }
-        },
-        "89cc7846-757d-4c54-b6c5-f74064ca9386": {
-          "type": "content",
-          "disabled": true,
-          "settings": {
-            "title": "Leather",
-            "heading": "NEW BELTS",
-            "sub_title": "Bestseller",
-            "slide-collection": "womens-accessories",
-            "total_products": 8,
-            "button_text": "Shop Now"
-          }
         }
       },
       "block_order": [
         "a636e091-b64d-44e7-891b-9095ac3d649b",
         "9b284c90-646e-486e-aa49-96ea36b33a51",
-        "b121d231-65ca-4054-9b6e-6fbfb7b07fb9",
-        "7a4bad4a-d484-4064-bca3-0be25bc0b302",
-        "d757636a-d5ea-4723-a073-43cf755532fb",
-        "89cc7846-757d-4c54-b6c5-f74064ca9386"
+        "b121d231-65ca-4054-9b6e-6fbfb7b07fb9"
       ],
       "settings": {
         "color_scheme": "background-1",
@@ -133,55 +94,6 @@
         "padding_top": 36,
         "padding_bottom": 36,
         "rows": 5
-      }
-    },
-    "43ba7001-4c38-4e75-9339-3c902acdfe50": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-sub-heading-1": {
-          "type": "sub-heading",
-          "settings": {
-            "title": "Brydon Brothers"
-          }
-        },
-        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-heading-1": {
-          "type": "heading",
-          "settings": {
-            "title": "<p>Our Story<\/p>"
-          }
-        },
-        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-description-1": {
-          "type": "description",
-          "settings": {
-            "title": "<p>Brydon Brothers design and produce quality handcrafted belts that can be worn for every occasion.<br\/>Founded by four brothers from England, the brand draws inspiration from their family's British heritage and the rugged landscapes that surrounded them over the centuries.<\/p>"
-          }
-        },
-        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-button-1": {
-          "type": "button",
-          "settings": {
-            "primary-button": "Learn More",
-            "primary-button-link": "shopify:\/\/pages\/our-story",
-            "secondary-button": "",
-            "secondary-button-link": "shopify:\/\/collections\/mens-accessories"
-          }
-        }
-      },
-      "block_order": [
-        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-sub-heading-1",
-        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-heading-1",
-        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-description-1",
-        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-button-1"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "width": "wrapper-width",
-        "padding_top": 28,
-        "padding_bottom": 28,
-        "image_position": "left",
-        "desktop_content_position": "middle",
-        "text_alignment": "left",
-        "image": "shopify:\/\/shop_images\/47582295_394630424614808_8126913247421217687_n.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/297962360_614272536936272_7964346338163368609_n.jpg"
       }
     },
     "9ac45232-d4da-4400-b33b-469cbb27e83e": {
@@ -345,6 +257,55 @@
         "rows": 5
       }
     },
+    "43ba7001-4c38-4e75-9339-3c902acdfe50": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-sub-heading-1": {
+          "type": "sub-heading",
+          "settings": {
+            "title": "Brydon Brothers"
+          }
+        },
+        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "<p>Our Story<\/p>"
+          }
+        },
+        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-description-1": {
+          "type": "description",
+          "settings": {
+            "title": "<p>Brydon Brothers design and produce quality handcrafted belts that can be worn for every occasion.<br\/>Founded by four brothers from England, the brand draws inspiration from their family's British heritage and the rugged landscapes that surrounded them over the centuries.<\/p>"
+          }
+        },
+        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-button-1": {
+          "type": "button",
+          "settings": {
+            "primary-button": "Learn More",
+            "primary-button-link": "shopify:\/\/pages\/our-story",
+            "secondary-button": "",
+            "secondary-button-link": "shopify:\/\/collections\/mens-accessories"
+          }
+        }
+      },
+      "block_order": [
+        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-sub-heading-1",
+        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-heading-1",
+        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-description-1",
+        "template--14475434328150__43ba7001-4c38-4e75-9339-3c902acdfe50-button-1"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "width": "wrapper-width",
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "image_position": "left",
+        "desktop_content_position": "middle",
+        "text_alignment": "left",
+        "image": "shopify:\/\/shop_images\/47582295_394630424614808_8126913247421217687_n.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/297962360_614272536936272_7964346338163368609_n.jpg"
+      }
+    },
     "a8751c81-156a-45d8-a13f-681e986217dd": {
       "type": "image-with-text",
       "blocks": {
@@ -391,9 +352,9 @@
     "54d71cac-422d-4e8a-a4b2-d8667ebe40d9",
     "34aacdca-da45-4d6f-a67b-21692bd916e5",
     "57a33abb-1a0e-4294-b0b8-b18fc32afe27",
-    "43ba7001-4c38-4e75-9339-3c902acdfe50",
     "9ac45232-d4da-4400-b33b-469cbb27e83e",
     "dffea033-b2a6-4346-ac66-8c1f217035df",
+    "43ba7001-4c38-4e75-9339-3c902acdfe50",
     "a8751c81-156a-45d8-a13f-681e986217dd"
   ]
 }
