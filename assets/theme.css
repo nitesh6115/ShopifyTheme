@@ -688,6 +688,13 @@ li.menu-link.has-child-links.active .DropDownBox.dropdown-child .show-image {
     border-radius:2px;
      -webkit-border-radius: 7px;
 }
+  .DropDownBox.dropdown-child, .DropdownChild {
+    position: relative;
+    visibility: visible;
+    padding: 0;
+    margin: 0;
+    top: 0;
+}
 }
 
 @media(max-width: 640px){
