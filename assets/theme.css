@@ -664,8 +664,11 @@ li.menu-link.has-child-links.active .DropDownBox.dropdown-child .show-image {
     border: 0;
 }
 
-.navbar.mobile-hide ul.menu ul.dropdown-child-Box li.child-menu-link {
+.navbar.mobile-hide ul.menu .levels-3 ul.dropdown-child-Box li.child-menu-link {
     width: 100%;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 15px;
 }
 
 .ShopNewBox {
