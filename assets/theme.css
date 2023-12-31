@@ -562,7 +562,7 @@ ul.dropdown-grandchild li {
 .navbar ul.menu {
   border: 1px solid;
   border-radius: 2rem 2rem 0 0;
-  height: 90vh;
+  height: 88vh;
   transform: translateY(100%);
   width: 100%;
   z-index: 30;
