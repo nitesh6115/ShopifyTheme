@@ -682,6 +682,39 @@ li.menu-link.has-child-links.active .DropDownBox.dropdown-child .show-image {
     margin: 0;
     top: 0;
 }
+  div#nav-drawer-info-links-contianer {
+    padding: 10px;
+    border-top: 1px solid;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div#nav-drawer-info-links-contianer svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+div#nav-drawer-info-links-contianer a {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+div#nav-drawer-footer-social {
+    border-top: 1px solid;
+    padding: 10px;
+}
+
+div#nav-drawer-footer-social ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-top: 15px;
+}
+
 }
 
 @media(max-width: 640px){
