@@ -105,6 +105,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
   </form>
   </div>
 {% else %}
+  
   <div class="CartEmptyWrapper">
     <div class="content_empty">
     <h4>{{ section.settings.empty_massage }}</h4>
@@ -115,6 +116,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
     </div>
   </div>
 {% endif %}
+{% if section.settings.width == 'full-width' %}full-width{% elsif section.settings.width == 'wrapper-width' %}page-width{% else %} narrow-width {% endif %}
 <div class="CartProducts">
   <h5>{{ section.settings.recomended }}</h5>
   {% if cart.items != 0 %}
@@ -144,7 +146,7 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
 </div>
   </div>
 </div>
-
+</div>
 {% schema %}
   {
     "name": "Cart",
