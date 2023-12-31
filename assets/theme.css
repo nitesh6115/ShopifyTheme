@@ -573,10 +573,7 @@ ul.dropdown-grandchild li {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-}
-
-.modal-menu-open .navbar.mobile-hide ul.menu {
-    transform: translateY(0);
+  height: auto;
 }
 
 
