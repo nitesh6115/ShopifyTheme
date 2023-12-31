@@ -13,12 +13,12 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 <div class="color-{{ section.settings.color_scheme }}">
 {% if collection.image != blank %}
 {% else %}
-<div class="page-width">
+<div class="{% if section.settings.width == 'full-width' %}full-width{% elsif section.settings.width == 'wrapper-width' %}page-width{% else %} narrow-width {% endif %}">
 <h1>{{collection.title}}</h1>
 </div>
 {% endif %}
   {% paginate collection.products by 10 %}
-<div class="page-width collection-page-grid">
+<div class="{% if section.settings.width == 'full-width' %}full-width{% elsif section.settings.width == 'wrapper-width' %}page-width{% else %} narrow-width {% endif %} collection-page-grid">
 
 <div class="CollectionnGrid colls-4">
 {% if collection.image != blank %}
