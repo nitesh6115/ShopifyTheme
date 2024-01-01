@@ -232,6 +232,78 @@
 .ColorOptionBox .size-selector {
     padding-right: 8px;
 }
+.ProductInfo h2 {
+    font-size: 
+20px;
+    margin-bottom: 8px;
+}
+.ProductInfo p.ProductType {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.PriceBox {
+    margin-bottom: 8px;
+    border-bottom: 1px solid;
+    padding-bottom: 8px;
+}
+
+.PriceBox .money {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ProductTabs {}
+
+.ProductTabs .TabListContainer {
+    border-bottom: 1px solid;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.ProductTabs .TabListContainer .TabContent {
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+    transition: 0.5s ease all;
+    overflow: hidden;
+}
+
+.ProductTabs .TabListContainer .TabHeader {
+    position: relative;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.ProductTabs .TabListContainer .TabHeader span.Icon-plus {
+    position: absolute;
+    right: 0;
+    top: -6px;
+    transform: rotate(90deg);
+    transition: 0.5s ease all;
+}
+
+.ProductTabs .TabListContainer .TabHeader span.Icon-plus:before {
+    content: "+";
+    font-size: 23px;
+    font-weight: normal;
+    line-height: normal;
+}
+
+.TabListContainer.active {}
+
+.TabListContainer.active .TabContent {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+}
+
+.ProductTabs .TabListContainer.active .TabHeader span.Icon-plus {
+    /* transform: rotate(225deg); */
+}
+
+
+
 @media(min-width: 1024px){
  .product-page .box-2 .swiper-wrapper {
     transform: unset !important;
@@ -321,6 +393,7 @@ div#shopify-section-footer {
     position: relative;
 }
 }
+
 @media(max-width: 450px){
   .box-1{
     height: 130vw;
