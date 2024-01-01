@@ -802,7 +802,7 @@ img.feature-image {
     margin: 0 auto;
     left: 0;
     right: 0;
-    bottom: -350px;
+    bottom: 0;
     z-index: 1;
     color: #fff;
     border-radius: 12px;
@@ -833,12 +833,12 @@ img.feature-image {
 }
 
 .featured-product:hover .quick-add-wrapper {
-    bottom: -58px;
+    transform: translateY(58%);
     z-index: 99;
 }
 
 .featured-product:hover .quick-add-wrapper:hover {
-    bottom: 15px;
+    transform: translateY(-5%);
     transition: .5s ease all;
 }
 
