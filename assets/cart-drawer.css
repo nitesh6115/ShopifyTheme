@@ -261,4 +261,16 @@ div#cart_drawer {
 #cart_drawer_box.active section#cartDrawer .drawer_wrapper {
     transform: translateY(0);
 }
+#cart_drawer_box.active section#cartDrawer .drawerProducts {
+    transform: translateY(0);
+}
+
+section#cartDrawer .drawerProducts {
+    width: 100%;
+    height: auto;
+    order: 2;
+    position: relative;
+    margin-bottom: 30px;
+    transform: translateY(100%);
+}  
 }
