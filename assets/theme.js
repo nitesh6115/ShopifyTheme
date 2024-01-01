@@ -313,6 +313,7 @@ function ChnageVaiantImg(event) {
                 autoplay: 7000,
                 speed: 300,
                 slidesPerView: 1,
+                preventClicks: true,
                 noSwipingClass: 'swiper-no-swiping',
                 effect: 'fade',
                 navigation: {
