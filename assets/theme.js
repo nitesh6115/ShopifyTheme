@@ -906,6 +906,8 @@ function quick_view(event) {
             const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('shopify-section-main-product').innerHTML;
             var container = document.createElement("div");
             document.getElementById('quick-product-view').innerHTML = parsedHTML;
+        })
+  
             
 }
 
