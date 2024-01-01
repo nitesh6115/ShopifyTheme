@@ -1903,7 +1903,10 @@ div#quick-product-view  .PriceBox .money {
 }
 
 div#quick-product-view  .ProductTabs .TabListContainer {
-    border-top: 1px solid;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
 }
 
 div#quick-product-view  .ProductTabs .TabListContainer .TabContent {
@@ -1920,6 +1923,7 @@ div#quick-product-view  .ProductTabs .TabListContainer .TabHeader {
     font-size: 13px;
     padding: 10px 0;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 div#quick-product-view  .ProductTabs .TabListContainer .TabHeader span.Icon-plus {
@@ -1927,6 +1931,9 @@ div#quick-product-view  .ProductTabs .TabListContainer .TabHeader span.Icon-plus
     right: 0;
     top: 3px;
     transition: 0.5s ease all;
+    width: 26px;
+    height: 26px;
+    border-radius: 5px;
 }
 
 div#quick-product-view  .ProductTabs .TabListContainer .TabHeader span.Icon-plus:before {
@@ -1938,6 +1945,11 @@ div#quick-product-view  .ProductTabs .TabListContainer .TabHeader span.Icon-plus
     transition: 0.5s ease all;
     position: absolute;
     right: 0;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -1945,12 +1957,17 @@ div#quick-product-view .TabListContainer.active .TabContent {
     height: auto;
     opacity: 1;
     visibility: visible;
+    border-top: 1px solid;
+    padding-top: 25px;
+    margin-top: 15px;
 }
 div#quick-product-view .TabListContainer.active .TabContent {
     padding: 0px 0 10px;
 }
 div#quick-product-view .ProductTabs .TabListContainer.active .TabHeader span.Icon-plus:before {
      transform: rotate(225deg); 
+     top: 0;
+     right: 0;
 }
 div#quick-product-view  .CustomLinks a:last-child {
     border-bottom: 0;
@@ -1979,46 +1996,15 @@ div#quick-product-view  .CustomLinks svg {
 div#quick-product-view  .CustomLinks a:hover {
     background: #eb8080;
 }
- .ProductTabs .TabListContainer {
-    border: 1px solid;
-    border-radius: 20px;
-    padding: 20px;
-    margin-bottom: 30px;
-}
-.TabListContainer.active .TabContent {
-    border-top: 1px solid;
-    padding-top: 25px;
-    margin-top: 15px;
-}
-
-.ProductTabs .TabListContainer .TabHeader {
-    text-transform: uppercase;
-}
-.ProductTabs.rte {
+div#quick-product-view .ProductTabs.rte {
     margin-top: 15px;
     padding-top: 20px;
     border-top: 1px solid;
 } 
-.ProductTabs .TabListContainer.active .TabHeader span.Icon-plus:before {
-    top: 0;
-    right: 0;
-}
-.ProductTabs .TabListContainer.active .TabHeader span.Icon-plus{
+div#quick-product-view .ProductTabs .TabListContainer.active .TabHeader span.Icon-plus{
     border: 1px solid;
 }
-.ProductTabs .TabListContainer .TabHeader span.Icon-plus {
-    width: 26px;
-    height: 26px;
-    border-radius: 5px;
-}
 
-.ProductTabs .TabListContainer .TabHeader span.Icon-plus:before {
-  width: 26px;
-  height: 26px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 
 
