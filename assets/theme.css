@@ -1808,7 +1808,9 @@ div#quick-product-view .product-variant-container {
     opacity: 1;
     border: 1px solid;
 }
-
+div#quick-product-view .size-selctor-wrapper .size-selector.active {
+    background: #c92525;
+}
 div#quick-product-view .quick-add-wrapper {
     position: relative;
     background: transparent;
