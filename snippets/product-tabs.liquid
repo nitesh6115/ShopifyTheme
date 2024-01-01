@@ -1,3 +1,4 @@
+<div class="ProductTabs">
 {% for block in section.block %}
  {% if block.type == 'tab' %}
    {% if block.settings.title != blank and block.settings.content != blank %}
@@ -12,3 +13,4 @@
    {% endif %}
    {% endif %}
 {% endfor %}
+</div>
