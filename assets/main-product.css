@@ -258,7 +258,6 @@
 .ProductTabs .TabListContainer {
     border-bottom: 1px solid;
     margin-bottom: 10px;
-    padding-bottom: 10px;
 }
 
 .ProductTabs .TabListContainer .TabContent {
@@ -273,6 +272,7 @@
     position: relative;
     font-weight: bold;
     font-size: 11px;
+    padding: 10px 0;
 }
 
 .ProductTabs .TabListContainer .TabHeader span.Icon-plus {
@@ -290,7 +290,6 @@
     line-height: normal;
 }
 
-.TabListContainer.active {}
 
 .TabListContainer.active .TabContent {
     height: auto;
@@ -298,7 +297,7 @@
     visibility: visible;
 }
 .TabListContainer.active .TabContent {
-    padding: 10px 0;
+    padding: 0px 0 10px;
 }
 .ProductTabs .TabListContainer.active .TabHeader span.Icon-plus {
      transform: rotate(225deg); 
