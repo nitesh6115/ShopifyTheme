@@ -341,7 +341,18 @@
   }
 }
 @media(max-width: 1023px){
+.ProductTabs .TabListContainer {
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
 
+.ProductTabs.rte {
+    margin-top: 15px;
+    padding-top: 20px;
+    border-top: 1px solid;
+}
     div#MainSliderBox {
     position: fixed;
     top: 78px;
