@@ -1724,11 +1724,8 @@ div#quick-product-view {
     transition-duration: .7s;
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
-    width: 700px;
-    max-height: 500px;
-    min-height: 90%;
+    max-width: 1000px;
     overflow: auto;
-    height: 80%;
     position: fixed;
     margin: 0 auto;
     border: 1px solid;
@@ -1762,9 +1759,6 @@ div#quick-product-view {
 .open-quick-view .quick_view_close{
    visibility: visible;
     opacity: 1;
-}
-.open-quick-view div#quick-product-view {
-  transform: translateY(0);
 }
 div#quick-product-view::-webkit-scrollbar {
     width: 5px;
