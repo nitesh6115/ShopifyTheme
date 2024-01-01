@@ -899,6 +899,7 @@ function TabContent(TabContent) {
 }
 function quick-product(event) {
   var mainParent = event.closest('[data-url]')
+  alert(mainParent)
 }
 
 
