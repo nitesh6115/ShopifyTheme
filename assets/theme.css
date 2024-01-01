@@ -1777,9 +1777,9 @@ div#quick-product-view {
 }
 
 #quick-product-view .ProductQuickBox .ProductInfoBox {
-    width: 50%;
-    overflow: scroll;
+    overflow-y: auto;
     padding: 20px;
+    height: 100%;
 }
 #quick-product-view .ProductQuickBox .ProductInfoBox::-webkit-scrollbar {
     width: 5px;
