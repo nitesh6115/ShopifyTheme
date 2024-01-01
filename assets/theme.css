@@ -1764,7 +1764,8 @@ div#quick-product-view {
     opacity: 1;
 }
 
-#quick-product-view .ProductQuickBox {
+#quick-product-view .featured-product {
+    margin: 0;
     display: flex;
     overflow: auto;
     overflow: overlay;
@@ -1772,45 +1773,43 @@ div#quick-product-view {
     height: 90vh;
 }
 
-#quick-product-view .ProductQuickBox div#MainSliderBox {
+#quick-product-view div#MainSliderBox {
     position: sticky;
     top: 0;
     flex-shrink: 0;
     width: 64.5vh;
 }
 
-#quick-product-view .ProductQuickBox .ProductInfoBox {
+#quick-product-view #ProductContent {
     overflow-y: auto;
     padding: 20px;
     height: fit-content;
     width: auto;
 }
-#quick-product-view .ProductQuickBox div#MainSliderBox .top-container {
+#quick-product-view  div#MainSliderBox .top-container {
     padding-top: 140%;
 }
-#quick-product-view .ProductQuickBox div#MainSliderBox .product-image-container {
+#quick-product-view  div#MainSliderBox .product-image-container {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
 }
-#quick-product-view .ProductQuickBox .ProductInfoBox::-webkit-scrollbar {
+#quick-product-view  #ProductContent::-webkit-scrollbar {
     width: 5px;
     border-radius:2px;
      -webkit-border-radius: 7px;
 }
-#quick-product-view .ProductQuickBox .ProductInfoBox::-webkit-scrollbar-track {
+#quick-product-view  #ProductContent::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
-#quick-product-view .ProductQuickBox .ProductInfoBox::-webkit-scrollbar-thumb {
+#quick-product-view  #ProductContent::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
    -webkit-border-radius: 7px;
 }
-div#quick-product-view .featured-product {
-    margin: 0;
-}
+
 
 div#quick-product-view .product-variant-container {
     position: relative;
@@ -1880,21 +1879,21 @@ div#quick-product-view  .add-to-cart {
     cursor: pointer;
 }
 @media(max-width: 1024px){
-  #quick-product-view .ProductQuickBox{
+  #quick-product-view .featured-product {
     flex-wrap: wrap;
   }
-  #quick-product-view .ProductQuickBox .ProductInfoBox {
+  #quick-product-view  #ProductContent {
     overflow-y: inherit;
 }
-  #quick-product-view .ProductQuickBox .top-container {
+  #quick-product-view  .top-container {
     overflow: visible;
 }
 
-#quick-product-view .ProductQuickBox div#MainSliderBox .product-image-container .swiper-slide img {
+#quick-product-view  div#MainSliderBox .product-image-container .swiper-slide img {
   border-radius: 0;
 }
   
-  #quick-product-view .ProductQuickBox div#MainSliderBox{
+  #quick-product-view  div#MainSliderBox{
     height: auto;
     width: 100%;
   }
@@ -1920,14 +1919,14 @@ div#quick-product-view  .add-to-cart {
 .open-quick-view div#quick-product-view {
   transform: translateY(-40%);
 }
-#quick-product-view .ProductQuickBox div#MainSliderBox .top-container {
+#quick-product-view  div#MainSliderBox .top-container {
   padding: 0;
 }
-#quick-product-view .ProductQuickBox .ProductInfoBox {
+#quick-product-view  .ProductInfoBox {
     width: 100%;
     height: auto;
 }
-#quick-product-view .ProductQuickBox div#MainSliderBox .product-image-container {
+#quick-product-view  div#MainSliderBox .product-image-container {
     position: relative;
     left: inherit;
     right: inherit;
@@ -1938,7 +1937,7 @@ div#quick-product-view  .add-to-cart {
     overflow: visible;
     width: 100%;
 }
-#quick-product-view .ProductQuickBox {
+#quick-product-view .featured-product {
     height: auto;
     width: 100%;
 }
