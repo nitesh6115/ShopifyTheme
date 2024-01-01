@@ -13,13 +13,17 @@
   {% form 'product', card_product, data-product-form: '', data-product-handle: card_product.handle,
       data-type:'add-to-cart-form' %}
   <div data-color="{{ colorOption }}" data-size="{{ sizeOption }}" class="top-container" data-url="{{ card_product.url }}">
+    
     <div class="product-image-container swiper">
     {% if colorOption %}
       {% for option in card_product.options_with_values %}
       {% if option.name == 'Color'  or option.name == 'COLOR' %}
+
+        
       {% for value in option.values %}
       <div class="product-image-wrapper">
          <div class="swiper-wrapper">
+        
         {% assign color_alt = false %}
         {%for image in card_product.images %}
         {% if image.alt == value %}
@@ -27,7 +31,8 @@
         {% endif %}
         {% endfor %}
         {% if color_alt %}
-        {%for image in card_product.images %}
+
+          {%for image in card_product.images %}
         {% if image.alt == value %}
         <div class="product-image-slide swiper-slide" data-swiper-autoplay="1000" >
           <a href="{{ card_product.url }}">
@@ -46,7 +51,11 @@
         </div>
         {% endif %}
         {% endfor %}
+        
+
+          
           {% else %}
+          
           {%for image in card_product.images %}
         <div class="product-image-slide swiper-slide" data-swiper-autoplay="1000" >
           <a href="{{ card_product.url }}">
@@ -65,6 +74,7 @@
         </div>
         {% endfor %}
           {% endif %}
+        
          </div>
         
        </div>
@@ -74,6 +84,8 @@
       {% endfor %}
       {% endif %}
       {% endfor %}
+
+      
    {% else %}
      <div class="product-image-wrapper">
          <div class="swiper-wrapper">
@@ -235,6 +247,7 @@
       </select>
      
   </div>
+  
   {% endform %}
 
 
