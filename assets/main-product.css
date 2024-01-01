@@ -256,8 +256,7 @@
 .ProductTabs {}
 
 .ProductTabs .TabListContainer {
-    border-bottom: 1px solid;
-    margin-bottom: 10px;
+    border-top: 1px solid;
 }
 
 .ProductTabs .TabListContainer .TabContent {
