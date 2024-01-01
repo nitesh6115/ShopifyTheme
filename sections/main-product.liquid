@@ -32,30 +32,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
   <div class="box-1">
     <div class="small-hide">
       {% render 'product-info' %}
-      <div class="ProductTabs">
-        <div class="TabListContainer">
-          <div class="TabHeader">
-          Description <span class="Icon-plus"></span>
-          </div>
-          <div class="TabContent">
-          {{ product.description }}
-          </div>
-          </div>
-          {% for block in section.blocks %}
-          {% if block.type == 'tab' %}
-          {% if block.settings.title != blank and block.settings.content != blank %}
-          <div class="TabListContainer">
-          <div class="TabHeader">
-          {{ block.settings.title }} <span class="Icon-plus"></span>
-          </div>
-          <div class="TabContent">
-          {{ block.settings.content }}
-          </div>
-          </div>
-          {% endif %}
-          {% endif %}
-          {% endfor %}
-      </div>
+      {% render 'product-tabs' %}
     </div>
   </div>
   <div id="MainSliderBox" class="box-2">
