@@ -13,7 +13,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 }
 {% endstyle %}
 
-<div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
+<div id="productMain" class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
   <div class="featured-product product-page">
   {% assign current_variant = product.selected_or_first_available_variant %}
   {% assign colorOption = false %}
