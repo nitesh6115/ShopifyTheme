@@ -896,11 +896,11 @@ function quick_view(event) {
             //var parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('ProductBox').innerHTML;
             var ImageBox = new DOMParser().parseFromString(responseText, 'text/html').getElementById("MainSliderBox").innerHTML;
             var ContantBox = new DOMParser().parseFromString(responseText, 'text/html').getElementById("ProductContent").innerHTML;
-            console.log(ImageBox)
+            
             var container = document.createElement("div");
             container.classList.add('featured-product');
             container.appendChild(ImageBox);
-            container.appendChild(ContantBox)
+            container.appendChild(ContantBox);
             document.getElementById('quick-product-view').innerHTML = container;
             document.body.classList.add('open-quick-view');
             var productGridImageSlider = document.querySelectorAll('.product-image-wrapper');
