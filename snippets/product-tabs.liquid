@@ -1,27 +1,33 @@
 <div class="ProductTabs rte">
-        {% assign index = 0 %}
-        {% for block in section.blocks %}
-          {% if block.type == 'tab' %}
-          {% if block.settings.title != blank and block.settings.content != blank %}
-          <div class="TabListContainer {% if index == 0 %} active{% endif %}">
-          <div class="TabHeader" {% if index != 0 %}onclick="TabsTrigger(this)"{% endif %}>
-          {{ block.settings.title }}{% if index != 0 %} <span class="Icon-plus"></span>{% endif %}
-          </div>
-          <div class="TabContent">
-          {{ block.settings.content }}
-          </div>
-          </div>
-          {% endif %}
-            {% assign index = index | plus: 1 %}
-          {% endif %}
-          {% endfor %}
-          <div class="TabListContainer">
-          <div class="TabHeader" onclick="TabsTrigger(this)">
-          Description <span class="Icon-plus"></span>
-          </div>
-          <div class="TabContent">
-          {{ product.description }}
-          </div>
-          </div>
-          
-      </div>
+  {% assign index = 0 %}
+  {% for block in section.blocks %}
+    {% if block.type == 'tab' %}
+    {% if block.settings.title != blank and block.settings.content != blank %}
+    <div class="TabListContainer {% if index == 0 %} active{% endif %}">
+    <div class="TabHeader" {% if index != 0 %}onclick="TabsTrigger(this)"{% endif %}>
+    {{ block.settings.title }}{% if index != 0 %} <span class="Icon-plus"></span>{% endif %}
+    </div>
+    <div class="TabContent">
+    {{ block.settings.content }}
+    </div>
+    </div>
+    {% endif %}
+      {% assign index = index | plus: 1 %}
+    {% endif %}
+    {% endfor %}
+    <div class="TabListContainer">
+    <div class="TabHeader" onclick="TabsTrigger(this)">
+    Description <span class="Icon-plus"></span>
+    </div>
+    <div class="TabContent">
+    {{ product.description }}
+    </div>
+    </div>
+</div>
+<div class="CustomLinks">
+{% for block in section.blocs %}
+{% if block.type == 'custom-link' %}
+<a href="{{ block.settings.link }}" target="_blank">{{ block.settings.title }}</a>
+  {% endif %}
+{% endfor %}
+</div>
