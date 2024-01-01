@@ -1888,6 +1888,7 @@ div#quick-product-view  .add-to-cart {
 }
   #quick-product-view .ProductQuickBox div#MainSliderBox{
     height: auto;
+    width: 100%;
   }
   div#quick-product-view {
     max-height: 90vh;
@@ -1923,6 +1924,6 @@ div#quick-product-view  .add-to-cart {
 }
 #quick-product-view .ProductQuickBox {
     height: auto;
-    width: 100%;s
+    width: 100%;
 }
 }
