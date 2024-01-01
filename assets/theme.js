@@ -893,7 +893,7 @@ function quick_view(event) {
   fetch(URL)
         .then(response => response.text())
         .then((responseText) => {
-            const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('shopify-section-main-product').innerHTML;
+            const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('shopify-section-template--14475434066006__main').innerHTML;
             var container = document.createElement("div");
             document.getElementById('quick-product-view').innerHTML = parsedHTML;
             document.body.classList.add('open-quick-view');
