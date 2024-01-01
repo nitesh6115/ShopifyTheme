@@ -897,7 +897,7 @@ function quick_view(event) {
             var ImageBox = new DOMParser().parseFromString(responseText, 'text/html').getElementById("MainSliderBox").innerHTML;
             var ContantBox = new DOMParser().parseFromString(responseText, 'text/html').getElementById("ProductContent").innerHTML;
             var ImageBoxDiv = document.createElement("div");
-            ImageBox.innerHTML = ImageBox;
+            ImageBoxDiv.innerHTML = ImageBox;
             var ContantBoxDiv = document.createElement("div");
             ContantBoxDiv.innerHTML = ContantBox;
             var container = document.createElement("div");
