@@ -18,7 +18,8 @@ function cartDrwer() {
             const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('shopify-section-cart-drawer').innerHTML;
            
             var container = document.createElement("div");
-            document.getElementById('cart_drawer_box').innerHTML = parsedHTML;
+            var DrawerBox = document.getElementById('cart_drawer_box');
+            DrawerBox.innerHTML = parsedHTML;
              var ItemCount = new DOMParser().parseFromString(responseText, 'text/html').getElementById('cartDrawer').getAttribute('item-count');
              var counterEl = document.querySelectorAll('.cart-item-count');
              counterEl.forEach((element) => {
@@ -56,7 +57,7 @@ function cartDrwer() {
                     },
                 })
             })
-            var collcetionImageSlider = document.querySelectorAll('.product-image-wrapper');
+            var collcetionImageSlider = DrawerBox.querySelectorAll('.product-image-wrapper');
             collcetionImageSlider.forEach(item => {
                 var newElem = item.closest('.product-image-container')
                 var nextbutton = newElem.querySelectorAll('.swiper-button-next')[0];
