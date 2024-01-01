@@ -1772,13 +1772,17 @@ div#quick-product-view {
     position: sticky;
     top: 0;
     overflow: hidden;
-    width: 66vh;
+    width: 30.7777vw;
 }
-
+#quick-product-view .ProductQuickBox div#MainSliderBox img.borrder-all.radius-20.feature-image {
+    height: 90vh;
+}
 #quick-product-view .ProductQuickBox .ProductInfoBox {
     overflow-y: auto;
     padding: 20px;
-    display: block;
+    display: flex;
+    height: 100%;
+    width: 100%;
 }
 #quick-product-view .ProductQuickBox .ProductInfoBox::-webkit-scrollbar {
     width: 5px;
