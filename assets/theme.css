@@ -814,7 +814,9 @@ img.feature-image {
 .top-container {
     position: relative;
 }
-
+.top-container:hover{
+  overflow: hidden;
+}
 .quick-add-wrapper .quick-add {
     font-size: 12px;
     font-weight: bold;
