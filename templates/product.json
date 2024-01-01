@@ -34,7 +34,9 @@
         "color_scheme": "background-1",
         "width": "wrapper-width",
         "padding_top": 4,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "show_type": true,
+        "show_vendor": false
       }
     },
     "166479364394f7c18b": {
