@@ -947,8 +947,9 @@ function quick_view(event) {
                     })
                 }
             })
+          document.body.classList.add('open-quick-view');
         })
-  document.body.classList.add('open-quick-view');
+  
             
 }
 function quick_view_close(event) {
