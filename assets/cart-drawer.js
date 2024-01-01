@@ -84,7 +84,7 @@ function cartDrwer() {
                     swp.autoplay.stop();
                 })
             });
-            var variantImages = document.querySelectorAll('.prodouct-variant-slider');
+            var variantImages = DrawerBox.querySelectorAll('.prodouct-variant-slider');
             variantImages.forEach(slider => {
                 var swiperActive = slider.querySelectorAll('.size-selector')[0];
                 // console.log("this"+swiperActive);
