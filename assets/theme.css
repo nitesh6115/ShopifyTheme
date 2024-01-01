@@ -1775,3 +1775,17 @@ div#quick-product-view::-webkit-scrollbar-thumb {
   outline: 1px solid slategrey;
    -webkit-border-radius: 7px;
 }
+#quick-product-view .ProductQuickBox {
+    display: flex;
+    flex-direction: row;
+}
+
+#quick-product-view .ProductQuickBox div#MainSliderBox {
+  position: sticky;
+  top: 0;
+  width: 50%;
+}
+
+#quick-product-view .ProductQuickBox .ProductInfoBox {
+    width: 50%;
+}
