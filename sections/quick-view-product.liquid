@@ -12,13 +12,8 @@
   {% endfor %}
   {% form 'product', product, data-product-form: '', data-product-handle: product.handle, data-type:'add-to-cart-form' %}
   <div class="{% if section.settings.width == 'full-width'%}full-width{% elsif section.settings.width =='wrapper-width'%}page-width{% else %}narrow-width{% endif %}">
-  <div class ="product-grid">
-  <div class="box-1">
-    <div class="small-hide">
-  {% render 'product-info' %}
-    </div>
-  </div>
-  <div id="MainSliderBox" class="box-2">
+  <div class ="ProductQuickBox">
+  <div id="MainSliderBox">
   <div data-color="{{ colorOption }}" data-size="{{ szieOption }}" class="top-container" data-url="{{ product.url }}">
   <div class="product-image-container"  main-product="product">
   {% if colorOption %}
@@ -111,8 +106,8 @@
   </div>
   </div>
   </div>
-  <div class="box-3">
-    <div class="large-up-hide">
+  <div class="ProductInfoBox">
+    <div class="ProductInfo">
   {% render 'product-info' %}
     </div>
   <div class="bottom-container">
