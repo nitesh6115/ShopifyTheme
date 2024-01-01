@@ -28,7 +28,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
   {% endfor %}
   {% form 'product', product, data-product-form: '', data-product-handle: product.handle, data-type:'add-to-cart-form' %}
   <div class="{% if section.settings.width == 'full-width'%}full-width{% elsif section.settings.width =='wrapper-width'%}page-width{% else %}narrow-width{% endif %}">
-  <div class ="product-grid">
+  <div id="ProductBox" class="product-grid">
   <div class="box-1">
     <div class="small-hide">
       {% render 'product-info' %}
