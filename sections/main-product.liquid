@@ -130,6 +130,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
   </div>
   <div class="box-3">
     <div class="large-up-hide">
+      
   {% render 'product-info' %}
     </div>
   <div class="bottom-container">
@@ -254,7 +255,9 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
     {% endif %}
     {% endfor %}
   </select>
-  
+  <div class="large-up-hide">
+    {% render 'product-tabs' %}
+  </div>
   <div class="add-to-cart" onclick="AddMainProduct(this)">
   Select Size 
   </div> 
