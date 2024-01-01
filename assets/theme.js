@@ -751,24 +751,7 @@ function TabContent(TabContent) {
   }else{
     show_button.classList.add('hide')
   }
-  var LeftValue = 3;
-  TabLink.forEach(function (item, i) {
-        item.classList.remove('active')
-        const title = item.getAttribute('data-title');
-        const widthValue = parseInt(item.offsetWidth);
-        LeftValue += widthValue;
-       if(TabTitle == title){
-        //console.log("left: "+LeftValue)
-        const CurrentWidth = item.offsetWidth; 
-        let Updated = LeftValue - item.offsetWidth;
-        if(Updated == 0){
-          Updated = 3;
-        }
-         //console.log(Updated)
-         TabDirection.style.width = CurrentWidth+'px';
-         TabDirection.style.left = Updated+'px';
-       } 
-   })
+  
    console.log(TabContent.classList.contains('active'))
    if(TabContent.classList.contains('active')){
      
@@ -883,6 +866,24 @@ function TabContent(TabContent) {
             },1000)
         })
    }
+   var LeftValue = 3;
+    TabLink.forEach(function (item, i) {
+          item.classList.remove('active')
+          const title = item.getAttribute('data-title');
+          const widthValue = parseInt(item.offsetWidth);
+          LeftValue += widthValue;
+         if(TabTitle == title){
+          //console.log("left: "+LeftValue)
+          const CurrentWidth = item.offsetWidth; 
+          let Updated = LeftValue - item.offsetWidth;
+          if(Updated == 0){
+            Updated = 3;
+          }
+           //console.log(Updated)
+           TabDirection.style.width = CurrentWidth+'px';
+           TabDirection.style.left = Updated+'px';
+         } 
+     })
    TabContent.classList.add('active');  
 }
 function quick_view(event) {
