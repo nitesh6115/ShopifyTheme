@@ -123,8 +123,7 @@
                  type="radio"
                  name="{{ option.name }}" 
                  value="{{ value | escape }}"
-                 data-index="option{{index}}" {% if option.selected_value==value
-                %}checked="true" {% endif %} />
+                 data-index="option{{index}}" {% if option.selected_value==value %}checked="true" {% endif %} />
              </div>
             {% endfor %}
           </div>
