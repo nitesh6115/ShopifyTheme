@@ -910,7 +910,7 @@ function quick_view(event) {
             container.appendChild(ContantBoxDiv);
             document.getElementById('quick-product-view').innerHTML = ""
             document.getElementById('quick-product-view').appendChild(container);
-            document.body.classList.add('open-quick-view');
+            
             var productGridImageSlider = document.querySelectorAll('.product-image-wrapper');
             productGridImageSlider.forEach(item => {
                 var newElem = item.closest('.product-image-container')
@@ -948,7 +948,7 @@ function quick_view(event) {
                 }
             })
         })
-  
+  document.body.classList.add('open-quick-view');
             
 }
 function quick_view_close(event) {
