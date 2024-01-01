@@ -346,26 +346,7 @@
   }
 }
 @media(max-width: 1023px){
-.ProductTabs .TabListContainer {
-    border: 1px solid;
-    border-radius: 20px;
-    padding: 20px;
-    margin-bottom: 30px;
-}
-.TabListContainer.active .TabContent {
-    border-top: 1px solid;
-    padding-top: 25px;
-    margin-top: 15px;
-}
 
-.ProductTabs .TabListContainer .TabHeader {
-    text-transform: uppercase;
-}
-.ProductTabs.rte {
-    margin-top: 15px;
-    padding-top: 20px;
-    border-top: 1px solid;
-}
     div#MainSliderBox {
     position: fixed;
     top: 78px;
@@ -385,6 +366,26 @@
     margin: 0 auto;
     max-width: 100%;
 }
+ .ProductTabs .TabListContainer {
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.TabListContainer.active .TabContent {
+    border-top: 1px solid;
+    padding-top: 25px;
+    margin-top: 15px;
+}
+
+.ProductTabs .TabListContainer .TabHeader {
+    text-transform: uppercase;
+}
+.ProductTabs.rte {
+    margin-top: 15px;
+    padding-top: 20px;
+    border-top: 1px solid;
+} 
 .ProductTabs .TabListContainer.active .TabHeader span.Icon-plus:before {
     top: 0;
     right: 0;
