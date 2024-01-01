@@ -904,6 +904,7 @@ function quick_view(event) {
             ContantBoxDiv.innerHTML = ContantBox;
             var container = document.createElement("div");
             container.classList.add('featured-product');
+            container.classList.add('product-page');
             container.appendChild(ImageBoxDiv);
             container.appendChild(ContantBoxDiv);
             document.getElementById('quick-product-view').appendChild(container);
