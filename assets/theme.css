@@ -1979,6 +1979,46 @@ div#quick-product-view  .CustomLinks svg {
 div#quick-product-view  .CustomLinks a:hover {
     background: #eb8080;
 }
+ .ProductTabs .TabListContainer {
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.TabListContainer.active .TabContent {
+    border-top: 1px solid;
+    padding-top: 25px;
+    margin-top: 15px;
+}
+
+.ProductTabs .TabListContainer .TabHeader {
+    text-transform: uppercase;
+}
+.ProductTabs.rte {
+    margin-top: 15px;
+    padding-top: 20px;
+    border-top: 1px solid;
+} 
+.ProductTabs .TabListContainer.active .TabHeader span.Icon-plus:before {
+    top: 0;
+    right: 0;
+}
+.ProductTabs .TabListContainer.active .TabHeader span.Icon-plus{
+    border: 1px solid;
+}
+.ProductTabs .TabListContainer .TabHeader span.Icon-plus {
+    width: 26px;
+    height: 26px;
+    border-radius: 5px;
+}
+
+.ProductTabs .TabListContainer .TabHeader span.Icon-plus:before {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 
