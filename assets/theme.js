@@ -904,7 +904,7 @@ function quick_view(event) {
             container.classList.add('featured-product');
             container.appendChild(ImageBoxDiv);
             container.appendChild(ContantBoxDiv);
-            document.getElementById('quick-product-view').innerHTML = container;
+            document.getElementById('quick-product-view').appendChild(container);
             document.body.classList.add('open-quick-view');
             var productGridImageSlider = document.querySelectorAll('.product-image-wrapper');
             productGridImageSlider.forEach(item => {
