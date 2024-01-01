@@ -265,10 +265,10 @@ function ChnageVaiantImg(event) {
     }else{
     mainDiv.append(newDiv)
     }
-    topcontainer.append(swiperNext)
-    topcontainer.append(swiperPrev);
+    mainDiv.append(swiperNext)
+    mainDiv.append(swiperPrev);
     if(checkClass){
-      topcontainer.append(swiperPage);
+      mainDiv.append(swiperPage);
     }
     topcontainer.appendChild(mainDiv)
     // intilize slider
