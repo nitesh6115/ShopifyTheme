@@ -1961,9 +1961,6 @@ div#quick-product-view .TabListContainer.active .TabContent {
     padding-top: 25px;
     margin-top: 15px;
 }
-div#quick-product-view .TabListContainer.active .TabContent {
-    padding: 0px 0 10px;
-}
 div#quick-product-view .ProductTabs .TabListContainer.active .TabHeader span.Icon-plus:before {
      transform: rotate(225deg); 
      top: 0;
