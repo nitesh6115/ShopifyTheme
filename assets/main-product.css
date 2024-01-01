@@ -272,6 +272,7 @@
     font-weight: bold;
     font-size: 11px;
     padding: 10px 0;
+    cursor: pointer;
 }
 
 .ProductTabs .TabListContainer .TabHeader span.Icon-plus {
