@@ -1718,24 +1718,29 @@ div#CartBox {
 }
 }
 div#quick-product-view {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     visibility: hidden;
     opacity: 0;
     z-index: 30;
     transition-duration: .7s;
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
-    -webkit-backdrop-filter: saturate(180%) blur(3rem);
-      backdrop-filter: saturate(180%) blur(3rem);
+    width: 700px;
+    padding: 30px;
+    max-height: 500px;
+    min-height: 90%;
+    overflow: auto;
+    height: 80%;
+    position: absolute;
+    margin: 0 auto;
+    border: 1px solid;
+    border-radius: 30px;
+    transform: translateY(100%);
 }
 
 .open-quick-view div#quick-product-view {
     visibility: visible;
     opacity: 1;
+    transform: translateY(0);
 }
 .quick_view_close{
   position: absolute;
@@ -1751,17 +1756,7 @@ div#quick-product-view {
     transition-timing-function: cubic-bezier(.4,0,.2,1);
     -webkit-backdrop-filter: saturate(180%) blur(3rem);
       backdrop-filter: saturate(180%) blur(3rem);
-     width: 700px;
-    padding: 30px;
-    max-height: 500px;
-    min-height: 90%;
-    overflow: auto;
-    height: 80%;
-    position: absolute;
-    margin: 0 auto;
-    border: 1px solid;
-    border-radius: 30px;
-    transform: translateY(100%);
+    
 }
 .open-quick-view .quick_view_close{
    visibility: visible;
