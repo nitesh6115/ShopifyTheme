@@ -1886,6 +1886,14 @@ div#quick-product-view  .add-to-cart {
   #quick-product-view .ProductQuickBox .ProductInfoBox {
     overflow-y: inherit;
 }
+  #quick-product-view .ProductQuickBox .top-container {
+    overflow: visible;
+}
+
+#quick-product-view .ProductQuickBox div#MainSliderBox .product-image-container .swiper-slide img {
+  border-radius: 0;
+}
+  
   #quick-product-view .ProductQuickBox div#MainSliderBox{
     height: auto;
     width: 100%;
@@ -1921,6 +1929,14 @@ div#quick-product-view  .add-to-cart {
 }
 #quick-product-view .ProductQuickBox div#MainSliderBox .product-image-container {
     position: relative;
+    left: inherit;
+    right: inherit;
+    top: inherit;
+    bottom: inherit;
+    max-width: 380px;
+    margin: 0 auto;
+    overflow: visible;
+    width: 100%;
 }
 #quick-product-view .ProductQuickBox {
     height: auto;
