@@ -807,6 +807,7 @@ img.feature-image {
     color: #fff;
     border-radius: 12px;
     transition: .5s ease all;
+    transform: translateY(100%);
 }
 .other-selector-wrapper {
     border-radius: 12px;
