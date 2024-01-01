@@ -895,7 +895,7 @@ function quick_view(event) {
         .then((responseText) => {
             //var parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('ProductBox').innerHTML;
             var ImageBox = new DOMParser().parseFromString(responseText, 'text/html').getElementById("MainSliderBox").innerHTML;
-            var ContantBox = new DOMParser().parseFromString(responseText, 'text/html').getElementById("box-3").innerHTML;
+            var ContantBox = new DOMParser().parseFromString(responseText, 'text/html').getElementById("ProductContent").innerHTML;
             console.log(ImageBox)
             var container = document.createElement("div");
             container.classList.add('featured-product');
