@@ -906,14 +906,14 @@ function quick_view(event) {
             const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('shopify-section-main-product').innerHTML;
             var container = document.createElement("div");
             document.getElementById('quick-product-view').innerHTML = parsedHTML;
+            document.body.classList.add('open-quick-view')
         })
   
             
 }
-
-
-
-
+function quick_view_close(event) {
+ document.body.classList.remove('open-quick-view')
+}
 
 
 
