@@ -1,8 +1,9 @@
 <div class="ProductTabs">
+        {% assign index = 0 %}
         {% for block in section.blocks %}
           {% if block.type == 'tab' %}
           {% if block.settings.title != blank and block.settings.content != blank %}
-          <div class="TabListContainer">
+          <div class="TabListContainer {% if index == 0 %} active{% endif %}">
           <div class="TabHeader" onclick="TabsTrigger(this)">
           {{ block.settings.title }} <span class="Icon-plus"></span>
           </div>
@@ -11,9 +12,10 @@
           </div>
           </div>
           {% endif %}
+            {% assign index = index | plus: 1 %}
           {% endif %}
           {% endfor %}
-        <div class="TabListContainer">
+          <div class="TabListContainer">
           <div class="TabHeader" onclick="TabsTrigger(this)">
           Description <span class="Icon-plus"></span>
           </div>
