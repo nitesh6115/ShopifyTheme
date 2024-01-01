@@ -1831,6 +1831,7 @@ div#quick-product-view .product-variant-container {
     visibility: visible;
     opacity: 1;
     border: 1px solid;
+    overflow: unset;
 }
 div#quick-product-view .size-selctor-wrapper .size-selector.active {
     background: #c92525;
