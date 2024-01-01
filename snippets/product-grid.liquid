@@ -208,7 +208,7 @@
               
                <label  onclick="SelectVariant(this)" type="color" data-title="{{ value | escape }}">
                <div class="variant-images radius-5 overflow-hidden">
-                  <img  width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt }}" loading="lazy" src="{{image.src| img_url: '60x60' }}">
+                  <img  width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt }}" loading="lazy" srcset="{{image.src| img_url: '60x60' }}">
                  </div>
                  </label>
              </div>
