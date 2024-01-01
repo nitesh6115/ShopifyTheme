@@ -1781,7 +1781,6 @@ div#quick-product-view {
     padding: 20px;
     display: flex;
     height: 100%;
-    width: 100%;
 }
 #quick-product-view .ProductQuickBox .ProductInfoBox::-webkit-scrollbar {
     width: 5px;
