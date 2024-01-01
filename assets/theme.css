@@ -1872,6 +1872,18 @@ div#quick-product-view  .add-to-cart {
     left: 0;
     overflow: scroll;
 }
-
+ div#quick-product-view::-webkit-scrollbar {
+    width: 5px;
+    border-radius:2px;
+     -webkit-border-radius: 7px;
+}
+ div#quick-product-view::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ div#quick-product-view::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+   -webkit-border-radius: 7px;
+}
 .open-quick-view div#quick-product-view {transform: translateY(-40%);}
 }
