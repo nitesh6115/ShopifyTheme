@@ -55,7 +55,10 @@
 .light {
   opacity: 0.7;
 }
-
+.rte ul {
+    list-style: circle;
+    padding-left: 16px;
+}
 
 body::-webkit-scrollbar,.scroll-bar::-webkit-scrollbar {
     width: 5px;
