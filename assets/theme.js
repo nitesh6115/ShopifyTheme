@@ -61,22 +61,6 @@ NavLink.forEach(item => {
         });
     });
 });
-var MainSliderBox = document.getElementById("MainSliderBox");
-
-var productMainSlider = function() {
- var width = document.body.clientWidth;
- var height = document.body.clientHeight;
- if(width <= 1023){
-   const SliderDiv = MainSliderBox.querySelector('.product-image-container');
-   
- }else{
-   
- }
-}
-if (MainSliderBox) {
-  window.addEventListener("resize", productMainSlider);
-  productMainSlider();
-} 
 
 
 // AddToCartItem //
@@ -900,13 +884,56 @@ function TabContent(TabContent) {
 function quick_view(event) {
   var mainParent = event.closest('.featured-product');
   var URL = mainParent.querySelector('.top-container').getAttribute('data-url')
-  fetch(URL+"?section_id=main-product")
+  fetch(URL+"?section_id=quick-view-product")
         .then(response => response.text())
         .then((responseText) => {
-            const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('shopify-section-main-product').innerHTML;
+            const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('shopify-section-quick-view-product').innerHTML;
             var container = document.createElement("div");
             document.getElementById('quick-product-view').innerHTML = parsedHTML;
-            document.body.classList.add('open-quick-view')
+            document.body.classList.add('open-quick-view');
+            var productGridImageSlider = document.querySelectorAll('.product-image-wrapper');
+            productGridImageSlider.forEach(item => {
+                var newElem = item.closest('.product-image-container')
+                var nextbutton = newElem.querySelectorAll('.swiper-button-next')[0];
+                var prebutton = newElem.querySelectorAll('.swiper-button-prev')[0];
+                const swiperTabs = new Swiper(item, {
+                    allowTouchMove: false,
+                    loop: true,
+                    autoplay: 7000,
+                    speed: 300,
+                    noSwiping: true,
+                    slidesPerView: 1,
+                    initialSlide: 0,
+                    effect: 'fade',
+                    navigation: {
+                        nextEl: nextbutton,
+                        prevEl: prebutton,
+                    },
+                })
+                var swp = item.swiper
+                item.addEventListener("mouseover", function() {
+                    swp.autoplay.start();
+                })
+                item.addEventListener("mouseout", function() {
+                    swp.autoplay.stop();
+                })
+            });
+            
+            var variantImages = document.querySelectorAll('.prodouct-variant-slider');
+            variantImages.forEach(slider => {
+                var swiperActive = slider.querySelectorAll('.size-selector')[0];
+                if (swiperActive !== '') {
+                    swiperActive.classList.add('active')
+                    var label = swiperActive.querySelectorAll('label')[0];
+                    label.click()
+                    const slideritam = new Swiper(slider, {
+                        slidesPerView: 5,
+                        initialSlide: 0,
+                        spaceBetween: 5,
+                        draggable: true,
+                    })
+                }
+            })
         })
   
             
