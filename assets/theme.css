@@ -813,10 +813,10 @@ img.feature-image {
 }
 .top-container {
     position: relative;
+      overflow: hidden;
+    transform: translateZ(0);
 }
-.top-container:hover{
-  overflow: hidden;
-}
+
 .quick-add-wrapper .quick-add {
     font-size: 12px;
     font-weight: bold;
