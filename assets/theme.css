@@ -1872,15 +1872,116 @@ div#quick-product-view  .add-to-cart {
     position: sticky;
     bottom: 0;
 }
-.quick-add-wrapper .quick-add > span {
+div#quick-product-view  .quick-add-wrapper .quick-add > span {
     display: flex;
     justify-content: space-between;
 }
 
-.quick-add-wrapper .quick-add > span span.quick_product {
+div#quick-product-view  .quick-add-wrapper .quick-add > span span.quick_product {
     padding: 0 10px;
     cursor: pointer;
 }
+
+div#quick-product-view  .ProductInfo h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+div#quick-product-view  .ProductInfo p.ProductType {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+div#quick-product-view  .PriceBox {
+    margin-bottom: 8px;
+    border-bottom: 1px solid;
+    padding-bottom: 8px;
+}
+
+div#quick-product-view  .PriceBox .money {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+div#quick-product-view  .ProductTabs .TabListContainer {
+    border-top: 1px solid;
+}
+
+div#quick-product-view  .ProductTabs .TabListContainer .TabContent {
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+    transition: 0.5s ease all;
+    overflow: hidden;
+}
+
+div#quick-product-view  .ProductTabs .TabListContainer .TabHeader {
+    position: relative;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+div#quick-product-view  .ProductTabs .TabListContainer .TabHeader span.Icon-plus {
+    position: absolute;
+    right: 0;
+    top: 3px;
+    transition: 0.5s ease all;
+}
+
+div#quick-product-view  .ProductTabs .TabListContainer .TabHeader span.Icon-plus:before {
+    content: "+";
+    font-size: 23px;
+    font-weight: normal;
+    line-height: normal;
+    transform: rotate(90deg);
+    transition: 0.5s ease all;
+    position: absolute;
+    right: 0;
+}
+
+
+div#quick-product-view .TabListContainer.active .TabContent {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+}
+div#quick-product-view .TabListContainer.active .TabContent {
+    padding: 0px 0 10px;
+}
+div#quick-product-view .ProductTabs .TabListContainer.active .TabHeader span.Icon-plus:before {
+     transform: rotate(225deg); 
+}
+div#quick-product-view  .CustomLinks a:last-child {
+    border-bottom: 0;
+}
+
+div#quick-product-view  .CustomLinks a {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    padding: 7px;
+    text-decoration: none;
+    color: #000;
+}
+
+div#quick-product-view .CustomLinks {
+    border: 1px solid;
+    border-radius: 8px;
+    background: #ccc;
+    overflow: hidden;
+}
+
+div#quick-product-view  .CustomLinks svg {
+    width: 12px;
+}
+
+div#quick-product-view  .CustomLinks a:hover {
+    background: #eb8080;
+}
+
+
+
 @media(max-width: 1024px){
   #quick-product-view .featured-product {
     flex-wrap: wrap;
