@@ -244,7 +244,83 @@
 {% schema %}
   {
     "name": "Quick View Product",
-    "settings": []
+    "settings": [
+      {
+      "type": "header",
+        "content": "Product Attributes"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_type",
+        "label": "Show Product Type"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_vendor",
+        "label": "Show Product Vendor"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "separator",
+        "name": "Custom Heading",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Custom Heading"
+          }
+        ]
+      },
+      {
+        "type": "tab",
+        "name": "Tab",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Tab Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Tab Content"
+          }
+        ]
+      },
+      {
+        "type": "custom-link",
+        "name": "Custom Link",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Link Name"
+          },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "Link URL"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name": "Product",
+        "blocks":[
+            {
+              "type": "tab"
+            },
+            {
+              "type": "tab"
+            },
+            {
+              "type": "tab"
+            } 
+        ]
+      }
+    ]
   }
 {% endschema %}
 
