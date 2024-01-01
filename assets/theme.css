@@ -1810,7 +1810,7 @@ div#quick-product-view .product-variant-container {
 }
 
 div#quick-product-view .quick-add-wrapper {
-    position: absolute;
+    position: relative;
     background: transparent;
     opacity: 1;
     top: inherit;
