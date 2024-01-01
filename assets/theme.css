@@ -802,12 +802,11 @@ img.feature-image {
     margin: 0 auto;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -350px;
     z-index: 1;
     color: #fff;
     border-radius: 12px;
     transition: .5s ease all;
-    transform: translateY(100%);
 }
 .other-selector-wrapper {
     border-radius: 12px;
@@ -815,7 +814,6 @@ img.feature-image {
 .top-container {
     position: relative;
       overflow: hidden;
-    transform: translateZ(0);
 }
 
 .quick-add-wrapper .quick-add {
@@ -834,12 +832,12 @@ img.feature-image {
 }
 
 .featured-product:hover .quick-add-wrapper {
-    transform: translateY(58%);
+    bottom: -58px;
     z-index: 99;
 }
 
-.featured-product .quick-add-wrapper:hover {
-    transform: translateY(-5%);
+.featured-product:hover .quick-add-wrapper:hover {
+    bottom: 15px;
     transition: .5s ease all;
 }
 
