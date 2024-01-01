@@ -812,10 +812,16 @@ img.feature-image {
     border-radius: 12px;
 }
 .top-container {
-    position: relative;
+    position: unset;
     overflow: hidden;
 }
-
+.WapperBoxImage {
+    height: 100%;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
 .quick-add-wrapper .quick-add {
     font-size: 12px;
     font-weight: bold;
