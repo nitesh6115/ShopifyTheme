@@ -1987,6 +1987,7 @@ div#quick-product-view .CustomLinks {
     border-radius: 8px;
     background: #ccc;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 
 div#quick-product-view  .CustomLinks svg {
