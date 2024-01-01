@@ -831,12 +831,12 @@ img.feature-image {
 
 }
 
-.featured-product:hover .quick-add-wrapper {
+.top-container:hover .quick-add-wrapper {
     bottom: -58px;
     z-index: 99;
 }
 
-.featured-product:hover .quick-add-wrapper:hover {
+.top-container:hover .quick-add-wrapper:hover {
     bottom: 15px;
     transition: .5s ease all;
 }
