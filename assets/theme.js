@@ -898,7 +898,7 @@ function TabContent(TabContent) {
       
 }
 function quick_view(event) {
-  var mainParent = event.closest('.feature-product');
+  var mainParent = event.closest('.featured-product');
   var URL = mainParent.querySelector('.top-container').getAttribute('data-url')
   alert(URL)
 }
