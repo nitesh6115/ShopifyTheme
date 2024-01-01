@@ -838,7 +838,7 @@ img.feature-image {
     z-index: 99;
 }
 
-.featured-product:hover .quick-add-wrapper:hover {
+.featured-product .quick-add-wrapper:hover {
     transform: translateY(-5%);
     transition: .5s ease all;
 }
