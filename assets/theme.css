@@ -1834,6 +1834,9 @@ div#quick-product-view .quick-add-wrapper {
     width: 100%;
     padding-top: 20px;
 }
+#quick-product-view #ProductContent .large-up-hide {
+    display: block !important;
+}
 div#quick-product-view .size-selctor-wrapper {
     width: 100%;
     padding: 15px 0;
