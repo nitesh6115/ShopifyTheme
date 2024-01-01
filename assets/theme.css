@@ -1737,7 +1737,25 @@ div#quick-product-view {
     visibility: visible;
     opacity: 1;
 }
-
+.quick_view_close{
+  position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 31;
+    transition-duration: .7s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    -webkit-backdrop-filter: saturate(180%) blur(3rem);
+      backdrop-filter: saturate(180%) blur(3rem);
+}
+.open-quick-view .quick_view_close{
+   visibility: visible;
+    opacity: 1;
+}
 div#quick-product-view .section-main-product-padding {
     width: 700px;
     padding: 30px;
