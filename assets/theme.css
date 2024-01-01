@@ -1730,32 +1730,32 @@ div#quick-product-view {
     min-height: 90%;
     overflow: auto;
     height: 80%;
-    position: absolute;
+    position: fixed;
     margin: 0 auto;
     border: 1px solid;
     border-radius: 30px;
-    transform: translateY(100%);
+    transform: translate(-50%, 100%);;
 }
 
 .open-quick-view div#quick-product-view {
     visibility: visible;
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(-50%, 0);
 }
 .quick_view_close{
-  position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 31;
-    transition-duration: .7s;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-    -webkit-backdrop-filter: saturate(180%) blur(3rem);
-      backdrop-filter: saturate(180%) blur(3rem);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 31;
+  transition-duration: .7s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  -webkit-backdrop-filter: saturate(180%) blur(3rem);
+  backdrop-filter: saturate(180%) blur(3rem);
     
 }
 .open-quick-view .quick_view_close{
