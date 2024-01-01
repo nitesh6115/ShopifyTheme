@@ -1731,14 +1731,16 @@ div#quick-product-view {
     border: 1px solid;
     border-radius: 30px;
     transform: translate(-50%,100%);
-    top: 0;
+    top: 50%;
     left: 50%;
+    height: 80vh;
+    overflow: hidden;
 }
 
 .open-quick-view div#quick-product-view {
     visibility: visible;
     opacity: 1;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
 }
 .quick_view_close{
     position: fixed;
