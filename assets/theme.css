@@ -1772,7 +1772,6 @@ div#quick-product-view {
     position: sticky;
     top: 0;
     overflow: hidden;
-    width: 54.7777vw;
 }
 #quick-product-view .ProductQuickBox div#MainSliderBox img.borrder-all.radius-20.feature-image {
     height: 90vh;
