@@ -27,7 +27,9 @@
 <div class="CustomLinks">
 {% for block in section.blocs %}
 {% if block.type == 'custom-link' %}
-<a href="{{ block.settings.link }}" target="_blank">{{ block.settings.title }}</a>
+  {% if block.settings.url != blank and block.settings.title != blank %}
+<a href="{{ block.settings.url }}" target="_blank">{{ block.settings.title }}</a>
+  {% endif %}
   {% endif %}
 {% endfor %}
 </div>
