@@ -893,7 +893,7 @@ function quick_view(event) {
   fetch(URL)
         .then(response => response.text())
         .then((responseText) => {
-            const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('ProductBox');
+            var parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('ProductBox');
             var ImageBox = parsedHTML.getElementById("MainSliderBox").innerHTML;
             var ContantBox = parsedHTML.getElementById("box-3").innerHTML;
             var container = document.createElement("div");
