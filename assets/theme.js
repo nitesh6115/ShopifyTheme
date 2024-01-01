@@ -944,12 +944,17 @@ function quick_view_close(event) {
 function TabsTrigger(ProductTabs) {
  const parentDiv = ProductTabs.closest('.ProductTabs');
  const row = ProductTabs.closest('.TabListContainer');
- const AllRow = parentDiv.querySelectorAll('.TabListContainer')
+ if(row.classList.contains('active')){
+   row.classList.remove('active')
+ }else{
+    const AllRow = parentDiv.querySelectorAll('.TabListContainer')
   AllRow.forEach(function (item, i) {
     if(i !== 0){
       item.classList.remove('active');
     }
   })
   row.classList.add('active')
+ }
+
 }
 
