@@ -769,7 +769,9 @@ function TabContent(TabContent) {
          TabDirection.style.left = Updated+'px';
        } 
    })
-   TabContent.classList.add('active'); 
+   if(TabContent.classList.contains('active')){
+     
+   }else{
    fetch("/collections/"+CollectionHandle+"?section_id=collection-data")
         .then(response => response.text())
         .then((responseText) => {
@@ -879,7 +881,8 @@ function TabContent(TabContent) {
             SliderDiv.classList.remove('loading-effect');
             },1000)
         })
-      
+   }
+   TabContent.classList.add('active');  
 }
 function quick_view(event) {
   var mainParent = event.closest('.featured-product');
