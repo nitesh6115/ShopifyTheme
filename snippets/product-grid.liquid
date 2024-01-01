@@ -14,14 +14,14 @@
       data-type:'add-to-cart-form' %}
   <div data-color="{{ colorOption }}" data-size="{{ sizeOption }}" class="top-container" data-url="{{ card_product.url }}">
     <div class="WapperBoxImage">
-    <div class="product-image-container swiper">
+    <div class="product-image-container">
     {% if colorOption %}
       {% for option in card_product.options_with_values %}
       {% if option.name == 'Color'  or option.name == 'COLOR' %}
 
         
       {% for value in option.values %}
-      <div class="product-image-wrapper">
+      <div class="product-image-wrapper swiper">
          <div class="swiper-wrapper">
         
         {% assign color_alt = false %}
@@ -76,10 +76,10 @@
           {% endif %}
         
          </div>
-        
+        <div class="swiper-button-next secondary-button"></div>
+        <div class="swiper-button-prev secondary-button"></div>
        </div>
-     <div class="swiper-button-next secondary-button"></div>
-       <div class="swiper-button-prev secondary-button"></div>
+     
       {% break %}
       {% endfor %}
       {% endif %}
@@ -87,7 +87,7 @@
 
       
    {% else %}
-     <div class="product-image-wrapper">
+     <div class="product-image-wrapper swiper">
          <div class="swiper-wrapper">
         {%for image in card_product.images %}
         <div class="product-image-slide swiper-slide" data-swiper-autoplay="1000" >
@@ -107,10 +107,10 @@
         </div>
         {% endfor %}
          </div>
-        
+        <div class="swiper-button-next secondary-button"></div>
+        <div class="swiper-button-prev secondary-button"></div>
        </div>
-     <div class="swiper-button-next secondary-button"></div>
-       <div class="swiper-button-prev secondary-button"></div>
+    
       {% endif %}
     </div>
     
