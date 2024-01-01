@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-product",
+      "type": "quick-view-product",
       "blocks": {
         "88653d26-6d6c-4f4e-b8c4-4a716e47e826": {
           "type": "tab",
@@ -47,10 +47,6 @@
         "d36063e8-6a1e-4556-9d00-ab80632a850e"
       ],
       "settings": {
-        "color_scheme": "background-1",
-        "width": "wrapper-width",
-        "padding_top": 4,
-        "padding_bottom": 0,
         "show_type": true,
         "show_vendor": false
       }
