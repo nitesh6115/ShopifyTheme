@@ -1762,19 +1762,7 @@ div#quick-product-view {
    visibility: visible;
     opacity: 1;
 }
-div#quick-product-view::-webkit-scrollbar {
-    width: 5px;
-    border-radius:2px;
-     -webkit-border-radius: 7px;
-}
-div#quick-product-view ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-}
-div#quick-product-view::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
-   -webkit-border-radius: 7px;
-}
+
 #quick-product-view .ProductQuickBox {
     display: flex;
     flex-direction: row;
@@ -1788,4 +1776,19 @@ div#quick-product-view::-webkit-scrollbar-thumb {
 
 #quick-product-view .ProductQuickBox .ProductInfoBox {
     width: 50%;
+    overflow: scroll;
+    padding: 20px;
+}
+#quick-product-view .ProductQuickBox .ProductInfoBox::-webkit-scrollbar {
+    width: 5px;
+    border-radius:2px;
+     -webkit-border-radius: 7px;
+}
+#quick-product-view .ProductQuickBox .ProductInfoBox::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+#quick-product-view .ProductQuickBox .ProductInfoBox::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+   -webkit-border-radius: 7px;
 }
