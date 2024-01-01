@@ -232,9 +232,8 @@
     {% endif %}
     {% endfor %}
   </select>
-  <div class="add-to-cart" onclick="AddMainProduct(this)">
-  Select Size 
-  </div> 
+  {% render 'product-tabs' %}
+  <div class="add-to-cart" onclick="AddMainProduct(this)">Select Size</div> 
   </div>
   </div>
   </div>
