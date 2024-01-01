@@ -314,7 +314,6 @@ function ChnageVaiantImg(event) {
                 speed: 300,
                 slidesPerView: 1,
                 noSwipingClass: 'swiper-no-swiping',
-                initialSlide: 0,
                 effect: 'fade',
                 navigation: {
                     nextEl: nextbutton,
