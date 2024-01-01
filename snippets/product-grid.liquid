@@ -105,7 +105,7 @@
     <div class="quick-add-wrapper">
     <div class="other-selector-wrapper primary-button">
       <div class="quick-add">
-       <span>QUICK ADD <span class="quick_product" onclick="quick_view(this)">+</span></span>
+       <span><span class="quickText">QUICK ADD </span><span class="quick_product" onclick="quick_view(this)">+</span></span>
       </div>
       {% for option in card_product.options_with_values %}
         {% unless option.name == "Color"  or option.name == 'COLOR' %}
