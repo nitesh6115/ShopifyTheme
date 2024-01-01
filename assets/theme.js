@@ -209,13 +209,11 @@ function ChnageVaiantImg(event) {
     var mainParent = event.closest('.featured-product');
     var checkClass = mainParent.classList.contains('product-page')
     var SizeSelectorOption = mainParent.querySelectorAll('.size-selector');
+    //console.log(SizeSelectorOption);
     var prductUrl = mainParent.querySelectorAll('[data-url]')[0];
     prductUrl = prductUrl.getAttribute('data-url');
     SizeSelectorOption.forEach(sizeOption => {
         sizeOption.classList.remove("Sold-out");
-        if(checkClass){
-        sizeOption.classList.remove("active");
-        }
     })
     var selcterValue = event.getAttribute('data-title');
     const JsonScript = JSON.parse(mainParent.querySelectorAll("script")[0].innerHTML);
