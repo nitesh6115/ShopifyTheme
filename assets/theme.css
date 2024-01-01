@@ -1879,7 +1879,7 @@ div#quick-product-view  .add-to-cart {
     padding: 0 10px;
     cursor: pointer;
 }
-@media(max-width: 767px){
+@media(max-width: 1024px){
   #quick-product-view .ProductQuickBox{
     flex-wrap: wrap;
   }
