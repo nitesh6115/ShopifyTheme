@@ -897,8 +897,10 @@ function quick_view(event) {
             var ImageBox = new DOMParser().parseFromString(responseText, 'text/html').getElementById("MainSliderBox").innerHTML;
             var ContantBox = new DOMParser().parseFromString(responseText, 'text/html').getElementById("ProductContent").innerHTML;
             var ImageBoxDiv = document.createElement("div");
+            ImageBoxDiv.setAttribute("id", "MainSliderBox");
             ImageBoxDiv.innerHTML = ImageBox;
             var ContantBoxDiv = document.createElement("div");
+            ContantBoxDiv.setAttribute("id", "ProductContent");
             ContantBoxDiv.innerHTML = ContantBox;
             var container = document.createElement("div");
             container.classList.add('featured-product');
