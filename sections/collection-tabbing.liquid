@@ -94,10 +94,10 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
   var parent = item.closest('.TabingBox')
   var nextbutton = item.querySelectorAll('.tabingNext')[0];
   var prebutton = item.querySelectorAll('.tabingPrev')[0];
+  setTimeout(function(){
   var TabLink = parent.querySelectorAll('.tablinks')[0];
   const CurrentWidth = TabLink.offsetWidth;
   const TabDirection = parent.querySelector('.tabs__nav-decoration');
-  setTimeout(function(){
     alert(CurrentWidth)
   TabDirection.style.width = CurrentWidth+'px';
   TabDirection.style.left = '3px'; 
