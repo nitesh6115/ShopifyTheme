@@ -1808,15 +1808,15 @@ div#quick-product-view {
     right: 0;
     bottom: 0;
 }
-#quick-product-view  #ProductContent::-webkit-scrollbar {
+#quick-product-view .featured-product::-webkit-scrollbar {
     width: 5px;
     border-radius:2px;
      -webkit-border-radius: 7px;
 }
-#quick-product-view  #ProductContent::-webkit-scrollbar-track {
+#quick-product-view .featured-product::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
-#quick-product-view  #ProductContent::-webkit-scrollbar-thumb {
+#quick-product-view .featured-product::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
    -webkit-border-radius: 7px;
