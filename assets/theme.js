@@ -214,9 +214,6 @@ function ChnageVaiantImg(event) {
     prductUrl = prductUrl.getAttribute('data-url');
     SizeSelectorOption.forEach(sizeOption => {
         sizeOption.classList.remove("Sold-out");
-        if(checkClass){
-          sizeOption.classList.remove("active");
-        }
     })
     var selcterValue = event.getAttribute('data-title');
     const JsonScript = JSON.parse(mainParent.querySelectorAll("script")[0].innerHTML);
