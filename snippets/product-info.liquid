@@ -1,5 +1,11 @@
 <div class="ProductInfo">
   <h2>{{ product.title }}</h2>
+  {% if product.type and section.settings.show_type %}
+  <p class="ProductType">{{ product.type }}</p>
+  {% endif %}
+  {% if product.vendor and section.settings.show_vendor %}
+  <p class="ProductVendor">{{ product.vendor }}</p>
+  {% endif %}
   <div class="PriceBox {% if product.compare_at_price > product.price %} sale-price {% else %} regular-price {% endif %}">
   {% if product.compare_at_price > product.price %}
     <span class="money compare_at_price">{{ product.compare_at_price | money_with_currency }}</span>
