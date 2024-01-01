@@ -1861,3 +1861,9 @@ div#quick-product-view  .add-to-cart {
     position: sticky;
     bottom: 0;
 }
+
+@media(max-width: 767px){
+  #quick-product-view .ProductQuickBox{
+    flex-wrap: wrap;
+  }
+}
