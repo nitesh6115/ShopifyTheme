@@ -233,8 +233,7 @@
     padding-right: 8px;
 }
 .ProductInfo h2 {
-    font-size: 
-20px;
+    font-size: 20px;
     margin-bottom: 8px;
 }
 .ProductInfo p.ProductType {
@@ -302,7 +301,33 @@
 .ProductTabs .TabListContainer.active .TabHeader span.Icon-plus {
      transform: rotate(225deg); 
 }
+.CustomLinks a:last-child {
+    border-bottom: 0;
+}
 
+.CustomLinks a {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    padding: 7px;
+    text-decoration: none;
+    color: #000;
+}
+
+.CustomLinks {
+    border: 1px solid;
+    border-radius: 8px;
+    background: #ccc;
+    overflow: hidden;
+}
+
+.CustomLinks svg {
+    width: 12px;
+}
+
+.CustomLinks a:hover {
+    background: #eb8080;
+}
 
 
 @media(min-width: 1024px){
