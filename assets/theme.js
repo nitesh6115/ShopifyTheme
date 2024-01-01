@@ -918,22 +918,6 @@ function quick_view(event) {
                     swp.autoplay.stop();
                 })
             });
-            
-            var variantImages = document.querySelectorAll('.prodouct-variant-slider');
-            variantImages.forEach(slider => {
-                var swiperActive = slider.querySelectorAll('.size-selector')[0];
-                if (swiperActive !== '') {
-                    swiperActive.classList.add('active')
-                    var label = swiperActive.querySelectorAll('label')[0];
-                    label.click()
-                    const slideritam = new Swiper(slider, {
-                        slidesPerView: 5,
-                        initialSlide: 0,
-                        spaceBetween: 5,
-                        draggable: true,
-                    })
-                }
-            })
         })
   
             
