@@ -223,6 +223,7 @@ function ChnageVaiantImg(event) {
     topcontainer.innerHTML = ''
     var mainDiv = document.createElement('div');
     mainDiv.classList.add("product-image-slide");
+    mainDiv.classList.add("swiper");
     var newDiv = document.createElement('div');
     newDiv.classList.add("swiper-wrapper");
     JsonScript.forEach(images => {
