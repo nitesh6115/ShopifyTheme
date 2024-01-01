@@ -1766,13 +1766,14 @@ div#quick-product-view {
 
 #quick-product-view .ProductQuickBox {
     display: flex;
-    flex-direction: row;
 }
 
 #quick-product-view .ProductQuickBox div#MainSliderBox {
-  position: sticky;
-  top: 0;
-  width: 50%;
+    position: sticky;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
+    width: 91%;
 }
 
 #quick-product-view .ProductQuickBox .ProductInfoBox {
