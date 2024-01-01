@@ -41,7 +41,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
           {{ product.description }}
           </div>
           </div>
-          {% for block in section.block %}
+          {% for block in section.blocks %}
           {% if block.type == 'tab' %}
           {% if block.settings.title != blank and block.settings.content != blank %}
           <div class="TabListContainer">
