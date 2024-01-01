@@ -31,6 +31,13 @@
       background: {{ scheme.settings.background }};
       {% endif %}
       }
+      .color-{{ scheme.id }} #quick-product-view .featured-product{
+        {% if scheme.settings.background_gradient != empty %}
+        background: {{ scheme.settings.background_gradient }};
+        {% else %}
+        background: {{ scheme.settings.background }};
+        {% endif %}
+      }
       .color-{{ scheme.id }} .Logo_svg path{
       fill: {{ scheme.settings.text }};
       }
