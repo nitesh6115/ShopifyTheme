@@ -668,39 +668,6 @@ menuOpen = (event) => {
 menuClose = (event) => {
     document.body.classList.remove('modal-menu-open');
 }
-// Cart Drawer Recomendation Products
-var CratDrawerSlider = document.querySelectorAll('.CratDrawerSlider');
-CratDrawerSlider.forEach(item => {
-    var nextbutton = item.querySelectorAll('.CartDrawerNext')[0];
-    var prebutton = item.querySelectorAll('.CartDrawerPrev')[0];
-    const cartDrawerSwaper = new Swiper(item, {
-        slidesPerView: 2,
-        spaceBetween: 15,
-        initialSlide: 0,
-        navigation: {
-            nextEl: nextbutton,
-            prevEl: prebutton,
-        },
-        breakpoints: {
-            640: {
-                slidesPerView: 2,
-            },
-            1024: {
-                slidesPerView: 3,
-            },
-            1366: {
-                slidesPerView: 4,
-
-            },
-            1400: {
-                slidesPerView: 5,
-
-            },
-        },
-    })
-})
-
-
 function TabContent(TabContent) {
   const CollectionHandle = TabContent.getAttribute('data-collection');
   const ProductTotal = TabContent.getAttribute('data-total');
