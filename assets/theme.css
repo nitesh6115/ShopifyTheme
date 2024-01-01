@@ -1721,6 +1721,9 @@ div#CartBox {
     padding: 0 10px;
     cursor: pointer;
 }
+ .quick-add-wrapper span.quickText {
+    padding: 0 5px;
+}
 @media(max-width: 767px){
   .CollectionListPage .GridItem{
   margin-top: 20px;
