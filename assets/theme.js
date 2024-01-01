@@ -895,5 +895,15 @@ function TabContent(TabContent) {
             SliderDiv.classList.remove('loading-effect');
             },1000)
         })
-        
+      
 }
+function quick-product(event) {
+  var mainParent = event.closest('[data-url]')
+}
+
+
+
+
+
+
+
