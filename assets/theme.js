@@ -769,6 +769,7 @@ function TabContent(TabContent) {
          TabDirection.style.left = Updated+'px';
        } 
    })
+   console.log(TabContent.classList.contains('active'))
    if(TabContent.classList.contains('active')){
      
    }else{
