@@ -1866,4 +1866,12 @@ div#quick-product-view  .add-to-cart {
   #quick-product-view .ProductQuickBox{
     flex-wrap: wrap;
   }
+  div#quick-product-view {
+    max-height: 90vh;
+    transform: translateY(100%);
+    left: 0;
+    overflow: scroll;
+}
+
+.open-quick-view div#quick-product-view {transform: translateY(-40%);}
 }
