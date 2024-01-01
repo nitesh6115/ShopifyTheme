@@ -46,7 +46,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
     {% assign color_alt = false %}
     {%for image in product.images %}
     {% if image.alt == value %}
-    {% assign color_alt = ture %}
+    {% assign color_alt = true %}
     {% endif %}
     {% endfor %}
     {% if color_alt %}
