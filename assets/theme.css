@@ -1866,6 +1866,9 @@ div#quick-product-view  .add-to-cart {
   #quick-product-view .ProductQuickBox{
     flex-wrap: wrap;
   }
+  #quick-product-view .ProductQuickBox .ProductInfoBox {
+    overflow-y: inherit;
+}
   #quick-product-view .ProductQuickBox div#MainSliderBox{
     height: auto;
   }
