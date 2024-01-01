@@ -204,8 +204,7 @@
                  type="radio"
                  name="{{ option.name }}" 
                  value="{{ value | escape }}"
-                 data-index="option{{index}}" {% if option.selected_value==value
-                %}checked="true" {% endif %} />
+                 data-index="option{{index}}" {% if option.selected_value==value %}checked="true" {% endif %} />
               
                <label  onclick="SelectVariant(this)" type="color" data-title="{{ value | escape }}">
                <div class="variant-images radius-5 overflow-hidden">
