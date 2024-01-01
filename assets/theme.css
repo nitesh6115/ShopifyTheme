@@ -1908,5 +1908,21 @@ div#quick-product-view  .add-to-cart {
   outline: 1px solid slategrey;
    -webkit-border-radius: 7px;
 }
-.open-quick-view div#quick-product-view {transform: translateY(-40%);}
+.open-quick-view div#quick-product-view {
+  transform: translateY(-40%);
+}
+#quick-product-view .ProductQuickBox div#MainSliderBox .top-container {
+  padding: 0;
+}
+#quick-product-view .ProductQuickBox .ProductInfoBox {
+    width: 100%;
+    height: auto;
+}
+#quick-product-view .ProductQuickBox div#MainSliderBox .product-image-container {
+    position: relative;
+}
+#quick-product-view .ProductQuickBox {
+    height: auto;
+    width: 100%;s
+}
 }
