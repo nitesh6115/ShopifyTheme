@@ -283,7 +283,6 @@ function ChnageVaiantImg(event) {
                 loop: true,
                 zoom: true,
                 slidesPerView: 1,
-                initialSlide: 0,
                 
                 navigation: {
                     nextEl: nextbutton,
