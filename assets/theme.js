@@ -716,7 +716,7 @@ function TabContent(TabContent) {
   const show_button = ParentDiv.querySelector('.RightSide');
   const TabLink = ParentDiv.querySelectorAll('.tablinks');
   const TabDirection = ParentDiv.querySelector('.tabs__nav-decoration');
-  SliderDiv.classList.add('loading-effect');
+  
   if(Heading != 'NULL'){
     change_heading_element.classList.remove('hide');
     change_heading_element.style.opacity = "0";
@@ -756,6 +756,7 @@ function TabContent(TabContent) {
    if(TabContent.classList.contains('active')){
      
    }else{
+   SliderDiv.classList.add('loading-effect');
    fetch("/collections/"+CollectionHandle+"?section_id=collection-data")
         .then(response => response.text())
         .then((responseText) => {
