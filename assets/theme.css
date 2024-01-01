@@ -1725,7 +1725,6 @@ div#quick-product-view {
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
     width: 700px;
-    padding: 30px;
     max-height: 500px;
     min-height: 90%;
     overflow: auto;
@@ -1734,7 +1733,9 @@ div#quick-product-view {
     margin: 0 auto;
     border: 1px solid;
     border-radius: 30px;
-    transform: translate(-50%, 100%);;
+    transform: translate(-50%,100%);
+    top: 0;
+    left: 50%;
 }
 
 .open-quick-view div#quick-product-view {
@@ -1743,19 +1744,19 @@ div#quick-product-view {
     transform: translate(-50%, 0);
 }
 .quick_view_close{
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 31;
-  transition-duration: .7s;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(.4,0,.2,1);
-  -webkit-backdrop-filter: saturate(180%) blur(3rem);
-  backdrop-filter: saturate(180%) blur(3rem);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 22;
+    transition-duration: .7s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    -webkit-backdrop-filter: saturate(180%) blur(3rem);
+    backdrop-filter: saturate(180%) blur(3rem);
     
 }
 .open-quick-view .quick_view_close{
