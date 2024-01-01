@@ -900,7 +900,13 @@ function TabContent(TabContent) {
 function quick_view(event) {
   var mainParent = event.closest('.featured-product');
   var URL = mainParent.querySelector('.top-container').getAttribute('data-url')
-  alert(URL)
+  fetch(window.Shopify.routes + URL+"?section_id=main-product")
+        .then(response => response.text())
+        .then((responseText) => {
+            const parsedHTML = new DOMParser().parseFromString(responseText, 'text/html').getElementById('shopify-section-main-product').innerHTML;
+            var container = document.createElement("div");
+            document.getElementById('quick-product-view').innerHTML = parsedHTML;
+            
 }
 
 
