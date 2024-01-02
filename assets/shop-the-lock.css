@@ -9,7 +9,8 @@
 .shoplock-image{
  width: 50%;
  float:left;
- position: relative; 
+ position: relative;
+ border: 1px solid;
 }
 .shopock-productCard{
    width: 50%;
