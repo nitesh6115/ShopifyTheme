@@ -208,7 +208,6 @@ function price_update(event,variant_id){
   var mainParent = event.closest('.featured-product');
   var MainSelect = mainParent.querySelectorAll('select option');
   MainSelect.forEach(item => {
-        console.log(item.value)
         var variant = item.value;
         if (variant === variant_id) {
             const variantId = item.value;
@@ -217,8 +216,8 @@ function price_update(event,variant_id){
             console.log(variantPrice)
         }
     })
-  const PriceElement = '';
-  const CPElement = '';
+  const PriceElement = mainParent.querySelectorAll('.regular_price');
+  const CPElement = mainParent.querySelectorAll('.compare_at_price');
 }
 function ChnageVaiantImg(event) {
     var mainParent = event.closest('.featured-product');
