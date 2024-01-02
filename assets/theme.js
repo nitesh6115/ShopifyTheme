@@ -207,12 +207,10 @@ function changeActive(event) {
 function price_update(event,variant_id){
   var mainParent = event.closest('.featured-product');
   var MainSelect = mainParent.querySelectorAll('select option');
-  console.log(MainSelect)
   MainSelect.forEach(item => {
         console.log(item.value)
         var variant = item.value;
         if (variant === variant_id) {
-            console.log(variant)
             const variantId = item.value;
             const variantPrice = item.getAttribute('data-price');
             const variantComparePrice = item.getAttribute('data-compare');
