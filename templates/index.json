@@ -110,42 +110,6 @@
     "dffea033-b2a6-4346-ac66-8c1f217035df": {
       "type": "collection-tabbing",
       "blocks": {
-        "b5576f58-b840-4445-bac1-4fdcdba350dd": {
-          "type": "content",
-          "disabled": true,
-          "settings": {
-            "title": "Classic",
-            "heading": "CLASSIC BELTS",
-            "sub_title": "New",
-            "slide-collection": "womens",
-            "total_products": 8,
-            "button_text": "View All"
-          }
-        },
-        "5f62e45f-d806-4a9d-a029-4ca3adf1345b": {
-          "type": "content",
-          "disabled": true,
-          "settings": {
-            "title": "Sude",
-            "heading": "SUDE BELTS",
-            "sub_title": "Tranding",
-            "slide-collection": "mens",
-            "total_products": 8,
-            "button_text": "Shop Now"
-          }
-        },
-        "3ae23934-af38-4b46-967e-3ebfb48be623": {
-          "type": "content",
-          "disabled": true,
-          "settings": {
-            "title": "Colour",
-            "heading": "COLOUR BELTS",
-            "sub_title": "Latest",
-            "slide-collection": "all",
-            "total_products": 8,
-            "button_text": "View All"
-          }
-        },
         "12476ce4-cc58-44d1-adc2-cfb2adc6d089": {
           "type": "content",
           "settings": {
@@ -181,9 +145,6 @@
         }
       },
       "block_order": [
-        "b5576f58-b840-4445-bac1-4fdcdba350dd",
-        "5f62e45f-d806-4a9d-a029-4ca3adf1345b",
-        "3ae23934-af38-4b46-967e-3ebfb48be623",
         "12476ce4-cc58-44d1-adc2-cfb2adc6d089",
         "02b82706-5634-4277-aed7-aa69185ceb09",
         "9c9cb932-67b0-482c-8539-ec2fe15c317c"
@@ -286,10 +247,10 @@
         "image": "shopify:\/\/shop_images\/318787385_1016609336398373_8663951506333362760_n.jpg"
       }
     },
-    "59f820b0-3097-41d3-8703-8f3b3ac4ee70": {
+    "26dc5c30-255e-4674-a991-9426c43ea371": {
       "type": "collection-tabbing",
       "blocks": {
-        "template--14475434328150__59f820b0-3097-41d3-8703-8f3b3ac4ee70-content-1": {
+        "template--14475434328150__26dc5c30-255e-4674-a991-9426c43ea371-content-1": {
           "type": "content",
           "settings": {
             "title": "Tab Title",
@@ -300,7 +261,7 @@
             "button_text": "Shop Now"
           }
         },
-        "template--14475434328150__59f820b0-3097-41d3-8703-8f3b3ac4ee70-content-2": {
+        "template--14475434328150__26dc5c30-255e-4674-a991-9426c43ea371-content-2": {
           "type": "content",
           "settings": {
             "title": "Tab Title",
@@ -311,7 +272,7 @@
             "button_text": "Shop Now"
           }
         },
-        "template--14475434328150__59f820b0-3097-41d3-8703-8f3b3ac4ee70-content-3": {
+        "template--14475434328150__26dc5c30-255e-4674-a991-9426c43ea371-content-3": {
           "type": "content",
           "settings": {
             "title": "Tab Title",
@@ -324,13 +285,13 @@
         }
       },
       "block_order": [
-        "template--14475434328150__59f820b0-3097-41d3-8703-8f3b3ac4ee70-content-1",
-        "template--14475434328150__59f820b0-3097-41d3-8703-8f3b3ac4ee70-content-2",
-        "template--14475434328150__59f820b0-3097-41d3-8703-8f3b3ac4ee70-content-3"
+        "template--14475434328150__26dc5c30-255e-4674-a991-9426c43ea371-content-1",
+        "template--14475434328150__26dc5c30-255e-4674-a991-9426c43ea371-content-2",
+        "template--14475434328150__26dc5c30-255e-4674-a991-9426c43ea371-content-3"
       ],
       "settings": {
         "color_scheme": "",
-        "width": "full-width",
+        "width": "wrapper-width",
         "padding_top": 36,
         "padding_bottom": 36,
         "rows": 5
@@ -345,6 +306,6 @@
     "dffea033-b2a6-4346-ac66-8c1f217035df",
     "43ba7001-4c38-4e75-9339-3c902acdfe50",
     "a8751c81-156a-45d8-a13f-681e986217dd",
-    "59f820b0-3097-41d3-8703-8f3b3ac4ee70"
+    "26dc5c30-255e-4674-a991-9426c43ea371"
   ]
 }
