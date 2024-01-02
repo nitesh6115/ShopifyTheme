@@ -82,10 +82,12 @@
         
         </div>
         <div class="cart-item-image ">
+          <a href="{{ item.url}}">
         <img class="feature-image radius-10 overflow-hidden" height="{{ item.image.height }}" width="{{ item.image.width }}"
         src="{{ item.image| img_url: '160x' }}"
         alt="{{ item.image.alt | escape }}"
         loading="lazy">
+          </a>
         </div>
         </div>
         <div class="cart_bottom border-top">
