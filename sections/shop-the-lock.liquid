@@ -175,13 +175,13 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
     "blocks":[
      
      {
-       "type": "block-1",
-       "name": "Block 1",
+       "type": "slide",
+       "name": "Looks Slide",
        "settings": [
-                  {
-            "type":"image_picker",
-            "label":"Image",
-            "id":"image"
+              {
+                  "type":"image_picker",
+                  "label":"Image",
+                  "id":"image"
           },
          {
            "type":"header",
@@ -290,10 +290,23 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
        ]
      }
          ],
-     
-    
  
-    "presets":[{"name":"Shop the look"}]
+    "presets":[
+      {
+        "name":"Shop the look",
+        "blocks":[
+          {
+            "type": "slide"
+          },
+          {
+            "type": "slide"
+          },
+          {
+            "type": "slide"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
 
