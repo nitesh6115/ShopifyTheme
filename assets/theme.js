@@ -194,14 +194,14 @@ function AddMainProduct(AddMainProduct) {
   }
 }
 function changeActive(event) {
-  // var mainParent = event.closest('.featured-product');
-  // var childParent = event.closest('.selector-wrapper');
-  // var selcterValue = event.getAttribute('data-title')
-  // var SizeSelectorOption = childParent.querySelectorAll('.size-selector')
-  // SizeSelectorOption.forEach(sizeOption => {
-  //     sizeOption.classList.remove("active");
-  // })
-  // event.closest('.size-selector').classList.add("active");
+  var mainParent = event.closest('.featured-product');
+  var childParent = event.closest('.selector-wrapper');
+  var selcterValue = event.getAttribute('data-title')
+  var SizeSelectorOption = childParent.querySelectorAll('.size-selector')
+  SizeSelectorOption.forEach(sizeOption => {
+      sizeOption.classList.remove("active");
+  })
+  event.closest('.size-selector').classList.add("active");
 }
 
 function ChnageVaiantImg(event) {
