@@ -7,6 +7,8 @@ video.video-js {
 }
 .BoxItems .image-box svg {
     height: 100%;
+    border: 1px solid;
+    border-radius: 30px;
     width: 100%;
 }
 .text-box {
