@@ -234,7 +234,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
    <select id="product-select" name="id" >
     {% for variant in product.variants %}
     {% if variant.available == true %}
-    <option data-avability="true" data-price="{{ variant.price }}" data-compare="{{ variant.compare_at_price }}" value="{{variant.id}}">{{ variant.title }}</option>
+    <option data-avability="true" data-sku="{{ variant.sku }}" data-price="{{ variant.price }}" data-compare="{{ variant.compare_at_price }}" value="{{variant.id}}">{{ variant.title }}</option>
     {% else %} 
     <option data-avability="false" disabled="disabled" value="{{variant.id}}">{{ variant.title }}</option>
     {% endif %}
