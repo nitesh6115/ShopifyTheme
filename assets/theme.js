@@ -266,7 +266,7 @@ function price_update(event,variant_id){
             console.log(variantPrice)
             const PriceElement = mainParent.querySelectorAll('.regular_price');
             if(PriceElement){
-              PriceElement.forEach(item =>){
+              PriceElement.forEach(item => {
                 item.innerHTML = Shopify.formatMoney(variantPrice)
               })
             }
