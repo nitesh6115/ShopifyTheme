@@ -90,9 +90,9 @@ section#cartDrawer .drawerProducts {
     bottom: 0;
     visibility: hidden;
     width: 100%;
-    -webkit-backdrop-filter: saturate(180%) blur(3rem);
-backdrop-filter: saturate(180%) blur(3rem);
-  cursor: pointer;
+    -webkit-backdrop-filter:  blur(3rem);
+    backdrop-filter:  blur(3rem);
+    cursor: pointer;
 }
 
 
