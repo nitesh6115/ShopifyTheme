@@ -4,6 +4,10 @@
 .collection-list {
     margin-top: 25px;
 }
+.collection-list svg {
+    border: 1px solid;
+    border-radius: 20px;
+}
 .collection-list.swiper {
     overflow: inherit;
 }
