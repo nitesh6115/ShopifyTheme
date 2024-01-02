@@ -1814,6 +1814,16 @@ div#quick-product-view {
     right: 0;
     bottom: 0;
 }
+
+#quick-product-view div#MainSliderBox .swiper-button-next.secondary-button {
+    right: 15px;
+    top: 50%;
+}
+
+#quick-product-view div#MainSliderBox .swiper-button-prev.secondary-button {
+    left: 15px;
+    top: 50%;
+}
 #quick-product-view .featured-product::-webkit-scrollbar {
     width: 5px;
     border-radius:2px;
