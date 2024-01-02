@@ -5,6 +5,9 @@
 body {
     margin-top: 70px;
 }
+html{
+  overflow: hidden;
+}
 .loading-effect:before {
     background-image: var(--flash-wrapper-image);
     content: "";
