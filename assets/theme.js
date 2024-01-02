@@ -212,7 +212,7 @@ function price_update(event,variant_id){
         console.log(item.value)
         var variant = item.value;
         if (variant === variant_id) {
-            console.log(text)
+            console.log(variant)
             const variantId = item.value;
             const variantPrice = item.getAttribute('data-price');
             const variantComparePrice = item.getAttribute('data-compare');
