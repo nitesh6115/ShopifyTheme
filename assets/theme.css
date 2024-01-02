@@ -1758,7 +1758,7 @@ div#quick-product-view, #size_guide {
     overflow: hidden;
 }
 
-.open-quick-view div#quick-product-view. .size-guide-open #SizeGuide {
+.open-quick-view div#quick-product-view, .size-guide-open #SizeGuide {
     visibility: visible;
     opacity: 1;
     transform: translate(-50%, -50%);
