@@ -246,56 +246,6 @@
         "text_alignment": "left",
         "image": "shopify:\/\/shop_images\/318787385_1016609336398373_8663951506333362760_n.jpg"
       }
-    },
-    "26dc5c30-255e-4674-a991-9426c43ea371": {
-      "type": "collection-tabbing",
-      "blocks": {
-        "template--14475434328150__26dc5c30-255e-4674-a991-9426c43ea371-content-1": {
-          "type": "content",
-          "settings": {
-            "title": "Tab Title",
-            "heading": "Heading",
-            "sub_title": "",
-            "slide-collection": "",
-            "total_products": 8,
-            "button_text": "Shop Now"
-          }
-        },
-        "template--14475434328150__26dc5c30-255e-4674-a991-9426c43ea371-content-2": {
-          "type": "content",
-          "settings": {
-            "title": "Tab Title",
-            "heading": "Heading",
-            "sub_title": "",
-            "slide-collection": "",
-            "total_products": 8,
-            "button_text": "Shop Now"
-          }
-        },
-        "template--14475434328150__26dc5c30-255e-4674-a991-9426c43ea371-content-3": {
-          "type": "content",
-          "settings": {
-            "title": "Tab Title",
-            "heading": "Heading",
-            "sub_title": "",
-            "slide-collection": "",
-            "total_products": 8,
-            "button_text": "Shop Now"
-          }
-        }
-      },
-      "block_order": [
-        "template--14475434328150__26dc5c30-255e-4674-a991-9426c43ea371-content-1",
-        "template--14475434328150__26dc5c30-255e-4674-a991-9426c43ea371-content-2",
-        "template--14475434328150__26dc5c30-255e-4674-a991-9426c43ea371-content-3"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "width": "wrapper-width",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "rows": 5
-      }
     }
   },
   "order": [
@@ -305,7 +255,6 @@
     "9ac45232-d4da-4400-b33b-469cbb27e83e",
     "dffea033-b2a6-4346-ac66-8c1f217035df",
     "43ba7001-4c38-4e75-9339-3c902acdfe50",
-    "a8751c81-156a-45d8-a13f-681e986217dd",
-    "26dc5c30-255e-4674-a991-9426c43ea371"
+    "a8751c81-156a-45d8-a13f-681e986217dd"
   ]
 }
