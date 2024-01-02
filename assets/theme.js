@@ -311,6 +311,7 @@ function ChnageVaiantImg(event) {
                 autoplay: 7000,
                 speed: 300,
                 slidesPerView: 1,
+                autoHeight: true,
                 effect: 'fade',
                 navigation: {
                     nextEl: nextbutton,
