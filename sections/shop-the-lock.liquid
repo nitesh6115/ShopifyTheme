@@ -30,9 +30,13 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
           <div class="shoplock-image radius-30 overflow-hidden">
             {% if block.settings.image != blank %}
               <img width="{{ block.settings.image.widht }}" height="{{ block.settings.image.height }}" alt="{{ block.settings.image.alt }}" loading="lazy" src ="{{ block.settings.image |img_url:'615x768' }}">
-           {% endif %}
-          {% if block.settings.product_list1 != blank or block.settings.product_list2 != blank  or block.settings.product_list3 != blank or block.settings.product_list4 != blank%}
+             {% else %}
+              {{ 'image' | placeholder_svg_tag }}
+            {% endif %}
            <div class="DotsBox">
+             {% if block.settings.product_list1 == blank and block.settings.product_list2 == blank  or block.settings.product_list3 == blank or block.settings.product_list4 == blank%}
+             <div onclick="openShopLookProduct(this)" data-index="0" class="dotsAnimate active dot-1" style="top: 50%; left: 50%;"></div>
+             {% endif %}
             {% if block.settings.product_list1 != blank  %}
              <div onclick="openShopLookProduct(this)" data-index="0" class="dotsAnimate active dot-1" style="top: {{ block.settings.top_position_1 }}%; left: {{  block.settings.left_position_1 }}%;"></div>
                 {% endif %}
@@ -44,8 +48,8 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
                 {% endif %}
              {% if block.settings.product_list4 != blank  %}
                 <div onclick="openShopLookProduct(this)" data-index="3" class="dotsAnimate dot-4" style="top: {{ block.settings.top_position_4 }}%; left: {{  block.settings.left_position_4 }}%;"></div>
-               {% endif %}</div>
-            {% endif %}
+               {% endif %}
+            </div>
           </div>
           
           <div class= "shopock-productCard mobile-hide">
