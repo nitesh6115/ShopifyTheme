@@ -177,7 +177,6 @@ function ChangeSize(event){
     }
 }
 function ManiProduct(element, event, variantId){
-  console.log(event)
   const addToCartBtn = element.querySelector('.add-to-cart');
   const SizeValue = event.getAttribute('data-title')
   addToCartBtn.innerHTML = 'Add '+SizeValue+' To Bag';
@@ -283,7 +282,6 @@ function ChnageVaiantImg(event) {
                 loop: true,
                 zoom: true,
                 slidesPerView: 1,
-                preventClicks: true,
                 navigation: {
                     nextEl: nextbutton,
                     prevEl: prebutton,
@@ -313,8 +311,6 @@ function ChnageVaiantImg(event) {
                 autoplay: 7000,
                 speed: 300,
                 slidesPerView: 1,
-                preventClicks: true,
-                noSwipingClass: 'swiper-no-swiping',
                 effect: 'fade',
                 navigation: {
                     nextEl: nextbutton,
