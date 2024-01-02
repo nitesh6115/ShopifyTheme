@@ -263,7 +263,6 @@ function price_update(event,variant_id){
             const variantId = item.value;
             const variantPrice = item.getAttribute('data-price');
             const variantComparePrice = item.getAttribute('data-compare');
-            console.log(variantPrice)
             const PriceElement = mainParent.querySelectorAll('.regular_price');
             if(PriceElement){
               PriceElement.forEach(item => {
@@ -271,6 +270,11 @@ function price_update(event,variant_id){
               })
             }
             const CPElement = mainParent.querySelectorAll('.compare_at_price');
+            if(CPElement){
+              CPElement.forEach(item => {
+                item.innerHTML = Shopify.formatMoney(variantComparePrice)
+              })
+            }
         }
     })
   
