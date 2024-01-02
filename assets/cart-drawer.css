@@ -273,6 +273,7 @@ section#cartDrawer .drawerProducts {
 }
 section#cartDrawer {
     align-items: flex-end;
+    overflow: hidden;
 }
 .border-top.large-up-hide.medium-hide {
     position: sticky;
