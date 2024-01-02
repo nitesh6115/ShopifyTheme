@@ -98,6 +98,48 @@
     },
     "9ac45232-d4da-4400-b33b-469cbb27e83e": {
       "type": "shop-the-lock",
+      "blocks": {
+        "522d55c2-1c63-432f-8aa6-159eee71c2a6": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_2019_11_07T05_25_29_667Z.jpg",
+            "product_list1": "5-pocket-jean",
+            "top_position_1": 50,
+            "left_position_1": 50,
+            "product_list2": "",
+            "top_position_2": 80,
+            "left_position_2": 40,
+            "product_list3": "a-line-mini-dress-blue",
+            "top_position_3": 30,
+            "left_position_3": 20,
+            "product_list4": "",
+            "top_position_4": 50,
+            "left_position_4": 20
+          }
+        },
+        "37dba640-876e-48cd-8f81-53ec3f07cd09": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/desig-5.webp",
+            "product_list1": "acb-top-in-chipped-brick",
+            "top_position_1": 21,
+            "left_position_1": 77,
+            "product_list2": "",
+            "top_position_2": 35,
+            "left_position_2": 78,
+            "product_list3": "a-line-jacket-in-black",
+            "top_position_3": 30,
+            "left_position_3": 20,
+            "product_list4": "",
+            "top_position_4": 50,
+            "left_position_4": 20
+          }
+        }
+      },
+      "block_order": [
+        "522d55c2-1c63-432f-8aa6-159eee71c2a6",
+        "37dba640-876e-48cd-8f81-53ec3f07cd09"
+      ],
       "settings": {
         "color_scheme": "background-1",
         "width": "wrapper-width",
