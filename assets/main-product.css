@@ -73,7 +73,9 @@
     border: 1px solid;
     border-radius: 10px;
 }
-
+div#MainSliderBox .product-image-slide.swiper {
+    overflow: visible;
+}
 .size-grid .selector-wrapper {
     display: flex;
     flex-wrap: wrap;
