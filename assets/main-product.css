@@ -76,6 +76,9 @@
 div#MainSliderBox .product-image-slide.swiper {
     overflow: visible;
 }
+div#MainSliderBox .swiper-zoom-container {
+    overflow: hidden;
+}
 .size-grid .selector-wrapper {
     display: flex;
     flex-wrap: wrap;
