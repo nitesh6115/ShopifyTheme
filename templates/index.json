@@ -358,28 +358,12 @@
     "d76041f7-14fe-4cca-88c3-2ec413fd628b": {
       "type": "video-with-image",
       "blocks": {
-        "template--14475434328150__d76041f7-14fe-4cca-88c3-2ec413fd628b-video-1": {
-          "type": "video",
-          "settings": {
-            "color_scheme": "",
-            "overlay_opacity": 0,
-            "overlay_opacity_color": "#000",
-            "desktop_content_position": "bottom-center",
-            "title": "<p>Heading<\/p>",
-            "sub-title": "Sub-Heading",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "second_button_label": "",
-            "second_button_link": ""
-          }
-        },
         "template--14475434328150__d76041f7-14fe-4cca-88c3-2ec413fd628b-image-1": {
           "type": "image",
           "settings": {
             "color_scheme": "",
             "overlay_opacity": 0,
-            "overlay_opacity_color": "#000",
+            "overlay_opacity_color": "#000000",
             "desktop_content_position": "bottom-center",
             "title": "<p>Heading<\/p>",
             "sub-title": "Sub-Heading",
@@ -395,7 +379,7 @@
           "settings": {
             "color_scheme": "",
             "overlay_opacity": 0,
-            "overlay_opacity_color": "#000",
+            "overlay_opacity_color": "#000000",
             "desktop_content_position": "bottom-center",
             "title": "<p>Heading<\/p>",
             "sub-title": "Sub-Heading",
@@ -408,7 +392,6 @@
         }
       },
       "block_order": [
-        "template--14475434328150__d76041f7-14fe-4cca-88c3-2ec413fd628b-video-1",
         "template--14475434328150__d76041f7-14fe-4cca-88c3-2ec413fd628b-image-1",
         "template--14475434328150__d76041f7-14fe-4cca-88c3-2ec413fd628b-image-2"
       ],
@@ -418,6 +401,16 @@
         "padding_top": 36,
         "padding_bottom": 36,
         "BigImagePosition": "left"
+      }
+    },
+    "d0bde926-64fc-47d3-92e6-8a93920bb714": {
+      "type": "collection-tabbing",
+      "settings": {
+        "color_scheme": "",
+        "width": "full-width",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "rows": 5
       }
     }
   },
@@ -430,6 +423,7 @@
     "43ba7001-4c38-4e75-9339-3c902acdfe50",
     "a8751c81-156a-45d8-a13f-681e986217dd",
     "cfe3ccd7-78fb-481e-b12f-f3f9ace5a935",
-    "d76041f7-14fe-4cca-88c3-2ec413fd628b"
+    "d76041f7-14fe-4cca-88c3-2ec413fd628b",
+    "d0bde926-64fc-47d3-92e6-8a93920bb714"
   ]
 }
