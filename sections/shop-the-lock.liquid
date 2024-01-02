@@ -36,7 +36,10 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
            <div class="DotsBox">
              {% if block.settings.product_list1 == blank and block.settings.product_list2 == blank  or block.settings.product_list3 == blank or block.settings.product_list4 == blank%}
              <div onclick="openShopLookProduct(this)" data-index="0" class="dotsAnimate active dot-1" style="top: 50%; left: 50%;"></div>
-             {% endif %}
+             <div onclick="openShopLookProduct(this)" data-index="1" class="dotsAnimate active dot-2" style="top: 40%; left: 30%;"></div>
+             <div onclick="openShopLookProduct(this)" data-index="2" class="dotsAnimate active dot-3" style="top: 70%; left: 80%;"></div>
+             
+               {% endif %}
             {% if block.settings.product_list1 != blank  %}
              <div onclick="openShopLookProduct(this)" data-index="0" class="dotsAnimate active dot-1" style="top: {{ block.settings.top_position_1 }}%; left: {{  block.settings.left_position_1 }}%;"></div>
                 {% endif %}
