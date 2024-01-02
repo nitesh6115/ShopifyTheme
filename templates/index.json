@@ -412,6 +412,56 @@
         "padding_bottom": 36,
         "rows": 5
       }
+    },
+    "681ec9c4-3510-4a6f-844f-cc1daac6fe31": {
+      "type": "collection-tabbing",
+      "blocks": {
+        "template--14475434328150__681ec9c4-3510-4a6f-844f-cc1daac6fe31-content-1": {
+          "type": "content",
+          "settings": {
+            "title": "Tab Title",
+            "heading": "Heading",
+            "sub_title": "",
+            "slide-collection": "",
+            "total_products": 8,
+            "button_text": "Shop Now"
+          }
+        },
+        "template--14475434328150__681ec9c4-3510-4a6f-844f-cc1daac6fe31-content-2": {
+          "type": "content",
+          "settings": {
+            "title": "Tab Title",
+            "heading": "Heading",
+            "sub_title": "",
+            "slide-collection": "",
+            "total_products": 8,
+            "button_text": "Shop Now"
+          }
+        },
+        "template--14475434328150__681ec9c4-3510-4a6f-844f-cc1daac6fe31-content-3": {
+          "type": "content",
+          "settings": {
+            "title": "Tab Title",
+            "heading": "Heading",
+            "sub_title": "",
+            "slide-collection": "",
+            "total_products": 8,
+            "button_text": "Shop Now"
+          }
+        }
+      },
+      "block_order": [
+        "template--14475434328150__681ec9c4-3510-4a6f-844f-cc1daac6fe31-content-1",
+        "template--14475434328150__681ec9c4-3510-4a6f-844f-cc1daac6fe31-content-2",
+        "template--14475434328150__681ec9c4-3510-4a6f-844f-cc1daac6fe31-content-3"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "width": "full-width",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "rows": 5
+      }
     }
   },
   "order": [
@@ -424,6 +474,7 @@
     "a8751c81-156a-45d8-a13f-681e986217dd",
     "cfe3ccd7-78fb-481e-b12f-f3f9ace5a935",
     "d76041f7-14fe-4cca-88c3-2ec413fd628b",
-    "d0bde926-64fc-47d3-92e6-8a93920bb714"
+    "d0bde926-64fc-47d3-92e6-8a93920bb714",
+    "681ec9c4-3510-4a6f-844f-cc1daac6fe31"
   ]
 }
