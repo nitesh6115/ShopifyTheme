@@ -126,16 +126,9 @@
           <div class="size-selctor-wrapper">
            {% for value in option.values %}
              <div class="size-selector secondary-button {% if option.selected_value == value %}active{% endif %}" data-title="{{ value | escape }}">
-             
-               <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" onclick="SelectVariant(this)" type="size" data-title="{{ value |escape }}">
+              <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" onclick="SelectVariant(this)" type="size" data-title="{{ value |escape }}">
                 {{ value }}
               </label>
-              <input class="single-option-selector" 
-                 id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" 
-                 type="radio"
-                 name="{{ option.name }}" 
-                 value="{{ value | escape }}"
-                 data-index="option{{index}}" {% if option.selected_value==value %}checked="true" {% endif %} />
              </div>
             {% endfor %}
           </div>
