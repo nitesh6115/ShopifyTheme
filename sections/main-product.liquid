@@ -209,9 +209,9 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
     {% unless option.name == "Color"  or option.name == 'COLOR'%}
       {% assign index = forloop.index %}
       <div class="OtherOptions selector-wrapper" data-option-size="{{ forloop.index0 }}">
-      <div class="OpenName {% if product.options contains 'Size' %}SizeGuidEnabled{% endif %}">
+      <div class="OpenName {% if  option.name contains 'Size' %}SizeGuidEnabled{% endif %}">
         <span>Select {{ option.name }}</span>
-      {% if product.options contains 'Size' %}
+      {% if  option.name contains 'Size' %}
         <a class="trigger-pop-up">size guide</a>
         {% endif %}
         </div>
