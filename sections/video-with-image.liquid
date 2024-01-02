@@ -39,6 +39,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
     {% endif %}
    
     <div class="text-box banner-content-{{ block.settings.desktop_content_position}} color-{{ block.settings.color_scheme }}">
+        
         {% if block.settings.title !=blank %}
         <h1 class="heading">{{ block.settings.title }}</h1>
         {% endif %}
@@ -233,17 +234,20 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
         {
           "type": "richtext",
           "id": "title",
-          "label": "Heading"
+          "label": "Heading",
+          "default": "<p>Heading</p>"
         },
         {
           "type": "text",
           "id": "sub-title",
-          "label": "Sub Heading"
+          "label": "Sub Heading",
+          "default": "Sub-Heading"
         },
         {
           "type": "richtext",
           "id": "text",
-          "label": "Description"
+          "label": "Description",
+          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
         },
         {
           "type": "text",
@@ -329,17 +333,20 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
         {
           "type": "richtext",
           "id": "title",
-          "label": "Heading"
+          "label": "Heading",
+          "default":"<p>Heading</p>"
         },
         {
           "type": "text",
           "id": "sub-title",
-          "label": "Sub Heading"
+          "label": "Sub Heading",
+          "default": "Sub-Heading"
         },
         {
           "type": "richtext",
           "id": "text",
-          "label": "Description"
+          "label": "Description",
+          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
         },
         {
           "type": "text",
