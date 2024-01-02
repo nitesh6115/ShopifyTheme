@@ -278,9 +278,22 @@ section#cartDrawer {
     right: 0;
     bottom: 0;
     z-index: 99;
-    background: #ccc;
     order: 3;
     width: 100%;
+    backdrop-filter: blur(21px);
+    padding: 0 25px;
+    text-align: center;
+}
+.border-top.large-up-hide.medium-hide h4 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 15px 0;
+}
+.border-top.large-up-hide.medium-hide .cta-btn {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
 }
 
 div#cart_drawer_box.active .drawer-box {
