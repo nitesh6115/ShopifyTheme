@@ -2091,6 +2091,9 @@ div#quick-product-view .ProductTabs .TabListContainer.active .TabHeader span.Ico
     overflow: visible;
     width: 100%;
 }
+#quick-product-view div#MainSliderBox .product-image-container .product-image-slide.swiper {
+    overflow: visible;
+}
 #quick-product-view .featured-product {
     height: auto;
     width: 100%;
