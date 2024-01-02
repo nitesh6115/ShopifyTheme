@@ -1815,7 +1815,9 @@ div#quick-product-view {
     bottom: 0;
     border-radius: 20px;
 }
-
+#quick-product-view div#MainSliderBox img.borrder-all.radius-20.feature-image{
+  border-radius: 0;
+}
 #quick-product-view div#MainSliderBox .swiper-button-next.secondary-button {
     right: 15px;
     top: 50%;
