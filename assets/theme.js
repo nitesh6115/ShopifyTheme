@@ -179,7 +179,7 @@ function ChangeSize(event){
 function ManiProduct(element, event, variantId){
   const addToCartBtn = element.querySelector('.add-to-cart');
   const SizeValue = event.getAttribute('data-title');
-  price_update(event,variantId)
+  price_update(event,variantId);
   addToCartBtn.innerHTML = 'Add '+SizeValue+' To Bag';
   addToCartBtn.classList.add('EnabledButton');
   addToCartBtn.classList.add('primary-button');
