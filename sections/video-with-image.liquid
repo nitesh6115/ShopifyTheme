@@ -32,9 +32,15 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
             <source src="{{ block.settings.mobile_video_link.sources[1].url }}" type="video/mp4">
         </video>
         {% endif %}
+       {% if block.settings.video_link != blank %}
         <video loading="lazy" class=" video-js {% if block.settings.mobile_video_link !=blank %}mobile-hide{% endif %}" loop autoplay preload="none" muted playsinline >
             <source src="{{ block.settings.video_link.sources[1].url }}" type="video/mp4">
         </video>
+      {% else %}
+      <video loading="lazy" class=" video-js {% if block.settings.mobile_video_link !=blank %}mobile-hide{% endif %}" loop autoplay preload="none" muted playsinline >
+            <source src="https://cdn.shopify.com/videos/c/vp/8800cce499bd4eacbf1ee8bff914bfa1/8800cce499bd4eacbf1ee8bff914bfa1.HD-720p-3.0Mbps-22482652.mp4" type="video/mp4">
+        </video>
+      {% endif %}
     </div>
     {% endif %}
    
