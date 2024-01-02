@@ -267,7 +267,7 @@ section#cartDrawer .drawerProducts {
     position: relative;
     margin-bottom: 30px;
     transform: translateY(0);
-    position: unset;
+    position: relative;
 }
 section#cartDrawer {
     align-items: flex-end;
