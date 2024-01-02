@@ -15,7 +15,7 @@
 </style>
 <div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
 <div class="RecommendedProducts {% if section.settings.width == 'full-width' %}full-width{% elsif section.settings.width == 'wrapper-width' %}page-width{% else %} narrow-width {% endif %}">
-<div class="product-recommendations" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=5">
+<div class="product-recommendations" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=10">
 {%- if recommendations.performed and recommendations.products_count > 0 -%}
 <h2 class="heading center">{{ section.settings.heading }}</h2>
 <div class="recommended-products collection-list swiper">
