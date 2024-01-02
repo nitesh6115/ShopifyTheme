@@ -179,11 +179,11 @@ function ChangeSize(event){
 function ManiProduct(element, event, variantId){
   const addToCartBtn = element.querySelector('.add-to-cart');
   const SizeValue = event.getAttribute('data-title');
-  price_update(event,variantId);
   addToCartBtn.innerHTML = 'Add '+SizeValue+' To Bag';
   addToCartBtn.classList.add('EnabledButton');
   addToCartBtn.classList.add('primary-button');
-  addToCartBtn.setAttribute('data-id',variantId)
+  addToCartBtn.setAttribute('data-id',variantId);
+  price_update(event,variantId);
 }
 function AddMainProduct(AddMainProduct) {
   const checkEnabled = AddMainProduct.classList.contains('EnabledButton');
