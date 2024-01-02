@@ -907,7 +907,9 @@ img.feature-image {
 .featured-product:hover .product-info {
     opacity: 0;
 }
-
+.product-page .product-info {
+    opacity: 1 !important;
+}
 .variant-images img {
     float: left;
     width: 100%;
@@ -2080,6 +2082,7 @@ div#quick-product-view .ProductTabs .TabListContainer.active .TabHeader span.Ico
     width: 100%;
     height: auto;
 }
+
 #quick-product-view  div#MainSliderBox .product-image-container {
     position: relative;
     left: inherit;
