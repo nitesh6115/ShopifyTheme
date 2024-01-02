@@ -236,6 +236,7 @@ div#cart_drawer {
     display: flex;
     flex-wrap: wrap;
     position: inherit;
+    pointer-events: all;
     overflow-y: auto;
     transform: translateY(100%);
 }
