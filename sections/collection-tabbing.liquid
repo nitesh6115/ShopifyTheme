@@ -67,6 +67,14 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
                         <div class="TabProductBox">
                         <div class="collection-list swiper" >
                           <div class="swiper-wrapper">
+                            {% if block.settings.slide-collection == blank %}
+                              {% for i in (1..8) %}
+                              {% capture svg  %}product-{{ i }}{% endcapture %}
+                              <div class="coll featured-product swiper-slide">
+                                {{ svg | placeholder_svg_tag }}
+                              </div>
+                               {% endfor %}
+                            {% endif %}
                             {% assign collection = collections[block.settings.slide-collection] %}
                             {% for product in collection.products  limit:  block.settings.total_products %}
                               <div class="coll featured-product swiper-slide">
