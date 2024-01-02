@@ -1757,7 +1757,9 @@ div#quick-product-view, #size_guide {
     max-height: 90%;
     overflow: hidden;
 }
-
+#size_guide {
+  max-width: 500px;
+}
 .open-quick-view div#quick-product-view, .size-guide-open #size_guide {
     visibility: visible;
     opacity: 1;
