@@ -207,7 +207,7 @@ function changeActive(event) {
 function price_update(event,variant_id){
   const MainSelect = event.querySelectorAll('select option');
   MainSelect.forEach(item => {
-        var variant = item.getAttribute('data-value')
+        var variant = item.value;
         if (variant === variant_id) {
             console.log(text)
             const variantId = item.value;
