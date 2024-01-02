@@ -230,6 +230,9 @@ div#cart_drawer {
     margin-bottom: 10px;
 }
 @media(max-width: 767px){
+  #cart_drawer_box.active section#cartDrawer .drawer_overlay {
+    background: transparent !important;
+}
   .drawer-box {
     grid-template-columns: auto;
     grid-template-rows: auto;
