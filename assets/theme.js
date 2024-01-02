@@ -203,7 +203,9 @@ function changeActive(event) {
   })
   event.closest('.size-selector').classList.add("active");
 }
-
+function price_update(event,price,compare_at_price){
+  
+}
 function ChnageVaiantImg(event) {
     var mainParent = event.closest('.featured-product');
     var checkClass = mainParent.classList.contains('product-page')
