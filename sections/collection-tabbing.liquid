@@ -72,6 +72,10 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
                               {% capture svg  %}product-{{ i }}{% endcapture %}
                               <div class="coll featured-product swiper-slide">
                                 {{ svg | placeholder_svg_tag }}
+                                <div class="product-info">
+                                  <h3>Product Title-{{ i }}</h3>
+                                  <p><span class="money">Rs. 180.60</span></p>
+                                </div>
                               </div>
                                {% endfor %}
                             {% endif %}
