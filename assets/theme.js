@@ -178,7 +178,8 @@ function ChangeSize(event){
 }
 function ManiProduct(element, event, variantId){
   const addToCartBtn = element.querySelector('.add-to-cart');
-  const SizeValue = event.getAttribute('data-title')
+  const SizeValue = event.getAttribute('data-title');
+  price_update(event,variantId)
   addToCartBtn.innerHTML = 'Add '+SizeValue+' To Bag';
   addToCartBtn.classList.add('EnabledButton');
   addToCartBtn.classList.add('primary-button');
@@ -203,7 +204,20 @@ function changeActive(event) {
   })
   event.closest('.size-selector').classList.add("active");
 }
-function price_update(event,price,compare_at_price){
+function price_update(event,variant_id){
+  const MainSelect = event.querySelectorAll('select option');
+  MainSelect.forEach(item => {
+        var variant = item.getAttribute('data-value')
+        if (variant === variant_id) {
+            console.log(text)
+            const variantId = item.value;
+            const variantPrice = item.getAttribute('data-price');
+            const variantComparePrice = item.getAttribute('data-compare');
+            console.log(variantPrice)
+        }
+    })
+  const PriceElement = 
+  const CPElement = ''
   
 }
 function ChnageVaiantImg(event) {
