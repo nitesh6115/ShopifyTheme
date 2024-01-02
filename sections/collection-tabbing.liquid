@@ -197,12 +197,14 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
         {
           "type": "text",
           "label": "Tab Title",
-          "id": "title"
+          "id": "title",
+          "default": "Tab Title"
         },
         {
           "type": "text",
           "label": "Heading Title",
-          "id": "heading"
+          "id": "heading",
+          "default": "Heading"
         },
         {
           "type": "text",
@@ -234,7 +236,18 @@ padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px
   ],
   "presets": [
     {
-      "name": "Collection Tabbing"
+      "name": "Collection Tabbing",
+      "blocks":[
+        {
+          "type": "content"
+        },
+        {
+          "type": "content"
+        },
+        {
+          "type": "content"
+        }
+      ]
     }
   ]
 }
