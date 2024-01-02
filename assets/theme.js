@@ -216,9 +216,8 @@ function price_update(event,variant_id){
             console.log(variantPrice)
         }
     })
-  const PriceElement = 
-  const CPElement = ''
-  
+  const PriceElement = '';
+  const CPElement = '';
 }
 function ChnageVaiantImg(event) {
     var mainParent = event.closest('.featured-product');
