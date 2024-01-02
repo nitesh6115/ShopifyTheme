@@ -205,7 +205,8 @@ function changeActive(event) {
   event.closest('.size-selector').classList.add("active");
 }
 function price_update(event,variant_id){
-  var MainSelect = event.querySelectorAll('select option');
+  var mainParent = event.closest('.featured-product');
+  var MainSelect = mainParent.querySelectorAll('select option');
   console.log(MainSelect)
   MainSelect.forEach(item => {
         console.log(item.value)
