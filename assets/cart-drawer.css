@@ -244,7 +244,7 @@ section#cartDrawer .drawer_wrapper {
     width: 100%;
     height: auto;
     order: 1;
-    position: static;
+    position: relative;
     margin-bottom: 30px;
     transform: translateY(100%);
 }
