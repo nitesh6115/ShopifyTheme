@@ -98,67 +98,6 @@
     },
     "9ac45232-d4da-4400-b33b-469cbb27e83e": {
       "type": "shop-the-lock",
-      "blocks": {
-        "8ebd5eb3-46e4-4aaf-8c52-69cc1d3d1ae7": {
-          "type": "block-1",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled-4.webp",
-            "product_list1": "ara-ring-agate",
-            "top_position_1": 35,
-            "left_position_1": 37,
-            "product_list2": "axel-coat-black",
-            "top_position_2": 56,
-            "left_position_2": 38,
-            "product_list3": "",
-            "top_position_3": 35,
-            "left_position_3": 67,
-            "product_list4": "",
-            "top_position_4": 51,
-            "left_position_4": 67
-          }
-        },
-        "a478652b-11b1-423b-81f3-542a4748eb82": {
-          "type": "block-1",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled-2.webp",
-            "product_list1": "aliam-skirt-mud",
-            "top_position_1": 26,
-            "left_position_1": 17,
-            "product_list2": "",
-            "top_position_2": 80,
-            "left_position_2": 40,
-            "product_list3": "",
-            "top_position_3": 30,
-            "left_position_3": 20,
-            "product_list4": "",
-            "top_position_4": 50,
-            "left_position_4": 20
-          }
-        },
-        "dac4baf3-5bae-4e9e-8446-1d9a730dc759": {
-          "type": "block-1",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled-3.webp",
-            "product_list1": "alex-twill-pant-sand",
-            "top_position_1": 55,
-            "left_position_1": 34,
-            "product_list2": "aliam-skirt-black",
-            "top_position_2": 80,
-            "left_position_2": 40,
-            "product_list3": "ballerina-flat",
-            "top_position_3": 30,
-            "left_position_3": 20,
-            "product_list4": "",
-            "top_position_4": 50,
-            "left_position_4": 20
-          }
-        }
-      },
-      "block_order": [
-        "8ebd5eb3-46e4-4aaf-8c52-69cc1d3d1ae7",
-        "a478652b-11b1-423b-81f3-542a4748eb82",
-        "dac4baf3-5bae-4e9e-8446-1d9a730dc759"
-      ],
       "settings": {
         "color_scheme": "background-1",
         "width": "wrapper-width",
@@ -346,6 +285,75 @@
         "text_alignment": "left",
         "image": "shopify:\/\/shop_images\/318787385_1016609336398373_8663951506333362760_n.jpg"
       }
+    },
+    "cfe3ccd7-78fb-481e-b12f-f3f9ace5a935": {
+      "type": "shop-the-lock",
+      "blocks": {
+        "template--14475434328150__cfe3ccd7-78fb-481e-b12f-f3f9ace5a935-slide-1": {
+          "type": "slide",
+          "settings": {
+            "product_list1": "",
+            "top_position_1": 50,
+            "left_position_1": 50,
+            "product_list2": "",
+            "top_position_2": 80,
+            "left_position_2": 40,
+            "product_list3": "",
+            "top_position_3": 30,
+            "left_position_3": 20,
+            "product_list4": "",
+            "top_position_4": 50,
+            "left_position_4": 20
+          }
+        },
+        "template--14475434328150__cfe3ccd7-78fb-481e-b12f-f3f9ace5a935-slide-2": {
+          "type": "slide",
+          "settings": {
+            "product_list1": "",
+            "top_position_1": 50,
+            "left_position_1": 50,
+            "product_list2": "",
+            "top_position_2": 80,
+            "left_position_2": 40,
+            "product_list3": "",
+            "top_position_3": 30,
+            "left_position_3": 20,
+            "product_list4": "",
+            "top_position_4": 50,
+            "left_position_4": 20
+          }
+        },
+        "template--14475434328150__cfe3ccd7-78fb-481e-b12f-f3f9ace5a935-slide-3": {
+          "type": "slide",
+          "settings": {
+            "product_list1": "",
+            "top_position_1": 50,
+            "left_position_1": 50,
+            "product_list2": "",
+            "top_position_2": 80,
+            "left_position_2": 40,
+            "product_list3": "",
+            "top_position_3": 30,
+            "left_position_3": 20,
+            "product_list4": "",
+            "top_position_4": 50,
+            "left_position_4": 20
+          }
+        }
+      },
+      "block_order": [
+        "template--14475434328150__cfe3ccd7-78fb-481e-b12f-f3f9ace5a935-slide-1",
+        "template--14475434328150__cfe3ccd7-78fb-481e-b12f-f3f9ace5a935-slide-2",
+        "template--14475434328150__cfe3ccd7-78fb-481e-b12f-f3f9ace5a935-slide-3"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "width": "wrapper-width",
+        "title": "",
+        "sub-title": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -355,6 +363,7 @@
     "9ac45232-d4da-4400-b33b-469cbb27e83e",
     "dffea033-b2a6-4346-ac66-8c1f217035df",
     "43ba7001-4c38-4e75-9339-3c902acdfe50",
-    "a8751c81-156a-45d8-a13f-681e986217dd"
+    "a8751c81-156a-45d8-a13f-681e986217dd",
+    "cfe3ccd7-78fb-481e-b12f-f3f9ace5a935"
   ]
 }
