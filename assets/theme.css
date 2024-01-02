@@ -1893,7 +1893,7 @@ div#quick-product-view .OpenName.SizeGuidEnabled a.trigger-pop-up {
     padding: 2px 6px;
     background: #006a6861;
 }
-div#quick-product-view  .add-to-cart {
+div#quick-product-view .add-to-cart {
     border: 2px solid;
     font-size: 28px;
     text-transform: uppercase;
@@ -1901,7 +1901,11 @@ div#quick-product-view  .add-to-cart {
     border-radius: 10px;
     text-align: center;
     position: sticky;
-    bottom: 0;
+    bottom: 3rem;
+    width: 90%;
+    margin: 0 auto;
+    background: #fff;
+    color: #000;
 }
 
 div#quick-product-view  .ProductInfo h2 {
