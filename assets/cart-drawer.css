@@ -238,7 +238,7 @@ div#cart_drawer {
     position: inherit;
     pointer-events: all;
     overflow: auto;
-    transform: translateY(100%);
+    transform: translate(100% 0);
     width: 100%;
 }
 .drawer-box::-webkit-scrollbar {
