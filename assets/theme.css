@@ -1799,7 +1799,6 @@ div#quick-product-view {
 }
 
 #quick-product-view #ProductContent {
-    overflow-y: auto;
     padding: 20px;
     height: fit-content;
     width: auto;
