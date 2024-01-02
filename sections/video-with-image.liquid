@@ -24,7 +24,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 {% if block.type == 'video' %}
  
   <div class="video-with-text hover-zoom">
-  {% if block.settings.video_link != blank %}
+  
     <div class="video-box  overflow-hidden radius-30">
       <div class="overlay-opacity radius-30" style="background:{{ block.settings.overlay_opacity_color  }}; opacity: {{ block.settings.overlay_opacity | times: 0.01 }}"></div>
       {% if block.settings.mobile_video_link != blank %}
@@ -42,7 +42,6 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
         </video>
       {% endif %}
     </div>
-    {% endif %}
    
     <div class="text-box banner-content-{{ block.settings.desktop_content_position}} color-{{ block.settings.color_scheme }}" style="background: transparent;">
         
