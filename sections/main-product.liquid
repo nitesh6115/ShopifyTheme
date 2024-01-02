@@ -221,13 +221,6 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
            <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" onclick="SelectVariant(this)" type="size" data-title="{{ value |escape }}">
             {{ value }}
           </label>
-          <input class="single-option-selector" 
-             id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" 
-             type="radio"
-             name="{{ option.name }}" 
-             value="{{ value | escape }}"
-             data-index="option{{index}}" {% if option.selected_value==value
-            %}checked="true" {% endif %} />
          </div>
         {% endfor %}
       </div>
