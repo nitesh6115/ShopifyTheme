@@ -82,7 +82,7 @@
     })
     })
 
-           var collcetionImageSlider = document.querySelectorAll('.product-image-wrapper');
+           var collcetionImageSlider = productRecommendationsSection.querySelectorAll('.product-image-wrapper');
             collcetionImageSlider.forEach(item => {
                 var newElem = item.closest('.product-image-container')
                 var nextbutton = newElem.querySelectorAll('.swiper-button-next')[0];
@@ -109,7 +109,7 @@
                     swp.autoplay.stop();
                 })
             });
-            var variantImages = document.querySelectorAll('.prodouct-variant-slider');
+            var variantImages = productRecommendationsSection.querySelectorAll('.prodouct-variant-slider');
             variantImages.forEach(slider => {
                 var swiperActive = slider.querySelectorAll('.size-selector')[0];
                 // console.log("this"+swiperActive);
