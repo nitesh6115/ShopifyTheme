@@ -27,11 +27,7 @@
         <div class="CartDrawerNext swiper-button-next swiper-next secondary-button"></div>
         <div class="CartDrawerPrev swiper-button-prev swiper-prev secondary-button"></div>
       </div>
-      <div class=" border-top large-up-hide medium-hide">
-        <h4><span>Total:</span> <span id="cart__total_price"><p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }} | {{ cart.item_count }}{% if cart.item_count > 1 %} Items{% else %} Item{% endif %}</p></span></h4>
-        <a href="/cart" class="cta-btn secondary-button">View Cart</a>
-        <button  id="cart_checkout_btn"type="submit" name="checkout" class="cta-btn primary-button">checkout</button>
-      </div>
+      
       </div>
     <div class="drawer_wrapper border-all color-{{ section.settings.color_scheme }}">
       {% if cart.item_count > 0 %}
@@ -129,7 +125,11 @@
         </div>
       {% endif %}
       </div>
-        
+       <div class=" border-top large-up-hide medium-hide">
+        <h4><span>Total:</span> <span id="cart__total_price"><p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }} | {{ cart.item_count }}{% if cart.item_count > 1 %} Items{% else %} Item{% endif %}</p></span></h4>
+        <a href="/cart" class="cta-btn secondary-button">View Cart</a>
+        <button  id="cart_checkout_btn"type="submit" name="checkout" class="cta-btn primary-button">checkout</button>
+      </div> 
       </div>
     </section>
 {% schema %}
