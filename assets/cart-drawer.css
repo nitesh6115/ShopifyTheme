@@ -262,7 +262,7 @@ section#cartDrawer .drawer_wrapper {
 }
 section#cartDrawer .drawerProducts {
     width: 100%;
-    /* height: auto; */
+    height: auto;
     order: 2;
     position: relative;
     margin-bottom: 30px;
