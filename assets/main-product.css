@@ -87,7 +87,7 @@ div#MainSliderBox .product-image-slide.swiper {
     align-items: center;
 }
 
-.size-grid .selector-wrapper .size-guide a.trigger-pop-up {
+.size-grid .selector-wrapper .size-guide .trigger-pop-up {
     width: auto;
     padding: 2px 10px;
     border: 1px solid;
@@ -188,7 +188,7 @@ div#MainSliderBox .product-image-slide.swiper {
     font-weight: bold;
 }
 
-.OpenName.SizeGuidEnabled a.trigger-pop-up {
+.OpenName.SizeGuidEnabled .trigger-pop-up {
     font-size: 10px;
     border: 1px solid;
     padding: 2px 7px;
