@@ -3,7 +3,7 @@ var Shopify = Shopify || {};
 // ---------------------------------------------------------------------------
 // Money format handler
 // ---------------------------------------------------------------------------
-Shopify.money_format = "${{amount}}";
+Shopify.money_format = window.theme.moneyFormat;
 Shopify.formatMoney = function(cents, format) {
   if (typeof cents == 'string') { cents = cents.replace('.',''); }
   var value = '';
