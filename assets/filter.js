@@ -87,6 +87,13 @@ function filter_data (item) {
   const URL = Handle+'?'+queryString;
   UpdatProductGrid(URL)
 }
+function sortBy(item) {
+  const form = item.closest("#FilterForm");
+  const Handle = form.getAttribute('collection-handle');
+  const queryString = new URLSearchParams(new FormData(form)).toString()
+  const URL = Handle+'?'+queryString;
+  UpdatProductGrid(URL)
+}
 
 function removeFilter(item) {
   console.log("yes")
