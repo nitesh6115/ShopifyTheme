@@ -1,9 +1,10 @@
 function FilterOpen(FilterLabel) {
   let Parent = FilterLabel.closest('.CollectionFilterBox');
   const height = Parent.offsetHeight;
-  const childHeight = FilterLabel.closest('.FilterItem');
-        childHeight = childHeight.querySelector('FilterValues').offsetHeight;
-  const changeHeight = height+changeHeight;
+  const FilterItme = FilterLabel.closest('.FilterItem');
+  const FilterItmeValues = FilterItme.querySelector('FilterValues');
+  const childHeight = FilterItmeValues.offsetHeight;
+  const changeHeight = height+childHeight;
   const AllFilterLabel = Parent.querySelectorAll('.FilterItem');
   if(FilterLabel.classList.contains('active')){
     FilterLabel.closest('.FilterItem').classList.remove('active');
