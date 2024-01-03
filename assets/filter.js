@@ -24,6 +24,13 @@ function FilterOpen(FilterLabel) {
   }
   
 }
+function sortByChange(item) {
+  const value = item.getAttribut('data-value');
+  let SortBox = document.getElementById(SortBy);
+  let SortOption = SortBox.querySelector('option[value='+value+']);
+  console.log(SortOption)
+                                         
+}
 function UpdatProductGrid(url) {
   const URL = url;
   fetch(URL)
