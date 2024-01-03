@@ -2,7 +2,7 @@
 <form id="FilterForm">
   <div class="CollectionFilterBox">
   {%- for filter in collection.filters -%}
-    <details class="FilterItem">
+    <div class="FilterItem">
       <summary class="FilterLabel">
         <div>
           <span>{{ filter.label }}</span>
@@ -146,7 +146,7 @@
             </div>
         {%- endcase -%}
       </div>
-    </details>
+    </div>
   {%- endfor -%}
     <div class="SortBySelect">
     {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
