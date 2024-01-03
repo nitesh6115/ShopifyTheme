@@ -179,6 +179,7 @@
       {% endfor %}
   {% endfor %}
   <div class="FilterResults {% if chekResult == 0 %}hide{% endif %}">
+    <div class="ResultItems">
     <div class="RemoveFilter primary-button" onclick="removeFilter(this)" data-href="{{ collection.url }}?sort_by={{ collection.sort_by }}">Clear all</div>
     {%- for filter in collection.filters -%}
       {%- if filter.type == "price_range" -%}
@@ -197,5 +198,6 @@
         {%- endfor -%}
       {%- endif -%}
     {%- endfor -%}
+    </div>
   </div>
 </form>
