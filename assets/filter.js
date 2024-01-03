@@ -102,7 +102,7 @@ function sortByChange(item) {
   let SortBox = document.getElementById('SortBy');
   console.log(SortBox)
   let SortOption = SortBox.querySelectorAll('option[data-value="'+value+'"]')[0];
-  console.log(SortOption)
+  SortOption.click()
                                          
 }
 function removeFilter(item) {
