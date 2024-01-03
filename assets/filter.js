@@ -99,8 +99,8 @@ function sortBy(item) {
 }
 function sortByChange(item) {
   const value = item.getAttribute('data-value');
-  console.log(value)
-  let SortBox = document.getElementById(SortBy);
+  let SortBox = document.getElementById('SortBy');
+  console.log(SortBox)
   let SortOption = SortBox.querySelectorAll('option[data-value="'+value+'"]')[0];
   console.log(SortOption)
                                          
