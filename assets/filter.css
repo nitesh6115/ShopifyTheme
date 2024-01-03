@@ -66,6 +66,7 @@ form#FilterForm {
     height: 40px;
     min-width: 8rem;
     position: relative;
+    padding: 0 15px;
     white-space: nowrap;
     justify-content: center;
     
