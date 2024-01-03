@@ -215,7 +215,7 @@
       {%- else -%}
         {%- for filter_value in filter.active_values -%}
           <div class="RemoveFilter secondary-button" onclick="removeFilter(this)" data-href="{{ filter_value.url_to_remove }}">
-              {{ filter_value.label }} X
+              {{ filter_value.label }} <span class="x-cl">X</span>
           </div>
         {%- endfor -%}
       {%- endif -%}
