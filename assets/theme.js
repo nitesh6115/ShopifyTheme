@@ -1103,4 +1103,5 @@ function size_guide_open(size_guide_open) {
             document.getElementById('size_guide').innerHTML = ""
             document.getElementById('size_guide').appendChild(PageContent);
             document.body.classList.add('size-guide-open')
+        })
 }
