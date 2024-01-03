@@ -5,9 +5,6 @@
     <div class="FilterItem">
       <div class="FilterLabel" onclick="FilterOpen(this)">
           <span>{{ filter.label }} </span>
-          {%- if filter.active_values.size > 0 -%}
-            <span>({{ filter.active_values.size }})</span>
-          {%- endif -%}
           {% render 'icon-down-arrow' %}
       </div>
 
