@@ -3,7 +3,7 @@
   <div class="CollectionFilterBox">
   {%- for filter in collection.filters -%}
     <details class="FilterItem">
-      <summary>
+      <summary class="FilterLabel">
         <div>
           <span>{{ filter.label }}</span>
 
@@ -13,7 +13,7 @@
         </div>
       </summary>
 
-      <div>
+      <div class="FilterValues">
         <div>
           <p>{{ filter.active_values.size }} selected</p>
           {%- if filter.active_values.size > 0 -%}
