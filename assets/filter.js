@@ -1,8 +1,13 @@
 function OpenFilter(FilterLabel) {
   let Parent = FilterLabel.closest('.CollectionFilterBox');
   const AllFilterLabel = Parent.querySelectorAll('.FilterLabel');
-  AllFilterLabel.forEach(label =>{
+  if(FilterLabel.classList.contains('active')){
+    label.classList.removeClass('active');
+  }else{
+    AllFilterLabel.forEach(label =>{
     label.classList.removeClass('active');
   })
   FilterLabel.classList.add('active')
+  }
+  
 }
