@@ -1100,7 +1100,7 @@ function size_guide_open(size_guide_open) {
             
             var PageContent = new DOMParser().parseFromString(responseText, 'text/html').getElementById("PageContent").innerHTML;
             var container = document.createElement("div");
-            container.appendChild(PageContent);
+            container.innerHTML = PageContent;
             document.getElementById('size_guide').innerHTML = ""
             document.getElementById('size_guide').appendChild(container);
             document.body.classList.add('size-guide-open')
