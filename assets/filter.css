@@ -110,6 +110,9 @@ form#FilterForm {
     display: flex;
     padding: 5px 2rem;
 }
+.ResultItems{
+  border-top: 1px solid
+}
 .RemoveFilter:only-child {
     display: none;
 }
