@@ -28,21 +28,32 @@
     align-items: center;
     transform: translate(-50%,0);
 }
+.FilterLabel svg {
+    width: 12px;
+    height: 12px;
+}
 
+.FilterItem {
+    flex: 1;
+}
+
+form#FilterForm {
+    width: 100%;
+}
 .FilterLabel {
     text-transform: uppercase;
     align-items: center;
     cursor: pointer;
     display: flex;
     font-weight: 500;
-    height: 5rem;
+    height: 50px;
     min-width: 8rem;
     position: relative;
     white-space: nowrap;
 }
 
 .FilterValues {
-    bottom: 5rem;
+    bottom: 50px;
     left: 0;
     opacity: 0;
     overflow: auto;
