@@ -1093,9 +1093,8 @@ function size_guide_close(size_guide_close) {
 }
 function size_guide_open(size_guide_open) {
   const url = size_guide_open.getAttribute('data-url')
-  
-  console.log(URL)
-  fetch(URL)
+  console.log(url)
+  fetch(url)
         .then(response => response.text())
         .then((responseText) => {
             
