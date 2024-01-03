@@ -176,14 +176,14 @@
   </div>
 </form>
 <div class="SortBySelect">
-  {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
+  {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
   <select
     name="sort_by"
     class="facet-filters__sort select__select caption-large"
     id="SortBy"
     aria-describedby="a11y-refresh-page-message"
   >
-    {%- for option in results.sort_options -%}
+    {%- for option in collection.sort_options -%}
       <option
         value="{{ option.value | escape }}"
         {% if option.value == sort_by %}
