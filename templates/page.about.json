@@ -20,7 +20,7 @@
             "color_scheme": "scheme-0bfea3ae-e3eb-4aeb-af16-a1397b6b6630",
             "image_bg": "shopify:\/\/shop_images\/Shoppage_banner_1_1920x_d974d30d-27ee-4dc7-92df-39d2d9b56238.webp",
             "overlay_opacity": 41,
-            "overlay_opacity_color": "#000",
+            "overlay_opacity_color": "#000000",
             "desktop_content_position": "bottom-center",
             "title": "<p>OUR STORY<\/p>",
             "sub-title": "",
@@ -39,7 +39,8 @@
         "color_scheme": "",
         "width": "wrapper-width",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "BigImagePosition": "left"
       }
     },
     "8e164413-838c-45b2-a54c-5dd3f9c798c3": {
@@ -66,7 +67,7 @@
         "template--14945199882326__2542c535-8247-492f-a6e3-46cf05da9fd0-description-1": {
           "type": "description",
           "settings": {
-            "title": "<h6>We have always been intrigued by our family’s British roots dating back to the mid 1800s across Scotland and England. Our brand has drawn much inspiration from our ancestor’s lives and has given us a deeper appreciation of the beautifully rugged landscapes we are lucky to call home.<\/h6><h6>For many generations the Brydon family crest has represented protection and strength as it was symbolized with the use of four eagles. Today, being four brothers it would only be natural for the eagle’s revival to fly on all our belts.<\/h6>"
+            "title": "<p>We have always been intrigued by our family’s British roots dating back to the mid 1800s across Scotland and England. Our brand has drawn much inspiration from our ancestor’s lives and has given us a deeper appreciation of the beautifully rugged landscapes we are lucky to call home.<\/p><p>For many generations the Brydon family crest has represented protection and strength as it was symbolized with the use of four eagles. Today, being four brothers it would only be natural for the eagle’s revival to fly on all our belts.<\/p>"
           }
         }
       },
@@ -81,7 +82,7 @@
         "padding_bottom": 36,
         "image_position": "left",
         "desktop_content_position": "middle",
-        "text_alignment": "center",
+        "text_alignment": "left",
         "image": "shopify:\/\/shop_images\/Untitled-1_6bc95302-9fd2-4327-b9dd-496fa3f6e1c9.webp"
       }
     },
