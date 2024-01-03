@@ -1,5 +1,6 @@
 
-<form>
+<form id="FilterForm">
+  <div class="CollectionFilterBox">
   {%- for filter in collection.filters -%}
     <details>
       <summary>
@@ -148,7 +149,7 @@
       </div>
     </details>
   {%- endfor -%}
-
+  </div>
   <div>
     <p><a href="{{ collection.url }}?sort_by={{ collection.sort_by }}">Clear all</a></p>
 
