@@ -23,6 +23,7 @@
     position: fixed;
     z-index: 9;
     left: 50%;
+    justify-content: flex-end;
     transform: translate(-50%,0);
 }
 
