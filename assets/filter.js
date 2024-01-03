@@ -21,11 +21,8 @@ function FilterOpen(FilterLabel) {
   }
   
 }
-function filter_data (item) {
-  const form = item.closest("#FilterForm");
-  const Handle = form.getAttribute('collection-handle');
-  const queryString = new URLSearchParams(new FormData(form)).toString()
-  const URL = Handle+'?'+queryString;
+function UpdatProductGrid(url) {
+  const URL = url;
   fetch(URL)
         .then(response => response.text())
         .then((responseText) => {
@@ -81,6 +78,17 @@ function filter_data (item) {
                 }
             })
         })
-  
-  
+}
+
+function filter_data (item) {
+  const form = item.closest("#FilterForm");
+  const Handle = form.getAttribute('collection-handle');
+  const queryString = new URLSearchParams(new FormData(form)).toString()
+  const URL = Handle+'?'+queryString;
+  UpdatProductGrid(URL)
+}
+
+function ClearAllFilter(item) {
+  const URL = item.getAttribute('data-href');
+  UpdatProductGrid(URL)
 }
