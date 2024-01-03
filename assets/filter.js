@@ -24,13 +24,6 @@ function FilterOpen(FilterLabel) {
   }
   
 }
-function sortByChange(item) {
-  const value = item.getAttribute('data-value');
-  let SortBox = document.getElementById(SortBy);
-  let SortOption = SortBox.querySelector('options[value="'+value+'"]');
-  console.log(SortOption)
-                                         
-}
 function UpdatProductGrid(url) {
   const URL = url;
   fetch(URL)
@@ -104,7 +97,13 @@ function sortBy(item) {
   const URL = Handle+'?'+queryString;
   UpdatProductGrid(URL)
 }
-
+function sortByChange(item) {
+  const value = item.getAttribute('data-value');
+  let SortBox = document.getElementById(SortBy);
+  let SortOption = SortBox.querySelector('options[value="'+value+'"]');
+  console.log(SortOption)
+                                         
+}
 function removeFilter(item) {
   console.log("yes")
   const URL = item.getAttribute('data-href');
