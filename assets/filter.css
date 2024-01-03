@@ -1,0 +1,27 @@
+.CollectionFilterBox {
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    height: 5rem;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.CollectionFilters {
+    border: 1px solid;
+    border-radius: 1.5rem;
+    bottom: 1rem;
+    box-shadow: 0 0 4rem rgba(0,0,0,0.5);
+    width: calc(100% - 8rem);
+    transition-timing-function: cubic-bezier(.93,-.01,0,1.02);
+    transition-duration: .5s;
+    transition-property: all;
+    display: flex;
+    flex-direction: column;
+    max-width: calc(var(--website-wrapper-width) - 6rem);
+    overflow: hidden;
+    position: fixed;
+    z-index: 9;
+    left: 50%;
+    transform: translate(-50%,0);
+}
