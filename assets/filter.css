@@ -46,10 +46,11 @@ form#FilterForm {
     cursor: pointer;
     display: flex;
     font-weight: 500;
-    height: 50px;
+    height: 40px;
     min-width: 8rem;
     position: relative;
     white-space: nowrap;
+    justify-content: center;
 }
 
 .FilterValues {
