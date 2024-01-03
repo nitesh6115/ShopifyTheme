@@ -1092,5 +1092,15 @@ function size_guide_close(size_guide_close) {
   document.body.classList.remove('size-guide-open')
 }
 function size_guide_open(size_guide_open) {
-  document.body.classList.add('size-guide-open')
+  const url = size_guide_open.getAttribute('data-url')
+  
+  console.log(URL)
+  fetch(URL)
+        .then(response => response.text())
+        .then((responseText) => {
+            
+            var PageContent = new DOMParser().parseFromString(responseText, 'text/html').getElementById("PageContent").innerHTML;
+            document.getElementById('size_guide').innerHTML = ""
+            document.getElementById('size_guide').appendChild(PageContent);
+            document.body.classList.add('size-guide-open')
 }
