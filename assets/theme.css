@@ -1760,6 +1760,7 @@ div#quick-product-view, #size_guide {
 #size_guide {
   max-width: 600px;
   padding: 30px;
+  z-index: 666;
 }
 .open-quick-view div#quick-product-view, .size-guide-open #size_guide {
     visibility: visible;
@@ -1781,6 +1782,9 @@ div#quick-product-view, #size_guide {
     -webkit-backdrop-filter: saturate(180%) blur(3rem);
     backdrop-filter: saturate(180%) blur(3rem);
     
+}
+.size_guide_close{
+   z-index: 666;
 }
 .open-quick-view .quick_view_close,  .size-guide-open .size_guide_close{
    visibility: visible;
