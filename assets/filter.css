@@ -32,6 +32,7 @@
 
 .FilterItem {
     flex: 1;
+    position: relative;
 }
 
 form#FilterForm {
