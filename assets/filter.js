@@ -5,6 +5,7 @@ function FilterOpen(FilterLabel) {
   const FilterItmeValues = FilterItme.querySelector('.FilterValues');
   const childHeight = FilterItmeValues.offsetHeight;
   const changeHeight = height+childHeight;
+  console.log(changeHeight)
   const AllFilterLabel = Parent.querySelectorAll('.FilterItem');
   if(FilterLabel.classList.contains('active')){
     FilterLabel.closest('.FilterItem').classList.remove('active');
