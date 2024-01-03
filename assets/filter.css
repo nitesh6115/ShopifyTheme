@@ -144,7 +144,7 @@ form#FilterForm {
   width: 12px;
   height: 12px;
 }
-.FilterLabel:hover {
+.FilterLabel:hover,.FilterItem.active .FilterLabel {
     background: #ccc;
     border-radius: 5px;
     color: #000;
