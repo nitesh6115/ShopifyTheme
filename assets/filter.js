@@ -27,7 +27,7 @@ function FilterOpen(FilterLabel) {
 function sortByChange(item) {
   const value = item.getAttribut('data-value');
   let SortBox = document.getElementById(SortBy);
-  let SortOption = SortBox.querySelector('option[value="'+value+'"]);
+  let SortOption = SortBox.querySelector('options[value="'+value+'"]');
   console.log(SortOption)
                                          
 }
