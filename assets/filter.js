@@ -1,5 +1,5 @@
 function FilterOpen(FilterLabel) {
-  let Parent = FilterLabel.closest('.CollectionFilterBox');
+  let Parent = FilterLabel.closest('.CollectionFilters');
   const height = Parent.offsetHeight;
   const FilterItme = FilterLabel.closest('.FilterItem');
   const FilterItmeValues = FilterItme.querySelector('.FilterValues');
