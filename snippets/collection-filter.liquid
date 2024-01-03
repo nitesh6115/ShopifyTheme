@@ -22,7 +22,7 @@
         {%- case filter.type -%}
           {%- when 'boolean' -%}
             <ul>
-                <li>
+                <li class="{% if filter.true_value.count == 0 and filter.true_value.active == false -%}disabled{%- endif -%}">
                   <input type="checkbox"  onchange="filter_data(this)"
                     name="{{ filter.param_name }}"
                     value="{{ filter.true_value.value }}"
@@ -33,7 +33,7 @@
                   <label for="Filter-{{ filter.param_name }}-{{ filter.true_value.value }}">
                   {{ filter.true_value.label }}</label>
                 </li>
-                <li>
+                <li class="{% if filter.false_value.count == 0 and filter.false_value.active == false -%}disabled{%- endif %}">
                   <label for="Filter-{{ filter.param_name }}-{{ filter.false_value.value }}">
                   <input type="checkbox"  onchange="filter_data(this)"
                     name="{{ filter.param_name }}"
@@ -51,7 +51,7 @@
           {%- when 'list' -%}
             <ul>
               {%- for filter_value in filter.values -%}
-                <li>
+                <li class=" {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}">
                   <input type="checkbox"  onchange="filter_data(this)"
                     name="{{ filter_value.param_name }}"
                     value="{{ filter_value.value }}"
