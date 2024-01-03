@@ -3,17 +3,15 @@
   <div class="CollectionFilterBox">
   {%- for filter in collection.filters -%}
     <div class="FilterItem">
-      <summary class="FilterLabel">
-        <div>
+      <div class="FilterLabel">
           <span>{{ filter.label }}</span>
           {%- if filter.active_values.size > 0 -%}
             <span>({{ filter.active_values.size }})</span>
           {%- endif -%}
-        </div>
-      </summary>
+      </div>
 
       <div class="FilterValues">
-        <div>
+        <div class="ActiveFilter">
           <p>{{ filter.active_values.size }} selected</p>
           {%- if filter.active_values.size > 0 -%}
             <p><a href="{{ filter.url_to_remove }}">Reset</a></p>
