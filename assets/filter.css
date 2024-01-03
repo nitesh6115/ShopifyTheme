@@ -40,6 +40,27 @@
 form#FilterForm {
     width: 100%;
 }
+.FilterBody input {
+    border: none;
+    padding: 0;
+    display: none;
+}
+
+.FilterValues ul label {
+    border: 1px solid;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    display: block;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    min-width: 7rem;
+    text-align: center;
+}
+
+.ActiveFilter {
+    display: none;
+}
 .FilterLabel {
     text-transform: uppercase;
     align-items: center;
