@@ -24,6 +24,7 @@ function FilterOpen(FilterLabel) {
   }
   
 }
+
 function UpdatProductGrid(url) {
   const URL = url;
   fetch(URL)
@@ -100,9 +101,8 @@ function sortBy(item) {
 function sortByChange(item) {
   const value = item.getAttribute('data-value');
   let SortBox = document.getElementById('SortBy');
-  let SortOption = SortBox.querySelectorAll('option[data-value="'+value+'"]')[0];
-  SortOption.click()
-                                         
+  SortBox.value = value;
+  SortBox.dispatchEvent(new Event('change'))                 
 }
 function removeFilter(item) {
   console.log("yes")
