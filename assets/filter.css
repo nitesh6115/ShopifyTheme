@@ -106,3 +106,17 @@ form#FilterForm {
     visibility: visible;
 }
 .FilterBody input:checked+label{background: #000}
+.FilterResults {
+    display: flex;
+    padding: 5px 2rem;
+}
+
+.FilterResults .RemoveFilter,.FilterResults .ClearAll {
+    min-width: 7rem;
+    display: block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
