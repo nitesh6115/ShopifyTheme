@@ -122,7 +122,7 @@
       .color-{{ scheme.id }} .tablinks.active{
       color: {{ scheme.settings.secondary-button-text }};
       } 
-      .color-{{ scheme.id }} .secondary-button{
+      .color-{{ scheme.id }} .secondary-button .color-{{ scheme.id }} .FilterValues ul label{
          color: {{ scheme.settings.secondary-button-text }};
       background: {{ scheme.settings.secondary-button-background }};
       border: 1px solid {{ scheme.settings.secondary-button-border-color}};
@@ -133,7 +133,7 @@
       background: {{ scheme.settings.button-hover-background }};
       border: 1px solid {{ scheme.settings.button-hover-border-color}};
       }
-      .color-{{ scheme.id }} .secondary-button:hover{
+      .color-{{ scheme.id }} .secondary-button:hover, .color-{{ scheme.id }} .FilterValues ul label:hover{
       color: {{ scheme.settings.secondary-button-hover-text }};
       background: {{ scheme.settings.secondary-button-hover-background }};
       border: 1px solid {{ scheme.settings.secondary-button-hover-border-color}};
