@@ -8,10 +8,10 @@ function FilterOpen(FilterLabel) {
   console.log(changeHeight)
   const AllFilterLabel = Parent.querySelectorAll('.FilterItem');
   if(FilterLabel.classList.contains('active')){
+    console.log(FilterLabel)
     FilterLabel.closest('.FilterItem').classList.remove('active');
     Parent.style.height = height+'px';
   }else{
-    
     AllFilterLabel.forEach(label =>{
     label.classList.remove('active');
     Parent.style.height = height+'px';
