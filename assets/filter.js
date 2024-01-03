@@ -1,4 +1,4 @@
-function OpenFilter(FilterLabel) {
+function FilterOpen(FilterLabel) {
   let Parent = FilterLabel.closest('.CollectionFilterBox');
   const AllFilterLabel = Parent.querySelectorAll('.FilterLabel');
   if(FilterLabel.classList.contains('active')){
