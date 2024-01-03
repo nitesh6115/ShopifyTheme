@@ -88,7 +88,7 @@ function filter_data (item) {
   UpdatProductGrid(URL)
 }
 
-function ClearAllFilter(item) {
+function removeFilter(item) {
   console.log("yes")
   const URL = item.getAttribute('data-href');
   console.log(URL)
