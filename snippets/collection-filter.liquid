@@ -174,6 +174,9 @@
     {%- for filter_value in filter.active_values -%}
   {% assign chekResult = chekResult | plus: 1 %}
       {% endfor %}
+    {%- if filter.type == "price_range" -%}
+    {% assign chekResult = chekResult | plus: 1 %}
+    {% endif %}
   {% endfor %}
   <div class="FilterResults {% if chekResult == 0 %}hide{% endif %}">
     <div class="ResultItems">
