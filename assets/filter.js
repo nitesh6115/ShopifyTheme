@@ -11,8 +11,10 @@ function FilterOpen(FilterLabel) {
     FilterLabel.closest('.FilterItem').classList.remove('active');
     Parent.style.height = height+'px';
   }else{
+    
     AllFilterLabel.forEach(label =>{
-    label.classList.remove('active')
+    label.classList.remove('active');
+    Parent.style.height = height+'px';
   })
   FilterLabel.closest('.FilterItem').classList.add('active')
   Parent.style.height = changeHeight+'px';
