@@ -107,11 +107,11 @@ form#FilterForm {
 }
 .FilterBody input:checked+label{background: #000}
 .FilterResults {
-    display: flex;
     padding: 5px 2rem;
 }
 .ResultItems{
   border-top: 1px solid
+  display: flex;
 }
 .RemoveFilter:only-child {
     display: none;
