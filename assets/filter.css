@@ -66,6 +66,10 @@ form#FilterForm {
     transition-property: all;
     right:0;
 }
+.FilterBody{
+    padding: 20px;
+    border-bottom: 1px solid;
+}
 .FilterValues ul {
     display: flex;
     flex-wrap: wrap;
