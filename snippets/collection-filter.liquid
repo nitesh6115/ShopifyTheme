@@ -150,9 +150,27 @@
   {%- endfor -%}
     <div class="SortBySelect">
     {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
+     <div class="FilterItem">
+      <div class="FilterLabel" onclick="FilterOpen(this)">
+          <span>{%- for option in collection.sort_options -%}{% if option.value == sort_by %}{{ option.name }}{% endif %}{% endfor %}</span>
+          {% render 'icon-down-arrow' %}
+      </div>
+
+      <div class="FilterValues">
+        <ul>
+          <li>
+             {%- for option in collection.sort_options -%}
+             <label onchange="sortByChange(this)" class="{% if option.value == sort_by %}active{% endif %}" data-value="value="{{ option.value | escape }}>{{ option.name }}</label>
+            {% endfor %}
+          </li>
+        </ul>
+      </div>
+     </div>
+    
+      
     <select onchange="sortBy(this)"
     name="sort_by"
-    class="facet-filters__sort select__select caption-large"
+    class="hide facet-filters__sort select__select caption-large"
     id="SortBy"
     aria-describedby="a11y-refresh-page-message"
     >
