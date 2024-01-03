@@ -23,7 +23,21 @@ function FilterOpen(FilterLabel) {
 }
 function filter_data (item) {
   const form = item.closest("#FilterForm");
+  const Handle = form.getAttribute('collection-handle');
   const queryString = new URLSearchParams(new FormData(form)).toString()
-  console.log(queryString)
+  const URL = Handle+'?'+queryString;
+  fetch(URL)
+        .then(response => response.text())
+        .then((responseText) => {
+            
+            var PageContent = new DOMParser().parseFromString(responseText, 'text/html').getElementById("CollectionProductGrid").innerHTML;
+            var container = document.createElement("div");
+            container.innerHTML = PageContent;
+            var UpdateDiv = document.getElementById('CollectionProductGrid');
+            UpdateDiv.innerHTML = '';
+            UpdateDiv.appendChild(container);
+
+        })
+  
   
 }
