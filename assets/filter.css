@@ -37,7 +37,6 @@
 .FilterValues {
     bottom: 5rem;
     left: 0;
-    max-height: 30vh;
     opacity: 0;
     overflow: auto;
     pointer-events: none;
