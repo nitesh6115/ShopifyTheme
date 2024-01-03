@@ -19,7 +19,9 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 {% endif %}
   {% paginate collection.products by 10 %}
 <div class="{% if section.settings.width == 'full-width' %}full-width{% elsif section.settings.width == 'wrapper-width' %}page-width{% else %} narrow-width {% endif %} collection-page-grid">
-
+<div class="CollectionFilters">
+  {% render 'collection-filter' %}
+</div>
 <div class="CollectionnGrid colls-4">
 {% if collection.image != blank %}
  <div class="CHB collection-image hover-zoom ">
