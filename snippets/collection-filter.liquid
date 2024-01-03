@@ -173,7 +173,7 @@
     </div>
   </div>
   <div class="FilterResults">
-    <div class="ClearAll primary-button" onclick="ClearAllFilter(this)" data-href="{{ collection.url }}?sort_by={{ collection.sort_by }}">Clear all</div>
+    <div class="RemoveFilter primary-button" onclick="ClearAllFilter(this)" data-href="{{ collection.url }}?sort_by={{ collection.sort_by }}">Clear all</div>
     {%- for filter in collection.filters -%}
       {%- if filter.type == "price_range" -%}
         {%- if filter.min_value.value != nil or filter.max_value.value != nil -%}
