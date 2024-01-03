@@ -1,3 +1,4 @@
+
 <form>
   {%- for filter in collection.filters -%}
     <details>
@@ -174,3 +175,23 @@
     {%- endfor -%}
   </div>
 </form>
+<div class="SortBySelect">
+  {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
+  <select
+    name="sort_by"
+    class="facet-filters__sort select__select caption-large"
+    id="SortBy"
+    aria-describedby="a11y-refresh-page-message"
+  >
+    {%- for option in results.sort_options -%}
+      <option
+        value="{{ option.value | escape }}"
+        {% if option.value == sort_by %}
+          selected="selected"
+        {% endif %}
+      >
+        {{ option.name | escape }}
+      </option>
+    {%- endfor -%}
+  </select>
+</div>
