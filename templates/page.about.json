@@ -113,7 +113,7 @@
         "padding_bottom": 36,
         "image_position": "right",
         "desktop_content_position": "middle",
-        "text_alignment": "center",
+        "text_alignment": "right",
         "image": "shopify:\/\/shop_images\/Untitled-2.webp"
       }
     },
@@ -129,7 +129,7 @@
         "template--14945199882326__898914ed-b516-44f9-aa55-625157df516a-description-1": {
           "type": "description",
           "settings": {
-            "title": "<h6>The tanneries we work with use high quality leathers that will continue to develop its own character over time. Our belts will respond to light, as well as the oils and moisture in your hands, which means your product will age beautifully as the colour darkens and the leather develops a unique patina through use. These are not imperfections, but characteristics that make each item a one-of-a-kind.<\/h6>"
+            "title": "<p>The tanneries we work with use high quality leathers that will continue to develop its own character over time. Our belts will respond to light, as well as the oils and moisture in your hands, which means your product will age beautifully as the colour darkens and the leather develops a unique patina through use. These are not imperfections, but characteristics that make each item a one-of-a-kind.<\/p>"
           }
         }
       },
@@ -144,7 +144,7 @@
         "padding_bottom": 36,
         "image_position": "left",
         "desktop_content_position": "middle",
-        "text_alignment": "center",
+        "text_alignment": "left",
         "image": "shopify:\/\/shop_images\/Untitled-4.webp"
       }
     },
@@ -160,7 +160,7 @@
         "template--14945199882326__f0e6f77a-127c-47cf-9d71-a1d501115ba6-description-1": {
           "type": "description",
           "settings": {
-            "title": "<h6>Why shouldn’t a belt be treated like any other luxury accessory? Belts are not given the attention they deserve and we aim to change that. What’s more, we sell direct to you; no mark-ups or middle men. So we fit your budget as well as your waist.<br\/><br\/>All belts come packaged in a thick cotton drawstring bag embroidered with subtle detailing as well as the option to be sent in our vintage wooden boxes.<\/h6>"
+            "title": "<p>Why shouldn’t a belt be treated like any other luxury accessory? Belts are not given the attention they deserve and we aim to change that. What’s more, we sell direct to you; no mark-ups or middle men. So we fit your budget as well as your waist.<br\/><br\/>All belts come packaged in a thick cotton drawstring bag embroidered with subtle detailing as well as the option to be sent in our vintage wooden boxes.<\/p>"
           }
         }
       },
@@ -175,7 +175,7 @@
         "padding_bottom": 36,
         "image_position": "right",
         "desktop_content_position": "middle",
-        "text_alignment": "center",
+        "text_alignment": "right",
         "image": "shopify:\/\/shop_images\/Untitled-3.webp"
       }
     }
