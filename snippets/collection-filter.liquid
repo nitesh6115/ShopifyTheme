@@ -177,7 +177,7 @@
     aria-describedby="a11y-refresh-page-message"
     >
     {%- for option in collection.sort_options -%}
-    <option
+    <option data-value="{{ option.value | escape }}"
       value="{{ option.value | escape }}"
       {% if option.value == sort_by %}
         selected="selected"
