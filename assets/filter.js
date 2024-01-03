@@ -36,7 +36,49 @@ function filter_data (item) {
             var UpdateDiv = document.getElementById('CollectionProductGrid');
             UpdateDiv.innerHTML = '';
             UpdateDiv.appendChild(container);
-
+            var collcetionImageSlider = UpdateDiv.querySelectorAll('.product-image-wrapper');
+            collcetionImageSlider.forEach(item => {
+                var newElem = item.closest('.product-image-container')
+                var nextbutton = newElem.querySelectorAll('.swiper-button-next')[0];
+                var prebutton = newElem.querySelectorAll('.swiper-button-prev')[0];
+                const swiperTabs = new Swiper(item, {
+                    loop: true,
+                    allowTouchMove: false, 
+                    autoplay: 7000,
+                    speed: 300,
+                    noSwiping: true,
+                    slidesPerView: 1,
+                    initialSlide: 0,
+                    effect: 'fade',
+                    navigation: {
+                        nextEl: nextbutton,
+                        prevEl: prebutton,
+                    },
+                })
+                var swp = item.swiper
+                item.addEventListener("mouseover", function() {
+                    swp.autoplay.start();
+                })
+                item.addEventListener("mouseout", function() {
+                    swp.autoplay.stop();
+                })
+            });
+            var variantImages = UpdateDiv.querySelectorAll('.prodouct-variant-slider');
+            variantImages.forEach(slider => {
+                var swiperActive = slider.querySelectorAll('.size-selector')[0];
+                // console.log("this"+swiperActive);
+                if (swiperActive !== '') {
+                    swiperActive.classList.add('active')
+                    var label = swiperActive.querySelectorAll('label')[0];
+                    label.click()
+                    const slideritam = new Swiper(slider, {
+                        slidesPerView: 5,
+                        initialSlide: 0,
+                        spaceBetween: 5,
+                        draggable: true,
+                    })
+                }
+            })
         })
   
   
