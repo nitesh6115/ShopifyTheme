@@ -1,5 +1,5 @@
 
-<form id="FilterForm">
+<form id="FilterForm" collection-handle="{{ collection.handle }}">
   <div class="CollectionFilterBox">
   {%- for filter in collection.filters -%}
     <div class="FilterItem">
