@@ -9,13 +9,13 @@ function FilterOpen(FilterLabel) {
   const AllFilterLabel = Parent.querySelectorAll('.FilterItem');
   if(FilterLabel.classList.contains('active')){
     FilterLabel.closest('.FilterItem').classList.remove('active');
-    Parent.style.height = height;
+    Parent.style.height = height+'px';
   }else{
     AllFilterLabel.forEach(label =>{
     label.classList.remove('active')
   })
   FilterLabel.closest('.FilterItem').classList.add('active')
-  Parent.style.height = changeHeight;
+  Parent.style.height = changeHeight+'px';
   }
   
 }
