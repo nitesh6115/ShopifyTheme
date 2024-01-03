@@ -36,8 +36,7 @@ function filter_data (item) {
             var UpdateDiv = document.getElementById('CollectionProductGrid');
             UpdateDiv.innerHTML = '';
             UpdateDiv.appendChild(container);
-            window.history.pushState("uPDATE",URL)
-            window.replaceState("state", URL)
+            window.history.pushState(URL,URL)
             var collcetionImageSlider = UpdateDiv.querySelectorAll('.product-image-wrapper');
             collcetionImageSlider.forEach(item => {
                 var newElem = item.closest('.product-image-container')
