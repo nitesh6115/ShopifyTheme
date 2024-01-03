@@ -28,10 +28,7 @@
     align-items: center;
     transform: translate(-50%,0);
 }
-.FilterLabel svg {
-    width: 12px;
-    height: 12px;
-}
+
 
 .FilterItem {
     flex: 1;
@@ -66,7 +63,7 @@ form#FilterForm {
     align-items: center;
     cursor: pointer;
     display: flex;
-    font-weight: 500;
+    font-weight: bold;
     height: 40px;
     min-width: 8rem;
     position: relative;
@@ -133,6 +130,24 @@ form#FilterForm {
     background: #000;
 }
 
+.FilterItem.active .FilterLabel svg {
+  transform: rotate(180deg);
+  transition-duration: .15s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+.FilterItem .FilterLabel svg {
+  margin-left: 15px;
+  fill: currentColor;
+  width: 12px;
+  height: 12px;
+}
+.FilterLabel:hover {
+    background: #ccc;
+    border-radius: 5px;
+    color: #000;
+}
 .filter-group-display__price-range > div {
     display: flex;
     align-items: center;
