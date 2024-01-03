@@ -21,3 +21,9 @@ function FilterOpen(FilterLabel) {
   }
   
 }
+function filter_data (item) {
+  const form = item.closest("#FilterForm");
+  const queryString = new URLSearchParams(new FormData(form)).toString()
+  console.log(queryString)
+  
+}
