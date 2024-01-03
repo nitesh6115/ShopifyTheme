@@ -175,7 +175,9 @@
   {% assign chekResult = chekResult | plus: 1 %}
       {% endfor %}
     {%- if filter.type == "price_range" -%}
+      {%- if filter.min_value.value != nil or filter.max_value.value != nil -%}
     {% assign chekResult = chekResult | plus: 1 %}
+        {% endif %}
     {% endif %}
   {% endfor %}
   <div class="FilterResults {% if chekResult == 0 %}hide{% endif %}">
