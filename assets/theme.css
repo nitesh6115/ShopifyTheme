@@ -1740,7 +1740,7 @@ div#CartBox {
 div#quick-product-view, #size_guide {
     visibility: hidden;
     opacity: 0;
-    z-index: 30;
+    z-index: 555;
     transition-duration: .7s;
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
@@ -1758,7 +1758,8 @@ div#quick-product-view, #size_guide {
     overflow: hidden;
 }
 #size_guide {
-  max-width: 500px;
+  max-width: 600px;
+  padding: 30px;
 }
 .open-quick-view div#quick-product-view, .size-guide-open #size_guide {
     visibility: visible;
@@ -1773,7 +1774,7 @@ div#quick-product-view, #size_guide {
     right: 0;
     visibility: hidden;
     opacity: 0;
-    z-index: 22;
+    z-index: 444;
     transition-duration: .7s;
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
