@@ -57,11 +57,19 @@
               "title": "info",
               "menu": "main-menu"
             }
+          },
+          "50afa395-e1fa-4355-b2ce-9c42a41628d7": {
+            "type": "text",
+            "settings": {
+              "title": "Help + Support",
+              "menu": "footer"
+            }
           }
         },
         "block_order": [
           "2d788585-75b8-4e35-afb3-6bcb4696cb69",
-          "98e8b173-133e-4b46-95aa-fdb3d62e0906"
+          "98e8b173-133e-4b46-95aa-fdb3d62e0906",
+          "50afa395-e1fa-4355-b2ce-9c42a41628d7"
         ],
         "settings": {
           "color_scheme": "background-1",
