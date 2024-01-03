@@ -117,6 +117,27 @@ form#FilterForm {
 .RemoveFilter:only-child {
     display: none;
 }
+.filter-group-display__price-range {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-group-display__price-range input {
+    display: block;
+    width: 75px;
+    height: 35px;
+    border: 1px solid;
+    padding: 5px;
+    text-align: center;
+    background: #000;
+}
+
+.filter-group-display__price-range > div {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
 .FilterResults .RemoveFilter,.FilterResults .ClearAll {
     cursor: pointer;
     display: block;
