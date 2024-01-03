@@ -37,7 +37,7 @@ function filter_data (item) {
             UpdateDiv.innerHTML = '';
             UpdateDiv.appendChild(container);
             window.history.pushState("uPDATE",URL)
-            window.replaceState(state, URL)
+            window.replaceState("state", URL)
             var collcetionImageSlider = UpdateDiv.querySelectorAll('.product-image-wrapper');
             collcetionImageSlider.forEach(item => {
                 var newElem = item.closest('.product-image-container')
