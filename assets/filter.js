@@ -7,7 +7,7 @@ function FilterOpen(FilterLabel) {
   const changeHeight = height+childHeight;
   console.log(changeHeight)
   var AllFilterLabel = Parent.querySelectorAll('.FilterItem');
-  if(FilterLabel.classList.contains('active')){
+  if(FilterItme.classList.contains('active')){
     console.log(FilterLabel)
     FilterLabel.closest('.FilterItem').classList.remove('active');
     Parent.style.height = height+'px';
