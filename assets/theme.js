@@ -1091,6 +1091,12 @@ function TabsTrigger(ProductTabs) {
 function size_guide_close(size_guide_close) {
   document.body.classList.remove('size-guide-open')
 }
+function UpdateProductGrid(even, url) {
+  
+}
+function ClearAllFilter(ClearAllFilter) {
+  
+}
 function size_guide_open(size_guide_open) {
   const url = size_guide_open.getAttribute('data-url')
   console.log(url)
