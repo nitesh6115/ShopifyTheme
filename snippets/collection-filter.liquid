@@ -170,7 +170,7 @@
     </select>
     </div>
   </div>
-  <div class="FilterResults">
+  <div class="FilterResults {% if filter.active_values.size > 0 %}{% else %}hide{% endif %}">
     <p><a href="{{ collection.url }}?sort_by={{ collection.sort_by }}">Clear all</a></p>
 
     {%- for filter in collection.filters -%}
