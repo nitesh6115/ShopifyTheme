@@ -6,14 +6,14 @@ function FilterOpen(FilterLabel) {
   const childHeight = FilterItmeValues.offsetHeight;
   const changeHeight = height+childHeight;
   console.log(changeHeight)
-  const AllFilterLabel = Parent.querySelectorAll('.FilterItem');
+  var AllFilterLabel = Parent.querySelectorAll('.FilterItem');
   if(FilterLabel.classList.contains('active')){
     console.log(FilterLabel)
     FilterLabel.closest('.FilterItem').classList.remove('active');
     Parent.style.height = height+'px';
   }else{
-    AllFilterLabel.forEach(label =>{
-    label.classList.remove('active');
+    AllFilterLabel.forEach(item =>{
+    item.classList.remove('active');
     Parent.style.height = height+'px';
   })
   FilterLabel.closest('.FilterItem').classList.add('active')
