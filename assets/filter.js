@@ -2,7 +2,7 @@ function FilterOpen(FilterLabel) {
   let Parent = FilterLabel.closest('.CollectionFilterBox');
   const height = Parent.offsetHeight;
   const FilterItme = FilterLabel.closest('.FilterItem');
-  const FilterItmeValues = FilterItme.querySelector('FilterValues');
+  const FilterItmeValues = FilterItme.querySelector('.FilterValues');
   const childHeight = FilterItmeValues.offsetHeight;
   const changeHeight = height+childHeight;
   const AllFilterLabel = Parent.querySelectorAll('.FilterItem');
