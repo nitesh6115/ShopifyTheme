@@ -10,8 +10,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 }
 }
 </style>
-<link rel="preload" href="{{ 'filter.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="{{ 'filter.css' | asset_url }}"></noscript>
+
 <div class="color-{{ section.settings.color_scheme }}">
 {% if collection.image != blank %}
 {% else %}
@@ -47,6 +46,9 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
     {% endif %}
 </div>
 {% endpaginate %}
+<link rel="preload" href="{{ 'filter.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ 'filter.css' | asset_url }}"></noscript>
+<script src="{{ 'filter.js' | asset_url }}" async></script>
 </div>
 {% schema %}
   
