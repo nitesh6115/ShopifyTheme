@@ -150,7 +150,7 @@
   {%- endfor -%}
     <div class="SortBySelect">
     {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
-    <select
+    <select onchange="sortBy(this)"
     name="sort_by"
     class="facet-filters__sort select__select caption-large"
     id="SortBy"
