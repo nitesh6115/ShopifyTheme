@@ -1,6 +1,6 @@
+var height = document.querySelector('.CollectionFilters').offsetHeight;
 function FilterOpen(FilterLabel) {
   let Parent = FilterLabel.closest('.CollectionFilters');
-  const height = Parent.offsetHeight;
   const FilterItme = FilterLabel.closest('.FilterItem');
   const FilterItmeValues = FilterItme.querySelector('.FilterValues');
   const childHeight = FilterItmeValues.offsetHeight;
