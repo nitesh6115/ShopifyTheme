@@ -110,7 +110,7 @@ form#FilterForm {
     display: flex;
     padding: 5px 2rem;
 }
-.RemoveFilter:only-child {
+.RemoveFilter::only-child {
     display: none;
 }
 .FilterResults .RemoveFilter,.FilterResults .ClearAll {
