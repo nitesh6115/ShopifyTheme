@@ -46,6 +46,7 @@
     transition-timing-function: cubic-bezier(0,.4,0,1.02);
     transition-duration: .2s;
     transition-property: all;
+    right:0;
 }
 .FilterValues ul {
     display: flex;
