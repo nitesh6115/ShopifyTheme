@@ -3,7 +3,7 @@
   <div class="CollectionFilterBox">
   {%- for filter in collection.filters -%}
     <div class="FilterItem">
-      <div class="FilterLabel">
+      <div class="FilterLabel" onclick="FilterOpen(this)">
           <span>{{ filter.label }}</span>
           {%- if filter.active_values.size > 0 -%}
             <span>({{ filter.active_values.size }})</span>
