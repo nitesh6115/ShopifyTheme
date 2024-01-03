@@ -44,7 +44,6 @@ form#FilterForm {
 }
 
 .FilterValues ul label {
-    border: 1px solid;
     margin-right: 15px;
     margin-bottom: 15px;
     display: block;
@@ -69,6 +68,7 @@ form#FilterForm {
     position: relative;
     white-space: nowrap;
     justify-content: center;
+    
 }
 
 .FilterValues {
