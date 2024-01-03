@@ -112,12 +112,13 @@ form#FilterForm {
 .ResultItems{
   border-top: 1px solid;
   display: flex;
+  padding-top: 10px;
 }
 .RemoveFilter:only-child {
     display: none;
 }
 .FilterResults .RemoveFilter,.FilterResults .ClearAll {
-    
+    cursor: pointer;
     display: block;
     padding: 5px 10px;
     margin-right: 5px;
