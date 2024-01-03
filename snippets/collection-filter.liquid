@@ -175,7 +175,6 @@
   {% assign chekResult = 0 %}
   {%- for filter in collection.filters -%}
     {%- for filter_value in filter.active_values -%}
-    {{ chekResult }}
   {% assign chekResult = chekResult | plus: 1 %}
       {% endfor %}
   {% endfor %}
