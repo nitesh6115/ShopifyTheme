@@ -23,14 +23,15 @@
           {%- when 'boolean' -%}
             <ul>
                 <li>
-                  <label for="Filter-{{ filter.param_name }}-{{ filter.true_value.value }}">
                   <input type="checkbox"  onchange="filter_data(this)"
                     name="{{ filter.param_name }}"
                     value="{{ filter.true_value.value }}"
                     id="Filter-{{ filter.param_name }}"
                     {% if filter.true_value.active -%}checked{%- endif %}
                     {% if filter.true_value.count == 0 and filter.true_value.active == false -%}disabled{%- endif -%}
-                  >{{ filter.true_value.label }}</label>
+                  >
+                  <label for="Filter-{{ filter.param_name }}-{{ filter.true_value.value }}">
+                  {{ filter.true_value.label }}</label>
                 </li>
                 <li>
                   <label for="Filter-{{ filter.param_name }}-{{ filter.false_value.value }}">
@@ -51,7 +52,6 @@
             <ul>
               {%- for filter_value in filter.values -%}
                 <li>
-                  <label for="Filter-{{ filter.param_name }}-{{ forloop.index }}">
                   <input type="checkbox"  onchange="filter_data(this)"
                     name="{{ filter_value.param_name }}"
                     value="{{ filter_value.value }}"
@@ -59,6 +59,8 @@
                     {% if filter_value.active -%}checked{%- endif %}
                     {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
                   >
+                  <label for="Filter-{{ filter.param_name }}-{{ forloop.index }}">
+                  
                     <span>
                       {%- case filter_value.display.type -%}
                         {%- when 'colors' -%}
