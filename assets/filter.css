@@ -24,6 +24,7 @@
     z-index: 9;
     left: 50%;
     justify-content: flex-end;
+    align-items: center;
     transform: translate(-50%,0);
 }
 
