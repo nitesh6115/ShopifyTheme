@@ -112,7 +112,7 @@ form#FilterForm {
 }
 
 .FilterResults .RemoveFilter,.FilterResults .ClearAll {
-    min-width: 7rem;
+    
     display: block;
     padding: 5px 10px;
     margin-right: 5px;
