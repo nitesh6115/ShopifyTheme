@@ -53,7 +53,7 @@
     flex-wrap: wrap;
 }
 
-.FilterItem[open] .FilterValues {
+.FilterItem.active .FilterValues {
     visibility: visible;
     opacity: 1;
     height: auto;
