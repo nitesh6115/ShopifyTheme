@@ -32,7 +32,6 @@
 
 .FilterItem {
     flex: 1;
-    position: relative;
 }
 
 form#FilterForm {
@@ -71,9 +70,10 @@ form#FilterForm {
     margin: 0 5px;
     white-space: nowrap;
     justify-content: center;
+      position: relative;
     
 }
-.FilterItem:after {
+.FilterLabel:after {
     content: "";
     position: absolute;
     width: 1px;
@@ -85,7 +85,7 @@ form#FilterForm {
     right: 0;
 }
 
-.SortBySelect .FilterItem::after {
+.SortBySelect .FilterLabel::after {
     display: none;
 }
 .FilterValues {
