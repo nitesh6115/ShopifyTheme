@@ -149,6 +149,26 @@
       </div>
     </details>
   {%- endfor -%}
+    <div class="SortBySelect">
+    {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
+    <select
+    name="sort_by"
+    class="facet-filters__sort select__select caption-large"
+    id="SortBy"
+    aria-describedby="a11y-refresh-page-message"
+    >
+    {%- for option in collection.sort_options -%}
+    <option
+      value="{{ option.value | escape }}"
+      {% if option.value == sort_by %}
+        selected="selected"
+      {% endif %}
+    >
+      {{ option.name | escape }}
+    </option>
+    {%- endfor -%}
+    </select>
+    </div>
   </div>
   <div class="FilterResults">
     <p><a href="{{ collection.url }}?sort_by={{ collection.sort_by }}">Clear all</a></p>
@@ -176,23 +196,3 @@
     {%- endfor -%}
   </div>
 </form>
-<div class="SortBySelect">
-  {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
-  <select
-    name="sort_by"
-    class="facet-filters__sort select__select caption-large"
-    id="SortBy"
-    aria-describedby="a11y-refresh-page-message"
-  >
-    {%- for option in collection.sort_options -%}
-      <option
-        value="{{ option.value | escape }}"
-        {% if option.value == sort_by %}
-          selected="selected"
-        {% endif %}
-      >
-        {{ option.name | escape }}
-      </option>
-    {%- endfor -%}
-  </select>
-</div>
