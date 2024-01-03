@@ -172,9 +172,8 @@
     </select>
     </div>
   </div>
-  <div class="FilterResults {% if collection.filters.active_values.size > 0 %}{% else %}hide{% endif %}">
+  <div class="FilterResults">
     <p><a href="{{ collection.url }}?sort_by={{ collection.sort_by }}">Clear all</a></p>
-
     {%- for filter in collection.filters -%}
       {%- if filter.type == "price_range" -%}
         {%- if filter.min_value.value != nil or filter.max_value.value != nil -%}
