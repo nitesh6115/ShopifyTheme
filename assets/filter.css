@@ -180,3 +180,11 @@ form#FilterForm {
     border-radius: 5px;
     text-align: center;
 }
+.RemoveFilter svg {
+    width: 11px;
+    margin-left: 10px;
+}
+
+span.x-cl {
+    margin-left: 13px;
+}
