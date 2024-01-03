@@ -1,9 +1,7 @@
 .CollectionFilterBox {
-    display: flex;
     flex-wrap: wrap;
     display: flex;
-    height: 5rem;
-    padding: 0 2rem;
+    padding: 5px 2rem;
     position: relative;
 }
 
