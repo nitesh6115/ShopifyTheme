@@ -113,11 +113,23 @@ form#FilterForm {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-height: 50vh;
+    max-height: 60vh;
     overflow-x: hidden;
     overflow-y: auto;
 }
-
+.FilterValues ul::webkit-scrollbar {
+    width: 5px;
+    border-radius:2px;
+     -webkit-border-radius: 7px;
+}
+.FilterValues ul::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.FilterValues ul::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+   -webkit-border-radius: 7px;
+}
 .FilterItem.active .FilterValues {
     opacity: 1;
     pointer-events: auto;
