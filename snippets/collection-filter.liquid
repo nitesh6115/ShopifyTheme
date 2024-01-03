@@ -158,11 +158,11 @@
 
       <div class="FilterValues">
         <ul>
-          <li>
              {%- for option in collection.sort_options -%}
+               <li>
              <label onchange="sortByChange(this)" class="{% if option.value == sort_by %}active{% endif %}" data-value="value="{{ option.value | escape }}>{{ option.name }}</label>
-            {% endfor %}
-          </li>
+               </li>
+               {% endfor %}
         </ul>
       </div>
      </div>
