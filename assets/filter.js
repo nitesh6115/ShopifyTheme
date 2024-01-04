@@ -159,7 +159,7 @@ function fillColor() {
   percent2 = (sliderTwo.value / sliderMaxValue) * 100;
   const displayOneWidth = displayValOne.offsetWidth / 2;
   const displayTwoWidth = displayValTwo.offsetWidth / 2;
-  displayOneWidth = Math.round(100 * width / 100)
+  displayOneWidth = Math.round(100 * displayOneWidth / 100)
   console.log(displayOneWidth)
   displayValOne.style.left = percent1-displayOneWidth+'%';
   displayValTwo.style.left = percent2-displayTwoWidth+'%';
