@@ -159,6 +159,7 @@ function slideOne() {
     sliderOne.value = parseInt(sliderTwo.value) - minGap;
   }
   displayValOne.innerHTML = '';
+  console.log(sliderOne.value)
   displayValOne.innerHTML = CurrencySymbol+' '+sliderOne.value;
   fillColor();
 }
