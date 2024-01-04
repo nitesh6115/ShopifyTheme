@@ -159,8 +159,8 @@ function fillColor() {
   percent2 = (sliderTwo.value / sliderMaxValue) * 100;
   const displayOneWidth = displayValOne.offsetWidth / 2;
   const displayTwoWidth = displayValTwo.offsetWidth / 2;
-  displayOneWidth = Math.round(100 * displayOneWidth / 100)
-  console.log(displayOneWidth)
+  const displayOneWidthP = Math.round(100 * displayOneWidth / 100)
+  console.log(displayOneWidthP)
   displayValOne.style.left = percent1-displayOneWidth+'%';
   displayValTwo.style.left = percent2-displayTwoWidth+'%';
   sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #3264fe ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`;
