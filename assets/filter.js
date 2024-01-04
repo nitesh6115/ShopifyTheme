@@ -157,16 +157,14 @@ function fillColor() {
   console.log("Percent2 "+percent2)
   displayValOne.style.left = percent1-5+'%';
   displayValTwo.style.left = percent2-7+'%';
-  setTimeout(function () {
-  sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #3264fe ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`;
-  },10)
+  sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #3264fe ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`; 
 }
 function slideOne() {
   
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
     sliderOne.value = parseInt(sliderTwo.value) - minGap;
   }
-  displayValOne.textContent = CurrencySymbol+' '+sliderOne.value;
+  displayValOne.innerHTML = CurrencySymbol+' '+sliderOne.value;
   fillColor();
 }
 function slideTwo() {
@@ -174,7 +172,7 @@ function slideTwo() {
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
     sliderTwo.value = parseInt(sliderOne.value) + minGap;
   }
-  displayValTwo.textContent = CurrencySymbol+' '+sliderTwo.value;
+  displayValTwo.innerHTML = CurrencySymbol+' '+sliderTwo.value;
   fillColor();
 }
 
