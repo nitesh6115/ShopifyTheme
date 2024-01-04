@@ -82,6 +82,11 @@ function UpdatProductGrid(url,event) {
                     })
                 }
             })
+            var PriceRangeSlider = UpdateDiv.getElementById('PriceRange');
+            if(PriceRangeSlider){
+                slideOne();
+                slideTwo();
+            }
             var openTrigger = UpdateDiv.querySelectorAll('.FilterItem')[event];
             var element = openTrigger.querySelector('.FilterLabel')
               if(element){
@@ -119,18 +124,19 @@ function sortByChange(item,event) {
   SortBox.dispatchEvent(new Event('change'))
   
 }
-
 function removeFilter(item,event) {
   const URL = item.getAttribute('data-href');
   console.log(URL)
   UpdatProductGrid(URL,event)
 }
-
+var PriceRangeSlider = document.getElementById("PriceRange");
 window.onload = function () {
+if(PriceRangeSlider){
   slideOne();
   slideTwo();
+}
 };
-var PriceRangeSlider = document.getElementById("PriceRange");
+
 let sliderOne = PriceRangeSlider.querySelector(".FirstPoint");
 let sliderTwo = PriceRangeSlider.querySelector(".LastPoint");
 let displayValOne = PriceRangeSlider.querySelector("#range1");
