@@ -2040,11 +2040,6 @@ div#quick-product-view .ProductTabs.rte {
 div#quick-product-view .ProductTabs .TabListContainer.active .TabHeader span.Icon-plus{
     border: 1px solid;
 }
-#quick-product-view  .top-container {
-    overflow: visible;
-}
-
-
 
 @media(max-width: 1024px){
   #quick-product-view .featured-product {
