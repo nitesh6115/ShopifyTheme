@@ -2045,8 +2045,7 @@ div#MainSliderBox .product-image-slide.swiper .swiper-slide {
 }
 div#MainSliderBox .product-image-slide.swiper .swiper-slide img {
     position: relative;
-    z-index: 1;
-    opacity: 0;
+    z-index: -1;
 }
 @media(max-width: 1024px){
   #quick-product-view .featured-product {
