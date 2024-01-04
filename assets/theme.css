@@ -1838,6 +1838,7 @@ div#quick-product-view, #size_guide {
     z-index: 9999;
     opacity: 1;
     visibility: visible !important;
+    position: relative;
 }
 #quick-product-view .featured-product::-webkit-scrollbar {
     width: 5px;
