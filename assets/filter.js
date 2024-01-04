@@ -160,7 +160,7 @@ function fillColor() {
   const displayOneWidth = displayValOne.offsetWidth / 2;
   const displayTwoWidth = displayValTwo.offsetWidth / 2;
   const displayOnePercentage = ( 100 - displayOneWidth ) / 100 ; 
-  const displayTwoWidthPercentage = ( 100 - displayOneWidth ) / 100 ; 
+  const displayTwoWidthPercentage = ( 100 - displayTwoWidth ) / 100 ; 
   console.log(displayTwoWidthPercentage)
   displayValOne.style.left = percent1-displayOnePercentage+'%';
   displayValTwo.style.left = percent2-displayTwoWidthPercentage+'%';
