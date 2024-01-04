@@ -153,8 +153,8 @@ function fillColor() {
   console.log("eses"+sliderOne.value)
   percent1 = (sliderOne.value / sliderMaxValue) * 100;
   percent2 = (sliderTwo.value / sliderMaxValue) * 100;
-  console.log("Percent1 "+percent1)
-  console.log("Percent2 "+percent2)
+  console.log("Percent2 "+displayValTwo)
+  console.log("Percent1 "+displayValOne)
   displayValOne.style.left = percent1-5+'%';
   displayValTwo.style.left = percent2-7+'%';
   sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #3264fe ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`; 
