@@ -27,16 +27,13 @@
     padding: 10px;
 }
 </style>
-<script>
-myGreeting()
+<script type="text/javascript">
+var myTimeout = setTimeout(myGreeting, 2000);
 
 function myGreeting() {
-  setTimeout(function(){
-    document.getElementById("flashWrapper").classList.add('in-active');
-  },2000)
+  document.getElementById("flashWrapper").classList.add('in-active');
 }
 window.addEventListener("beforeunload", (event) => {
-    myGreeting()
     document.getElementById("flashWrapper").classList.remove('in-active');
     document.getElementByTag("body").classList.remove('overflow');
 })
