@@ -56,7 +56,7 @@
                     {% if filter_value.active -%}checked{%- endif %}
                     {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
                   >
-                  <label for="Filter-{{ filter.param_name }}-{{ forloop.index }}">
+                  <label for="Filter-{{ filter.param_name }}-{{ forloop.index }}" class="{% if filter_value.active -%}active{% endif %}">
                   
                     <span>
                       {%- case filter_value.display.type -%}
