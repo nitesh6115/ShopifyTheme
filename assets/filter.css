@@ -147,9 +147,9 @@ form#FilterForm {
     display: none;
 }
 .filter-group-display__price-range {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    width: 450px;
+    position: relative;
 }
 
 .filter-group-display__price-range input {
