@@ -25,7 +25,7 @@ function FilterOpen(FilterLabel) {
   
 }
 
-function UpdatProductGrid(url) {
+function UpdatProductGrid(url,event) {
   const URL = url;
   fetch(URL)
         .then(response => response.text())
@@ -39,6 +39,7 @@ function UpdatProductGrid(url) {
             UpdateDiv.appendChild(container);
             window.history.pushState(URL,'',URL)
             var collcetionImageSlider = UpdateDiv.querySelectorAll('.product-image-wrapper');
+            console.log(event)
             collcetionImageSlider.forEach(item => {
                 var newElem = item.closest('.product-image-container')
                 var nextbutton = newElem.querySelectorAll('.swiper-button-next')[0];
@@ -84,29 +85,33 @@ function UpdatProductGrid(url) {
         })
 }
 
-function filter_data (item) {
+function filter_data (item,event) {
+  const form = item.closest("#FilterForm");
+  const Handle = form.getAttribute('collection-handle');
+  const queryString = new URLSearchParams(new FormData(form)).toString()
+  const URL = Handle+'?'+queryString;
+  const GetChild = item.closest('.FilterItem');
+  var parent = GetChild.parentNode;
+  var ChildIndex = Array.prototype.indexOf.call(parent.children, GetChild)
+  consoel.log(ChildIndex)
+  UpdatProductGrid(URL,ChildIndex)
+}
+function sortBy(item,event) {
   const form = item.closest("#FilterForm");
   const Handle = form.getAttribute('collection-handle');
   const queryString = new URLSearchParams(new FormData(form)).toString()
   const URL = Handle+'?'+queryString;
   UpdatProductGrid(URL)
 }
-function sortBy(item) {
-  const form = item.closest("#FilterForm");
-  const Handle = form.getAttribute('collection-handle');
-  const queryString = new URLSearchParams(new FormData(form)).toString()
-  const URL = Handle+'?'+queryString;
-  UpdatProductGrid(URL)
-}
-function sortByChange(item) {
+function sortByChange(item,event) {
   const value = item.getAttribute('data-value');
   let SortBox = document.getElementById('SortBy');
   SortBox.value = value;
   SortBox.dispatchEvent(new Event('change'))                 
 }
-function removeFilter(item) {
-  console.log("yes")
+function removeFilter(item,event) {
+  const event = '';
   const URL = item.getAttribute('data-href');
   console.log(URL)
-  UpdatProductGrid(URL)
+  UpdatProductGrid(URL,event)
 }
