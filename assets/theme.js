@@ -48,6 +48,19 @@ Shopify.formatMoney = function(cents, format) {
   return formatString.replace(placeholderRegex, value);
 };
 
+var myTimeout = setTimeout(myGreeting, 2000);
+function myGreeting() {
+  var element = document.getElementById("flashWrapper");
+  if(element){
+    element.classList.add('in-active')
+  }
+}
+window.addEventListener("beforeunload", (event) => {
+    document.getElementById("flashWrapper").classList.remove('in-active');
+    document.getElementByTag("body").classList.remove('overflow');
+})
+
+
 // lazy loding Images
 
 var observer = new IntersectionObserver(
