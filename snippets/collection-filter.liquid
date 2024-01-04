@@ -120,7 +120,7 @@
                   {% if filter.min_value.value -%}
                     value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
                   {% else %}
-                    value="0"
+                    value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
                   {%- endif %}
                   type="range"
                   placeholder="0"
