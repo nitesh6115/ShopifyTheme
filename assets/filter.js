@@ -93,7 +93,7 @@ function filter_data (item,event) {
   const GetChild = item.closest('.FilterItem');
   var parent = GetChild.parentNode;
   var ChildIndex = Array.prototype.indexOf.call(parent.children, GetChild)
-  consoel.log(ChildIndex)
+  console.log(ChildIndex)
   UpdatProductGrid(URL,ChildIndex)
 }
 function sortBy(item,event) {
