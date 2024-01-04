@@ -135,7 +135,7 @@ let sliderOne = PriceRangeSlider.querySelectorAll(".filter-group-display__price-
 let sliderTwo = PriceRangeSlider.querySelectorAll(".filter-group-display__price-range-to input")
 let displayValOne = document.getElementById("range1");
 let displayValTwo = document.getElementById("range2");
-let minGap = 0;
+let minGap = 2;
 let sliderTrack = document.querySelector(".slider-track");
 let sliderMaxValue = PriceRangeSlider.querySelectorAll(".filter-group-display__price-range-from input").max;
 
