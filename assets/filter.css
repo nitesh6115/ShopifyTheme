@@ -154,7 +154,10 @@ form#FilterForm {
     height: 40px;
     margin-top: 40px;
 }
-
+.filter-group-display__submit {
+    display: flex;
+    justify-content: center;
+}
 .filter-group-display__price-range input {
     display: block;
     border: 0;
