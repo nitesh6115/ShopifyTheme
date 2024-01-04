@@ -164,28 +164,28 @@
                </li>
                {% endfor %}
         </ul>
+        <select onchange="sortBy(this)"
+          name="sort_by"
+          class="hide facet-filters__sort select__select caption-large"
+          id="SortBy"
+          aria-describedby="a11y-refresh-page-message"
+          >
+          {%- for option in collection.sort_options -%}
+          <option data-value="{{ option.value | escape }}"
+          value="{{ option.value | escape }}"
+          {% if option.value == sort_by %}
+          selected="selected"
+          {% endif %}
+          >
+        {{ option.name | escape }}
+        </option>
+    {%- endfor -%}
+    </select>
         </div>
       </div>
      </div>
-    
       
-    <select onchange="sortBy(this)"
-    name="sort_by"
-    class="hide facet-filters__sort select__select caption-large"
-    id="SortBy"
-    aria-describedby="a11y-refresh-page-message"
-    >
-    {%- for option in collection.sort_options -%}
-    <option data-value="{{ option.value | escape }}"
-      value="{{ option.value | escape }}"
-      {% if option.value == sort_by %}
-        selected="selected"
-      {% endif %}
-    >
-      {{ option.name | escape }}
-    </option>
-    {%- endfor -%}
-    </select>
+    
   </div>
   {% assign chekResult = 0 %}
   {%- for filter in collection.filters -%}
