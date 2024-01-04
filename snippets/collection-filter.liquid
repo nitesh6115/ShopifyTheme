@@ -148,7 +148,6 @@
       </div>
     </div>
   {%- endfor -%}
-    <div class="SortBySelect">
     {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
      <div class="FilterItem">
       <div class="FilterLabel" onclick="FilterOpen(this)">
@@ -187,7 +186,6 @@
     </option>
     {%- endfor -%}
     </select>
-    </div>
   </div>
   {% assign chekResult = 0 %}
   {%- for filter in collection.filters -%}
