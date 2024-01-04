@@ -140,14 +140,14 @@ if(PriceRangeSlider){
 }
 };
 
-let sliderOne = document.getElementById(".MinInput");
+let sliderOne = document.getElementById("MinInput");
 let sliderTwo = document.getElementById("MaxInput");
 let displayValOne = document.getElementById("range1");
 let displayValTwo = document.getElementById("#range2");
 
 let minGap = 2;
 let sliderTrack = document.getElementById("RangeTrack");
-let sliderMaxValue = document.getElementById(".MinInput").max;
+let sliderMaxValue = document.getElementById("MinInput").max;
 let CurrencySymbol = PriceRangeSlider.getAttribute('data-currency');
 function fillColor() {
   console.log("eses"+sliderOne.value)
