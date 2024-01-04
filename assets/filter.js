@@ -84,11 +84,8 @@ function UpdatProductGrid(url,event) {
             })
             var PriceRangeSlider = document.getElementById('PriceRange');
             if(PriceRangeSlider){
-              setTimeout(function () {
-                 slideOne();
+                slideOne();
                 slideTwo();
-              },1000)
-               
             }
             var openTrigger = UpdateDiv.querySelectorAll('.FilterItem')[event];
             var element = openTrigger.querySelector('.FilterLabel')
@@ -161,7 +158,7 @@ function slideOne() {
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
     sliderOne.value = parseInt(sliderTwo.value) - minGap;
   }
-  console.log(displayValOne)
+  displayValOne.innerHTML = '';
   displayValOne.innerHTML = CurrencySymbol+' '+sliderOne.value;
   fillColor();
 }
@@ -170,6 +167,7 @@ function slideTwo() {
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
     sliderTwo.value = parseInt(sliderOne.value) + minGap;
   }
+  displayValTwo.innerHTML = '';
   displayValTwo.innerHTML = CurrencySymbol+' '+sliderTwo.value;
   fillColor();
 }
