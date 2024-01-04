@@ -107,7 +107,11 @@ function sortByChange(item,event) {
   const value = item.getAttribute('data-value');
   let SortBox = document.getElementById('SortBy');
   SortBox.value = value;
-  SortBox.dispatchEvent(new Event('change'))                 
+  SortBox.dispatchEvent(new Event('change'))
+  const GetChild = item.closest('.FilterItem');
+  var parent = GetChild.parentNode;
+  var ChildIndex = Array.prototype.indexOf.call(parent.children, GetChild)
+  console.log(ChildIndex)
 }
 function removeFilter(item,event) {
   const URL = item.getAttribute('data-href');
