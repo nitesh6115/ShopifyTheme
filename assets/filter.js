@@ -146,7 +146,7 @@ let displayValOne = PriceRangeSlider.querySelector("#range1");
 let displayValTwo = PriceRangeSlider.querySelector("#range2");
 
 let minGap = 2;
-let sliderTrack = PriceRangeSlider.querySelector(".slider-track")[0];
+let sliderTrack = PriceRangeSlider.querySelector(".slider-track");
 let sliderMaxValue = PriceRangeSlider.querySelector(".FirstPoint").max;
 let CurrencySymbol = PriceRangeSlider.getAttribute('data-currency');
 function fillColor() {
