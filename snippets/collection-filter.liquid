@@ -116,10 +116,7 @@
                 </div>
               <div class="container">
               <div class="slider-track"></div>
-              <div class="filter-group-display__price-range-from">
-                <span>{{ cart.currency.symbol }}</span>
-
-                <input oninput="slideOne()" name="{{ filter.min_value.param_name }}"
+                <input class="FirstPoint" oninput="slideOne()" name="{{ filter.min_value.param_name }}"
                   id="Filter-{{ filter.min_value.param_name }}"
                   {% if filter.min_value.value -%}
                     value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
@@ -129,13 +126,7 @@
                   min="0"
                   max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
                 >
-
-                <label for="Filter-{{ filter.min_value.param_name }}">From</label>
-              </div>
-              <div class="filter-group-display__price-range-to">
-                <span>{{ cart.currency.symbol }}</span>
-
-                <input oninput="slideTwo()" name="{{ filter.max_value.param_name }}"
+                <input class="FirstPoint" oninput="slideTwo()" name="{{ filter.max_value.param_name }}"
                   id="Filter-{{ filter.max_value.param_name }}"
                   {% if filter.max_value.value -%}
                     value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"
@@ -146,7 +137,7 @@
                   max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
                 >
 
-                <label for="Filter-{{ filter.max_value.param_name }}">To</label>
+               
               </div>
               </div>
             </div>
