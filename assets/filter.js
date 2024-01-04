@@ -82,10 +82,11 @@ function UpdatProductGrid(url,event) {
                     })
                 }
             })
-            if(event != 'undefined'){
             var openTrigger = UpdateDiv.querySelectorAll('.FilterItem')[event];
-            openTrigger.querySelector('.FilterLabel').click()
-            }
+            var element = openTrigger.querySelector('.FilterLabel')
+              if(element){
+                element.click()
+              }
         })
 }
 
