@@ -140,7 +140,7 @@ if(PriceRangeSlider){
 
 
 var minGap = 2;
-var sliderTrack = document.getElementById("RangeTrack");
+
 var sliderMaxValue = document.getElementById("MinInput").max;
 var CurrencySymbol = PriceRangeSlider.getAttribute('data-currency');
 
@@ -148,6 +148,7 @@ function fillColor() {
   
   var sliderOne = document.getElementById("MinInput");
   var sliderTwo = document.getElementById("MaxInput");
+  var sliderTrack = document.getElementById("RangeTrack");
   percent1 = (sliderOne.value / sliderMaxValue) * 100;
   percent2 = (sliderTwo.value / sliderMaxValue) * 100;
   displayValOne.style.left = percent1-5+'%';
