@@ -117,7 +117,11 @@
               <div class="slider-track"></div>
                 <input class="FirstPoint" oninput="slideOne()" name="{{ filter.min_value.param_name }}"
                   id="Filter-{{ filter.min_value.param_name }}"
-                  value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
+                  {% if filter.min_value.value -%}
+                    value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
+                  {% else %}
+                    value="0"
+                  {%- endif %}
                   type="range"
                   placeholder="0"
                   min="0"
@@ -125,7 +129,11 @@
                 >
                 <input class="LastPoint" oninput="slideTwo()" name="{{ filter.max_value.param_name }}"
                   id="Filter-{{ filter.max_value.param_name }}"
-                  value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"
+                  {% if filter.max_value.value -%}
+                    value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"
+                  {% else %}
+                    value="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                  {%- endif %}
                   type="range"
                   placeholder="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
                   min="0"
