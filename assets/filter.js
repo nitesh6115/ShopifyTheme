@@ -84,8 +84,11 @@ function UpdatProductGrid(url,event) {
             })
             var PriceRangeSlider = document.getElementById('PriceRange');
             if(PriceRangeSlider){
-                slideOne();
+              setTimeout(function () {
+                 slideOne();
                 slideTwo();
+              },100)
+               
             }
             var openTrigger = UpdateDiv.querySelectorAll('.FilterItem')[event];
             var element = openTrigger.querySelector('.FilterLabel')
