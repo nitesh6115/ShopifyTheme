@@ -149,6 +149,9 @@ function fillColor() {
   var sliderOne = document.getElementById("MinInput");
   var sliderTwo = document.getElementById("MaxInput");
   var sliderTrack = document.getElementById("RangeTrack");
+  var displayValOne = document.getElementById("range1");
+  var displayValTwo = document.getElementById("range2");
+  
   percent1 = (sliderOne.value / sliderMaxValue) * 100;
   percent2 = (sliderTwo.value / sliderMaxValue) * 100;
   displayValOne.style.left = percent1-5+'%';
