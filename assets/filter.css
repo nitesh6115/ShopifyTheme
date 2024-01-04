@@ -179,11 +179,6 @@ form#FilterForm {
     border-radius: 5px;
     color: #000;
 }
-.filter-group-display__price-range > div {
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-}
 .FilterResults .RemoveFilter,.FilterResults .ClearAll {
     cursor: pointer;
     display: block;
