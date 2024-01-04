@@ -31,11 +31,6 @@
 document.addEventListener("DOMContentLoaded", (event)=>{
   document.getElementById("flashWrapper").classList.add('in-active');
 })
-
- window.addEventListener("popstate", (event) => {
-     document.getElementById("flashWrapper").classList.add('in-active');
-}) 
-
 window.addEventListener("beforeunload", (event) => {
     document.getElementById("flashWrapper").classList.remove('in-active');
     document.getElementByTag("body").classList.remove('overflow');
