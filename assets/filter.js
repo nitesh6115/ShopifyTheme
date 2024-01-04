@@ -137,8 +137,6 @@ if(PriceRangeSlider){
 }
 };
 
-var sliderOne = document.getElementById("MinInput");
-var sliderTwo = document.getElementById("MaxInput");
 var displayValOne = document.getElementById("range1");
 var displayValTwo = document.getElementById("range2");
 
@@ -146,6 +144,7 @@ var minGap = 2;
 var sliderTrack = document.getElementById("RangeTrack");
 var sliderMaxValue = document.getElementById("MinInput").max;
 var CurrencySymbol = PriceRangeSlider.getAttribute('data-currency');
+
 function fillColor() {
   percent1 = (sliderOne.value / sliderMaxValue) * 100;
   percent2 = (sliderTwo.value / sliderMaxValue) * 100;
@@ -153,10 +152,11 @@ function fillColor() {
   displayValTwo.style.left = percent2-7+'%';
   sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #3264fe ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`; 
 }
+
 function slideOne() {
-  console.log(sliderOne.value)
-  console.log(sliderTwo.value)
-  
+  var sliderOne = document.getElementById("MinInput");
+  var sliderTwo = document.getElementById("MaxInput");
+
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
     sliderOne.value = parseInt(sliderTwo.value) - minGap;
   }
@@ -166,6 +166,8 @@ function slideOne() {
   fillColor();
 }
 function slideTwo() {
+  var sliderOne = document.getElementById("MinInput");
+  var sliderTwo = document.getElementById("MaxInput");
   console.log(sliderOne.value)
   console.log(sliderTwo.value)
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
