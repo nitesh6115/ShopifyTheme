@@ -31,10 +31,10 @@ function UpdatProductGrid(url) {
         .then(response => response.text())
         .then((responseText) => {
             
-            var PageContent = new DOMParser().parseFromString(responseText, 'text/html').getElementById("ProductGridList").innerHTML;
+            var PageContent = new DOMParser().parseFromString(responseText, 'text/html').getElementById("CollectionProductGrid").innerHTML;
             var container = document.createElement("div");
             container.innerHTML = PageContent;
-            var UpdateDiv = document.getElementById('ProductGridList');
+            var UpdateDiv = document.getElementById('CollectionProductGrid');
             UpdateDiv.innerHTML = '';
             UpdateDiv.appendChild(container);
             window.history.pushState(URL,'',URL)
