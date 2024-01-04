@@ -140,14 +140,14 @@ if(PriceRangeSlider){
 }
 };
 
-let sliderOne = PriceRangeSlider.querySelector(".FirstPoint");
-let sliderTwo = PriceRangeSlider.querySelector(".LastPoint");
+let sliderOne = PriceRangeSlider.querySelectorAll(".FirstPoint")[0];
+let sliderTwo = PriceRangeSlider.querySelectorAll(".LastPoint")[0];
 let displayValOne = PriceRangeSlider.querySelector("#range1");
 let displayValTwo = PriceRangeSlider.querySelector("#range2");
 
 let minGap = 2;
-let sliderTrack = PriceRangeSlider.querySelector(".slider-track");
-let sliderMaxValue = PriceRangeSlider.querySelector(".FirstPoint").max;
+let sliderTrack = PriceRangeSlider.querySelectorAll(".slider-track")[0];
+let sliderMaxValue = PriceRangeSlider.querySelectorAll(".FirstPoint")[0].max;
 let CurrencySymbol = PriceRangeSlider.getAttribute('data-currency');
 function fillColor() {
   console.log("eses")
