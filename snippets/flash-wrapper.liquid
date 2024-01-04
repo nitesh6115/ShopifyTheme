@@ -28,10 +28,12 @@
 }
 </style>
 <script>
-var myTimeout = setTimeout(myGreeting, 2000);
+myGreeting()
 
 function myGreeting() {
-  document.getElementById("flashWrapper").classList.add('in-active');
+  setTimeout(function(){
+    document.getElementById("flashWrapper").classList.add('in-active');
+  },2000)
 }
 window.addEventListener("beforeunload", (event) => {
     document.getElementById("flashWrapper").classList.remove('in-active');
