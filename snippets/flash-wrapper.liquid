@@ -28,11 +28,17 @@
 }
 </style>
 <script type="text/javascript">
-var myTimeout = setTimeout(myGreeting, 2000);
-
-function myGreeting() {
+window.on("load", (event0) =>{
+  setTimeout(function(){
   document.getElementById("flashWrapper").classList.add('in-active');
-}
+  },2000)
+})
+
+  
+
+
+  
+
 window.addEventListener("beforeunload", (event) => {
     document.getElementById("flashWrapper").classList.remove('in-active');
     document.getElementByTag("body").classList.remove('overflow');
