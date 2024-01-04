@@ -110,7 +110,6 @@ function sortByChange(item,event) {
   SortBox.dispatchEvent(new Event('change'))                 
 }
 function removeFilter(item,event) {
-  const event = '';
   const URL = item.getAttribute('data-href');
   console.log(URL)
   UpdatProductGrid(URL,event)
