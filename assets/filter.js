@@ -161,6 +161,7 @@ function slideOne() {
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
     sliderOne.value = parseInt(sliderTwo.value) - minGap;
   }
+  console.log(displayValOne)
   displayValOne.innerHTML = CurrencySymbol+' '+sliderOne.value;
   fillColor();
 }
