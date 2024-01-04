@@ -135,7 +135,6 @@ form#FilterForm {
     pointer-events: auto;
     visibility: visible;
 }
-.FilterBody input:checked+label{background: #000}
 .FilterResults {
     padding: 5px 2rem;
 }
