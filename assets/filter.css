@@ -150,16 +150,11 @@ form#FilterForm {
     display: block;
     width: 450px;
     position: relative;
+    margin: 0 auto;
 }
 
 .filter-group-display__price-range input {
     display: block;
-    width: 75px;
-    height: 35px;
-    border: 1px solid;
-    padding: 5px;
-    text-align: center;
-    background: #000;
 }
 .FilterValues ul label.active {
     background: #000;
