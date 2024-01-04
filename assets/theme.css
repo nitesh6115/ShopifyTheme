@@ -2041,7 +2041,7 @@ div#quick-product-view .ProductTabs .TabListContainer.active .TabHeader span.Ico
     border: 1px solid;
 }
 div#MainSliderBox .product-image-slide.swiper .swiper-slide {
-    opacity: 0;
+    z-index: 1;
 }
 @media(max-width: 1024px){
   #quick-product-view .featured-product {
