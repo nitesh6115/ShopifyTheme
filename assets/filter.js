@@ -119,6 +119,7 @@ function sortByChange(item,event) {
   SortBox.dispatchEvent(new Event('change'))
   
 }
+
 function removeFilter(item,event) {
   const URL = item.getAttribute('data-href');
   console.log(URL)
@@ -159,5 +160,6 @@ function fillColor() {
   displayValOne.style.left = percent1-5+'%';
   displayValTwo.style.left = percent2-7+'%';
   sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #3264fe ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`;
+  
 }
 
