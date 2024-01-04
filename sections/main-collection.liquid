@@ -40,11 +40,13 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
   {% else %}
   <div class="GridItem NoResulte">
     <div class="EmptyMsg">
+      <div>
     <h3>Sorry, no products matched your selection :(</h3>
     
       <span>Use fewer filters or </span>
       <div class="RemoveFilter primary-button" onclick="removeFilter(this)" data-href="{{ collection.url }}?sort_by={{ collection.sort_by }}">Clear all {% render 'icon-refresh' %}</div>
     </div>
+  </div>
   </div>
 {% endfor %}
 </div>
