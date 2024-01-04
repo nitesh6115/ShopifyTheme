@@ -130,7 +130,6 @@ window.onload = function () {
   slideTwo();
 };
 var PriceRangeSlider = document.getElementById("PriceRange");
-let WrapperWidth = PriceRangeSlider.offsetWidth;
 let sliderOne = PriceRangeSlider.querySelector(".FirstPoint");
 let sliderTwo = PriceRangeSlider.querySelector(".LastPoint");
 let displayValOne = PriceRangeSlider.querySelector("#range1");
@@ -157,10 +156,6 @@ function slideTwo() {
 function fillColor() {
   percent1 = (sliderOne.value / sliderMaxValue) * 100;
   percent2 = (sliderTwo.value / sliderMaxValue) * 100;
-  const displayOneWidth = displayValOne.offsetWidth / 2;
-  const displayTwoWidth = displayValTwo.offsetWidth / 2;
-  const displayOnePercentage = ( 100 - displayOneWidth ) / 100 ; 
-  const displayTwoWidthPercentage = ( 100 - displayTwoWidth ) / 100 ; 
   console.log(displayTwoWidthPercentage)
   displayValOne.style.left = percent1'%';
   displayValTwo.style.left = percent2'%';
