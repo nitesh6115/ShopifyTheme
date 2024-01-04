@@ -59,13 +59,11 @@ window.addEventListener("beforeunload", (event) => {
     document.getElementById("flashWrapper").classList.remove('in-active');
 })
 
-(function () {
     window.onpageshow = function(event) {
         if (event.persisted) {
             window.location.reload();
         }
-    };
-})();
+    }
 // lazy loding Images
 
 var observer = new IntersectionObserver(
