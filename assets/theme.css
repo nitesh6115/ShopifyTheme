@@ -1835,10 +1835,8 @@ div#quick-product-view, #size_guide {
 #quick-product-view div#MainSliderBox .swiper-button-prev.secondary-button {
     left: 15px;
     top: 50%;
-    z-index: 9999;
+    z-index: 1;
     opacity: 1;
-    visibility: visible !important;
-    position: relative;
 }
 #quick-product-view .featured-product::-webkit-scrollbar {
     width: 5px;
