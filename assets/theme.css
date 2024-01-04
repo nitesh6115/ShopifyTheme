@@ -2043,7 +2043,7 @@ div#quick-product-view .ProductTabs .TabListContainer.active .TabHeader span.Ico
 div#MainSliderBox .product-image-slide.swiper .swiper-slide {
     z-index: 1;
 }
-.swiper-zoom-container {
+div#MainSliderBox .product-image-slide.swiper .swiper-slide img {
     position: relative;
     z-index: 1;
 }
