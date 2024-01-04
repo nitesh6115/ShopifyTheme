@@ -87,7 +87,7 @@ function UpdatProductGrid(url,event) {
               setTimeout(function () {
                  slideOne();
                 slideTwo();
-              },100)
+              },1000)
                
             }
             var openTrigger = UpdateDiv.querySelectorAll('.FilterItem')[event];
