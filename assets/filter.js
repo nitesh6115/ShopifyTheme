@@ -131,13 +131,13 @@ window.onload = function () {
 };
 let PriceRangeSlider = document.getElementById("PriceRange");
 
-let sliderOne = PriceRangeSlider.querySelectorAll(".filter-group-display__price-range-from input");
-let sliderTwo = PriceRangeSlider.querySelectorAll(".filter-group-display__price-range-to input")
-let displayValOne = document.getElementById("range1");
-let displayValTwo = document.getElementById("range2");
+let sliderOne = PriceRangeSlider.querySelector(".FirstPoint");
+let sliderTwo = PriceRangeSlider.querySelector(".LastPoint");
+let displayValOne = PriceRangeSlider.getElementById("range1");
+let displayValTwo = PriceRangeSlider.getElementById("range2");
 let minGap = 2;
-let sliderTrack = document.querySelector(".slider-track");
-let sliderMaxValue = PriceRangeSlider.querySelectorAll(".filter-group-display__price-range-from input").max;
+let sliderTrack = PriceRangeSlider.querySelector(".slider-track");
+let sliderMaxValue = PriceRangeSlider.querySelector(".FirstPoint").max;
 
 function slideOne() {
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
