@@ -142,8 +142,8 @@ if(PriceRangeSlider){
 
 let sliderOne = PriceRangeSlider.querySelectorAll(".FirstPoint")[0];
 let sliderTwo = PriceRangeSlider.querySelectorAll(".LastPoint")[0];
-let displayValOne = PriceRangeSlider.querySelector("#range1");
-let displayValTwo = PriceRangeSlider.querySelector("#range2");
+let displayValOne = PriceRangeSlider.querySelectorAll("#range1")[0];
+let displayValTwo = PriceRangeSlider.querySelectorAll("#range2")[0];
 
 let minGap = 2;
 let sliderTrack = PriceRangeSlider.querySelectorAll(".slider-track")[0];
