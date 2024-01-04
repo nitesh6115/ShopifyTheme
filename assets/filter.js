@@ -1,7 +1,7 @@
 function mouseLive(){
   let element = document.querySelectorAll('.CollectionFilters'); 
   element.forEach(elementItem =>{
-    elementItem.addEventListener('mouseenter', function (e) {
+    elementItem.addEventListener('mouseleave', function (e) {
        var AllFilterLabel = document.querySelectorAll('.FilterItem');
         let height = document.querySelector('.CollectionFilterBox').offsetHeight;
         let ClearFilterDivHeight = document.querySelector('.FilterResults').offsetHeight;
