@@ -138,19 +138,19 @@ let displayValTwo = PriceRangeSlider.querySelector("#range2");
 let minGap = 2;
 let sliderTrack = PriceRangeSlider.querySelector(".slider-track");
 let sliderMaxValue = PriceRangeSlider.querySelector(".FirstPoint").max;
-
+let CurrencySymbol = PriceRangeSlider.getAttribute('data-currency');
 function slideOne() {
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
     sliderOne.value = parseInt(sliderTwo.value) - minGap;
   }
-  displayValOne.textContent = sliderOne.value;
+  displayValOne.textContent = CurrencySymbol+' '+sliderOne.value;
   fillColor();
 }
 function slideTwo() {
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
     sliderTwo.value = parseInt(sliderOne.value) + minGap;
   }
-  displayValTwo.textContent = sliderTwo.value;
+  displayValTwo.textContent = CurrencySymbol+' '+sliderTwo.value;
   fillColor();
 }
 function fillColor() {
