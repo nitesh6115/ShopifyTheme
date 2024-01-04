@@ -28,3 +28,15 @@
 }
 </style>
   {% endif %}
+  <script>
+    var myTimeout = setTimeout(myGreeting, 2000);
+    function myGreeting() {
+    var element = document.getElementById("flashWrapper");
+    if(element){
+    element.classList.add('in-active')
+    }
+    }
+    window.addEventListener("beforeunload", (event) => {
+    document.getElementById("flashWrapper").classList.remove('in-active');
+    })
+  </script>
