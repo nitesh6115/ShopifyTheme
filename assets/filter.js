@@ -147,6 +147,7 @@ let sliderTrack = PriceRangeSlider.querySelector(".slider-track");
 let sliderMaxValue = PriceRangeSlider.querySelector(".FirstPoint").max;
 let CurrencySymbol = PriceRangeSlider.getAttribute('data-currency');
 function slideOne() {
+  console.log("eses")
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
     sliderOne.value = parseInt(sliderTwo.value) - minGap;
   }
