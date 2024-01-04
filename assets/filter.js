@@ -14,6 +14,7 @@ function mouseLive(){
     })
   })
 }
+mouseLive()
 function FilterOpen(FilterLabel) {
   let height = document.querySelector('.CollectionFilterBox').offsetHeight;
   let ClearFilterDivHeight = document.querySelector('.FilterResults').offsetHeight;
