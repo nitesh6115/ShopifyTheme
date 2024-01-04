@@ -105,6 +105,7 @@
             </div>
           {%- when 'price_range' -%}
             <div class="filter-group-display__price-range" id="PriceRange">
+                <div class="values">
                 <span id="range1">
                 {{ filter.min_value.value | money_without_currency | replace: ',', '' }}
                 </span>
@@ -112,6 +113,8 @@
                 <span id="range2">
                 {{ filter.max_value.value | money_without_currency | replace: ',', '' }}
                 </span>
+                </div>
+              <div class="container">
               <div class="slider-track"></div>
               <div class="filter-group-display__price-range-from">
                 <span>{{ cart.currency.symbol }}</span>
@@ -144,6 +147,7 @@
                 >
 
                 <label for="Filter-{{ filter.max_value.param_name }}">To</label>
+              </div>
               </div>
             </div>
 
