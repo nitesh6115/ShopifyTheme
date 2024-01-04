@@ -140,15 +140,15 @@ if(PriceRangeSlider){
 }
 };
 
-let sliderOne = document.getElementById("MinInput");
-let sliderTwo = document.getElementById("MaxInput");
-let displayValOne = document.getElementById("range1");
-let displayValTwo = document.getElementById("range2");
+var sliderOne = document.getElementById("MinInput");
+var sliderTwo = document.getElementById("MaxInput");
+var displayValOne = document.getElementById("range1");
+var displayValTwo = document.getElementById("range2");
 
-let minGap = 2;
-let sliderTrack = document.getElementById("RangeTrack");
-let sliderMaxValue = document.getElementById("MinInput").max;
-let CurrencySymbol = PriceRangeSlider.getAttribute('data-currency');
+var minGap = 2;
+var sliderTrack = document.getElementById("RangeTrack");
+var sliderMaxValue = document.getElementById("MinInput").max;
+var CurrencySymbol = PriceRangeSlider.getAttribute('data-currency');
 function fillColor() {
   console.log("eses"+sliderOne.value)
   percent1 = (sliderOne.value / sliderMaxValue) * 100;
