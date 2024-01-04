@@ -162,7 +162,9 @@ form#FilterForm {
     text-align: center;
     background: #000;
 }
-
+.FilterValues ul label.active {
+    background: #000;
+}
 .FilterItem.active .FilterLabel svg {
   transform: rotate(180deg);
   transition-duration: .15s;
