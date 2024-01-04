@@ -82,7 +82,7 @@ function UpdatProductGrid(url,event) {
                     })
                 }
             })
-            var PriceRangeSlider = UpdateDiv.getElementById('PriceRange');
+            var PriceRangeSlider = document.getElementById('PriceRange');
             if(PriceRangeSlider){
                 slideOne();
                 slideTwo();
