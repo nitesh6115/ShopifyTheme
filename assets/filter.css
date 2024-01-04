@@ -152,6 +152,7 @@ form#FilterForm {
     position: relative;
     margin: 0 auto;
     height: 40px;
+    margin-top: 40px;
 }
 
 .filter-group-display__price-range input {
