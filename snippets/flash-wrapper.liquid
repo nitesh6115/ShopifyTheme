@@ -28,12 +28,9 @@
 }
 </style>
 <script type="text/javascript">
-window.addEventListener("load", (event)=>{
+document.addEventListener("DOMContentLoaded", (event)=>{
   document.getElementById("flashWrapper").classList.add('in-active');
 })
-
-  
-
 
  window.addEventListener("popstate", (event) => {
      document.getElementById("flashWrapper").classList.add('in-active');
