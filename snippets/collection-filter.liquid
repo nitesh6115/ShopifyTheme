@@ -27,7 +27,7 @@
                     {% if filter.true_value.active -%}checked{%- endif %}
                     {% if filter.true_value.count == 0 and filter.true_value.active == false -%}disabled{%- endif -%}
                   >
-                  <label for="Filter-{{ filter.param_name }}-{{ filter.true_value.value }}">
+                  <label for="Filter-{{ filter.param_name }}-{{ filter.true_value.value }}" class="{% if filter.false_value.active -%}active{% endif %}">
                   {{ filter.true_value.label }}</label>
                 </li>
                 <li class="{% if filter.false_value.count == 0 and filter.false_value.active == false -%}disabled{%- endif %}">
@@ -41,7 +41,6 @@
                   >{{ filter.false_value.label }}</label>
                 </li>
             </ul>
-
             <div>
               <input type="submit" value="Apply">
             </div>
