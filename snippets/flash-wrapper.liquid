@@ -36,6 +36,7 @@ function myGreeting() {
   },2000)
 }
 window.addEventListener("beforeunload", (event) => {
+    myGreeting()
     document.getElementById("flashWrapper").classList.remove('in-active');
     document.getElementByTag("body").classList.remove('overflow');
 })
