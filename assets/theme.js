@@ -47,23 +47,6 @@ Shopify.formatMoney = function(cents, format) {
 
   return formatString.replace(placeholderRegex, value);
 };
-
-var myTimeout = setTimeout(myGreeting, 2000);
-function myGreeting() {
-  var element = document.getElementById("flashWrapper");
-  if(element){
-    element.classList.add('in-active')
-  }
-}
-window.addEventListener("beforeunload", (event) => {
-    document.getElementById("flashWrapper").classList.remove('in-active');
-})
-
-    window.onpageshow = function(event) {
-        if (event.persisted) {
-            window.location.reload();
-        }
-    }
 // lazy loding Images
 
 var observer = new IntersectionObserver(
