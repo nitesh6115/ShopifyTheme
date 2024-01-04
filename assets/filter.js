@@ -1,4 +1,19 @@
-
+function mouseLive(){
+  let element = doucment.querySelectorAll('.CollectionFilters'); 
+  element.forEach(elementItem,=>{
+    elementItem.addEventListener('mouseenter', function (e) {
+       var AllFilterLabel = document.querySelectorAll('.FilterItem');
+        let height = document.querySelector('.CollectionFilterBox').offsetHeight;
+        let ClearFilterDivHeight = document.querySelector('.FilterResults').offsetHeight;
+        height = height+ClearFilterDivHeight;
+       let Parent = FilterLabel.closest('.CollectionFilters');
+        AllFilterLabel.forEach(item =>{
+          item.classList.remove('active');
+      })
+       Parent.style.height = height+'px';
+    })
+  })
+}
 function FilterOpen(FilterLabel) {
   let height = document.querySelector('.CollectionFilterBox').offsetHeight;
   let ClearFilterDivHeight = document.querySelector('.FilterResults').offsetHeight;
