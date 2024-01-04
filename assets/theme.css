@@ -2088,6 +2088,7 @@ div#quick-product-view .ProductTabs .TabListContainer.active .TabHeader span.Ico
 }
 #quick-product-view  div#MainSliderBox .top-container {
   padding: 0;
+  position: relative;
 }
 #quick-product-view  .ProductInfoBox {
     width: 100%;
