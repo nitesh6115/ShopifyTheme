@@ -143,7 +143,7 @@ if(PriceRangeSlider){
 let sliderOne = document.getElementById("MinInput");
 let sliderTwo = document.getElementById("MaxInput");
 let displayValOne = document.getElementById("range1");
-let displayValTwo = document.getElementById("#range2");
+let displayValTwo = document.getElementById("range2");
 
 let minGap = 2;
 let sliderTrack = document.getElementById("RangeTrack");
