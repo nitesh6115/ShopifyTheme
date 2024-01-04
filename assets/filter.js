@@ -154,13 +154,14 @@ function fillColor() {
   sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #3264fe ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`; 
 }
 function slideOne() {
+  console.log(sliderOne.value)
+  console.log(sliderTwo.value)
   
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
     sliderOne.value = parseInt(sliderTwo.value) - minGap;
   }
   displayValOne.innerHTML = '';
-  console.log(sliderOne.value)
-  console.log(sliderTwo.value)
+  
   displayValOne.innerHTML = CurrencySymbol+' '+sliderOne.value;
   fillColor();
 }
