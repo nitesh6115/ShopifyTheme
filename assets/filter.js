@@ -135,6 +135,7 @@ let sliderOne = PriceRangeSlider.querySelector(".FirstPoint");
 let sliderTwo = PriceRangeSlider.querySelector(".LastPoint");
 let displayValOne = PriceRangeSlider.querySelector("#range1");
 let displayValTwo = PriceRangeSlider.querySelector("#range2");
+
 let minGap = 2;
 let sliderTrack = PriceRangeSlider.querySelector(".slider-track");
 let sliderMaxValue = PriceRangeSlider.querySelector(".FirstPoint").max;
@@ -156,8 +157,10 @@ function slideTwo() {
 function fillColor() {
   percent1 = (sliderOne.value / sliderMaxValue) * 100;
   percent2 = (sliderTwo.value / sliderMaxValue) * 100;
-  displayValOne.style.left = percent1+'%';
-  displayValTwo.style.left = percent2+'%';
+  const displayOneWidth = displayValOne.offsetWidth / 2;
+  const displayTwoWidth = displayValTwo.offsetWidth / 2;
+  displayValOne.style.left = percent1-displayOneWidth+'%';
+  displayValTwo.style.left = percent2-displayTwoWidth+'%';
   sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #3264fe ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`;
 }
 
