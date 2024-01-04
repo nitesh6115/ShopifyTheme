@@ -155,6 +155,7 @@ function slideOne() {
   fillColor();
 }
 function slideTwo() {
+  console.log("rdrf")
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
     sliderTwo.value = parseInt(sliderOne.value) + minGap;
   }
