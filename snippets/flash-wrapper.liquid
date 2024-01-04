@@ -27,10 +27,11 @@
     padding: 10px;
 }
 </style>
-<script type="text/javascript" async >
-document.addEventListener("DOMContentLoaded", (event)=>{
+<script>
+var myTimeout = setTimeout(myGreeting, 2000);
+function myGreeting() {
   document.getElementById("flashWrapper").classList.add('in-active');
-})
+}
 window.addEventListener("beforeunload", (event) => {
     document.getElementById("flashWrapper").classList.remove('in-active');
     document.getElementByTag("body").classList.remove('overflow');
