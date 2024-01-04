@@ -137,10 +137,9 @@ if(PriceRangeSlider){
 }
 };
 
-
+/* Price filter */
 
 var minGap = 2;
-
 var sliderMaxValue = document.getElementById("MinInput").max;
 var CurrencySymbol = PriceRangeSlider.getAttribute('data-currency');
 
