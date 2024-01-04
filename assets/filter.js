@@ -137,8 +137,7 @@ if(PriceRangeSlider){
 }
 };
 
-var displayValOne = document.getElementById("range1");
-var displayValTwo = document.getElementById("range2");
+
 
 var minGap = 2;
 var sliderTrack = document.getElementById("RangeTrack");
@@ -146,6 +145,7 @@ var sliderMaxValue = document.getElementById("MinInput").max;
 var CurrencySymbol = PriceRangeSlider.getAttribute('data-currency');
 
 function fillColor() {
+  
   var sliderOne = document.getElementById("MinInput");
   var sliderTwo = document.getElementById("MaxInput");
   percent1 = (sliderOne.value / sliderMaxValue) * 100;
@@ -158,6 +158,8 @@ function fillColor() {
 function slideOne() {
   var sliderOne = document.getElementById("MinInput");
   var sliderTwo = document.getElementById("MaxInput");
+  var displayValOne = document.getElementById("range1");
+  
   console.log(sliderOne.value)
   console.log(sliderTwo.value)
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
@@ -171,6 +173,7 @@ function slideOne() {
 function slideTwo() {
   var sliderOne = document.getElementById("MinInput");
   var sliderTwo = document.getElementById("MaxInput");
+  var displayValTwo = document.getElementById("range2");
   console.log(sliderOne.value)
   console.log(sliderTwo.value)
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
