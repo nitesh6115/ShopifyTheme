@@ -160,6 +160,7 @@ function slideOne() {
   }
   displayValOne.innerHTML = '';
   console.log(sliderOne.value)
+  console.log(sliderTwo.value)
   displayValOne.innerHTML = CurrencySymbol+' '+sliderOne.value;
   fillColor();
 }
