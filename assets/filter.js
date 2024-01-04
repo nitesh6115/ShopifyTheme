@@ -158,7 +158,8 @@ function fillColor() {
 function slideOne() {
   var sliderOne = document.getElementById("MinInput");
   var sliderTwo = document.getElementById("MaxInput");
-
+  console.log(sliderOne.value)
+  console.log(sliderTwo.value)
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
     sliderOne.value = parseInt(sliderTwo.value) - minGap;
   }
