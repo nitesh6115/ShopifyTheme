@@ -165,7 +165,8 @@ function slideOne() {
   fillColor();
 }
 function slideTwo() {
-  
+  console.log(sliderOne.value)
+  console.log(sliderTwo.value)
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
     sliderTwo.value = parseInt(sliderOne.value) + minGap;
   }
