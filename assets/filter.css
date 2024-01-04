@@ -273,6 +273,21 @@ span.x-cl {
   text-align: center;
   color: #ffffff;
 }
-
+span#range1 {
+    position: absolute;
+    top: 0;
+    padding: 5px;
+    background: #000;
+    top: -13px;
+    left: 0;
+}
+span#range2 {
+    position: absolute;
+    top: 0;
+    padding: 5px;
+    background: #000;
+    top: -13px;
+    left: 0;
+}
 
 
