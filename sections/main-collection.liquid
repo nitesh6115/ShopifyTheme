@@ -37,6 +37,14 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
   <div class="GridItem featured-product">
   {% render 'product-grid', card_product:product %}
   </div>
+  {% else %}
+  <div class="GridItem">
+    <h3>Sorry, no products matched your selection :(</h3>
+    <div class="EmptyMsg">
+      <span>Use fewer filters or </span>
+      <div class="RemoveFilter primary-button" onclick="removeFilter(this)" data-href="{{ collection.url }}?sort_by={{ collection.sort_by }}">Clear all {% render 'icon-refresh' %}</div>
+    </div>
+  </div>
 {% endfor %}
 </div>
   
