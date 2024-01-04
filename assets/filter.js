@@ -150,7 +150,7 @@ let sliderTrack = PriceRangeSlider.querySelectorAll(".slider-track")[0];
 let sliderMaxValue = PriceRangeSlider.querySelectorAll(".FirstPoint")[0].max;
 let CurrencySymbol = PriceRangeSlider.getAttribute('data-currency');
 function fillColor() {
-  console.log("eses")
+  console.log("eses"+(sliderOne.value)
   percent1 = (sliderOne.value / sliderMaxValue) * 100;
   percent2 = (sliderTwo.value / sliderMaxValue) * 100;
   displayValOne.style.left = percent1-5+'%';
