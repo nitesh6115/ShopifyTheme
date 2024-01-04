@@ -157,8 +157,9 @@ function fillColor() {
   console.log("Percent2 "+percent2)
   displayValOne.style.left = percent1-5+'%';
   displayValTwo.style.left = percent2-7+'%';
+  setTimeout(function () {
   sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #3264fe ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`;
-  
+  },10)
 }
 function slideOne() {
   
