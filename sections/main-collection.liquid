@@ -23,7 +23,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 <div class="CollectionFilters color-{{ section.settings.color_scheme }}">
   {% render 'collection-filter' %}
 </div>
-<div class="CollectionnGrid colls-4">
+<div id="ProductGridList" class="CollectionnGrid colls-4">
 {% if collection.image != blank %}
  <div class="CHB collection-image hover-zoom ">
   <img class="radius-20 overflow-hidden" width="{{ collection.image.width }}" height="{{ collection.image.height }}" loading="lazy" srcset="{{ collection.image | img_url: "1400x" }}" alt="{{ collection.image.alt }}" />
