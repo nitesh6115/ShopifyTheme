@@ -149,6 +149,15 @@ let minGap = 2;
 let sliderTrack = PriceRangeSlider.querySelector(".slider-track");
 let sliderMaxValue = PriceRangeSlider.querySelector(".FirstPoint").max;
 let CurrencySymbol = PriceRangeSlider.getAttribute('data-currency');
+function fillColor() {
+  console.log("eses")
+  percent1 = (sliderOne.value / sliderMaxValue) * 100;
+  percent2 = (sliderTwo.value / sliderMaxValue) * 100;
+  displayValOne.style.left = percent1-5+'%';
+  displayValTwo.style.left = percent2-7+'%';
+  sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #3264fe ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`;
+  
+}
 function slideOne() {
   
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
@@ -165,13 +174,5 @@ function slideTwo() {
   displayValTwo.textContent = CurrencySymbol+' '+sliderTwo.value;
   fillColor();
 }
-function fillColor() {
-  console.log("eses")
-  percent1 = (sliderOne.value / sliderMaxValue) * 100;
-  percent2 = (sliderTwo.value / sliderMaxValue) * 100;
-  displayValOne.style.left = percent1-5+'%';
-  displayValTwo.style.left = percent2-7+'%';
-  sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #3264fe ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`;
-  
-}
+
 
