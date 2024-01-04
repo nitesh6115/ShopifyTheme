@@ -103,6 +103,7 @@ function UpdatProductGrid(url,event) {
                 slideOne();
                 slideTwo();
             }
+            mouseLive()
             var openTrigger = UpdateDiv.querySelectorAll('.FilterItem')[event];
             var element = openTrigger.querySelector('.FilterLabel')
               if(element){
