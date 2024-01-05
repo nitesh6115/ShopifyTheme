@@ -430,3 +430,8 @@ form#FilterForm::-webkit-scrollbar-thumb {
     display: none;
 }
 }
+@media(max-width: 640px){
+  form#FilterForm{
+    width: 100%;
+  }
+}
