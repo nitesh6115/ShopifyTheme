@@ -326,7 +326,7 @@ span#range1, span#range2 {
     transition-property: all;
     opacity: 0;
 }
-  .overlay-filter {
+ .filter-open .overlay-filter {
     visibility: visible;
     opacity: 1;
 }
