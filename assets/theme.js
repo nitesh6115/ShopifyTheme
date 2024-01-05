@@ -955,7 +955,7 @@ function quick_view(event) {
             var QuickProduct = document.getElementById('quick-product-view')
             QuickProduct.innerHTML = ""
             QuickProduct.appendChild(container);
-            var productGridImageSlider = document.querySelectorAll('.product-image-wrapper');
+            var productGridImageSlider = QuickProduct.querySelectorAll('.product-image-wrapper');
             productGridImageSlider.forEach(item => {
                 var newElem = item.closest('.product-image-container')
                 var nextbutton = newElem.querySelectorAll('.swiper-button-next')[0];
