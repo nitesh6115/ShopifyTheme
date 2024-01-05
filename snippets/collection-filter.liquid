@@ -123,7 +123,7 @@
                   {%- endif %}
                   type="range"
                   placeholder="0"
-                  min="0"
+                  min="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
                   max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
                 >
                 <input class="LastPoint" oninput="slideTwo()" name="{{ filter.max_value.param_name }}"
@@ -135,7 +135,7 @@
                   type="range"
                   placeholder="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
                   min="0"
-                  max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                  max="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"
                 >
               </div>
             </div>
