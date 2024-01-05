@@ -178,7 +178,7 @@ function slideOne() {
   var displayValOne = document.getElementById("range1");
   var SlideOneAttribute = sliderOne.getAttribute('min');
   var SlideTwoAttribute = sliderTwo.getAttribute('max');
-  console.log(sliderTwo.value)
+  console.log(SlideOneAttribute)
   if (parseInt(SlideTwoAttribute) - parseInt(SlideOneAttribute) <= minGap) {
     sliderOne.value = parseInt(SlideTwoAttribute) - minGap;
     sliderOne.setAttribute('min', sliderOne.value)
