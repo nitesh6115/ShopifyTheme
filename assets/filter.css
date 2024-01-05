@@ -292,7 +292,6 @@ span#range1, span#range2 {
     position: fixed;
     height: 80vh;
     z-index: 9;
-    width: 100%;
     bottom: 0;
     z-index: 9;
     transform: translateY(100%);
@@ -307,6 +306,7 @@ span#range1, span#range2 {
     justify-content: flex-start;
     overflow: auto;
     border: 1px solid;
+    width: 80%;
 }
  .filter-open form#FilterForm {
     transform: translateY(0);
