@@ -326,11 +326,6 @@ form#FilterForm::-webkit-scrollbar-thumb {
   outline: 1px solid slategrey;
    -webkit-border-radius: 7px;
 }
-  
-.CollectionFilters {
-  width: 50px;
-  height: 50px !important;
-}
 
 .filterMobileButton.large-up-hide {
     position: fixed;
@@ -343,7 +338,7 @@ form#FilterForm::-webkit-scrollbar-thumb {
     cursor: pointer;
     width: 50px;
     height: 50px;
-    z-index: 9;
+    z-index: 100;
     border: 1px solid;
     border-radius: 100%;
 }
