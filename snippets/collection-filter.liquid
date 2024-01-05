@@ -123,7 +123,7 @@
                   {%- endif %}
                   type="range"
                   placeholder="0"
-                  min="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
+                  min="{% if filter.min_value.value -%}{{ filter.min_value.value | money_without_currency | replace: ',', '' }}{% else %}0{% endif %}"
                   max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
                 >
                 <input class="LastPoint" oninput="slideTwo()" name="{{ filter.max_value.param_name }}"
