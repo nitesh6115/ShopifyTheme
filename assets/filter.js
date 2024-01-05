@@ -16,6 +16,13 @@ function mouseLive(){
   })
 }
 mouseLive()
+function filtelOpen(params) {
+  if( document.body.classList.contains('filter-open')){
+     document.body.classList.remove('filter-open')
+  }else{
+    document.body.classList.add('filter-open')
+  }
+}
 function FilterOpen(FilterLabel) {
   let height = document.querySelector('.CollectionFilterBox').offsetHeight;
   let ClearFilterDivHeight = document.querySelector('.FilterResults').offsetHeight;
