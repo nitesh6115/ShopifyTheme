@@ -934,7 +934,7 @@ function quick_view(event) {
   var mainParent = event.closest('.featured-product');
   var SelectedColor = mainParent.querySelectorAll('.product-variant-container .size-selector.active')[0];
   const SelectedColorValue = SelectedColor.getAttribute('data-title');
-  console.log(SelectedColorValue)
+  
   var URL = mainParent.querySelector('.top-container').getAttribute('data-url');
   console.log(URL)
   fetch(URL)
@@ -980,11 +980,12 @@ function quick_view(event) {
             
             var variantImages = document.querySelectorAll('.prodouct-variant-slider');
             variantImages.forEach(slider => {
-                var swiperActive = slider.querySelectorAll('.size-selector')[0];
+                var swiperActive = slider.querySelectorAll('.size-selector[data-title="'+SelectedColorValue+'"]')[0];
                 if (swiperActive !== '') {
                     swiperActive.classList.add('active')
                     var label = swiperActive.querySelectorAll('label')[0];
                     label.click()
+                  
                     const slideritam = new Swiper(slider, {
                         slidesPerView: 5,
                         initialSlide: 0,
