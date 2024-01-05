@@ -11,6 +11,7 @@ function mouseLive(){
           item.classList.remove('active');
       })
        Parent.style.height = height+'px';
+      document.body.classList.remove('filter-open')
     })
   })
 }
