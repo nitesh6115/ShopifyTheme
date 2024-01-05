@@ -120,7 +120,6 @@
                   {% if filter.min_value.value -%}
                     value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
                   {% else %}
-                   
                   {%- endif %}
                   type="range"
                   placeholder="0"
@@ -132,7 +131,6 @@
                   {% if filter.max_value.value -%}
                     value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"
                   {% else %}
-                    
                   {%- endif %}
                   type="range"
                   placeholder="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
