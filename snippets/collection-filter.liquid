@@ -1,5 +1,5 @@
-<div class="filterMobileButton large-up-hide"onclick="filtelOpen(this)">{% render 'icon-filter' %}</div>
-<form id="FilterForm" collection-handle="{{ collection.handle }}">
+<div class="color-{{ section.settings.color_scheme }} filterMobileButton large-up-hide"onclick="filtelOpen(this)">{% render 'icon-filter' %}</div>
+<form id="FilterForm" class="color-{{ section.settings.color_scheme }}" collection-handle="{{ collection.handle }}">
   <div class="CollectionFilterBox">
   {%- for filter in collection.filters -%}
     <div class="FilterItem">
