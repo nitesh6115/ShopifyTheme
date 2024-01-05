@@ -932,8 +932,8 @@ function TabContent(TabContent) {
 }
 function quick_view(event) {
   var mainParent = event.closest('.featured-product');
-  var SelectedColor = mainParent.querySelectorAll('.product-variant-container .size-selector.active');
-  SelectedColor = SelectedColor.getAttriubte('data-title');
+  var SelectedColor = mainParent.querySelectorAll('.product-variant-container .size-selector.active')[0];
+  const SelectedColorValue = SelectedColor.getAttriubte('data-title');
   console.log(SelectedColor)
   var URL = mainParent.querySelector('.top-container').getAttribute('data-url');
   console.log(URL)
