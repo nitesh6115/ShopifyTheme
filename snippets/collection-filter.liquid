@@ -1,4 +1,4 @@
-<div class="filterMobileButton large-up-hide">{% render 'icon-filter' %}</div>
+<div class="filterMobileButton large-up-hide"onclick="filtelOpen(this)">{% render 'icon-filter' %}</div>
 <form id="FilterForm" collection-handle="{{ collection.handle }}">
   <div class="CollectionFilterBox">
   {%- for filter in collection.filters -%}
