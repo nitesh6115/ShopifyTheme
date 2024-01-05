@@ -181,7 +181,7 @@ function slideOne() {
   console.log(sliderTwo.value)
   if (parseInt(SlideTwoAttribute) - parseInt(SlideOneAttribute) <= minGap) {
     sliderOne.value = parseInt(SlideTwoAttribute) - minGap;
-    sliderOne.setAttribute('min', parseInt(SlideTwoAttribute) - minGap;)
+    sliderOne.setAttribute('min', sliderOne.value)
   }
   displayValOne.innerHTML = '';
   displayValOne.innerHTML = CurrencySymbol+' '+sliderOne.value;
@@ -197,7 +197,7 @@ function slideTwo() {
   
   if (parseInt(SlideTwoAttribute) - parseInt(SlideOneAttribute) <= minGap) {
     sliderTwo.value = parseInt(SlideOneAttribute) + minGap;
-    sliderOne.setAttribute('max', parseInt(SlideOneAttribute) - minGap;)
+    sliderOne.setAttribute('max', sliderTwo.value)
   }
   displayValTwo.innerHTML = '';
   displayValTwo.innerHTML = CurrencySymbol+' '+sliderTwo.value;
