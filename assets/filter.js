@@ -176,10 +176,12 @@ function slideOne() {
   var sliderOne = document.getElementById("MinInput");
   var sliderTwo = document.getElementById("MaxInput");
   var displayValOne = document.getElementById("range1");
-  console.log(sliderOne.value)
+  var SlideOneAttribute = sliderOne.getAttribute('min');
+  var SlideTwoAttribute = sliderOne.getAttribute('max');
   console.log(sliderTwo.value)
-  if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
-    sliderOne.value = parseInt(sliderTwo.value) - minGap;
+  if (parseInt(SlideTwoAttribute) - parseInt(SlideOneAttribute) <= minGap) {
+    sliderOne.value = parseInt(SlideTwoAttribute) - minGap;
+    sliderOne.setAttribute('min', parseInt(SlideTwoAttribute) - minGap;)
   }
   displayValOne.innerHTML = '';
   displayValOne.innerHTML = CurrencySymbol+' '+sliderOne.value;
@@ -188,10 +190,14 @@ function slideOne() {
 function slideTwo() {
   var sliderOne = document.getElementById("MinInput");
   var sliderTwo = document.getElementById("MaxInput");
+  var SlideOneAttribute = sliderOne.getAttribute('min');
+  var SlideTwoAttribute = sliderOne.getAttribute('max');
+  
   var displayValTwo = document.getElementById("range2");
   
-  if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
-    sliderTwo.value = parseInt(sliderOne.value) + minGap;
+  if (parseInt(SlideTwoAttribute) - parseInt(SlideOneAttribute) <= minGap) {
+    sliderTwo.value = parseInt(SlideOneAttribute) + minGap;
+    sliderOne.setAttribute('max', parseInt(SlideOneAttribute) - minGap;)
   }
   displayValTwo.innerHTML = '';
   displayValTwo.innerHTML = CurrencySymbol+' '+sliderTwo.value;
