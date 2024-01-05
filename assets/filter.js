@@ -176,6 +176,7 @@ function slideOne() {
   var sliderOne = document.getElementById("MinInput");
   var sliderTwo = document.getElementById("MaxInput");
   var displayValOne = document.getElementById("range1");
+  console.log(sliderOne.value)
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
     sliderOne.value = parseInt(sliderTwo.value) - minGap;
   }
