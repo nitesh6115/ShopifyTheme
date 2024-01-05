@@ -934,9 +934,7 @@ function quick_view(event) {
   var mainParent = event.closest('.featured-product');
   var SelectedColor = mainParent.querySelectorAll('.product-variant-container .size-selector.active')[0];
   var SelectedColorValue = SelectedColor.getAttribute('data-title');
-  
   var URL = mainParent.querySelector('.top-container').getAttribute('data-url');
-  console.log(URL)
   fetch(URL)
         .then(response => response.text())
         .then((responseText) => {
