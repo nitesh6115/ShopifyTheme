@@ -285,4 +285,117 @@ span#range1, span#range2 {
     text-wrap: nowrap;
 }
 
+@media(max-width: 1023px){
+  form#FilterForm {
+    position: fixed;
+    height: 80vh;
+    z-index: 9;
+    width: 100%;
+    bottom: 0;
+    z-index: 9;
+    transform: translateY(100%);
+    transition-timing-function: cubic-bezier(.93,-.01,0,1.02);
+    transition-duration: .5s;
+    transition-property: all;
+    background: #ccccccb5;
+    border-radius: 30px 30px 0 0;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: auto;
+}
+ .filter-open form#FilterForm {
+    transform: translateY(0);
+ }
+.CollectionFilters {
+  width: 50px;
+  height: 50px !important;
+}
 
+.filterMobileButton.large-up-hide {
+    position: fixed;
+    bottom: 5rem;
+    left: 3rem;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    z-index: 9;
+    background: #f00;
+    border-radius: 100%;
+}
+.filterMobileButton.large-up-hide svg {
+    width: 20px;
+}
+.CollectionFilters {
+  position: inherit;
+  height: auto !important;
+  width: 100%;
+  bottom: inherit;
+  transform: inherit;
+}
+
+.CollectionFilterBox {
+    display: block;
+    order: 2;
+    height: auto;
+    padding: 20px 30px;
+}
+
+.FilterResults {
+    order: 1;
+    width: 100%;
+}
+
+.FilterValues {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    bottom: inherit;
+    padding: 10px 0;
+}
+
+.FilterLabel {
+    align-items: flex-start;
+    width: 100%;
+    text-align: left;
+    justify-content: flex-start;
+    height: auto;
+    padding: 0 0 20px;
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+    pointer-events: none;
+    font-size: 15px;
+}
+
+.FilterItem {
+    background: #795548;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.FilterBody {
+    border: 0;
+    padding: 0;
+}
+
+.ResultItems {
+    padding-bottom: 6px;
+    border-bottom: 1px solid;
+}
+
+.FilterItem .FilterLabel svg {
+    opacity: 0;
+}
+
+.FilterLabel:after {
+    display: none;
+}
+}
