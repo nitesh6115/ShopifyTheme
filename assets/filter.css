@@ -404,7 +404,18 @@ form#FilterForm::-webkit-scrollbar-thumb {
     pointer-events: none;
     font-size: 15px;
 }
+.FilterValues ul {
+    max-height: max-content;
+    justify-content: flex-start;
+}
 
+.FilterValues ul label {
+    padding: 3px 5px;
+    min-width: 5rem;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
 .FilterItem {
     margin-bottom: 30px;
     border-radius: 30px;
