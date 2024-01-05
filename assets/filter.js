@@ -110,6 +110,7 @@ function UpdatProductGrid(url,event) {
                 element.click()
               }
         })
+    document.body.classList.add('filter-open')
 }
 
 function filter_data (item,event) {
