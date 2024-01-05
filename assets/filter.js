@@ -177,6 +177,7 @@ function slideOne() {
   var sliderTwo = document.getElementById("MaxInput");
   var displayValOne = document.getElementById("range1");
   console.log(sliderOne.value)
+  console.log(sliderTwo.value)
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
     sliderOne.value = parseInt(sliderTwo.value) - minGap;
   }
@@ -188,7 +189,7 @@ function slideTwo() {
   var sliderOne = document.getElementById("MinInput");
   var sliderTwo = document.getElementById("MaxInput");
   var displayValTwo = document.getElementById("range2");
-  console.log(sliderTwo.value)
+  
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
     sliderTwo.value = parseInt(sliderOne.value) + minGap;
   }
