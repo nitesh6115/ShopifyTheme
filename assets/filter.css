@@ -434,4 +434,22 @@ form#FilterForm::-webkit-scrollbar-thumb {
   form#FilterForm{
     width: 100%;
   }
+  .FilterResults {
+    padding: 0 10px;
+}
+form#FilterForm {
+    border-radius: 20px 20px 0 0;
+}
+.CollectionFilterBox {
+    padding: 10px;
+}
+.FilterItem {
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.FilterLabel {
+    padding-bottom: 10px;
+}
+
 }
