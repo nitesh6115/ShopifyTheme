@@ -952,9 +952,9 @@ function quick_view(event) {
             container.classList.add('product-page');
             container.appendChild(ImageBoxDiv);
             container.appendChild(ContantBoxDiv);
-            document.getElementById('quick-product-view').innerHTML = ""
-            document.getElementById('quick-product-view').appendChild(container);
-            
+            var QuickProduct = document.getElementById('quick-product-view')
+            QuickProduct.innerHTML = ""
+            QuickProduct.appendChild(container);
             var productGridImageSlider = document.querySelectorAll('.product-image-wrapper');
             productGridImageSlider.forEach(item => {
                 var newElem = item.closest('.product-image-container')
@@ -976,9 +976,10 @@ function quick_view(event) {
                 })
             });
             
-            var variantImages = document.querySelectorAll('.prodouct-variant-slider');
+            var variantImages = QuickProduct.querySelectorAll('.prodouct-variant-slider');
             variantImages.forEach(slider => {
                 var swiperActive = slider.querySelectorAll('.size-selector[data-title="'+SelectedColorValue+'"]')[0];
+                console.log()
                 if (swiperActive !== '') {
                     swiperActive.classList.add('active')
                     var label = swiperActive.querySelectorAll('label')[0];
