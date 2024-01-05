@@ -293,7 +293,6 @@ span#range1, span#range2 {
     height: 80vh;
     z-index: 100;
     bottom: 0;
-    z-index: 9;
     transform: translateY(100%);
     transition-timing-function: cubic-bezier(.93,-.01,0,1.02);
     transition-duration: .5s;
