@@ -311,6 +311,25 @@ span#range1, span#range2 {
  .filter-open form#FilterForm {
     transform: translateY(0);
  }
+  .overlay-filter {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #aeb0edc7;
+    right: 0;
+    z-index: 99;
+    backdrop-filter: blur(10px);
+    visibility: hidden;
+    transition-timing-function: cubic-bezier(.93,-.01,0,1.02);
+    transition-duration: .5s;
+    transition-property: all;
+    opacity: 0;
+}
+  .overlay-filter {
+    visibility: visible;
+    opacity: 1;
+}
 form#FilterForm::-webkit-scrollbar {
     width: 5px;
     border-radius:2px;
