@@ -112,7 +112,7 @@
         ],
         "settings": {
           "color_scheme": "background-1",
-          "bg-color": "rgba(80,80,80,.5)",
+          "bg-color": "rgba(80,80,80,.7)",
           "page-width": "narrow-width",
           "show-announcement": true,
           "info-menu": "top-heaer-menu",
