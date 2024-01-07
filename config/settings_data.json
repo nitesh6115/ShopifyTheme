@@ -112,7 +112,7 @@
         ],
         "settings": {
           "color_scheme": "background-1",
-          "bg-color": "linear-gradient(90deg, rgba(97, 67, 133, 1), rgba(81, 99, 149, 1) 99%)",
+          "bg-color": "rgba(80,80,80,.5)",
           "page-width": "narrow-width",
           "show-announcement": true,
           "info-menu": "top-heaer-menu",
@@ -192,7 +192,7 @@
       "background-1": {
         "settings": {
           "background": "#000000",
-          "background_gradient": "rgba(25,25,25)",
+          "background_gradient": "rgba(25,25,25,.8)",
           "text": "#ffffff",
           "heading-color": "#f5f5f5",
           "sub-heading-color": "#eab79a",
