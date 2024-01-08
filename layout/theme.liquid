@@ -68,14 +68,6 @@
 <main role="main" id="MainContent">
   {{ content_for_layout }}
 </main>
-{% if request.page_type == 'product' %}
-{% if product.options contains 'Size' %}
-  {% assign chart = product.type | handleize | append: "-size-chart" %}
-  {% unless pages[chart].empty? or pages[chart].content == blank %}
-    {% render 'size-chart-popup' %}
-  {% endunless %}
-{% endif %}
-{% endif %}
 {% section 'footer' %}
 <div id="mini-cart-sucess"></div>
 <div id="quick_search_box"></div>
